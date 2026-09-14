@@ -1,0 +1,49 @@
+{
+  "status": "completed",
+  "started_at": "2026-09-14T11:12:42.559219+00:00",
+  "already_complete": [
+    "assets.json",
+    "SHA256SUMS",
+    "RESTORE.md",
+    "verify_archive.py",
+    "quest-012-snapshot.tar.gz.part001",
+    "quest-012-snapshot.tar.gz.part002",
+    "quest-012-snapshot.tar.gz.part005",
+    "quest-012-history.bundle.part003"
+  ],
+  "uploaded": [
+    {
+      "file": "quest-012-snapshot.tar.gz.part003",
+      "id": 563230353,
+      "at": "2026-09-14T11:17:27.751265+00:00"
+    },
+    {
+      "file": "quest-012-history.bundle.part001",
+      "id": 563238813,
+      "at": "2026-09-14T11:22:09.590647+00:00"
+    },
+    {
+      "file": "quest-012-history.bundle.part002",
+      "id": 563245885,
+      "at": "2026-09-14T11:32:10.798239+00:00"
+    },
+    {
+      "file": "quest-012-snapshot.tar.gz.part004",
+      "id": 563230293,
+      "at": "2026-09-14T11:39:05.157664+00:00"
+    },
+    {
+      "file": "quest-012-history.bundle.part005",
+      "id": 563275169,
+      "at": "2026-09-14T11:48:53.891898+00:00"
+    },
+    {
+      "file": "quest-012-history.bundle.part004",
+      "id": 563261991,
+      "at": "2026-09-14T11:52:58.108466+00:00"
+    }
+  ],
+  "failures": [],
+  "concurrency": 2,
+  "completed_at": "2026-09-14T11:52:59.197500+00:00"
+}

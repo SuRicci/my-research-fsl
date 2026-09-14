@@ -1,0 +1,660 @@
+From 950660eb0b6ae289162f49dd8027b6cc7f2357e9 Mon Sep 17 00:00:00 2001
+From: decoqwq <decoqwq@gmail.com>
+Date: Mon, 14 Sep 2026 19:03:09 +0800
+Subject: [PATCH 3/5] run: decision run-a1dd8edc
+
+---
+ CHECKLIST.md                                  |  18 ++-
+ artifacts/_index.jsonl                        |   4 +
+ artifacts/progress/progress-0f42b1cc.json     |  51 ++++++
+ artifacts/progress/progress-65311c8c.json     |  51 ++++++
+ artifacts/progress/progress-daf42f82.json     |  51 ++++++
+ artifacts/runs/run-f837e93c.json              |  69 +++++++++
+ .../TRANSFER_STATE.json                       |  27 ++++
+ .../cleanup_verified_local.py                 | 146 ++++++++++++++++++
+ .../finalize_remote.py                        |  31 ++++
+ .../finish_migration.py                       |  40 +++++
+ .../transfer_remaining.py                     |  20 +++
+ .../github-archive-20260914/verify_remote.py  |  44 ++++++
+ 12 files changed, 544 insertions(+), 8 deletions(-)
+ create mode 100644 artifacts/progress/progress-0f42b1cc.json
+ create mode 100644 artifacts/progress/progress-65311c8c.json
+ create mode 100644 artifacts/progress/progress-daf42f82.json
+ create mode 100644 artifacts/runs/run-f837e93c.json
+ create mode 100644 handoffs/github-archive-20260914/TRANSFER_STATE.json
+ create mode 100644 handoffs/github-archive-20260914/cleanup_verified_local.py
+ create mode 100644 handoffs/github-archive-20260914/finalize_remote.py
+ create mode 100644 handoffs/github-archive-20260914/finish_migration.py
+ create mode 100644 handoffs/github-archive-20260914/transfer_remaining.py
+ create mode 100644 handoffs/github-archive-20260914/verify_remote.py
+
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+index 0e46f6c7e9ffed1f46df52a67ebb25c19c1e77fc..5dbb3690e915ca52d344fa2593def83b88ef8f60 100644
+--- a/CHECKLIST.md
++++ b/CHECKLIST.md
+@@ -1,13 +1,15 @@
+ # GitHub archive execution frontier
+ ## In Progress
+-- Prepare complete research inventory and sanitized export, excluding credentials.
++- Upload all verified snapshot/history parts and download each remote asset for SHA256 verification.
+ ## Next
+-- Push browsable report/code and upload complete archives.
+-- Download and verify every archive part and protected research coverage.
+-- Remove only verified local payloads and record released disk space.
++- Publish complete private archive and verify a clean clone of its browsable Git repository.
++- Remove only verified local research payloads and replace bulky local history with a small retrieval pointer.
++- Record actual free space and pause with cloud restore instructions.
+ ## Completed
+-- Confirmed private empty repository with push/admin access using existing CLI credentials.
+-- Repaired Git HTTPS using macOS system proxy, without changing global configuration.
+-- Identified auth credentials in old Git history; rejected raw push.
++- Successful Git push and exact remote main ref verification.
++- Full snapshot: 134694 files and 78 symlinks, all archived member hashes validated.
++- All 20716 protected evidence paths and 327 baseline result paths hash-identical.
++- Sanitized history independently restored: 70 refs, 685 commits, 54163 blobs scanned, Git fsck passed.
++- Ten archive parts totaling 9316706614 bytes prepared; authentication directories excluded.
+ ## Parked
+-- All new research experiments remain paused by user instruction.
++- All research experiments remain paused; local deletion is forbidden until cloud verification completes.
+diff --git a/artifacts/_index.jsonl b/artifacts/_index.jsonl
+index 82c14e82fa259d8f761a871190fd82fab3ad3c58..3e3cb3b520edee0b36e3cfbb8a8696a712c2a447 100644
+--- a/artifacts/_index.jsonl
++++ b/artifacts/_index.jsonl
+@@ -1115,3 +1115,7 @@
+ {"artifact_id": "progress-03aff63a", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-03aff63a.json", "summary": "网页入口已整理好，包含 2,840 个报告、代码和协议文件。校验发现脱敏规则误识别了一个研究方向名称，我已修正并从原文件重新打包，原始结果未改动。接下来先推送阅读入口，再上传完整结果和历史；只有整套材料下载校验通过才删除本地。", "updated_at": "2026-09-14T09:47:57+00:00"}
+ {"artifact_id": "milestone-098f6f8b", "kind": "milestone", "status": "completed", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/milestones/milestone-098f6f8b.json", "summary": "报告和代码已成功 git push 到您的私有仓库，网页入口现在可以查看了：https://github.com/SuRicci/my-research-fsl 。完整逐任务结果和历史归档还在准备，当前还不能删除本地；接下来上传大文件并逐份下载核对，确保以后能完整取回。", "updated_at": "2026-09-14T09:50:43+00:00"}
+ {"artifact_id": "milestone-e86f097d", "kind": "milestone", "status": "completed", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/milestones/milestone-e86f097d.json", "summary": "完整备份已通过本地验证：21,043 个受保护结果和复核文件全部哈希一致，70 个分支、685 次提交也已从备份独立恢复成功。接下来只做上传与回下载核对，不再运行实验；全部云端校验通过后，再清理本次项目的本地研究文件。", "updated_at": "2026-09-14T09:56:04+00:00"}
++{"artifact_id": "progress-0f42b1cc", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-0f42b1cc.json", "summary": "报告和代码已在仓库中；完整备份约 9.32 GB，本地完整性和历史恢复检查均已通过。目前上传带宽是主要瓶颈，预计还需约 45–75 分钟；附件上传后会自动回下载核对。您不需要额外操作，本地研究文件会一直保留到所有检查通过。", "updated_at": "2026-09-14T10:08:41+00:00"}
++{"artifact_id": "progress-65311c8c", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-65311c8c.json", "summary": "已有第一个归档分卷成功从 GitHub 下载回来，SHA256 与本地完全一致；最先上传的两份大分卷也已传完。其余文件继续上传，下载校验同步进行。原始研究文件仍完整保留，等整套验证通过后再统一清理。", "updated_at": "2026-09-14T10:14:21+00:00"}
++{"artifact_id": "progress-daf42f82", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-daf42f82.json", "summary": "已从 GitHub 取回并核对约 2.36 GB，前三份完成的分卷全部一致。其余文件还在上传，预计仍需约 30–60 分钟；没有发现数据不一致，也不需要您额外操作。本地清理会在整套校验结束后自动执行。", "updated_at": "2026-09-14T10:24:07+00:00"}
++{"artifact_id": "run-f837e93c", "kind": "run", "status": "completed", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/runs/run-f837e93c.json", "summary": "我会先核查这个 GitHub 仓库的访问权限、本机 Git 授权和待上传文件。上传后会核对远端是否完整、能否取回，再清理对应本地副本；浏览器登录是否能用于推送，也需要实际确认。\n我会按 decision 技能核定归档和清理范围，先保持研究暂停。成功标准是云端文件与本地清单一致，并通过取回校验；如果授权或大文件限制挡住上传，本地文件会保留。\n已确认仓库是私有的，现有 GitHub CLI 登录也有推送权限。接下来要处理的是约 8.5 GiB 的本地 Git 历史和多份工作树；我会保留研究文件及历史的可恢复性，排除登录凭据，并验证上传结果后再清理。\n发现一个需要先处理的问题：旧 Git 历史包含运行器的登录凭据文件，不能原样推送。我会生成排除凭据的研究归档，并保存代码与结果历史的对应关系。Git 连接已通过本机现有代理打通，接下来准备归档和校验清单。\n归档正在准备中，覆盖报告、逐任务结果、代码、配置和各方向记录；旧历史里的凭据及此前已清理的原始数据包会明确列为排除项。备份完成后，会先核对全部受保护结果的哈希，再开始上传。\n去除凭据后的历史已通过 Git 完整性检查。完整研究快照还在打包，报告目录也已准备好；接下来会核对结果覆盖率，把完整归档随网页入口一起上传，避免只保存摘要。\n校验发现脱敏规则误把一个研究方向名称当成了密钥，我已修正规则，并从原文件重新生成归档；原始文件没有改动。网页入口现在包含 2,840 个报告、代码和协议文件，完整结果备份会另做逐文件哈希验证。\n首次推送被代理返回的 HTTP 400 中断，远端检查确认没有落盘。我已调整 Git 的传输方式后重试；完整备份仍在本地准备，清理尚未开始。\n报告和代码已成功推送到您的私有仓库，网页入口现在可以查看了。完整逐任务结果和历史归档还在准备，所以本地尚未删除；下一步是上传这些大文件，并逐份下载校验。\n完整归档已经开始上传，历史部分保留了 70 个分支引用和 685 次提交，正在做独立恢复检查。最终清理范围按本次 012 项目的已归档研究文件计算；上传耗时还不确定，我会在完整性验证通过后再报告可释放的空间。\n完整性检查通过了：21,043 个受保护结果和复核文件全部与原始哈希一致；70 个分支、685 次提交也已从历史备份独立恢复成功。现在剩下云端上传和回下载核对，这两步完成前本地会继续保留。\n整套归档共约 9.3", "updated_at": "2026-09-14T11:02:26+00:00"}
+diff --git a/artifacts/progress/progress-0f42b1cc.json b/artifacts/progress/progress-0f42b1cc.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..84a6d424ac82a2644be0720743ae3518f66aa92c
+--- /dev/null
++++ b/artifacts/progress/progress-0f42b1cc.json
+@@ -0,0 +1,51 @@
++{
++  "kind": "progress",
++  "schema_version": 1,
++  "artifact_id": "progress-0f42b1cc",
++  "id": "progress-0f42b1cc",
++  "quest_id": "012",
++  "created_at": "2026-09-14T10:08:41+00:00",
++  "updated_at": "2026-09-14T10:08:41+00:00",
++  "source": {
++    "kind": "agent",
++    "role": "pi"
++  },
++  "status": "active",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "82e2346d0672a4e1110ce03c88ca33a01d4b66ad",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "message": "报告和代码已在仓库中；完整备份约 9.32 GB，本地完整性和历史恢复检查均已通过。目前上传带宽是主要瓶颈，预计还需约 45–75 分钟；附件上传后会自动回下载核对。您不需要额外操作，本地研究文件会一直保留到所有检查通过。",
++  "summary": "报告和代码已在仓库中；完整备份约 9.32 GB，本地完整性和历史恢复检查均已通过。目前上传带宽是主要瓶颈，预计还需约 45–75 分钟；附件上传后会自动回下载核对。您不需要额外操作，本地研究文件会一直保留到所有检查通过。",
++  "summary_preview": "报告和代码已在仓库中；完整备份约 9.32 GB，本地完整性和历史恢复检查均已通过。目前上传带宽是主要瓶颈，预计还需约 45–75 分钟；附件上传后会自动回下载核对。您不需要额外操作，本地研究文件会一直保留到所有检查通过。",
++  "interaction_phase": "ack",
++  "importance": "info",
++  "attachments": [],
++  "interaction_id": "progress-0f42b1cc",
++  "expects_reply": false,
++  "reply_mode": "threaded",
++  "options": [],
++  "surface_actions": [],
++  "connector_hints": {},
++  "allow_free_text": true,
++  "reply_schema": {},
++  "reply_to_interaction_id": null,
++  "guidance_vm": {
++    "current_anchor": "progress",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Artifact recorded. Continue from the latest durable quest state.",
++    "why_now": "The new durable state should immediately inform the next small, auditable step.",
++    "complete_when": [
++      "The next substantive result is written durably."
++    ],
++    "alternative_routes": [],
++    "suggested_artifact_calls": [],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "progress",
++    "source_artifact_id": "progress-0f42b1cc",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/artifacts/progress/progress-65311c8c.json b/artifacts/progress/progress-65311c8c.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..988d2a6aac41c9f08cbbdc57ea39b012a9df84c5
+--- /dev/null
++++ b/artifacts/progress/progress-65311c8c.json
+@@ -0,0 +1,51 @@
++{
++  "kind": "progress",
++  "schema_version": 1,
++  "artifact_id": "progress-65311c8c",
++  "id": "progress-65311c8c",
++  "quest_id": "012",
++  "created_at": "2026-09-14T10:14:21+00:00",
++  "updated_at": "2026-09-14T10:14:21+00:00",
++  "source": {
++    "kind": "agent",
++    "role": "pi"
++  },
++  "status": "active",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "82e2346d0672a4e1110ce03c88ca33a01d4b66ad",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "message": "已有第一个归档分卷成功从 GitHub 下载回来，SHA256 与本地完全一致；最先上传的两份大分卷也已传完。其余文件继续上传，下载校验同步进行。原始研究文件仍完整保留，等整套验证通过后再统一清理。",
++  "summary": "已有第一个归档分卷成功从 GitHub 下载回来，SHA256 与本地完全一致；最先上传的两份大分卷也已传完。其余文件继续上传，下载校验同步进行。原始研究文件仍完整保留，等整套验证通过后再统一清理。",
++  "summary_preview": "已有第一个归档分卷成功从 GitHub 下载回来，SHA256 与本地完全一致；最先上传的两份大分卷也已传完。其余文件继续上传，下载校验同步进行。原始研究文件仍完整保留，等整套验证通过后再统一清理。",
++  "interaction_phase": "ack",
++  "importance": "info",
++  "attachments": [],
++  "interaction_id": "progress-65311c8c",
++  "expects_reply": false,
++  "reply_mode": "threaded",
++  "options": [],
++  "surface_actions": [],
++  "connector_hints": {},
++  "allow_free_text": true,
++  "reply_schema": {},
++  "reply_to_interaction_id": null,
++  "guidance_vm": {
++    "current_anchor": "progress",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Artifact recorded. Continue from the latest durable quest state.",
++    "why_now": "The new durable state should immediately inform the next small, auditable step.",
++    "complete_when": [
++      "The next substantive result is written durably."
++    ],
++    "alternative_routes": [],
++    "suggested_artifact_calls": [],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "progress",
++    "source_artifact_id": "progress-65311c8c",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/artifacts/progress/progress-daf42f82.json b/artifacts/progress/progress-daf42f82.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..c1d19116fadbe25157fed7c07ce563db09c4d8dc
+--- /dev/null
++++ b/artifacts/progress/progress-daf42f82.json
+@@ -0,0 +1,51 @@
++{
++  "kind": "progress",
++  "schema_version": 1,
++  "artifact_id": "progress-daf42f82",
++  "id": "progress-daf42f82",
++  "quest_id": "012",
++  "created_at": "2026-09-14T10:24:07+00:00",
++  "updated_at": "2026-09-14T10:24:07+00:00",
++  "source": {
++    "kind": "agent",
++    "role": "pi"
++  },
++  "status": "active",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "82e2346d0672a4e1110ce03c88ca33a01d4b66ad",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "message": "已从 GitHub 取回并核对约 2.36 GB，前三份完成的分卷全部一致。其余文件还在上传，预计仍需约 30–60 分钟；没有发现数据不一致，也不需要您额外操作。本地清理会在整套校验结束后自动执行。",
++  "summary": "已从 GitHub 取回并核对约 2.36 GB，前三份完成的分卷全部一致。其余文件还在上传，预计仍需约 30–60 分钟；没有发现数据不一致，也不需要您额外操作。本地清理会在整套校验结束后自动执行。",
++  "summary_preview": "已从 GitHub 取回并核对约 2.36 GB，前三份完成的分卷全部一致。其余文件还在上传，预计仍需约 30–60 分钟；没有发现数据不一致，也不需要您额外操作。本地清理会在整套校验结束后自动执行。",
++  "interaction_phase": "ack",
++  "importance": "info",
++  "attachments": [],
++  "interaction_id": "progress-daf42f82",
++  "expects_reply": false,
++  "reply_mode": "threaded",
++  "options": [],
++  "surface_actions": [],
++  "connector_hints": {},
++  "allow_free_text": true,
++  "reply_schema": {},
++  "reply_to_interaction_id": null,
++  "guidance_vm": {
++    "current_anchor": "progress",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Artifact recorded. Continue from the latest durable quest state.",
++    "why_now": "The new durable state should immediately inform the next small, auditable step.",
++    "complete_when": [
++      "The next substantive result is written durably."
++    ],
++    "alternative_routes": [],
++    "suggested_artifact_calls": [],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "progress",
++    "source_artifact_id": "progress-daf42f82",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/artifacts/runs/run-f837e93c.json b/artifacts/runs/run-f837e93c.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..149a47677b0eb97b5a4ca0d3a8af950241057f53
+--- /dev/null
++++ b/artifacts/runs/run-f837e93c.json
+@@ -0,0 +1,69 @@
++{
++  "kind": "run",
++  "schema_version": 1,
++  "artifact_id": "run-f837e93c",
++  "id": "run-f837e93c",
++  "quest_id": "012",
++  "created_at": "2026-09-14T11:02:26+00:00",
++  "updated_at": "2026-09-14T11:02:26+00:00",
++  "source": {
++    "kind": "agent"
++  },
++  "status": "completed",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "82e2346d0672a4e1110ce03c88ca33a01d4b66ad",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "run_id": "run-a1dd8edc",
++  "run_kind": "decision",
++  "model": "inherit",
++  "summary": "我会先核查这个 GitHub 仓库的访问权限、本机 Git 授权和待上传文件。上传后会核对远端是否完整、能否取回，再清理对应本地副本；浏览器登录是否能用于推送，也需要实际确认。\n我会按 decision 技能核定归档和清理范围，先保持研究暂停。成功标准是云端文件与本地清单一致，并通过取回校验；如果授权或大文件限制挡住上传，本地文件会保留。\n已确认仓库是私有的，现有 GitHub CLI 登录也有推送权限。接下来要处理的是约 8.5 GiB 的本地 Git 历史和多份工作树；我会保留研究文件及历史的可恢复性，排除登录凭据，并验证上传结果后再清理。\n发现一个需要先处理的问题：旧 Git 历史包含运行器的登录凭据文件，不能原样推送。我会生成排除凭据的研究归档，并保存代码与结果历史的对应关系。Git 连接已通过本机现有代理打通，接下来准备归档和校验清单。\n归档正在准备中，覆盖报告、逐任务结果、代码、配置和各方向记录；旧历史里的凭据及此前已清理的原始数据包会明确列为排除项。备份完成后，会先核对全部受保护结果的哈希，再开始上传。\n去除凭据后的历史已通过 Git 完整性检查。完整研究快照还在打包，报告目录也已准备好；接下来会核对结果覆盖率，把完整归档随网页入口一起上传，避免只保存摘要。\n校验发现脱敏规则误把一个研究方向名称当成了密钥，我已修正规则，并从原文件重新生成归档；原始文件没有改动。网页入口现在包含 2,840 个报告、代码和协议文件，完整结果备份会另做逐文件哈希验证。\n首次推送被代理返回的 HTTP 400 中断，远端检查确认没有落盘。我已调整 Git 的传输方式后重试；完整备份仍在本地准备，清理尚未开始。\n报告和代码已成功推送到您的私有仓库，网页入口现在可以查看了。完整逐任务结果和历史归档还在准备，所以本地尚未删除；下一步是上传这些大文件，并逐份下载校验。\n完整归档已经开始上传，历史部分保留了 70 个分支引用和 685 次提交，正在做独立恢复检查。最终清理范围按本次 012 项目的已归档研究文件计算；上传耗时还不确定，我会在完整性验证通过后再报告可释放的空间。\n完整性检查通过了：21,043 个受保护结果和复核文件全部与原始哈希一致；70 个分支、685 次提交也已从历史备份独立恢复成功。现在剩下云端上传和回下载核对，这两步完成前本地会继续保留。\n整套归档共约 9.3",
++  "history_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/codex_history/run-a1dd8edc",
++  "run_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/runs/run-a1dd8edc",
++  "exit_code": 0,
++  "guidance_vm": {
++    "current_anchor": "experiment",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Main run recorded. Interpret it against baseline before spending more compute.",
++    "why_now": "A run result only changes the quest once its metrics, caveats, and branch value are turned into a durable decision.",
++    "complete_when": [
++      "A report or decision explains the result versus baseline.",
++      "The next route is chosen: analysis, write, branch, or stop."
++    ],
++    "alternative_routes": [
++      {
++        "action": "launch_analysis_campaign",
++        "label": "Launch analysis",
++        "when": "The result is promising but still under-explained.",
++        "tradeoff": "Strengthens understanding, but adds additional runs."
++      },
++      {
++        "action": "write",
++        "label": "Move to writing",
++        "when": "The result is already strong and well-explained enough.",
++        "tradeoff": "Faster paper progress, but less stress-testing."
++      }
++    ],
++    "suggested_artifact_calls": [
++      {
++        "name": "artifact.record(kind='report', ...)",
++        "purpose": "Summarize the main run and metric deltas."
++      },
++      {
++        "name": "artifact.record(kind='decision', ...)",
++        "purpose": "Choose the next route based on the result."
++      },
++      {
++        "name": "artifact.create_analysis_campaign(...)",
++        "purpose": "When extra experiments are needed, create them as one-slice or multi-slice child branches from the current result node."
++      }
++    ],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "run",
++    "source_artifact_id": "run-f837e93c",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/handoffs/github-archive-20260914/TRANSFER_STATE.json b/handoffs/github-archive-20260914/TRANSFER_STATE.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..ea9c835cc5228c4451d0e42c972a06fc5af16b61
+--- /dev/null
++++ b/handoffs/github-archive-20260914/TRANSFER_STATE.json
+@@ -0,0 +1,27 @@
++{
++  "updated_at": "2026-09-14T10:08:52.360424+00:00",
++  "objective": "Complete private GitHub migration, then verified local cleanup; research stays paused",
++  "repository": "SuRicci/my-research-fsl",
++  "release_id": 388290702,
++  "release_tag": "quest-012-archive-20260914",
++  "staging": "/Users/decoqwq/DeepScientist/quests/012/tmp/github-archive-20260914",
++  "workspace": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "sessions": {
++    "first_two_snapshot_parts": "bash-17a874f9",
++    "remaining_parts_and_metadata": "bash-3710cde1",
++    "remote_download_verification": "bash-c395199c",
++    "final_cloud_checks_cleanup_and_receipt": "bash-2d53f583"
++  },
++  "local_validation": "passed: 134694 files/78 links, 21043 protected paths, history 70 refs/685 commits",
++  "expected_archive_parts": 10,
++  "expected_metadata_assets": 4,
++  "archive_bytes": 9316706614,
++  "next": [
++    "Monitor existing upload/download sessions; do not duplicate active uploads",
++    "After remote-verification.json says passed, run workspace handoffs/github-archive-20260914/finalize_remote.py",
++    "After cloud-ready-receipt.json says private, published and clone verified, run cleanup_verified_local.py with workdir quest root",
++    "Publish final cleanup receipt and update remote archive/status.json; report actual free disk and leave quest paused"
++  ],
++  "critical_rule": "No original deletion before all remote downloads/hash verification and clean browser clone succeed. Never raw-push original Git history: it contained auth.json.",
++  "automatic_continuation": "finish_migration.py waits for existing upload+download checks, checks unchanged user authorization, then runs final cloud checks, protected-hash cleanup, and atomic remote completion receipt"
++}
+diff --git a/handoffs/github-archive-20260914/cleanup_verified_local.py b/handoffs/github-archive-20260914/cleanup_verified_local.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..5841217608575529c13ece7b5fcad24b7cd8cb46
+--- /dev/null
++++ b/handoffs/github-archive-20260914/cleanup_verified_local.py
+@@ -0,0 +1,146 @@
++"""Remove verified quest payloads only after full cloud recovery checks."""
++from pathlib import Path
++import os,json,hashlib,shutil,subprocess,datetime
++Q=Path('/Users/decoqwq/DeepScientist/quests/012')
++W=Q/'.ds/worktrees/oslo-gallery-pets-20260913'
++T=Q/'tmp/github-archive-20260914'
++assert Path.cwd()==Q and Q.is_dir() and W.is_dir()
++remote=json.loads((T/'remote-verification.json').read_text())
++cloud=json.loads((T/'cloud-ready-receipt.json').read_text())
++assert remote['status']=='passed' and remote['remote_verified'] and len(remote['verified'])==14
++assert cloud['private'] and not cloud['release_draft'] and cloud['browser_clone_verified']
++info=json.loads((T/'snapshot-manifest.json').read_text());assert info['source_root']==str(Q) and not info['redactions']
++SOURCE={r['path']:r for r in info['files']}
++KEEP_ROOT={'quest.yaml','brief.md','plan.md','status.md','SUMMARY.md','CHECKLIST.md','.gitignore'}
++KEEP_ENV={'.codex','.claude','.opencode','.kimi'}
++matched=[];skipped=[];inode={};protected=[]
++def sha(p):
++ s=p.stat();key=(s.st_dev,s.st_ino,s.st_size,s.st_mtime_ns)
++ if key not in inode:
++  h=hashlib.sha256()
++  with p.open('rb') as f:
++   while b:=f.read(2**20):h.update(b)
++  inode[key]=h.hexdigest()
++ return inode[key]
++def keep(rel):
++ parts=Path(rel).parts
++ if len(parts)==1 and rel in KEEP_ROOT:return True
++ if parts[0] in KEEP_ENV or parts[0]=='memory':return True
++ if parts[0]=='.ds':
++  if len(parts)==2:return True
++  if parts[1] in ['conversations','codex-home']:return True
++  if rel.startswith(str(W.relative_to(Q))+'/'):
++   sub=Path(rel).relative_to(W.relative_to(Q));sp=sub.parts
++   if len(sp)==1 and sub.name in ['PLAN.md','CHECKLIST.md','plan.md','status.md','SUMMARY.md','brief.md','.gitignore']:return True
++   if sp[0] in KEEP_ENV or sp[0]=='memory':return True
++ return False
++# New scientific files created after snapshot must be archived before this cleanup can run.
++science_roots=[]
++for base in [Q,*[x for x in (Q/'.ds/worktrees').iterdir() if x.is_dir()]]:
++ for group in ['experiments','baselines','paper','literature']:
++  r=base/group
++  if r.is_dir():science_roots.append(r)
++new_science=[]
++for base in science_roots:
++ for root,dirs,files in os.walk(base):
++  dirs[:]=[n for n in dirs if n not in ['.git','__pycache__','node_modules','codex-home']]
++  for n in files:
++   if n in ['.DS_Store','.git'] or n.endswith('.lock'):continue
++   f=Path(root)/n
++   if str(f.relative_to(Q)) not in SOURCE:new_science.append(str(f.relative_to(Q)))
++assert not new_science,('Scientific files added after snapshot; archive delta first',new_science)
++for n in ['protected_results_before.json','baseline_result_hashes.json']:
++ rows=json.loads((Q/'handoffs/pause-20260914'/n).read_text())
++ for r in rows:
++  p=Path(r['path']);assert p.is_relative_to(Q) and p.is_file(),str(p)
++  entry=SOURCE[str(p.relative_to(Q))];assert entry['archive_sha256']==r['sha256'] and sha(p)==r['sha256'],str(p)
++ protected+=rows
++for r in info['files']:
++ rel=r['path'];p=Q/rel
++ assert p.is_relative_to(Q) and '..' not in Path(rel).parts
++ if keep(rel):continue
++ if r['type']=='symlink':
++  if p.is_symlink() and os.readlink(p)==r['target']:matched.append(p)
++  elif p.exists() or p.is_symlink():skipped.append(rel)
++ elif p.is_file() and not p.is_symlink():
++  if sha(p)==r['source_sha256']:matched.append(p)
++  else:skipped.append(rel)
++ elif p.exists() or p.is_symlink():skipped.append(rel)
++# Research results may not have changed while the experiment pause is in force.
++critical=[p for p in skipped if any(x in Path(p).parts for x in ['experiments','baselines','paper','literature'])]
++assert not critical,critical
++name=subprocess.run(['git','-C',str(Q),'config','--get','user.name'],capture_output=True,text=True,check=True).stdout.strip()
++email=subprocess.run(['git','-C',str(Q),'config','--get','user.email'],capture_output=True,text=True,check=True).stdout.strip()
++original_refs=subprocess.run(['git','-C',str(Q),'for-each-ref','--format=%(refname) %(objectname)'],capture_output=True,text=True,check=True).stdout
++assert original_refs==(T/'original-refs.txt').read_text(),'Original refs changed after archive export'
++started=datetime.datetime.now(datetime.timezone.utc).isoformat();free_before=shutil.disk_usage(Q).free
++R=Q/'handoffs/cloud-archive-20260914';R.mkdir(parents=True,exist_ok=True)
++shutil.copyfile(T/'remote-verification.json',R/'remote-verification.json')
++shutil.copyfile(T/'cloud-ready-receipt.json',R/'cloud-ready-receipt.json')
++for p in matched:p.unlink()
++# Source-code snapshots preserve imported code; excluded vendor Git caches are disposable.
++removed_vendor_git=[]
++for base in science_roots:
++ for root,dirs,files in os.walk(base):
++  if '.git' in dirs:
++   cache=Path(root)/'.git';shutil.rmtree(cache);dirs.remove('.git');removed_vendor_git.append(str(cache.relative_to(Q)))
++# Remove empty directories without traversing excluded environment trees or staging.
++for root,dirs,files in os.walk(Q,topdown=False):
++ p=Path(root)
++ if p==Q or p==W or p.is_relative_to(T) or '.git' in p.parts or 'codex-home' in p.parts:continue
++ try:p.rmdir()
++ except OSError:pass
++# Old inactive workspaces can contain excluded, disposable runner environments.
++removed_inactive=[]
++for p in (Q/'.ds/worktrees').iterdir():
++ if not p.is_dir() or p==W:continue
++ remaining=[]
++ for root,dirs,files in os.walk(p):
++  dirs[:]=[n for n in dirs if n not in ['codex-home','__pycache__','node_modules']]
++  for n in files:
++   f=Path(root)/n
++   if n not in ['.git','.DS_Store'] and not n.endswith('.lock'):remaining.append(str(f.relative_to(p)))
++ if not remaining:
++  shutil.rmtree(p);removed_inactive.append(p.name)
++# All 70 refs are recoverable from the independently verified, downloaded history archive.
++# Replace the bulky old repository with a parentless, tiny local cloud pointer.
++shutil.rmtree(Q/'.git')
++def git(*args):subprocess.run(['git','-C',str(Q),*args],check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
++git('init','-b','main');git('config','user.name',name);git('config','user.email',email)
++git('remote','add','origin','https://github.com/SuRicci/my-research-fsl.git')
++pointer=f'''# Quest 012: research archived to private GitHub
++Research remains paused. Local result files and original Git history have been removed only after full remote download verification.
++Repository: https://github.com/SuRicci/my-research-fsl
++Complete archive: https://github.com/SuRicci/my-research-fsl/releases/tag/quest-012-archive-20260914
++Restore instructions: https://github.com/SuRicci/my-research-fsl/blob/main/archive/RESTORE.md
++Verified remote main at archive completion: {cloud['main_commit']}
++All 10 archive parts and 4 recovery metadata files were downloaded and SHA256-verified. 21043 protected evidence paths were byte-identical; 70 refs / 685 commits were independently restored. Original-to-sanitized commit maps are in the cloud repository.
++The local Git repository is now only this retrieval pointer. It is not the original research history. To resume research, restore the cloud snapshot/history first. Runner state and login environments retained for conversation are not research backups.
++Existing source directories outside Quest 012 were outside this cleanup.
++'''
++(Q/'CLOUD_ARCHIVE.md').write_text(pointer)
++ignore='*\n!.gitignore\n!CLOUD_ARCHIVE.md\n';(Q/'.gitignore').write_text(ignore)
++git('add','-f','.gitignore','CLOUD_ARCHIVE.md');git('commit','-m','archive: retain verified cloud retrieval pointer')
++bootstrap=Q/'tmp/cloud-pointer-bootstrap'
++git('worktree','add','--no-checkout','-b','run/dino-base-control-20260914',str(bootstrap),'main')
++W.mkdir(parents=True,exist_ok=True);os.replace(bootstrap/'.git',W/'.git');bootstrap.rmdir();git('worktree','repair',str(W))
++(W/'CLOUD_ARCHIVE.md').write_text(pointer);(W/'.gitignore').write_text(ignore)
++subprocess.run(['git','-C',str(W),'reset','--mixed','HEAD'],check=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
++assert subprocess.run(['git','-C',str(W),'rev-parse','HEAD'],capture_output=True,check=True).stdout==subprocess.run(['git','-C',str(Q),'rev-parse','HEAD'],capture_output=True,check=True).stdout
++(W/'PLAN.md').write_text('# Archived and paused\n'+pointer)
++(W/'CHECKLIST.md').write_text('# Archive completed\n\n## In Progress\n- None; research paused.\n\n## Completed\n- Verified private GitHub upload, all remote archive downloads, full snapshot hashes and independent Git history recovery.\n- Removed verified local research payloads and replaced old local Git history with a small cloud pointer.\n\n## Next\n- Fresh user instruction; restore from cloud before any research execution.\n')
++for root in [Q,W]:
++ (root/'plan.md').write_text('# Research map: cloud archive and pause\n'+pointer)
++ (root/'status.md').write_text('# Paused after verified private cloud migration\n'+pointer)
++ (root/'SUMMARY.md').write_text('# Quest 012 cloud archive\n'+pointer)
++ (root/'handoffs').mkdir(exist_ok=True)
++ (root/'handoffs/CURRENT_CHECKPOINT.md').write_text(pointer)
++# Retain receipts, then remove only generated upload/download payloads and tools.
++shutil.rmtree(T)
++p=W/'handoffs/github-archive-20260914'
++if p.exists():shutil.rmtree(p)
++p=Q/'tmp/archive-tools'
++if p.exists():shutil.rmtree(p)
++subprocess.run(['sync'],check=True)
++result={'status':'completed','started_at':started,'completed_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'remote_repository':'SuRicci/my-research-fsl','cloud_main_commit':cloud['main_commit'],'protected_files_rechecked':len(protected),'verified_original_paths_deleted':len(matched),'post_snapshot_changed_paths_preserved':skipped,'inactive_environment_workspaces_removed':removed_inactive,'original_git_history_removed':True,'excluded_vendor_git_caches_removed':removed_vendor_git,'local_git_now':'small independent cloud retrieval pointer','generated_upload_parts_removed':True,'free_before_bytes':free_before,'free_after_bytes':shutil.disk_usage(Q).free,'free_delta_note':'Includes removal of generated temporary upload archives; not solely original research disk usage. APFS and unrelated system changes can affect volume free space.','preserved':'Small runtime/control/retrieval state, active login environments and external original research sources'}
++(R/'local-cleanup-receipt.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False),flush=True)
+diff --git a/handoffs/github-archive-20260914/finalize_remote.py b/handoffs/github-archive-20260914/finalize_remote.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..534d5728e681836c44d56071183d7453115baa1b
+--- /dev/null
++++ b/handoffs/github-archive-20260914/finalize_remote.py
+@@ -0,0 +1,31 @@
++from pathlib import Path
++import subprocess,json,os,shutil,datetime
++Q=Path('/Users/decoqwq/DeepScientist/quests/012');W=Path.cwd();T=Q/'tmp/github-archive-20260914';R=T/'upload';A=R/'archive'
++E=dict(os.environ,HTTPS_PROXY='http://127.0.0.1:7890',GH_NO_UPDATE_NOTIFIER='1',GIT_TERMINAL_PROMPT='0')
++def run(cmd):
++ p=subprocess.run(cmd,env=E,capture_output=True,text=True)
++ if p.returncode:raise RuntimeError(p.stderr)
++ return p.stdout
++v=json.loads((T/'remote-verification.json').read_text());assert v['status']=='passed' and len(v['verified'])==14
++repo=json.loads(run(['gh','api','repos/SuRicci/my-research-fsl']));assert repo['private']
++shutil.copyfile(T/'remote-verification.json',A/'remote-verification.json')
++helpers=A/'execution_helpers';helpers.mkdir(exist_ok=True)
++for p in (W/'handoffs/github-archive-20260914').iterdir():
++ if p.is_file() and p.suffix in ['.py','.json']:shutil.copyfile(p,helpers/p.name)
++state={'state':'remote_verified_cleanup_pending','local_deletion_allowed':True,'all_archive_parts_download_verified':True,'protected_files':21043,'snapshot_files':134694,'snapshot_symlinks':78,'history_refs':70,'history_commits':685,'archive_parts':10,'recovery_metadata_assets':4,'total_archive_bytes':9316706614,'private_repository':True}
++(A/'status.json').write_text(json.dumps(state,indent=2)+'\n')
++p=R/'README.md';s=p.read_text();s=s.replace('**当前状态：完整归档正在上传准备中，本地尚未删除。最终状态以 archive/status.json 为准。**','**当前状态：全部归档已上传并逐份回下载校验通过；本地清理待执行。最终状态以 archive/status.json 和 archive/local-cleanup-receipt.json 为准。**');p.write_text(s)
++for cmd in [['git','-C',str(R),'add','README.md','archive'],['git','-C',str(R),'commit','-m','Verify complete private research archive and recovery'],['git','-C',str(R),'-c','http.version=HTTP/1.1','-c','http.postBuffer=67108864','push','origin','main']]:print(run(cmd),flush=True)
++notes='''完整研究归档已验证。10 个分卷共 9,316,706,614 字节，另附 4 个恢复文件；每个远端附件均已实际下载并核对 SHA256。快照包含 134,694 个文件、78 个符号链接；21,043 个受保护结果路径字节一致。去凭据 Git 历史保留 70 个分支引用、685 次提交，独立恢复和 Git 完整性检查通过。
++
++恢复方法请阅读仓库 archive/RESTORE.md。登录凭据和运行器环境不属于此研究备份；旧历史中的 r2-domains 原始数据与下载包按此前清理要求排除。此为私有暂停归档，不是投稿就绪声明。
++'''
++(T/'release-notes.md').write_text(notes)
++print(run(['gh','release','edit','quest-012-archive-20260914','--repo','SuRicci/my-research-fsl','--draft=false','--latest=false','--notes-file',str(T/'release-notes.md')]),flush=True)
++release=json.loads(run(['gh','api','repos/SuRicci/my-research-fsl/releases/388290702']));assert not release['draft'] and release['tag_name']=='quest-012-archive-20260914'
++recovery=T/'browser-recovery'
++run(['git','-c','http.proxy=http://127.0.0.1:7890','-c','credential.helper=','-c','credential.helper=!gh auth git-credential','clone','--depth','1','--no-checkout','https://github.com/SuRicci/my-research-fsl.git',str(recovery)])
++head=run(['git','-C',str(recovery),'rev-parse','HEAD']).strip();expected=run(['git','-C',str(R),'rev-parse','HEAD']).strip();assert head==expected
++run(['git','-C',str(recovery),'fsck','--full','--no-dangling']);shutil.rmtree(recovery)
++result={'status':'ready_for_local_cleanup','private':True,'release_draft':False,'release_id':release['id'],'release_tag':release['tag_name'],'release_url':release['html_url'],'main_commit':head,'browser_clone_verified':True,'remote_archive_download_verified':True,'verified_at':datetime.datetime.now(datetime.timezone.utc).isoformat()}
++(T/'cloud-ready-receipt.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True)
+diff --git a/handoffs/github-archive-20260914/finish_migration.py b/handoffs/github-archive-20260914/finish_migration.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..e48f6d53bcb57604eee8195ff83577d2b346e75e
+--- /dev/null
++++ b/handoffs/github-archive-20260914/finish_migration.py
+@@ -0,0 +1,40 @@
++"""Continue the authorized archive lifecycle after existing transfers finish."""
++from pathlib import Path
++import json,os,time,subprocess,hashlib,tempfile,base64,datetime
++Q=Path('/Users/decoqwq/DeepScientist/quests/012');W=Q/'.ds/worktrees/oslo-gallery-pets-20260913';T=Q/'tmp/github-archive-20260914';R=Q/'handoffs/cloud-archive-20260914'
++E=dict(os.environ,HTTPS_PROXY='http://127.0.0.1:7890',GH_NO_UPDATE_NOTIFIER='1',GIT_TERMINAL_PROMPT='0')
++requirement=Q/'memory/knowledge/active-user-requirements.md';authorized_hash=hashlib.sha256(requirement.read_bytes()).hexdigest()
++(T/'authorization.json').write_text(json.dumps({'requirements_sha256':authorized_hash,'scope':'Current explicit private GitHub migration and cleanup after verification','at':datetime.datetime.now(datetime.timezone.utc).isoformat()},indent=2)+'\n')
++def api(path,body=None,method=None):
++ cmd=['gh','api','repos/SuRicci/my-research-fsl/'+path]
++ if method:cmd+=['-X',method]
++ with tempfile.TemporaryDirectory(prefix='cloud-receipt-',dir=Q/'tmp') as tmp:
++  if body is not None:
++   p=Path(tmp)/'body.json';p.write_text(json.dumps(body,ensure_ascii=False));cmd+=['--input',str(p)]
++  r=subprocess.run(cmd,env=E,capture_output=True,text=True)
++  if r.returncode:raise RuntimeError(r.stderr)
++  return json.loads(r.stdout)
++print('WAITING_FOR_EXISTING_UPLOAD_AND_DOWNLOAD_VERIFICATION',flush=True)
++while True:
++ if (T/'remaining-upload-receipt.json').exists():
++  x=json.loads((T/'remaining-upload-receipt.json').read_text())
++  if x['status']=='failed':raise RuntimeError('Existing uploader failed; keep originals and inspect receipt')
++ if (T/'remote-verification.json').exists() and (T/'remaining-upload-receipt.json').exists():
++  v=json.loads((T/'remote-verification.json').read_text())
++  if v['status']=='passed':break
++ time.sleep(45)
++assert hashlib.sha256(requirement.read_bytes()).hexdigest()==authorized_hash,'New user instruction arrived; inspect it before cleanup'
++print('REMOTE_DOWNLOADS_VERIFIED_STARTING_FINAL_CLOUD_CHECKS',flush=True)
++subprocess.run(['python3','-u',str(W/'handoffs/github-archive-20260914/finalize_remote.py')],cwd=W,env=E,check=True)
++assert hashlib.sha256(requirement.read_bytes()).hexdigest()==authorized_hash,'New user instruction arrived; inspect it before cleanup'
++print('CLOUD_READY_STARTING_HASH_GUARDED_LOCAL_CLEANUP',flush=True)
++subprocess.run(['python3','-u',str(W/'handoffs/github-archive-20260914/cleanup_verified_local.py')],cwd=Q,env=E,check=True)
++cleanup=json.loads((R/'local-cleanup-receipt.json').read_text());assert cleanup['status']=='completed'
++# Record the completed local cleanup atomically without overwriting unrelated remote changes.
++head=api('git/ref/heads/main')['object']['sha'];tree=api('git/commits/'+head)['tree']['sha']
++readme=base64.b64decode(api('contents/README.md')['content']).decode();readme=readme.replace('本地清理待执行。','本地已完成对应清理。')
++state={'state':'archived_local_payloads_removed','private_repository':True,'all_archive_parts_download_verified':True,'local_cleanup_completed':True,'protected_files':cleanup['protected_files_rechecked'],'snapshot_files':134694,'snapshot_symlinks':78,'history_refs':70,'history_commits':685,'archive_parts':10,'recovery_metadata_assets':4,'total_archive_bytes':9316706614,'free_disk_bytes_after_cleanup':cleanup['free_after_bytes'],'local_retention':'small runtime/control/login state and cloud retrieval pointer; external original research sources excluded from cleanup','research_status':'paused'}
++entries=[{'path':path,'mode':'100644','type':'blob','content':content} for path,content in [('README.md',readme),('archive/status.json',json.dumps(state,ensure_ascii=False,indent=2)+'\n'),('archive/local-cleanup-receipt.json',json.dumps(cleanup,ensure_ascii=False,indent=2)+'\n')]]
++newtree=api('git/trees',{'base_tree':tree,'tree':entries},'POST')['sha'];commit=api('git/commits',{'message':'Record completed verified cloud migration and local cleanup','tree':newtree,'parents':[head]},'POST')['sha'];api('git/refs/heads/main',{'sha':commit,'force':False},'PATCH');assert api('git/ref/heads/main')['object']['sha']==commit
++result={'status':'completed','final_remote_main':commit,'repository':'https://github.com/SuRicci/my-research-fsl','archive_url':'https://github.com/SuRicci/my-research-fsl/releases/tag/quest-012-archive-20260914','free_gib':cleanup['free_after_bytes']/2**30,'at':datetime.datetime.now(datetime.timezone.utc).isoformat()}
++(R/'completion.json').write_text(json.dumps(result,indent=2)+'\n');print('MIGRATION_COMPLETED '+json.dumps(result),flush=True)
+diff --git a/handoffs/github-archive-20260914/transfer_remaining.py b/handoffs/github-archive-20260914/transfer_remaining.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..9f1b6c0f2872f73fe38a98cee490838c12b16069
+--- /dev/null
++++ b/handoffs/github-archive-20260914/transfer_remaining.py
+@@ -0,0 +1,20 @@
++from pathlib import Path
++import subprocess,json,os,datetime,gzip,shutil
++Q=Path('/Users/decoqwq/DeepScientist/quests/012');T=Q/'tmp/github-archive-20260914';R=T/'upload';A=R/'archive';E=dict(os.environ,HTTPS_PROXY='http://127.0.0.1:7890',GH_NO_UPDATE_NOTIFIER='1',GIT_TERMINAL_PROMPT='0')
++assert json.loads((T/'verification.json').read_text())['status']=='passed'
++shutil.copyfile(T/'verification.json',A/'local-verification.json')
++p=A/'snapshot-manifest.json'
++if p.exists():
++ with p.open('rb') as src,gzip.open(A/'snapshot-manifest.json.gz','wb',compresslevel=5) as dst:shutil.copyfileobj(src,dst)
++ p.unlink()
++status={'state':'uploading_full_archive','local_deletion_allowed':False,'local_archive_verification':'passed','protected_files':21043,'snapshot_members':134772,'history_refs':70,'history_commits':685,'asset_count':10,'total_bytes':9316706614}
++(A/'status.json').write_text(json.dumps(status,indent=2)+'\n')
++for cmd in [['git','-C',str(R),'add','archive'],['git','-C',str(R),'commit','-m','Add complete archive manifests, checksums and recovery instructions'],['git','-C',str(R),'-c','http.version=HTTP/1.1','-c','http.postBuffer=67108864','push','origin','main']]:
++ r=subprocess.run(cmd,env=E,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True);print(r.stdout,flush=True)
++ if r.returncode:print(r.stderr,flush=True);raise SystemExit(r.returncode)
++assets=json.loads((A/'assets.json').read_text())['assets'];skip={'quest-012-snapshot.tar.gz.part001','quest-012-snapshot.tar.gz.part002'}
++paths=[str(T/r['file']) for r in assets if r['file'] not in skip]
++paths += [str(A/n) for n in ['assets.json','SHA256SUMS','RESTORE.md','verify_archive.py']]
++print(json.dumps({'transfer_started_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'remaining_archive_parts':len(paths)-4,'metadata_files':4}),flush=True)
++r=subprocess.run(['gh','release','upload','quest-012-archive-20260914',*paths,'--repo','SuRicci/my-research-fsl'],env=E,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
++receipt={'status':'completed' if r.returncode==0 else 'failed','exit_code':r.returncode,'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'stdout':r.stdout,'stderr':r.stderr};(T/'remaining-upload-receipt.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps(receipt),flush=True);raise SystemExit(r.returncode)
+diff --git a/handoffs/github-archive-20260914/verify_remote.py b/handoffs/github-archive-20260914/verify_remote.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..1c6c82ba028a04e61acc25c6e04e75c85af9e3d5
+--- /dev/null
++++ b/handoffs/github-archive-20260914/verify_remote.py
+@@ -0,0 +1,44 @@
++from pathlib import Path
++import subprocess,json,os,datetime,time,hashlib,shutil
++Q=Path('/Users/decoqwq/DeepScientist/quests/012');T=Q/'tmp/github-archive-20260914';A=T/'upload/archive';D=T/'download-check';D.mkdir(exist_ok=True)
++E=dict(os.environ,HTTPS_PROXY='http://127.0.0.1:7890',GH_NO_UPDATE_NOTIFIER='1',GIT_TERMINAL_PROMPT='0')
++def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
++def sha(p):
++ h=hashlib.sha256()
++ with p.open('rb') as f:
++  while b:=f.read(2**20):h.update(b)
++ return h.hexdigest()
++def run(cmd):
++ r=subprocess.run(cmd,env=E,capture_output=True,text=True)
++ if r.returncode:raise RuntimeError(r.stderr)
++ return r.stdout
++expected=json.loads((A/'assets.json').read_text())['assets']
++expected += [{'file':n,'bytes':(A/n).stat().st_size,'sha256':sha(A/n),'role':'metadata'} for n in ['assets.json','SHA256SUMS','RESTORE.md','verify_archive.py']]
++receipt=T/'remote-verification-progress.json'
++verified=json.loads(receipt.read_text()).get('verified',{}) if receipt.exists() else {}
++last=None
++while len(verified)<len(expected):
++ rows=json.loads(run(['gh','api','repos/SuRicci/my-research-fsl/releases/388290702/assets','--paginate']));remote={x['name']:x for x in rows};(T/'remote-assets-latest.json').write_text(json.dumps(rows,indent=2)+'\n')
++ available=sum(r['file'] in remote and remote[r['file']]['state']=='uploaded' for r in expected)
++ state=(available,len(verified))
++ if state!=last:print(json.dumps({'at':now(),'remote_ready':available,'expected':len(expected),'download_verified':len(verified)}),flush=True);last=state
++ for row in expected:
++  name=row['file'];item=remote.get(name)
++  if name in verified:
++   assert item and item['id']==verified[name]['remote_asset_id'] and item['size']==row['bytes'],name
++   continue
++  if not item or item['state']!='uploaded':continue
++  assert item['size']==row['bytes'],name
++  if item.get('digest'):assert item['digest']=='sha256:'+row['sha256'],name
++  target=D/name
++  if target.exists():target.unlink()
++  print(json.dumps({'download_started':name,'at':now()}),flush=True)
++  run(['gh','release','download','quest-012-archive-20260914','--repo','SuRicci/my-research-fsl','--pattern',name,'--dir',str(D)])
++  actual=sha(target);assert target.stat().st_size==row['bytes'] and actual==row['sha256'],name
++  verified[name]={'remote_asset_id':item['id'],'bytes':row['bytes'],'sha256':actual,'download_verified_at':now(),'server_digest':item.get('digest'),'role':row['role']}
++  receipt.write_text(json.dumps({'status':'in_progress','verified':verified,'expected_count':len(expected)},indent=2)+'\n');target.unlink()
++  print(json.dumps({'download_verified':name,'done':len(verified),'expected':len(expected),'at':now()}),flush=True)
++ if len(verified)<len(expected):time.sleep(120)
++local=json.loads((T/'verification.json').read_text());history=json.loads((T/'history-audit.json').read_text());assert local['status']=='passed' and history['bundle_fsck']=='passed'
++result={'status':'passed','remote_verified':True,'all_parts_downloaded_and_sha256_identical':True,'part_count':10,'metadata_count':4,'verified':verified,'verified_at':now(),'local_snapshot_structural_verification':local,'history_independent_restore':history,'verification_method':'Every remote part downloaded, hashed and compared to structurally verified local parts; local full snapshot stream and independent history bundle restore passed. Temporary downloads deleted after checking to maintain disk headroom.'}
++(T/'remote-verification.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k not in ['verified','history_independent_restore']}),flush=True)

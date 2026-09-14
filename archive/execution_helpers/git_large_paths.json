@@ -1,0 +1,7 @@
+[
+  "e02c80e2d56dd054787a012c96e545d65d55f92b baselines/local/r2-domains/data/cifar100/cifar-100-python/train",
+  "26f82776232b49022e4f7f73881e8f12d7a32be3 baselines/local/r2-domains/downloads/102flowers.tgz",
+  "978cff0662e541e429f85f747900ba3bcc50535a baselines/local/r2-domains/downloads/CUB_200_2011.tgz",
+  "3e945ecf7ca718a81bb8595a4a31af40fc118ac8 baselines/local/r2-domains/downloads/cifar-100-python.tar.gz",
+  "0b5ee309d875f336bd45e3775ec62bc4480e851d baselines/local/r2-domains/downloads/CUB_200_2011.tgz.partial"
+]

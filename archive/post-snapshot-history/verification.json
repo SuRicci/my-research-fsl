@@ -1,0 +1,175 @@
+{
+  "status": "passed",
+  "scope": "Five archive-administration commits created after the frozen scientific history; no experiment, baseline, paper or literature files changed",
+  "commit_count": 5,
+  "original_base": "97afd4ee654866dacf159bf3a75bc9a88b43282a",
+  "original_head": "d361970f5dab76c8f4b696747d9ec8e291ee8b38",
+  "sanitized_base": "035cb6b9815f6aba04e6e483c410543be987ae2f",
+  "affected_branch": "run/dino-base-control-20260914",
+  "source_commits": [
+    "4c3b379401d3c91997a544ba938a74a752686a12",
+    "82e2346d0672a4e1110ce03c88ca33a01d4b66ad",
+    "950660eb0b6ae289162f49dd8027b6cc7f2357e9",
+    "6a7d43daeceae89360418e396ab6064695d0d4c5",
+    "d361970f5dab76c8f4b696747d9ec8e291ee8b38"
+  ],
+  "independent_patch_application": "passed",
+  "validation_note": "All changed file bytes compared to originals; connectivity checked. Unchanged base objects retain the prior full-fsck audit; full base scan interrupted at 60 seconds and was not repeated.",
+  "reconstructed_head_example": "8225c118d2553c2709eb56268001a8ae187c94fe",
+  "reconstructed_tree": "a25e32b6b168972fadfc1dd475304dd138c5a8c3",
+  "changed_files_sha256": [
+    {
+      "path": "CHECKLIST.md",
+      "sha256": "82fa54dc8cff8b1368bac5e50eeb20bb540aa0009c9fbca05ace1d807bf19fa0"
+    },
+    {
+      "path": "artifacts/_index.jsonl",
+      "sha256": "1c5034a3a824d575b5d686cd264db33c0fa212768eb9ad9adfd4833cf7bd9563"
+    },
+    {
+      "path": "artifacts/milestones/milestone-098f6f8b.json",
+      "sha256": "1585e2c0fb9d5cd9955ceaec2d1936d05d408798d754174b43e34ca29cf05afc"
+    },
+    {
+      "path": "artifacts/milestones/milestone-2eaccf8a.json",
+      "sha256": "fcaa19d74079b7647d58d62b1bc08d1e6b37c13b04f2992b85d80f2ad7f872f4"
+    },
+    {
+      "path": "artifacts/milestones/milestone-e86f097d.json",
+      "sha256": "10e164d5bcae1a71b648525905f2cd2c0cfd627f5014a79ba2dec262a258be19"
+    },
+    {
+      "path": "artifacts/progress/progress-03aff63a.json",
+      "sha256": "acd9165bbe27a7a0645366c153cd7003e6dab9ca1966fcfac8c2967300fe131b"
+    },
+    {
+      "path": "artifacts/progress/progress-06b1bece.json",
+      "sha256": "1d1971a7797065dc4ced92551cfb8399366558c305c8b360e73f8b84cc7a7b23"
+    },
+    {
+      "path": "artifacts/progress/progress-0f42b1cc.json",
+      "sha256": "c62bcc7ef7e453faa41832c4db660f4ed563a6657f0f77bd1ffda86571cf6b91"
+    },
+    {
+      "path": "artifacts/progress/progress-65311c8c.json",
+      "sha256": "18c7a5cb766c1d736f1f4a473a65edc8f98481ad11b5e14eaf3ee3488b3ee711"
+    },
+    {
+      "path": "artifacts/progress/progress-7d6139e4.json",
+      "sha256": "b1e51c88add9e1b2bee0dc94235a85221c274642f86aac80d7811592e338d3f0"
+    },
+    {
+      "path": "artifacts/progress/progress-daf42f82.json",
+      "sha256": "b5d8e9c3b24b3a0985aaa7558be750b00fc5efa61618e02164abcb1e22ea757a"
+    },
+    {
+      "path": "artifacts/progress/progress-db7ff8c5.json",
+      "sha256": "560ea9b1a55409473507e4fbf86b425501b3620b786779b39822d88274549ecc"
+    },
+    {
+      "path": "artifacts/progress/progress-eacbb068.json",
+      "sha256": "6e004b95825bb55084adbe6e6961dabb83a64e0216341af34cc424ca538c12e6"
+    },
+    {
+      "path": "artifacts/runs/run-8f2cb73c.json",
+      "sha256": "7de8c1d144b16452c672ee901911abbc8ad2a1072a5940d139379c19005d5a1a"
+    },
+    {
+      "path": "artifacts/runs/run-f837e93c.json",
+      "sha256": "ad69f109a3fd9b942b530eb181a82c8def413ea1433c1ac24f6efb68857ac5d8"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/TRANSFER_STATE.json",
+      "sha256": "050cafd6686d22f515304003c502061a67ae6c6bc72327373855c24210a7a454"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/audit_history.py",
+      "sha256": "9b1fe1e929be485623526f62dfacc1e4c1041541605f69e8b497386fc3734c88"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/build_snapshot.py",
+      "sha256": "1c390ea83768c60f187c65fa4fdcaee9632e723af40c498afe44f3f6401abe99"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/cleanup_verified_local.py",
+      "sha256": "8047384f214e2005aec06a2baa2d5aaa4611ec1e49bb05600f4340f4b56e4240"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/export-repair.json",
+      "sha256": "1480c5fa20e4261aa6a373f81c50ef42c31e32602ddf6594663184feaf585c69"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/finalize_payloads.py",
+      "sha256": "254bedf7d689e82c4a0ab654e92ff369c1cc9c24ec9552ea1f37f72c3c734671"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/finalize_remote.py",
+      "sha256": "6fa44eac865b3ba96a6c8b44137adb9504fc23ddb1d2cc1685046f3c4e559295"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/finish_migration.py",
+      "sha256": "5c1fe0a275dd8b07dab04678bd9d0146c8a14de77505f6dcb7cd29570af561e7"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/git_large_paths.json",
+      "sha256": "8e078072edebc26aa56ecfa497a52e077ffdbc70d22b7682815fc8596925f72d"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/prepare_browser_repo.py",
+      "sha256": "c9f7fb4ee4d30976d52594e89afd8e256b7fa3cc2957db548358c1356d6af2ae"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/previous-CHECKLIST.md",
+      "sha256": "5c51c6f09dcf17ba96e91a43a77f4cba656978f2d1811b927ac5d4c675f1e340"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/previous-PLAN.md",
+      "sha256": "fb38609b3d6577cb883c00ada1a1c4ff4eb76f984b3a83e3a34bffcbe038065d"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/resume_upload.py",
+      "sha256": "51280e96582eacd14d61a15ef035f0d94c06ca71301e47bf14978b676c0a0035"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/transfer_remaining.py",
+      "sha256": "ac27b0a1501f698dcdd2d55e6df46bfab5d1d2f820759e6d326d517771e2166b"
+    },
+    {
+      "path": "handoffs/github-archive-20260914/verify_remote.py",
+      "sha256": "a91fda3ded6981321a16b52f1b7bc07c9aa6a236cf658ec92264d74acd4d92bd"
+    },
+    {
+      "path": "plan.md",
+      "sha256": "fe6eb5b9776373f306f36acf52ea72040eeaebb369a66cf3d71ed1f458d61d44"
+    }
+  ],
+  "credential_pattern_hits": 0,
+  "patches": [
+    {
+      "file": "0001-artifact-milestone-milestone-098f6f8b.patch",
+      "bytes": 36851,
+      "sha256": "e090e017afbafe8c71972bcdf06daca4c63bc681e707de3f2d747fbb52f116c4"
+    },
+    {
+      "file": "0002-artifact-milestone-milestone-e86f097d.patch",
+      "bytes": 10931,
+      "sha256": "39e928e8430485e2dbcc94686faf1fc068591442d22d6bf21f31bd0242f09359"
+    },
+    {
+      "file": "0003-run-decision-run-a1dd8edc.patch",
+      "bytes": 53104,
+      "sha256": "6c6f9cb85d900a1be5b25ce195e6f89bec040d8706317888b4a03a1305ec4daa"
+    },
+    {
+      "file": "0004-run-idea-run-c0a9610d.patch",
+      "bytes": 7963,
+      "sha256": "85810e5e29e685340189312074bdce430a824581a5c15d3e09f0c549d625be6c"
+    },
+    {
+      "file": "0005-artifact-milestone-milestone-2eaccf8a.patch",
+      "bytes": 26911,
+      "sha256": "e68716f828b7a84c62afabd68abf50a4a6b2b516242a3e2f93f957244d6c3926"
+    }
+  ],
+  "verified_at": "2026-09-14T11:57:18.921236+00:00"
+}

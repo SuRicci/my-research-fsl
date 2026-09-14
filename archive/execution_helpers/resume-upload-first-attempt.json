@@ -1,0 +1,34 @@
+{
+  "status": "failed",
+  "started_at": "2026-09-14T11:11:18.188143+00:00",
+  "already_complete": [
+    "quest-012-snapshot.tar.gz.part001",
+    "quest-012-snapshot.tar.gz.part002",
+    "quest-012-snapshot.tar.gz.part005"
+  ],
+  "uploaded": [
+    {
+      "file": "assets.json",
+      "id": 563227667,
+      "at": "2026-09-14T11:11:24.208607+00:00"
+    },
+    {
+      "file": "SHA256SUMS",
+      "id": 563227822,
+      "at": "2026-09-14T11:11:29.693125+00:00"
+    },
+    {
+      "file": "RESTORE.md",
+      "id": 563227992,
+      "at": "2026-09-14T11:11:35.134883+00:00"
+    },
+    {
+      "file": "verify_archive.py",
+      "id": 563228151,
+      "at": "2026-09-14T11:11:42.150876+00:00"
+    }
+  ],
+  "failures": [],
+  "concurrency": 2,
+  "finished_at": "2026-09-14T11:11:47.013087+00:00"
+}

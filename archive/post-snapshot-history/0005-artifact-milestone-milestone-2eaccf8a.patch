@@ -1,0 +1,391 @@
+From d361970f5dab76c8f4b696747d9ec8e291ee8b38 Mon Sep 17 00:00:00 2001
+From: decoqwq <decoqwq@gmail.com>
+Date: Mon, 14 Sep 2026 19:19:18 +0800
+Subject: [PATCH 5/5] artifact: milestone milestone-2eaccf8a
+
+---
+ CHECKLIST.md                                  |  7 ++-
+ artifacts/_index.jsonl                        |  4 ++
+ artifacts/milestones/milestone-2eaccf8a.json  | 56 +++++++++++++++++++
+ artifacts/progress/progress-7d6139e4.json     | 51 +++++++++++++++++
+ artifacts/progress/progress-db7ff8c5.json     | 51 +++++++++++++++++
+ artifacts/progress/progress-eacbb068.json     | 51 +++++++++++++++++
+ .../TRANSFER_STATE.json                       | 15 +++--
+ .../finish_migration.py                       |  3 +
+ .../github-archive-20260914/resume_upload.py  | 47 ++++++++++++++++
+ 9 files changed, 278 insertions(+), 7 deletions(-)
+ create mode 100644 artifacts/milestones/milestone-2eaccf8a.json
+ create mode 100644 artifacts/progress/progress-7d6139e4.json
+ create mode 100644 artifacts/progress/progress-db7ff8c5.json
+ create mode 100644 artifacts/progress/progress-eacbb068.json
+ create mode 100644 handoffs/github-archive-20260914/resume_upload.py
+
+diff --git a/CHECKLIST.md b/CHECKLIST.md
+index 5dbb3690e915ca52d344fa2593def83b88ef8f60..0e2af921edce48dff0f0147903ddcdfc2a87da79 100644
+--- a/CHECKLIST.md
++++ b/CHECKLIST.md
+@@ -1,6 +1,6 @@
+ # GitHub archive execution frontier
+ ## In Progress
+-- Upload all verified snapshot/history parts and download each remote asset for SHA256 verification.
++- Resume the 6 missing archive parts plus 4 recovery metadata assets after quest_stop; reuse the 4 uploaded matching parts, then finish download verification.
+ ## Next
+ - Publish complete private archive and verify a clean clone of its browsable Git repository.
+ - Remove only verified local research payloads and replace bulky local history with a small retrieval pointer.
+@@ -13,3 +13,8 @@
+ - Ten archive parts totaling 9316706614 bytes prepared; authentication directories excluded.
+ ## Parked
+ - All research experiments remain paused; local deletion is forbidden until cloud verification completes.
++
++## Resume 2026-09-14T11:10Z
++- Earlier uploader, verifier and finalizer were terminated by quest_stop; no original deletion occurred.
++- Live API: 4/10 archive parts uploaded, 3 download-verified; private repository and push permission verified.
++- New uploads are limited to two concurrent parts with per-part durable receipts.
+diff --git a/artifacts/_index.jsonl b/artifacts/_index.jsonl
+index edaccefbb9fdc0ae38518fce1fa9125bb26487f7..6be905757f885fc0bc6b7313ab303c61a9e2afbe 100644
+--- a/artifacts/_index.jsonl
++++ b/artifacts/_index.jsonl
+@@ -1120,3 +1120,7 @@
+ {"artifact_id": "progress-daf42f82", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-daf42f82.json", "summary": "已从 GitHub 取回并核对约 2.36 GB，前三份完成的分卷全部一致。其余文件还在上传，预计仍需约 30–60 分钟；没有发现数据不一致，也不需要您额外操作。本地清理会在整套校验结束后自动执行。", "updated_at": "2026-09-14T10:24:07+00:00"}
+ {"artifact_id": "run-f837e93c", "kind": "run", "status": "completed", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/runs/run-f837e93c.json", "summary": "我会先核查这个 GitHub 仓库的访问权限、本机 Git 授权和待上传文件。上传后会核对远端是否完整、能否取回，再清理对应本地副本；浏览器登录是否能用于推送，也需要实际确认。\n我会按 decision 技能核定归档和清理范围，先保持研究暂停。成功标准是云端文件与本地清单一致，并通过取回校验；如果授权或大文件限制挡住上传，本地文件会保留。\n已确认仓库是私有的，现有 GitHub CLI 登录也有推送权限。接下来要处理的是约 8.5 GiB 的本地 Git 历史和多份工作树；我会保留研究文件及历史的可恢复性，排除登录凭据，并验证上传结果后再清理。\n发现一个需要先处理的问题：旧 Git 历史包含运行器的登录凭据文件，不能原样推送。我会生成排除凭据的研究归档，并保存代码与结果历史的对应关系。Git 连接已通过本机现有代理打通，接下来准备归档和校验清单。\n归档正在准备中，覆盖报告、逐任务结果、代码、配置和各方向记录；旧历史里的凭据及此前已清理的原始数据包会明确列为排除项。备份完成后，会先核对全部受保护结果的哈希，再开始上传。\n去除凭据后的历史已通过 Git 完整性检查。完整研究快照还在打包，报告目录也已准备好；接下来会核对结果覆盖率，把完整归档随网页入口一起上传，避免只保存摘要。\n校验发现脱敏规则误把一个研究方向名称当成了密钥，我已修正规则，并从原文件重新生成归档；原始文件没有改动。网页入口现在包含 2,840 个报告、代码和协议文件，完整结果备份会另做逐文件哈希验证。\n首次推送被代理返回的 HTTP 400 中断，远端检查确认没有落盘。我已调整 Git 的传输方式后重试；完整备份仍在本地准备，清理尚未开始。\n报告和代码已成功推送到您的私有仓库，网页入口现在可以查看了。完整逐任务结果和历史归档还在准备，所以本地尚未删除；下一步是上传这些大文件，并逐份下载校验。\n完整归档已经开始上传，历史部分保留了 70 个分支引用和 685 次提交，正在做独立恢复检查。最终清理范围按本次 012 项目的已归档研究文件计算；上传耗时还不确定，我会在完整性验证通过后再报告可释放的空间。\n完整性检查通过了：21,043 个受保护结果和复核文件全部与原始哈希一致；70 个分支、685 次提交也已从历史备份独立恢复成功。现在剩下云端上传和回下载核对，这两步完成前本地会继续保留。\n整套归档共约 9.3", "updated_at": "2026-09-14T11:02:26+00:00"}
+ {"artifact_id": "run-8f2cb73c", "kind": "run", "status": "completed", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/runs/run-8f2cb73c.json", "summary": null, "updated_at": "2026-09-14T11:05:45+00:00"}
++{"artifact_id": "progress-db7ff8c5", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-db7ff8c5.json", "summary": "当前优先恢复 GitHub 上传，研究任务保持暂停。我会先核对已有上传进程、归档清单和远端结果，继续缺失部分；待上传与恢复校验通过，再执行你已授权的本地清理。最近回传点是确认已上传与待上传范围。", "updated_at": "2026-09-14T11:08:26+00:00"}
++{"artifact_id": "progress-7d6139e4", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-7d6139e4.json", "summary": "已核实 GitHub 登录有效，私有仓库中已有 4/10 个归档分卷，合计约 3.20 GiB；其中 3 个已完成回下载校验。上次暂停中断了传输，我会保留已成功分卷，只补传剩余 6 个及恢复说明，再完成整套校验和本地清理。", "updated_at": "2026-09-14T11:10:12+00:00"}
++{"artifact_id": "progress-eacbb068", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-eacbb068.json", "summary": "续传已恢复：4 个既有分卷保留，4 个恢复文件已补传；缺失分卷正在两路上传，同时继续回下载核对。已接通自动收尾，全部校验通过后才会清理对应本地副本并写入云端回执，任何失败都会保留原件。研究仍暂停。", "updated_at": "2026-09-14T11:14:28+00:00"}
++{"artifact_id": "milestone-2eaccf8a", "kind": "milestone", "status": "completed", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/milestones/milestone-2eaccf8a.json", "summary": "云端现已收到 5/10 个归档分卷，另有 4 个恢复文件；本次新增分卷的服务器哈希一致。已有 4 个分卷通过回下载校验，剩余传输与验证继续进行。", "updated_at": "2026-09-14T11:19:13+00:00"}
+diff --git a/artifacts/milestones/milestone-2eaccf8a.json b/artifacts/milestones/milestone-2eaccf8a.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..92937d975dbe2704a90a34dc673c8a854a4aba8b
+--- /dev/null
++++ b/artifacts/milestones/milestone-2eaccf8a.json
+@@ -0,0 +1,56 @@
++{
++  "kind": "milestone",
++  "schema_version": 1,
++  "artifact_id": "milestone-2eaccf8a",
++  "id": "milestone-2eaccf8a",
++  "quest_id": "012",
++  "created_at": "2026-09-14T11:19:13+00:00",
++  "updated_at": "2026-09-14T11:19:13+00:00",
++  "source": {
++    "kind": "agent",
++    "role": "pi"
++  },
++  "status": "completed",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "6a7d43daeceae89360418e396ab6064695d0d4c5",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "message": "云端现已收到 5/10 个归档分卷，另有 4 个恢复文件；本次新增分卷的服务器哈希一致。已有 4 个分卷通过回下载校验，剩余传输与验证继续进行。",
++  "summary": "云端现已收到 5/10 个归档分卷，另有 4 个恢复文件；本次新增分卷的服务器哈希一致。已有 4 个分卷通过回下载校验，剩余传输与验证继续进行。",
++  "summary_preview": "云端现已收到 5/10 个归档分卷，另有 4 个恢复文件；本次新增分卷的服务器哈希一致。已有 4 个分卷通过回下载校验，剩余传输与验证继续进行。",
++  "interaction_phase": "ack",
++  "importance": "info",
++  "attachments": [],
++  "interaction_id": "milestone-2eaccf8a",
++  "expects_reply": false,
++  "reply_mode": "threaded",
++  "options": [],
++  "surface_actions": [],
++  "connector_hints": {},
++  "allow_free_text": true,
++  "reply_schema": {},
++  "reply_to_interaction_id": null,
++  "guidance_vm": {
++    "current_anchor": "milestone",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Milestone recorded. Continue from the current anchor and keep the next checkpoint durable.",
++    "why_now": "Milestones should mark meaningful progress, not end the route prematurely.",
++    "complete_when": [
++      "The next substantive output is written durably."
++    ],
++    "alternative_routes": [],
++    "suggested_artifact_calls": [
++      {
++        "name": "artifact.interact(kind='progress', ...)",
++        "purpose": "Send the next checkpoint update across active surfaces."
++      }
++    ],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "milestone",
++    "source_artifact_id": "milestone-2eaccf8a",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/artifacts/progress/progress-7d6139e4.json b/artifacts/progress/progress-7d6139e4.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..36632a7c30ea42e16c48a6ea8e43fb772dbc8d62
+--- /dev/null
++++ b/artifacts/progress/progress-7d6139e4.json
+@@ -0,0 +1,51 @@
++{
++  "kind": "progress",
++  "schema_version": 1,
++  "artifact_id": "progress-7d6139e4",
++  "id": "progress-7d6139e4",
++  "quest_id": "012",
++  "created_at": "2026-09-14T11:10:12+00:00",
++  "updated_at": "2026-09-14T11:10:12+00:00",
++  "source": {
++    "kind": "agent",
++    "role": "pi"
++  },
++  "status": "active",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "6a7d43daeceae89360418e396ab6064695d0d4c5",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "message": "已核实 GitHub 登录有效，私有仓库中已有 4/10 个归档分卷，合计约 3.20 GiB；其中 3 个已完成回下载校验。上次暂停中断了传输，我会保留已成功分卷，只补传剩余 6 个及恢复说明，再完成整套校验和本地清理。",
++  "summary": "已核实 GitHub 登录有效，私有仓库中已有 4/10 个归档分卷，合计约 3.20 GiB；其中 3 个已完成回下载校验。上次暂停中断了传输，我会保留已成功分卷，只补传剩余 6 个及恢复说明，再完成整套校验和本地清理。",
++  "summary_preview": "已核实 GitHub 登录有效，私有仓库中已有 4/10 个归档分卷，合计约 3.20 GiB；其中 3 个已完成回下载校验。上次暂停中断了传输，我会保留已成功分卷，只补传剩余 6 个及恢复说明，再完成整套校验和本地清理。",
++  "interaction_phase": "ack",
++  "importance": "info",
++  "attachments": [],
++  "interaction_id": "progress-7d6139e4",
++  "expects_reply": false,
++  "reply_mode": "threaded",
++  "options": [],
++  "surface_actions": [],
++  "connector_hints": {},
++  "allow_free_text": true,
++  "reply_schema": {},
++  "reply_to_interaction_id": "progress-daf42f82",
++  "guidance_vm": {
++    "current_anchor": "progress",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Artifact recorded. Continue from the latest durable quest state.",
++    "why_now": "The new durable state should immediately inform the next small, auditable step.",
++    "complete_when": [
++      "The next substantive result is written durably."
++    ],
++    "alternative_routes": [],
++    "suggested_artifact_calls": [],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "progress",
++    "source_artifact_id": "progress-7d6139e4",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/artifacts/progress/progress-db7ff8c5.json b/artifacts/progress/progress-db7ff8c5.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..01ca58ea39360644d6cc586d787382c5bdd429f0
+--- /dev/null
++++ b/artifacts/progress/progress-db7ff8c5.json
+@@ -0,0 +1,51 @@
++{
++  "kind": "progress",
++  "schema_version": 1,
++  "artifact_id": "progress-db7ff8c5",
++  "id": "progress-db7ff8c5",
++  "quest_id": "012",
++  "created_at": "2026-09-14T11:08:26+00:00",
++  "updated_at": "2026-09-14T11:08:26+00:00",
++  "source": {
++    "kind": "agent",
++    "role": "pi"
++  },
++  "status": "active",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "6a7d43daeceae89360418e396ab6064695d0d4c5",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "message": "当前优先恢复 GitHub 上传，研究任务保持暂停。我会先核对已有上传进程、归档清单和远端结果，继续缺失部分；待上传与恢复校验通过，再执行你已授权的本地清理。最近回传点是确认已上传与待上传范围。",
++  "summary": "当前优先恢复 GitHub 上传，研究任务保持暂停。我会先核对已有上传进程、归档清单和远端结果，继续缺失部分；待上传与恢复校验通过，再执行你已授权的本地清理。最近回传点是确认已上传与待上传范围。",
++  "summary_preview": "当前优先恢复 GitHub 上传，研究任务保持暂停。我会先核对已有上传进程、归档清单和远端结果，继续缺失部分；待上传与恢复校验通过，再执行你已授权的本地清理。最近回传点是确认已上传与待上传范围。",
++  "interaction_phase": "ack",
++  "importance": "info",
++  "attachments": [],
++  "interaction_id": "progress-db7ff8c5",
++  "expects_reply": false,
++  "reply_mode": "threaded",
++  "options": [],
++  "surface_actions": [],
++  "connector_hints": {},
++  "allow_free_text": true,
++  "reply_schema": {},
++  "reply_to_interaction_id": null,
++  "guidance_vm": {
++    "current_anchor": "progress",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Artifact recorded. Continue from the latest durable quest state.",
++    "why_now": "The new durable state should immediately inform the next small, auditable step.",
++    "complete_when": [
++      "The next substantive result is written durably."
++    ],
++    "alternative_routes": [],
++    "suggested_artifact_calls": [],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "progress",
++    "source_artifact_id": "progress-db7ff8c5",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/artifacts/progress/progress-eacbb068.json b/artifacts/progress/progress-eacbb068.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..3f7a09e8750c0a490f1f8a51ab3a76cc89306a41
+--- /dev/null
++++ b/artifacts/progress/progress-eacbb068.json
+@@ -0,0 +1,51 @@
++{
++  "kind": "progress",
++  "schema_version": 1,
++  "artifact_id": "progress-eacbb068",
++  "id": "progress-eacbb068",
++  "quest_id": "012",
++  "created_at": "2026-09-14T11:14:28+00:00",
++  "updated_at": "2026-09-14T11:14:28+00:00",
++  "source": {
++    "kind": "agent",
++    "role": "pi"
++  },
++  "status": "active",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "6a7d43daeceae89360418e396ab6064695d0d4c5",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "message": "续传已恢复：4 个既有分卷保留，4 个恢复文件已补传；缺失分卷正在两路上传，同时继续回下载核对。已接通自动收尾，全部校验通过后才会清理对应本地副本并写入云端回执，任何失败都会保留原件。研究仍暂停。",
++  "summary": "续传已恢复：4 个既有分卷保留，4 个恢复文件已补传；缺失分卷正在两路上传，同时继续回下载核对。已接通自动收尾，全部校验通过后才会清理对应本地副本并写入云端回执，任何失败都会保留原件。研究仍暂停。",
++  "summary_preview": "续传已恢复：4 个既有分卷保留，4 个恢复文件已补传；缺失分卷正在两路上传，同时继续回下载核对。已接通自动收尾，全部校验通过后才会清理对应本地副本并写入云端回执，任何失败都会保留原件。研究仍暂停。",
++  "interaction_phase": "ack",
++  "importance": "info",
++  "attachments": [],
++  "interaction_id": "progress-eacbb068",
++  "expects_reply": false,
++  "reply_mode": "threaded",
++  "options": [],
++  "surface_actions": [],
++  "connector_hints": {},
++  "allow_free_text": true,
++  "reply_schema": {},
++  "reply_to_interaction_id": null,
++  "guidance_vm": {
++    "current_anchor": "progress",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Artifact recorded. Continue from the latest durable quest state.",
++    "why_now": "The new durable state should immediately inform the next small, auditable step.",
++    "complete_when": [
++      "The next substantive result is written durably."
++    ],
++    "alternative_routes": [],
++    "suggested_artifact_calls": [],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "progress",
++    "source_artifact_id": "progress-eacbb068",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/handoffs/github-archive-20260914/TRANSFER_STATE.json b/handoffs/github-archive-20260914/TRANSFER_STATE.json
+index ea9c835cc5228c4451d0e42c972a06fc5af16b61..b9cecda2a7585db4b3bb3e22fe30805eafdac380 100644
+--- a/handoffs/github-archive-20260914/TRANSFER_STATE.json
++++ b/handoffs/github-archive-20260914/TRANSFER_STATE.json
+@@ -1,5 +1,5 @@
+ {
+-  "updated_at": "2026-09-14T10:08:52.360424+00:00",
++  "updated_at": "2026-09-14T11:14:07.773942+00:00",
+   "objective": "Complete private GitHub migration, then verified local cleanup; research stays paused",
+   "repository": "SuRicci/my-research-fsl",
+   "release_id": 388290702,
+@@ -7,10 +7,9 @@
+   "staging": "/Users/decoqwq/DeepScientist/quests/012/tmp/github-archive-20260914",
+   "workspace": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+   "sessions": {
+-    "first_two_snapshot_parts": "bash-17a874f9",
+-    "remaining_parts_and_metadata": "bash-3710cde1",
+-    "remote_download_verification": "bash-c395199c",
+-    "final_cloud_checks_cleanup_and_receipt": "bash-2d53f583"
++    "resume_upload": "bash-f1273832",
++    "remote_download_verification": "bash-15750a9f",
++    "final_cloud_checks_cleanup_and_receipt": "bash-fb96a301"
+   },
+   "local_validation": "passed: 134694 files/78 links, 21043 protected paths, history 70 refs/685 commits",
+   "expected_archive_parts": 10,
+@@ -23,5 +22,9 @@
+     "Publish final cleanup receipt and update remote archive/status.json; report actual free disk and leave quest paused"
+   ],
+   "critical_rule": "No original deletion before all remote downloads/hash verification and clean browser clone succeed. Never raw-push original Git history: it contained auth.json.",
+-  "automatic_continuation": "finish_migration.py waits for existing upload+download checks, checks unchanged user authorization, then runs final cloud checks, protected-hash cleanup, and atomic remote completion receipt"
++  "automatic_continuation": "finish_migration.py waits for existing upload+download checks, checks unchanged user authorization, then runs final cloud checks, protected-hash cleanup, and atomic remote completion receipt",
++  "resume_reason": "User explicitly requested continuation after quest_stop",
++  "previous_sessions_state": "terminated by quest_stop; preserve history, do not monitor as live",
++  "resume_upload_script": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/handoffs/github-archive-20260914/resume_upload.py",
++  "recovery_fix": "Removed five confirmed starter placeholders from terminated uploads; all uploaded assets retained"
+ }
+diff --git a/handoffs/github-archive-20260914/finish_migration.py b/handoffs/github-archive-20260914/finish_migration.py
+index e48f6d53bcb57604eee8195ff83577d2b346e75e..d43c85bcb7c5ac5c030974310cf0e4aaebe79dfb 100644
+--- a/handoffs/github-archive-20260914/finish_migration.py
++++ b/handoffs/github-archive-20260914/finish_migration.py
+@@ -16,6 +16,9 @@ def api(path,body=None,method=None):
+   return json.loads(r.stdout)
+ print('WAITING_FOR_EXISTING_UPLOAD_AND_DOWNLOAD_VERIFICATION',flush=True)
+ while True:
++ if (T/'resume-upload-progress.json').exists():
++  progress=json.loads((T/'resume-upload-progress.json').read_text())
++  if progress['status']=='failed':raise RuntimeError('Resumed uploader failed; preserve originals and inspect progress receipt')
+  if (T/'remaining-upload-receipt.json').exists():
+   x=json.loads((T/'remaining-upload-receipt.json').read_text())
+   if x['status']=='failed':raise RuntimeError('Existing uploader failed; keep originals and inspect receipt')
+diff --git a/handoffs/github-archive-20260914/resume_upload.py b/handoffs/github-archive-20260914/resume_upload.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..f2691b63f28715bde420c9d50cae45803e147b77
+--- /dev/null
++++ b/handoffs/github-archive-20260914/resume_upload.py
+@@ -0,0 +1,47 @@
++"""Resume only missing assets after the user-requested interruption."""
++from pathlib import Path
++from concurrent.futures import ThreadPoolExecutor
++import subprocess,json,os,hashlib,datetime,threading
++Q=Path('/Users/decoqwq/DeepScientist/quests/012');T=Q/'tmp/github-archive-20260914';A=T/'upload/archive'
++E=dict(os.environ,HTTPS_PROXY='http://127.0.0.1:7890',GH_NO_UPDATE_NOTIFIER='1',GIT_TERMINAL_PROMPT='0')
++BASE='repos/SuRicci/my-research-fsl/releases/388290702';lock=threading.Lock()
++def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
++def run(args):
++ p=subprocess.run(args,env=E,capture_output=True,text=True)
++ if p.returncode:raise RuntimeError(p.stderr)
++ return p.stdout
++def remote():return {r['name']:r for r in json.loads(run(['gh','api',BASE+'/assets','--paginate']))}
++def check(row,item):
++ return item and item['state']=='uploaded' and item['size']==row['bytes'] and item.get('digest')=='sha256:'+row['sha256']
++rows=json.loads((A/'assets.json').read_text())['assets']
++meta=[{'file':n,'bytes':(A/n).stat().st_size,'sha256':hashlib.sha256((A/n).read_bytes()).hexdigest(),'role':'metadata'} for n in ['assets.json','SHA256SUMS','RESTORE.md','verify_archive.py']]
++assert json.loads((T/'verification.json').read_text())['status']=='passed'
++state={'status':'running','started_at':now(),'already_complete':[],'uploaded':[],'failures':[],'concurrency':2}
++def save():
++ p=T/'resume-upload-progress.tmp';p.write_text(json.dumps(state,indent=2)+'\n');p.replace(T/'resume-upload-progress.json')
++def upload(row):
++ name=row['file'];item=remote().get(name)
++ if item:
++  assert check(row,item),('Existing remote asset differs; do not overwrite',name)
++  with lock:state['already_complete'].append(name);save()
++  print('REUSED '+name,flush=True);return
++ path=(A if row['role']=='metadata' else T)/name
++ assert path.stat().st_size==row['bytes']
++ print('UPLOAD_STARTED '+json.dumps({'file':name,'bytes':row['bytes'],'at':now()}),flush=True)
++ try:
++  run(['gh','release','upload','quest-012-archive-20260914',str(path),'--repo','SuRicci/my-research-fsl'])
++  item=remote().get(name);assert check(row,item),name
++  with lock:state['uploaded'].append({'file':name,'id':item['id'],'at':now()});save()
++  print('UPLOAD_VERIFIED_SERVER_DIGEST '+name,flush=True)
++ except Exception as ex:
++  with lock:state['failures'].append({'file':name,'error':str(ex),'at':now()});save()
++  raise
++try:
++ for row in meta:upload(row)
++ with ThreadPoolExecutor(max_workers=2) as pool:list(pool.map(upload,rows))
++ rem=remote();assert all(check(row,rem.get(row['file'])) for row in rows+meta)
++ state.update(status='completed',completed_at=now());save()
++ receipt={'status':'completed','exit_code':0,'at':now(),'method':'Reused matching assets; uploaded missing assets; all 14 server digests verified'}
++ (T/'remaining-upload-receipt.json').write_text(json.dumps(receipt,indent=2)+'\n');print('ALL_UPLOADS_COMPLETE '+json.dumps(receipt),flush=True)
++except Exception:
++ state.update(status='failed',finished_at=now());save();raise

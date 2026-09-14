@@ -1,11 +1,14 @@
 {
-  "state": "uploading_full_archive",
-  "local_deletion_allowed": false,
-  "local_archive_verification": "passed",
+  "state": "remote_verified_cleanup_pending",
+  "local_deletion_allowed": true,
+  "all_archive_parts_download_verified": true,
   "protected_files": 21043,
-  "snapshot_members": 134772,
+  "snapshot_files": 134694,
+  "snapshot_symlinks": 78,
   "history_refs": 70,
   "history_commits": 685,
-  "asset_count": 10,
-  "total_bytes": 9316706614
+  "archive_parts": 10,
+  "recovery_metadata_assets": 4,
+  "total_archive_bytes": 9316706614,
+  "private_repository": true
 }

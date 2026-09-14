@@ -1,0 +1,7 @@
+{
+  "at": "2026-09-14T09:46:33.156001+00:00",
+  "reason": "False-positive credential regex matched sk- inside a research identifier preceded by a word character",
+  "repair": "Require a non-word left boundary before sk- prefix; rebuild both exports from original inputs",
+  "originals_changed": false,
+  "uploaded_before_repair": false
+}

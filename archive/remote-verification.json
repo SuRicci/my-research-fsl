@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "remote_verified": true,
+  "all_parts_downloaded_and_sha256_identical": true,
+  "part_count": 10,
+  "metadata_count": 4,
+  "verified": {
+    "quest-012-snapshot.tar.gz.part005": {
+      "remote_asset_id": 563105098,
+      "bytes": 215111542,
+      "sha256": "32006b42ac4189419b9bb2eddf7f091d756374468796c467b58e356d96aaf2db",
+      "download_verified_at": "2026-09-14T10:12:23.142378+00:00",
+      "server_digest": "sha256:32006b42ac4189419b9bb2eddf7f091d756374468796c467b58e356d96aaf2db",
+      "role": "snapshot_part"
+    },
+    "quest-012-snapshot.tar.gz.part001": {
+      "remote_asset_id": 563094162,
+      "bytes": 1073741824,
+      "sha256": "c0d73642fc2cc5471c56777d6fc9818713c24eef577657eef2d167cce0828cd9",
+      "download_verified_at": "2026-09-14T10:18:12.532381+00:00",
+      "server_digest": "sha256:c0d73642fc2cc5471c56777d6fc9818713c24eef577657eef2d167cce0828cd9",
+      "role": "snapshot_part"
+    },
+    "quest-012-snapshot.tar.gz.part002": {
+      "remote_asset_id": 563094161,
+      "bytes": 1073741824,
+      "sha256": "82e1d420bc0e1e16d1332ca273c8154eb0292304647d5d3c9e843d7550fddcfb",
+      "download_verified_at": "2026-09-14T10:20:29.001808+00:00",
+      "server_digest": "sha256:82e1d420bc0e1e16d1332ca273c8154eb0292304647d5d3c9e843d7550fddcfb",
+      "role": "snapshot_part"
+    },
+    "quest-012-history.bundle.part003": {
+      "remote_asset_id": 563126331,
+      "bytes": 1073741824,
+      "sha256": "97b8e9325ca533e4768154b0257e8bc8aa12b8539d0250c3b6607e9f31f9280b",
+      "download_verified_at": "2026-09-14T11:18:03.973939+00:00",
+      "server_digest": "sha256:97b8e9325ca533e4768154b0257e8bc8aa12b8539d0250c3b6607e9f31f9280b",
+      "role": "history_part"
+    },
+    "quest-012-snapshot.tar.gz.part003": {
+      "remote_asset_id": 563230353,
+      "bytes": 1073741824,
+      "sha256": "12b84bae23fe825ba45b1a6310a638349ff2a7f35b7ddcc1b8815ad516051964",
+      "download_verified_at": "2026-09-14T11:29:07.494630+00:00",
+      "server_digest": "sha256:12b84bae23fe825ba45b1a6310a638349ff2a7f35b7ddcc1b8815ad516051964",
+      "role": "snapshot_part"
+    },
+    "assets.json": {
+      "remote_asset_id": 563227667,
+      "bytes": 3493,
+      "sha256": "db223870aff973fee303bdf92bffb0cc6e42cf7d82bd33aba42e0598cba7b816",
+      "download_verified_at": "2026-09-14T11:29:12.722122+00:00",
+      "server_digest": "sha256:db223870aff973fee303bdf92bffb0cc6e42cf7d82bd33aba42e0598cba7b816",
+      "role": "metadata"
+    },
+    "SHA256SUMS": {
+      "remote_asset_id": 563227822,
+      "bytes": 995,
+      "sha256": "a3275030270f43930af315d38951faf2d5276b927b7788a5d5c00cf5114d51d4",
+      "download_verified_at": "2026-09-14T11:29:17.250454+00:00",
+      "server_digest": "sha256:a3275030270f43930af315d38951faf2d5276b927b7788a5d5c00cf5114d51d4",
+      "role": "metadata"
+    },
+    "RESTORE.md": {
+      "remote_asset_id": 563227992,
+      "bytes": 1611,
+      "sha256": "57d7e4107519049eaddd90554f7b67d720ea70e32cbf71b0910973c9602d30e6",
+      "download_verified_at": "2026-09-14T11:29:22.462445+00:00",
+      "server_digest": "sha256:57d7e4107519049eaddd90554f7b67d720ea70e32cbf71b0910973c9602d30e6",
+      "role": "metadata"
+    },
+    "verify_archive.py": {
+      "remote_asset_id": 563228151,
+      "bytes": 2753,
+      "sha256": "35e1b82130ca5cfe29ea933a418cff9ce9123677f9d6f31bccf976814dea1c68",
+      "download_verified_at": "2026-09-14T11:29:27.113078+00:00",
+      "server_digest": "sha256:35e1b82130ca5cfe29ea933a418cff9ce9123677f9d6f31bccf976814dea1c68",
+      "role": "metadata"
+    },
+    "quest-012-history.bundle.part001": {
+      "remote_asset_id": 563238813,
+      "bytes": 1073741824,
+      "sha256": "c73ef2a08e2170e3e9907f8d8240473aa88dabc9d1fb2282304cd2b144064dea",
+      "download_verified_at": "2026-09-14T11:40:05.359082+00:00",
+      "server_digest": "sha256:c73ef2a08e2170e3e9907f8d8240473aa88dabc9d1fb2282304cd2b144064dea",
+      "role": "history_part"
+    },
+    "quest-012-snapshot.tar.gz.part004": {
+      "remote_asset_id": 563230293,
+      "bytes": 1073741824,
+      "sha256": "525b9ffa0891fc62f7f58e0e750991767400b2c3c4f2174651b5c1fdfb23cc38",
+      "download_verified_at": "2026-09-14T11:49:43.922627+00:00",
+      "server_digest": "sha256:525b9ffa0891fc62f7f58e0e750991767400b2c3c4f2174651b5c1fdfb23cc38",
+      "role": "snapshot_part"
+    },
+    "quest-012-history.bundle.part002": {
+      "remote_asset_id": 563245885,
+      "bytes": 1073741824,
+      "sha256": "9742978c8452baf7f98c48dd09b5b90256f6d4c72a6fcc85b573e5fb9b3d54d1",
+      "download_verified_at": "2026-09-14T11:49:50.740876+00:00",
+      "server_digest": "sha256:9742978c8452baf7f98c48dd09b5b90256f6d4c72a6fcc85b573e5fb9b3d54d1",
+      "role": "history_part"
+    },
+    "quest-012-history.bundle.part005": {
+      "remote_asset_id": 563275169,
+      "bytes": 511660480,
+      "sha256": "7c36493ca92db5bf71293bbda7d2f7ee20d7ea0cb0d3adcd9c4303bf94c7a6e6",
+      "download_verified_at": "2026-09-14T11:53:06.212707+00:00",
+      "server_digest": "sha256:7c36493ca92db5bf71293bbda7d2f7ee20d7ea0cb0d3adcd9c4303bf94c7a6e6",
+      "role": "history_part"
+    },
+    "quest-012-history.bundle.part004": {
+      "remote_asset_id": 563261991,
+      "bytes": 1073741824,
+      "sha256": "6b5ff3f458ae55fd73384d53445f73a58e37e73b80cc891b985b8ece74852161",
+      "download_verified_at": "2026-09-14T12:04:54.478674+00:00",
+      "server_digest": "sha256:6b5ff3f458ae55fd73384d53445f73a58e37e73b80cc891b985b8ece74852161",
+      "role": "history_part"
+    }
+  },
+  "verified_at": "2026-09-14T12:04:54.617958+00:00",
+  "local_snapshot_structural_verification": {
+    "status": "passed",
+    "asset_count": 10,
+    "snapshot_members": 134772,
+    "snapshot_files": 134694,
+    "snapshot_symlinks": 78,
+    "all_asset_sha256_passed": true,
+    "all_embedded_file_hashes_passed": true
+  },
+  "history_independent_restore": {
+    "status": "passed",
+    "refs": 70,
+    "commits": 685,
+    "objects": 60551,
+    "blobs_scanned": 54163,
+    "logical_blob_bytes": 5474579894,
+    "credential_path_count": 0,
+    "credential_pattern_hit_oids": [],
+    "history_export": "same 70 refs and 685 commits; credential/runtime trees and previously deleted r2-domains raw data/downloads excluded; content redactions mapped by git-filter-repo",
+    "bundle_independent_restore": "passed",
+    "bundle_fsck": "passed",
+    "all_restored_refs_identical": true
+  },
+  "verification_method": "Every remote part downloaded, hashed and compared to structurally verified local parts; local full snapshot stream and independent history bundle restore passed. Temporary downloads deleted after checking to maintain disk headroom."
+}

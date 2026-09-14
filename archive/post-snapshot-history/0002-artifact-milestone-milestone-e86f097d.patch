@@ -1,0 +1,144 @@
+From 82e2346d0672a4e1110ce03c88ca33a01d4b66ad Mon Sep 17 00:00:00 2001
+From: decoqwq <decoqwq@gmail.com>
+Date: Mon, 14 Sep 2026 17:56:06 +0800
+Subject: [PATCH 2/5] artifact: milestone milestone-e86f097d
+
+---
+ artifacts/_index.jsonl                        |  1 +
+ artifacts/milestones/milestone-e86f097d.json  | 56 +++++++++++++++++++
+ .../finalize_payloads.py                      | 54 ++++++++++++++++++
+ 3 files changed, 111 insertions(+)
+ create mode 100644 artifacts/milestones/milestone-e86f097d.json
+ create mode 100644 handoffs/github-archive-20260914/finalize_payloads.py
+
+diff --git a/artifacts/_index.jsonl b/artifacts/_index.jsonl
+index bc9371749901697209cc882502664b65f402f0a1..82c14e82fa259d8f761a871190fd82fab3ad3c58 100644
+--- a/artifacts/_index.jsonl
++++ b/artifacts/_index.jsonl
+@@ -1114,3 +1114,4 @@
+ {"artifact_id": "progress-06b1bece", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-06b1bece.json", "summary": "发现旧 Git 历史里包含运行器登录凭据，因此不能原样推送。我会排除凭据，保留研究文件及代码、结果历史的恢复关系；报告和代码供网页浏览，大体积材料放在同一私有仓库的归档附件中。Git 连接已通过您本机现有代理打通，归档并回下载校验后才会清理本地，预计还需 20–40 分钟，取决于上传速度。", "updated_at": "2026-09-14T09:40:08+00:00"}
+ {"artifact_id": "progress-03aff63a", "kind": "progress", "status": "active", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/progress/progress-03aff63a.json", "summary": "网页入口已整理好，包含 2,840 个报告、代码和协议文件。校验发现脱敏规则误识别了一个研究方向名称，我已修正并从原文件重新打包，原始结果未改动。接下来先推送阅读入口，再上传完整结果和历史；只有整套材料下载校验通过才删除本地。", "updated_at": "2026-09-14T09:47:57+00:00"}
+ {"artifact_id": "milestone-098f6f8b", "kind": "milestone", "status": "completed", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/milestones/milestone-098f6f8b.json", "summary": "报告和代码已成功 git push 到您的私有仓库，网页入口现在可以查看了：https://github.com/SuRicci/my-research-fsl 。完整逐任务结果和历史归档还在准备，当前还不能删除本地；接下来上传大文件并逐份下载核对，确保以后能完整取回。", "updated_at": "2026-09-14T09:50:43+00:00"}
++{"artifact_id": "milestone-e86f097d", "kind": "milestone", "status": "completed", "quest_id": "012", "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/milestones/milestone-e86f097d.json", "summary": "完整备份已通过本地验证：21,043 个受保护结果和复核文件全部哈希一致，70 个分支、685 次提交也已从备份独立恢复成功。接下来只做上传与回下载核对，不再运行实验；全部云端校验通过后，再清理本次项目的本地研究文件。", "updated_at": "2026-09-14T09:56:04+00:00"}
+diff --git a/artifacts/milestones/milestone-e86f097d.json b/artifacts/milestones/milestone-e86f097d.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..85ebd3609f39a69689848ea92ef2f0b452b7dffc
+--- /dev/null
++++ b/artifacts/milestones/milestone-e86f097d.json
+@@ -0,0 +1,56 @@
++{
++  "kind": "milestone",
++  "schema_version": 1,
++  "artifact_id": "milestone-e86f097d",
++  "id": "milestone-e86f097d",
++  "quest_id": "012",
++  "created_at": "2026-09-14T09:56:04+00:00",
++  "updated_at": "2026-09-14T09:56:04+00:00",
++  "source": {
++    "kind": "agent",
++    "role": "pi"
++  },
++  "status": "completed",
++  "branch": "run/dino-base-control-20260914",
++  "head_commit": "4c3b379401d3c91997a544ba938a74a752686a12",
++  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
++  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
++  "message": "完整备份已通过本地验证：21,043 个受保护结果和复核文件全部哈希一致，70 个分支、685 次提交也已从备份独立恢复成功。接下来只做上传与回下载核对，不再运行实验；全部云端校验通过后，再清理本次项目的本地研究文件。",
++  "summary": "完整备份已通过本地验证：21,043 个受保护结果和复核文件全部哈希一致，70 个分支、685 次提交也已从备份独立恢复成功。接下来只做上传与回下载核对，不再运行实验；全部云端校验通过后，再清理本次项目的本地研究文件。",
++  "summary_preview": "完整备份已通过本地验证：21,043 个受保护结果和复核文件全部哈希一致，70 个分支、685 次提交也已从备份独立恢复成功。接下来只做上传与回下载核对，不再运行实验；全部云端校验通过后，再清理本次项目的本地研究文件。",
++  "interaction_phase": "ack",
++  "importance": "info",
++  "attachments": [],
++  "interaction_id": "milestone-e86f097d",
++  "expects_reply": false,
++  "reply_mode": "threaded",
++  "options": [],
++  "surface_actions": [],
++  "connector_hints": {},
++  "allow_free_text": true,
++  "reply_schema": {},
++  "reply_to_interaction_id": null,
++  "guidance_vm": {
++    "current_anchor": "milestone",
++    "recommended_skill": "decision",
++    "recommended_action": "continue",
++    "summary": "Milestone recorded. Continue from the current anchor and keep the next checkpoint durable.",
++    "why_now": "Milestones should mark meaningful progress, not end the route prematurely.",
++    "complete_when": [
++      "The next substantive output is written durably."
++    ],
++    "alternative_routes": [],
++    "suggested_artifact_calls": [
++      {
++        "name": "artifact.interact(kind='progress', ...)",
++        "purpose": "Send the next checkpoint update across active surfaces."
++      }
++    ],
++    "requires_user_decision": false,
++    "pending_interaction_id": null,
++    "source_artifact_kind": "milestone",
++    "source_artifact_id": "milestone-e86f097d",
++    "related_paths": [],
++    "stage_status": "ready"
++  }
++}
+diff --git a/handoffs/github-archive-20260914/finalize_payloads.py b/handoffs/github-archive-20260914/finalize_payloads.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..f55e693b8ddf866aa3008160628b1991326cb092
+--- /dev/null
++++ b/handoffs/github-archive-20260914/finalize_payloads.py
+@@ -0,0 +1,54 @@
++from pathlib import Path
++import json,hashlib,shutil,subprocess,datetime
++Q=Path('/Users/decoqwq/DeepScientist/quests/012');T=Q/'tmp/github-archive-20260914';A=T/'upload/archive'
++s=json.loads((T/'snapshot-receipt.json').read_text());h=json.loads((T/'history-audit.json').read_text());assert s['status']=='ready' and not s['failures'];assert h['status']=='passed' and h['bundle_fsck']=='passed' and h['all_restored_refs_identical']
++assets=[dict(r,role='snapshot_part') for r in s['parts']]
++bundle=T/'quest-012-history.bundle';full=hashlib.sha256();pieces=hashlib.sha256();partrows=[]
++with bundle.open('rb') as f:
++ for i in range(1,1000):
++  data=f.read(1024**3)
++  if not data:break
++  full.update(data);p=T/f'quest-012-history.bundle.part{i:03d}';p.write_bytes(data);digest=hashlib.sha256(data).hexdigest();pieces.update(p.read_bytes());partrows.append({'file':p.name,'bytes':len(data),'sha256':digest,'role':'history_part'})
++assert full.hexdigest()==pieces.hexdigest();assets+=partrows
++info={'schema_version':1,'created_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'repository':'SuRicci/my-research-fsl','release_tag':'quest-012-archive-20260914','asset_count':len(assets),'assets':assets,'total_bytes':sum(r['bytes'] for r in assets),'history_bundle_sha256':full.hexdigest(),'history_bundle_bytes':bundle.stat().st_size,'snapshot_protected_coverage':s['coverage'],'history_restore_audit':h,'exclusion_note':'Runner credentials and environments, disposable scratch, raw Git metadata exported separately. Sanitized history excludes .ds and previously removed r2-domains data/downloads. Existing external source directories are outside quest-012 cleanup scope.'}
++(A/'assets.json').write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n');(A/'SHA256SUMS').write_text('\n'.join(r['sha256']+'  '+r['file'] for r in assets)+'\n')
++for n in ['snapshot-receipt.json','history-audit.json','history-commit-map.txt','history-ref-map.txt','history-changed-refs.txt','original-refs.txt','sanitized-refs.txt','browser-push-receipt.json']:
++ p=T/n
++ if p.exists():shutil.copyfile(p,A/n)
++shutil.copyfile(T/'snapshot-manifest.json',A/'snapshot-manifest.json')
++(A/'RESTORE.md').write_text('''# 取回完整归档
++
++此仓库为私有。先在本机完成 GitHub CLI 登录，再运行：
++
++```bash
++git clone https://github.com/SuRicci/my-research-fsl.git
++cd my-research-fsl
++mkdir downloaded
++gh release download quest-012-archive-20260914 --repo SuRicci/my-research-fsl --dir downloaded
++python3 archive/verify_archive.py downloaded
++```
++
++验证器检查所有分卷及归档内每一个文件的 SHA256，无需先解压。分卷和哈希的完整列表在 assets.json。
++
++在新的空目录中恢复项目快照：
++
++```bash
++mkdir restored
++cat downloaded/quest-012-snapshot.tar.gz.part* | tar -xzf - -C restored
++```
++
++恢复 Git 历史：
++
++```bash
++cat downloaded/quest-012-history.bundle.part* > downloaded/quest-012-history.bundle
++git clone --mirror downloaded/quest-012-history.bundle restored-history.git
++git --git-dir=restored-history.git fsck --full
++```
++
++快照保留原目录结构和符号链接；部分链接可能指向原机器路径，不能据此认为外部数据也已归档。快照中的工作树 Git 指针为历史记录，移动机器后应从 Git bundle 重新建立工作树，而不要直接使用旧的绝对指针。原始报告的绝对路径可将原 Quest 根路径替换为 restored/quest-012；所有逐任务结果按原相对路径保留。
++
++历史已经移除登录凭据、运行器目录及此前已清理的 r2-domains 原始数据与下载包；分支和提交数保留，提交对应关系在 history-commit-map.txt。完整重跑仍需按报告说明重新获取已清理输入。此次仅迁移 Quest 012，既有外部科研目录未包含在本地清理范围内。
++''')
++# Full bundle is now reproducible byte-for-byte from verified parts; drop only this generated duplicate.
++bundle.unlink()
++print(json.dumps({'asset_count':len(assets),'total_gib':info['total_bytes']/2**30,'snapshot_coverage':s['coverage'],'history_refs':h['refs'],'history_commits':h['commits'],'free_gib':shutil.disk_usage(Q).free/2**30}),flush=True)

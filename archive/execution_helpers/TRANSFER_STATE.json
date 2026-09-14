@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-09-14T11:59:52.259582+00:00",
+  "objective": "Complete private GitHub migration, then verified local cleanup; research stays paused",
+  "repository": "SuRicci/my-research-fsl",
+  "release_id": 388290702,
+  "release_tag": "quest-012-archive-20260914",
+  "staging": "/Users/decoqwq/DeepScientist/quests/012/tmp/github-archive-20260914",
+  "workspace": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "sessions": {
+    "resume_upload": "bash-f1273832",
+    "remote_download_verification": "bash-98dd88fc",
+    "final_cloud_checks_cleanup_and_receipt": "bash-c0faecb2"
+  },
+  "local_validation": "passed: 134694 files/78 links, 21043 protected paths, history 70 refs/685 commits",
+  "expected_archive_parts": 10,
+  "expected_metadata_assets": 4,
+  "archive_bytes": 9316706614,
+  "next": [
+    "Monitor existing upload/download sessions; do not duplicate active uploads",
+    "After remote-verification.json says passed, run workspace handoffs/github-archive-20260914/finalize_remote.py",
+    "After cloud-ready-receipt.json says private, published and clone verified, run cleanup_verified_local.py with workdir quest root",
+    "Publish final cleanup receipt and update remote archive/status.json; report actual free disk and leave quest paused"
+  ],
+  "critical_rule": "No original deletion before all remote downloads/hash verification and clean browser clone succeed. Never raw-push original Git history: it contained auth.json.",
+  "automatic_continuation": "finish_migration.py waits for existing upload+download checks, checks unchanged user authorization, then runs final cloud checks, protected-hash cleanup, and atomic remote completion receipt",
+  "resume_reason": "User explicitly requested continuation after quest_stop",
+  "previous_sessions_state": "terminated by quest_stop; preserve history, do not monitor as live",
+  "resume_upload_script": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/handoffs/github-archive-20260914/resume_upload.py",
+  "recovery_fix": "Removed five confirmed starter placeholders from terminated uploads; all uploaded assets retained",
+  "verification_switch": "Serial verifier stopped at a saved checkpoint; remaining independent downloads use 3 workers and reuse all completed hashes and complete local downloads",
+  "history_delta": {
+    "commits": 5,
+    "bytes": 135760,
+    "paths": 31,
+    "validation": "passed",
+    "cloud_path": "archive/post-snapshot-history",
+    "reason": "runtime automatically committed archive administration after frozen history export"
+  },
+  "last_recovery": "13 downloads verified; one GitHub asset-list query ended with EOF at 11:53:54. Resume retains all verified receipts; API reads now have at most 3 bounded connection attempts.",
+  "pre_cleanup_history_rule": "Until cleanup, use progress interactions: milestone interactions auto-commit the source Git branch and would require a new history delta. Current verified source head is d361970f5dab76c8f4b696747d9ec8e291ee8b38."
+}
