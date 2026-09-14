@@ -1,14 +1,18 @@
 {
-  "state": "remote_verified_cleanup_pending",
-  "local_deletion_allowed": true,
+  "state": "archived_local_payloads_removed",
+  "private_repository": true,
   "all_archive_parts_download_verified": true,
+  "local_cleanup_completed": true,
   "protected_files": 21043,
   "snapshot_files": 134694,
   "snapshot_symlinks": 78,
   "history_refs": 70,
   "history_commits": 685,
+  "post_snapshot_history_commits": 5,
   "archive_parts": 10,
   "recovery_metadata_assets": 4,
   "total_archive_bytes": 9316706614,
-  "private_repository": true
+  "free_disk_bytes_after_cleanup": 49857617920,
+  "local_retention": "small runtime/control/login state and cloud retrieval pointer; external original research sources excluded from cleanup",
+  "research_status": "paused"
 }

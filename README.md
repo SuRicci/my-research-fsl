@@ -1,6 +1,6 @@
 # CV/FSL 研究归档（Quest 012）
 
-**当前状态：全部归档已上传并逐份回下载校验通过；本地清理待执行。最终状态以 archive/status.json 和 archive/local-cleanup-receipt.json 为准。**
+**当前状态：全部归档已上传并逐份回下载校验通过；本地已完成对应清理。最终状态以 archive/status.json 和 archive/local-cleanup-receipt.json 为准。**
 
 本仓库保存实验 4、实验 5 及后续自主研究的私有归档。研究已于 2026-09-14 按要求暂停。
 
