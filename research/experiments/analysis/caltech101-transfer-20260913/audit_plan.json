@@ -1,0 +1,13 @@
+{
+  "scope": "Numerical and protocol audit, fixed before any Caltech classification",
+  "preflight": "Synthetic full-pipeline invariances plus source-only old score parity; no Caltech features loaded",
+  "source_tasks": [0, 100],
+  "target_tasks": [0, 100, 200, 300, 400],
+  "target_query_indices_for_direct_primal": [0, 17, 74],
+  "float32_control_tolerance": 0.00002,
+  "float64_stack_tolerance": 0.000000001,
+  "prediction_tolerance": "exact argmax agreement required; report numerical failure without outcome-dependent tolerance changes",
+  "reference": "Independent NumPy dense covariance eigendecomposition and primal ridge; all ridge-based methods. Logistic controls reuse frozen sklearn path with convergence checks and historical source score parity.",
+  "full_checks": "All saved predictions, accuracy, paired bootstrap intervals, source-independent control equality, eta-zero equality, task identities, design hashes and frozen gates",
+  "not_proven": "Perceptual deduplication, encoder pretraining nonexposure, population-of-domains generalization, independent logistic optimizer implementation"
+}

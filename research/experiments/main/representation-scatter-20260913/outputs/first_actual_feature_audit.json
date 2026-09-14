@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-09-13T04:22:29.722299+00:00",
+  "status": "passed",
+  "scope": "Two completed EuroSAT1shot cells:full accuracy aggregates and one independent dense-score task per cell; not full8cell audit.",
+  "checks": [
+    {
+      "label": "dtd_to_eurosat_eurosat_k1/0",
+      "max_score_error": 3.400997447833287e-07
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k1/0",
+      "max_score_error": 3.832246529000827e-07
+    }
+  ],
+  "raw_cell_accuracy_pct": {
+    "dtd_to_eurosat_eurosat_k1": {
+      "original_r2": 74.12266666666667,
+      "mean_r2": 76.32533333333333,
+      "medoid_r2": 74.52266666666667,
+      "score_ensemble_r2": 76.01066666666667,
+      "mean_logistic_C1": 70.232,
+      "mean_logistic_C10": 71.20533333333333,
+      "augmented_support_ridge": 72.15733333333333,
+      "scatter_r2": 79.69866666666667,
+      "original_CS_l2": 73.92266666666667,
+      "mean_CS_l2": 76.03466666666667
+    },
+    "dtd_to_eurosat_dtd_k1": {
+      "original_r2": 66.54933333333334,
+      "mean_r2": 68.60533333333333,
+      "medoid_r2": 67.22133333333333,
+      "score_ensemble_r2": 68.76266666666668,
+      "mean_logistic_C1": 70.232,
+      "mean_logistic_C10": 71.20533333333333,
+      "augmented_support_ridge": 72.15733333333333,
+      "scatter_r2": 72.14133333333334,
+      "original_CS_l2": 68.32533333333333,
+      "mean_CS_l2": 70.49866666666667
+    }
+  },
+  "overall_gate": "not_yet_evaluated"
+}

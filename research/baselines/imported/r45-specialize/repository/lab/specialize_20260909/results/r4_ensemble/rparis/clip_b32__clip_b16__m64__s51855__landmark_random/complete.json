@@ -1,0 +1,111 @@
+{
+  "method": "r4_ensemble",
+  "dataset": "rparis",
+  "pair": [
+    "clip_b32",
+    "clip_b16"
+  ],
+  "budget": 64,
+  "seed": 51855,
+  "policy": "landmark_random",
+  "bridge_ids": [
+    "roxford:gallery:oxford_003465",
+    "roxford:gallery:radcliffe_camera_000086",
+    "roxford:gallery:new_001046",
+    "roxford:gallery:new_000137",
+    "roxford:gallery:jesus_000186",
+    "roxford:gallery:ashmolean_000129",
+    "roxford:gallery:oxford_002982",
+    "roxford:gallery:trinity_000226",
+    "roxford:gallery:radcliffe_camera_000279",
+    "roxford:gallery:magdalen_000090",
+    "roxford:gallery:keble_000061",
+    "roxford:gallery:magdalen_000672",
+    "roxford:gallery:oxford_001529",
+    "roxford:gallery:oxford_000227",
+    "roxford:gallery:magdalen_000020",
+    "roxford:gallery:keble_000199",
+    "roxford:gallery:new_001004",
+    "roxford:gallery:christ_church_000144",
+    "roxford:gallery:oxford_002984",
+    "roxford:gallery:magdalen_000431",
+    "roxford:gallery:trinity_000078",
+    "roxford:gallery:oxford_001536",
+    "roxford:gallery:new_000963",
+    "roxford:gallery:oxford_000277",
+    "roxford:gallery:christ_church_000303",
+    "roxford:gallery:oxford_003355",
+    "roxford:gallery:jesus_000345",
+    "roxford:gallery:balliol_000172",
+    "roxford:gallery:bodleian_000384",
+    "roxford:gallery:balliol_000000",
+    "roxford:gallery:oxford_001607",
+    "roxford:gallery:pitt_rivers_000122",
+    "roxford:gallery:all_souls_000105",
+    "roxford:gallery:christ_church_000356",
+    "roxford:gallery:christ_church_000843",
+    "roxford:gallery:new_000556",
+    "roxford:gallery:radcliffe_camera_000437",
+    "roxford:gallery:bodleian_000283",
+    "roxford:gallery:oxford_000940",
+    "roxford:gallery:ashmolean_000221",
+    "roxford:gallery:christ_church_000227",
+    "roxford:gallery:ashmolean_000236",
+    "roxford:gallery:bodleian_000290",
+    "roxford:gallery:magdalen_001008",
+    "roxford:gallery:magdalen_001031",
+    "roxford:gallery:trinity_000003",
+    "roxford:gallery:oxford_002049",
+    "roxford:gallery:radcliffe_camera_000390",
+    "roxford:gallery:new_000350",
+    "roxford:gallery:radcliffe_camera_000354",
+    "roxford:gallery:jesus_000304",
+    "roxford:gallery:oxford_002104",
+    "roxford:gallery:trinity_000095",
+    "roxford:gallery:magdalen_001118",
+    "roxford:gallery:bodleian_000146",
+    "roxford:gallery:trinity_000093",
+    "roxford:gallery:all_souls_000131",
+    "roxford:gallery:worcester_000134",
+    "roxford:gallery:bodleian_000387",
+    "roxford:gallery:oxford_002476",
+    "roxford:gallery:oxford_001960",
+    "roxford:gallery:new_000242",
+    "roxford:gallery:radcliffe_camera_000269",
+    "roxford:gallery:bodleian_000360"
+  ],
+  "parent_complete_sha256": "a1148a5c2f71b02c5070a8b06f2296fa7a69839898628b945b838924d2fd552f",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/rparis/clip_b32__clip_b16__m64__s51855__landmark_random/aps.npz",
+      "sha256": "0fcd4a00e28ac8e09157437fcb8096ad5868f41008be0c01467aa2b3afac17a3"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/rparis/clip_b32__clip_b16__m64__s51855__landmark_random/aps.npz",
+      "sha256": "38be6ab8796e691fc3541429d787d598458291ba2f27a3cfb2ab75794af620db"
+    }
+  ],
+  "sha256": "e1ecd1b3ba408ba19e1f71c65b4e2e2d983146e827a7e55d1959f61c5641c13d",
+  "means": [
+    0.6434140909917272,
+    0.4090707156701052
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 64,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "mean_shrink": 0.6480160018990875,
+    "members": 8,
+    "distinct_bridge_budget": 64
+  },
+  "seconds": 0.9446077346801758
+}

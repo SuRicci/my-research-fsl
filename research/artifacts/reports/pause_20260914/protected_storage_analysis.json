@@ -1,0 +1,23 @@
+{
+  "groups": {
+    "paper files": [
+      243,
+      5250867
+    ],
+    "experiment code/config/report": [
+      3923,
+      36982260
+    ],
+    "experiment result arrays": [
+      16550,
+      12554337443
+    ]
+  },
+  "all_protected_logical_gib": 11.731470534577966,
+  "unique_protected_logical_gib": 2.9085288532078266,
+  "unique_files": 12447,
+  "protected_paths": 20716,
+  "duplicate_logical_gib": 8.82294168137014,
+  "current_free_gib": 27.08169937133789,
+  "interpretation": "sha256 identity groups; logical duplication is not necessarily recoverable physical bytes on APFS"
+}

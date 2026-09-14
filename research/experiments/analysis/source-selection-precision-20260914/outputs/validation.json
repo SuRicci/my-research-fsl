@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "comparisons": 1200,
+  "query_predictions_compared": 90000,
+  "source_episodes": 200,
+  "domain_selections": [
+    {
+      "domain": "dtd",
+      "counts": [
+        11809,
+        11817,
+        11819
+      ],
+      "old_counts": [
+        11809,
+        11817,
+        11819
+      ],
+      "gamma": 10.0,
+      "old_gamma": 10.0
+    },
+    {
+      "domain": "eurosat",
+      "counts": [
+        11257,
+        11282,
+        11282
+      ],
+      "old_counts": [
+        11257,
+        11282,
+        11282
+      ],
+      "gamma": 1.0,
+      "old_gamma": 1.0
+    }
+  ],
+  "historical_prediction_changes": 0,
+  "historical_full_score_failures": 1,
+  "float64_full_score_failures": 0,
+  "original_failure_preserved": true,
+  "input_hashes_unchanged": true,
+  "scope": "Complete output/selection arithmetic and identity audit; numeric independent model comparison was performed during full run."
+}

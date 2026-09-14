@@ -1,0 +1,10 @@
+{
+  "first_bash_id": "bash-e6db1509",
+  "status": "failed_after_numerical_checks_during_json_export",
+  "error": "numpy.int64 neighbor ids are not JSON serializable",
+  "change": "Convert diagnostic neighbor ids to builtin int only",
+  "numerical_logic_unchanged": true,
+  "original_sha256": "261e77a170de7a2d62e2ed9b400d47805d3cae59efb79ba53364076878945d09",
+  "repaired_sha256": "7f382d3e6178568b49bbe9c58e3e2fc3453cecb3bd5508a9679e705e7daf1999",
+  "created_utc": "2026-09-13T12:33:50.073657+00:00"
+}

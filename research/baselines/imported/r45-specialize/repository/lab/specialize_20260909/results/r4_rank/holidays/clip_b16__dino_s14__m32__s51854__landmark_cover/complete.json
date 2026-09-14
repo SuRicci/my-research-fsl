@@ -1,0 +1,70 @@
+{
+  "method": "r4_rank",
+  "dataset": "holidays",
+  "pair": [
+    "clip_b16",
+    "dino_s14"
+  ],
+  "budget": 32,
+  "seed": 51854,
+  "policy": "landmark_cover",
+  "bridge_ids": [
+    "rparis:gallery:paris_triomphe_000617",
+    "roxford:gallery:magdalen_000838",
+    "rparis:gallery:paris_pompidou_000592",
+    "rparis:gallery:paris_pantheon_001100",
+    "roxford:gallery:oxford_000991",
+    "rparis:gallery:paris_notredame_000789",
+    "roxford:gallery:oxford_000209",
+    "roxford:gallery:balliol_000106",
+    "roxford:gallery:all_souls_000011",
+    "rparis:gallery:paris_sacrecoeur_000441",
+    "rparis:gallery:paris_pompidou_000587",
+    "roxford:gallery:oriel_000031",
+    "rparis:gallery:paris_general_000939",
+    "roxford:gallery:oxford_000015",
+    "rparis:gallery:paris_notredame_000251",
+    "rparis:gallery:paris_museedorsay_001010",
+    "rparis:gallery:paris_general_001587",
+    "roxford:gallery:ashmolean_000334",
+    "roxford:gallery:oxford_003020",
+    "roxford:gallery:ashmolean_000166",
+    "rparis:gallery:paris_louvre_000448",
+    "rparis:gallery:paris_general_001926",
+    "rparis:gallery:paris_general_002421",
+    "rparis:gallery:paris_notredame_000742",
+    "roxford:gallery:new_000502",
+    "rparis:gallery:paris_eiffel_000014",
+    "roxford:gallery:worcester_000062",
+    "roxford:gallery:all_souls_000042",
+    "roxford:gallery:worcester_000134",
+    "roxford:gallery:oxford_001634",
+    "rparis:gallery:paris_general_001637",
+    "roxford:gallery:oxford_003528"
+  ],
+  "parent_complete_sha256": "d6494a2e9572b5e64b93b3df1d4136d5c02fa189509d5e2d9918e00fa65a80e3",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-followup-20260909/r4_holidays/evaluation/clip_b16__dino_s14__m32__s51854__landmark_cover/predictions.npz",
+      "sha256": "8d8617a2fc0436a3eac41dd5f3b62d4c1cdf569811802cfff8db724b50a25fd4"
+    }
+  ],
+  "sha256": "55da7adb34a6d0880fdefca161a56fc839ed96d9bba686d50c47e4f44bba2d7a",
+  "means": [
+    0.871065429237616
+  ],
+  "conditions": [
+    "map"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false
+  },
+  "seconds": 0.7987375259399414
+}

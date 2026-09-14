@@ -1,0 +1,9 @@
+{
+  "started_at": "2026-09-13T01:40:14.540300+00:00",
+  "finished_at": "2026-09-13T01:42:42.364753+00:00",
+  "free_before_bytes": 11868450816,
+  "free_after_bytes": 13339193344,
+  "removed_logical_bytes": 1512006155,
+  "removed_count": 4,
+  "retained_archive": "Pets annotations: most segmentation/XML contents are not extracted and remain uniquely available in this 19MB archive."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "independent_interval_count": 21,
+  "max_interval_error_pp": 1.1102230246251565e-16,
+  "checked_prediction_entries": 600000,
+  "bootstrap": "independent count-weighted reconstruction, fixed-pool descriptive95percent intervals"
+}

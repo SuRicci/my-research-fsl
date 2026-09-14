@@ -1,0 +1,998 @@
+{
+  "dtd": {
+    "1": {
+      "map_before_mean_seed26091381": {
+        "step": 200,
+        "correct": 6188,
+        "ce": 0.5047796964645386,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091381_step200.pt",
+        "sha256": "117557db7314cb9652cf439d85bb9971de0775691aa5bbb79906c61dee20df57",
+        "mode": "map_before_mean",
+        "seed": 26091381,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5761,
+            "ce": 0.6750665903091431,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091381_step0.pt",
+            "sha256": "ad1e0ddb06ca207238bffd9c364048e412a8950c98f07d9961ae7f9b2e197663"
+          },
+          {
+            "step": 50,
+            "correct": 6050,
+            "ce": 0.5403440594673157,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091381_step50.pt",
+            "sha256": "dd2281ad0057709390c5de481903c4fa10e9351e3e726d1f50f5ae40084ebfc7"
+          },
+          {
+            "step": 100,
+            "correct": 6147,
+            "ce": 0.49676191806793213,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091381_step100.pt",
+            "sha256": "bb0726c391ea1ded8a901995f86fdb5f646b62e5f4eabd32001dedce8dac9bde"
+          },
+          {
+            "step": 200,
+            "correct": 6188,
+            "ce": 0.5047796964645386,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091381_step200.pt",
+            "sha256": "117557db7314cb9652cf439d85bb9971de0775691aa5bbb79906c61dee20df57"
+          }
+        ],
+        "training_seconds": 7.862034797668457,
+        "source_order_sha256": "e90f9f218cb8e4ee54ba49a27f7a01bc761b588eeab28fcd3ab54a4adce84f4d"
+      },
+      "map_after_mean_seed26091381": {
+        "step": 200,
+        "correct": 6162,
+        "ce": 0.5047680139541626,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091381_step200.pt",
+        "sha256": "fad71ad350383b92ef6f69af4df25e990f9d37c2f3a36cd67d0f028f46c00a76",
+        "mode": "map_after_mean",
+        "seed": 26091381,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5761,
+            "ce": 0.6750665903091431,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091381_step0.pt",
+            "sha256": "4a0cd38d112150975a2a0874a28b9ca69ec2b7e37bbf0af4558a74a44ca374b3"
+          },
+          {
+            "step": 50,
+            "correct": 6037,
+            "ce": 0.5419865250587463,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091381_step50.pt",
+            "sha256": "e31a09b728875cc53d7db7e11e454a8f219f04f557910abd7535f17937874d16"
+          },
+          {
+            "step": 100,
+            "correct": 6145,
+            "ce": 0.49848729372024536,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091381_step100.pt",
+            "sha256": "fd8da182948c97caa299598f77db10c1a83e1666522741ce6a4c2eef065cce32"
+          },
+          {
+            "step": 200,
+            "correct": 6162,
+            "ce": 0.5047680139541626,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091381_step200.pt",
+            "sha256": "fad71ad350383b92ef6f69af4df25e990f9d37c2f3a36cd67d0f028f46c00a76"
+          }
+        ],
+        "training_seconds": 3.8796751499176025,
+        "source_order_sha256": "e90f9f218cb8e4ee54ba49a27f7a01bc761b588eeab28fcd3ab54a4adce84f4d"
+      },
+      "map_before_mean_seed26091382": {
+        "step": 200,
+        "correct": 6228,
+        "ce": 0.5117751359939575,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091382_step200.pt",
+        "sha256": "9579a03ca522222312037fc6a24d723850771d9d3a4576119fff4b6b7b3751b4",
+        "mode": "map_before_mean",
+        "seed": 26091382,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5761,
+            "ce": 0.6750665903091431,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091382_step0.pt",
+            "sha256": "95463885476a1a48138a34576541f0e5b769a60606c9d8c1f656cc1a42a8a2a0"
+          },
+          {
+            "step": 50,
+            "correct": 6065,
+            "ce": 0.5399097800254822,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091382_step50.pt",
+            "sha256": "40b11158f4ed21b455877cefb1142cf0cb35bafb34b755efc2f56b275d3a32dc"
+          },
+          {
+            "step": 100,
+            "correct": 6190,
+            "ce": 0.4957907795906067,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091382_step100.pt",
+            "sha256": "49ed9aff804f3e38ff500fd1c2946b41054a57b214db82fbb0f695dadf076301"
+          },
+          {
+            "step": 200,
+            "correct": 6228,
+            "ce": 0.5117751359939575,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091382_step200.pt",
+            "sha256": "9579a03ca522222312037fc6a24d723850771d9d3a4576119fff4b6b7b3751b4"
+          }
+        ],
+        "training_seconds": 5.67978310585022,
+        "source_order_sha256": "4cce556e568ae95e820c1af3432de9cc67fdf0578d2350f94a8c269f1d3bde01"
+      },
+      "map_after_mean_seed26091382": {
+        "step": 200,
+        "correct": 6207,
+        "ce": 0.5126758217811584,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091382_step200.pt",
+        "sha256": "5f94ebe57d08faccd9536ae8e99c1f941f945cff63fc2ed1a89c9704df9fd97b",
+        "mode": "map_after_mean",
+        "seed": 26091382,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5761,
+            "ce": 0.6750665903091431,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091382_step0.pt",
+            "sha256": "b2a674aed178224101ccf5120256104e9f83bbd38c41a9aa8533f23333a923a7"
+          },
+          {
+            "step": 50,
+            "correct": 6067,
+            "ce": 0.5395224094390869,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091382_step50.pt",
+            "sha256": "48d1a8f4346d1aa5d2302375c37e47e92688cd4c125c414b47e337bed5c939c9"
+          },
+          {
+            "step": 100,
+            "correct": 6191,
+            "ce": 0.4952853322029114,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091382_step100.pt",
+            "sha256": "230cea1812fb179347d7335e60d0dbfb95844fafab286ad606a9652b57cd18b2"
+          },
+          {
+            "step": 200,
+            "correct": 6207,
+            "ce": 0.5126758217811584,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091382_step200.pt",
+            "sha256": "5f94ebe57d08faccd9536ae8e99c1f941f945cff63fc2ed1a89c9704df9fd97b"
+          }
+        ],
+        "training_seconds": 2.8282320499420166,
+        "source_order_sha256": "4cce556e568ae95e820c1af3432de9cc67fdf0578d2350f94a8c269f1d3bde01"
+      },
+      "map_before_mean_seed26091383": {
+        "step": 200,
+        "correct": 6194,
+        "ce": 0.5115259885787964,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091383_step200.pt",
+        "sha256": "23761eb90aea5c8b96b22127b0a2fb2bfb8f9e7f8393176260bf4d8cc69319cb",
+        "mode": "map_before_mean",
+        "seed": 26091383,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5761,
+            "ce": 0.6750665903091431,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091383_step0.pt",
+            "sha256": "fbf03f7e67a5f301a6b770f669972251f4fbadad80055a1bd132746df1cb5bcd"
+          },
+          {
+            "step": 50,
+            "correct": 6048,
+            "ce": 0.5380733013153076,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091383_step50.pt",
+            "sha256": "e48c71c2dcdf3a52ab00d356e1aac7dc9f9cf12a2feaee56f4bcd618dd8993bf"
+          },
+          {
+            "step": 100,
+            "correct": 6169,
+            "ce": 0.4959501624107361,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091383_step100.pt",
+            "sha256": "18b21a27a5a5cc9b2f23841e11869e8b925fe3ffb513e285cb5e799ff929f0a1"
+          },
+          {
+            "step": 200,
+            "correct": 6194,
+            "ce": 0.5115259885787964,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_before_mean_seed26091383_step200.pt",
+            "sha256": "23761eb90aea5c8b96b22127b0a2fb2bfb8f9e7f8393176260bf4d8cc69319cb"
+          }
+        ],
+        "training_seconds": 5.304478883743286,
+        "source_order_sha256": "e43cbf9efa945d598a0c80b340e915ff82055f1061a9f3d1c6a7ae4a200c87d4"
+      },
+      "map_after_mean_seed26091383": {
+        "step": 200,
+        "correct": 6208,
+        "ce": 0.5109941363334656,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091383_step200.pt",
+        "sha256": "a2a9eec68c24e3f64730ed57fded85fe467fb5303fa25ec12dd41b00c6a27b63",
+        "mode": "map_after_mean",
+        "seed": 26091383,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5761,
+            "ce": 0.6750665903091431,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091383_step0.pt",
+            "sha256": "3343651610c53ffab924fb6feaf3919edc7f91b54943807f5d328cf1ead1114b"
+          },
+          {
+            "step": 50,
+            "correct": 6043,
+            "ce": 0.5382973551750183,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091383_step50.pt",
+            "sha256": "c66c27013e8ff27ed246edc17358aa7baa4c1b599b3f2d519527241124ca5da0"
+          },
+          {
+            "step": 100,
+            "correct": 6157,
+            "ce": 0.49484407901763916,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091383_step100.pt",
+            "sha256": "10a234d866a8b43b709985b662f3b7e8407bfa29fbf0ccb82a6935fb50ed2c62"
+          },
+          {
+            "step": 200,
+            "correct": 6208,
+            "ce": 0.5109941363334656,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k1_map_after_mean_seed26091383_step200.pt",
+            "sha256": "a2a9eec68c24e3f64730ed57fded85fe467fb5303fa25ec12dd41b00c6a27b63"
+          }
+        ],
+        "training_seconds": 2.945478916168213,
+        "source_order_sha256": "e43cbf9efa945d598a0c80b340e915ff82055f1061a9f3d1c6a7ae4a200c87d4"
+      }
+    },
+    "5": {
+      "map_before_mean_seed26091381": {
+        "step": 100,
+        "correct": 6064,
+        "ce": 0.20269177854061127,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091381_step100.pt",
+        "sha256": "02920a14d77bacb9b6629fee4f89d0c93e1e68b26f0764570433fd7879cc8711",
+        "mode": "map_before_mean",
+        "seed": 26091381,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5971,
+            "ce": 0.2547391951084137,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091381_step0.pt",
+            "sha256": "9621f9b82e8d93331c78019d58bd84706425937532edfa26ab03d7188529eaee"
+          },
+          {
+            "step": 50,
+            "correct": 6055,
+            "ce": 0.2093062400817871,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091381_step50.pt",
+            "sha256": "961f043ae8e9133b7027a8e3fccc578177732afb5bb26dbe5092b29e0de3eea5"
+          },
+          {
+            "step": 100,
+            "correct": 6064,
+            "ce": 0.20269177854061127,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091381_step100.pt",
+            "sha256": "02920a14d77bacb9b6629fee4f89d0c93e1e68b26f0764570433fd7879cc8711"
+          },
+          {
+            "step": 200,
+            "correct": 6052,
+            "ce": 0.20856060087680817,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091381_step200.pt",
+            "sha256": "3e726bdde31ec859fda490c974781911fb88b2439e4e9f65e0b9e8de9fc1dff6"
+          }
+        ],
+        "training_seconds": 5.805644989013672,
+        "source_order_sha256": "e90f9f218cb8e4ee54ba49a27f7a01bc761b588eeab28fcd3ab54a4adce84f4d"
+      },
+      "map_after_mean_seed26091381": {
+        "step": 100,
+        "correct": 6061,
+        "ce": 0.204522505402565,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091381_step100.pt",
+        "sha256": "bc954b5b3331b6b62e02bd912d399bacc9e971fe1aff26038d9202bffad6d14c",
+        "mode": "map_after_mean",
+        "seed": 26091381,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5971,
+            "ce": 0.2547391951084137,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091381_step0.pt",
+            "sha256": "37664e29b4521fbdbf0d1879cc4945ee5ac99e12b3404d0ea669d97fc74220f7"
+          },
+          {
+            "step": 50,
+            "correct": 6050,
+            "ce": 0.20986784994602203,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091381_step50.pt",
+            "sha256": "874bf35499ccd5dd630d758c1d69be6c726c90ca4c7affa049f719659fdce579"
+          },
+          {
+            "step": 100,
+            "correct": 6061,
+            "ce": 0.204522505402565,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091381_step100.pt",
+            "sha256": "bc954b5b3331b6b62e02bd912d399bacc9e971fe1aff26038d9202bffad6d14c"
+          },
+          {
+            "step": 200,
+            "correct": 6054,
+            "ce": 0.21125434339046478,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091381_step200.pt",
+            "sha256": "713dd7f636e815676f76d2d4c5be742097098e333fe713fa3ea212a1957b2d02"
+          }
+        ],
+        "training_seconds": 3.4619710445404053,
+        "source_order_sha256": "e90f9f218cb8e4ee54ba49a27f7a01bc761b588eeab28fcd3ab54a4adce84f4d"
+      },
+      "map_before_mean_seed26091382": {
+        "step": 50,
+        "correct": 6056,
+        "ce": 0.21307523548603058,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091382_step50.pt",
+        "sha256": "8a520b1e771a39b979a7543ed200fef86f84c3e76b91089afb3c68d677c8f561",
+        "mode": "map_before_mean",
+        "seed": 26091382,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5971,
+            "ce": 0.2547391951084137,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091382_step0.pt",
+            "sha256": "c562aae2178d2b7bac5e3729bd384a5f68021ca078f1f017c987418bb17cc1d6"
+          },
+          {
+            "step": 50,
+            "correct": 6056,
+            "ce": 0.21307523548603058,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091382_step50.pt",
+            "sha256": "8a520b1e771a39b979a7543ed200fef86f84c3e76b91089afb3c68d677c8f561"
+          },
+          {
+            "step": 100,
+            "correct": 6051,
+            "ce": 0.21052080392837524,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091382_step100.pt",
+            "sha256": "4df95a9ac5481ecbe61b93e7f9c3e8960233cbeccd7c3b8562a84b638532b91c"
+          },
+          {
+            "step": 200,
+            "correct": 6038,
+            "ce": 0.21708378195762634,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091382_step200.pt",
+            "sha256": "2447d2730bc9f154f6bb7df0e159ec6cf2545390d3cda89340f3925c0a3e8bdd"
+          }
+        ],
+        "training_seconds": 6.7350850105285645,
+        "source_order_sha256": "4cce556e568ae95e820c1af3432de9cc67fdf0578d2350f94a8c269f1d3bde01"
+      },
+      "map_after_mean_seed26091382": {
+        "step": 50,
+        "correct": 6057,
+        "ce": 0.21428611874580383,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091382_step50.pt",
+        "sha256": "353a2aa1f9c456a9df95e02e761b41c339e39606e5b63300498cea9dfa908098",
+        "mode": "map_after_mean",
+        "seed": 26091382,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5971,
+            "ce": 0.2547391951084137,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091382_step0.pt",
+            "sha256": "12e7f44c1179cd114565f489828d0cc0d56c4ad658612ce8cbb5b42e0427290a"
+          },
+          {
+            "step": 50,
+            "correct": 6057,
+            "ce": 0.21428611874580383,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091382_step50.pt",
+            "sha256": "353a2aa1f9c456a9df95e02e761b41c339e39606e5b63300498cea9dfa908098"
+          },
+          {
+            "step": 100,
+            "correct": 6044,
+            "ce": 0.21152381598949432,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091382_step100.pt",
+            "sha256": "cbb2b0bd595159d075d6c8f0886b128bf2e8f4fbecd791c4b69a5266d5b75d97"
+          },
+          {
+            "step": 200,
+            "correct": 6030,
+            "ce": 0.21849821507930756,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091382_step200.pt",
+            "sha256": "b1deed7792ce34c31eb99c9dc3c4b63c726775c598f308ecd876b11a35859a0e"
+          }
+        ],
+        "training_seconds": 3.226856231689453,
+        "source_order_sha256": "4cce556e568ae95e820c1af3432de9cc67fdf0578d2350f94a8c269f1d3bde01"
+      },
+      "map_before_mean_seed26091383": {
+        "step": 50,
+        "correct": 6055,
+        "ce": 0.20966199040412903,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091383_step50.pt",
+        "sha256": "b71d07045adb49dd0ee6b8a228eb01139667162ac84e52b87010305545952a6d",
+        "mode": "map_before_mean",
+        "seed": 26091383,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5971,
+            "ce": 0.2547391951084137,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091383_step0.pt",
+            "sha256": "c7702103567857aa399a5493c674eae8ec956b50096b7157e648289c6a62063f"
+          },
+          {
+            "step": 50,
+            "correct": 6055,
+            "ce": 0.20966199040412903,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091383_step50.pt",
+            "sha256": "b71d07045adb49dd0ee6b8a228eb01139667162ac84e52b87010305545952a6d"
+          },
+          {
+            "step": 100,
+            "correct": 6053,
+            "ce": 0.20954439043998718,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091383_step100.pt",
+            "sha256": "b05955969b821897e3294e3770a2e348f8a2b3dd2a6ffc434876a37996250613"
+          },
+          {
+            "step": 200,
+            "correct": 6048,
+            "ce": 0.21734799444675446,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_before_mean_seed26091383_step200.pt",
+            "sha256": "dd5d63d24edb7df1740b0aa3e7bad610a5f0cc1d1d6bd1bb875f885d92f0d845"
+          }
+        ],
+        "training_seconds": 6.8682990074157715,
+        "source_order_sha256": "e43cbf9efa945d598a0c80b340e915ff82055f1061a9f3d1c6a7ae4a200c87d4"
+      },
+      "map_after_mean_seed26091383": {
+        "step": 50,
+        "correct": 6061,
+        "ce": 0.20958052575588226,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091383_step50.pt",
+        "sha256": "84c26fcee716af46de366043a116d92fdf93576348c60dc3bfdefd2570ede174",
+        "mode": "map_after_mean",
+        "seed": 26091383,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5971,
+            "ce": 0.2547391951084137,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091383_step0.pt",
+            "sha256": "933c670908d5e7604acfcf23d7974455995ef7ac32856c803f313671e8b49689"
+          },
+          {
+            "step": 50,
+            "correct": 6061,
+            "ce": 0.20958052575588226,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091383_step50.pt",
+            "sha256": "84c26fcee716af46de366043a116d92fdf93576348c60dc3bfdefd2570ede174"
+          },
+          {
+            "step": 100,
+            "correct": 6047,
+            "ce": 0.2108278125524521,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091383_step100.pt",
+            "sha256": "1f7203523ab3718981d0453015e05ec3fbf5d4cbd25f5f62f591845fbc6bc420"
+          },
+          {
+            "step": 200,
+            "correct": 6039,
+            "ce": 0.21842849254608154,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/dtd_k5_map_after_mean_seed26091383_step200.pt",
+            "sha256": "7195308696ceb4e5d0f1c0bade68cb37dbf8ba932323254360d3791ced31c7c7"
+          }
+        ],
+        "training_seconds": 3.5483651161193848,
+        "source_order_sha256": "e43cbf9efa945d598a0c80b340e915ff82055f1061a9f3d1c6a7ae4a200c87d4"
+      }
+    }
+  },
+  "eurosat": {
+    "1": {
+      "map_before_mean_seed26091381": {
+        "step": 200,
+        "correct": 7037,
+        "ce": 0.1833479255437851,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091381_step200.pt",
+        "sha256": "2353ce132a6f7aa648f86b918f0028f7e78f2035c2412e0fa1695de47dc099ef",
+        "mode": "map_before_mean",
+        "seed": 26091381,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5310,
+            "ce": 0.8153766393661499,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091381_step0.pt",
+            "sha256": "f8d918905b12dde28b307a06fa0de6f23eb5c0794d8b8752422f686e3dd4b32b"
+          },
+          {
+            "step": 50,
+            "correct": 6545,
+            "ce": 0.36201807856559753,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091381_step50.pt",
+            "sha256": "c94af966cb0b9dd97c8e7168eacd259c5e9a10ca5ebfff9b8f406e34b078ae6f"
+          },
+          {
+            "step": 100,
+            "correct": 6902,
+            "ce": 0.23781050741672516,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091381_step100.pt",
+            "sha256": "d517287403356779f64975aabf9584cd9f6ab19675f03b92efd1fa55e7ba0eda"
+          },
+          {
+            "step": 200,
+            "correct": 7037,
+            "ce": 0.1833479255437851,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091381_step200.pt",
+            "sha256": "2353ce132a6f7aa648f86b918f0028f7e78f2035c2412e0fa1695de47dc099ef"
+          }
+        ],
+        "training_seconds": 5.294600963592529,
+        "source_order_sha256": "e90f9f218cb8e4ee54ba49a27f7a01bc761b588eeab28fcd3ab54a4adce84f4d"
+      },
+      "map_after_mean_seed26091381": {
+        "step": 200,
+        "correct": 7038,
+        "ce": 0.18150314688682556,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091381_step200.pt",
+        "sha256": "cd4bd2506ada3185a5ed2e01e3e58dcd3c6e104ebff9f23f3f6a99b04ea7cfc8",
+        "mode": "map_after_mean",
+        "seed": 26091381,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5310,
+            "ce": 0.8153766393661499,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091381_step0.pt",
+            "sha256": "c9a5de178e1d79014d965bfbad12268ea2fea40e1752d5410d9cdd8d6fa6dfdb"
+          },
+          {
+            "step": 50,
+            "correct": 6542,
+            "ce": 0.3627028465270996,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091381_step50.pt",
+            "sha256": "e847f8f4464535877edb79ccce556d22367dd9bd0c94202cccbb75585554f07a"
+          },
+          {
+            "step": 100,
+            "correct": 6904,
+            "ce": 0.23773866891860962,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091381_step100.pt",
+            "sha256": "750c4f7e7384d040976d4b9314b3a98e85b2d14e83a61563e559cda078ff415d"
+          },
+          {
+            "step": 200,
+            "correct": 7038,
+            "ce": 0.18150314688682556,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091381_step200.pt",
+            "sha256": "cd4bd2506ada3185a5ed2e01e3e58dcd3c6e104ebff9f23f3f6a99b04ea7cfc8"
+          }
+        ],
+        "training_seconds": 3.290588855743408,
+        "source_order_sha256": "e90f9f218cb8e4ee54ba49a27f7a01bc761b588eeab28fcd3ab54a4adce84f4d"
+      },
+      "map_before_mean_seed26091382": {
+        "step": 200,
+        "correct": 7020,
+        "ce": 0.18646030128002167,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091382_step200.pt",
+        "sha256": "c1841966b1b0c9bf235c4f746fa62826599972482d5f1b9ee16d19d7266b78be",
+        "mode": "map_before_mean",
+        "seed": 26091382,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5310,
+            "ce": 0.8153766393661499,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091382_step0.pt",
+            "sha256": "3861957086824bee2be064c24714365051fe0c099b2bc3cf37a9039110920768"
+          },
+          {
+            "step": 50,
+            "correct": 6509,
+            "ce": 0.367453396320343,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091382_step50.pt",
+            "sha256": "d05d5592fc1f032e71c1224def7576416c075e827648d50f5eccfc156a38dfd9"
+          },
+          {
+            "step": 100,
+            "correct": 6869,
+            "ce": 0.24390149116516113,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091382_step100.pt",
+            "sha256": "3d3608ebd354bc3fd2a3a8cb860ed5f7090db934c7b0b8f37c99ae8f674fdf46"
+          },
+          {
+            "step": 200,
+            "correct": 7020,
+            "ce": 0.18646030128002167,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091382_step200.pt",
+            "sha256": "c1841966b1b0c9bf235c4f746fa62826599972482d5f1b9ee16d19d7266b78be"
+          }
+        ],
+        "training_seconds": 4.8822760581970215,
+        "source_order_sha256": "4cce556e568ae95e820c1af3432de9cc67fdf0578d2350f94a8c269f1d3bde01"
+      },
+      "map_after_mean_seed26091382": {
+        "step": 200,
+        "correct": 7015,
+        "ce": 0.1847066432237625,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091382_step200.pt",
+        "sha256": "0aadcd17ea6fc7d1b1f953b651d8cec5d520a806d4f45d66f1f0a116935f229e",
+        "mode": "map_after_mean",
+        "seed": 26091382,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5310,
+            "ce": 0.8153766393661499,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091382_step0.pt",
+            "sha256": "c9f250c2cd626b9f78047f73ca82645b9a5cb9878268962180475615cf3a5b3b"
+          },
+          {
+            "step": 50,
+            "correct": 6479,
+            "ce": 0.3735189735889435,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091382_step50.pt",
+            "sha256": "fae05d005494f2db022bf5f81754aa1b4455bf4fa7c31797b1a7dc9fd56634e8"
+          },
+          {
+            "step": 100,
+            "correct": 6876,
+            "ce": 0.24186193943023682,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091382_step100.pt",
+            "sha256": "ad6a2d7329d2ca9d5607f7401d1b198d2e92547c7d27365a3aa2213a44233077"
+          },
+          {
+            "step": 200,
+            "correct": 7015,
+            "ce": 0.1847066432237625,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091382_step200.pt",
+            "sha256": "0aadcd17ea6fc7d1b1f953b651d8cec5d520a806d4f45d66f1f0a116935f229e"
+          }
+        ],
+        "training_seconds": 3.3110361099243164,
+        "source_order_sha256": "4cce556e568ae95e820c1af3432de9cc67fdf0578d2350f94a8c269f1d3bde01"
+      },
+      "map_before_mean_seed26091383": {
+        "step": 200,
+        "correct": 7043,
+        "ce": 0.1857704520225525,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091383_step200.pt",
+        "sha256": "437ece42f1e9513ce1a5697c166eace3dc6edbd1667d8715d814cc5ac8a80ee1",
+        "mode": "map_before_mean",
+        "seed": 26091383,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5310,
+            "ce": 0.8153766393661499,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091383_step0.pt",
+            "sha256": "63ce595e6e3556bfeae37e5a031247449429708eda3b301258d7e3dd56439d54"
+          },
+          {
+            "step": 50,
+            "correct": 6549,
+            "ce": 0.34886234998703003,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091383_step50.pt",
+            "sha256": "a85d94bcda6f9ba3b60a4f11d1a640592478844cdb7b6ef1c99aab52fa7151e1"
+          },
+          {
+            "step": 100,
+            "correct": 6903,
+            "ce": 0.23331904411315918,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091383_step100.pt",
+            "sha256": "278160e72d8e4235dd576942f6efaa019aa768c3fcc95e0a5781bdda3aec2aa1"
+          },
+          {
+            "step": 200,
+            "correct": 7043,
+            "ce": 0.1857704520225525,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_before_mean_seed26091383_step200.pt",
+            "sha256": "437ece42f1e9513ce1a5697c166eace3dc6edbd1667d8715d814cc5ac8a80ee1"
+          }
+        ],
+        "training_seconds": 5.231621980667114,
+        "source_order_sha256": "e43cbf9efa945d598a0c80b340e915ff82055f1061a9f3d1c6a7ae4a200c87d4"
+      },
+      "map_after_mean_seed26091383": {
+        "step": 200,
+        "correct": 7050,
+        "ce": 0.17918486893177032,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091383_step200.pt",
+        "sha256": "b5be2b4f1c5d8ef4fd9206002cc903611c5dbe94fcd285416e8b28429e661018",
+        "mode": "map_after_mean",
+        "seed": 26091383,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5310,
+            "ce": 0.8153766393661499,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091383_step0.pt",
+            "sha256": "6c814ade753b88c0fece702f92a97b348711a78efaea485e11bf2922af1d59db"
+          },
+          {
+            "step": 50,
+            "correct": 6551,
+            "ce": 0.34806057810783386,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091383_step50.pt",
+            "sha256": "b133a64b9867b6998507de1578f004ea44f977ec4db444800a07ba235a161bff"
+          },
+          {
+            "step": 100,
+            "correct": 6922,
+            "ce": 0.22834981977939606,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091383_step100.pt",
+            "sha256": "a0249630ad17d8ee190aecba5e84c8cbfef47541d9ea0339eaa6c7de4073f814"
+          },
+          {
+            "step": 200,
+            "correct": 7050,
+            "ce": 0.17918486893177032,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k1_map_after_mean_seed26091383_step200.pt",
+            "sha256": "b5be2b4f1c5d8ef4fd9206002cc903611c5dbe94fcd285416e8b28429e661018"
+          }
+        ],
+        "training_seconds": 3.2741687297821045,
+        "source_order_sha256": "e43cbf9efa945d598a0c80b340e915ff82055f1061a9f3d1c6a7ae4a200c87d4"
+      }
+    },
+    "5": {
+      "map_before_mean_seed26091381": {
+        "step": 200,
+        "correct": 6302,
+        "ce": 0.09084036201238632,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091381_step200.pt",
+        "sha256": "a42ac69bf6190af7a724c2166516d168e3cbc620aa8f40f4af61af2b685d0184",
+        "mode": "map_before_mean",
+        "seed": 26091381,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5913,
+            "ce": 0.27142369747161865,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091381_step0.pt",
+            "sha256": "afd3459cb2be6fe6658e7789a60c27d4b48f40a596a37043b970483ba3a2aa08"
+          },
+          {
+            "step": 50,
+            "correct": 6226,
+            "ce": 0.12828898429870605,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091381_step50.pt",
+            "sha256": "7ae92f3a5932808c9efada80b697074ea26a6dbb6a04421e2b7dc2dd4d0393aa"
+          },
+          {
+            "step": 100,
+            "correct": 6288,
+            "ce": 0.100862517952919,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091381_step100.pt",
+            "sha256": "ac0fe9277150e70cfaca0b71e3d35a697154e3f7d31f09a4bfb148e65e5d6ec5"
+          },
+          {
+            "step": 200,
+            "correct": 6302,
+            "ce": 0.09084036201238632,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091381_step200.pt",
+            "sha256": "a42ac69bf6190af7a724c2166516d168e3cbc620aa8f40f4af61af2b685d0184"
+          }
+        ],
+        "training_seconds": 6.0565690994262695,
+        "source_order_sha256": "e90f9f218cb8e4ee54ba49a27f7a01bc761b588eeab28fcd3ab54a4adce84f4d"
+      },
+      "map_after_mean_seed26091381": {
+        "step": 200,
+        "correct": 6302,
+        "ce": 0.0891355574131012,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091381_step200.pt",
+        "sha256": "04af70c363eddb19f0d5bec5e86dae138cfdb79fc7b40acbac96045757a424d9",
+        "mode": "map_after_mean",
+        "seed": 26091381,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5913,
+            "ce": 0.27142369747161865,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091381_step0.pt",
+            "sha256": "f46d59d0432e7fb1da2d88e9a5f9c45b51677ae74a21b579421ee31bc38d7682"
+          },
+          {
+            "step": 50,
+            "correct": 6218,
+            "ce": 0.12949393689632416,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091381_step50.pt",
+            "sha256": "8590e99b1739e41550c8c8c70f7fba02b60edbf8ec26867887f988cae3639192"
+          },
+          {
+            "step": 100,
+            "correct": 6288,
+            "ce": 0.09941212087869644,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091381_step100.pt",
+            "sha256": "1550c575836e66bb3c34763bc986450f0fb2bbdad39108338febc1c3bf849172"
+          },
+          {
+            "step": 200,
+            "correct": 6302,
+            "ce": 0.0891355574131012,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091381_step200.pt",
+            "sha256": "04af70c363eddb19f0d5bec5e86dae138cfdb79fc7b40acbac96045757a424d9"
+          }
+        ],
+        "training_seconds": 3.579972982406616,
+        "source_order_sha256": "e90f9f218cb8e4ee54ba49a27f7a01bc761b588eeab28fcd3ab54a4adce84f4d"
+      },
+      "map_before_mean_seed26091382": {
+        "step": 200,
+        "correct": 6303,
+        "ce": 0.08976727724075317,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091382_step200.pt",
+        "sha256": "41baafbbba6d95121bf812dcbb944de596b860b128464239b60ba20d9c9ce94f",
+        "mode": "map_before_mean",
+        "seed": 26091382,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5913,
+            "ce": 0.27142369747161865,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091382_step0.pt",
+            "sha256": "83674a1b38c091c565bb477f7536271baf8bcd4a84bb885865ac49192d720457"
+          },
+          {
+            "step": 50,
+            "correct": 6234,
+            "ce": 0.1250457763671875,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091382_step50.pt",
+            "sha256": "4aa5355c11c3e067f043ea1a958f80c625b908a54516bd24126b9a6fc595ce50"
+          },
+          {
+            "step": 100,
+            "correct": 6292,
+            "ce": 0.10045835375785828,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091382_step100.pt",
+            "sha256": "4dd0b3833447a18ced087ffc58536382099b40ba8f7b95f90d4077c033a79ff2"
+          },
+          {
+            "step": 200,
+            "correct": 6303,
+            "ce": 0.08976727724075317,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091382_step200.pt",
+            "sha256": "41baafbbba6d95121bf812dcbb944de596b860b128464239b60ba20d9c9ce94f"
+          }
+        ],
+        "training_seconds": 6.365994930267334,
+        "source_order_sha256": "4cce556e568ae95e820c1af3432de9cc67fdf0578d2350f94a8c269f1d3bde01"
+      },
+      "map_after_mean_seed26091382": {
+        "step": 200,
+        "correct": 6298,
+        "ce": 0.08988664299249649,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091382_step200.pt",
+        "sha256": "6dc250eb03aff56944d79c7038dd4ba781944765b261a90864833a99e0f5382d",
+        "mode": "map_after_mean",
+        "seed": 26091382,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5913,
+            "ce": 0.27142369747161865,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091382_step0.pt",
+            "sha256": "6e8c390af7454f47e4e429f4e2d0f14676d8ba2ea3f7693e02fe2d833249b072"
+          },
+          {
+            "step": 50,
+            "correct": 6225,
+            "ce": 0.12541884183883667,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091382_step50.pt",
+            "sha256": "2db351e6a520fa4bab4f75620724972ddda3df3ee89da2ff05eb4f97e5fbc34f"
+          },
+          {
+            "step": 100,
+            "correct": 6292,
+            "ce": 0.10013239830732346,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091382_step100.pt",
+            "sha256": "974f0bdf92a7c2924ea847e871419da9738bc5c28c743b32a0337904f1295b35"
+          },
+          {
+            "step": 200,
+            "correct": 6298,
+            "ce": 0.08988664299249649,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091382_step200.pt",
+            "sha256": "6dc250eb03aff56944d79c7038dd4ba781944765b261a90864833a99e0f5382d"
+          }
+        ],
+        "training_seconds": 3.254063129425049,
+        "source_order_sha256": "4cce556e568ae95e820c1af3432de9cc67fdf0578d2350f94a8c269f1d3bde01"
+      },
+      "map_before_mean_seed26091383": {
+        "step": 200,
+        "correct": 6305,
+        "ce": 0.08953410387039185,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091383_step200.pt",
+        "sha256": "2f7b40874d505a40a735bc8d072874b3a3115a80249ec4d9be89a02d8f3a9ec0",
+        "mode": "map_before_mean",
+        "seed": 26091383,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5913,
+            "ce": 0.27142369747161865,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091383_step0.pt",
+            "sha256": "b8dfb0bdadb9fc485902b88471edade16a204a763a4482e3795363abf424a353"
+          },
+          {
+            "step": 50,
+            "correct": 6237,
+            "ce": 0.12335190176963806,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091383_step50.pt",
+            "sha256": "a9ea7d346e2135ebb77a5e2e07ce2f8949fcdf7573fd5aba04bf05d5c55e468e"
+          },
+          {
+            "step": 100,
+            "correct": 6295,
+            "ce": 0.09753771126270294,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091383_step100.pt",
+            "sha256": "5c41db9c8533a83089954799c5531e874e2222169199e594bee3f1862d94191e"
+          },
+          {
+            "step": 200,
+            "correct": 6305,
+            "ce": 0.08953410387039185,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_before_mean_seed26091383_step200.pt",
+            "sha256": "2f7b40874d505a40a735bc8d072874b3a3115a80249ec4d9be89a02d8f3a9ec0"
+          }
+        ],
+        "training_seconds": 6.254387140274048,
+        "source_order_sha256": "e43cbf9efa945d598a0c80b340e915ff82055f1061a9f3d1c6a7ae4a200c87d4"
+      },
+      "map_after_mean_seed26091383": {
+        "step": 200,
+        "correct": 6307,
+        "ce": 0.0877496749162674,
+        "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091383_step200.pt",
+        "sha256": "24d046e1147d1540c174b3821971016c3057a033f45aa9f35c7c32a271ba3cdd",
+        "mode": "map_after_mean",
+        "seed": 26091383,
+        "history": [
+          {
+            "step": 0,
+            "correct": 5913,
+            "ce": 0.27142369747161865,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091383_step0.pt",
+            "sha256": "370b6f3ef303f35dda2b9ae535c2f04a87c2ee093d0956a80180a2e66fde1ea4"
+          },
+          {
+            "step": 50,
+            "correct": 6233,
+            "ce": 0.12274309992790222,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091383_step50.pt",
+            "sha256": "5f6f0a6a34f575e2b4f5364ddd9328ec668d48f6d0ec6db78a7363407e19cbf2"
+          },
+          {
+            "step": 100,
+            "correct": 6298,
+            "ce": 0.09633723646402359,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091383_step100.pt",
+            "sha256": "f7922002c4ebaabc6628f34331f08fd3c4e5346bdf64d7780cb8c63d8817c1f5"
+          },
+          {
+            "step": 200,
+            "correct": 6307,
+            "ce": 0.0877496749162674,
+            "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/models/eurosat_k5_map_after_mean_seed26091383_step200.pt",
+            "sha256": "24d046e1147d1540c174b3821971016c3057a033f45aa9f35c7c32a271ba3cdd"
+          }
+        ],
+        "training_seconds": 4.191142797470093,
+        "source_order_sha256": "e43cbf9efa945d598a0c80b340e915ff82055f1061a9f3d1c6a7ae4a200c87d4"
+      }
+    }
+  }
+}

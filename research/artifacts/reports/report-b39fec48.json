@@ -1,0 +1,66 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-b39fec48",
+  "id": "report-b39fec48",
+  "quest_id": "012",
+  "created_at": "2026-09-13T07:01:31+00:00",
+  "updated_at": "2026-09-13T07:01:31+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-db4ad2c9"
+  },
+  "status": "completed",
+  "branch": "run/source-diversity-assets-20260913",
+  "head_commit": "106cbd3ff34a08584dbb80b2c259edc0908cc95b",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "source_asset_qualification",
+  "title": "Canonical Flowers102 source recovery and independent identity qualification",
+  "summary": "Accepted6147deduplicated auxiliary source images across102classes. Archived features failed fixed canonical parity; canonical re-encoding and independent all-row validation passed. Removed189verified redundant chunks (11105738logicalbytes); no archive retained. No classifier training or canonical target outcomes.",
+  "evidence_paths": [
+    ".ds/worktrees/oslo-gallery-pets-20260913/artifacts/intake/additional-source-trust-20260913/flowers102/REPORT.md",
+    "baselines/local/r2-source-diversity/assets/flowers102/independent_audit.json",
+    "baselines/local/r2-source-diversity/assets/flowers102/eligible_source_rows.json",
+    "baselines/local/r2-source-diversity/assets/flowers102/cleanup_receipt.json"
+  ],
+  "science_node_ids": [
+    "science-20665f20",
+    "science-76bc389e"
+  ],
+  "next_stage": "idea",
+  "limitations": [
+    "Auxiliary development pool, not fresh held-out target",
+    "Exact overlap checked only against available DTD/EuroSAT/Pets; no Caltech or pretraining-corpus claim",
+    "Source-diversity utility remains unmeasured",
+    "One-view new asset requires matching inputs for a fair control"
+  ],
+  "run_id": "run-db4ad2c9",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:source_asset_qualification:none:545d754f3f7d6a0e04a81b6b514de849ac4662de81ef8ee477b3387b0fae50a4",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-b39fec48",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

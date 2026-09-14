@@ -1,0 +1,9 @@
+{
+  "dtd_matched_1shot_accuracy": 76.87333333333335,
+  "dtd_5shot_accuracy": 89.852,
+  "dtd_mismatched_1shot_accuracy": 73.87066666666665,
+  "eurosat_mismatched_1shot_accuracy": 68.124,
+  "eurosat_matched_1shot_accuracy": 73.66533333333334,
+  "eurosat_5shot_accuracy": 89.50533333333334,
+  "macro_1shot_accuracy": 73.13333333333333
+}

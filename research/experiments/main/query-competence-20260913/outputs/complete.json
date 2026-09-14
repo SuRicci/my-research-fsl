@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 49.7820930480957,
+  "source_task_conditions": 800,
+  "target_task_conditions": 2000,
+  "gate": false
+}

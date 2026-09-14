@@ -1,0 +1,106 @@
+{
+  "status": "completed",
+  "config": {
+    "idea_id": "idea-6a1ad48b",
+    "decision_id": "decision-d3a12061",
+    "tier": "auxiliary/dev",
+    "domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "feature_pool_side": "query",
+    "expected_images": 7277,
+    "feature_shape": [
+      16,
+      384
+    ],
+    "feature_dtype": "float16",
+    "backbone": "dinov2_vits14",
+    "pool_grid": 4,
+    "local_k": 1,
+    "fusion_weight": 0.5,
+    "score_standardization": "per-query population std, floor 1e-12",
+    "methods": [
+      "parent",
+      "patch",
+      "fusion",
+      "mean_fusion",
+      "shuffled_fusion"
+    ],
+    "min_free_gib": 10,
+    "deadline": "2026-09-15T09:00:00+00:00",
+    "threads": 4,
+    "encoding_batch": 32,
+    "mps_fallback": "1",
+    "parent_bank": "experiments/main/query-consistency-20260913/outputs",
+    "parent_method_index": 1,
+    "baseline_contract": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer/json/metric_contract.json",
+    "metric_deviation": "Source development qualification only; all five canonical Pets metrics unchanged/unmeasured. No main-test submission.",
+    "audit_indices": [
+      0,
+      249,
+      499
+    ],
+    "bootstrap_seed": 26091399,
+    "bootstrap_replicates": 5000,
+    "min_gain_pp": 0.5,
+    "cell_ci_floor_pp": -0.5,
+    "source_exposure": "Repeatedly exposed development pools; no independent transfer claim."
+  },
+  "inherited_encoding_lock": {
+    "files": {
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+      "experiments/main/representation-scatter-20260913/extract_views.py": "6bae4f70759e9ffb3f86c6e04e1ec55f0ed93dd4cb76c43f950916dcc4e8a697",
+      "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/recover_gallery.py": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+      "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_identities.json": "1e8061597ac9326a15a7031c77a22681d10eda1b9a5c94a1b7f00ce1f21e3635",
+      "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_identities.json": "b0ee6ae3f06753e95cc92a4aab9dcb1b9fabac95e3b9f56f0ece6858feb303e2",
+      "/Users/decoqwq/.cache/clip/ViT-B-16.pt": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+      "/Users/decoqwq/.cache/huggingface/hub/models--timm--vit_small_patch14_dinov2.lvd142m/snapshots/4610ca143709d58a633b6397a74412c2c3842454/model.safetensors": "04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081"
+    }
+  },
+  "source_code": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/extract.py": "867878b7ab6aa818d978b4efd94056fbc46b8cb509d63224e32dcbbaad4cb2a7",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/protocol.json": "81b5ae99ffbde63409dad8fac06ef4b2c7fcad926b997fb522249f3ae6e743c3"
+  },
+  "software": {
+    "torch": "2.3.0",
+    "numpy": "1.24.4",
+    "mps_fallback": "1"
+  },
+  "pools": {
+    "dtd_query": {
+      "count": 1877,
+      "shape": [
+        1877,
+        16,
+        384
+      ],
+      "sha256": "ca0fb9d6d5935c21f6116b324931430e21ee2217e77d8377d01e1face9578278",
+      "identity_sha256": "066771a7e3d7de66eb2df554d85a9c79b21ac1c12f3efb49897ecf3987de3ccc",
+      "cached_cls_max_abs": 6.67870044708252e-05,
+      "cached_cls_min_cosine": 0.9999997615814209,
+      "native_cls_max_abs": 0.0,
+      "pooling_max_abs": 3.814697265625e-06,
+      "all_image_hashes_verified": true
+    },
+    "eurosat_query": {
+      "count": 5400,
+      "shape": [
+        5400,
+        16,
+        384
+      ],
+      "sha256": "04df6fb99b673242cba43f0441927313bd64381df73c357234239908190ccc8e",
+      "identity_sha256": "b4f19936a3254fb27b574fb4516e18f0941ed49e3535d9a5008c4a390f52c112",
+      "cached_cls_max_abs": 0.00011307001113891602,
+      "cached_cls_min_cosine": 0.9999997615814209,
+      "native_cls_max_abs": 0.0,
+      "pooling_max_abs": 5.7220458984375e-06,
+      "all_image_hashes_verified": true
+    }
+  },
+  "started_utc": "2026-09-13T13:26:46.682087+00:00",
+  "elapsed_seconds": 264.9622941017151,
+  "images": 7277,
+  "free_gib": 10.385543823242188
+}

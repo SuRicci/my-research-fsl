@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-09-14T03:09:38.378082+00:00",
+  "table_audit_bash_id": "bash-63a8e479",
+  "numeric_values_checked": 326,
+  "table_count": 7,
+  "paper_groups": 4,
+  "ledger_total": 42,
+  "reference_only": 38,
+  "pdf_hash_matches_previous_proof": true,
+  "pdf_sha256": "b6e2e9320d925acd4f4448cd254b463ca26504b3f13f2563ac1a236975b87651",
+  "new_raw_prediction_audit": false,
+  "manuscript_changed": false,
+  "reviewer": "same-agent independent skeptical pass",
+  "next_question": "full one-shot source selection float64 stability",
+  "source_failure_original_status": "failed",
+  "source_case_prediction_changes": 0,
+  "reference_refresh": [
+    "https://arxiv.org/pdf/2301.08390",
+    "https://arxiv.org/html/1803.00676v1",
+    "https://www.ijcai.org/proceedings/2024/0536.pdf"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "query_occurrences_independently_reconstructed": 210000,
+  "target_cells": 4,
+  "source_scalers": {
+    "dtd": {
+      "scaler_matches_only_source_train": true,
+      "train_rows": 15000
+    },
+    "eurosat": {
+      "scaler_matches_only_source_train": true,
+      "train_rows": 15000
+    }
+  },
+  "independent_pooled_delta_pp": -0.058666666666666645,
+  "independent_ci95_pp": [
+    -0.10333333333333328,
+    -0.013333333333333364
+  ],
+  "scope": "All12saved banks; scalar sorted features and tie policy, sigmoid correctness scores, unchanged raw endpoints, every accuracy and independent main paired interval."
+}

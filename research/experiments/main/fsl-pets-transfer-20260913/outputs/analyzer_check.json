@@ -1,0 +1,6 @@
+{
+  "bootstrap_implementation_check": "passed",
+  "max_abs_error": 9.237055564881302e-14,
+  "source_sha256": "721616ff1e50e46adab5a63dc7171750f3e01c73707b911e929df3e9e28d92cd",
+  "scope": "synthetic paired-index arithmetic only; real candidate audit not yet run"
+}

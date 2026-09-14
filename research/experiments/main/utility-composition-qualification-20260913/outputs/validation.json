@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "cell_count": 8,
+  "task_condition_evaluations": 4000,
+  "source_tasks_per_shot": 100,
+  "source_selection_tasks_per_shot": 100,
+  "source_train_selection_image_disjoint": true,
+  "source_only_checkpoint_selection": true,
+  "all_task_labels_checked": true,
+  "every_score_prediction_accuracy_checked": true,
+  "trained_query_partition_invariant": true,
+  "independent_numpy_reconstruction": true,
+  "rows": [
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task_count": 500,
+      "methods": 19,
+      "reconstruction_errors": {
+        "utility": 0.0,
+        "scalar": 0.0,
+        "bce": 0.0
+      },
+      "numpy_error": 5.044344068005913e-07,
+      "sha256": "bbd0576d8dd150fe5e86a8abc8a6330ae64538c30b16a40f04c6bed6add44c12"
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task_count": 500,
+      "methods": 19,
+      "reconstruction_errors": {
+        "utility": 0.0,
+        "scalar": 0.0,
+        "bce": 0.0
+      },
+      "numpy_error": 6.359280044776483e-07,
+      "sha256": "aaa8dc3cdcbed838a2a3b0248d956f91274fe77f81d071415b8b2934d0a41f98"
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task_count": 500,
+      "methods": 19,
+      "reconstruction_errors": {
+        "utility": 0.0,
+        "scalar": 0.0,
+        "bce": 0.0
+      },
+      "numpy_error": 5.712509146826861e-07,
+      "sha256": "95b6653a03215e5a8f4198cb8362ceb1deeba94f64fa71202d3b18eca77d139d"
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task_count": 500,
+      "methods": 19,
+      "reconstruction_errors": {
+        "utility": 0.0,
+        "scalar": 0.0,
+        "bce": 0.0
+      },
+      "numpy_error": 5.53095843569551e-07,
+      "sha256": "4403248d44365bd19b2eba472003d2e4659f140ecd187310ccbabcd5c7629552"
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task_count": 500,
+      "methods": 19,
+      "reconstruction_errors": {
+        "utility": 0.0,
+        "scalar": 0.0,
+        "bce": 0.0
+      },
+      "numpy_error": 4.759797457010162e-07,
+      "sha256": "cc94ba1db6a6f54ede5e1eff91e1a9a312c0b1105a2c524c4a395fbeb44701a2"
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task_count": 500,
+      "methods": 19,
+      "reconstruction_errors": {
+        "utility": 0.0,
+        "scalar": 0.0,
+        "bce": 0.0
+      },
+      "numpy_error": 6.020234455395013e-07,
+      "sha256": "39499e6d179a6af332b23b5bc2871bb96e7867edbbb0415301fb3628aad624ca"
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task_count": 500,
+      "methods": 19,
+      "reconstruction_errors": {
+        "utility": 0.0,
+        "scalar": 0.0,
+        "bce": 0.0
+      },
+      "numpy_error": 6.061379056454541e-07,
+      "sha256": "51c9870350f18c069e3b1cda561dd1a75e71079a86a21e048ef1490497899458"
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task_count": 500,
+      "methods": 19,
+      "reconstruction_errors": {
+        "utility": 0.0,
+        "scalar": 0.0,
+        "bce": 0.0
+      },
+      "numpy_error": 5.958497995006695e-07,
+      "sha256": "d5227ec87c2b48b3953af2bbc63f144c423ce958d64dc6f855e028e6ab5aaa4f"
+    }
+  ],
+  "limitations": [
+    "Only two exposed development domains",
+    "One deterministic training-task allocation; uncertainty conditional on it and fixed image pools",
+    "Fixed training horizon does not exhaust utility learning or BCE families"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-09-13T23:19:03.413546+00:00",
+  "decision_id": "decision-c8694782",
+  "parent": "experiments/main/source-composition-20260913",
+  "scope": "auxiliary observational diagnosis on already exposed source and transfer assets; no fitting, no new target classifier outcomes",
+  "models": "all36lockedselectedmodels",
+  "domains": [
+    "dtd",
+    "eurosat",
+    "flowers"
+  ],
+  "all_unique_images": true,
+  "pair_count_per_domain": 4096,
+  "pair_seed": 26091411,
+  "pair_strategy": "2048sameclass distinct-image pairs plus2048different-class pairs, class-uniform sampling",
+  "observables": [
+    "mean squared normalized-feature displacement",
+    "mean residual squared norm before normalization",
+    "RMS pairwise cosine change",
+    "signed withinclass and betweenclass cosine change",
+    "class separation cosine gap change"
+  ],
+  "accuracy_source": "already saved source checkpoint predictions and transfer cells; compare selected step vs step0",
+  "correlation": "descriptive model-level Pearson on nonzero selected models within source/shot; partial correlation of distortion with transfer accuracy delta after linear displacement adjustment; no p-values, no threshold fitting",
+  "constraints": {
+    "local_only": true,
+    "spend": 0,
+    "threads": 6,
+    "free_gib_min": 10,
+    "output_mib_max": 5,
+    "deadline_utc": "2026-09-15T09:00:00+00:00"
+  },
+  "nulls": [
+    "identity has exactly zero displacement and cosine changes",
+    "global orthogonal signed-coordinate permutation preserves all pair cosine values but can move individual vectors"
+  ],
+  "validation": [
+    "all model and input hashes unchanged",
+    "NumPy64 sampled transformation and cosine checks",
+    "source chosen predictions and saved labels reconstruct known source/transfer accuracy",
+    "zero models excluded from correlation"
+  ],
+  "success": "All36models accounted for with auditable geometry and saved-accuracy links; judge whether generic distortion beyond update size consistently tracks transfer harm. Not a causal test or a new classifier.",
+  "abandonment": "unavailable/parity-failed assets; correlations undefined or inconsistent do not justify generic preservation training",
+  "paper_role": "reference_only_followup_to_source_composition"
+}

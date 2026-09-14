@@ -1,0 +1,65 @@
+{
+  "idea_id": "idea-c62de373",
+  "tier": "auxiliary/dev",
+  "parent_report": "report-64b6342f",
+  "parent_dir": "experiments/main/scatter-score-fusion-20260913",
+  "shrinkage": 0.5,
+  "gamma_by_target": {
+    "eurosat": 10.0,
+    "dtd": 1.0
+  },
+  "domains": [
+    "eurosat",
+    "dtd"
+  ],
+  "shots": [
+    1
+  ],
+  "task_count_per_domain": 500,
+  "galleries": [
+    "matched",
+    "mismatched"
+  ],
+  "methods": [
+    "incumbent",
+    "class_associated",
+    "metric_ensemble",
+    "foreign_metrics",
+    "scatter_cs",
+    "scatter_r2",
+    "mean_cs"
+  ],
+  "primary_metric": "dev_macro_1shot_accuracy",
+  "scope": "repeated exposed-development fixed pools; no new Pets/Caltech or five-shot outcome",
+  "gate": {
+    "gain_vs_incumbent_pp": 0.5,
+    "pooled_ci_lower_pp": 0,
+    "domain_mean_min_pp": 0,
+    "cell_ci_lower_min_pp": -0.5,
+    "class_association_comparators": [
+      "metric_ensemble",
+      "foreign_metrics"
+    ]
+  },
+  "numeric_tolerance": 2e-05,
+  "audit_indices": [
+    0,
+    250
+  ],
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 26091398,
+    "unit": "paired tasks stratified by seed within domain; average two galleries within task"
+  },
+  "resources": {
+    "local_only": true,
+    "spend": 0,
+    "threads": 6,
+    "free_gib_min": 10,
+    "max_outputs_mib": 150,
+    "deadline": "2026-09-15T09:00:00+00:00"
+  },
+  "no_tuning": true,
+  "query_adaptation": false,
+  "gallery_labels": false
+}

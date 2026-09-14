@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "dense_scatter_error": 8.604228440844963e-16,
+  "primal_ridge_error": 7.549516567451064e-15,
+  "real_padding_cases": [
+    {
+      "target": "dtd",
+      "gallery": "dtd",
+      "padding_error": 2.220446049250313e-16,
+      "old_error": 0.0,
+      "all_controls_padding_error": 2.220446049250313e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "eurosat",
+      "padding_error": 2.220446049250313e-16,
+      "old_error": 0.0,
+      "all_controls_padding_error": 2.220446049250313e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "dtd",
+      "padding_error": 2.3592239273284576e-16,
+      "old_error": 0.0,
+      "all_controls_padding_error": 2.3592239273284576e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "padding_error": 2.220446049250313e-16,
+      "old_error": 0.0,
+      "all_controls_padding_error": 2.220446049250313e-16
+    }
+  ],
+  "scope": "four fixed real null tasks and independent small matrix formulas; does not establish base accuracy"
+}

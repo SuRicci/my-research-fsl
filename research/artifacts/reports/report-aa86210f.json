@@ -1,0 +1,82 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-aa86210f",
+  "id": "report-aa86210f",
+  "quest_id": "012",
+  "created_at": "2026-09-12T23:16:26+00:00",
+  "updated_at": "2026-09-12T23:16:26+00:00",
+  "source": {
+    "kind": "agent"
+  },
+  "status": "completed",
+  "branch": "paper/oslo-gallery-failure-study",
+  "head_commit": "e03b6eb2f061d868eeeb6bd2403ec1eb178eac79",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "paper_draft_checkpoint",
+  "summary": "A reviewed seven-page early technical note on a restricted gallery-only OSLO transfer: all eight conditions fail against R2, retained external gallery weight remains large despite good ranking, and retrospective mass/composition interventions have distinct effects. Three current evidence groups and five displayed tables; no new algorithm or submission-ready claim. Packaging checkpoint only; continue idea-stage selection.",
+  "reason": "Paper drafting outputs were consolidated into a durable manifest; finalization is gated by manuscript and submission readiness.",
+  "flow_type": "paper_bundle",
+  "protocol_step": "draft_checkpoint",
+  "paths": {
+    "paper_bundle_manifest_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/paper_bundle_manifest.json",
+    "outline_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline/manifest.json",
+    "draft_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/latex/iclr2026_conference.tex",
+    "pdf_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/gallery_transfer_note.pdf",
+    "evidence_ledger_path": "/Users/decoqwq/DeepScientist/quests/012/paper/evidence_ledger.json",
+    "baseline_inventory_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/baseline_inventory.json",
+    "open_source_manifest_path": null
+  },
+  "details": {
+    "title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+    "package_type": "draft_checkpoint",
+    "selected_outline_ref": "outline-001",
+    "ready_section_count": 3,
+    "section_count": 9,
+    "ledger_item_count": 18,
+    "paper_line_id": "paper-oslo-gallery-failure-study-outline-001-oslo-gallery-pets-20260913",
+    "draft_checkpoint_ready": true,
+    "manuscript_ready": true,
+    "submission_ready": false,
+    "baseline_inventory_count": 2,
+    "open_source_status": null,
+    "paper_branch": "paper/oslo-gallery-failure-study",
+    "source_branch": "run/oslo-gallery-pets-20260913",
+    "source_run_id": "oslo-gallery-pets-20260913",
+    "prepare_open_source": false
+  },
+  "semantic_key": "report:write:paper_draft_checkpoint:draft_checkpoint:06e784e1da2541562c2871a868ef39d686295f4b9fc6b2c13b93a35b4ef92942",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-aa86210f",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/paper_bundle_manifest.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline/manifest.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/latex/iclr2026_conference.tex",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/gallery_transfer_note.pdf",
+      "/Users/decoqwq/DeepScientist/quests/012/paper/evidence_ledger.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/baseline_inventory.json",
+      "None"
+    ],
+    "stage_status": "ready"
+  }
+}

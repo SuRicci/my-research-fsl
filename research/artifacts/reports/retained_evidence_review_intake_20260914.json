@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-09-14T02:55:49.745496+00:00",
+  "status": "review_in_progress",
+  "decision_id": "decision-36385543",
+  "synthesis_report": "report-0b3e2582",
+  "input_groups": [
+    {
+      "item_id": "scatter-score-fusion-20260913",
+      "role": "reference_only",
+      "result_summary": "Equal predictive fusion reaches77.334%, adding0.146pp over scatterCS, below the fixed0.5pppromotion threshold. Retained best measured conditional candidate.",
+      "source_file_count": 5,
+      "source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/REPORT.md": "7319ef490d12e2cb681d05dbab1b267961f2001faf22daa79edd82b5465e1d0b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/protocol.json": "fed9f03702e230c44cb5d4cbd35bd04d30f090ee29beb9fea2e3c32217e8c654",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/analysis.json": "86944a72c591d6544bc638eb30f8218567ace176cfa39adf5e9411f05c986b65",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/complete.json": "4c13d16e63558e9082906610152db12a0f1f2c87967d0253396114b4720736d9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/validation.json": "eba255e1f20cf64c114b6244c072a488e52192d2c1b301cfec4fd469815f90a8"
+      },
+      "paper_claim_links": []
+    },
+    {
+      "item_id": "query-consistency-20260913",
+      "role": "reference_only",
+      "result_summary": "77.374%vs77.334%,+0.040pp[0.013983,0.067333]; small development point retained,minimum0.5ppgatefailed. DTD+0.08pp,EuroSATunchanged.",
+      "source_file_count": 10,
+      "source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/REPORT.md": "025f10d3455c04ae649195c83d38d874b84076c7f11cf39441e38b923c246ce6",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/RESULT.json": "cd817b2b8d4e45ab70160b4dece4cb99557df2101c0359e7b26fdc419cab8d80",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/protocol.json": "5ad7abb795feca0e1e4ada75c25f424e32d8ae6ab5f0cf6ff9254883edc5395f",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/analysis.json": "4686080570b67e38bd1c3063c48234e14f0e273f26c3dfe0afe7783b319b4eb9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/independent_audit.json": "00e42f86ca3a6cd1a218bc7a3a27f514b7d018c4aa9eb244929f38c4bac7293b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/selection_lock.json": "abba2629f305ca34d96e6e7f706068ea850eb7ed01f0bf7ae68d97e5ec48ccb2",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/CONTRACT.md": "f713122ad0d35b625fff19f65c75767742c0950ea3c7294158532ea074dffeaa",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/analyze.py": "1bca2c7ab5800d9142b73b96be5369617b51a1b4452345a3eae9fdd28bbf0b49",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/RESULT.json": "3825deee2637569e36308fd82204a34a2e0f63ac6191641ca15a4fc76852fead",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/REPORT.md": "319f7e069f11acc1adb40580517fa30a6570a782fa49ca6029035cf5664e2a4a"
+      },
+      "paper_claim_links": []
+    },
+    {
+      "item_id": "caltech101-transfer-20260913",
+      "role": "reference_only",
+      "result_summary": "Both fixed configurations failed promotion:98.032%/97.978667% versus augmented-support ridge98.330667% and C10 logistic98.392%. Original full numerical audit failed. Bounded240-checkdiagnosis:238passed,2copiesofoneensemble-neighborprecisioneventfailed;72intervalsverified.",
+      "source_file_count": 14,
+      "source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/REPORT.md": "fcc7998c666043555bfab470690df20eba05a5ebb4df10aa609011a1bb0f622e",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/RESULT.json": "bf1f0c016a2cbf905df9dd9fed9edfc003044a727ceb000deeaea32fbe30ac34",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/protocol.json": "2516de39e5ce78d9ed5f0289e16067bde899c831c462eb2068bc39b19ada1a36",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/analysis.json": "f611f005cc55146374e1a28f719f84a70b2df8df99a03b5d592f3172248fcc51",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/audit_failure.json": "b44b38d5c761852e442f2b47f7ce2460966f8f420f653676e86df45b923356c4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/diagnostics/audit_diagnosis.json": "ff16733a127e7bc584e7aca44848f9e64818e2cf9844ce7bd7951b2ffaf4b31c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/REPORT.md": "2d79dfec632b58279b3bf56242e63f60c15859f7305f8af88be1c87b66385a5f",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/RESULT.json": "ea8b71fd71a81a93d925f9dae83c546277d5966439fb07d253a6f7c5b06712ca",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/compare.py": "9bb8e66f286d183ce9d7b4f7ffad0597a55f9f9feb82965dcc87741ec25f8fb4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/REPORT.md": "ce4d422f390c60d0da1321e35cf57adb8785eb9369d6c24fb42f1c267abfe33a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/RESULT.json": "da0f278f5ba4ab93b8662d48d8b912e953f12993f48cfa7e6e259143360cbdd7",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/protocol.json": "4f60c28f113d1d5010d435b8b732073721e963d56e458f14c9bca419bae9d4fd",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/audit.json": "a5ef16cfc9463c8210561f3b93b95f93c66623d66306b285be2a57d592bb30d6",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/statistics_audit.json": "c8e39f2a31c35cb1ef853e7ab2d1cd22537294a1d339edb5540cd24d2d408d5a"
+      },
+      "paper_claim_links": []
+    },
+    {
+      "item_id": "dino-depth-readout-20260914",
+      "role": "reference_only",
+      "result_summary": "Versus retained final-layer consistency: DTD -3.3400 pp; EuroSAT +0.9813 pp; pooled -1.1793 pp [95% paired CI -1.4073, -0.9546]. Fixed robust gate failed.",
+      "source_file_count": 5,
+      "source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/REPORT.md": "ac00171991b8efc11ae2c2e254b8708cf6ade22640e995ff2fdcbee9f9f2d940",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/RESULT.json": "16471df39d32bf2467c2129e45767b43f9ea7a7c2a2d9a4b0df5de4a175e8238",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/protocol.json": "ec521d4d8ddf40235033e6039e031ef9e8202a28dd2b6fc9987a77253abd71dd",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/analysis.json": "7be2ec5cfc88e37f48ceb1a86c9569661f349ebc09cb2e407c16ad0c135a7e2b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/audit.json": "c9257c6e742fcfffaf6ba7d28d227adc69d8ef3f55d96600ac232a4477ed63c1"
+      },
+      "paper_claim_links": []
+    }
+  ],
+  "completed_check": "Read retained and target reports, including accumulated-stack source join and float64 Caltech control repair. Verified referenced files exist and recorded current hashes. Full manuscript and citation review not yet completed.",
+  "next": "Inspect prior review and active manuscript C1-C4 against four true manuscript evidence groups; determine contribution and any concrete remaining gap before new compute."
+}

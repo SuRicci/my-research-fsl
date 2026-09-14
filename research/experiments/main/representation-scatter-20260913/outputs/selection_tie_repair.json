@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-09-13T04:16:09.872339+00:00",
+  "decision_id": "decision-9cd27e72",
+  "superseded_bash_id": "bash-e07cbe3d",
+  "reason": "Exact integer source correct counts tie; smallest-gamma rule previously violated by floating mean roundoff. Correct arithmetic only.",
+  "old_evaluator_sha256": "8c3930bf44bb77741e30133ed5c074f938f822b1cef950ffbc1c55fa60e5d810",
+  "new_evaluator_sha256": "c614d00a1ed0b13fe12b3c4ce48ea298fc2cac6b14d365ef3d471fce89e77b4a",
+  "preserved_files": [
+    {
+      "path": "evaluate.py",
+      "sha256": "8c3930bf44bb77741e30133ed5c074f938f822b1cef950ffbc1c55fa60e5d810",
+      "bytes": 7777
+    },
+    {
+      "path": "evaluation_lock.json",
+      "sha256": "c793804072dec94065ff80a87f869f661063f06a4d9e0c06a5e721e2b7979a27",
+      "bytes": 1979
+    },
+    {
+      "path": "outputs/evaluation_manifest.json",
+      "sha256": "dde32ad72f6ddaf32ccfb2075bd0170aae61637b634d355ac55c6aecd8eae4fd",
+      "bytes": 7074
+    },
+    {
+      "path": "outputs/selection_integer_audit.json",
+      "sha256": "93ec1cd783a5d4b0a907207c27f4fb9a4f76d2f3b9850b9a69e5362d5d4a6d4b",
+      "bytes": 832
+    },
+    {
+      "path": "outputs/dtd_k1_selection.json",
+      "sha256": "b4ce425f00e1c890383f85b34fefd4c0a54b8e630a2e4da61948ceda3047c59f",
+      "bytes": 228
+    },
+    {
+      "path": "outputs/dtd_k1_selection.npz",
+      "sha256": "fad109cbeb737c0e97a2ccc0c11f2f159b6882f16d2fde13c9e2c4e58195c5f4",
+      "bytes": 1257079
+    },
+    {
+      "path": "outputs/dtd_k5_selection.json",
+      "sha256": "80cbf36a81c18f4d7ac923c1c0e05f20b9e77e2d140fbbeae4ba96d38822938e",
+      "bytes": 227
+    },
+    {
+      "path": "outputs/dtd_k5_selection.npz",
+      "sha256": "611f5ed0bdd8a74ed09b6fed5e1e1db0e879f1c411c12163b91877570ddc6c26",
+      "bytes": 796807
+    },
+    {
+      "path": "outputs/eurosat_k1_selection.json",
+      "sha256": "60b1cf5fe01be899a758eb0c2124c91973a90a5398c9a85769396851f3dd76fa",
+      "bytes": 232
+    },
+    {
+      "path": "outputs/eurosat_k1_selection.npz",
+      "sha256": "ee302f817d0b365213f9eabdbfe46a53a42c939880826db65746e9c8a00b4072",
+      "bytes": 1312638
+    },
+    {
+      "path": "outputs/eurosat_k5_selection.json",
+      "sha256": "2b931b763b298f713c08c617c3717c7ec2b24fc3f839354ff9b62120e40a50cf",
+      "bytes": 231
+    },
+    {
+      "path": "outputs/eurosat_k5_selection.npz",
+      "sha256": "7e606205108dc60af97e0e39a5a2d255503d36137a7210ff7e9cb9a87f2352c5",
+      "bytes": 848040
+    }
+  ],
+  "completed_evaluation_cells": 0,
+  "exposure": "At least401evaluation episodes executed but no completed cell,accuracy summary or evaluation predictions saved. Four source-selection outcomes observed. Correction dictated only by predeclared tie rule.",
+  "method_grid_changed": false,
+  "success_gate_changed": false,
+  "source_cache_changed": false
+}

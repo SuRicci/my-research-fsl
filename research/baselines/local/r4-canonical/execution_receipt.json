@@ -1,0 +1,11 @@
+{
+  "frozen_at": 1789242106.860311,
+  "code_sha256": {
+    "evaluate.py": "725d52edbe7b689c772fe028ae616ce9899028cdf386b5177669f9d2e3b646dd",
+    "audit_results.py": "ede5b59b9eda95fdda92ecda9bdc8f1ab56db827a6b5ca5a39e578e557c84e2e",
+    "protocol.json": "969d7b6b1ac5f4180a6e8f6f6e50c95ff9ccdb5c01daf9e1165edd544dba9985"
+  },
+  "command": "/opt/anaconda3/envs/torch/bin/python evaluate.py && /opt/anaconda3/envs/torch/bin/python audit_results.py",
+  "expected_jobs": 60,
+  "expected_methods": 13
+}

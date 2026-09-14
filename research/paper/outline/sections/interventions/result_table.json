@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "section_id": "interventions",
+  "title": "Mass and composition interventions",
+  "rows": [
+    {
+      "item_id": "oslo-final-step-counterfactual",
+      "section_id": "interventions",
+      "paper_role": "main_text",
+      "status": "completed",
+      "result_summary": "Mass balancing largely rescues mismatch but still loses matched one-shot; privileged composition filtering improves matched one-shot.",
+      "impact_summary": "Retrospective final-step intervention with earlier weights fixed; oracle labels unavailable at deployment.",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/REPORT.md"
+      ],
+      "claim_links": [
+        "C3"
+      ],
+      "metric_summary": "Mass-balanced matched one-shot delta vs R2 -0.4827/-0.6240 pp; oracle membership +1.6827/+1.8507 pp.",
+      "mapping_status": "mapped",
+      "main_or_appendix": "main_text",
+      "selected_outline_ref": "outline-001",
+      "updated_at": "2026-09-12T22:53:10.340193+00:00",
+      "kind": "analysis_report",
+      "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run"
+    }
+  ]
+}

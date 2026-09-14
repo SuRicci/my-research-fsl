@@ -1,0 +1,78 @@
+{
+  "free_gib": 9.98984146118164,
+  "group_count": 9,
+  "groups": [
+    {
+      "bytes": 16596587,
+      "sha256": "53520fc5dad376973f72f3748b8a6bba12bd14c3f1a93541671fd1f99bfcf202",
+      "paths": [
+        "experiments/main/prior-calibration-qualification-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+        "experiments/main/prior-calibration-qualification-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz"
+      ]
+    },
+    {
+      "bytes": 16464659,
+      "sha256": "1c625895e9e40058c80cda3f2da53fb902a96a472b0dbf6dbb21c79c0d534637",
+      "paths": [
+        "experiments/main/prior-calibration-qualification-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+        "experiments/main/prior-calibration-qualification-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz"
+      ]
+    },
+    {
+      "bytes": 13917393,
+      "sha256": "ac84b5a8a63ac1befaaff93257185376b2f25765358e892d1b142a01d24e9b6c",
+      "paths": [
+        "experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+        "experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz"
+      ]
+    },
+    {
+      "bytes": 13852803,
+      "sha256": "61d9c80a53a55441913644825965d94e007210ee0ad00da8e79735c539ca396d",
+      "paths": [
+        "experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+        "experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz"
+      ]
+    },
+    {
+      "bytes": 7043360,
+      "sha256": "edc313350b86f7fce448bb0b03200112f8569dcec757351197591e2131d43c41",
+      "paths": [
+        "experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+        "experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz"
+      ]
+    },
+    {
+      "bytes": 7016146,
+      "sha256": "af86e93c7884028c070c03786d0e3519ea39c5c774489eecea6c787b46595acd",
+      "paths": [
+        "experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+        "experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz"
+      ]
+    },
+    {
+      "bytes": 4590249,
+      "sha256": "e3ea079327111b59251749f95ba7cdb4c77440986de630ef69ec716665660ac8",
+      "paths": [
+        "experiments/main/fsl-pets-transfer-20260913/outputs/baseline/pets_pets_k5.npz",
+        "experiments/main/fsl-pets-transfer-20260913/outputs/baseline/pets_dtd_k5.npz"
+      ]
+    },
+    {
+      "bytes": 1312638,
+      "sha256": "ee302f817d0b365213f9eabdbfe46a53a42c939880826db65746e9c8a00b4072",
+      "paths": [
+        "experiments/main/representation-scatter-20260913/outputs/eurosat_k1_selection.npz",
+        "experiments/main/representation-scatter-20260913/outputs/superseded_float_tie/outputs/eurosat_k1_selection.npz"
+      ]
+    },
+    {
+      "bytes": 1257079,
+      "sha256": "fad109cbeb737c0e97a2ccc0c11f2f159b6882f16d2fde13c9e2c4e58195c5f4",
+      "paths": [
+        "experiments/main/representation-scatter-20260913/outputs/dtd_k1_selection.npz",
+        "experiments/main/representation-scatter-20260913/outputs/superseded_float_tie/outputs/dtd_k1_selection.npz"
+      ]
+    }
+  ]
+}

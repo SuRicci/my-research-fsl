@@ -1,0 +1,202 @@
+{
+  "status": "passed_statistics_only",
+  "statistic_comparisons": 90,
+  "max_stat_error": 1.7763568394002505e-15,
+  "cells": {
+    "dtd_to_eurosat_eurosat_k1": {
+      "view_mean_minus_original": {
+        "delta_pp": 2.202666666666666,
+        "ci95_pp": [
+          1.7973333333333328,
+          2.6107333333333322
+        ]
+      },
+      "scatter_minus_view_mean": {
+        "delta_pp": 3.373333333333334,
+        "ci95_pp": [
+          3.0132666666666656,
+          3.757333333333332
+        ]
+      },
+      "scatter_minus_mean_per_seed_pp": {
+        "26091371": 3.666666666666665,
+        "26091372": 3.0533333333333337,
+        "26091373": 3.44,
+        "26091374": 2.933333333333333,
+        "26091375": 3.7733333333333325
+      }
+    },
+    "dtd_to_eurosat_dtd_k1": {
+      "view_mean_minus_original": {
+        "delta_pp": 2.0559999999999996,
+        "ci95_pp": [
+          1.6106666666666662,
+          2.5119999999999996
+        ]
+      },
+      "scatter_minus_view_mean": {
+        "delta_pp": 3.5360000000000005,
+        "ci95_pp": [
+          3.112,
+          3.9893333333333327
+        ]
+      },
+      "scatter_minus_mean_per_seed_pp": {
+        "26091371": 4.2666666666666675,
+        "26091372": 3.4666666666666663,
+        "26091373": 3.266666666666666,
+        "26091374": 3.293333333333333,
+        "26091375": 3.386666666666667
+      }
+    },
+    "dtd_to_eurosat_eurosat_k5": {
+      "view_mean_minus_original": {
+        "delta_pp": 1.2506666666666668,
+        "ci95_pp": [
+          0.9840000000000005,
+          1.5120666666666662
+        ]
+      },
+      "scatter_minus_view_mean": {
+        "delta_pp": 2.8453333333333335,
+        "ci95_pp": [
+          2.613266666666666,
+          3.077399999999999
+        ]
+      },
+      "scatter_minus_mean_per_seed_pp": {
+        "26091371": 2.1999999999999997,
+        "26091372": 3.0933333333333337,
+        "26091373": 3.0933333333333324,
+        "26091374": 3.0266666666666664,
+        "26091375": 2.813333333333333
+      }
+    },
+    "dtd_to_eurosat_dtd_k5": {
+      "view_mean_minus_original": {
+        "delta_pp": 1.2506666666666668,
+        "ci95_pp": [
+          0.9840000000000005,
+          1.5120666666666662
+        ]
+      },
+      "scatter_minus_view_mean": {
+        "delta_pp": 2.8453333333333335,
+        "ci95_pp": [
+          2.613266666666666,
+          3.077399999999999
+        ]
+      },
+      "scatter_minus_mean_per_seed_pp": {
+        "26091371": 2.1999999999999997,
+        "26091372": 3.0933333333333337,
+        "26091373": 3.0933333333333324,
+        "26091374": 3.0266666666666664,
+        "26091375": 2.813333333333333
+      }
+    },
+    "eurosat_to_dtd_dtd_k1": {
+      "view_mean_minus_original": {
+        "delta_pp": 1.3973333333333333,
+        "ci95_pp": [
+          1.1733333333333331,
+          1.6293333333333333
+        ]
+      },
+      "scatter_minus_view_mean": {
+        "delta_pp": -0.024000000000000098,
+        "ci95_pp": [
+          -0.20000000000000004,
+          0.15206666666666596
+        ]
+      },
+      "scatter_minus_mean_per_seed_pp": {
+        "26091371": 0.17333333333333334,
+        "26091372": -0.013333333333333417,
+        "26091373": -0.18666666666666643,
+        "26091374": 0.013333333333332977,
+        "26091375": -0.10666666666666698
+      }
+    },
+    "eurosat_to_dtd_eurosat_k1": {
+      "view_mean_minus_original": {
+        "delta_pp": 1.3359999999999999,
+        "ci95_pp": [
+          1.08,
+          1.5760666666666658
+        ]
+      },
+      "scatter_minus_view_mean": {
+        "delta_pp": 0.1520000000000001,
+        "ci95_pp": [
+          -0.06140000000000005,
+          0.3706666666666667
+        ]
+      },
+      "scatter_minus_mean_per_seed_pp": {
+        "26091371": -0.18666666666666643,
+        "26091372": 0.4133333333333338,
+        "26091373": 0.09333333333333343,
+        "26091374": 0.17333333333333278,
+        "26091375": 0.26666666666666694
+      }
+    },
+    "eurosat_to_dtd_dtd_k5": {
+      "view_mean_minus_original": {
+        "delta_pp": 0.6639999999999997,
+        "ci95_pp": [
+          0.5145999999999994,
+          0.8133333333333331
+        ]
+      },
+      "scatter_minus_view_mean": {
+        "delta_pp": 0.024000000000000087,
+        "ci95_pp": [
+          -0.1466666666666666,
+          0.18399999999999994
+        ]
+      },
+      "scatter_minus_mean_per_seed_pp": {
+        "26091371": -0.18666666666666687,
+        "26091372": -0.013333333333333417,
+        "26091373": 0.1733333333333339,
+        "26091374": 0.21333333333333326,
+        "26091375": -0.06666666666666643
+      }
+    },
+    "eurosat_to_dtd_eurosat_k5": {
+      "view_mean_minus_original": {
+        "delta_pp": 0.6639999999999997,
+        "ci95_pp": [
+          0.5145999999999994,
+          0.8133333333333331
+        ]
+      },
+      "scatter_minus_view_mean": {
+        "delta_pp": 0.024000000000000087,
+        "ci95_pp": [
+          -0.1466666666666666,
+          0.18399999999999994
+        ]
+      },
+      "scatter_minus_mean_per_seed_pp": {
+        "26091371": -0.18666666666666687,
+        "26091372": -0.013333333333333417,
+        "26091373": 0.1733333333333339,
+        "26091374": 0.21333333333333326,
+        "26091375": -0.06666666666666643
+      }
+    }
+  },
+  "input_sha256": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz": "d4c12f280c005fcf6219e5c1cd2bbae1ed55e81a6b79bb10c23152253461516f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz": "68d31492e8e8d1b9f5ab4b58a1c7db0e5fbd5bbe09300293828cad091abf7f4b",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz": "edc313350b86f7fce448bb0b03200112f8569dcec757351197591e2131d43c41",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz": "edc313350b86f7fce448bb0b03200112f8569dcec757351197591e2131d43c41",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k1.npz": "3cff1d7011365e0d986fe91045a4924290c5e028eb08c870e27c58dd09c8f456",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k1.npz": "3444b1faf3e10bc4db38ebad51126439a7c6c389aa40746d4c1d36071c5fc8d2",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz": "af86e93c7884028c070c03786d0e3519ea39c5c774489eecea6c787b46595acd",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz": "af86e93c7884028c070c03786d0e3519ea39c5c774489eecea6c787b46595acd"
+  },
+  "scope": "Post-hoc fixed-pool decomposition. Bootstrap weights independently built with multinomial multiplicities; all90 predefined mean/interval comparisons recovered. Does not override failed dense end-to-end score audit, establish family impossibility, or add Pets/Caltech evidence."
+}

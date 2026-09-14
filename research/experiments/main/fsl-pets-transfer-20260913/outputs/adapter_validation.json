@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "source_task_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_dtd_k1.npz",
+  "source_task_count": 2,
+  "r2_max_error": 0.0,
+  "CS_l2_max_error": 0.0,
+  "query_batch_independence_max_error": {
+    "r2": 1.1920928955078125e-07,
+    "CS_l2": 1.6391277313232422e-07
+  },
+  "ilpc_fit_excludes_query_argument": true,
+  "pets_predictions_computed": false,
+  "scope": "source replay + interface/numerical invariants; not complete Pets metric validation"
+}

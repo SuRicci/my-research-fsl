@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "domains": {
+    "dtd": {
+      "classes": 47,
+      "query_identities": 1877,
+      "gallery_identities": 1876,
+      "min_class_images": 37,
+      "min_train_half": 18,
+      "min_selection_half": 19,
+      "train_tasks": 100,
+      "selection_tasks": 100,
+      "query_per_class": 15,
+      "train_used_rgb": 938,
+      "selection_used_rgb": 938,
+      "train_selection_rgb_overlap": 0,
+      "query_gallery_rgb_overlap": 0,
+      "worst_case_task_excluded_gallery_size": 1676,
+      "required_gamma": 10.0,
+      "invalid_existing_reverse_bank_gamma": 1.0,
+      "identity_sha256": "1e8061597ac9326a15a7031c77a22681d10eda1b9a5c94a1b7f00ce1f21e3635"
+    },
+    "eurosat": {
+      "classes": 10,
+      "query_identities": 5400,
+      "gallery_identities": 5000,
+      "min_class_images": 400,
+      "min_train_half": 200,
+      "min_selection_half": 200,
+      "train_tasks": 100,
+      "selection_tasks": 100,
+      "query_per_class": 15,
+      "train_used_rgb": 2550,
+      "selection_used_rgb": 2563,
+      "train_selection_rgb_overlap": 0,
+      "query_gallery_rgb_overlap": 0,
+      "worst_case_task_excluded_gallery_size": 2500,
+      "required_gamma": 1.0,
+      "invalid_existing_reverse_bank_gamma": 10.0,
+      "identity_sha256": "b0ee6ae3f06753e95cc92a4aab9dcb1b9fabac95e3b9f56f0ece6858feb303e2"
+    }
+  },
+  "feature_files": {
+    "dtd_query_clip_vitb16": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/dtd_query_clip_vitb16.pt",
+      "bytes": 9626796,
+      "sha256": "2f7913d3ed440c824a9a43086db75a550dd3c933305f6ef38d0552177b4f0aaf"
+    },
+    "dtd_gallery_clip_vitb16": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/dtd_gallery_clip_vitb16.pt",
+      "bytes": 9621752,
+      "sha256": "cdc9115ccfba266b3d8a51805963d19deb77d49308e91bece9f82c2cd8a39ea7"
+    },
+    "eurosat_query_clip_vitb16": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/eurosat_query_clip_vitb16.pt",
+      "bytes": 27692868,
+      "sha256": "cd37a3de8b93b0a7eb18f85afb3d1805e14dae4b1b297c8787187155fbbf40dc"
+    },
+    "eurosat_gallery_clip_vitb16": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/eurosat_gallery_clip_vitb16.pt",
+      "bytes": 25641680,
+      "sha256": "12df28f0c7b898bef2b85984fb30e7c719f8bf96037f167dc6a85b14d3d5aa9d"
+    },
+    "dtd_query_dinov2_vits14": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/dtd_query_dinov2_vits14.pt",
+      "bytes": 7224312,
+      "sha256": "ff0521407bac503c6ac2f78c6f9d5c6c5f672a740a116940ad7b1a57395633bf"
+    },
+    "dtd_gallery_dinov2_vits14": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/dtd_gallery_dinov2_vits14.pt",
+      "bytes": 7220484,
+      "sha256": "9f73de464b7ec3c48d9a379c2ce5b3a223ae81f9b0adb61fc784ba5fd2edbcd3"
+    },
+    "eurosat_query_dinov2_vits14": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/eurosat_query_dinov2_vits14.pt",
+      "bytes": 20780880,
+      "sha256": "10c7cd39389649f891466cec99ae07a5ee2334d657130a43e268e44073183df1"
+    },
+    "eurosat_gallery_dinov2_vits14": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/eurosat_gallery_dinov2_vits14.pt",
+      "bytes": 19241692,
+      "sha256": "916e2805dbf9d970770a0b46f30d941f8ee1313b8749083b3515d82fff78fe31"
+    }
+  },
+  "feature_count": 8,
+  "cross_domain_rgb_overlap": 0,
+  "sampler_sha256": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c",
+  "source_contract": "Use first identity half for fitting and second for source selection; inherited gamma is selected from that source only. Second half already served gamma selection and is not pristine validation. Source training/gallery may use source labels; target feature/label use forbidden during gate fitting.",
+  "missing": "Full centered/raw/blend scores must be generated for SOURCE train/selection using source gamma. Existing reverse-direction scored banks are inadmissible as direct gate-training inputs.",
+  "cost": "Reuse verified frozen features; no encoder run or downloads; source heads only.",
+  "free_gib": 11.479450225830078
+}

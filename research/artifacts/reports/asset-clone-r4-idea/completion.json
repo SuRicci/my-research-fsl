@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "file_count": 1845,
+  "logical_bytes": 1809483344,
+  "free_before_bytes": 9912705024,
+  "free_after_bytes": 11714080768,
+  "observed_free_change_bytes": 1801375744,
+  "elapsed_seconds": 5.664546966552734,
+  "mechanism": "macOS clonefile, independent inodes and copy-on-write; SHA256 identity checked before replacement",
+  "scope": "Only quest-created exact duplicate baseline files; source files untouched. Available-space delta also reflects concurrent OS activity."
+}

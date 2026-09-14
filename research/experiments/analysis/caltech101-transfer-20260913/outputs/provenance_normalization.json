@@ -1,0 +1,8 @@
+{
+  "time": "2026-09-13T11:39:41.070291+00:00",
+  "issue": "Python3.8 __main__.__file__ uses a relative path, so audit and evaluator entrypoints would freeze different duplicate keys.",
+  "fix": "Resolve all module paths before hashing. Only sources() changed; every other function is AST-identical to passed numerical preflight.",
+  "method_function_AST_unchanged": true,
+  "target_classification_observed": false,
+  "validation": "Run both script import paths and require identical provenance maps; numerical run need not repeat."
+}

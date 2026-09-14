@@ -1,0 +1,634 @@
+{
+  "status": "descriptive_precision_bridge",
+  "comparisons": [
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "subset_index": 0,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "subset_index": 16,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "linear_mean": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "subset_index": 0,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "subset_index": 16,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "linear_mean": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "subset_index": 0,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "subset_index": 16,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "linear_mean": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "subset_index": 0,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "subset_index": 16,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "linear_mean": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "subset_index": 0,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "subset_index": 16,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "linear_mean": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "subset_index": 0,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "subset_index": 16,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "linear_mean": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "subset_index": 0,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "subset_index": 16,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "linear_mean": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "subset_index": 0,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "subset_index": 16,
+      "new_minus_historical": {
+        "r2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "CS_l2": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        },
+        "linear_mean": {
+          "prediction_flips": 0,
+          "accuracy_delta_pp": 0.0
+        }
+      }
+    }
+  ],
+  "all_reduced_eval_frontier": [
+    {
+      "subset": [
+        0
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0
+        ],
+        "accuracy_pct": 68.09333333333333,
+        "delta_pp": -2.2586666666666666,
+        "ci95_pp": [
+          -2.6959999999999997,
+          -1.8132666666666675
+        ]
+      },
+      "macro_delta_pp": -1.3087777777777776
+    },
+    {
+      "subset": [
+        0,
+        1
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0,
+          1
+        ],
+        "accuracy_pct": 68.93333333333334,
+        "delta_pp": -1.418666666666667,
+        "ci95_pp": [
+          -1.7733333333333334,
+          -1.066600000000001
+        ]
+      },
+      "macro_delta_pp": -0.7455555555555556
+    },
+    {
+      "subset": [
+        0,
+        2
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0,
+          2
+        ],
+        "accuracy_pct": 69.216,
+        "delta_pp": -1.136,
+        "ci95_pp": [
+          -1.4640000000000004,
+          -0.808
+        ]
+      },
+      "macro_delta_pp": -0.6387777777777778
+    },
+    {
+      "subset": [
+        0,
+        3
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0,
+          3
+        ],
+        "accuracy_pct": 69.37066666666666,
+        "delta_pp": -0.9813333333333332,
+        "ci95_pp": [
+          -1.3119999999999994,
+          -0.6426666666666666
+        ]
+      },
+      "macro_delta_pp": -0.5678888888888888
+    },
+    {
+      "subset": [
+        0,
+        4
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_dtd",
+        "head": "CS_l2",
+        "subset": [
+          0,
+          4
+        ],
+        "accuracy_pct": 69.70666666666666,
+        "delta_pp": -0.7920000000000001,
+        "ci95_pp": [
+          -1.146733333333334,
+          -0.4532666666666676
+        ]
+      },
+      "macro_delta_pp": -0.4612222222222222
+    },
+    {
+      "subset": [
+        0,
+        5
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_dtd",
+        "head": "r2",
+        "subset": [
+          0,
+          5
+        ],
+        "accuracy_pct": 67.46133333333334,
+        "delta_pp": -1.1439999999999997,
+        "ci95_pp": [
+          -1.455999999999999,
+          -0.8293333333333331
+        ]
+      },
+      "macro_delta_pp": -0.5678888888888889
+    },
+    {
+      "subset": [
+        0,
+        1,
+        2
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_dtd",
+        "head": "CS_l2",
+        "subset": [
+          0,
+          1,
+          2
+        ],
+        "accuracy_pct": 69.48266666666667,
+        "delta_pp": -1.0160000000000002,
+        "ci95_pp": [
+          -1.3119999999999994,
+          -0.7200000000000001
+        ]
+      },
+      "macro_delta_pp": -0.5091111111111111
+    },
+    {
+      "subset": [
+        0,
+        1,
+        3
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0,
+          1,
+          3
+        ],
+        "accuracy_pct": 69.49600000000001,
+        "delta_pp": -0.8559999999999999,
+        "ci95_pp": [
+          -1.1253333333333333,
+          -0.5813333333333335
+        ]
+      },
+      "macro_delta_pp": -0.4284444444444444
+    },
+    {
+      "subset": [
+        0,
+        1,
+        4
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_dtd",
+        "head": "r2",
+        "subset": [
+          0,
+          1,
+          4
+        ],
+        "accuracy_pct": 68.176,
+        "delta_pp": -0.4293333333333331,
+        "ci95_pp": [
+          -0.6693333333333331,
+          -0.19199999999999975
+        ]
+      },
+      "macro_delta_pp": -0.15888888888888894
+    },
+    {
+      "subset": [
+        0,
+        1,
+        5
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_dtd",
+        "head": "r2",
+        "subset": [
+          0,
+          1,
+          5
+        ],
+        "accuracy_pct": 67.77066666666667,
+        "delta_pp": -0.8346666666666663,
+        "ci95_pp": [
+          -1.0959999999999994,
+          -0.5706000000000007
+        ]
+      },
+      "macro_delta_pp": -0.42366666666666664
+    },
+    {
+      "subset": [
+        0,
+        2,
+        3
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0,
+          2,
+          3
+        ],
+        "accuracy_pct": 69.99466666666667,
+        "delta_pp": -0.35733333333333345,
+        "ci95_pp": [
+          -0.5786666666666668,
+          -0.14133333333333375
+        ]
+      },
+      "macro_delta_pp": -0.1684444444444444
+    },
+    {
+      "subset": [
+        0,
+        2,
+        4
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0,
+          2,
+          4
+        ],
+        "accuracy_pct": 69.86666666666667,
+        "delta_pp": -0.4853333333333331,
+        "ci95_pp": [
+          -0.7599999999999998,
+          -0.20533333333333292
+        ]
+      },
+      "macro_delta_pp": -0.27877777777777774
+    },
+    {
+      "subset": [
+        0,
+        2,
+        5
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0,
+          2,
+          5
+        ],
+        "accuracy_pct": 69.648,
+        "delta_pp": -0.7040000000000001,
+        "ci95_pp": [
+          -0.9520000000000001,
+          -0.45066666666666666
+        ]
+      },
+      "macro_delta_pp": -0.3692222222222221
+    },
+    {
+      "subset": [
+        0,
+        3,
+        4
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_dtd",
+        "head": "CS_l2",
+        "subset": [
+          0,
+          3,
+          4
+        ],
+        "accuracy_pct": 69.94666666666666,
+        "delta_pp": -0.5519999999999999,
+        "ci95_pp": [
+          -0.84,
+          -0.2586666666666666
+        ]
+      },
+      "macro_delta_pp": -0.24788888888888883
+    },
+    {
+      "subset": [
+        0,
+        3,
+        5
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_dtd",
+        "head": "r2",
+        "subset": [
+          0,
+          3,
+          5
+        ],
+        "accuracy_pct": 67.84533333333333,
+        "delta_pp": -0.7599999999999998,
+        "ci95_pp": [
+          -1.0239999999999996,
+          -0.5013333333333334
+        ]
+      },
+      "macro_delta_pp": -0.3497777777777777
+    },
+    {
+      "subset": [
+        0,
+        4,
+        5
+      ],
+      "allcell_lower_ge_minus0_5": false,
+      "worst": {
+        "cell": "dtd_to_eurosat_k1_eurosat",
+        "head": "linear_mean",
+        "subset": [
+          0,
+          4,
+          5
+        ],
+        "accuracy_pct": 69.67466666666667,
+        "delta_pp": -0.6773333333333336,
+        "ci95_pp": [
+          -0.938666666666667,
+          -0.4106666666666674
+        ]
+      },
+      "macro_delta_pp": -0.3022222222222222
+    }
+  ],
+  "limitations": "Historical float32banks retain original failedscatteraudit; this separately declared float64evaluation does not retroactively change that status. Frontier is unselected and cannot promote a test-picked subset."
+}

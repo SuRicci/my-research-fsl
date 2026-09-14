@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "decoded_images": 9144,
+  "object_images": 8677,
+  "background_images": 467,
+  "object_classes": 101,
+  "query_pool_images": 5818,
+  "gallery_pool_images": 2859,
+  "class_count_min": 31,
+  "query_class_min": 21,
+  "within_archive_duplicate_groups": 0,
+  "cross_class_conflicts": 0,
+  "excluded_by_reason": {},
+  "ineligible_classes": [],
+  "reference_manifest_count": 8,
+  "reference_unique_rgb_count": 33639,
+  "prior_manifests": {
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_identities.json": {
+      "count": 3753,
+      "sha256": "1e8061597ac9326a15a7031c77a22681d10eda1b9a5c94a1b7f00ce1f21e3635"
+    },
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_identities.json": {
+      "count": 10400,
+      "sha256": "b0ee6ae3f06753e95cc92a4aab9dcb1b9fabac95e3b9f56f0ece6858feb303e2"
+    },
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-domains/assets/cifar_fs_identities.json": {
+      "count": 2000,
+      "sha256": "10e044d4c326c8553f09ef27ded64d8a81d134c4068212576f312ed0c2e9b204"
+    },
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-domains/assets/cub200_identities.json": {
+      "count": 5794,
+      "sha256": "d54eb0dd902720c1d4cab0b1c4b4a18174221fe8eb9e65b84ede8f13c94b152f"
+    },
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-domains/assets/flowers102_identities.json": {
+      "count": 6147,
+      "sha256": "473706ed365a78aa0236e121ec8d3ef036156c1e195affc9c34c71321ded4977"
+    },
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/assets/eurosat_local_identities.json": {
+      "count": 10400,
+      "sha256": "b087702d0056ca83dd1e3b9ed218ed81871c16af2a3829c6a6906613c3d50aaf"
+    },
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-source-diversity/assets/flowers102/identities.json": {
+      "count": 6147,
+      "sha256": "b579368d1f5e6dea62209da72cff34a278afcc68dfc0cf339a2ada15b40f036a"
+    },
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/fsl-pets-transfer-20260913/assets/identities.json": {
+      "count": 5545,
+      "sha256": "819fb0797c5abe6617d1f7e24d66157e94ca18fa7f6be8a088a40b4ba826816d"
+    }
+  },
+  "decoded_errors": [],
+  "non_image_members": [
+    "101_ObjectCategories/BACKGROUND_Google/tmp"
+  ],
+  "unpacked_jpeg_bytes": 138601397,
+  "six_view_float32_feature_bytes_all_images": 186590208,
+  "no_target_accuracy_computed": true,
+  "elapsed_seconds": 6.308588027954102,
+  "free_gib": 11.109081268310547,
+  "scope": "Exact RGB identity only within the eight listed local manifests; no perceptual/pretraining/global-history independence proof."
+}

@@ -1,0 +1,10 @@
+\begin{table}[ht]
+\centering
+\caption{One-shot paired accuracy differences in development transfer (percentage points). Each task is averaged across its two gallery conditions before resampling. The final column compares calibrated relevance with the same-mass control.}\label{tab:calibration-deltas}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrr}\toprule
+Training $\to$ target & Source-selected control & $\Delta$ & 95\% interval & $\Delta_{\rm mass}$\\\midrule
+DTD $\to$ EuroSAT & CS$_{\ell_2}$, $\lambda=0.1$ & +0.48 & [+0.30, +0.67] & 0.00 \\
+EuroSAT $\to$ DTD & Mix $0.5$, $\lambda=0.01$ & -1.45 & [-1.72, -1.17] & 0.00 \\
+\bottomrule\end{tabular}
+\end{table}

@@ -1,0 +1,71 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-9dc47b6f",
+  "id": "report-9dc47b6f",
+  "quest_id": "012",
+  "created_at": "2026-09-13T08:45:55+00:00",
+  "updated_at": "2026-09-13T08:45:55+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-47882840"
+  },
+  "status": "completed",
+  "branch": "analysis/scatter-centering-attribution-20260913",
+  "head_commit": "4ba56fe0ca93cce10638f50f5d9a2aa34bf263d7",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "mechanistic_attribution",
+  "title": "One-shot retrieval versus centering counterfactuals",
+  "parent_artifact_id": "report-f208e67c",
+  "science_nodes": [
+    "science-6f5ae142",
+    "science-5db67b1a"
+  ],
+  "question": "Which centering component explains DTD mismatch harm?",
+  "intervention": "cross fixed raw/centered gallery neighbor sets with raw/centered classification features after the same scatter correction",
+  "fixed_conditions": "same sourcegamma, views, tasks, doubleprecision, mix0.5 andridge0.1",
+  "summary": "DTD mismatch loses under either isolated intervention; component effects depend on the other intervention and domain. Neither fixed hybrid exceeds fullstack pooledmean. Preserve +1.648pp parentincumbentincrement but no fullpromotion.",
+  "evaluation_summary": {
+    "result": "conditional geometry interactions; simplehybrids do not resolve tradeoff",
+    "claim_update": "retain positive parent increment; reject universal singlecomponent repair",
+    "baseline_relation": "sameparentdevelopmentprotocol; canonicalPetsunchanged",
+    "failure_mode": "domain-dependent nonlinearinteraction",
+    "next_action": "challenge fixed predictionfusion against priorfusion evidence before any newidea"
+  },
+  "evidence_paths": [
+    "experiments/analysis/scatter-centering-attribution-20260913/REPORT.md",
+    "experiments/analysis/scatter-centering-attribution-20260913/outputs/validation.json",
+    "experiments/analysis/scatter-centering-attribution-20260913/outputs/analysis.json"
+  ],
+  "comparability": "onefactorcounterfactuals after same scatter; auxiliary posthoc, not independentgeneralization",
+  "paper_role": "reference_only_pending_scope_reconciliation",
+  "run_id": "run-47882840",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:mechanistic_attribution:none:133b9d0f7ae13e4cb6dcb1afffbcc50cf1c3754e4f7b68006117df536087746d",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-9dc47b6f",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

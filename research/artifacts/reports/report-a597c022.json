@@ -1,0 +1,81 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-a597c022",
+  "id": "report-a597c022",
+  "quest_id": "012",
+  "created_at": "2026-09-13T10:27:28+00:00",
+  "updated_at": "2026-09-13T10:27:28+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-e83fda3b"
+  },
+  "status": "completed",
+  "branch": "run/query-competence-20260913",
+  "head_commit": "72811df697f6e9e495b90c9d2d1ec39fb32bffff",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "query_competence_qualification_20260913",
+  "title": "Fixed source-trained query competence fails to improve the retained ensemble",
+  "idea_id": "idea-3c1c2eb3",
+  "experiment_tier": "auxiliary/dev",
+  "summary": "Learned77.275333% versus fixedblend77.334%, delta-0.058667pp[-0.103333,-0.013333].473repairs and561spoiled correct predictions. Independent210000query reconstruction passes. Retain blend; close fixed competence recipe.",
+  "metrics_summary": {
+    "dev_macro1shot_learned_accuracy": 77.27533333333334,
+    "dev_macro1shot_blend_accuracy": 77.334,
+    "dev_macro1shot_margin_accuracy": 77.31666666666666,
+    "dev_macro1shot_increment_pp": -0.05866666666666645
+  },
+  "evidence_paths": [
+    "experiments/main/query-competence-20260913/REPORT.md",
+    "experiments/main/query-competence-20260913/protocol.json",
+    "experiments/main/query-competence-20260913/outputs/analysis.json",
+    "experiments/main/query-competence-20260913/outputs/independent_validation.json",
+    "experiments/main/query-competence-20260913/outputs/failure_counts.json"
+  ],
+  "science_node_id": "science-868ea88a",
+  "validation_node_id": "science-aeaa6b28",
+  "execution": {
+    "bash_id": "bash-7271fa72",
+    "elapsed_seconds": 49.782,
+    "exit_code": 0
+  },
+  "canonical_metric_deviation": "Auxiliary exposed-development experiment as predeclared in report-efa574a8; canonical Pets five metrics unmeasured and unchanged. No invented main score or target promotion.",
+  "evaluation_summary": {
+    "result": "refuted_fixed_recipe",
+    "claim_update": "No incrementalgain despite1.883333pporacleceiling.",
+    "baseline_relation": "Retain77.334%fixedblend; currentcanonicalPetscontract unchanged.",
+    "failure_mode": "Source competence/profiles fail to transfer usefulnetdecisionadvantage.",
+    "next_action": "Returnidea for query-side information challenge, not logistic feature/C rescue.",
+    "scope": "Conditional reuseddevelopmentpools, not prospectivegeneralization."
+  },
+  "next_stage": "decision",
+  "run_id": "run-e83fda3b",
+  "anchor": "decision",
+  "semantic_key": "report:decision:query_competence_qualification_20260913:none:87dc5479913791d6c6faa49c656746ac27c659b14ca85191d17a66a5db576272",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-a597c022",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

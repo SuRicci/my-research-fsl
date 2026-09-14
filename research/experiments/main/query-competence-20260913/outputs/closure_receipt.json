@@ -1,0 +1,13 @@
+{
+  "status": "complete_verified_hypothesis_refuted",
+  "run_session": "bash-7271fa72",
+  "validation_session": "bash-16c97d04",
+  "science_run": "science-868ea88a",
+  "science_validation": "science-aeaa6b28",
+  "incumbent_accuracy_pct": 77.334,
+  "candidate_accuracy_pct": 77.27533333333334,
+  "output_mib": 25.44214630126953,
+  "free_gib": 11.39040756225586,
+  "report_id": "report-a597c022",
+  "decision_id": "decision-a3709f32"
+}

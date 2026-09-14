@@ -1,0 +1,240 @@
+{
+  "cells": {
+    "dtd_dtd": {
+      "accuracy_pct": {
+        "incumbent": 79.88799999999999,
+        "consistency": 80.01066666666667,
+        "isotropic": 79.88799999999999,
+        "query_view_mean": 79.80533333333332
+      },
+      "comparisons": {
+        "incumbent": {
+          "delta_pp": 0.12266666666666656,
+          "ci95_pp": [
+            0.050666666666666534,
+            0.1973333333333333
+          ]
+        },
+        "isotropic": {
+          "delta_pp": 0.12266666666666656,
+          "ci95_pp": [
+            0.050666666666666534,
+            0.1973333333333333
+          ]
+        },
+        "query_view_mean": {
+          "delta_pp": 0.2053333333333332,
+          "ci95_pp": [
+            0.1279999999999999,
+            0.2853333333333331
+          ]
+        }
+      },
+      "repairs": 119,
+      "spoiled": 73
+    },
+    "dtd_eurosat": {
+      "accuracy_pct": {
+        "incumbent": 76.26666666666667,
+        "consistency": 76.30399999999999,
+        "isotropic": 76.26666666666667,
+        "query_view_mean": 76.2
+      },
+      "comparisons": {
+        "incumbent": {
+          "delta_pp": 0.037333333333333406,
+          "ci95_pp": [
+            -0.04000000000000014,
+            0.11733333333333348
+          ]
+        },
+        "isotropic": {
+          "delta_pp": 0.037333333333333406,
+          "ci95_pp": [
+            -0.04000000000000014,
+            0.11733333333333348
+          ]
+        },
+        "query_view_mean": {
+          "delta_pp": 0.10400000000000016,
+          "ci95_pp": [
+            0.016000000000000052,
+            0.19200000000000012
+          ]
+        }
+      },
+      "repairs": 125,
+      "spoiled": 111
+    },
+    "eurosat_dtd": {
+      "accuracy_pct": {
+        "incumbent": 73.48533333333333,
+        "consistency": 73.48533333333333,
+        "isotropic": 73.48533333333333,
+        "query_view_mean": 73.47466666666666
+      },
+      "comparisons": {
+        "incumbent": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "isotropic": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "query_view_mean": {
+          "delta_pp": 0.010666666666666779,
+          "ci95_pp": [
+            -0.047999999999999814,
+            0.06933333333333334
+          ]
+        }
+      },
+      "repairs": 0,
+      "spoiled": 0
+    },
+    "eurosat_eurosat": {
+      "accuracy_pct": {
+        "incumbent": 79.696,
+        "consistency": 79.696,
+        "isotropic": 79.696,
+        "query_view_mean": 79.552
+      },
+      "comparisons": {
+        "incumbent": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "isotropic": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "query_view_mean": {
+          "delta_pp": 0.14399999999999996,
+          "ci95_pp": [
+            0.07733333333333327,
+            0.2106666666666668
+          ]
+        }
+      },
+      "repairs": 0,
+      "spoiled": 0
+    }
+  },
+  "domains": {
+    "dtd": {
+      "accuracy_pct": {
+        "incumbent": 78.07733333333333,
+        "consistency": 78.15733333333333,
+        "isotropic": 78.07733333333333,
+        "query_view_mean": 78.00266666666667
+      },
+      "comparisons": {
+        "incumbent": {
+          "delta_pp": 0.0799999999999999,
+          "ci95_pp": [
+            0.0279666666666664,
+            0.1346666666666666
+          ]
+        },
+        "isotropic": {
+          "delta_pp": 0.0799999999999999,
+          "ci95_pp": [
+            0.0279666666666664,
+            0.1346666666666666
+          ]
+        },
+        "query_view_mean": {
+          "delta_pp": 0.15466666666666654,
+          "ci95_pp": [
+            0.09733333333333319,
+            0.21466666666666626
+          ]
+        }
+      }
+    },
+    "eurosat": {
+      "accuracy_pct": {
+        "incumbent": 76.59066666666666,
+        "consistency": 76.59066666666666,
+        "isotropic": 76.59066666666666,
+        "query_view_mean": 76.51333333333334
+      },
+      "comparisons": {
+        "incumbent": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "isotropic": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "query_view_mean": {
+          "delta_pp": 0.0773333333333334,
+          "ci95_pp": [
+            0.03199999999999996,
+            0.12133333333333339
+          ]
+        }
+      }
+    }
+  },
+  "pooled": {
+    "incumbent": {
+      "delta_pp": 0.03999999999999995,
+      "ci95_pp": [
+        0.0139833333333332,
+        0.0673333333333333
+      ]
+    },
+    "isotropic": {
+      "delta_pp": 0.03999999999999995,
+      "ci95_pp": [
+        0.0139833333333332,
+        0.0673333333333333
+      ]
+    },
+    "query_view_mean": {
+      "delta_pp": 0.11599999999999998,
+      "ci95_pp": [
+        0.07998333333333305,
+        0.15266666666666667
+      ]
+    }
+  },
+  "pooled_accuracy_pct": {
+    "incumbent": 77.334,
+    "consistency": 77.374,
+    "isotropic": 77.334,
+    "query_view_mean": 77.25800000000001
+  },
+  "gate": {
+    "passed": false,
+    "tests": {
+      "increment": false,
+      "positive_ci": true,
+      "domains": true,
+      "cells": true,
+      "controls": true
+    }
+  },
+  "scope": "All five required Pets metrics unmeasured and unchanged; this auxiliary qualification is recorded as report/science rather than a fake canonical main score. Repeatedly exposed development; paired intervals conditional on fixed pools."
+}

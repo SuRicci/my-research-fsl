@@ -1,0 +1,117 @@
+{
+  "updated_at": "2026-09-14T02:41:58.788027+00:00",
+  "phase": "verified_gate_failed",
+  "branch": "run/dino-depth-readout-20260914",
+  "idea_id": "idea-f8cdb193",
+  "encoding_bash": "bash-662b1a95",
+  "encoding_science": "science-cc52d8d3",
+  "encoding_validation_bash": "bash-1125aa58",
+  "classification_bash": "bash-5721cf20",
+  "classification_science": "science-620dec73",
+  "classification_command": "OPENBLAS_NUM_THREADS=6 OMP_NUM_THREADS=6 /opt/anaconda3/envs/torch/bin/python experiments/main/dino-depth-readout-20260914/study.py",
+  "monitoring_paths": [
+    "outputs/run_manifest.json",
+    "outputs/*_*.npz",
+    "outputs/complete.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/bash_exec/bash-5721cf20/terminal.log"
+  ],
+  "last_observed_eval": {
+    "observed_at": "2026-09-14T02:29:00.201683+00:00",
+    "log_read_bash": "bash-5721cf20",
+    "log_line_count": 35,
+    "log_is_partial": false,
+    "completed_cells": [
+      "dtd_dtd",
+      "dtd_eurosat",
+      "eurosat_dtd"
+    ],
+    "total_cells": 4,
+    "tasks_per_cell": 500,
+    "completed_condition_lower_bound": 1500,
+    "total_conditions": 2000,
+    "last_observed_eval": {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task_index": 0,
+      "seconds": 1252.5
+    },
+    "input_hashes_match": true,
+    "saved_arrays_finite": true,
+    "saved_prediction_shape": [
+      8,
+      500,
+      75
+    ],
+    "independent_full_audit_pending": true,
+    "audit_code_review": "All predictions and task labels,22pairedintervals,4prespecified independent NumPy primary cases; logistic not independently reimplemented."
+  },
+  "next_check_seconds": 240,
+  "rough_remaining_minutes": [
+    8,
+    15
+  ],
+  "eta_basis": "Three cells saved; finalcell begun. Estimate from recent EuroSAT throughput; full audit duration additional.",
+  "next": "Record auxiliary result and failure decision; map reference history then evidence synthesis.",
+  "runtime_ref_repair": {
+    "artifact": "decision-db75dfa2",
+    "verified": true,
+    "current_workspace_branch": "run/dino-depth-readout-20260914",
+    "active_idea_id": "idea-f8cdb193"
+  },
+  "environment": {
+    "python": "3.8.18 | packaged by conda-forge | (default, Oct 10 2023, 15:46:56) \n[Clang 16.0.6 ]",
+    "executable": "/opt/anaconda3/envs/torch/bin/python",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "1.24.4",
+    "torch": "2.3.0",
+    "sklearn": "1.3.0",
+    "threads": 6
+  },
+  "free_gib": 11.816905975341797,
+  "metric_boundary": "Auxiliary exposed development; five Pets metrics unmeasured and unchanged. No new accuracy conclusion.",
+  "checked_at": "2026-09-14T02:29:00.201683+00:00",
+  "classification_observation": {
+    "observed_at": "2026-09-14T02:29:00.201683+00:00",
+    "log_read_bash": "bash-5721cf20",
+    "log_line_count": 35,
+    "log_is_partial": false,
+    "completed_cells": [
+      "dtd_dtd",
+      "dtd_eurosat",
+      "eurosat_dtd"
+    ],
+    "total_cells": 4,
+    "tasks_per_cell": 500,
+    "completed_condition_lower_bound": 1500,
+    "total_conditions": 2000,
+    "last_observed_eval": {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task_index": 0,
+      "seconds": 1252.5
+    },
+    "input_hashes_match": true,
+    "saved_arrays_finite": true,
+    "saved_prediction_shape": [
+      8,
+      500,
+      75
+    ],
+    "independent_full_audit_pending": true,
+    "audit_code_review": "All predictions and task labels,22pairedintervals,4prespecified independent NumPy primary cases; logistic not independently reimplemented."
+  },
+  "output_mib": 188.54686832427979,
+  "classification_exit_code": 0,
+  "classification_complete": true,
+  "audit_bash": "bash-5c66513c",
+  "audit_science": "science-01c5426c",
+  "audit_exit_code": 0,
+  "independent_full_audit_pending": false,
+  "gate_passed": false,
+  "science_lifecycle_updates": {
+    "compute": "science-620dec73-update-node-run-5f12c210",
+    "audit": "science-01c5426c-update-node-result-11cbf3b6"
+  },
+  "science_lifecycle_verified_at": "2026-09-14T02:58:25.171292+00:00",
+  "science_api_note": "update_node requires node_type; run uses success, validation uses passed plus parent_node_ids. Check payload ok, not only isError. Initial immutable running records are superseded by append-only update artifacts."
+}

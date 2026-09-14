@@ -1,0 +1,516 @@
+{
+  "status": "completed",
+  "verdict": "reject_fixed_residual_recipe",
+  "idea_id": "idea-0430864a",
+  "launch_decision_id": "decision-72b36e25",
+  "tier": "auxiliary/dev",
+  "analysis": {
+    "scope": "Source-only follow-up qualification; no canonical Pets values measured or copied as new results.",
+    "cells": {
+      "dtd_dtd": {
+        "accuracy_pct": {
+          "parent": 80.01066666666667,
+          "residual": 33.989333333333335,
+          "residual_fusion": 68.29333333333332,
+          "raw_fusion": 78.57066666666667,
+          "support_center_fusion": 78.62133333333333,
+          "shuffled_fusion": 59.496,
+          "mean_fusion": 78.46133333333334
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -11.717333333333336,
+            "ci95_pp": [
+              -12.242666666666667,
+              -11.170666666666667
+            ]
+          },
+          "raw_fusion": {
+            "delta_pp": -10.277333333333335,
+            "ci95_pp": [
+              -10.794666666666666,
+              -9.754666666666667
+            ]
+          },
+          "support_center_fusion": {
+            "delta_pp": -10.328,
+            "ci95_pp": [
+              -10.855999999999998,
+              -9.792
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 8.797333333333333,
+            "ci95_pp": [
+              7.978666666666667,
+              9.629333333333333
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -10.168000000000001,
+            "ci95_pp": [
+              -10.701333333333332,
+              -9.6346
+            ]
+          }
+        },
+        "repairs": 1235,
+        "spoils": 5629
+      },
+      "dtd_eurosat": {
+        "accuracy_pct": {
+          "parent": 76.30399999999999,
+          "residual": 33.989333333333335,
+          "residual_fusion": 64.33066666666666,
+          "raw_fusion": 76.52533333333334,
+          "support_center_fusion": 76.83733333333332,
+          "shuffled_fusion": 55.95466666666666,
+          "mean_fusion": 76.376
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -11.973333333333333,
+            "ci95_pp": [
+              -12.608,
+              -11.349333333333334
+            ]
+          },
+          "raw_fusion": {
+            "delta_pp": -12.194666666666667,
+            "ci95_pp": [
+              -12.791999999999998,
+              -11.6106
+            ]
+          },
+          "support_center_fusion": {
+            "delta_pp": -12.506666666666666,
+            "ci95_pp": [
+              -13.125399999999999,
+              -11.895999999999999
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 8.376,
+            "ci95_pp": [
+              7.4986,
+              9.229333333333331
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -12.045333333333332,
+            "ci95_pp": [
+              -12.639999999999999,
+              -11.455933333333332
+            ]
+          }
+        },
+        "repairs": 1314,
+        "spoils": 5804
+      },
+      "eurosat_dtd": {
+        "accuracy_pct": {
+          "parent": 73.48533333333333,
+          "residual": 50.461333333333336,
+          "residual_fusion": 69.86933333333334,
+          "raw_fusion": 71.75466666666667,
+          "support_center_fusion": 71.25866666666667,
+          "shuffled_fusion": 48.83733333333333,
+          "mean_fusion": 71.85866666666666
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -3.6160000000000005,
+            "ci95_pp": [
+              -4.1146666666666665,
+              -3.1146666666666665
+            ]
+          },
+          "raw_fusion": {
+            "delta_pp": -1.8853333333333333,
+            "ci95_pp": [
+              -2.44,
+              -1.3359999999999996
+            ]
+          },
+          "support_center_fusion": {
+            "delta_pp": -1.389333333333333,
+            "ci95_pp": [
+              -1.954733333333333,
+              -0.8293333333333333
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 21.032,
+            "ci95_pp": [
+              20.176,
+              21.85873333333333
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -1.9893333333333332,
+            "ci95_pp": [
+              -2.5440666666666667,
+              -1.4426666666666665
+            ]
+          }
+        },
+        "repairs": 2200,
+        "spoils": 3556
+      },
+      "eurosat_eurosat": {
+        "accuracy_pct": {
+          "parent": 79.696,
+          "residual": 50.461333333333336,
+          "residual_fusion": 73.792,
+          "raw_fusion": 76.29333333333334,
+          "support_center_fusion": 75.488,
+          "shuffled_fusion": 53.925333333333334,
+          "mean_fusion": 76.312
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -5.904000000000001,
+            "ci95_pp": [
+              -6.405333333333332,
+              -5.405333333333333
+            ]
+          },
+          "raw_fusion": {
+            "delta_pp": -2.5013333333333336,
+            "ci95_pp": [
+              -3.0079999999999996,
+              -1.9840000000000004
+            ]
+          },
+          "support_center_fusion": {
+            "delta_pp": -1.696,
+            "ci95_pp": [
+              -2.2240666666666673,
+              -1.1839333333333342
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 19.866666666666667,
+            "ci95_pp": [
+              19.07993333333333,
+              20.648066666666665
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -2.5200000000000005,
+            "ci95_pp": [
+              -3.0373333333333328,
+              -2.0053333333333336
+            ]
+          }
+        },
+        "repairs": 1648,
+        "spoils": 3862
+      }
+    },
+    "domains": {
+      "dtd": {
+        "accuracy_pct": {
+          "parent": 78.15733333333333,
+          "residual": 33.989333333333335,
+          "residual_fusion": 66.31200000000001,
+          "raw_fusion": 77.548,
+          "support_center_fusion": 77.72933333333333,
+          "shuffled_fusion": 57.72533333333333,
+          "mean_fusion": 77.41866666666667
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -11.845333333333333,
+            "ci95_pp": [
+              -12.389333333333333,
+              -11.301333333333332
+            ]
+          },
+          "raw_fusion": {
+            "delta_pp": -11.236,
+            "ci95_pp": [
+              -11.774700000000001,
+              -10.722633333333333
+            ]
+          },
+          "support_center_fusion": {
+            "delta_pp": -11.417333333333335,
+            "ci95_pp": [
+              -11.950700000000001,
+              -10.874633333333335
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 8.586666666666664,
+            "ci95_pp": [
+              7.783966666666665,
+              9.377366666666665
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -11.106666666666666,
+            "ci95_pp": [
+              -11.644,
+              -10.587966666666668
+            ]
+          }
+        }
+      },
+      "eurosat": {
+        "accuracy_pct": {
+          "parent": 76.59066666666666,
+          "residual": 50.461333333333336,
+          "residual_fusion": 71.83066666666666,
+          "raw_fusion": 74.024,
+          "support_center_fusion": 73.37333333333333,
+          "shuffled_fusion": 51.38133333333332,
+          "mean_fusion": 74.08533333333332
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -4.760000000000001,
+            "ci95_pp": [
+              -5.214700000000001,
+              -4.298633333333333
+            ]
+          },
+          "raw_fusion": {
+            "delta_pp": -2.1933333333333334,
+            "ci95_pp": [
+              -2.692,
+              -1.699966666666667
+            ]
+          },
+          "support_center_fusion": {
+            "delta_pp": -1.5426666666666666,
+            "ci95_pp": [
+              -2.0573666666666663,
+              -1.0426666666666666
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 20.449333333333332,
+            "ci95_pp": [
+              19.67463333333333,
+              21.22266666666667
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -2.2546666666666666,
+            "ci95_pp": [
+              -2.7560666666666673,
+              -1.7572999999999999
+            ]
+          }
+        }
+      }
+    },
+    "pooled": {
+      "parent": {
+        "delta_pp": -8.302666666666667,
+        "ci95_pp": [
+          -8.652016666666666,
+          -7.939333333333335
+        ]
+      },
+      "raw_fusion": {
+        "delta_pp": -6.714666666666666,
+        "ci95_pp": [
+          -7.070683333333333,
+          -6.346633333333335
+        ]
+      },
+      "support_center_fusion": {
+        "delta_pp": -6.4799999999999995,
+        "ci95_pp": [
+          -6.846683333333334,
+          -6.103316666666667
+        ]
+      },
+      "shuffled_fusion": {
+        "delta_pp": 14.518,
+        "ci95_pp": [
+          13.950633333333334,
+          15.068699999999998
+        ]
+      },
+      "mean_fusion": {
+        "delta_pp": -6.680666666666666,
+        "ci95_pp": [
+          -7.048,
+          -6.306633333333334
+        ]
+      }
+    },
+    "accuracy_pct": {
+      "parent": 77.374,
+      "residual": 42.22533333333333,
+      "residual_fusion": 69.07133333333334,
+      "raw_fusion": 75.786,
+      "support_center_fusion": 75.55133333333333,
+      "shuffled_fusion": 54.553333333333335,
+      "mean_fusion": 75.752
+    },
+    "gate": {
+      "passed": false,
+      "tests": {
+        "increment": false,
+        "positive_ci": false,
+        "domains": false,
+        "cells": false,
+        "controls": false
+      }
+    }
+  },
+  "validation": {
+    "numerical": {
+      "status": "passed",
+      "independent_cases": [
+        {
+          "case": "random",
+          "matching_error": 1.1102230246251565e-16,
+          "fusion_error": 7.771561172376096e-15
+        },
+        {
+          "case": "zero",
+          "matching_error": 0.0
+        },
+        {
+          "case": "constant",
+          "matching_error": 0.0
+        },
+        {
+          "case": "tiny",
+          "matching_error": 0.0
+        },
+        {
+          "case": "dtd_dtd",
+          "task": 0,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 2.7755575615628914e-15
+        },
+        {
+          "case": "dtd_dtd",
+          "task": 249,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 3.9968028886505635e-15
+        },
+        {
+          "case": "dtd_dtd",
+          "task": 499,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 2.9976021664879227e-15
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 0,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 2.886579864025407e-15
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 249,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 3.9968028886505635e-15
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 499,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 2.9976021664879227e-15
+        },
+        {
+          "case": "eurosat_dtd",
+          "task": 0,
+          "matching_error": 2.7755575615628914e-16,
+          "fusion_error": 4.884981308350689e-15
+        },
+        {
+          "case": "eurosat_dtd",
+          "task": 249,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 8.659739592076221e-15
+        },
+        {
+          "case": "eurosat_dtd",
+          "task": 499,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 4.274358644806853e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 0,
+          "matching_error": 2.7755575615628914e-16,
+          "fusion_error": 4.884981308350689e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 249,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 8.659739592076221e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 499,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 4.274358644806853e-15
+        }
+      ],
+      "permutations_and_query_independence": "passed",
+      "checked_prediction_entries": 1050000,
+      "input_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/dtd_query.npy": "ca0fb9d6d5935c21f6116b324931430e21ee2217e77d8377d01e1face9578278",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/dtd_query_identities.json": "066771a7e3d7de66eb2df554d85a9c79b21ac1c12f3efb49897ecf3987de3ccc",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/dtd_dtd.npz": "4c999d9084053b56ed88db65bdb1e8b67082f43e3c4a5ebc9f3279e91160071c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_dtd.npz": "f1eb4c27bb6efe273a005900dfde32dfe177ccd779d2cae70c018fa501f83773",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/dtd_eurosat.npz": "4161d2e683cac7b4020405aed1782fa6d326d44e3fc06c160cdf150e9f9685c3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_eurosat.npz": "7284378158390122200c30cbd13f492f542acddd8cd1da8c1121531b02b02991",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/eurosat_query.npy": "04df6fb99b673242cba43f0441927313bd64381df73c357234239908190ccc8e",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/eurosat_query_identities.json": "b4f19936a3254fb27b574fb4516e18f0941ed49e3535d9a5008c4a390f52c112",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/eurosat_dtd.npz": "2a8d9e96fed28219cc7722889427f2b5e716756611d9cc54fb650a3088b770dd",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_dtd.npz": "7ae5fdbecb839fb38dbcc63349b90327ff11dbfa92ee1e11d37c502b9ffd9623",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/eurosat_eurosat.npz": "5f3b058c8bf495a8779168a75f39ce271e74a0f7f24c05add35a15518077ab74",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_eurosat.npz": "ac84bcf58ca83944c7d1d6239ea881f8b892f5998af75edb90d0ba8a6054de39"
+      },
+      "output_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/dtd_dtd.npz": "156a4008a48410fd724db7731ec558de7b5f710442422c7b5dd6f52436a80358",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/dtd_eurosat.npz": "bb499675ce419f0d495f94e17aeb4299de0c1eb5d6e9445e20fc1290c12194e5",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/eurosat_dtd.npz": "1cc4faa6d6da7440ab650f8b127582022a16a724a8ed55fda54c8906c09a96a4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/eurosat_eurosat.npz": "868e4525412ea52c0b2c5d37e5a52edd7656dd0d932052409cabb65c8c47e665"
+      },
+      "parent_raw_mean_exact": true
+    },
+    "statistics": {
+      "status": "passed",
+      "independent_interval_count": 35,
+      "max_interval_error_pp": 7.105427357601002e-15,
+      "checked_prediction_entries": 1050000,
+      "bootstrap": "count-weighted; domains+seeds stratified; galleries averaged within episode; conditional development intervals"
+    }
+  },
+  "execution": {
+    "status": "completed",
+    "seconds": 161.6554970741272,
+    "task_conditions": 2000,
+    "unique_episodes": 1000,
+    "independent_statistics": "passed",
+    "torch": "2.3.0",
+    "numpy": "1.24.4",
+    "threads": 4,
+    "free_gib": 10.201942443847656,
+    "independent_statistics_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/statistics_audit.json"
+  },
+  "science_node": "science-e969b98a",
+  "validation_node": "science-6d4d5d9a",
+  "canonical_pets_metrics": "unchanged and unmeasured",
+  "evaluation_summary": {
+    "comparability": "Exact2000source taskconditions and saved parent/raw/mean scores; own-image or support-only processing.",
+    "claim_update": "Fixed shared-component-removal remedy refuted; shared energy alone does not establish nuisance.",
+    "baseline_relation": "Parent77.374percent retained; canonical Pets5metric comparator unchanged/unmeasured.",
+    "failure_mode": "Removing image mean substantially worsens both source domains; cannot isolate whether useful signal removed or residual noise amplified.",
+    "next_action": "Stop residual/centering/fusion rescue; compare a genuinely different use of retained descriptors, such as support reconstruction, against broader source-trained classification and evidence synthesis before selecting any new run.",
+    "scope": "Repeatedly exposed development; intervals conditional on fixed image pools; no new transfer or novelty claim."
+  },
+  "updated_at": "2026-09-13T14:03:20.021242+00:00"
+}

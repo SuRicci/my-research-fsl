@@ -1,0 +1,24 @@
+{
+  "summary": "Fixed reference-relative worst-source training fails qualification in both development directions.",
+  "evaluation_summary": {
+    "claim_update": "refuted for fixed protocol; no robust improvement",
+    "baseline_relation": "same-input identity and matched objectives; practical richer strong stack; canonicalPets unchanged",
+    "failure_mode": "direction_underperforming",
+    "next_action": "idea: challenge remaining real-view objective without reopening failed grids",
+    "metrics_summary": {
+      "dtd_to_eurosat_accuracy": 69.04533333333333,
+      "eurosat_to_dtd_accuracy": 74.39733333333334
+    },
+    "scope": "auxiliary exposed-development one-shot"
+  },
+  "science_run_id": "science-8481f899",
+  "science_validation_id": "science-2978ee2a",
+  "idea_id": "idea-3a020710",
+  "qualification_gate_passed": false,
+  "status": "verified",
+  "evidence_paths": [
+    "outputs/analysis.json",
+    "outputs/independent_audit.json",
+    "summary_repair.json"
+  ]
+}

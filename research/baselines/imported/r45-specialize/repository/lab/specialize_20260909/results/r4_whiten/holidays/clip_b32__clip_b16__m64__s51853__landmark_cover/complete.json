@@ -1,0 +1,103 @@
+{
+  "method": "r4_whiten",
+  "dataset": "holidays",
+  "pair": [
+    "clip_b32",
+    "clip_b16"
+  ],
+  "budget": 64,
+  "seed": 51853,
+  "policy": "landmark_cover",
+  "bridge_ids": [
+    "rparis:gallery:paris_museedorsay_000574",
+    "rparis:gallery:paris_general_000412",
+    "roxford:gallery:christ_church_000728",
+    "rparis:gallery:paris_pantheon_000902",
+    "roxford:gallery:balliol_000122",
+    "rparis:gallery:paris_general_001414",
+    "roxford:gallery:christ_church_000141",
+    "roxford:gallery:magdalen_000732",
+    "rparis:gallery:paris_general_001675",
+    "roxford:gallery:balliol_000124",
+    "roxford:gallery:oxford_001479",
+    "rparis:gallery:paris_museedorsay_001044",
+    "rparis:gallery:paris_general_000727",
+    "rparis:gallery:paris_sacrecoeur_000701",
+    "rparis:gallery:paris_museedorsay_000923",
+    "rparis:gallery:paris_general_001862",
+    "roxford:gallery:new_000915",
+    "rparis:gallery:paris_museedorsay_000876",
+    "rparis:gallery:paris_pompidou_000607",
+    "roxford:gallery:oxford_000882",
+    "rparis:gallery:paris_louvre_000189",
+    "roxford:gallery:magdalen_000325",
+    "rparis:gallery:paris_invalides_000593",
+    "rparis:gallery:paris_louvre_000082",
+    "rparis:gallery:paris_museedorsay_000103",
+    "roxford:gallery:oxford_002261",
+    "rparis:gallery:paris_triomphe_000628",
+    "roxford:gallery:oxford_003144",
+    "roxford:gallery:oxford_003381",
+    "rparis:gallery:paris_moulinrouge_000060",
+    "rparis:gallery:paris_triomphe_000505",
+    "rparis:gallery:paris_notredame_000411",
+    "rparis:gallery:paris_general_001649",
+    "rparis:gallery:paris_general_000811",
+    "roxford:gallery:new_000251",
+    "rparis:gallery:paris_pantheon_001038",
+    "roxford:gallery:pitt_rivers_000041",
+    "rparis:gallery:paris_pompidou_000164",
+    "rparis:gallery:paris_sacrecoeur_000425",
+    "rparis:gallery:paris_defense_000250",
+    "rparis:gallery:paris_sacrecoeur_000500",
+    "roxford:gallery:oxford_003627",
+    "roxford:gallery:oxford_000707",
+    "rparis:gallery:paris_eiffel_000135",
+    "rparis:gallery:paris_museedorsay_000049",
+    "rparis:gallery:paris_pompidou_000658",
+    "roxford:gallery:magdalen_000263",
+    "rparis:gallery:paris_pompidou_000051",
+    "roxford:gallery:oxford_001029",
+    "rparis:gallery:paris_general_002845",
+    "rparis:gallery:paris_triomphe_000793",
+    "rparis:gallery:paris_notredame_000714",
+    "rparis:gallery:paris_general_002952",
+    "rparis:gallery:paris_triomphe_000308",
+    "roxford:gallery:christ_church_000129",
+    "rparis:gallery:paris_louvre_000332",
+    "roxford:gallery:christ_church_000734",
+    "roxford:gallery:oxford_002592",
+    "rparis:gallery:paris_defense_000107",
+    "rparis:gallery:paris_triomphe_001115",
+    "rparis:gallery:paris_invalides_000294",
+    "rparis:gallery:paris_museedorsay_000916",
+    "rparis:gallery:paris_pantheon_000589",
+    "rparis:gallery:paris_museedorsay_000271"
+  ],
+  "parent_complete_sha256": "19d5cb1094a4063a9127ca0adb6fe24aa8e9e86c3dc11e125a6740a8836993f0",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-followup-20260909/r4_holidays/evaluation/clip_b32__clip_b16__m64__s51853__landmark_cover/predictions.npz",
+      "sha256": "19fd8ac406e3ca963e162e105dcc320394f402b5da92a761ec426bf02cc5845d"
+    }
+  ],
+  "sha256": "2c8895a68a06888400bf6d2a759f990af1b835023d99b10944626ed927558ef9",
+  "means": [
+    0.8799797281539574
+  ],
+  "conditions": [
+    "map"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 64,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "bridge_rows_used": 0
+  },
+  "seconds": 0.7828109264373779
+}

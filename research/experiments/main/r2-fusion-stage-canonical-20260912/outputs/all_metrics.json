@@ -1,0 +1,83 @@
+{
+  "late_shared": {
+    "dtd_matched_1shot_accuracy": 77.15733333333333,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 74.048,
+    "eurosat_mismatched_1shot_accuracy": 65.90133333333334,
+    "eurosat_matched_1shot_accuracy": 74.81466666666667,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 72.98033333333333
+  },
+  "early_shared": {
+    "dtd_matched_1shot_accuracy": 77.00133333333333,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 74.072,
+    "eurosat_mismatched_1shot_accuracy": 65.67466666666667,
+    "eurosat_matched_1shot_accuracy": 74.47733333333333,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 72.80633333333333
+  },
+  "early_native": {
+    "dtd_matched_1shot_accuracy": 77.00133333333333,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 74.072,
+    "eurosat_mismatched_1shot_accuracy": 65.67466666666667,
+    "eurosat_matched_1shot_accuracy": 74.47733333333333,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 72.80633333333333
+  },
+  "centered_native": {
+    "dtd_matched_1shot_accuracy": 76.87333333333333,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 73.87066666666668,
+    "eurosat_mismatched_1shot_accuracy": 68.124,
+    "eurosat_matched_1shot_accuracy": 73.66533333333334,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 73.13333333333334
+  },
+  "late_support": {
+    "dtd_matched_1shot_accuracy": 73.62533333333333,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 73.62533333333333,
+    "eurosat_mismatched_1shot_accuracy": 68.504,
+    "eurosat_matched_1shot_accuracy": 68.504,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 71.06466666666667
+  },
+  "clip_native": {
+    "dtd_matched_1shot_accuracy": 66.472,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 63.7,
+    "eurosat_mismatched_1shot_accuracy": 63.530666666666654,
+    "eurosat_matched_1shot_accuracy": 69.78,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 65.87066666666666
+  },
+  "dino_native": {
+    "dtd_matched_1shot_accuracy": 76.424,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 73.25066666666666,
+    "eurosat_mismatched_1shot_accuracy": 61.94400000000001,
+    "eurosat_matched_1shot_accuracy": 69.71733333333334,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 70.334
+  },
+  "r2": {
+    "dtd_matched_1shot_accuracy": 76.86266666666667,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 74.07866666666666,
+    "eurosat_mismatched_1shot_accuracy": 66.11733333333333,
+    "eurosat_matched_1shot_accuracy": 74.03466666666667,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 72.77333333333333
+  },
+  "cs_l2_fixed": {
+    "dtd_matched_1shot_accuracy": 76.87333333333333,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 73.87066666666668,
+    "eurosat_mismatched_1shot_accuracy": 68.124,
+    "eurosat_matched_1shot_accuracy": 73.66533333333334,
+    "eurosat_5shot_accuracy": 86.80799999999999,
+    "macro_1shot_accuracy": 73.13333333333334
+  }
+}

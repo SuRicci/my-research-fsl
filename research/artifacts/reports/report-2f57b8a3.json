@@ -1,0 +1,57 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-2f57b8a3",
+  "id": "report-2f57b8a3",
+  "quest_id": "012",
+  "created_at": "2026-09-13T10:05:52+00:00",
+  "updated_at": "2026-09-13T10:05:52+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-e83fda3b"
+  },
+  "status": "completed",
+  "branch": "paper/continued-fsl-evidence-20260913",
+  "head_commit": "116a6ac0d2e943c54fb8482e93e7ac35e1f5fa7d",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "finite_query_selector_ceiling_20260913",
+  "title": "Finite geometry-selector ceiling passes the necessary headroom gate",
+  "summary": "Label oracle79.217333% versus measured blend77.334%;1.883333pp conditional headroom[1.799333,1.968000]. Source-only feasibility remains unproven. No new classifier result.",
+  "evidence_paths": [
+    "experiments/analysis/finite-query-selector-20260913/REPORT.md",
+    "experiments/analysis/finite-query-selector-20260913/outputs/analysis.json",
+    "experiments/analysis/finite-query-selector-20260913/outputs/validation.json"
+  ],
+  "science_node_id": "science-855526f5",
+  "parent_decision": "decision-f7f139bf",
+  "next_stage": "idea",
+  "run_id": "run-e83fda3b",
+  "anchor": "decision",
+  "semantic_key": "report:decision:finite_query_selector_ceiling_20260913:none:d55f52fe34e3b30e44f559407960728e48f2269a82d23f95d2074a69fbff9cec",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-2f57b8a3",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

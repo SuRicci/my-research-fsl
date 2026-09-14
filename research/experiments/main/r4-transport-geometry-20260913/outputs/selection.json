@@ -1,0 +1,21 @@
+{
+  "alphas": {
+    "raw": 2,
+    "center": 2
+  },
+  "development_map": {
+    "raw_a0": 36.59390013221845,
+    "raw_a0.5": 37.93749776177143,
+    "raw_a1": 38.78963411249559,
+    "raw_a2": 38.864214978970715,
+    "center_a0": 36.59390013221845,
+    "center_a0.5": 37.95898838605494,
+    "center_a1": 38.88058353357149,
+    "center_a2": 39.03536751328723,
+    "raw_fixed001_a1": 38.80723346178458,
+    "center_fixed001_a1": 38.91912743089351
+  },
+  "selection": "one global alpha per geometry; DTD four cells/five seeds; smaller-alpha exact tie break",
+  "frozen_before_evaluation": true,
+  "written_at": 1789244276.255009
+}

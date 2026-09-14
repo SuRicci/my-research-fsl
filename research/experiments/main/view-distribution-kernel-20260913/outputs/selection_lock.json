@@ -1,0 +1,246 @@
+{
+  "dtd": {
+    "1": {
+      "distribution_rbf": {
+        "beta": 1,
+        "penalty": 1.0,
+        "index": 0,
+        "integer_correct": [
+          5788,
+          5786,
+          5784,
+          5782,
+          5783,
+          5783,
+          5659,
+          5659,
+          5659
+        ]
+      },
+      "mean_rbf": {
+        "beta": 1,
+        "penalty": 1.0,
+        "index": 0,
+        "integer_correct": [
+          5785,
+          5771,
+          5774,
+          5769,
+          5770,
+          5772,
+          5652,
+          5652,
+          5652
+        ]
+      },
+      "original_rbf": {
+        "beta": 1,
+        "penalty": 1.0,
+        "index": 0,
+        "integer_correct": [
+          5684,
+          5674,
+          5670,
+          5655,
+          5644,
+          5644,
+          5529,
+          5529,
+          5529
+        ]
+      },
+      "linear_mean": {
+        "beta": 0,
+        "penalty": 1.0,
+        "index": 0,
+        "integer_correct": [
+          5782,
+          5761,
+          5755
+        ]
+      }
+    },
+    "5": {
+      "distribution_rbf": {
+        "beta": 1,
+        "penalty": 0.1,
+        "index": 1,
+        "integer_correct": [
+          5937,
+          5971,
+          5964,
+          5928,
+          5932,
+          5933,
+          5141,
+          5149,
+          5152
+        ]
+      },
+      "mean_rbf": {
+        "beta": 1,
+        "penalty": 0.1,
+        "index": 1,
+        "integer_correct": [
+          5939,
+          5972,
+          5965,
+          5924,
+          5928,
+          5931,
+          5064,
+          5062,
+          5063
+        ]
+      },
+      "original_rbf": {
+        "beta": 1,
+        "penalty": 0.1,
+        "index": 1,
+        "integer_correct": [
+          5922,
+          5946,
+          5941,
+          5899,
+          5903,
+          5904,
+          5024,
+          5026,
+          5027
+        ]
+      },
+      "linear_mean": {
+        "beta": 0,
+        "penalty": 0.1,
+        "index": 1,
+        "integer_correct": [
+          5955,
+          5971,
+          5959
+        ]
+      }
+    }
+  },
+  "eurosat": {
+    "1": {
+      "distribution_rbf": {
+        "beta": 1,
+        "penalty": 0.01,
+        "index": 2,
+        "integer_correct": [
+          5228,
+          5315,
+          5343,
+          5272,
+          5311,
+          5317,
+          5239,
+          5242,
+          5243
+        ]
+      },
+      "mean_rbf": {
+        "beta": 1,
+        "penalty": 0.01,
+        "index": 2,
+        "integer_correct": [
+          5223,
+          5297,
+          5326,
+          5247,
+          5280,
+          5289,
+          5175,
+          5173,
+          5176
+        ]
+      },
+      "original_rbf": {
+        "beta": 1,
+        "penalty": 0.01,
+        "index": 2,
+        "integer_correct": [
+          5083,
+          5142,
+          5170,
+          5086,
+          5117,
+          5120,
+          4998,
+          5001,
+          5002
+        ]
+      },
+      "linear_mean": {
+        "beta": 0,
+        "penalty": 0.01,
+        "index": 2,
+        "integer_correct": [
+          5229,
+          5310,
+          5315
+        ]
+      }
+    },
+    "5": {
+      "distribution_rbf": {
+        "beta": 1,
+        "penalty": 0.01,
+        "index": 2,
+        "integer_correct": [
+          5743,
+          5905,
+          5921,
+          5791,
+          5865,
+          5876,
+          5552,
+          5578,
+          5584
+        ]
+      },
+      "mean_rbf": {
+        "beta": 1,
+        "penalty": 0.01,
+        "index": 2,
+        "integer_correct": [
+          5748,
+          5902,
+          5923,
+          5782,
+          5859,
+          5861,
+          5489,
+          5513,
+          5515
+        ]
+      },
+      "original_rbf": {
+        "beta": 1,
+        "penalty": 0.01,
+        "index": 2,
+        "integer_correct": [
+          5628,
+          5798,
+          5827,
+          5669,
+          5757,
+          5760,
+          5286,
+          5308,
+          5314
+        ]
+      },
+      "linear_mean": {
+        "beta": 0,
+        "penalty": 0.1,
+        "index": 1,
+        "integer_correct": [
+          5766,
+          5913,
+          5913
+        ]
+      }
+    }
+  }
+}

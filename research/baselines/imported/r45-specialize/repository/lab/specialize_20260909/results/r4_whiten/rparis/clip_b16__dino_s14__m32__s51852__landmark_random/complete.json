@@ -1,0 +1,77 @@
+{
+  "method": "r4_whiten",
+  "dataset": "rparis",
+  "pair": [
+    "clip_b16",
+    "dino_s14"
+  ],
+  "budget": 32,
+  "seed": 51852,
+  "policy": "landmark_random",
+  "bridge_ids": [
+    "roxford:gallery:balliol_000020",
+    "roxford:gallery:jesus_000312",
+    "roxford:gallery:trinity_000292",
+    "roxford:gallery:trinity_000125",
+    "roxford:gallery:new_000299",
+    "roxford:gallery:oxford_001987",
+    "roxford:gallery:new_000121",
+    "roxford:gallery:bodleian_000441",
+    "roxford:gallery:bodleian_000067",
+    "roxford:gallery:oxford_002106",
+    "roxford:gallery:oxford_002276",
+    "roxford:gallery:radcliffe_camera_000166",
+    "roxford:gallery:radcliffe_camera_000371",
+    "roxford:gallery:magdalen_000977",
+    "roxford:gallery:magdalen_000479",
+    "roxford:gallery:oxford_002359",
+    "roxford:gallery:magdalen_000224",
+    "roxford:gallery:magdalen_000744",
+    "roxford:gallery:new_000168",
+    "roxford:gallery:christ_church_000052",
+    "roxford:gallery:oxford_001397",
+    "roxford:gallery:christ_church_000451",
+    "roxford:gallery:oxford_003418",
+    "roxford:gallery:oxford_001806",
+    "roxford:gallery:christ_church_001035",
+    "roxford:gallery:trinity_000067",
+    "roxford:gallery:oxford_001314",
+    "roxford:gallery:balliol_000082",
+    "roxford:gallery:worcester_000176",
+    "roxford:gallery:magdalen_000523",
+    "roxford:gallery:cornmarket_000016",
+    "roxford:gallery:magdalen_000832"
+  ],
+  "parent_complete_sha256": "bf1a996caab6e47f68489e1a001ffb74eda8bc142f8966bcdd0b6c319e9a52e5",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/rparis/clip_b16__dino_s14__m32__s51852__landmark_random/aps.npz",
+      "sha256": "bcc3430f6fd1e5296b0fc783e180b095adb69442287157750adee49297937bfb"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/rparis/clip_b16__dino_s14__m32__s51852__landmark_random/aps.npz",
+      "sha256": "53bb0772aefb0a112c60815dd98499e82a6865fc59eb776d210c10e72940a5c7"
+    }
+  ],
+  "sha256": "6dba2ea1782665b967a7e99b0b7135b231419908bb38f70f7e387abe5a6a97ab",
+  "means": [
+    0.6846026527888874,
+    0.45294217982795687
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "bridge_rows_used": 0
+  },
+  "seconds": 0.6074140071868896
+}

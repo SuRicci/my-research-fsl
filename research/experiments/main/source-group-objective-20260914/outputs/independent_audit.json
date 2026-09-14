@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "model_selector_checks": 36,
+  "prediction_checks": 1350000,
+  "independent_ridge_cases": 180,
+  "max_ridge_error": 6.906083082625081e-07,
+  "primary_intervals": 8,
+  "input_locks_unchanged": true,
+  "all_selected_checkpoint_ranks_verified": true,
+  "gate_verified": true
+}

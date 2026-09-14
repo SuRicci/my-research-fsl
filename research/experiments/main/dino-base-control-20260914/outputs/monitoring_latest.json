@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-09-14T07:22:54.847215+00:00",
+  "session": "bash-8890632d",
+  "session_status": "running",
+  "progress": {
+    "images_done": 14153,
+    "images_total": 14153,
+    "pool": "eurosat_gallery",
+    "pool_done": 5000,
+    "seconds": 4409.288649320602,
+    "free_gib": 12.537288665771484
+  },
+  "completed_pools": [
+    "dtd_query",
+    "dtd_gallery",
+    "eurosat_query",
+    "eurosat_gallery"
+  ],
+  "completed_pool_images": 14153,
+  "progress_percent": 100,
+  "evaluation_status": "running",
+  "accuracy_claim": "unmeasured",
+  "next_action": "monitor existing study and chained full audit",
+  "incident": "Existing feature extraction completed, but fixed classification did not start for approximately two hours. Scheduler root cause not established. Prior running status was stale.",
+  "free_gib": 12.41817855834961,
+  "encoding_session": "bash-8976bba9",
+  "encoding_status": "completed",
+  "feature_validation": "passed",
+  "next_check_at": "2026-09-14T07:26:54.847215+00:00"
+}

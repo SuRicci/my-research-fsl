@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-09-13T04:21:22.933173+00:00",
+  "audit_sha256": "56b9b341bed17e9b40b0904c1193c04fd0e1190a93b05f8a5da1d6b55e8e00d8",
+  "source_examples": [
+    0,
+    99
+  ],
+  "eval_examples": [
+    0,
+    100,
+    200,
+    300,
+    400
+  ],
+  "score_atol": 2e-05,
+  "require_exact_argmax": true,
+  "command": "OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 /opt/anaconda3/envs/torch/bin/python experiments/main/representation-scatter-20260913/audit_outputs.py"
+}

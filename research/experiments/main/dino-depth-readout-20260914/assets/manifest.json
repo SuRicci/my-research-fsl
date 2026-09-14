@@ -1,0 +1,179 @@
+{
+  "status": "completed",
+  "lock": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+    "experiments/main/representation-scatter-20260913/extract_views.py": "6bae4f70759e9ffb3f86c6e04e1ec55f0ed93dd4cb76c43f950916dcc4e8a697",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/recover_gallery.py": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_identities.json": "1e8061597ac9326a15a7031c77a22681d10eda1b9a5c94a1b7f00ce1f21e3635",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_identities.json": "b0ee6ae3f06753e95cc92a4aab9dcb1b9fabac95e3b9f56f0ece6858feb303e2",
+    "/Users/decoqwq/.cache/clip/ViT-B-16.pt": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+    "/Users/decoqwq/.cache/huggingface/hub/models--timm--vit_small_patch14_dinov2.lvd142m/snapshots/4610ca143709d58a633b6397a74412c2c3842454/model.safetensors": "04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/protocol.json": "ec521d4d8ddf40235033e6039e031ef9e8202a28dd2b6fc9987a77253abd71dd",
+    "experiments/main/dino-depth-readout-20260914/encode.py": "a2dbfa086f9cdaf27cecf0322d46ce5427eaf0a9372fe73159f93a69f1b9be51",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/imported/r45-specialize/repository/research_common/extern/dinov2/dinov2/models/vision_transformer.py": "90d605b97b72525dc4caed657ef369362b536c5d037920606293008e2d4a7cc7"
+  },
+  "config": {
+    "idea_id": "idea-f8cdb193",
+    "decision_id": "decision-ad023a56",
+    "tier": "auxiliary/dev",
+    "domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "source_gamma": {
+      "dtd": 10,
+      "eurosat": 1
+    },
+    "source_eta": {
+      "dtd": 0,
+      "eurosat": 10
+    },
+    "base_dimension": 896,
+    "concat_dimension": 2048,
+    "blocks_zero_based": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "new_blocks": [
+      8,
+      9,
+      10
+    ],
+    "views": 6,
+    "expected_images": 14153,
+    "threads": 6,
+    "batch": 32,
+    "encoding_workers": 6,
+    "min_free_gib": 10,
+    "max_new_mib": 350,
+    "deadline": "2026-09-15T09:00:00+00:00",
+    "eval_tasks": 500,
+    "queries_per_class": 15,
+    "audit_indices": [
+      0,
+      99,
+      199,
+      299,
+      499
+    ],
+    "methods": [
+      "depth_consistency",
+      "final_consistency",
+      "final_scatter",
+      "depth_score_mean",
+      "depth_logistic_C1",
+      "depth_logistic_C10",
+      "depth_augmented_ridge",
+      "depth_scatter"
+    ],
+    "primary": "depth_consistency",
+    "gate_controls": [
+      "final_consistency",
+      "final_scatter",
+      "depth_score_mean",
+      "depth_logistic_C1",
+      "depth_logistic_C10",
+      "depth_augmented_ridge"
+    ],
+    "gate": {
+      "pooled_gain_pp": 0.5,
+      "pooled_ci_lower_gt": 0,
+      "each_domain_point_min_pp": 0,
+      "each_gallery_ci_lower_min_pp": -0.5
+    },
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 26091461,
+      "unit": "task stratified by original task seed and domain; gallery conditions averaged within task"
+    },
+    "source_selection": "none new; inherited gamma/eta and all layer/feature weights fixed before outcomes",
+    "metric_boundary": "Five canonicalPetsmetrics unchanged/unmeasured; exposed development only; no Caltechreevaluation",
+    "gamma_rule": "gamma_effective=source_gamma*896/feature_dimension",
+    "feature_rule": "half CLIP and half DINO weight, DINO energy split equally across4normalizedCLSblocks; final-block features reused from verified cache",
+    "encoding_parity": {
+      "max_abs": 0.001,
+      "min_cosine": 0.99999,
+      "native_intermediate_last_abs": 1e-06
+    },
+    "scope": "query-local inference, frozen encoders, no classnames, gallerylabels or targetselection; equalimages/views/pretrainedweights, not equalheadFLOPs"
+  },
+  "started_at": "2026-09-14T01:29:09.843982+00:00",
+  "pools": {
+    "dtd_query": {
+      "shape": [
+        1877,
+        6,
+        3,
+        384
+      ],
+      "sha256": "83fd4b342e290d151adee85a8758988ca8e833b360bbe31a316a45af2a02adc8",
+      "identities_sha256": "c6b0d936f7dfe6631662bce2c916fe8aa6dc9082e6781de9d4372aea46b55446",
+      "all_rgb_verified": true,
+      "all_final_layer_parity_checked": true,
+      "max_abs": 0.00010353326797485352,
+      "min_cosine": 0.9999997615814209,
+      "native_error": 0.0
+    },
+    "dtd_gallery": {
+      "shape": [
+        1876,
+        6,
+        3,
+        384
+      ],
+      "sha256": "1be0eb1ce324877ece3174c46f65887a74963e8b74cacdbebc394e6371437670",
+      "identities_sha256": "f06e7086909e88a68423b42bbed7aa7a11a368350ded6d5a4b86bbf30750b313",
+      "all_rgb_verified": true,
+      "all_final_layer_parity_checked": true,
+      "max_abs": 0.00010731816291809082,
+      "min_cosine": 0.9999997615814209,
+      "native_error": 0.0
+    },
+    "eurosat_query": {
+      "shape": [
+        5400,
+        6,
+        3,
+        384
+      ],
+      "sha256": "9d6f0b14ceaa2873358598a22bb74a3fd68c0b1cbc4a63128a06eaa958ae75ed",
+      "identities_sha256": "f2f1f04fef0e22e098639dd418b7ddd6378a857ef26f1211aaa97e4ec51744ef",
+      "all_rgb_verified": true,
+      "all_final_layer_parity_checked": true,
+      "max_abs": 0.0001188814640045166,
+      "min_cosine": 0.9999997615814209,
+      "native_error": 0.0
+    },
+    "eurosat_gallery": {
+      "shape": [
+        5000,
+        6,
+        3,
+        384
+      ],
+      "sha256": "2bc5b1e769ab4656b392d550b3ea6ad0cb8a1290230eb5ed10a80513cd0ea95a",
+      "identities_sha256": "441d85735e4f5a8bdfc4bae9a3cdbf46a0711e0c46227428262cec9c928f71bd",
+      "all_rgb_verified": true,
+      "all_final_layer_parity_checked": true,
+      "max_abs": 0.0001226663589477539,
+      "min_cosine": 0.9999997615814209,
+      "native_error": 0.0
+    }
+  },
+  "active": null,
+  "images": 14153,
+  "command": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/dino-depth-readout-20260914/encode.py"
+  ],
+  "elapsed_seconds": 2133.406090259552,
+  "software": {
+    "torch": "2.3.0",
+    "numpy": "1.24.4",
+    "mps": true,
+    "mps_fallback": "1"
+  },
+  "finished_at": "2026-09-14T02:04:43.250505+00:00"
+}

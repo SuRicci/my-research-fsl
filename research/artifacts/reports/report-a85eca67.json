@@ -1,0 +1,106 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-a85eca67",
+  "id": "report-a85eca67",
+  "quest_id": "012",
+  "created_at": "2026-09-12T11:43:16+00:00",
+  "updated_at": "2026-09-12T11:43:16+00:00",
+  "source": {
+    "kind": "agent"
+  },
+  "status": "completed",
+  "branch": "run/r2-prevalidation-canonical-20260912",
+  "head_commit": "4ce3cbe7bb300222933e3f907917b7d061a29ec3",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912",
+  "workspace_rel_path": ".ds/worktrees/r2-prevalidation-canonical-20260912",
+  "report_type": "analysis_campaign_create",
+  "summary": "Analysis campaign `analysis-1b946833` created with 1 slices.",
+  "reason": "The main experiment completed and now requires structured follow-up analysis slices.",
+  "idea_id": "idea-8c090fcf",
+  "campaign_id": "analysis-1b946833",
+  "worktree_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912",
+  "flow_type": "analysis_campaign",
+  "protocol_step": "create",
+  "paths": {
+    "campaign_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/campaign.md"
+  },
+  "details": {
+    "campaign_title": "Source-verified additional-domain classifier panel",
+    "campaign_goal": "Test frozen ridge, geometry and support-selection controls on three additional source-verified datasets; resolve legacy asset limitations and bound generalization claims.",
+    "parent_run_id": "r2-prevalidation-canonical-20260912",
+    "paper_line_id": null,
+    "paper_line_branch": null,
+    "paper_line_root": null,
+    "campaign_origin": {
+      "kind": "analysis",
+      "reason": null,
+      "source_artifact_id": null,
+      "source_outline_ref": null,
+      "source_review_round": null,
+      "reviewer_item_ids": []
+    },
+    "selected_outline_ref": null,
+    "todo_manifest_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/todo_manifest.json",
+    "slice_count": 1,
+    "slices": [
+      {
+        "slice_id": "canonical-additional-domains",
+        "title": "Canonical CUB Flowers and CIFAR-FS panel",
+        "branch": "analysis/idea-8c090fcf/analysis-1b946833-canonical-additional-domains",
+        "worktree_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains",
+        "run_kind": "analysis.slice",
+        "goal": "Download officialverifiedimages/labels, encode exactcanonical CLIP/DINO, execute predeclared9five-shot cells withoutnewtuning.",
+        "research_question": "",
+        "experimental_design": "",
+        "section_id": null,
+        "item_id": "canonical-additional-domains",
+        "exp_id": null,
+        "paper_role": null,
+        "paper_placement": null,
+        "analysis_role": null,
+        "reviewer_question": null,
+        "target_display": null,
+        "main_or_appendix": null,
+        "failure_interpretation": null,
+        "tier": null,
+        "claim_links": [],
+        "why_now": "",
+        "completion_condition": "",
+        "must_not_simplify": "",
+        "required_baselines": [],
+        "success_criteria": "Allavailabledeclareddatasets checksum/identityvalidated,9cells withsame-supportcomparisons, fullfalse/negativeoutcomes; no implicitSOTAornewnoveltyclaim.",
+        "abandonment_criteria": "No paidcredentials/remotecompute. Preserve>=10GiBfree and<=6GiBnewcampaignassets. Recordfailedassetrecoveryexplicitly ratherthanquietlyomittingdomain.",
+        "reviewer_item_ids": [],
+        "manuscript_targets": []
+      }
+    ]
+  },
+  "semantic_key": "report:analysis-campaign:analysis_campaign_create:create:c9a724f73b03e52f133d27cc8d21e6b662caf07633f464e8139a55c104e62e68",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-a85eca67",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/campaign.md"
+    ],
+    "stage_status": "ready"
+  }
+}

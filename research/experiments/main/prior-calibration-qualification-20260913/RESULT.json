@@ -1,0 +1,11 @@
+{
+  "run_id": "prior-calibration-qualification-20260913",
+  "idea_id": "idea-452b63b3",
+  "tier": "auxiliary/dev",
+  "verdict": "refuted_source_gate",
+  "canonical_main_submission": false,
+  "canonical_metrics_not_generated_reason": "Prespecified source qualification failed; do not fabricate Pets metrics.",
+  "analysis_path": "experiments/main/prior-calibration-qualification-20260913/outputs/analysis.json",
+  "validation_path": "experiments/main/prior-calibration-qualification-20260913/outputs/validation.json",
+  "summary": "Directional gain reduces to same-mass control; reverse transfer loses; no general composition benefit; Caltech remains unconsumed."
+}

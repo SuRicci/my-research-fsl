@@ -1,0 +1,378 @@
+{
+  "per_metric": {
+    "dtd_matched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 76.86266666666667,
+        "parent_centered": 76.87333333333335,
+        "raw_tuned": 77.00133333333333,
+        "radius": 76.87333333333335,
+        "preval": 76.87333333333335,
+        "press": 76.87333333333335
+      },
+      "candidate_vs": {
+        "r2": {
+          "delta_pp": 0.01066666666666682,
+          "paired_ci95_pp": [
+            -0.13333333333333272,
+            0.15733333333333335
+          ]
+        },
+        "parent_centered": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "raw_tuned": {
+          "delta_pp": -0.1279999999999998,
+          "paired_ci95_pp": [
+            -0.2719999999999996,
+            0.02133333333333368
+          ]
+        },
+        "radius": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "press": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "provenance": "One-shot parent policy inherited unchanged; radius/PRESS/PreVal do not operate in this cell."
+    },
+    "dtd_5shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 89.98133333333332,
+        "parent_centered": 89.952,
+        "raw_tuned": 89.98133333333332,
+        "radius": 90.04133333333334,
+        "preval": 89.852,
+        "press": 89.83333333333333
+      },
+      "candidate_vs": {
+        "r2": {
+          "delta_pp": -0.12933333333333322,
+          "paired_ci95_pp": [
+            -0.24933333333333352,
+            -0.010666666666666822
+          ]
+        },
+        "parent_centered": {
+          "delta_pp": -0.09999999999999987,
+          "paired_ci95_pp": [
+            -0.20799999999999985,
+            0.0053333333333337755
+          ]
+        },
+        "raw_tuned": {
+          "delta_pp": -0.12933333333333322,
+          "paired_ci95_pp": [
+            -0.24933333333333352,
+            -0.010666666666666822
+          ]
+        },
+        "radius": {
+          "delta_pp": -0.18933333333333313,
+          "paired_ci95_pp": [
+            -0.29199999999999965,
+            -0.08529999999999999
+          ]
+        },
+        "press": {
+          "delta_pp": 0.018666666666666814,
+          "paired_ci95_pp": [
+            -0.023999999999999744,
+            0.05866666666666691
+          ]
+        }
+      },
+      "provenance": "New support-only fits; raw/global/radius controls from paired scale campaign.",
+      "selection": {
+        "preval_counts": [
+          43,
+          320,
+          92,
+          545
+        ],
+        "press_counts": [
+          0,
+          39,
+          39,
+          922
+        ],
+        "scale_zero_count": 0,
+        "scale_upper_count": 94
+      }
+    },
+    "dtd_mismatched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 74.07866666666668,
+        "parent_centered": 73.87066666666665,
+        "raw_tuned": 74.072,
+        "radius": 73.87066666666665,
+        "preval": 73.87066666666665,
+        "press": 73.87066666666665
+      },
+      "candidate_vs": {
+        "r2": {
+          "delta_pp": -0.20799999999999955,
+          "paired_ci95_pp": [
+            -0.38666666666666594,
+            -0.03599999999999948
+          ]
+        },
+        "parent_centered": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "raw_tuned": {
+          "delta_pp": -0.20133333333333298,
+          "paired_ci95_pp": [
+            -0.3813333333333331,
+            -0.02533333333333282
+          ]
+        },
+        "radius": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "press": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "provenance": "One-shot parent policy inherited unchanged; radius/PRESS/PreVal do not operate in this cell."
+    },
+    "eurosat_mismatched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 66.11733333333333,
+        "parent_centered": 68.124,
+        "raw_tuned": 65.67466666666665,
+        "radius": 68.124,
+        "preval": 68.124,
+        "press": 68.124
+      },
+      "candidate_vs": {
+        "r2": {
+          "delta_pp": 2.0066666666666664,
+          "paired_ci95_pp": [
+            1.7426666666666664,
+            2.270666666666666
+          ]
+        },
+        "parent_centered": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "raw_tuned": {
+          "delta_pp": 2.449333333333333,
+          "paired_ci95_pp": [
+            2.1733,
+            2.7239999999999993
+          ]
+        },
+        "radius": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "press": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "provenance": "One-shot parent policy inherited unchanged; radius/PRESS/PreVal do not operate in this cell."
+    },
+    "eurosat_matched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 74.03466666666665,
+        "parent_centered": 73.66533333333334,
+        "raw_tuned": 74.47733333333333,
+        "radius": 73.66533333333334,
+        "preval": 73.66533333333334,
+        "press": 73.66533333333334
+      },
+      "candidate_vs": {
+        "r2": {
+          "delta_pp": -0.36933333333333357,
+          "paired_ci95_pp": [
+            -0.5413666666666672,
+            -0.19599999999999992
+          ]
+        },
+        "parent_centered": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "raw_tuned": {
+          "delta_pp": -0.8120000000000002,
+          "paired_ci95_pp": [
+            -1.0093333333333334,
+            -0.6119999999999999
+          ]
+        },
+        "radius": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "press": {
+          "delta_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "provenance": "One-shot parent policy inherited unchanged; radius/PRESS/PreVal do not operate in this cell."
+    },
+    "eurosat_5shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 86.808,
+        "parent_centered": 88.21066666666665,
+        "raw_tuned": 86.808,
+        "radius": 88.36,
+        "preval": 89.50533333333334,
+        "press": 89.48133333333334
+      },
+      "candidate_vs": {
+        "r2": {
+          "delta_pp": 2.6973333333333334,
+          "paired_ci95_pp": [
+            2.4920000000000004,
+            2.909333333333333
+          ]
+        },
+        "parent_centered": {
+          "delta_pp": 1.294666666666667,
+          "paired_ci95_pp": [
+            1.1226666666666671,
+            1.4613333333333338
+          ]
+        },
+        "raw_tuned": {
+          "delta_pp": 2.6973333333333334,
+          "paired_ci95_pp": [
+            2.4920000000000004,
+            2.909333333333333
+          ]
+        },
+        "radius": {
+          "delta_pp": 1.145333333333334,
+          "paired_ci95_pp": [
+            0.985333333333334,
+            1.3080000000000007
+          ]
+        },
+        "press": {
+          "delta_pp": 0.024000000000000014,
+          "paired_ci95_pp": [
+            -0.027999999999999997,
+            0.07733333333333318
+          ]
+        }
+      },
+      "provenance": "New support-only fits; raw/global/radius controls from paired scale campaign.",
+      "selection": {
+        "preval_counts": [
+          1,
+          254,
+          160,
+          585
+        ],
+        "press_counts": [
+          0,
+          39,
+          170,
+          791
+        ],
+        "scale_zero_count": 0,
+        "scale_upper_count": 58
+      }
+    }
+  },
+  "metrics_summary": {
+    "dtd_matched_1shot_accuracy": 76.87333333333335,
+    "dtd_5shot_accuracy": 89.852,
+    "dtd_mismatched_1shot_accuracy": 73.87066666666665,
+    "eurosat_mismatched_1shot_accuracy": 68.124,
+    "eurosat_matched_1shot_accuracy": 73.66533333333334,
+    "eurosat_5shot_accuracy": 89.50533333333334,
+    "macro_1shot_accuracy": 73.13333333333333
+  },
+  "macro_5shot_candidate_vs": {
+    "r2": {
+      "delta_pp": 1.284,
+      "paired_ci95_pp": [
+        1.1606666666666667,
+        1.405333333333333
+      ]
+    },
+    "parent_centered": {
+      "delta_pp": 0.5973333333333336,
+      "paired_ci95_pp": [
+        0.4960000000000004,
+        0.6993500000000002
+      ]
+    },
+    "raw_tuned": {
+      "delta_pp": 1.284,
+      "paired_ci95_pp": [
+        1.1606666666666667,
+        1.405333333333333
+      ]
+    },
+    "radius": {
+      "delta_pp": 0.4780000000000004,
+      "paired_ci95_pp": [
+        0.3840000000000004,
+        0.5733333333333339
+      ]
+    },
+    "press": {
+      "delta_pp": 0.021333333333333412,
+      "paired_ci95_pp": [
+        -0.012666666666666604,
+        0.05466666666666686
+      ]
+    }
+  },
+  "gate": {
+    "beats_tuned_raw": true,
+    "beats_radius": true,
+    "no_five_shot_loss_over_0_5pp": true,
+    "passed": true
+  },
+  "elapsed_seconds": 16.3988618850708,
+  "scope": "Known PreVal-inspired bounded adaptation; old fixed image pools; one-shot gains inherited, not caused by this selector."
+}

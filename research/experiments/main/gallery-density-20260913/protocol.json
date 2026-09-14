@@ -1,0 +1,35 @@
+{
+  "idea_id": "idea-dd6d44bc",
+  "decision_id": "decision-38882713",
+  "tier": "auxiliary/dev",
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "gamma_by_source": {
+    "dtd": 10,
+    "eurosat": 1
+  },
+  "eta_by_source": {
+    "dtd": 0.0,
+    "eurosat": 10.0
+  },
+  "reference_count": 128,
+  "density_neighbors": 10,
+  "penalty": 0.5,
+  "retrieval_count": 64,
+  "alpha": 0.5,
+  "ridge": 0.1,
+  "audit_indices": [
+    0,
+    249,
+    499
+  ],
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 26091397,
+  "min_free_gib": 10,
+  "threads": 6,
+  "deadline": "2026-09-15T09:00:00+00:00",
+  "metric_deviation": "All five canonical Pets metricids unmeasured/unchanged. Source-only auxiliary qualification, no canonical main result or Caltech retuning.",
+  "frozen_utc": "2026-09-13T13:00:10.278529+00:00"
+}

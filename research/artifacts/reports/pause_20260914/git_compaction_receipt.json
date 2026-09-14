@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "command": [
+    "git",
+    "-c",
+    "pack.threads=4",
+    "-c",
+    "pack.windowMemory=128m",
+    "-c",
+    "gc.reflogExpire=never",
+    "-c",
+    "gc.reflogExpireUnreachable=never",
+    "-c",
+    "gc.pruneExpire=never",
+    "-c",
+    "gc.worktreePruneExpire=never",
+    "gc",
+    "--no-prune"
+  ],
+  "exit_code": 0,
+  "refs_and_head_unchanged": true,
+  "before_count_objects": "count: 3510\nsize: 590.53 MiB\nin-pack: 86058\npacks: 8\nsize-pack: 8.14 GiB\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0 bytes\n",
+  "after_count_objects": "count: 41\nsize: 42.71 MiB\nin-pack: 89527\npacks: 1\nsize-pack: 8.51 GiB\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0 bytes\n",
+  "stderr": "",
+  "free_before_bytes": 29628354560,
+  "free_after_bytes": 29769302016,
+  "completed_at": "2026-09-14T09:18:59.870441+00:00",
+  "history_policy": "no reflog expiry, no object pruning, no worktree expiry, no ref rewrite",
+  "observed_free_delta_bytes": 140947456
+}

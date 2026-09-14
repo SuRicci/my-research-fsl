@@ -1,0 +1,27 @@
+{
+  "parent_evidence": "experiments/main/source-composition-20260913/REPORT.md",
+  "trigger_decision": "decision-0809a840",
+  "tier": "auxiliary/dev reference_only",
+  "question": "Do the saved selected source maps produce non-isometric feature changes, and how do these descriptive changes relate to already recorded transfer loss?",
+  "inspection": "all36selectedmaps; no training or modelreselection",
+  "sample_rule": "256deterministic random unique images per original-source validation,Flowersvalidation andtarget-evaluation pool; seed26091339; indices persisted",
+  "observables": [
+    "mean1-cosine displacement",
+    "offdiagonalGram RMSE",
+    "offdiagonalGram Pearsoncorrelation",
+    "existing sourcevalidation changepp",
+    "existing targetaccuracy changepp vszeromap"
+  ],
+  "controls": "identitymapping and independentNumPy forward; orthogonaltransform synthetic null separates displacement from Gramchange",
+  "limits": "No causal claim, no threshold selection, no penaltyselection, no independent targetresult. Fits share labels/images and are not36independent generalization trials. Exactisometry cannot improve unchangedGram classifiers.",
+  "success": "completeauditeddescriptiveevidence enables choosebetween newsource-definedhypothesis andpapersynthesis",
+  "abandon": "maps/assetsfailhashorinsufficientidentityprovenance -> recordblocker, no reruntraining",
+  "resources": {
+    "local_only": true,
+    "spend": 0,
+    "threads": 6,
+    "free_gib_min": 10,
+    "deadline": "2026-09-15T09:00:00+00:00",
+    "max_outputs_mib": 5
+  }
+}

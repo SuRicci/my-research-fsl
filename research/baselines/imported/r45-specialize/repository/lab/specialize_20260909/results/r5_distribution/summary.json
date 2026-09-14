@@ -1,0 +1,486 @@
+{
+  "complete": true,
+  "method": "r5_distribution",
+  "episodes": 30000,
+  "files": 50,
+  "rows": [
+    {
+      "cell": [
+        "cifar_fs",
+        "cifar100"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.9215777777777777,
+      "baseline_accuracy": 0.9152044444444446,
+      "no_retrieval_accuracy": 0.8832622222222223,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": 0.6373333333333335,
+          "ci95_pp": [
+            0.5537666666666667,
+            0.723577777777778
+          ],
+          "seed_gain_pp": [
+            0.4266666666666667,
+            0.6666666666666667,
+            0.7422222222222221,
+            0.5266666666666668,
+            0.8244444444444445
+          ],
+          "positive_seeds": 5,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": 3.831555555555556,
+          "ci95_pp": [
+            3.6861888888888896,
+            3.977777777777778
+          ],
+          "seed_gain_pp": [
+            3.651111111111111,
+            3.913333333333333,
+            4.002222222222223,
+            3.5333333333333337,
+            4.057777777777778
+          ],
+          "positive_seeds": 5,
+          "clear_local_gain": true
+        }
+      }
+    },
+    {
+      "cell": [
+        "dtd",
+        "dtd"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.7687288888888888,
+      "baseline_accuracy": 0.7725066666666667,
+      "no_retrieval_accuracy": 0.7435644444444444,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": -0.37777777777777777,
+          "ci95_pp": [
+            -0.527588888888889,
+            -0.2230444444444446
+          ],
+          "seed_gain_pp": [
+            -0.3799999999999999,
+            -0.3555555555555555,
+            -0.3155555555555557,
+            -0.3733333333333332,
+            -0.46444444444444444
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": 2.5164444444444447,
+          "ci95_pp": [
+            2.308388888888889,
+            2.728055555555556
+          ],
+          "seed_gain_pp": [
+            2.548888888888889,
+            2.622222222222222,
+            2.4688888888888894,
+            2.495555555555556,
+            2.4466666666666668
+          ],
+          "positive_seeds": 5,
+          "clear_local_gain": true
+        }
+      }
+    },
+    {
+      "cell": [
+        "miniimagenet",
+        "miniimagenet"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.9262000000000001,
+      "baseline_accuracy": 0.9501777777777778,
+      "no_retrieval_accuracy": 0.9558177777777778,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": -2.397777777777778,
+          "ci95_pp": [
+            -2.5085,
+            -2.2959555555555555
+          ],
+          "seed_gain_pp": [
+            -2.484444444444445,
+            -2.5155555555555558,
+            -2.3377777777777777,
+            -2.4800000000000004,
+            -2.1711111111111117
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": -2.9617777777777783,
+          "ci95_pp": [
+            -3.125788888888889,
+            -2.7928333333333337
+          ],
+          "seed_gain_pp": [
+            -3.0000000000000004,
+            -3.042222222222223,
+            -2.8133333333333335,
+            -3.1733333333333342,
+            -2.7800000000000007
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        }
+      }
+    },
+    {
+      "cell": [
+        "dtd",
+        "miniimagenet"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.6982222222222222,
+      "baseline_accuracy": 0.7294355555555555,
+      "no_retrieval_accuracy": 0.7435644444444444,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": -3.1213333333333333,
+          "ci95_pp": [
+            -3.2688999999999995,
+            -2.9732777777777777
+          ],
+          "seed_gain_pp": [
+            -2.9111111111111114,
+            -3.115555555555555,
+            -3.357777777777778,
+            -3.2222222222222223,
+            -3.0
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": -4.534222222222222,
+          "ci95_pp": [
+            -4.737877777777777,
+            -4.3302
+          ],
+          "seed_gain_pp": [
+            -4.426666666666667,
+            -4.653333333333333,
+            -4.568888888888889,
+            -4.482222222222222,
+            -4.539999999999999
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        }
+      }
+    },
+    {
+      "cell": [
+        "cub200",
+        "cub200"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.9639155555555556,
+      "baseline_accuracy": 0.9638311111111111,
+      "no_retrieval_accuracy": 0.9519022222222222,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": 0.00844444444444445,
+          "ci95_pp": [
+            -0.05777777777777781,
+            0.07736666666666665
+          ],
+          "seed_gain_pp": [
+            -0.11333333333333341,
+            0.0822222222222222,
+            -0.06666666666666668,
+            0.07333333333333346,
+            0.06666666666666668
+          ],
+          "positive_seeds": 3,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": 1.2013333333333331,
+          "ci95_pp": [
+            1.083988888888889,
+            1.3187444444444443
+          ],
+          "seed_gain_pp": [
+            0.9355555555555556,
+            1.2133333333333334,
+            1.2666666666666666,
+            1.1666666666666665,
+            1.4244444444444448
+          ],
+          "positive_seeds": 5,
+          "clear_local_gain": true
+        }
+      }
+    },
+    {
+      "cell": [
+        "eurosat",
+        "eurosat"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.734888888888889,
+      "baseline_accuracy": 0.71528,
+      "no_retrieval_accuracy": 0.673408888888889,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": 1.9608888888888891,
+          "ci95_pp": [
+            1.856,
+            2.0791777777777782
+          ],
+          "seed_gain_pp": [
+            1.9733333333333332,
+            1.8844444444444446,
+            1.8444444444444443,
+            2.0511111111111116,
+            2.0511111111111116
+          ],
+          "positive_seeds": 5,
+          "clear_local_gain": true
+        },
+        "no_retrieval": {
+          "gain_pp": 6.148,
+          "ci95_pp": [
+            5.947466666666667,
+            6.356966666666667
+          ],
+          "seed_gain_pp": [
+            6.291111111111111,
+            6.020000000000001,
+            5.813333333333333,
+            6.093333333333334,
+            6.522222222222222
+          ],
+          "positive_seeds": 5,
+          "clear_local_gain": true
+        }
+      }
+    },
+    {
+      "cell": [
+        "cub200",
+        "miniimagenet"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.9377333333333333,
+      "baseline_accuracy": 0.9456000000000001,
+      "no_retrieval_accuracy": 0.9519022222222222,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": -0.7866666666666667,
+          "ci95_pp": [
+            -0.8729,
+            -0.6990777777777779
+          ],
+          "seed_gain_pp": [
+            -0.7844444444444447,
+            -0.8155555555555555,
+            -0.786666666666667,
+            -0.9622222222222223,
+            -0.5844444444444447
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": -1.4168888888888893,
+          "ci95_pp": [
+            -1.5311111111111109,
+            -1.303988888888889
+          ],
+          "seed_gain_pp": [
+            -1.3488888888888888,
+            -1.431111111111111,
+            -1.4200000000000002,
+            -1.4822222222222226,
+            -1.4022222222222225
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        }
+      }
+    },
+    {
+      "cell": [
+        "eurosat",
+        "miniimagenet"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.6509288888888888,
+      "baseline_accuracy": 0.6480533333333334,
+      "no_retrieval_accuracy": 0.673408888888889,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": 0.2875555555555555,
+          "ci95_pp": [
+            0.156,
+            0.42046666666666666
+          ],
+          "seed_gain_pp": [
+            0.12222222222222205,
+            0.2777777777777777,
+            0.2599999999999999,
+            0.537777777777778,
+            0.23999999999999969
+          ],
+          "positive_seeds": 5,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": -2.248,
+          "ci95_pp": [
+            -2.4035666666666664,
+            -2.1111
+          ],
+          "seed_gain_pp": [
+            -2.393333333333333,
+            -2.433333333333333,
+            -2.1933333333333334,
+            -2.0133333333333328,
+            -2.206666666666667
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        }
+      }
+    },
+    {
+      "cell": [
+        "flowers102",
+        "flowers102"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.9910088888888888,
+      "baseline_accuracy": 0.9940266666666666,
+      "no_retrieval_accuracy": 0.99336,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": -0.3017777777777777,
+          "ci95_pp": [
+            -0.35199999999999987,
+            -0.25287777777777776
+          ],
+          "seed_gain_pp": [
+            -0.40444444444444433,
+            -0.23333333333333314,
+            -0.26222222222222213,
+            -0.34888888888888875,
+            -0.2599999999999999
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": -0.23511111111111102,
+          "ci95_pp": [
+            -0.29199999999999987,
+            -0.17777777777777778
+          ],
+          "seed_gain_pp": [
+            -0.35333333333333317,
+            -0.1933333333333333,
+            -0.1977777777777778,
+            -0.23111111111111096,
+            -0.19999999999999987
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        }
+      }
+    },
+    {
+      "cell": [
+        "flowers102",
+        "miniimagenet"
+      ],
+      "shot": 1,
+      "episodes": 3000,
+      "accuracy": 0.9893733333333333,
+      "baseline_accuracy": 0.9921911111111109,
+      "no_retrieval_accuracy": 0.99336,
+      "comparisons": {
+        "r2_overall": {
+          "gain_pp": -0.2817777777777777,
+          "ci95_pp": [
+            -0.3288999999999998,
+            -0.237311111111111
+          ],
+          "seed_gain_pp": [
+            -0.33999999999999986,
+            -0.2422222222222221,
+            -0.2533333333333333,
+            -0.31999999999999984,
+            -0.2533333333333331
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        },
+        "no_retrieval": {
+          "gain_pp": -0.39866666666666645,
+          "ci95_pp": [
+            -0.45157777777777763,
+            -0.3470999999999999
+          ],
+          "seed_gain_pp": [
+            -0.5155555555555553,
+            -0.33999999999999986,
+            -0.30666666666666664,
+            -0.46222222222222203,
+            -0.3688888888888887
+          ],
+          "positive_seeds": 0,
+          "clear_local_gain": false
+        }
+      }
+    }
+  ],
+  "aggregates": [
+    {
+      "scope": "old4",
+      "gain_pp": -1.3148888888888888,
+      "ci95_pp": [
+        -1.380491666666667,
+        -1.2473333333333332
+      ]
+    },
+    {
+      "scope": "new6",
+      "gain_pp": 0.14777777777777784,
+      "ci95_pp": [
+        0.11080555555555562,
+        0.18504259259259265
+      ]
+    },
+    {
+      "scope": "all10",
+      "gain_pp": -0.4372888888888887,
+      "ci95_pp": [
+        -0.47396,
+        -0.4029911111111111
+      ]
+    }
+  ],
+  "protocol_sha256": "19680abffb7c533e2ee8f095f236424ffadf0ad6c68ad36284a304377feca68d",
+  "scope": "Historically viewed fixed image pools; paired seed-stratified episode intervals; same query-domain episodes across galleries resampled jointly; no multiplicity-adjusted or fresh-dataset confirmation"
+}

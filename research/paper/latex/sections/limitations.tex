@@ -1,0 +1,11 @@
+\section{Limitations}
+The primary experiment covers one target dataset, one frozen feature fusion, two fixed galleries and source-default parameters. Distinct confirmation images add within-domain evidence, not new classes or a domain. The large gallery may itself contribute to accumulated mass; gallery-size and hyperparameter sensitivity remain unmeasured.
+
+The protocol differs from original OSLO and does not reproduce its benchmark tables. A closed-set ablation cannot replace strong competitive baselines. The frozen local controls have explicit protocol boundaries, and no comprehensive state-of-the-art ranking is established.
+
+Interventions are retrospective and oracle filtering uses privileged labels. Exact decoded-image duplicates are excluded, but near-duplicates and overlap with encoder pretraining data are not audited. Bootstrap uncertainty is conditional on fixed pools; no independent-domain confidence or familywise significance claim is made. No matched per-method latency or energy experiment is available, so no efficiency advantage is asserted.
+
+A separate source-trained calibration experiment on two previously used development domains is reported in Appendix~\ref{app:calibration}. Its two-direction accuracy gate fails and its predictions match a same-mass control. It provides a limited additional failure boundary, not independent confirmation of a remedy.
+
+\section{Conclusion}
+In the evaluated gallery-only transfer, favorable inlier ranking does not prevent harmful accumulated weight from task-external classes. Strong controls expose the accuracy deficit, and mass and composition interventions distinguish two contributors without qualifying a new method. Aggregate retained weight should be assessed alongside relevance ranking and downstream accuracy under explicit information permissions.

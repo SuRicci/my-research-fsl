@@ -1,0 +1,71 @@
+{
+  "method": "r4_top100",
+  "dataset": "holidays",
+  "pair": [
+    "clip_b16",
+    "dino_s14"
+  ],
+  "budget": 32,
+  "seed": 51851,
+  "policy": "cub_random",
+  "bridge_ids": [
+    "bridge:185.Bohemian_Waxwing/Bohemian_Waxwing_0115_177724.jpg",
+    "bridge:189.Red_bellied_Woodpecker/Red_Bellied_Woodpecker_0108_180956.jpg",
+    "bridge:106.Horned_Puffin/Horned_Puffin_0077_100671.jpg",
+    "bridge:038.Great_Crested_Flycatcher/Great_Crested_Flycatcher_0050_29786.jpg",
+    "bridge:017.Cardinal/Cardinal_0074_18339.jpg",
+    "bridge:151.Black_capped_Vireo/Black_Capped_Vireo_0005_797453.jpg",
+    "bridge:012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0025_8262.jpg",
+    "bridge:124.Le_Conte_Sparrow/Le_Conte_Sparrow_0003_795175.jpg",
+    "bridge:112.Great_Grey_Shrike/Great_Grey_Shrike_0050_797012.jpg",
+    "bridge:015.Lazuli_Bunting/Lazuli_Bunting_0082_15047.jpg",
+    "bridge:169.Magnolia_Warbler/Magnolia_Warbler_0114_165467.jpg",
+    "bridge:084.Red_legged_Kittiwake/Red_Legged_Kittiwake_0069_795435.jpg",
+    "bridge:020.Yellow_breasted_Chat/Yellow_Breasted_Chat_0033_21873.jpg",
+    "bridge:162.Canada_Warbler/Canada_Warbler_0037_162405.jpg",
+    "bridge:062.Herring_Gull/Herring_Gull_0093_46029.jpg",
+    "bridge:193.Bewick_Wren/Bewick_Wren_0104_185256.jpg",
+    "bridge:026.Bronzed_Cowbird/Bronzed_Cowbird_0060_24082.jpg",
+    "bridge:013.Bobolink/Bobolink_0097_10861.jpg",
+    "bridge:077.Tropical_Kingbird/Tropical_Kingbird_0051_69609.jpg",
+    "bridge:022.Chuck_will_Widow/Chuck_Will_Widow_0020_796965.jpg",
+    "bridge:129.Song_Sparrow/Song_Sparrow_0102_122090.jpg",
+    "bridge:182.Yellow_Warbler/Yellow_Warbler_0017_176888.jpg",
+    "bridge:022.Chuck_will_Widow/Chuck_Will_Widow_0032_22802.jpg",
+    "bridge:025.Pelagic_Cormorant/Pelagic_Cormorant_0102_23778.jpg",
+    "bridge:155.Warbling_Vireo/Warbling_Vireo_0075_158480.jpg",
+    "bridge:076.Dark_eyed_Junco/Dark_Eyed_Junco_0005_68813.jpg",
+    "bridge:120.Fox_Sparrow/Fox_Sparrow_0065_114945.jpg",
+    "bridge:127.Savannah_Sparrow/Savannah_Sparrow_0067_118491.jpg",
+    "bridge:117.Clay_colored_Sparrow/Clay_Colored_Sparrow_0040_110717.jpg",
+    "bridge:154.Red_eyed_Vireo/Red_Eyed_Vireo_0044_156708.jpg",
+    "bridge:069.Rufous_Hummingbird/Rufous_Hummingbird_0057_59489.jpg",
+    "bridge:150.Sage_Thrasher/Sage_Thrasher_0044_155610.jpg"
+  ],
+  "parent_complete_sha256": "cbc98df02fdd6050624a58f14cb62565afd5fed7e9624ed21bf78a0777a4533d",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-followup-20260909/r4_holidays/evaluation/clip_b16__dino_s14__m32__s51851__cub_random/predictions.npz",
+      "sha256": "3a061a07d595fb93a44a37e35b4222b52eeb4e1e80ad99ce06f63bc9808ce3ca"
+    }
+  ],
+  "sha256": "bb8ef78e2b1a23844f0719a3512340e60953892ef9c21b48d5121c68ba8aca56",
+  "means": [
+    0.8756656032899418
+  ],
+  "conditions": [
+    "map"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "topk": 100
+  },
+  "seconds": 0.803396463394165
+}

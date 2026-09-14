@@ -1,0 +1,61 @@
+{
+  "command": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/support-risk-selection-20260913/study.py",
+    "--phase",
+    "run"
+  ],
+  "cwd": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "numpy": "1.24.4",
+  "torch": "2.3.0",
+  "protocol": {
+    "idea_id": "idea-8cbaafc7",
+    "tier": "auxiliary/dev",
+    "domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "shots": [
+      1,
+      5
+    ],
+    "weights": [
+      0.5,
+      0.0,
+      1.0
+    ],
+    "names": [
+      "equal",
+      "dino",
+      "clip",
+      "selected",
+      "view_selected"
+    ],
+    "loss": "mean squared ridge prediction error over all heldout items and classes",
+    "folds": {
+      "1shot": "6 leave-one-view-out folds; same image, correlated proxy",
+      "5shot": "5 balanced leave-one-image-per-class folds; full6views heldout"
+    },
+    "ridge": 0.1,
+    "tie": "first minimum: equal,DINO,CLIP",
+    "batch_size": 16,
+    "threads": 6,
+    "bootstrap_n": 5000,
+    "bootstrap_seed": 26091401,
+    "gate": {
+      "one_shot_gain_pp": 0.5,
+      "one_shot_ci_lower": 0.0,
+      "all_cell_ci_lower_pp": -0.5
+    },
+    "resources": {
+      "min_free_gib": 10,
+      "output_max_mib": 50,
+      "deadline": "2026-09-15T09:00:00+00:00"
+    },
+    "scope": "Fixed2000DTD/EuroSAT exposed development tasks; no canonicalPetsmetric replacement; no newPets/Caltech outcomes",
+    "controls": "three fixed same-sixview choices and originalCS/R2; historical stronger6view controls included via matched bank",
+    "risk": "1shot viewCV is not independent image validation; 5shot4-to5training size shift; galleryconditions paired"
+  },
+  "lock_sha256": "839376644693977fdb6da7b827ba6abfbea239c4cc213f4ad3fd9a7dcaabd586",
+  "start": "2026-09-13T08:06:50.688089+00:00"
+}

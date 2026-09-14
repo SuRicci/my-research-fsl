@@ -1,0 +1,54 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-2fabb46a",
+  "id": "report-2fabb46a",
+  "quest_id": "012",
+  "created_at": "2026-09-13T07:04:15+00:00",
+  "updated_at": "2026-09-13T07:04:15+00:00",
+  "source": {
+    "kind": "system",
+    "role": "artifact"
+  },
+  "status": "completed",
+  "branch": "run/source-diversity-assets-20260913",
+  "head_commit": "2ec19cde66498f8faf9f7219bf3ed2eca2e8e6b5",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "summary_refresh",
+  "report_id": "report-81fd9e4e",
+  "summary": "Quest summary refreshed from recent artifacts.",
+  "reason": "Reduced-view study closed without qualified subset; canonical Flowers source accepted after failed legacy parity and repaired transport.6147eligible images/102classes, independent audit passed; cleaned189verified chunks. Active next stage: source-diversity idea contract with matched one-view controls, no live compute or new target outcomes.",
+  "paths": {
+    "summary_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/SUMMARY.md",
+    "quest_root_summary_md": "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+  },
+  "semantic_key": "report:experiment:summary_refresh:none:545d754f3f7d6a0e04a81b6b514de849ac4662de81ef8ee477b3387b0fae50a4",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-2fabb46a",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/SUMMARY.md",
+      "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+    ],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "parent_endpoint_task_checks": 6000,
+  "parent_sample_score_max_error": 0.0,
+  "source_models_unchanged_during_target": true,
+  "all_bank_class_and_query_permutation_invariance": true,
+  "convergence_warnings": 0,
+  "independent_audit": "passed",
+  "independent_path": "experiments/main/query-competence-20260913/outputs/independent_validation.json"
+}

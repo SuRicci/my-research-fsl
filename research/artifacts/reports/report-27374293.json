@@ -1,0 +1,54 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-27374293",
+  "id": "report-27374293",
+  "quest_id": "012",
+  "created_at": "2026-09-14T00:09:19+00:00",
+  "updated_at": "2026-09-14T00:09:19+00:00",
+  "source": {
+    "kind": "system",
+    "role": "artifact"
+  },
+  "status": "completed",
+  "branch": "run/source-group-objective-20260914",
+  "head_commit": "fbf07abf572dd5e89ec01f917deeaa4beef21427",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "summary_refresh",
+  "report_id": "report-ee5850c9",
+  "summary": "Quest summary refreshed from recent artifacts.",
+  "reason": "Verified source-group objective rejected; report-54e9c664 and decision-6bde6800. All18fits resolved,1350000predictionchecks passed; source-only evidence mapped40records/36reference-only/4manuscriptgroups. Active finite-real-view idea challenge; no livecompute, no submission claim.",
+  "paths": {
+    "summary_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/SUMMARY.md",
+    "quest_root_summary_md": "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+  },
+  "semantic_key": "report:experiment:summary_refresh:none:a8f1dd379758a255eef19d86980b1a5a91d120d883f99204dabb03480553be77",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-27374293",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/SUMMARY.md",
+      "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+    ],
+    "stage_status": "ready"
+  }
+}

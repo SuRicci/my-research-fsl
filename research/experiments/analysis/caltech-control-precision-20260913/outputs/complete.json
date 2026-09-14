@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "seconds": 13.470257997512817,
+  "unique_tasks": 500,
+  "task_conditions": 1500,
+  "prediction_entries": 112500,
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "new_output_mib": 4.3444108963012695,
+  "free_gib": 10.043586730957031
+}

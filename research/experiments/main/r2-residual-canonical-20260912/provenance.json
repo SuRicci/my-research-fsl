@@ -1,0 +1,23 @@
+{
+  "checkpoint_identity": {
+    "clip_openai_b16": {
+      "path": "/Users/decoqwq/.cache/clip/ViT-B-16.pt",
+      "bytes": 350837078,
+      "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f"
+    },
+    "dinov2_s14": {
+      "path": "/Users/decoqwq/.cache/huggingface/hub/models--timm--vit_small_patch14_dinov2.lvd142m/snapshots/4610ca143709d58a633b6397a74412c2c3842454/model.safetensors",
+      "bytes": 88240510,
+      "sha256": "04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081"
+    }
+  },
+  "code_identity": {
+    "validate_implementation.py": "87a8d2df54e044c171209af89bd146ab062496848f3c8cf7795a02e35e093b3e",
+    "baseline_methods.py": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b",
+    "evaluate.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+    "package_results.py": "fad224dd1e5ca83ec055752dd3cc3934ca5e854a0e417c6dc52d261ad9e18a8b"
+  },
+  "protocol_sha256": "6177b0d81be9fa31e86480fb4fc86af399c1dde84d89604df869ea74d81ecb59",
+  "legacy_cache_parity": false,
+  "note": "Historical numerical replay retained separately; canonical features use standard QuickGELU CLIP and native DINOv2 rather than guessing legacy architecture."
+}

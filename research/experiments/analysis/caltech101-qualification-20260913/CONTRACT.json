@@ -1,0 +1,30 @@
+{
+  "parent_report_id": "report-264a9860",
+  "decision_id": "decision-19df7b6c",
+  "question": "Can official Caltech101 support a bounded independent accumulated-stack transfer check without identity or storage confounds?",
+  "slice_type": "analysis-lite asset qualification; no accuracy results",
+  "url": "https://data.caltech.edu/records/mzrjq-6wc02/files/caltech-101.zip",
+  "expected_bytes": 137414764,
+  "expected_md5": "3138e1922a9193bfa496528edbbc45d0",
+  "license": "CC BY4.0 per saved official and DataCite records",
+  "archive_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/caltech101-qualification/caltech-101.zip",
+  "free_floor_gib": 10,
+  "archive_limit_mib": 160,
+  "peak_additional_gib": 0.6,
+  "acquisition_headroom_gib": 0.8,
+  "download_timeout_seconds": 60,
+  "no_classification": true,
+  "completion": "checksum and archive inventory then decoded RGB identity/class qualification; report no-overlap only within audited local manifests",
+  "abandon": "checksum or unsafe archive member, inaccessible source, insufficient storage, no safe identity split, deadline reached",
+  "evaluation_followup": "Freeze two mandatory source recipes, equal-information controls, task identities/seeds and outcomes contract only after data qualification; no target tuning or original-gate rescue",
+  "canonical_metric_boundary": "Caltech requires new external-transfer metric ids and measured comparators; original five Pets metrics unchanged",
+  "created_utc": "2026-09-13T11:05:41.288307+00:00",
+  "identity_audit": {
+    "rgb_hash": "sha256(str(np.uint8 RGB shape).encode()+RGB bytes); matches canonical recover_gallery.py",
+    "cross_dataset_boundary": "seven baselines/local identity manifests plus current Pets identity manifest; bounded current local images, not pretraining/global history",
+    "exclude": "background category; remove all prior exact-RGB overlap; cross-class duplicate groups excluded; within-class duplicates keep lexicographic first",
+    "split": "per class stable SHA256 of seed26091393 and rgb; first floor(n/3) gallery, remainder support/query pool; require16query-pool images/class for1shot15queries",
+    "no_feature_or_accuracy_selection": true,
+    "storage": "stream nested tar through zip; never extract JPEG or annotations; keep compact JSON metadata"
+  }
+}

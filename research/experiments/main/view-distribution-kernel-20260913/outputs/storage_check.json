@@ -1,0 +1,9 @@
+{
+  "scope": "quest tmp and current-workspace tmp only; not an exhaustive disk inventory",
+  "tmp_file_count": 43,
+  "large_tmp_files": [],
+  "prior_redundant_chunk_files": [],
+  "deleted_bytes_this_pass": 0,
+  "free_gib": 10.658943176269531,
+  "decision": "retain unique features/raw inputs and numerical-failure evidence; avoid duplicate worktree materialization"
+}

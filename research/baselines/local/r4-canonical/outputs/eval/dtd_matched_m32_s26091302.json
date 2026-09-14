@@ -1,0 +1,11 @@
+{
+  "dataset": "dtd",
+  "phase": "eval",
+  "policy": "matched",
+  "budget": 32,
+  "seed": 26091302,
+  "npz_sha256": "6ea82c7f66ff3758b7f4828c1b84694c33653d24c60bb75d4b0f1cf4398c81c8",
+  "query_count": 240,
+  "gallery_count": 1876,
+  "bridge_count": 32
+}

@@ -1,0 +1,7 @@
+{
+  "failed_session": "bash-10b26394",
+  "stage": "numeric sample check after bank/source/statistical checks",
+  "error": "parent sys.path imported older verify module with a different dense signature",
+  "repair": "load exact quest-local verify.py by explicit importlib path",
+  "scientific_run_unchanged": true
+}

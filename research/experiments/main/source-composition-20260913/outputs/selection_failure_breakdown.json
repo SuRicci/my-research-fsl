@@ -1,0 +1,573 @@
+{
+  "status": "descriptive_posthoc",
+  "inputs": "experiments/main/source-composition-20260913/outputs/selection_lock.json",
+  "groups": {
+    "dtd_k1_original": {
+      "selected_steps": [
+        100,
+        100,
+        100
+      ],
+      "original_selection_change_pp": 4.25777777777778,
+      "flowers_selection_change_pp": -0.2933333333333333,
+      "common_selection_change_pp": 1.982222222222223,
+      "up_frobenius": 5.541789849599202
+    },
+    "dtd_k1_flowers": {
+      "selected_steps": [
+        0,
+        0,
+        0
+      ],
+      "original_selection_change_pp": 0.0,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.0,
+      "up_frobenius": 0.0
+    },
+    "dtd_k1_mixed": {
+      "selected_steps": [
+        50,
+        100,
+        100
+      ],
+      "original_selection_change_pp": 3.822222222222224,
+      "flowers_selection_change_pp": -0.28444444444444444,
+      "common_selection_change_pp": 1.7688888888888898,
+      "up_frobenius": 4.354228258132935
+    },
+    "dtd_k5_original": {
+      "selected_steps": [
+        200,
+        200,
+        200
+      ],
+      "original_selection_change_pp": 1.8564102564102563,
+      "flowers_selection_change_pp": -0.04102564102564089,
+      "common_selection_change_pp": 0.9076923076923077,
+      "up_frobenius": 6.579842726389567
+    },
+    "dtd_k5_flowers": {
+      "selected_steps": [
+        100,
+        100,
+        50
+      ],
+      "original_selection_change_pp": 0.11282051282051264,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.05641025641025632,
+      "up_frobenius": 2.2590245803197226
+    },
+    "dtd_k5_mixed": {
+      "selected_steps": [
+        200,
+        200,
+        200
+      ],
+      "original_selection_change_pp": 1.5897435897435896,
+      "flowers_selection_change_pp": -0.020512820512820443,
+      "common_selection_change_pp": 0.7846153846153845,
+      "up_frobenius": 5.853763898213704
+    },
+    "eurosat_k1_original": {
+      "selected_steps": [
+        200,
+        200,
+        200
+      ],
+      "original_selection_change_pp": 24.764444444444447,
+      "flowers_selection_change_pp": -0.27555555555555517,
+      "common_selection_change_pp": 12.244444444444445,
+      "up_frobenius": 6.402285099029541
+    },
+    "eurosat_k1_flowers": {
+      "selected_steps": [
+        0,
+        0,
+        50
+      ],
+      "original_selection_change_pp": 0.07111111111111108,
+      "flowers_selection_change_pp": 0.017777777777777743,
+      "common_selection_change_pp": 0.04444444444444442,
+      "up_frobenius": 0.8237797419230143
+    },
+    "eurosat_k1_mixed": {
+      "selected_steps": [
+        200,
+        200,
+        200
+      ],
+      "original_selection_change_pp": 23.182222222222226,
+      "flowers_selection_change_pp": -0.46222222222222215,
+      "common_selection_change_pp": 11.360000000000001,
+      "up_frobenius": 6.0512315432230634
+    },
+    "eurosat_k5_original": {
+      "selected_steps": [
+        200,
+        200,
+        200
+      ],
+      "original_selection_change_pp": 7.425641025641025,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 3.7128205128205125,
+      "up_frobenius": 6.172760168711345
+    },
+    "eurosat_k5_flowers": {
+      "selected_steps": [
+        200,
+        200,
+        0
+      ],
+      "original_selection_change_pp": 0.08205128205128198,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.04102564102564099,
+      "up_frobenius": 1.7719791730244954
+    },
+    "eurosat_k5_mixed": {
+      "selected_steps": [
+        200,
+        200,
+        200
+      ],
+      "original_selection_change_pp": 6.861538461538461,
+      "flowers_selection_change_pp": -0.010256410256410222,
+      "common_selection_change_pp": 3.4256410256410255,
+      "up_frobenius": 5.63560136159261
+    }
+  },
+  "rows": [
+    {
+      "key": "dtd_k1_original_26091381",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091381,
+      "selected_step": 100,
+      "original_selection_change_pp": 3.8133333333333352,
+      "flowers_selection_change_pp": -0.18666666666666676,
+      "common_selection_change_pp": 1.8133333333333346,
+      "up_frobenius": 5.491740703582764
+    },
+    {
+      "key": "dtd_k1_flowers_26091381",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091381,
+      "selected_step": 0,
+      "original_selection_change_pp": 0.0,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.0,
+      "up_frobenius": 0.0
+    },
+    {
+      "key": "dtd_k1_mixed_26091381",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091381,
+      "selected_step": 50,
+      "original_selection_change_pp": 3.493333333333335,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 1.7466666666666675,
+      "up_frobenius": 3.071795701980591
+    },
+    {
+      "key": "dtd_k1_original_26091382",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091382,
+      "selected_step": 100,
+      "original_selection_change_pp": 4.960000000000002,
+      "flowers_selection_change_pp": -0.3999999999999999,
+      "common_selection_change_pp": 2.2800000000000007,
+      "up_frobenius": 5.597163677215576
+    },
+    {
+      "key": "dtd_k1_flowers_26091382",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091382,
+      "selected_step": 0,
+      "original_selection_change_pp": 0.0,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.0,
+      "up_frobenius": 0.0
+    },
+    {
+      "key": "dtd_k1_mixed_26091382",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091382,
+      "selected_step": 100,
+      "original_selection_change_pp": 4.506666666666668,
+      "flowers_selection_change_pp": -0.45333333333333364,
+      "common_selection_change_pp": 2.0266666666666673,
+      "up_frobenius": 5.019814491271973
+    },
+    {
+      "key": "dtd_k1_original_26091383",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091383,
+      "selected_step": 100,
+      "original_selection_change_pp": 4.000000000000002,
+      "flowers_selection_change_pp": -0.2933333333333332,
+      "common_selection_change_pp": 1.853333333333334,
+      "up_frobenius": 5.536465167999268
+    },
+    {
+      "key": "dtd_k1_flowers_26091383",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091383,
+      "selected_step": 0,
+      "original_selection_change_pp": 0.0,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.0,
+      "up_frobenius": 0.0
+    },
+    {
+      "key": "dtd_k1_mixed_26091383",
+      "source": "dtd",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091383,
+      "selected_step": 100,
+      "original_selection_change_pp": 3.4666666666666686,
+      "flowers_selection_change_pp": -0.3999999999999997,
+      "common_selection_change_pp": 1.5333333333333345,
+      "up_frobenius": 4.97107458114624
+    },
+    {
+      "key": "dtd_k5_original_26091381",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091381,
+      "selected_step": 200,
+      "original_selection_change_pp": 1.9384615384615382,
+      "flowers_selection_change_pp": -0.030769230769230663,
+      "common_selection_change_pp": 0.9538461538461538,
+      "up_frobenius": 6.635311126708984
+    },
+    {
+      "key": "dtd_k5_flowers_26091381",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091381,
+      "selected_step": 100,
+      "original_selection_change_pp": 0.12307692307692308,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.06153846153846154,
+      "up_frobenius": 2.406977415084839
+    },
+    {
+      "key": "dtd_k5_mixed_26091381",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091381,
+      "selected_step": 200,
+      "original_selection_change_pp": 1.6,
+      "flowers_selection_change_pp": -0.030769230769230663,
+      "common_selection_change_pp": 0.7846153846153846,
+      "up_frobenius": 5.890295505523682
+    },
+    {
+      "key": "dtd_k5_original_26091382",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091382,
+      "selected_step": 200,
+      "original_selection_change_pp": 1.6,
+      "flowers_selection_change_pp": -0.030769230769230663,
+      "common_selection_change_pp": 0.7846153846153846,
+      "up_frobenius": 6.588084697723389
+    },
+    {
+      "key": "dtd_k5_flowers_26091382",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091382,
+      "selected_step": 100,
+      "original_selection_change_pp": 0.0923076923076922,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.0461538461538461,
+      "up_frobenius": 2.414926767349243
+    },
+    {
+      "key": "dtd_k5_mixed_26091382",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091382,
+      "selected_step": 200,
+      "original_selection_change_pp": 1.7538461538461538,
+      "flowers_selection_change_pp": -0.030769230769230663,
+      "common_selection_change_pp": 0.8615384615384615,
+      "up_frobenius": 5.833422660827637
+    },
+    {
+      "key": "dtd_k5_original_26091383",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091383,
+      "selected_step": 200,
+      "original_selection_change_pp": 2.0307692307692307,
+      "flowers_selection_change_pp": -0.06153846153846133,
+      "common_selection_change_pp": 0.9846153846153847,
+      "up_frobenius": 6.516132354736328
+    },
+    {
+      "key": "dtd_k5_flowers_26091383",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091383,
+      "selected_step": 50,
+      "original_selection_change_pp": 0.12307692307692265,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.06153846153846133,
+      "up_frobenius": 1.9551695585250854
+    },
+    {
+      "key": "dtd_k5_mixed_26091383",
+      "source": "dtd",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091383,
+      "selected_step": 200,
+      "original_selection_change_pp": 1.4153846153846152,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.7076923076923076,
+      "up_frobenius": 5.837573528289795
+    },
+    {
+      "key": "eurosat_k1_original_26091381",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091381,
+      "selected_step": 200,
+      "original_selection_change_pp": 25.360000000000007,
+      "flowers_selection_change_pp": -0.3199999999999996,
+      "common_selection_change_pp": 12.520000000000001,
+      "up_frobenius": 6.411910533905029
+    },
+    {
+      "key": "eurosat_k1_flowers_26091381",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091381,
+      "selected_step": 0,
+      "original_selection_change_pp": 0.0,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.0,
+      "up_frobenius": 0.0
+    },
+    {
+      "key": "eurosat_k1_mixed_26091381",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091381,
+      "selected_step": 200,
+      "original_selection_change_pp": 22.826666666666668,
+      "flowers_selection_change_pp": -0.34666666666666646,
+      "common_selection_change_pp": 11.240000000000002,
+      "up_frobenius": 6.0414958000183105
+    },
+    {
+      "key": "eurosat_k1_original_26091382",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091382,
+      "selected_step": 200,
+      "original_selection_change_pp": 24.240000000000002,
+      "flowers_selection_change_pp": -0.23999999999999977,
+      "common_selection_change_pp": 12.000000000000002,
+      "up_frobenius": 6.345668792724609
+    },
+    {
+      "key": "eurosat_k1_flowers_26091382",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091382,
+      "selected_step": 0,
+      "original_selection_change_pp": 0.0,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.0,
+      "up_frobenius": 0.0
+    },
+    {
+      "key": "eurosat_k1_mixed_26091382",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091382,
+      "selected_step": 200,
+      "original_selection_change_pp": 23.30666666666667,
+      "flowers_selection_change_pp": -0.3733333333333333,
+      "common_selection_change_pp": 11.466666666666667,
+      "up_frobenius": 5.975517749786377
+    },
+    {
+      "key": "eurosat_k1_original_26091383",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091383,
+      "selected_step": 200,
+      "original_selection_change_pp": 24.69333333333333,
+      "flowers_selection_change_pp": -0.26666666666666616,
+      "common_selection_change_pp": 12.213333333333333,
+      "up_frobenius": 6.449275970458984
+    },
+    {
+      "key": "eurosat_k1_flowers_26091383",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091383,
+      "selected_step": 50,
+      "original_selection_change_pp": 0.21333333333333326,
+      "flowers_selection_change_pp": 0.053333333333333226,
+      "common_selection_change_pp": 0.13333333333333325,
+      "up_frobenius": 2.471339225769043
+    },
+    {
+      "key": "eurosat_k1_mixed_26091383",
+      "source": "eurosat",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091383,
+      "selected_step": 200,
+      "original_selection_change_pp": 23.413333333333338,
+      "flowers_selection_change_pp": -0.6666666666666667,
+      "common_selection_change_pp": 11.373333333333333,
+      "up_frobenius": 6.136681079864502
+    },
+    {
+      "key": "eurosat_k5_original_26091381",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091381,
+      "selected_step": 200,
+      "original_selection_change_pp": 7.23076923076923,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 3.6153846153846154,
+      "up_frobenius": 6.134668827056885
+    },
+    {
+      "key": "eurosat_k5_flowers_26091381",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091381,
+      "selected_step": 200,
+      "original_selection_change_pp": 0.09230769230769242,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.04615384615384621,
+      "up_frobenius": 2.65529727935791
+    },
+    {
+      "key": "eurosat_k5_mixed_26091381",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091381,
+      "selected_step": 200,
+      "original_selection_change_pp": 6.953846153846153,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 3.4769230769230766,
+      "up_frobenius": 5.6274237632751465
+    },
+    {
+      "key": "eurosat_k5_original_26091382",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091382,
+      "selected_step": 200,
+      "original_selection_change_pp": 7.5076923076923086,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 3.7538461538461543,
+      "up_frobenius": 6.143261432647705
+    },
+    {
+      "key": "eurosat_k5_flowers_26091382",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091382,
+      "selected_step": 200,
+      "original_selection_change_pp": 0.15384615384615352,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.07692307692307676,
+      "up_frobenius": 2.660640239715576
+    },
+    {
+      "key": "eurosat_k5_mixed_26091382",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091382,
+      "selected_step": 200,
+      "original_selection_change_pp": 6.615384615384615,
+      "flowers_selection_change_pp": -0.030769230769230663,
+      "common_selection_change_pp": 3.292307692307692,
+      "up_frobenius": 5.562679767608643
+    },
+    {
+      "key": "eurosat_k5_original_26091383",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091383,
+      "selected_step": 200,
+      "original_selection_change_pp": 7.538461538461538,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 3.769230769230769,
+      "up_frobenius": 6.240350246429443
+    },
+    {
+      "key": "eurosat_k5_flowers_26091383",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091383,
+      "selected_step": 0,
+      "original_selection_change_pp": 0.0,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 0.0,
+      "up_frobenius": 0.0
+    },
+    {
+      "key": "eurosat_k5_mixed_26091383",
+      "source": "eurosat",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091383,
+      "selected_step": 200,
+      "original_selection_change_pp": 7.015384615384615,
+      "flowers_selection_change_pp": 0.0,
+      "common_selection_change_pp": 3.507692307692308,
+      "up_frobenius": 5.716700553894043
+    }
+  ],
+  "boundary": "Breakdown of already recorded selection predictions; no new fit, no checkpoint reselection. Not a causal explanation of target harm. Common source validation gain is not evidence of target-domain improvement."
+}

@@ -1,0 +1,166 @@
+{
+  "command": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/reduced-view-efficiency-20260913/rv_study.py",
+    "--phase",
+    "run"
+  ],
+  "sources": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/rv_verify.py": "919d4461cfa300e58372f545a708772ec1d00925cdc8d2042af2b66a228724d4",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/encoder_benchmark.py": "cf9b347909abb44b971fe6eefac427d62c458865c0fb344ac0c3929922c07193",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/rv_study.py": "896029014dcc3b1318b6fc2752d69271efb5223b36539edac7e5c20648f1630e",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/protocol.json": "c6739a9d67d851803cdcf400b7536a177cd7b2880b1ecc06b37de9f06e9f2c59",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/selection_lock.json": "08356d7b7251cfb8055f74cbbb9d81b214eef956bb1527bdb3a6634806f1ec93",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluate.py": "c614d00a1ed0b13fe12b3c4ce48ea298fc2cac6b14d365ef3d471fce89e77b4a",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/metric.py": "4e19d5e659e2fd76cfe57c762c91c39bdfa66a8da9abb74109e2fa6ab86db614",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/extract_views.py": "6bae4f70759e9ffb3f86c6e04e1ec55f0ed93dd4cb76c43f950916dcc4e8a697",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluation_contract.json": "b27bc495917a781274ab9c09997b21cc4c6bd4ae7c9be412c46b244c8e7dd469",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/feature_manifest.json": "d63bdbf077a970c0f8ff47b5bf7638eff2d5a4fca3cc2f70a2ed0284903495a3",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/run.py": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c"
+  },
+  "protocol": {
+    "tier": "auxiliary/dev",
+    "source_domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "shots": [
+      1,
+      5
+    ],
+    "subsets": [
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "classifiers": [
+      "r2",
+      "CS_l2",
+      "linear_mean"
+    ],
+    "representation": "Normalize each cached fused view in float64; mean selected views then L2. Same subset for support/query/gallery.",
+    "r2": "Unchanged algebra: one-shot top64 cosine, equal centroid blend0.5, centered ridge0.1; five-shot raw support ridge1.0.",
+    "CS_l2": "Support-global center then per-vector L2; one-shot centered retrieval/blend/ridge0.1; five-shot centered support ridge0.1.",
+    "linear_mean": "Support-only centered ridge with frozen opposite-source full-six penalties from kernel selection_lock, same penalty for every subset.",
+    "numerics": "float64 common evaluation; descending cosine stable sort with original gallery index ascending for exact ties. Recompute original/full-six; no repair of historical float32 audits.",
+    "selection_tasks": "100 source selection episodes per shot from existing sampler; source gallery1024 per task with ordinary/excluded draws seed26091381.",
+    "eval_tasks": "Existing500episodes per domain/shot;5seeds; complete matched/mismatched galleries; exposed development sources only.",
+    "selection_rule": "One subset per source shared across shots, galleries and classifiers. Feasible if each source cell paired95%lower bound >=-0.5pp. Among feasible<=3views choose fewest views, then largest worst-cell mean delta, then largest macro mean delta, then lexicographic subset. Full-six fallback. Lock both directions before evaluation.",
+    "evaluation_gate": "Selected subset has<=3views for both directions; paired95%lower bound >=-0.5pp in all classifier/shot/gallery cells. Intersection-union claim across fixed selected cells; no test-picked frontier winner.",
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26091359,
+    "noninferiority_margin_pp": 0.5,
+    "audit_indices": [
+      0,
+      99,
+      199,
+      299,
+      499
+    ],
+    "selection_audit_indices": [
+      0,
+      49,
+      99
+    ],
+    "score_atol": 1e-08,
+    "stat_atol": 1e-10,
+    "cost_contract": {
+      "structural": "K/6 encoder applications per image per backbone; gallery encoding offline versus query/support online reported separately",
+      "empirical": "MPS actual two frozen encoders,32fixed source images (16each),counts1/2/3/6 with original-anchored lexicographic sets plus any selected sets;1warmup and5timed interleaved repetitions, batch32, sync around measured end-to-end feature extraction; no general latency guarantee",
+      "timing_selection": "No accuracy-based hardware choices. Fixed view-batched extractor identical to retained extraction implementation.",
+      "timing_boundary": "Decoded32image crops preloaded; timed tensor preprocessing, MPS transfers, forward and CPU feature normalization. Excludes image decoding/cropping/model load; not end-to-end application latency."
+    },
+    "storage": "Save all uint8predictions and task identities, exact sampled float64scores; no copy of historical scorebanks.",
+    "resources": {
+      "threads": 6,
+      "local_only": true,
+      "spend": 0,
+      "free_gib_min": 10,
+      "new_gib_max": 0.1,
+      "deadline_utc": "2026-09-15T09:00:00+00:00"
+    },
+    "canonical_baseline": "r2-pets-transfer/frozen-v1 unchanged; allfivePetsmetrics unmeasured. Supplementary source report, not canonical replacement.",
+    "novelty": "No novel algorithm claim; bounded efficiency qualification of established view-policy idea.",
+    "idea_id": "idea-c63025d0",
+    "decision_id": "decision-7a22d1d3"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "synthetic_nonidentity_dual_error": 4.440892098500626e-16,
+  "synthetic_primal_error": 1.0269562977782698e-15,
+  "objective_gradients": [
+    {
+      "arm": "mean_feature",
+      "finite_difference_error": 2.812483579361924e-11
+    },
+    {
+      "arm": "mean_view",
+      "finite_difference_error": 3.4538823624058468e-12
+    },
+    {
+      "arm": "max_view",
+      "finite_difference_error": 4.075400954206554e-11
+    }
+  ],
+  "real_checks": [
+    {
+      "source": "dtd",
+      "role": "train",
+      "gallery": 0,
+      "null_error": 3.3306690738754696e-16,
+      "independent_error": 5.551115123125783e-16
+    },
+    {
+      "source": "dtd",
+      "role": "train",
+      "gallery": 1,
+      "null_error": 4.440892098500626e-16,
+      "independent_error": 6.661338147750939e-16
+    },
+    {
+      "source": "dtd",
+      "role": "selection",
+      "gallery": 0,
+      "null_error": 2.220446049250313e-16,
+      "independent_error": 6.661338147750939e-16
+    },
+    {
+      "source": "dtd",
+      "role": "selection",
+      "gallery": 1,
+      "null_error": 3.3306690738754696e-16,
+      "independent_error": 5.551115123125783e-16
+    },
+    {
+      "source": "eurosat",
+      "role": "train",
+      "gallery": 0,
+      "null_error": 2.220446049250313e-16,
+      "independent_error": 6.661338147750939e-16
+    },
+    {
+      "source": "eurosat",
+      "role": "train",
+      "gallery": 1,
+      "null_error": 2.7755575615628914e-16,
+      "independent_error": 7.771561172376096e-16
+    },
+    {
+      "source": "eurosat",
+      "role": "selection",
+      "gallery": 0,
+      "null_error": 3.3306690738754696e-16,
+      "independent_error": 9.159339953157541e-16
+    },
+    {
+      "source": "eurosat",
+      "role": "selection",
+      "gallery": 1,
+      "null_error": 4.440892098500626e-16,
+      "independent_error": 1.1102230246251565e-15
+    }
+  ],
+  "train_selection_disjoint": true,
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "threads": 6,
+  "device": "cpu",
+  "dtype": "float64"
+}

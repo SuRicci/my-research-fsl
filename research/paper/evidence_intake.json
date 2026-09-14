@@ -1,0 +1,253 @@
+{
+  "scope": "evidence checkpoint; not submission-ready",
+  "decision_id": "decision-865322b6",
+  "actual_workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "paper_state": {
+    "selected_outline_ref": null,
+    "outline_count": 0,
+    "legacy_ledger_item_count": 7,
+    "legacy_unmapped_item_count": 7,
+    "paper_root": "/Users/decoqwq/DeepScientist/quests/012/paper",
+    "paper_branch": "main"
+  },
+  "legacy_items": [
+    {
+      "item_id": "canonical-additional-domains",
+      "title": "Canonical CUB Flowers and CIFAR-FS panel",
+      "claim_impact": "Broad PRESS superiority and adaptive-benefit claims downgraded. Known geometric/penalty effects remain conditional. No new-method or SOTA claim.",
+      "source_paths": [
+        ".ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md",
+        ".ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json",
+        ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/canonical-additional-domains.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/SOURCE_AUDIT.md"
+      ],
+      "source_audit_status": "requires direct source review before manuscript claim",
+      "proposed_role": "unselected; explicitly map or retain reference_only during outline selection",
+      "path_existence": {
+        ".ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md": true,
+        ".ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json": true,
+        ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/canonical-additional-domains.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/comparison.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/validation.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/run_manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/SOURCE_AUDIT.md": true
+      }
+    },
+    {
+      "item_id": "ilpcz-gallery-control",
+      "title": "iLPC-z local frozen-gallery comparator",
+      "claim_impact": "Reject universal replacement/robust advantage. Retain large conditional EuroSAT matched-gallery benefit as known-comparator evidence, motivating an enablement/reliability question rather than a novelty or original-table reproduction claim.",
+      "source_paths": [
+        ".ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md",
+        ".ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json",
+        ".ds/worktrees/r2-ownership-canonical-20260912/experiments/analysis-results/analysis-1985c6ec/ilpcz-gallery-control.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/DETAILED_RESULTS.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/metrics_summary.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/metric_rows.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/acceptance.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/SOURCE_AUDIT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/protocol.json"
+      ],
+      "source_audit_status": "requires direct source review before manuscript claim",
+      "proposed_role": "unselected; explicitly map or retain reference_only during outline selection",
+      "path_existence": {
+        ".ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md": true,
+        ".ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json": true,
+        ".ds/worktrees/r2-ownership-canonical-20260912/experiments/analysis-results/analysis-1985c6ec/ilpcz-gallery-control.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/DETAILED_RESULTS.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/comparison.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/metrics_summary.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/metric_rows.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/validation.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/run_manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/acceptance.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/SOURCE_AUDIT.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/protocol.json": true
+      }
+    },
+    {
+      "item_id": "multinomial-logistic-control",
+      "title": "Five-shot multinomial logistic control",
+      "claim_impact": "Strong-classifier comparison gap closed. Retain conditional known-method effects; no evidence that logistic or PRESS creates a generally improved method. New-method and SOTAclaimsremainunsupported.",
+      "source_paths": [
+        ".ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md",
+        ".ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json",
+        ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-8a348b17/multinomial-logistic-control.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/DETAILED_RESULTS.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/accuracy_table.csv",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/selection.json"
+      ],
+      "source_audit_status": "requires direct source review before manuscript claim",
+      "proposed_role": "unselected; explicitly map or retain reference_only during outline selection",
+      "path_existence": {
+        ".ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md": true,
+        ".ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json": true,
+        ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-8a348b17/multinomial-logistic-control.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/DETAILED_RESULTS.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/comparison.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/validation.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/accuracy_table.csv": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/run_manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/selection.json": true
+      }
+    },
+    {
+      "item_id": "new-image-confirmation",
+      "title": "New-image confirmation within existing datasets",
+      "claim_impact": "Supports reproducible practical improvement within two existing datasets; no new-domain, independent image-sampling confidence, or novel-algorithm claim. Support centering is prior art.",
+      "source_paths": [
+        ".ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md",
+        ".ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json",
+        ".ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/new-image-confirmation.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets/image_identity_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets/manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/selection.json"
+      ],
+      "source_audit_status": "requires direct source review before manuscript claim",
+      "proposed_role": "unselected; explicitly map or retain reference_only during outline selection",
+      "path_existence": {
+        ".ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md": true,
+        ".ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json": true,
+        ".ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/new-image-confirmation.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/comparison.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/RESULT.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/run_manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets/image_identity_manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets/manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/protocol.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/selection.json": true
+      }
+    },
+    {
+      "item_id": "press-fixed-penalty-challenge",
+      "title": "PRESS versus every fixed penalty on twelve cells",
+      "claim_impact": "Downgrade adaptive-selection explanation for fused-feature gains; small fixedpenalties account for most benefit. No universal PRESS superiority; no newalgorithmnovelty. Do notpromote retrospectivelybestfixedvalue asprospectivelyvalidated.",
+      "source_paths": [
+        ".ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md",
+        ".ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json",
+        ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-5cd86318/press-fixed-penalty-challenge.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/protocol.json"
+      ],
+      "source_audit_status": "requires direct source review before manuscript claim",
+      "proposed_role": "unselected; explicitly map or retain reference_only during outline selection",
+      "path_existence": {
+        ".ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md": true,
+        ".ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json": true,
+        ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-5cd86318/press-fixed-penalty-challenge.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/comparison.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/RESULT.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/run_manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/protocol.json": true
+      }
+    },
+    {
+      "item_id": "retrieval-head-attribution",
+      "title": "Retrieval/head factorial and failure summary",
+      "claim_impact": "Downgrade any special five-shot per-sample geometry explanation: a simpler scalar regularization control explains and exceeds its gain. Retain practical, heterogeneous 1-shot improvement and known-method attribution; no novelty claim.",
+      "source_paths": [
+        ".ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md",
+        ".ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json",
+        ".ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/retrieval-head-attribution.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/evaluate_attribution.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/protocol.json"
+      ],
+      "source_audit_status": "requires direct source review before manuscript claim",
+      "proposed_role": "unselected; explicitly map or retain reference_only during outline selection",
+      "path_existence": {
+        ".ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md": true,
+        ".ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json": true,
+        ".ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/retrieval-head-attribution.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/comparison.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/RESULT.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/run_manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/evaluate_attribution.py": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/protocol.json": true
+      }
+    },
+    {
+      "item_id": "ridge-scale-robustness",
+      "title": "Ridge scale controls across encoders and pools",
+      "claim_impact": "Reject universal support-radius superiority. Retain encoder/domain-dependent practical benefit for frozen fused features, especially EuroSAT, and known regularization-scale explanation. Equal global tuning absorbs CLIP improvements. No novel method or broad-domain claim.",
+      "source_paths": [
+        ".ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md",
+        ".ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json",
+        ".ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-2cc2d420/ridge-scale-robustness.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/selection.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/protocol.json"
+      ],
+      "source_audit_status": "requires direct source review before manuscript claim",
+      "proposed_role": "unselected; explicitly map or retain reference_only during outline selection",
+      "path_existence": {
+        ".ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md": true,
+        ".ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json": true,
+        ".ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-2cc2d420/ridge-scale-robustness.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/comparison.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/RESULT.md": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/run_manifest.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/selection.json": true,
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/protocol.json": true
+      }
+    }
+  ],
+  "new_items": [
+    {
+      "item_id": "oslo-pets-source-default",
+      "scope": "main measured result",
+      "source_path": "experiments/main/oslo-gallery-pets-20260913/RESULT.json",
+      "artifact_id": "run-2dac3539",
+      "validation_path": "experiments/main/oslo-gallery-pets-20260913/outputs/validation.json",
+      "source_exists": true
+    },
+    {
+      "item_id": "oslo-retained-influence",
+      "scope": "descriptive attribution",
+      "source_path": "experiments/analysis/oslo_influence/attribution.json",
+      "report_path": "experiments/analysis/oslo_influence/REPORT.md",
+      "science_node_id": "science-831c0e0f",
+      "source_exists": true
+    },
+    {
+      "item_id": "oslo-final-step-counterfactual",
+      "scope": "retrospective diagnostic; oracle controls not eligible",
+      "source_path": "experiments/analysis/oslo_final_step_intervention/analysis.json",
+      "report_path": "experiments/analysis/oslo_final_step_intervention/REPORT.md",
+      "science_node_id": "science-354f3d6b",
+      "source_exists": true
+    }
+  ],
+  "must_not_claim": [
+    "New algorithm or robust improvement achieved",
+    "Oracle-filtered diagnostic is implementable without gallery labels",
+    "Fresh Pets is an independent domain or remains unseen after diagnostic inspection",
+    "Manuscript readiness based on health flags",
+    "All legacy results support current method"
+  ],
+  "next_tasks": [
+    "Audit exact source records for7legacyitems and map to current scoped outline or reference-only with rationale",
+    "Create and select evidence-grounded academic outline; protect10GiB disk reserve before any new paper worktree",
+    "Sync evidence ledger then draft scoped report; skeptical review before bundle"
+  ],
+  "free_gib_at_handoff": 11.549697875976562
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-64aaf3b2",
+  "id": "report-64aaf3b2",
+  "quest_id": "012",
+  "created_at": "2026-09-13T00:29:18+00:00",
+  "updated_at": "2026-09-13T00:29:18+00:00",
+  "source": {
+    "kind": "system",
+    "role": "artifact"
+  },
+  "status": "completed",
+  "branch": "paper/gallery-transfer-calibration-update",
+  "head_commit": "e377580c4cb61b4cce6e71d73ab1f0ff21aee499",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "summary_refresh",
+  "report_id": "report-65a343a6",
+  "summary": "Quest summary refreshed from recent artifacts.",
+  "reason": "Reviewed nine-page draft delivered; bounded frontier closed, technical-report completion recommendation pending explicit approval.",
+  "paths": {
+    "summary_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/SUMMARY.md",
+    "quest_root_summary_md": "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+  },
+  "semantic_key": "report:write:summary_refresh:none:3d9a442c9ef3ef42eca1249d094eece1a5be9ef9d0e4f6b923b86b523aef3c2a",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-64aaf3b2",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/SUMMARY.md",
+      "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+    ],
+    "stage_status": "ready"
+  }
+}

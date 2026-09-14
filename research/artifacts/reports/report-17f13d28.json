@@ -1,0 +1,76 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-17f13d28",
+  "id": "report-17f13d28",
+  "quest_id": "012",
+  "created_at": "2026-09-13T12:37:34+00:00",
+  "updated_at": "2026-09-13T12:37:34+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-6d8656f0"
+  },
+  "status": "partial",
+  "branch": "run/query-consistency-20260913",
+  "head_commit": "26cc24c331b195c9000e024e122cc8c55f39cd6b",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "caltech_external_transfer",
+  "title": "Caltech transfer fails improvement gates; original numerical audit failure localized",
+  "summary": "All fixed comparisons completed. Candidate source settings score 98.032%/97.978667% versus augmented-support ridge98.330667% and C10 logistic98.392%. Both fail improvement and DTD-gallery guardrails. Original independent audit failed; bounded 240-check diagnosis finds one shared score-ensemble top64 precision discrepancy (two source copies), no sampled prediction changes, all72 paired intervals match. Other sampled ridge methods pass. No full-audit-pass, novel-method or broad-generalization claim.",
+  "metrics_summary": {
+    "caltech_dtd_config_macro_accuracy": 98.032,
+    "caltech_eurosat_config_macro_accuracy": 97.97866666666667,
+    "caltech_augmented_support_ridge_macro_accuracy": 98.33066666666667,
+    "caltech_logistic_c10_macro_accuracy": 98.392
+  },
+  "parent_report_id": "report-0eb34a5e",
+  "decision_ref": "decision-dedee53d",
+  "evidence_paths": [
+    "experiments/analysis/caltech101-transfer-20260913/REPORT.md",
+    "experiments/analysis/caltech101-transfer-20260913/RESULT.json",
+    "experiments/analysis/caltech101-transfer-20260913/outputs/analysis.json",
+    "experiments/analysis/caltech101-transfer-20260913/outputs/audit_failure.json",
+    "experiments/analysis/caltech101-transfer-20260913/diagnostics/audit_diagnosis.json"
+  ],
+  "science_nodes": [
+    "science-cb9200da",
+    "science-58218531",
+    "science-3460dae1"
+  ],
+  "comparability": "New-domain auxiliary transfer; canonical five Pets metrics unchanged; both fixed source configurations/all ten methods retained, original R2 has lower view budget. Conditional task intervals from fixed pools; same tasks shared by source configurations.",
+  "paper_role": "reference_only",
+  "section_id": "historical_context",
+  "item_id": "caltech101-transfer-20260913",
+  "claim_links": [],
+  "takeaway": "Do not promote the cumulative stack as a robust improvement. Negative candidate-versus-support-only ridge evidence does not rely on the numerically discrepant ensemble control.",
+  "next_stage": "idea",
+  "run_id": "run-6d8656f0",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:caltech_external_transfer:none:280d0d3d2ba75b9e283ab7a2f699b87fc3dfada0fd487d8ab9c5408a22138feb",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-17f13d28",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

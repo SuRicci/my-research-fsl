@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-13T05:11:36.806578+00:00",
+  "computation_status": "complete",
+  "new_method_score_audit": "passed",
+  "statistical_audit": "passed",
+  "metric_gate": "refuted",
+  "source_run": "bash-c0b2dd84",
+  "score_audit_run": "bash-07745883",
+  "statistics_audit_run": "bash-eb7a3e34",
+  "prior_scatter_audit": "failed1/88preserved",
+  "canonical_pets_measured": false,
+  "outputs_sha256": {
+    "outputs/complete.json": "7745a08eed9c55ddcb3f997519b4d1549028fed78e9d80e2e275a479c5b449bf",
+    "outputs/analysis.json": "b579ca30ca8f785deb6340995fc7393de46a50151665525e275138b5aeb92c64",
+    "outputs/output_audit.json": "9ea39d9871a36b8732e30fb102a99f2c4605eaed6f4278b2cec96e531afedc77",
+    "outputs/statistical_audit.json": "7267af9da6ee0444dbabc6db4a99251a48e44701a9dc2054f96fe27f2bba9ce5",
+    "outputs/selection_lock.json": "08356d7b7251cfb8055f74cbbb9d81b214eef956bb1527bdb3a6634806f1ec93"
+  }
+}

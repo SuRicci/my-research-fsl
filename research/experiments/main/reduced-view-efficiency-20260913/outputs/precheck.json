@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "score_cases": 10,
+  "max_score_error": 3.1086244689504383e-15,
+  "tie_policy": "exact duplicate retrieval indices match",
+  "query_independence": "passed"
+}

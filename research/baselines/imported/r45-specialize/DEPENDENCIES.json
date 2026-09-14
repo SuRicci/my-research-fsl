@@ -1,0 +1,15 @@
+{
+  "scope": "Complete new campaign ranks, predictions, scores, logs, summaries, reports and source snapshots. Historical data, models, feature caches and parent-run NPZ files are external dependencies, not bundled.",
+  "baseline_commit": "4a54094bf6f95ceff853165767c0b8c5eb7e28a3",
+  "checkout_at_archival": "4a54094bf6f95ceff853165767c0b8c5eb7e28a3",
+  "frozen_source_validation": true,
+  "python": "Python 3.9.23",
+  "external_run_roots": [
+    "/data/liuhaoyu/r45-scale-20260909",
+    "/data/liuhaoyu/r45-refine-20260909",
+    "/data/liuhaoyu/r45-followup-20260909"
+  ],
+  "restoration": "repository/ contains source snapshots and new outputs under lab/specialize_20260909/results/. Restore the source tree at the recorded ROOT and the results directory at OUT, and supply external dependencies at their original paths before running audit scripts. The archive alone is not a data-complete fresh training environment.",
+  "manifest_rule": "MANIFEST.json lists business files only and does not hash itself. Whole archive SHA256 is recorded externally.",
+  "created_at": 1788961063.7583597
+}

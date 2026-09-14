@@ -1,0 +1,54 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-a8802a6a",
+  "id": "report-a8802a6a",
+  "quest_id": "012",
+  "created_at": "2026-09-12T18:58:44+00:00",
+  "updated_at": "2026-09-12T18:58:44+00:00",
+  "source": {
+    "kind": "system",
+    "role": "artifact"
+  },
+  "status": "completed",
+  "branch": "run/r2-ownership-canonical-20260912",
+  "head_commit": "ec4fb7d1b80b116e55dee7d6cda047b0f3d19940",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912",
+  "workspace_rel_path": ".ds/worktrees/r2-ownership-canonical-20260912",
+  "report_type": "summary_refresh",
+  "report_id": "report-64a6c4e7",
+  "summary": "Quest summary refreshed from recent artifacts.",
+  "reason": "iLPC campaign completed and accepted; no-refit enablement audit completed; active idea frontier resumed on parent evidence line, naive learned gate downgraded.",
+  "paths": {
+    "summary_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/SUMMARY.md",
+    "quest_root_summary_md": "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+  },
+  "semantic_key": "report:idea:summary_refresh:none:f13697230e26e8b7e8dfb4891d4456b8e55165f33626f5ab9b3576d40d9a7394",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-a8802a6a",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/SUMMARY.md",
+      "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+    ],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "uniform_r2_error": 9.953756896496913e-08,
+  "gradient_error": 5.770358843526502e-11,
+  "primal_dual_error": 7.549516567451064e-15,
+  "query_partition_invariant": true,
+  "class_permutation_equivariant": true,
+  "gallery_permutation_invariant": true,
+  "all_source_target_task_construction": "passed"
+}

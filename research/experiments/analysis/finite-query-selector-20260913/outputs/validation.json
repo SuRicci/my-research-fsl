@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "prediction_entries_checked": 450000,
+  "counts": {
+    "dtd_dtd": {
+      "rescues": 460,
+      "vulnerable": 506,
+      "all_wrong": 7082,
+      "disagreement": 1316
+    },
+    "dtd_eurosat": {
+      "rescues": 599,
+      "vulnerable": 723,
+      "all_wrong": 8301,
+      "disagreement": 1888
+    },
+    "eurosat_dtd": {
+      "rescues": 1213,
+      "vulnerable": 1668,
+      "all_wrong": 8730,
+      "disagreement": 3698
+    },
+    "eurosat_eurosat": {
+      "rescues": 553,
+      "vulnerable": 637,
+      "all_wrong": 7061,
+      "disagreement": 1481
+    }
+  },
+  "pooled_delta_pp": 1.8833333333333333,
+  "independent_ci95_pp": [
+    1.7993333333333341,
+    1.9680000000000004
+  ],
+  "method": "Python scalar correctness enumeration and independent per-bootstrap replicate aggregation; full input hashes checked"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "errors": {
+    "loo_refit": 1.4087911948124088e-09,
+    "scalar_loss": 2.498001805406602e-16,
+    "query_batch": 8.005318630210922e-12
+  },
+  "actual_tasks": 4,
+  "rank_deficient_tasks": 2,
+  "deleted_rows_per_task": 25,
+  "lambda_count": 4
+}

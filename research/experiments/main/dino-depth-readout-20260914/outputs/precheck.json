@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "dense_scatter_error": 8.604228440844963e-16,
+  "primal_ridge_error": 1.1546319456101628e-14,
+  "real_duplicate_cases": [
+    {
+      "target": "dtd",
+      "gallery": "dtd",
+      "duplicate_error": 1.6653345369377348e-15,
+      "old_error": 0.0
+    },
+    {
+      "target": "dtd",
+      "gallery": "eurosat",
+      "duplicate_error": 1.3322676295501878e-15,
+      "old_error": 0.0
+    },
+    {
+      "target": "eurosat",
+      "gallery": "dtd",
+      "duplicate_error": 1.6653345369377348e-15,
+      "old_error": 0.0
+    },
+    {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "duplicate_error": 1.3322676295501878e-15,
+      "old_error": 0.0
+    }
+  ],
+  "scope": "exact dimension-adjusted null on4fixedrealcases plus independent small-matrix formulas; full extraction parity and final result audit remain"
+}

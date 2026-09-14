@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "cells": 8,
+  "task_conditions": 4000,
+  "model_count": 48,
+  "source_allocations_checked": 12,
+  "source_gallery_conditions_checked": 36,
+  "all_task_labels_checked": true,
+  "all_source_exclusions_checked": true,
+  "source_selection_statistics_recomputed": true,
+  "all_saved_score_prediction_accuracy_checked": true,
+  "control_hash_and_task_identity_reuse_checked": true,
+  "independent_numpy_tasks": 24,
+  "independent_numpy_model_task_reconstructions": 360,
+  "max_numpy_error": 9.273270719090121e-07,
+  "query_partition_invariant": true,
+  "rows": [
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "sha256": "695d9fbde8731fb2a247410bb55f86e618fac97e28d467a3176912cf28b1e86b",
+      "independent_reconstructed_scores": 45,
+      "max_numpy_error": 5.572160524103253e-07
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "sha256": "5d6e225467a5ddf1cfb45e7cdf8f67fccba2de23a488d7049f1e64c13d023d66",
+      "independent_reconstructed_scores": 45,
+      "max_numpy_error": 7.047021794992503e-07
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "sha256": "996fac16c3ece9f9843467d46b053f5f445fe245d0ea439c8416679df0d50c88",
+      "independent_reconstructed_scores": 45,
+      "max_numpy_error": 6.219594056444677e-07
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "sha256": "8020a4def32ae30294a429553e64350f0be8c889c292242ba8661d34b206652b",
+      "independent_reconstructed_scores": 45,
+      "max_numpy_error": 6.999498154414141e-07
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "sha256": "deaaf9cbce6877885bff945c152fba96a7a8ff465494af85e1e52ff4af84750e",
+      "independent_reconstructed_scores": 45,
+      "max_numpy_error": 9.273270719090121e-07
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "sha256": "fd7f72ee0749979360f6d34225b9d4836ffaa389647379a81e6bd9b0a73a7b99",
+      "independent_reconstructed_scores": 45,
+      "max_numpy_error": 6.065115054632031e-07
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "sha256": "66f18d709d869fc68993aa2fc35e0609a75fe9a7f5c18103c783b8c9a495b3b8",
+      "independent_reconstructed_scores": 45,
+      "max_numpy_error": 5.039560944108956e-07
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "sha256": "2da3951816f812a4589e5122b63852353278bd72099e0250a4ad73c16e45f116",
+      "independent_reconstructed_scores": 45,
+      "max_numpy_error": 6.571220219075968e-07
+    }
+  ],
+  "source_rows": [
+    {
+      "source": "dtd",
+      "shot": 1,
+      "replicate": 0,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "dtd",
+      "shot": 1,
+      "replicate": 1,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "dtd",
+      "shot": 1,
+      "replicate": 2,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "replicate": 0,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "replicate": 1,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "replicate": 2,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "replicate": 0,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "replicate": 1,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "replicate": 2,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "replicate": 0,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "replicate": 1,
+      "source_only_checkpoint_reconstruction": true
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "replicate": 2,
+      "source_only_checkpoint_reconstruction": true
+    }
+  ],
+  "limits": [
+    "Task intervals condition on fixed pools and three training allocations",
+    "Two exposed development domains; no fresh-domain result",
+    "Coverage manipulation is class exclusion, not natural domain shift"
+  ]
+}

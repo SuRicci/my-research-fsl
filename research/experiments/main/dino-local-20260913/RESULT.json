@@ -1,0 +1,405 @@
+{
+  "status": "completed_rejected",
+  "scope": "auxiliary/development",
+  "idea_id": "idea-6a1ad48b",
+  "decision_id": "decision-d3a12061",
+  "analysis": {
+    "scope": "Source development qualification only; all five canonical Pets metrics unchanged/unmeasured. No main-test submission.",
+    "cells": {
+      "dtd_dtd": {
+        "accuracy_pct": {
+          "parent": 80.01066666666667,
+          "patch": 74.11999999999999,
+          "fusion": 78.57066666666667,
+          "mean_fusion": 78.46133333333334,
+          "shuffled_fusion": 49.06933333333333
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -1.4399999999999997,
+            "ci95_pp": [
+              -1.752,
+              -1.1386666666666667
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": 0.10933333333333342,
+            "ci95_pp": [
+              0.0026666666666669016,
+              0.21866666666666684
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 29.501333333333328,
+            "ci95_pp": [
+              28.506666666666668,
+              30.536066666666667
+            ]
+          }
+        },
+        "repairs": 792,
+        "spoils": 1332
+      },
+      "dtd_eurosat": {
+        "accuracy_pct": {
+          "parent": 76.30399999999999,
+          "patch": 74.11999999999999,
+          "fusion": 76.52533333333334,
+          "mean_fusion": 76.376,
+          "shuffled_fusion": 45.168
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": 0.22133333333333305,
+            "ci95_pp": [
+              -0.1013333333333334,
+              0.5466666666666665
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": 0.14933333333333337,
+            "ci95_pp": [
+              0.03733333333333337,
+              0.25873333333333254
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 31.357333333333333,
+            "ci95_pp": [
+              30.373333333333335,
+              32.408
+            ]
+          }
+        },
+        "repairs": 1155,
+        "spoils": 1072
+      },
+      "eurosat_dtd": {
+        "accuracy_pct": {
+          "parent": 73.48533333333333,
+          "patch": 64.83733333333333,
+          "fusion": 71.75466666666667,
+          "mean_fusion": 71.85866666666666,
+          "shuffled_fusion": 48.152
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -1.7306666666666668,
+            "ci95_pp": [
+              -2.1094000000000004,
+              -1.354666666666667
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -0.10400000000000009,
+            "ci95_pp": [
+              -0.22666666666666677,
+              0.023999999999999928
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 23.602666666666664,
+            "ci95_pp": [
+              22.602666666666664,
+              24.616
+            ]
+          }
+        },
+        "repairs": 1165,
+        "spoils": 1814
+      },
+      "eurosat_eurosat": {
+        "accuracy_pct": {
+          "parent": 79.696,
+          "patch": 64.83733333333333,
+          "fusion": 76.29333333333334,
+          "mean_fusion": 76.312,
+          "shuffled_fusion": 53.312000000000005
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -3.402666666666667,
+            "ci95_pp": [
+              -3.802733333333334,
+              -3.0160000000000005
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -0.01866666666666679,
+            "ci95_pp": [
+              -0.12800000000000003,
+              0.09073333333333247
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 22.981333333333335,
+            "ci95_pp": [
+              22.03733333333333,
+              23.930666666666664
+            ]
+          }
+        },
+        "repairs": 849,
+        "spoils": 2125
+      }
+    },
+    "domains": {
+      "dtd": {
+        "accuracy_pct": {
+          "parent": 78.15733333333333,
+          "patch": 74.11999999999999,
+          "fusion": 77.548,
+          "mean_fusion": 77.41866666666667,
+          "shuffled_fusion": 47.11866666666666
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -0.6093333333333331,
+            "ci95_pp": [
+              -0.8906666666666662,
+              -0.3386666666666666
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": 0.12933333333333322,
+            "ci95_pp": [
+              0.04533333333333359,
+              0.21733333333333335
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 30.429333333333332,
+            "ci95_pp": [
+              29.46666666666667,
+              31.444
+            ]
+          }
+        }
+      },
+      "eurosat": {
+        "accuracy_pct": {
+          "parent": 76.59066666666666,
+          "patch": 64.83733333333333,
+          "fusion": 74.024,
+          "mean_fusion": 74.08533333333332,
+          "shuffled_fusion": 50.73200000000001
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -2.566666666666667,
+            "ci95_pp": [
+              -2.912,
+              -2.234666666666667
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -0.06133333333333349,
+            "ci95_pp": [
+              -0.15066666666666667,
+              0.0320000000000001
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 23.292,
+            "ci95_pp": [
+              22.349333333333337,
+              24.226666666666667
+            ]
+          }
+        }
+      }
+    },
+    "pooled": {
+      "parent": {
+        "delta_pp": -1.5879999999999999,
+        "ci95_pp": [
+          -1.8066833333333334,
+          -1.366
+        ]
+      },
+      "mean_fusion": {
+        "delta_pp": 0.033999999999999864,
+        "ci95_pp": [
+          -0.03000000000000003,
+          0.0973333333333332
+        ]
+      },
+      "shuffled_fusion": {
+        "delta_pp": 26.860666666666667,
+        "ci95_pp": [
+          26.171933333333335,
+          27.548066666666664
+        ]
+      }
+    },
+    "accuracy_pct": {
+      "parent": 77.374,
+      "patch": 69.47866666666667,
+      "fusion": 75.786,
+      "mean_fusion": 75.752,
+      "shuffled_fusion": 48.925333333333334
+    },
+    "gate": {
+      "passed": false,
+      "tests": {
+        "increment": false,
+        "positive_ci": false,
+        "domains": false,
+        "cells": false,
+        "controls": false
+      }
+    }
+  },
+  "validation": {
+    "numerical": {
+      "status": "passed",
+      "independent_matching_cases": [
+        {
+          "case": "synthetic",
+          "local_score_error": 1.6653345369377348e-16,
+          "fusion_score_error": 4.565792188770956e-15
+        },
+        {
+          "case": "dtd",
+          "task": 0,
+          "local_score_error": 8.881784197001252e-16,
+          "fusion_score_error": 2.3314683517128287e-15
+        },
+        {
+          "case": "dtd",
+          "task": 249,
+          "local_score_error": 1.1102230246251565e-15,
+          "fusion_score_error": 3.608224830031759e-15
+        },
+        {
+          "case": "dtd",
+          "task": 499,
+          "local_score_error": 1.2212453270876722e-15,
+          "fusion_score_error": 3.552713678800501e-15
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 0,
+          "local_score_error": 8.881784197001252e-16,
+          "fusion_score_error": 2.3314683517128287e-15
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 249,
+          "local_score_error": 1.1102230246251565e-15,
+          "fusion_score_error": 3.594347042223944e-15
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 499,
+          "local_score_error": 1.2212453270876722e-15,
+          "fusion_score_error": 3.552713678800501e-15
+        },
+        {
+          "case": "eurosat",
+          "task": 0,
+          "local_score_error": 9.992007221626409e-16,
+          "fusion_score_error": 3.3306690738754696e-15
+        },
+        {
+          "case": "eurosat",
+          "task": 249,
+          "local_score_error": 1.6653345369377348e-15,
+          "fusion_score_error": 4.6629367034256575e-15
+        },
+        {
+          "case": "eurosat",
+          "task": 499,
+          "local_score_error": 1.4432899320127035e-15,
+          "fusion_score_error": 9.103828801926284e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 0,
+          "local_score_error": 9.992007221626409e-16,
+          "fusion_score_error": 3.164135620181696e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 249,
+          "local_score_error": 1.6653345369377348e-15,
+          "fusion_score_error": 4.6629367034256575e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 499,
+          "local_score_error": 1.4432899320127035e-15,
+          "fusion_score_error": 9.103828801926284e-15
+        }
+      ],
+      "query_class_patch_permutation": "passed",
+      "checked_prediction_entries": 750000,
+      "all_parent_scores_exact": true,
+      "output_hashes": {
+        "dtd_dtd": "4c999d9084053b56ed88db65bdb1e8b67082f43e3c4a5ebc9f3279e91160071c",
+        "dtd_eurosat": "4161d2e683cac7b4020405aed1782fa6d326d44e3fc06c160cdf150e9f9685c3",
+        "eurosat_dtd": "2a8d9e96fed28219cc7722889427f2b5e716756611d9cc54fb650a3088b770dd",
+        "eurosat_eurosat": "5f3b058c8bf495a8779168a75f39ce271e74a0f7f24c05add35a15518077ab74"
+      },
+      "parent_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_dtd.npz": "f1eb4c27bb6efe273a005900dfde32dfe177ccd779d2cae70c018fa501f83773",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_eurosat.npz": "7284378158390122200c30cbd13f492f542acddd8cd1da8c1121531b02b02991",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_dtd.npz": "7ae5fdbecb839fb38dbcc63349b90327ff11dbfa92ee1e11d37c502b9ffd9623",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_eurosat.npz": "ac84bcf58ca83944c7d1d6239ea881f8b892f5998af75edb90d0ba8a6054de39"
+      }
+    },
+    "statistics": {
+      "status": "passed",
+      "independent_interval_count": 21,
+      "max_interval_error_pp": 3.552713678800501e-15,
+      "checked_prediction_entries": 750000,
+      "bootstrap": "independent count-weighted reconstruction, fixed-pool descriptive95percent intervals"
+    }
+  },
+  "execution": {
+    "status": "completed",
+    "seconds": 90.78771710395813,
+    "task_conditions": 2000,
+    "unique_episodes": 1000,
+    "feature_manifest_sha256": "dcb3c2de0dfb1f7db64a08c0ea149fd4656dac1424e42a5808be7ab858dbbada",
+    "independent_statistics": "pending"
+  },
+  "encoding_summary": {
+    "elapsed_seconds": 264.9622941017151,
+    "images": 7277,
+    "pools": {
+      "dtd_query": {
+        "count": 1877,
+        "shape": [
+          1877,
+          16,
+          384
+        ],
+        "sha256": "ca0fb9d6d5935c21f6116b324931430e21ee2217e77d8377d01e1face9578278",
+        "identity_sha256": "066771a7e3d7de66eb2df554d85a9c79b21ac1c12f3efb49897ecf3987de3ccc",
+        "cached_cls_max_abs": 6.67870044708252e-05,
+        "cached_cls_min_cosine": 0.9999997615814209,
+        "native_cls_max_abs": 0.0,
+        "pooling_max_abs": 3.814697265625e-06,
+        "all_image_hashes_verified": true
+      },
+      "eurosat_query": {
+        "count": 5400,
+        "shape": [
+          5400,
+          16,
+          384
+        ],
+        "sha256": "04df6fb99b673242cba43f0441927313bd64381df73c357234239908190ccc8e",
+        "identity_sha256": "b4f19936a3254fb27b574fb4516e18f0941ed49e3535d9a5008c4a390f52c112",
+        "cached_cls_max_abs": 0.00011307001113891602,
+        "cached_cls_min_cosine": 0.9999997615814209,
+        "native_cls_max_abs": 0.0,
+        "pooling_max_abs": 5.7220458984375e-06,
+        "all_image_hashes_verified": true
+      }
+    }
+  },
+  "canonical_pets_metrics": "unchanged and unmeasured",
+  "current_free_gib": 10.30307388305664
+}

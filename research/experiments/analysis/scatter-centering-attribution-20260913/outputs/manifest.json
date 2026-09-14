@@ -1,0 +1,57 @@
+{
+  "argv": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/analysis/scatter-centering-attribution-20260913/analysis.py"
+  ],
+  "protocol": {
+    "parent_report": "report-f208e67c",
+    "parent_science": "science-57067ff7",
+    "decision": "decision-4fdbc394",
+    "question": "At1shot, is center-dependent retrieval or classification geometry responsible for the DTDmismatched loss relative to scatterR2?",
+    "interventions": [
+      "raw_raw",
+      "raw_center",
+      "center_raw",
+      "center_center"
+    ],
+    "name_order": "first featuregeometry, second retrievalgeometry",
+    "fixed": "sixviewmeans,sourcegamma,scattertransform,support/query/galleryidentities,mix0.5,ridge0.1,doubleprecision",
+    "scope": "auxiliary posthoc mechanistic factorization; not newmaincandidate or prospectiveconfirmation",
+    "shots": [
+      1
+    ],
+    "domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "task_count_per_domain": 500,
+    "gallery_conditions": [
+      "matched",
+      "mismatched"
+    ],
+    "audit_indices": [
+      0,
+      100,
+      200,
+      300,
+      400
+    ],
+    "score_tolerance": 2e-05,
+    "statistic": "paired5000bootstrap samefrozenseeds; exact endpointpredictions matched to parent acrossalltasks; 80independentdensehybridscorechecks",
+    "success": "allendpointparity andindependentnumerics pass; estimate decomposition including null effects. No improvement/promotiongate andno parameterselection.",
+    "abandon": "numeric/identity mismatch; diagnoseonly, no outcomesbasedmethodtuning",
+    "resources": {
+      "cpu_threads": 6,
+      "local_only": true,
+      "spend": 0,
+      "max_added_mib": 10,
+      "min_free_gib": 10,
+      "deadline": "2026-09-15T09:00:00+00:00"
+    },
+    "paper_role": "reference_only until current paperoutline scope is reconciled; answers algorithmroute question rather than editing preservedgallerypaper"
+  },
+  "parent": "report-f208e67c",
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "started_utc": "2026-09-13T08:42:51.961702+00:00"
+}

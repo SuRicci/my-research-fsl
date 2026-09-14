@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "random",
+      "matching_error": 2.7755575615628914e-16,
+      "fusion_error": 1.8207657603852567e-14
+    },
+    {
+      "case": "zero",
+      "reconstruction_error": 0.0
+    },
+    {
+      "case": "constant",
+      "reconstruction_error": 1.6154612370034016e-16
+    },
+    {
+      "case": "rank1",
+      "reconstruction_error": 2.220446049250313e-16
+    },
+    {
+      "case": "dtd",
+      "matching_error": 3.3306690738754696e-16,
+      "fusion_error": 3.241851231905457e-14
+    },
+    {
+      "case": "eurosat",
+      "matching_error": 4.440892098500626e-16,
+      "fusion_error": 4.3298697960381105e-15
+    }
+  ],
+  "tolerance": 1e-10,
+  "classification_outcomes_used": false
+}

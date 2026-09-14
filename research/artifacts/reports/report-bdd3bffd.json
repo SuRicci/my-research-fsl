@@ -1,0 +1,75 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-bdd3bffd",
+  "id": "report-bdd3bffd",
+  "quest_id": "012",
+  "created_at": "2026-09-13T14:22:38+00:00",
+  "updated_at": "2026-09-13T14:22:38+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-5ee40d31"
+  },
+  "status": "completed",
+  "branch": "run/dino-reconstruction-20260913",
+  "head_commit": "a2869460002375af1af42ccae38e6fe870633949",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_experiment",
+  "title": "Fixed normalized reconstruction: audited negative development result",
+  "idea_id": "idea-80b11941",
+  "summary": "Reconstruction fusion75.323333% vsparent77.374%,delta-2.050667pp CI[-2.286,-1.807983]. Rank1 difference+0.007333pp CI[-0.110017,0.125333]. All gates fail. 1050000predictions/35intervals independently verified.",
+  "claim_update": "refuted_fixed_recipe",
+  "baseline_relation": "Auxiliary source-development scope; all five canonicalPets metrics unchanged and unmeasured, no canonical main-test registration.",
+  "failure_mode": "direction_underperforming",
+  "next_action": "decision_measurement_repair_contract",
+  "evaluation_summary": {
+    "candidate_accuracy": 75.32333333333334,
+    "parent_accuracy": 77.374,
+    "delta_pp": -2.050666666666667,
+    "ci95_pp": [
+      -2.286,
+      -1.8079833333333337
+    ],
+    "rank1_delta_pp": 0.007333333333333203,
+    "gate_passed": false
+  },
+  "evidence_paths": [
+    "experiments/main/dino-reconstruction-20260913/REPORT.md",
+    "experiments/main/dino-reconstruction-20260913/RESULT.json",
+    "experiments/main/dino-reconstruction-20260913/outputs/audit.json",
+    "experiments/main/dino-reconstruction-20260913/outputs/statistics_audit.json"
+  ],
+  "related_science_node_ids": [
+    "science-d0bb4456",
+    "science-9c847bf7"
+  ],
+  "run_id": "run-5ee40d31",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:auxiliary_experiment:none:a74fdbbe121de10f1a2fb334abf08a109ed5a265aa1c001fe530be28c3678ed8",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-bdd3bffd",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "free_gib": 10.383808135986328,
+  "current_study_output_bytes": 15673749,
+  "tracked_runtime_file_count": 671,
+  "tracked_runtime_bytes": 296787980,
+  "largest_tracked_runtime_files": [
+    [
+      96837632,
+      ".ds/codex-home/thread_history_1.sqlite"
+    ],
+    [
+      18986107,
+      ".ds/codex-home/cache/remote_plugin_catalog/e69600fec39f87af.json"
+    ],
+    [
+      15227404,
+      ".ds/codex-home/sessions/2026/09/13/rollout-2026-09-13T07-31-36-01a097f6-4de2-7502-a6da-15150e4712a3.jsonl"
+    ],
+    [
+      14951616,
+      ".ds/codex-home/sessions/2026/09/13/rollout-2026-09-13T06-42-45-01a097c9-9571-7f52-a8f8-336be40305ad.jsonl"
+    ],
+    [
+      10965311,
+      ".ds/codex-home/sessions/2026/09/13/rollout-2026-09-13T05-19-58-01a0977d-c992-75c3-9f48-7076f5fc3bbd.jsonl"
+    ],
+    [
+      10596352,
+      ".ds/codex-home/state_5.sqlite"
+    ],
+    [
+      9010476,
+      ".ds/codex-home/sessions/2026/09/12/rollout-2026-09-12T16-59-29-01a094d7-da8d-7142-be73-367dcb03bdb4.jsonl"
+    ],
+    [
+      8931025,
+      ".ds/codex-home/sessions/2026/09/13/rollout-2026-09-13T12-49-18-01a09919-2bda-7763-ace9-54e234ce01de.jsonl"
+    ]
+  ],
+  "deleted_bytes_this_pass": 0,
+  "policy": "Preserve research features/results/checkpoints; current study references old control banks rather than copies."
+}

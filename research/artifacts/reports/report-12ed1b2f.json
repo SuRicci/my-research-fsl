@@ -1,0 +1,58 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-12ed1b2f",
+  "id": "report-12ed1b2f",
+  "quest_id": "012",
+  "created_at": "2026-09-12T21:14:12+00:00",
+  "updated_at": "2026-09-12T21:14:12+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-331056aa"
+  },
+  "status": "in_progress",
+  "branch": "run/fsl-pets-transfer-20260913",
+  "head_commit": "263350b7e0f0ab8b3a39daa7f98db5b7f37ff791",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913",
+  "workspace_rel_path": ".ds/worktrees/fsl-pets-transfer-20260913",
+  "report_type": "experiment_checkpoint",
+  "title": "Pets acquisition monitored; independent validation prepared",
+  "run_id": "fsl-pets-transfer-20260913",
+  "idea_id": "idea-01adcb83",
+  "summary": "Existing acquisition bash-9512022b is advancing; latest saved log window seq11 reports671088640/791918971 image bytes. audit_outputs.py prepared and syntax checked, but no Pets assets or metrics yet.",
+  "evidence_paths": [
+    "experiments/main/fsl-pets-transfer-20260913/outputs/monitor_checkpoint.json",
+    "experiments/main/fsl-pets-transfer-20260913/audit_outputs.py",
+    "experiments/main/fsl-pets-transfer-20260913/RUN.md"
+  ],
+  "active_process": "bash-9512022b",
+  "next_action": "Monitor around21:17UTC; after assets_complete run asset audit, baseline measurement and baseline validation. Confirm separate Pets scope before candidate phase.",
+  "claim_boundary": "No Pets performance conclusion and no successful asset-validation claim yet.",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:experiment_checkpoint:none:518c797b123facb182d6e81f0888fc6b719134ade5c6511231bd08c333418baa",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-12ed1b2f",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

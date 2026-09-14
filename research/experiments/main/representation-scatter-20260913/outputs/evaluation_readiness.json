@@ -1,0 +1,51 @@
+{
+  "timestamp": "20260913T041201",
+  "stage": "encoding_complete_evaluation_ready",
+  "audit_bash_id": "bash-f525235f",
+  "encoding_bash_id": "bash-4927f933",
+  "audit_snapshot": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cache_integrity_20260913T041201.json",
+  "cache_count": 8,
+  "image_encoder_pairs": 28306,
+  "additional_image_view_encoder_evaluations": 141530,
+  "reused_original_image_encoder_evaluations": 28306,
+  "asset_bytes": 130109289,
+  "free_gib": 11.182750701904297,
+  "remaining_chunk_paths": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/chunks"
+  ],
+  "pixel_uniqueness": {
+    "dtd_query_clip_vitb16": {
+      "4": 5,
+      "6": 1870,
+      "5": 2
+    },
+    "dtd_gallery_clip_vitb16": {
+      "6": 1869,
+      "4": 5,
+      "5": 2
+    },
+    "eurosat_query_clip_vitb16": {
+      "6": 5400
+    },
+    "eurosat_gallery_clip_vitb16": {
+      "6": 5000
+    },
+    "dtd_query_dinov2_vits14": {
+      "4": 5,
+      "6": 1870,
+      "5": 2
+    },
+    "dtd_gallery_dinov2_vits14": {
+      "6": 1869,
+      "4": 5,
+      "5": 2
+    },
+    "eurosat_query_dinov2_vits14": {
+      "6": 5400
+    },
+    "eurosat_gallery_dinov2_vits14": {
+      "6": 5000
+    }
+  },
+  "manual_deleted_bytes": 0
+}

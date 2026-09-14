@@ -1,0 +1,63 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-e47adf2a",
+  "id": "report-e47adf2a",
+  "quest_id": "012",
+  "created_at": "2026-09-12T22:47:43+00:00",
+  "updated_at": "2026-09-12T22:47:43+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-2e5854b1"
+  },
+  "status": "completed",
+  "branch": "run/oslo-gallery-pets-20260913",
+  "head_commit": "7201d2ae9d012af9062950431f295631eaaeea6a",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "paper_evidence_mapping_audit",
+  "summary": "Source-level review of 7 legacy and 3 current evidence groups completed; current claims restricted to OSLO gallery-transfer evaluation and diagnostics.",
+  "paths": {
+    "audit_json": "paper/source_mapping_audit.json",
+    "intake_json": "paper/evidence_intake.json"
+  },
+  "details": {
+    "reviewed_groups": 10,
+    "main_text_groups": 3,
+    "reference_only_groups": 7,
+    "source_path_entries": 67,
+    "boundary": "Original source report/structured records and prior verification reviewed; legacy task arrays not recomputed. Green empty paper contract is not readiness.",
+    "next_stage": "paper-outline"
+  },
+  "run_id": "run-2e5854b1",
+  "anchor": "decision",
+  "semantic_key": "report:decision:paper_evidence_mapping_audit:none:4b48930972ed11467a1c6a3d3a104c42e55ac23722663d1028811a850ca26b27",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-e47adf2a",
+    "related_paths": [
+      "paper/source_mapping_audit.json",
+      "paper/evidence_intake.json"
+    ],
+    "stage_status": "ready"
+  }
+}

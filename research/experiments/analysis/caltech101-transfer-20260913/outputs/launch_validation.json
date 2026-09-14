@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "normalized_code_sources": 16,
+  "entrypoint_provenance_equal": true,
+  "validated_task_identities": 500,
+  "gallery_identities_verified": 3072,
+  "target_features_loaded": false,
+  "code_lock_sha256": "0c7491163a79f1a85b7ed2b40e03c661b96ec5e27c35e5cb6216c7f312411d44"
+}

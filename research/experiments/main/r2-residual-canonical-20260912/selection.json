@@ -1,0 +1,14 @@
+{
+  "residual_lambda": 1,
+  "support_lambda": 0.1,
+  "development_accuracy": {
+    "residual_0.03": 0.7355,
+    "support_0.03": 0.7617999999999999,
+    "residual_0.1": 0.7527999999999999,
+    "support_0.1": 0.7622666666666666,
+    "residual_1": 0.7614333333333334,
+    "support_1": 0.7619333333333332
+  },
+  "selection_rule": "maximum equal-cell DTD development mean; ties prefer0.1",
+  "locked_before_main": true
+}

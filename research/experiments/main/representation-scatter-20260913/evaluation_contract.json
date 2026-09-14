@@ -1,0 +1,22 @@
+{
+  "scope": "Clarification before any classifier outcomes; encoding protocol immutable",
+  "source_selection_gallery": "1024source gallery identities; half conditions drawn from all source classes, half excludes all task classes using source-only labels; identical draws for each gamma. No evaluation-domain features used for gamma selection.",
+  "source_gallery_seed": 26091381,
+  "source_gallery_size": 1024,
+  "selection_rule": "Mean100paired selection tasks per shot over ordinary and all-task-excluded source conditions; ties smallest gamma",
+  "target_eval": "Each fixed500task bank with complete canonical matched and mismatched gallery; all8methods; no source selection changes after evaluation",
+  "confidence": "5000paired bootstrap draws stratified by task seed, same resampling for all methods; conditional on fixed image pools",
+  "methods": [
+    "original_r2",
+    "mean_r2",
+    "medoid_r2",
+    "score_ensemble_r2",
+    "mean_logistic_C1",
+    "mean_logistic_C10",
+    "augmented_support_ridge",
+    "scatter_r2",
+    "original_CS_l2",
+    "mean_CS_l2"
+  ],
+  "pre_outcome_control_addition": "Add established support-centering/l2 baseline on original and mean6viewfeatures,lambda0.1. Existing accepted strong comparator was missing from initial8armdraft;10arms now required. No candidate or encoding parameter changes; no new-view accuracy observed."
+}

@@ -1,0 +1,6 @@
+{
+  "failed_session": "bash-82dd4beb",
+  "error": "new module named model collided with parent import model; no scientific computations completed",
+  "repair": "rename new file consistency_model.py and update only its imports",
+  "protocol_changed": false
+}

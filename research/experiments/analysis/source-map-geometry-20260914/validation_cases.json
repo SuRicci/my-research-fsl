@@ -1,0 +1,866 @@
+[
+  {
+    "key": "dtd_k1_original_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 2.7755575615628914e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_original_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_original_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 1.1102230246251565e-16,
+    "pair_delta_max_abs": 6.661338147750939e-16,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_original_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_original_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.5543122344752192e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_original_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 1.1102230246251565e-16,
+    "pair_delta_max_abs": 6.661338147750939e-16,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.4432899320127035e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_original_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 2.7755575615628914e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_original_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.4432899320127035e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_original_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_flowers_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 1.1102230246251565e-16,
+    "pair_delta_max_abs": 6.661338147750939e-16,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k1_mixed_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.6653345369377348e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 8.881784197001252e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.7763568394002505e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.5543122344752192e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.4432899320127035e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.4432899320127035e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 7.771561172376096e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.4432899320127035e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 8.326672684688674e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_original_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.7763568394002505e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 1.1102230246251565e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_flowers_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "dtd_k5_mixed_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 3.3306690738754696e-16,
+    "pair_delta_max_abs": 1.5543122344752192e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 1.1102230246251565e-16,
+    "pair_delta_max_abs": 6.661338147750939e-16,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 7.771561172376096e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 2.7755575615628914e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 3.885780586188048e-16,
+    "pair_delta_max_abs": 1.4432899320127035e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 2.7755575615628914e-16,
+    "pair_delta_max_abs": 1.6653345369377348e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 1.1102230246251565e-16,
+    "pair_delta_max_abs": 6.661338147750939e-16,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.27675647831893e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 4.718447854656915e-16,
+    "pair_delta_max_abs": 1.5543122344752192e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.43689570931383e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 2.498001805406602e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_original_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.5543122344752192e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.5543122344752192e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_flowers_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.4432899320127035e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 2.7755575615628914e-16,
+    "pair_delta_max_abs": 8.881784197001252e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 3.885780586188048e-16,
+    "pair_delta_max_abs": 1.27675647831893e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k1_mixed_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 3.0531133177191805e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 8.881784197001252e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 2.7755575615628914e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 3.3306690738754696e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091381",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091381",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091381",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 3.3306690738754696e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 1.942890293094024e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 8.881784197001252e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091382",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091382",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 1.3322676295501878e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091382",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 8.881784197001252e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 2.7755575615628914e-16,
+    "pair_delta_max_abs": 1.1102230246251565e-15,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_original_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 2.220446049250313e-16,
+    "pair_delta_max_abs": 4.440892098500626e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_flowers_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 1.1102230246251565e-16,
+    "pair_delta_max_abs": 6.661338147750939e-16,
+    "rows": 141,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091383",
+    "domain": "dtd",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 9.992007221626409e-16,
+    "rows": 139,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091383",
+    "domain": "eurosat",
+    "transform_max_abs": 2.7755575615628914e-16,
+    "pair_delta_max_abs": 8.881784197001252e-16,
+    "rows": 142,
+    "pairs": 64
+  },
+  {
+    "key": "eurosat_k5_mixed_26091383",
+    "domain": "flowers",
+    "transform_max_abs": 1.6653345369377348e-16,
+    "pair_delta_max_abs": 1.2212453270876722e-15,
+    "rows": 141,
+    "pairs": 64
+  }
+]

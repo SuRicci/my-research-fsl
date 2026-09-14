@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{iclr2026_conference,times}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,booktabs,hyperref,url}
+\hypersetup{hidelinks}
+\urlstyle{same}
+\title{\raggedright When Inlier Ranking Fails to Control\\Gallery Influence in Frozen\\Few-Shot Classification}
+\author{Anonymous authors}
+\iclrfinalcopy
+\begin{document}
+\maketitle
+\raggedbottom
+\lhead{Technical note: early draft}
+\begin{abstract}
+Unlabeled galleries may contain many classes outside a few-shot episode. We examine a gallery-only transfer of established open-set prototype fitting with frozen visual features and queries excluded from adaptation. In two image-disjoint Oxford-IIIT Pets pools, source-default matched one-shot accuracy is 94.92\% and 94.87\%, below retrieval-weighted controls at 96.24\% and 96.02\%. Mean inlier ranking AUROC is approximately 0.93, yet about 80\% of retained gallery weight is task-external. Retrospective final-step mass balancing removes most mismatched-gallery harm but leaves a matched one-shot deficit. Oracle composition filtering produces a separate diagnostic gain using unavailable inference labels. The results distinguish ranking quality, retained mass and composition within a fixed transfer protocol. They establish neither a new algorithm nor a failure of original transductive OSLO or independent-domain generalization.
+\end{abstract}
+\input{sections/introduction}
+\input{sections/method}
+\input{sections/experiments}
+\input{sections/analysis}
+\input{sections/limitations}
+\begingroup
+\setlength{\bibsep}{2pt}
+\bibliography{references}
+\bibliographystyle{iclr2026_conference}
+\endgroup
+\clearpage
+\input{sections/appendix}
+\end{document}

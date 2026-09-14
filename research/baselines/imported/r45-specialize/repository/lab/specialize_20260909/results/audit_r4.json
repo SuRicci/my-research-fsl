@@ -1,0 +1,32 @@
+{
+  "r4_whiten": {
+    "cells": 180,
+    "query_rankings": 38400,
+    "rank_ap_checks": true,
+    "baseline_max_map_error": 0.0
+  },
+  "r4_rank": {
+    "cells": 180,
+    "query_rankings": 38400,
+    "rank_ap_checks": true,
+    "baseline_max_map_error": 0.0
+  },
+  "r4_diffusion": {
+    "cells": 180,
+    "query_rankings": 38400,
+    "rank_ap_checks": true,
+    "baseline_max_map_error": 0.0
+  },
+  "r4_ensemble": {
+    "cells": 180,
+    "query_rankings": 38400,
+    "rank_ap_checks": true,
+    "baseline_max_map_error": 0.0
+  },
+  "r4_top100": {
+    "cells": 180,
+    "query_rankings": 38400,
+    "rank_ap_checks": true,
+    "baseline_max_map_error": 0.0
+  }
+}

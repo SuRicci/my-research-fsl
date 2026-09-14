@@ -1,0 +1,11 @@
+{
+  "existing_source_paths": 294,
+  "missing_source_paths": 0,
+  "main_directories_covered": 32,
+  "ledger_items_covered": 42,
+  "authored_entries": 45,
+  "last_run_headline_numbers_checked": true,
+  "gate_interpretation_checked": true,
+  "cleanup_result_hash_mismatches": 0,
+  "review_scope": "local report and saved evidence; not external peer review or submission certification"
+}

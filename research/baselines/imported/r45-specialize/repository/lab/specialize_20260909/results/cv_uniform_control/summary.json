@@ -1,0 +1,159 @@
+{
+  "complete": true,
+  "episodes": 30000,
+  "files": 50,
+  "rows": [
+    {
+      "cell": [
+        "cifar_fs",
+        "cifar100"
+      ],
+      "cv_accuracy": 0.9660933333333332,
+      "uniform_accuracy": 0.9667022222222222,
+      "r2_accuracy": 0.9657777777777776,
+      "cv_vs_uniform_pp": -0.06088888888888893,
+      "ci95_pp": [
+        -0.07600000000000003,
+        -0.04710000000000004
+      ],
+      "uniform_vs_r2_pp": 0.0924444444444445
+    },
+    {
+      "cell": [
+        "dtd",
+        "dtd"
+      ],
+      "cv_accuracy": 0.9021022222222221,
+      "uniform_accuracy": 0.9017155555555555,
+      "r2_accuracy": 0.9021022222222221,
+      "cv_vs_uniform_pp": 0.038666666666666696,
+      "ci95_pp": [
+        0.019555555555555573,
+        0.0595666666666667
+      ],
+      "uniform_vs_r2_pp": -0.038666666666666676
+    },
+    {
+      "cell": [
+        "miniimagenet",
+        "miniimagenet"
+      ],
+      "cv_accuracy": 0.9893911111111111,
+      "uniform_accuracy": 0.9894977777777776,
+      "r2_accuracy": 0.9893422222222222,
+      "cv_vs_uniform_pp": -0.01066666666666667,
+      "ci95_pp": [
+        -0.018666666666666668,
+        -0.0031111111111111088
+      ],
+      "uniform_vs_r2_pp": 0.015555555555555545
+    },
+    {
+      "cell": [
+        "dtd",
+        "miniimagenet"
+      ],
+      "cv_accuracy": 0.9021022222222221,
+      "uniform_accuracy": 0.9017155555555555,
+      "r2_accuracy": 0.9021022222222221,
+      "cv_vs_uniform_pp": 0.038666666666666696,
+      "ci95_pp": [
+        0.019555555555555573,
+        0.0595666666666667
+      ],
+      "uniform_vs_r2_pp": -0.038666666666666676
+    },
+    {
+      "cell": [
+        "cub200",
+        "cub200"
+      ],
+      "cv_accuracy": 0.9856444444444444,
+      "uniform_accuracy": 0.9856355555555556,
+      "r2_accuracy": 0.9855244444444444,
+      "cv_vs_uniform_pp": 0.0008888888888888798,
+      "ci95_pp": [
+        -0.007555555555555578,
+        0.00888888888888888
+      ],
+      "uniform_vs_r2_pp": 0.011111111111111115
+    },
+    {
+      "cell": [
+        "eurosat",
+        "eurosat"
+      ],
+      "cv_accuracy": 0.8470444444444444,
+      "uniform_accuracy": 0.8472977777777778,
+      "r2_accuracy": 0.8452177777777778,
+      "cv_vs_uniform_pp": -0.02533333333333329,
+      "ci95_pp": [
+        -0.04888888888888881,
+        -0.0008777777777777278
+      ],
+      "uniform_vs_r2_pp": 0.20799999999999993
+    },
+    {
+      "cell": [
+        "cub200",
+        "miniimagenet"
+      ],
+      "cv_accuracy": 0.9856444444444444,
+      "uniform_accuracy": 0.9856355555555556,
+      "r2_accuracy": 0.9855244444444444,
+      "cv_vs_uniform_pp": 0.0008888888888888798,
+      "ci95_pp": [
+        -0.007555555555555578,
+        0.00888888888888888
+      ],
+      "uniform_vs_r2_pp": 0.011111111111111115
+    },
+    {
+      "cell": [
+        "eurosat",
+        "miniimagenet"
+      ],
+      "cv_accuracy": 0.8470444444444444,
+      "uniform_accuracy": 0.8472977777777778,
+      "r2_accuracy": 0.8452177777777778,
+      "cv_vs_uniform_pp": -0.02533333333333329,
+      "ci95_pp": [
+        -0.04888888888888881,
+        -0.0008777777777777278
+      ],
+      "uniform_vs_r2_pp": 0.20799999999999993
+    },
+    {
+      "cell": [
+        "flowers102",
+        "flowers102"
+      ],
+      "cv_accuracy": 0.9988444444444444,
+      "uniform_accuracy": 0.998831111111111,
+      "r2_accuracy": 0.998831111111111,
+      "cv_vs_uniform_pp": 0.0013333333333333346,
+      "ci95_pp": [
+        -0.0008888888888888871,
+        0.003555555555555567
+      ],
+      "uniform_vs_r2_pp": -3.7007434154171884e-18
+    },
+    {
+      "cell": [
+        "flowers102",
+        "miniimagenet"
+      ],
+      "cv_accuracy": 0.9988444444444444,
+      "uniform_accuracy": 0.998831111111111,
+      "r2_accuracy": 0.998831111111111,
+      "cv_vs_uniform_pp": 0.0013333333333333346,
+      "ci95_pp": [
+        -0.0008888888888888871,
+        0.003555555555555567
+      ],
+      "uniform_vs_r2_pp": -3.7007434154171884e-18
+    }
+  ],
+  "analysis_source_sha256": "384270336db295e79c4c3cb77354f0886027ca4b0d0c6c0d2bcc4d3467cda854",
+  "note": "Predeclared conditional attribution control; same five predictor outputs with constant weights, no parameter fitting"
+}

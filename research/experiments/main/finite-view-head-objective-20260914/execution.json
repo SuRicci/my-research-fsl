@@ -1,0 +1,16 @@
+{
+  "formal_bash": "bash-f86bf840",
+  "precheck_bash": "bash-f633dbd3",
+  "precheck_science": "science-29835c50",
+  "science_run": "science-80536029",
+  "failed_launches": [
+    "bash-a1f45be4",
+    "bash-aaea7a83"
+  ],
+  "status": "running",
+  "updated": "2026-09-14T00:56:51.357218+00:00",
+  "next": "audit.py after computedcomplete",
+  "free_gib": 12.25906753540039,
+  "monitoring_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/monitoring.json",
+  "saved_fit_count": 13
+}

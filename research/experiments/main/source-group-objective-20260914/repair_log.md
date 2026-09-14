@@ -1,0 +1,1 @@
+Precheck bash-78e7b91d failed before training: old helper prepended utility-composition path and import audit resolved old audit.py. Corrected to explicit importlib file path; no protocol/threshold change or target output. Next run is second justified numerical check.

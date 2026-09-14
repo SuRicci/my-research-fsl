@@ -1,0 +1,176 @@
+{
+  "status": "completed",
+  "parent_report": "report-6eb4cbf9",
+  "scope": "post-hoc descriptive diagnostic on repeatedly exposed source predictions",
+  "prediction_changes": 0,
+  "fitted_parameters": 0,
+  "cells": {
+    "dtd_dtd": {
+      "n": 37500,
+      "parent_accuracy_pct": 80.01066666666667,
+      "patch_accuracy_pct": 74.11999999999999,
+      "both_correct": 26473,
+      "both_wrong": 6174,
+      "patch_only_correct": 1322,
+      "parent_only_correct": 3531,
+      "prediction_disagreements": 6231,
+      "label_oracle_upper_bound_pct": 83.536,
+      "unfitted_margin_difference_auc_on_exactly_one_correct": 0.6361984686316271,
+      "margin_quartiles": [
+        {
+          "parent_margin_quartile": 1,
+          "n": 9375,
+          "patch_only_correct": 1075,
+          "parent_only_correct": 2100
+        },
+        {
+          "parent_margin_quartile": 2,
+          "n": 9375,
+          "patch_only_correct": 217,
+          "parent_only_correct": 1085
+        },
+        {
+          "parent_margin_quartile": 3,
+          "n": 9375,
+          "patch_only_correct": 30,
+          "parent_only_correct": 300
+        },
+        {
+          "parent_margin_quartile": 4,
+          "n": 9375,
+          "patch_only_correct": 0,
+          "parent_only_correct": 46
+        }
+      ]
+    },
+    "dtd_eurosat": {
+      "n": 37500,
+      "parent_accuracy_pct": 76.304,
+      "patch_accuracy_pct": 74.11999999999999,
+      "both_correct": 25869,
+      "both_wrong": 6960,
+      "patch_only_correct": 1926,
+      "parent_only_correct": 2745,
+      "prediction_disagreements": 6351,
+      "label_oracle_upper_bound_pct": 81.44,
+      "unfitted_margin_difference_auc_on_exactly_one_correct": 0.6212411124162311,
+      "margin_quartiles": [
+        {
+          "parent_margin_quartile": 1,
+          "n": 9375,
+          "patch_only_correct": 1469,
+          "parent_only_correct": 1613
+        },
+        {
+          "parent_margin_quartile": 2,
+          "n": 9375,
+          "patch_only_correct": 345,
+          "parent_only_correct": 857
+        },
+        {
+          "parent_margin_quartile": 3,
+          "n": 9375,
+          "patch_only_correct": 93,
+          "parent_only_correct": 233
+        },
+        {
+          "parent_margin_quartile": 4,
+          "n": 9375,
+          "patch_only_correct": 19,
+          "parent_only_correct": 42
+        }
+      ]
+    },
+    "eurosat_dtd": {
+      "n": 37500,
+      "parent_accuracy_pct": 73.48533333333333,
+      "patch_accuracy_pct": 64.83733333333333,
+      "both_correct": 22232,
+      "both_wrong": 7861,
+      "patch_only_correct": 2082,
+      "parent_only_correct": 5325,
+      "prediction_disagreements": 9181,
+      "label_oracle_upper_bound_pct": 79.03733333333334,
+      "unfitted_margin_difference_auc_on_exactly_one_correct": 0.645484975172843,
+      "margin_quartiles": [
+        {
+          "parent_margin_quartile": 1,
+          "n": 9375,
+          "patch_only_correct": 1305,
+          "parent_only_correct": 2246
+        },
+        {
+          "parent_margin_quartile": 2,
+          "n": 9375,
+          "patch_only_correct": 562,
+          "parent_only_correct": 1768
+        },
+        {
+          "parent_margin_quartile": 3,
+          "n": 9375,
+          "patch_only_correct": 172,
+          "parent_only_correct": 981
+        },
+        {
+          "parent_margin_quartile": 4,
+          "n": 9375,
+          "patch_only_correct": 43,
+          "parent_only_correct": 330
+        }
+      ]
+    },
+    "eurosat_eurosat": {
+      "n": 37500,
+      "parent_accuracy_pct": 79.696,
+      "patch_accuracy_pct": 64.83733333333333,
+      "both_correct": 22945,
+      "both_wrong": 6245,
+      "patch_only_correct": 1369,
+      "parent_only_correct": 6941,
+      "prediction_disagreements": 9860,
+      "label_oracle_upper_bound_pct": 83.34666666666666,
+      "unfitted_margin_difference_auc_on_exactly_one_correct": 0.6909758752393781,
+      "margin_quartiles": [
+        {
+          "parent_margin_quartile": 1,
+          "n": 9375,
+          "patch_only_correct": 1014,
+          "parent_only_correct": 2776
+        },
+        {
+          "parent_margin_quartile": 2,
+          "n": 9375,
+          "patch_only_correct": 274,
+          "parent_only_correct": 2372
+        },
+        {
+          "parent_margin_quartile": 3,
+          "n": 9375,
+          "patch_only_correct": 70,
+          "parent_only_correct": 1308
+        },
+        {
+          "parent_margin_quartile": 4,
+          "n": 9375,
+          "patch_only_correct": 11,
+          "parent_only_correct": 485
+        }
+      ]
+    }
+  },
+  "totals": {
+    "n": 150000,
+    "both_correct": 97519,
+    "both_wrong": 27240,
+    "patch_only_correct": 6699,
+    "parent_only_correct": 18542,
+    "prediction_disagreements": 31623
+  },
+  "input_hashes": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/dtd_dtd.npz": "4c999d9084053b56ed88db65bdb1e8b67082f43e3c4a5ebc9f3279e91160071c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/dtd_eurosat.npz": "4161d2e683cac7b4020405aed1782fa6d326d44e3fc06c160cdf150e9f9685c3",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/eurosat_dtd.npz": "2a8d9e96fed28219cc7722889427f2b5e716756611d9cc54fb650a3088b770dd",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/eurosat_eurosat.npz": "5f3b058c8bf495a8779168a75f39ce271e74a0f7f24c05add35a15518077ab74"
+  },
+  "interpretation_boundary": "Oracle uses ground truth and is not achievable algorithm accuracy. AUC is descriptive only, computed after results on cases whose correctness is known; it does not validate a deployable selector. Shared episodes across galleries are not independent."
+}

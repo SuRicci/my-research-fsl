@@ -1,0 +1,409 @@
+{
+  "baseline_id": "r4-canonical-local",
+  "variant_id": "semantic-mps32-v1",
+  "metric_contract": {
+    "contract_id": "r4-canonical-local-semantic-mps32-v1",
+    "primary_metric_id": "macro_map",
+    "evaluation_protocol": {
+      "scope_id": "r4-dtd-eurosat-semantic-20260912",
+      "protocol": {
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "scope_id": "r4-dtd-eurosat-semantic-20260912",
+        "source_method": "unchanged frozen V0 v0_press; RBF0.5, standardized residual, PRESS coefficients .001/.01/.1/1/10",
+        "source_sha256": {
+          "methods.py": "3d7044afd1a8dddfb43a5a9c4dda7b91dae6a01e478dc5596beafd94a20b0146",
+          "lab_metrics.py": "fe9514227590993c9c0c07cf3b8e2215d71ee675948c84e3312f328655bd642d",
+          "improved.py": "d2ee38b5ff3243364137f87bc7fc412850605aace18f0ff3b8ad99170a730f4d",
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lab_methods.py": "1ff3943740eee0f165f540e7abfc70e0c6d64f2b6370daab089a1c7f52e5d9ad",
+          "nextstage.py": "ba6da2bf06a62da24ee53f31ccdfcf1df8b62650eca26e78fd97b54f41c92bb1",
+          "geometry.py": "1de089bf948e81395b6bbbcd4d6e025f86ddb092236ec8723ddecc42ac501312"
+        },
+        "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+        "source_feature_manifest_sha256": "3d06ebf47f259fb41db5f5aaa85aab65ded94ff15a036d08e36c0cfcfa6e633b",
+        "datasets": [
+          "dtd",
+          "eurosat"
+        ],
+        "pair": [
+          "clip_vitb16",
+          "dinov2_vits14"
+        ],
+        "budgets": [
+          32,
+          64
+        ],
+        "bridge_seeds": [
+          26091301,
+          26091302,
+          26091303,
+          26091304,
+          26091305
+        ],
+        "split_seed": 120909,
+        "identity_selection_seed": 26091300,
+        "queries_per_class": 10,
+        "dtd_dev_class_half": "first23",
+        "dtd_eval_class_half": "remaining24",
+        "eurosat_eval_classes": "all10",
+        "gallery": "all canonical gallery identities; no gallery cap",
+        "bridge_pool": "canonical query pool excluding all retrieval queries; matched query class split or other-domain full remaining pool; sampled without replacement; shared prefixes for32/64",
+        "methods": [
+          "old_old",
+          "relative_centered",
+          "procrustes",
+          "ridge",
+          "wip_restricted",
+          "local_std",
+          "linear_std",
+          "v0_press",
+          "global_press",
+          "old_centered",
+          "old_whiten",
+          "centered_residual_2",
+          "new_new_oracle"
+        ],
+        "primary_method": "v0_press",
+        "metric": "class AP = sum precision at every relevant rank / number relevant gallery images; mean queries, then equal seed and cell means",
+        "evaluation_cells": 8,
+        "development_cells": 4,
+        "bootstrap": "5000 paired class-cluster and bridge-seed resamples; queries within a class stay together, shared queries across bridge seeds; fixed gallery",
+        "permissions": {
+          "method_inputs": [
+            "go",
+            "qo",
+            "qn",
+            "ao",
+            "an"
+          ],
+          "gallery_new_to_method": false,
+          "labels_to_method": false,
+          "query_batch_fit": false,
+          "encoder_training": false,
+          "logical_gallery_new_calls": 0,
+          "bridge_new_calls": "m unique images",
+          "query_old_new_calls": "one each; cached execution"
+        },
+        "deviations": [
+          "New semantic retrieval task using previously viewed DTD/EuroSAT image pools, not historical CUB/Oxford replication",
+          "Canonical local MPS feature variant/DINO preprocessing differs from historicalR4; feature hashes locked",
+          "Only CLIP-B16 to DINO available; unavailable B32\u2192B16 historical cells are reference-only",
+          "Development output is not confirmation; no parameter selection for frozen baseline",
+          "Interface isolation is trusted feature-only code, not adversarial process sandbox"
+        ],
+        "limits": {
+          "free_disk_min_gib": 10,
+          "expected_added_gib_max": 1,
+          "threads": 6,
+          "new_encoding_calls": 0,
+          "download_bytes": 0
+        }
+      },
+      "code_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/evaluate.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/audit_results.py"
+      ],
+      "code_hashes": {
+        "evaluate.py": "725d52edbe7b689c772fe028ae616ce9899028cdf386b5177669f9d2e3b646dd",
+        "audit_results.py": "76621d45aecf7564243a28156ec5c56ce11baab04a767c19838bb6c6ca9eaa76"
+      },
+      "historical_parity": false,
+      "accepted_comparator_method": "old_centered"
+    },
+    "metrics": [
+      {
+        "metric_id": "dtd_cross_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_cross_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "dtd_cross_bridge32_map"
+      },
+      {
+        "metric_id": "dtd_cross_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_cross_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "dtd_cross_bridge64_map"
+      },
+      {
+        "metric_id": "dtd_matched_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_matched_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "dtd_matched_bridge32_map"
+      },
+      {
+        "metric_id": "dtd_matched_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_matched_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "dtd_matched_bridge64_map"
+      },
+      {
+        "metric_id": "eurosat_cross_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_cross_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "eurosat_cross_bridge32_map"
+      },
+      {
+        "metric_id": "eurosat_cross_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_cross_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "eurosat_cross_bridge64_map"
+      },
+      {
+        "metric_id": "eurosat_matched_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_matched_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "eurosat_matched_bridge32_map"
+      },
+      {
+        "metric_id": "eurosat_matched_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_matched_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "eurosat_matched_bridge64_map"
+      },
+      {
+        "metric_id": "macro_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for macro_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "origin_path": "macro_map"
+      }
+    ],
+    "comparison_primary_method": "old_centered",
+    "baseline_variants": {
+      "old_old": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 27.0458485540921,
+          "dtd_cross_bridge64_map": 27.0458485540921,
+          "dtd_matched_bridge32_map": 27.0458485540921,
+          "dtd_matched_bridge64_map": 27.0458485540921,
+          "eurosat_cross_bridge32_map": 54.43517341879788,
+          "eurosat_cross_bridge64_map": 54.43517341879788,
+          "eurosat_matched_bridge32_map": 54.43517341879788,
+          "eurosat_matched_bridge64_map": 54.43517341879788,
+          "macro_map": 40.74051098644499
+        },
+        "role": "same_permission_control"
+      },
+      "relative_centered": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 5.062234021914837,
+          "dtd_cross_bridge64_map": 5.26993989348678,
+          "dtd_matched_bridge32_map": 21.66355790091305,
+          "dtd_matched_bridge64_map": 28.30563021802359,
+          "eurosat_cross_bridge32_map": 16.15418668535662,
+          "eurosat_cross_bridge64_map": 17.753282310271178,
+          "eurosat_matched_bridge32_map": 41.69684227218114,
+          "eurosat_matched_bridge64_map": 43.340812900815045,
+          "macro_map": 22.40581077537028
+        },
+        "role": "same_permission_control"
+      },
+      "procrustes": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 3.750793058936815,
+          "dtd_cross_bridge64_map": 3.898075929238577,
+          "dtd_matched_bridge32_map": 21.894182992840314,
+          "dtd_matched_bridge64_map": 30.14038784562065,
+          "eurosat_cross_bridge32_map": 15.746765535162979,
+          "eurosat_cross_bridge64_map": 20.052983736737378,
+          "eurosat_matched_bridge32_map": 49.9807920694499,
+          "eurosat_matched_bridge64_map": 55.09367458898334,
+          "macro_map": 25.069706969621244
+        },
+        "role": "same_permission_control"
+      },
+      "ridge": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 2.951126229211049,
+          "dtd_cross_bridge64_map": 3.002913608302629,
+          "dtd_matched_bridge32_map": 11.267764898670373,
+          "dtd_matched_bridge64_map": 15.156569319399143,
+          "eurosat_cross_bridge32_map": 14.067909888564136,
+          "eurosat_cross_bridge64_map": 14.654754054656022,
+          "eurosat_matched_bridge32_map": 32.63182590459899,
+          "eurosat_matched_bridge64_map": 37.247117223069075,
+          "macro_map": 16.372497640808927
+        },
+        "role": "same_permission_control"
+      },
+      "wip_restricted": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 3.3634517393391037,
+          "dtd_cross_bridge64_map": 3.3904220007917263,
+          "dtd_matched_bridge32_map": 15.233820709808166,
+          "dtd_matched_bridge64_map": 23.691965410042666,
+          "eurosat_cross_bridge32_map": 15.275853817718579,
+          "eurosat_cross_bridge64_map": 16.025137361186705,
+          "eurosat_matched_bridge32_map": 42.18279331923698,
+          "eurosat_matched_bridge64_map": 50.957847122875236,
+          "macro_map": 21.265161435124895
+        },
+        "role": "same_permission_control"
+      },
+      "local_std": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 27.542374012452246,
+          "dtd_cross_bridge64_map": 27.58418216424761,
+          "dtd_matched_bridge32_map": 30.964660717751947,
+          "dtd_matched_bridge64_map": 33.3828382975448,
+          "eurosat_cross_bridge32_map": 54.19169192822565,
+          "eurosat_cross_bridge64_map": 53.83633726665078,
+          "eurosat_matched_bridge32_map": 57.00295426097771,
+          "eurosat_matched_bridge64_map": 56.471867228796015,
+          "macro_map": 42.62211323458085
+        },
+        "role": "same_permission_control"
+      },
+      "linear_std": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 26.412212813726843,
+          "dtd_cross_bridge64_map": 25.622393710481667,
+          "dtd_matched_bridge32_map": 31.628444374317528,
+          "dtd_matched_bridge64_map": 34.58571284622954,
+          "eurosat_cross_bridge32_map": 52.74576017853051,
+          "eurosat_cross_bridge64_map": 50.106364129042156,
+          "eurosat_matched_bridge32_map": 52.63891029660749,
+          "eurosat_matched_bridge64_map": 53.10620873568498,
+          "macro_map": 40.85575088557759
+        },
+        "role": "same_permission_control"
+      },
+      "v0_press": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 27.71466483262442,
+          "dtd_cross_bridge64_map": 28.195037702484683,
+          "dtd_matched_bridge32_map": 31.961253576458308,
+          "dtd_matched_bridge64_map": 34.75445167569063,
+          "eurosat_cross_bridge32_map": 55.02707428431934,
+          "eurosat_cross_bridge64_map": 54.8838847793421,
+          "eurosat_matched_bridge32_map": 57.11628386163272,
+          "eurosat_matched_bridge64_map": 56.80123791857014,
+          "macro_map": 43.306736078890296
+        },
+        "role": "historical_frozen_local_method"
+      },
+      "global_press": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 27.966146287320232,
+          "dtd_cross_bridge64_map": 28.435791455928204,
+          "dtd_matched_bridge32_map": 32.17737620735079,
+          "dtd_matched_bridge64_map": 34.83919346269379,
+          "eurosat_cross_bridge32_map": 55.21238681065862,
+          "eurosat_cross_bridge64_map": 55.16926556281773,
+          "eurosat_matched_bridge32_map": 56.77262627967109,
+          "eurosat_matched_bridge64_map": 56.33439287598478,
+          "macro_map": 43.36339736780316
+        },
+        "role": "same_permission_control"
+      },
+      "old_centered": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 30.67913154861484,
+          "dtd_cross_bridge64_map": 30.67913154861484,
+          "dtd_matched_bridge32_map": 30.67913154861484,
+          "dtd_matched_bridge64_map": 30.67913154861484,
+          "eurosat_cross_bridge32_map": 57.97266511389243,
+          "eurosat_cross_bridge64_map": 57.97266511389243,
+          "eurosat_matched_bridge32_map": 57.97266511389243,
+          "eurosat_matched_bridge64_map": 57.97266511389243,
+          "macro_map": 44.32589833125364
+        },
+        "role": "same_permission_control"
+      },
+      "old_whiten": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 29.58869174409065,
+          "dtd_cross_bridge64_map": 29.58869174409065,
+          "dtd_matched_bridge32_map": 29.58869174409065,
+          "dtd_matched_bridge64_map": 29.58869174409065,
+          "eurosat_cross_bridge32_map": 52.60091377055451,
+          "eurosat_cross_bridge64_map": 52.60091377055451,
+          "eurosat_matched_bridge32_map": 52.60091377055451,
+          "eurosat_matched_bridge64_map": 52.60091377055451,
+          "macro_map": 41.09480275732258
+        },
+        "role": "same_permission_control"
+      },
+      "centered_residual_2": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 30.88983217639603,
+          "dtd_cross_bridge64_map": 30.917894207736186,
+          "dtd_matched_bridge32_map": 33.76598324688723,
+          "dtd_matched_bridge64_map": 35.380756839152916,
+          "eurosat_cross_bridge32_map": 56.62840683912806,
+          "eurosat_cross_bridge64_map": 54.447829976559234,
+          "eurosat_matched_bridge32_map": 51.52973507547705,
+          "eurosat_matched_bridge64_map": 47.56372688934065,
+          "macro_map": 42.64052065633468
+        },
+        "role": "same_permission_control"
+      },
+      "new_new_oracle": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 37.97552320539392,
+          "dtd_cross_bridge64_map": 37.97552320539392,
+          "dtd_matched_bridge32_map": 37.97552320539392,
+          "dtd_matched_bridge64_map": 37.97552320539392,
+          "eurosat_cross_bridge32_map": 52.99807847167982,
+          "eurosat_cross_bridge64_map": 52.99807847167982,
+          "eurosat_matched_bridge32_map": 52.99807847167982,
+          "eurosat_matched_bridge64_map": 52.99807847167982,
+          "macro_map": 45.48680083853687
+        },
+        "role": "evaluator_only_reference"
+      }
+    },
+    "comparison_scope_note": "Frozen measurement primary remains V0 in protocol and original metrics_summary. For future comparisons select strongest uniform measured allowed control old_centered as baseline incumbent; all13 variants retained. This choice is post-measurement comparator ranking, not new-method confirmation or retroactive change of the V0 result."
+  },
+  "metrics_summary": {
+    "dtd_cross_bridge32_map": 30.67913154861484,
+    "dtd_cross_bridge64_map": 30.67913154861484,
+    "dtd_matched_bridge32_map": 30.67913154861484,
+    "dtd_matched_bridge64_map": 30.67913154861484,
+    "eurosat_cross_bridge32_map": 57.97266511389243,
+    "eurosat_cross_bridge64_map": 57.97266511389243,
+    "eurosat_matched_bridge32_map": 57.97266511389243,
+    "eurosat_matched_bridge64_map": 57.97266511389243,
+    "macro_map": 44.32589833125364
+  },
+  "primary_metric": {
+    "metric_id": "macro_map",
+    "value": 44.32589833125364,
+    "direction": "maximize"
+  }
+}

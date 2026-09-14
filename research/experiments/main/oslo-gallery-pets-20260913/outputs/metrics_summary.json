@@ -1,0 +1,12 @@
+{
+  "pets_matched_1shot_accuracy": 94.91733333333335,
+  "pets_mismatched_1shot_accuracy": 64.192,
+  "pets_matched_5shot_accuracy": 97.19466666666666,
+  "pets_mismatched_5shot_accuracy": 93.304,
+  "pets_macro_1shot_accuracy": 79.55466666666666,
+  "pets_fresh_matched_1shot_accuracy": 94.87466666666666,
+  "pets_fresh_mismatched_1shot_accuracy": 63.992000000000004,
+  "pets_fresh_matched_5shot_accuracy": 97.18933333333332,
+  "pets_fresh_mismatched_5shot_accuracy": 92.97866666666667,
+  "pets_fresh_macro_1shot_accuracy": 79.43333333333334
+}

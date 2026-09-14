@@ -1,0 +1,46 @@
+{
+  "dtd_k1_selection": {
+    "counts": [
+      11809,
+      11817,
+      11819
+    ],
+    "saved_gamma": 10.0,
+    "integer_tie_gamma": 10.0,
+    "violates_tie_rule": false,
+    "total_per_gamma": 15000
+  },
+  "dtd_k5_selection": {
+    "counts": [
+      11908,
+      11892,
+      11880
+    ],
+    "saved_gamma": 0.1,
+    "integer_tie_gamma": 0.1,
+    "violates_tie_rule": false,
+    "total_per_gamma": 13000
+  },
+  "eurosat_k1_selection": {
+    "counts": [
+      11257,
+      11282,
+      11282
+    ],
+    "saved_gamma": 10.0,
+    "integer_tie_gamma": 1.0,
+    "violates_tie_rule": true,
+    "total_per_gamma": 15000
+  },
+  "eurosat_k5_selection": {
+    "counts": [
+      11882,
+      11908,
+      11884
+    ],
+    "saved_gamma": 1.0,
+    "integer_tie_gamma": 1.0,
+    "violates_tie_rule": false,
+    "total_per_gamma": 13000
+  }
+}

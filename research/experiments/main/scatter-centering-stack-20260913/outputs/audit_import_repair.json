@@ -1,0 +1,10 @@
+{
+  "failed_session": "bash-de78a1ca",
+  "failure": "legacy module name verify shadowed local verify after reusedloader prepended originalmodulepath",
+  "classification": "audit harness import only; no numericcomparison ran",
+  "repair": "load exact local verifier with explicit importlib path",
+  "main_run_rerun": false,
+  "summary_rerun": false,
+  "measured_code_changed": false,
+  "new_audit_sha256": "d61b9aeac916a6289fa5479decf58731275ac97bd48bb0f0f1f797bbfc214f04"
+}

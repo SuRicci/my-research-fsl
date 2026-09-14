@@ -1,0 +1,131 @@
+{
+  "semantic_name": "caltech101-transfer-20260913",
+  "parent_idea_id": "idea-b189d548",
+  "parent_result_report": "report-0eb34a5e",
+  "cumulative_report": "report-264a9860",
+  "asset_report": "report-d226f999",
+  "question": "Does the accumulated frozen six-view method transfer to a prospectively untouched local Caltech101 evaluation under both existing source configurations?",
+  "tier": "external-transfer supporting analysis; new dataset contract, not fivePetsmetrics",
+  "frozen_utc": "2026-09-13T11:16:14.682267+00:00",
+  "identity_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-qualification-20260913/identities.json",
+  "identity_sha256": "4af7a836c0ffad874058ed7bd8be672ffdfe56bc82998b9c4f1b6c384214c128",
+  "archive_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/caltech101-qualification/caltech-101.zip",
+  "archive_sha256": "331234750fc7f77520e50d9565e8b6907b03565e30320da1401130db08c61f91",
+  "source_configurations": {
+    "dtd": {
+      "gamma": 10,
+      "eta": 0
+    },
+    "eurosat": {
+      "gamma": 1,
+      "eta": 10
+    }
+  },
+  "source_selection": "Reuse two source-only frozen choices; both required; no target-driven winner,averaging or retuning of source settings",
+  "ways": 5,
+  "shots": [
+    1
+  ],
+  "queries_per_class": 15,
+  "eval_seeds": [
+    260913941,
+    260913942,
+    260913943,
+    260913944,
+    260913945
+  ],
+  "episodes_per_seed": 100,
+  "gallery_conditions": [
+    "caltech101",
+    "dtd",
+    "eurosat"
+  ],
+  "gallery_size": 1024,
+  "gallery_sampling": "uniform without replacement from each qualified gallery pool; independent of class labels; same1024images for every task/method",
+  "gallery_seeds": {
+    "caltech101": 260913951,
+    "dtd": 260913952,
+    "eurosat": 260913953
+  },
+  "source_gallery_identity_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+  "features": {
+    "views": [
+      "resize224_center224",
+      "resize256_top_left224",
+      "resize256_top_right224",
+      "resize256_bottom_left224",
+      "resize256_bottom_right224",
+      "resize256_center224"
+    ],
+    "implementation": "reuse representation-scatter extract_views.views and batch unchanged",
+    "backbones": [
+      "clip_vitb16",
+      "dinov2_vits14"
+    ],
+    "fusion_weight": 0.5,
+    "compute": "MPS float32; same CPU bicubic preprocessing and supported fallback as accepted source caches",
+    "store": "normalized float16 per backbone, matching source caches; fuse at evaluation in float32",
+    "all_roles_same_views": true,
+    "batch_images": 32,
+    "workers": 6
+  },
+  "methods": [
+    "original_r2",
+    "mean_r2",
+    "mean_CS_l2",
+    "score_ensemble_r2",
+    "augmented_support_ridge",
+    "mean_logistic_C1",
+    "mean_logistic_C10",
+    "scatter_r2",
+    "scatter_blend",
+    "query_consistency"
+  ],
+  "method_parameters": "All corresponding frozen development implementations retained,top64/mix0.5/ridge0.1; raw/centered score blend0.5; query-local eta as two source configurations; logisticC1/C10 both fixed controls",
+  "primary_method": "query_consistency",
+  "primary_scope": "Eachsourceconfiguration macro across allthreegalleryconditions, paired same500tasks; bothconfigurations must qualify, never choosebetteronCaltech",
+  "gates": {
+    "minimum_gain_pp": 0.5,
+    "positive_paired_ci_lower": 0,
+    "comparators": [
+      "mean_r2",
+      "mean_CS_l2",
+      "score_ensemble_r2",
+      "augmented_support_ridge",
+      "mean_logistic_C1",
+      "mean_logistic_C10"
+    ],
+    "all_gallery_cell_ci_lower_min_pp": -0.5,
+    "no_source_configuration_can_be_dropped": true
+  },
+  "secondary": "Increment against scatter_blend and scatter_r2; all cell/domain-source outcomes andpairedrepairs/spoils; original_r2contrast includesencodingbudgetdifference",
+  "statistics": {
+    "unit": "pairedtask, averagegalleryconditions beforemacrobootstrap; source configurations sharetasks,notindependentreplications",
+    "stratification": "taskseed",
+    "replicates": 5000,
+    "seed": 260913959,
+    "interpretation": "conditionalfixedimagepoolintervals,notrandomdatasetintervals; oneunseenlocaldomainonly"
+  },
+  "permissions": {
+    "encoder_training": false,
+    "query_batch_adaptation": false,
+    "per_query_adaptation": true,
+    "class_names_at_inference": false,
+    "gallery_labels_at_inference": false,
+    "target_outcomes_for_selection": false
+  },
+  "success": "Complete all500tasks x3galleries x2frozenconfigurations, allcontrols, source/targetidentitychecks,independent numericalaudit anddurableallresults whetherpositiveornegative",
+  "abandon": "Identity/config mismatch,storagefloor,unresolvednumericalinvalidity,deadline. Preservefailures; nooutcomebasedrescue.",
+  "resources": {
+    "local_only": true,
+    "extra_spend": 0,
+    "threads": 6,
+    "free_floor_gib": 10,
+    "peak_new_assets_gib": 0.6,
+    "output_limit_mib": 120,
+    "deadline": "2026-09-15T09:00:00+00:00"
+  },
+  "encoding_phase_only": "Protocol frozen before feature extraction; task banks and implementation/sourcehash lock must be written before classification; no Caltech outcomes yet",
+  "paper_boundary": "Reference-only to existingOSLOoutline,claim_links[]; independentstackline requiresitsown supportedclaimcontract beforeprose",
+  "workspace_reason": "One bounded transfer question; lightweight report/science lineage in existingworkspace avoids redundant multiGiB worktree exceeding storage floor."
+}

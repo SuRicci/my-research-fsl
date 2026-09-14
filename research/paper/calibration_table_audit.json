@@ -1,0 +1,12 @@
+{
+  "status": "generated",
+  "data_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/analysis.json",
+  "data_sha256": "267beeccb283a6935f5c64aeb451e23f4da4498c66f21914c19c684165cd35d5",
+  "cell_count": 8,
+  "method_count": 19,
+  "accuracy_values": 152,
+  "tables": [
+    "calibration_accuracy",
+    "calibration_deltas"
+  ]
+}

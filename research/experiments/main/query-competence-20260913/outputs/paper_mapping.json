@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "added_reference_only": 2,
+  "ledger_count": 35,
+  "reference_only_count": 31,
+  "paper_evidence_groups": 4,
+  "manuscript_and_pdf_bytes_unchanged": true,
+  "updated_paths": [
+    "outline/sections/historical_context/result_table.json",
+    "outline/sections/historical_context/findings.md",
+    "outline/sections/historical_context/section.md",
+    "outline/sections/historical_context/impact.md",
+    "outline/evidence_view.json",
+    "outline/manifest.json",
+    "selected_outline.json",
+    "evidence_ledger.json",
+    "paper_experiment_matrix.json",
+    "paper_experiment_matrix.md"
+  ],
+  "source_hashes_verified": 10
+}

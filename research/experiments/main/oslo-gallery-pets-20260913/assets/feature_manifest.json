@@ -1,0 +1,27 @@
+{
+  "identity_sha256": "03fcfbf5573284872f9c8b36527f363c26615f92d8cf19a2e5dbadf56408d052",
+  "files": {
+    "clip_vitb16": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/assets/clip_vitb16_fresh.pt",
+      "sha256": "9c0e59c49178b116dbab1ef1db1153f62e81038dc29dfc7a54bb6ed660644b06",
+      "shape": [
+        1804,
+        512
+      ]
+    },
+    "dinov2_vits14": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/assets/dinov2_vits14_fresh.pt",
+      "sha256": "06ec6b1d765f2d7c13f30c106e3b2e82d5cba2bde0ae3e306ca619ca508c2f55",
+      "shape": [
+        1804,
+        384
+      ]
+    }
+  },
+  "weights_sha256": {
+    "/Users/decoqwq/.cache/clip/ViT-B-16.pt": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+    "/Users/decoqwq/.cache/huggingface/hub/models--timm--vit_small_patch14_dinov2.lvd142m/snapshots/4610ca143709d58a633b6397a74412c2c3842454/model.safetensors": "04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081"
+  },
+  "precision": "MPS float32; normalized float16 storage",
+  "scope": "canonical exposed pool; fresh prospective same-domain image-disjoint, not independent domain"
+}

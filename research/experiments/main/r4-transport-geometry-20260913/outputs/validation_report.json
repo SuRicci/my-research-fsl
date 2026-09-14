@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "jobs": 60,
+  "new_method_query_rankings_checked": 114000,
+  "max_independent_ap_error": 4.440892098500626e-16,
+  "full_rank_permutations": true,
+  "all_saved_identities_match_canonical": true,
+  "all13baseline_variants_all9metrics_reconciled": true,
+  "selection_independently_reconstructed": true,
+  "source_code_protocol_hashes_match": true,
+  "metric_keys": [
+    "dtd_cross_bridge32_map",
+    "dtd_cross_bridge64_map",
+    "dtd_matched_bridge32_map",
+    "dtd_matched_bridge64_map",
+    "eurosat_cross_bridge32_map",
+    "eurosat_cross_bridge64_map",
+    "eurosat_matched_bridge32_map",
+    "eurosat_matched_bridge64_map",
+    "macro_map"
+  ],
+  "audit_code_sha256": "8812e69055c048034ed6b9c7b96e6a4bedfd35ea8d34fed5f7d8314a71042eb3"
+}

@@ -1,0 +1,11 @@
+# Accumulated stack: identity-checked development comparison
+
+The current stack reaches77.374% versus six-view mean R2 at75.208667%: +2.165333pp, paired95%CI[1.959967,2.364017]. This overall improvement is heterogeneous: DTD +0.205333pp[0.018667,0.392000]; EuroSAT +4.125333pp[3.778667,4.485333]. Equal-budget mean CS_l2 reaches75.540%, making the stack gain1.834pp[1.638000,2.021367]. Original single-view R2 is73.460667%; the3.913333pp difference also includes extra encoding information and is not an equal-budget geometry gain.
+
+2000task-condition joins match support/query/class/seed/label identities. All old/new saved predictions match score argmax and accuracy. These represent1000distinct episodes with gallery conditions averaged before bootstrap. Source/targer gallery construction is inherited from the locked evaluation contract; this join is not a new image-level audit.5000multinomial bootstrap draws within domain x seed are conditional on fixed image pools and do not account for repeated method search. Different draw implementation produces slightly different intervals than the original query-consistency report; original prespecified intervals and gate remain authoritative for that experiment.
+
+The latest incremental +0.040pp gate remains failed. The earlier scatter source tie validation also remains failed; historical output-score comparisons do not erase that failure. Do not claim broad qualification: DTD still misses0.5pp despite the large pooled gain.
+
+Decision implication: permit a limited prospective independent transfer evaluation of the accumulated package for information value, not as promotion of any failed increment. Freeze both existing source configurations as two required strata; do not select the better source from new-target outcomes. Compare both consistency and its cheaper parent against equal-view R2/CS and the original-view control. Caltech image eligibility,RGB overlap and storage remain gates; no target outcomes exist. Another local parameter grid has lower expected evidence value.
+
+Files:CONTRACT.md,analyze.py,RESULT.json; execution bash-c8717d92; science-01e72727. Complete per-cell/per-domain/all-control results and eight bank hashes are in RESULT.json.

@@ -1,0 +1,1567 @@
+{
+  "status": "passed",
+  "task_conditions": 4000,
+  "independent_score_checks": 240,
+  "max_score_error": 1.0380585280245214e-14,
+  "exact_sampled_neighbors_and_predictions": true,
+  "statistic_checks": 62,
+  "independent_bootstrap_max_error_pp": 8.881784197001252e-16,
+  "historical_precision_comparison": {
+    "dtd_to_eurosat_eurosat_k1": {
+      "mean_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "mean_cs": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "scatter_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      }
+    },
+    "dtd_to_eurosat_dtd_k1": {
+      "mean_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "mean_cs": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "scatter_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      }
+    },
+    "dtd_to_eurosat_eurosat_k5": {
+      "mean_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "mean_cs": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "scatter_r2": {
+        "prediction_changes": 12,
+        "accuracy_delta_pp": -0.010666666666669933
+      }
+    },
+    "dtd_to_eurosat_dtd_k5": {
+      "mean_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "mean_cs": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "scatter_r2": {
+        "prediction_changes": 12,
+        "accuracy_delta_pp": -0.010666666666669933
+      }
+    },
+    "eurosat_to_dtd_dtd_k1": {
+      "mean_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "mean_cs": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "scatter_r2": {
+        "prediction_changes": 1,
+        "accuracy_delta_pp": 0.0
+      }
+    },
+    "eurosat_to_dtd_eurosat_k1": {
+      "mean_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "mean_cs": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "scatter_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      }
+    },
+    "eurosat_to_dtd_dtd_k5": {
+      "mean_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "mean_cs": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "scatter_r2": {
+        "prediction_changes": 40,
+        "accuracy_delta_pp": -0.058666666666662426
+      }
+    },
+    "eurosat_to_dtd_eurosat_k5": {
+      "mean_r2": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "mean_cs": {
+        "prediction_changes": 0,
+        "accuracy_delta_pp": 0.0
+      },
+      "scatter_r2": {
+        "prediction_changes": 40,
+        "accuracy_delta_pp": -0.058666666666662426
+      }
+    }
+  },
+  "checks": [
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 0,
+      "method": "mean_cs",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 1.0380585280245214e-14
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 0,
+      "method": "scatter_cs",
+      "max_error": 9.131584377541913e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 0,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 0,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.0380585280245214e-14
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 100,
+      "method": "mean_cs",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 4.052314039881821e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 100,
+      "method": "scatter_cs",
+      "max_error": 3.6637359812630166e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 100,
+      "method": "mean_raw_lam01",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 100,
+      "method": "scatter_raw_lam01",
+      "max_error": 4.052314039881821e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 200,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 5.495603971894525e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 200,
+      "method": "scatter_cs",
+      "max_error": 4.6351811278100286e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 200,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 200,
+      "method": "scatter_raw_lam01",
+      "max_error": 5.495603971894525e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 300,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 6.9111383282915995e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 300,
+      "method": "scatter_cs",
+      "max_error": 6.38378239159465e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 300,
+      "method": "mean_raw_lam01",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 300,
+      "method": "scatter_raw_lam01",
+      "max_error": 6.9111383282915995e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 400,
+      "method": "mean_cs",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 4.9960036108132044e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 400,
+      "method": "scatter_cs",
+      "max_error": 5.162537064506978e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 400,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "task": 400,
+      "method": "scatter_raw_lam01",
+      "max_error": 4.9960036108132044e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 0,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 8.68749516769185e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 0,
+      "method": "scatter_cs",
+      "max_error": 9.936496070395151e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 0,
+      "method": "mean_raw_lam01",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 0,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.68749516769185e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 100,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 6.328271240363392e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 100,
+      "method": "scatter_cs",
+      "max_error": 6.827871601444713e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 100,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 100,
+      "method": "scatter_raw_lam01",
+      "max_error": 6.328271240363392e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 200,
+      "method": "mean_cs",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 5.551115123125783e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 200,
+      "method": "scatter_cs",
+      "max_error": 6.494804694057166e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 200,
+      "method": "mean_raw_lam01",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 200,
+      "method": "scatter_raw_lam01",
+      "max_error": 5.551115123125783e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 300,
+      "method": "mean_cs",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 8.354428260304303e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 300,
+      "method": "scatter_cs",
+      "max_error": 7.13318293321663e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 300,
+      "method": "mean_raw_lam01",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 300,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.354428260304303e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 400,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 5.218048215738236e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 400,
+      "method": "scatter_cs",
+      "max_error": 5.662137425588298e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 400,
+      "method": "mean_raw_lam01",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "task": 400,
+      "method": "scatter_raw_lam01",
+      "max_error": 5.218048215738236e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 0,
+      "method": "mean_cs",
+      "max_error": 1.6930901125533637e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 6.106226635438361e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 0,
+      "method": "scatter_cs",
+      "max_error": 1.8735013540549517e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 0,
+      "method": "mean_raw_lam01",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 0,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 100,
+      "method": "mean_cs",
+      "max_error": 1.9984014443252818e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 3.885780586188048e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 100,
+      "method": "scatter_cs",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 100,
+      "method": "mean_raw_lam01",
+      "max_error": 1.4432899320127035e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 100,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 200,
+      "method": "mean_cs",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 200,
+      "method": "scatter_cs",
+      "max_error": 1.0824674490095276e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 200,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 200,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 300,
+      "method": "mean_cs",
+      "max_error": 1.7208456881689926e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 3.608224830031759e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 300,
+      "method": "scatter_cs",
+      "max_error": 1.27675647831893e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 300,
+      "method": "mean_raw_lam01",
+      "max_error": 9.159339953157541e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 300,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.0824674490095276e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 400,
+      "method": "mean_cs",
+      "max_error": 1.5543122344752192e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 4.0245584642661925e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 400,
+      "method": "scatter_cs",
+      "max_error": 1.4432899320127035e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 400,
+      "method": "mean_raw_lam01",
+      "max_error": 1.1934897514720433e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "task": 400,
+      "method": "scatter_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 0,
+      "method": "mean_cs",
+      "max_error": 1.6930901125533637e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 6.106226635438361e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 0,
+      "method": "scatter_cs",
+      "max_error": 1.8735013540549517e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 0,
+      "method": "mean_raw_lam01",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 0,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 100,
+      "method": "mean_cs",
+      "max_error": 1.9984014443252818e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 3.885780586188048e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 100,
+      "method": "scatter_cs",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 100,
+      "method": "mean_raw_lam01",
+      "max_error": 1.4432899320127035e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 100,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 200,
+      "method": "mean_cs",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 200,
+      "method": "scatter_cs",
+      "max_error": 1.0824674490095276e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 200,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 200,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 300,
+      "method": "mean_cs",
+      "max_error": 1.7208456881689926e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 3.608224830031759e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 300,
+      "method": "scatter_cs",
+      "max_error": 1.27675647831893e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 300,
+      "method": "mean_raw_lam01",
+      "max_error": 9.159339953157541e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 300,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.0824674490095276e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 400,
+      "method": "mean_cs",
+      "max_error": 1.5543122344752192e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 4.0245584642661925e-16
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 400,
+      "method": "scatter_cs",
+      "max_error": 1.4432899320127035e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 400,
+      "method": "mean_raw_lam01",
+      "max_error": 1.1934897514720433e-15
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "task": 400,
+      "method": "scatter_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 0,
+      "method": "mean_cs",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 0,
+      "method": "scatter_cs",
+      "max_error": 1.2212453270876722e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 0,
+      "method": "mean_raw_lam01",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 0,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 100,
+      "method": "mean_cs",
+      "max_error": 8.326672684688674e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 100,
+      "method": "scatter_cs",
+      "max_error": 7.216449660063518e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 100,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 100,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 200,
+      "method": "mean_cs",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 200,
+      "method": "scatter_cs",
+      "max_error": 7.494005416219807e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 200,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 200,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 300,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 300,
+      "method": "scatter_cs",
+      "max_error": 7.216449660063518e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 300,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 300,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 400,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 400,
+      "method": "scatter_cs",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 400,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "task": 400,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 0,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 1.4988010832439613e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 0,
+      "method": "scatter_cs",
+      "max_error": 1.1934897514720433e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 0,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 0,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.4988010832439613e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 100,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 1.0130785099704553e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 100,
+      "method": "scatter_cs",
+      "max_error": 8.326672684688674e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 100,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 100,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.0130785099704553e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 200,
+      "method": "mean_cs",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 200,
+      "method": "scatter_cs",
+      "max_error": 8.187894806610529e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 200,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 200,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 300,
+      "method": "mean_cs",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 9.43689570931383e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 300,
+      "method": "scatter_cs",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 300,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 300,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.43689570931383e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 400,
+      "method": "mean_cs",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 400,
+      "method": "scatter_cs",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 400,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "task": 400,
+      "method": "scatter_raw_lam01",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 0,
+      "method": "mean_cs",
+      "max_error": 1.1657341758564144e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 4.0245584642661925e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 0,
+      "method": "scatter_cs",
+      "max_error": 1.2351231148954867e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 0,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 0,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 100,
+      "method": "mean_cs",
+      "max_error": 1.0269562977782698e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 100,
+      "method": "scatter_cs",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 100,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 100,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.159339953157541e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 200,
+      "method": "mean_cs",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 200,
+      "method": "scatter_cs",
+      "max_error": 1.2628786905111156e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 200,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 200,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.326672684688674e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 300,
+      "method": "mean_cs",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 4.996003610813204e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 300,
+      "method": "scatter_cs",
+      "max_error": 1.4432899320127035e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 300,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 300,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.159339953157541e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 400,
+      "method": "mean_cs",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 400,
+      "method": "scatter_cs",
+      "max_error": 1.5543122344752192e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 400,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "task": 400,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 0,
+      "method": "mean_cs",
+      "max_error": 1.1657341758564144e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 4.0245584642661925e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 0,
+      "method": "scatter_cs",
+      "max_error": 1.2351231148954867e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 0,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 0,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 100,
+      "method": "mean_cs",
+      "max_error": 1.0269562977782698e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 100,
+      "method": "scatter_cs",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 100,
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 100,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.159339953157541e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 200,
+      "method": "mean_cs",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 200,
+      "method": "scatter_cs",
+      "max_error": 1.2628786905111156e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 200,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 200,
+      "method": "scatter_raw_lam01",
+      "max_error": 8.326672684688674e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 300,
+      "method": "mean_cs",
+      "max_error": 1.3322676295501878e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 4.996003610813204e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 300,
+      "method": "scatter_cs",
+      "max_error": 1.4432899320127035e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 300,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 300,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.159339953157541e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 400,
+      "method": "mean_cs",
+      "max_error": 1.1102230246251565e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 400,
+      "method": "scatter_cs",
+      "max_error": 1.5543122344752192e-15
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 400,
+      "method": "mean_raw_lam01",
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "task": 400,
+      "method": "scatter_raw_lam01",
+      "max_error": 9.992007221626409e-16
+    }
+  ],
+  "elapsed_seconds": 56.0032012462616,
+  "scope": "alltask/aggregate and fixed240dense scorechecks; no claim of everyquery score reconstructed"
+}

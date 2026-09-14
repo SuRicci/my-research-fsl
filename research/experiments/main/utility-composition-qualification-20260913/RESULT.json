@@ -1,0 +1,140 @@
+{
+  "status": "completed",
+  "verdict": "refuted_source_gate",
+  "tier": "auxiliary/dev",
+  "run_id": "utility-composition-qualification-20260913",
+  "idea_id": "idea-ea0a696f",
+  "canonical_baseline": "r2-pets-transfer unchanged",
+  "metric_deviation": "Auxiliary source-transfer qualification; no canonical Pets measurements submitted.",
+  "directions": {
+    "dtd": {
+      "scalar": {
+        "delta_pp": -0.176,
+        "ci95_pp": [
+          -0.2693666666666668,
+          -0.08399999999999995
+        ]
+      },
+      "bce": {
+        "delta_pp": 0.12000000000000013,
+        "ci95_pp": [
+          0.04000000000000017,
+          0.19866666666666669
+        ]
+      },
+      "same_alpha": {
+        "delta_pp": 0.053333333333333455,
+        "ci95_pp": [
+          -0.015999999999999907,
+          0.12536666666666701
+        ]
+      },
+      "r2": {
+        "delta_pp": -0.25733333333333325,
+        "ci95_pp": [
+          -0.3679999999999998,
+          -0.14533333333333356
+        ]
+      },
+      "cs_0.1": {
+        "delta_pp": -1.0453333333333334,
+        "ci95_pp": [
+          -1.3120333333333338,
+          -0.7813333333333335
+        ]
+      },
+      "logistic_1": {
+        "delta_pp": 2.1693333333333333,
+        "ci95_pp": [
+          1.8066000000000002,
+          2.532
+        ]
+      },
+      "logistic_10": {
+        "delta_pp": 1.0813333333333333,
+        "ci95_pp": [
+          0.7465999999999999,
+          1.4107333333333336
+        ]
+      },
+      "grid_0.5_0.01": {
+        "delta_pp": -0.4506666666666664,
+        "ci95_pp": [
+          -0.5999999999999999,
+          -0.30799999999999983
+        ]
+      }
+    },
+    "eurosat": {
+      "scalar": {
+        "delta_pp": -1.4826666666666668,
+        "ci95_pp": [
+          -1.7053333333333334,
+          -1.254666666666667
+        ]
+      },
+      "bce": {
+        "delta_pp": -1.633333333333333,
+        "ci95_pp": [
+          -1.8586666666666665,
+          -1.3932999999999998
+        ]
+      },
+      "same_alpha": {
+        "delta_pp": -1.2266666666666668,
+        "ci95_pp": [
+          -1.4480333333333333,
+          -0.9932999999999997
+        ]
+      },
+      "r2": {
+        "delta_pp": -3.662666666666667,
+        "ci95_pp": [
+          -3.9693666666666667,
+          -3.356
+        ]
+      },
+      "cs_0.1": {
+        "delta_pp": -3.562666666666667,
+        "ci95_pp": [
+          -3.924033333333333,
+          -3.2266666666666675
+        ]
+      },
+      "logistic_1": {
+        "delta_pp": -2.490666666666667,
+        "ci95_pp": [
+          -2.9320000000000004,
+          -2.054633333333333
+        ]
+      },
+      "logistic_10": {
+        "delta_pp": -2.3600000000000003,
+        "ci95_pp": [
+          -2.8108,
+          -1.8986333333333332
+        ]
+      },
+      "grid_0.5_0.01": {
+        "delta_pp": -3.728,
+        "ci95_pp": [
+          -4.048033333333334,
+          -3.4066666666666676
+        ]
+      }
+    }
+  },
+  "validation": "passed",
+  "command_sessions": [
+    "bash-3afbad8f",
+    "bash-0e0bb9f5"
+  ],
+  "audit_session": "bash-dd60795a",
+  "paths": {
+    "analysis": "experiments/main/utility-composition-qualification-20260913/outputs/analysis.json",
+    "validation": "experiments/main/utility-composition-qualification-20260913/outputs/validation.json",
+    "complete": "experiments/main/utility-composition-qualification-20260913/outputs/complete.json",
+    "report": "experiments/main/utility-composition-qualification-20260913/REPORT.md"
+  },
+  "next_action": "decision -> structurally distinct idea selection"
+}

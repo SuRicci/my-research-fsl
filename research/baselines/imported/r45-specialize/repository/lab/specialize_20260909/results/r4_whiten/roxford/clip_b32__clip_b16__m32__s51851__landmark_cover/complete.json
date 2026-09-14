@@ -1,0 +1,77 @@
+{
+  "method": "r4_whiten",
+  "dataset": "roxford",
+  "pair": [
+    "clip_b32",
+    "clip_b16"
+  ],
+  "budget": 32,
+  "seed": 51851,
+  "policy": "landmark_cover",
+  "bridge_ids": [
+    "rparis:gallery:paris_pantheon_000109",
+    "rparis:gallery:paris_general_000101",
+    "rparis:gallery:paris_triomphe_000104",
+    "rparis:gallery:paris_general_002156",
+    "rparis:gallery:paris_pantheon_000348",
+    "rparis:gallery:paris_notredame_000370",
+    "rparis:gallery:paris_general_001501",
+    "rparis:gallery:paris_general_001580",
+    "rparis:gallery:paris_pantheon_000709",
+    "rparis:gallery:paris_general_001371",
+    "rparis:gallery:paris_pompidou_000185",
+    "rparis:gallery:paris_eiffel_000002",
+    "rparis:gallery:paris_triomphe_000142",
+    "rparis:gallery:paris_general_002909",
+    "rparis:gallery:paris_defense_000466",
+    "rparis:gallery:paris_notredame_000572",
+    "rparis:gallery:paris_pantheon_000726",
+    "rparis:gallery:paris_pompidou_000573",
+    "rparis:gallery:paris_defense_000538",
+    "rparis:gallery:paris_invalides_000257",
+    "rparis:gallery:paris_notredame_000752",
+    "rparis:gallery:paris_moulinrouge_000823",
+    "rparis:gallery:paris_invalides_000583",
+    "rparis:gallery:paris_notredame_000558",
+    "rparis:gallery:paris_moulinrouge_000696",
+    "rparis:gallery:paris_sacrecoeur_000650",
+    "rparis:gallery:paris_general_001522",
+    "rparis:gallery:paris_general_001656",
+    "rparis:gallery:paris_notredame_000223",
+    "rparis:gallery:paris_pantheon_001057",
+    "rparis:gallery:paris_general_002601",
+    "rparis:gallery:paris_museedorsay_001107"
+  ],
+  "parent_complete_sha256": "353087daa5595907512c51536c80af7e984fe05b2fc82985165192a6d391e71c",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/roxford/clip_b32__clip_b16__m32__s51851__landmark_cover/aps.npz",
+      "sha256": "544743c3f85f5652e0e67be1c467b2ba1d2adfa03dc547b0707b87d3c4ce1753"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/roxford/clip_b32__clip_b16__m32__s51851__landmark_cover/aps.npz",
+      "sha256": "c1d0aafe36a71c9c0f4462b0ba31d2ae5f7863f8faf0dd7d4ca62c8b0e0a6e5c"
+    }
+  ],
+  "sha256": "8caf7d2a172af4ed0cf411aebc08365e82721075e9558a00ae11457ce41816db",
+  "means": [
+    0.2797330775651843,
+    0.08103545583545659
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "bridge_rows_used": 0
+  },
+  "seconds": 0.5383944511413574
+}

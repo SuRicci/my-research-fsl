@@ -1,0 +1,64 @@
+{
+  "status": "computed",
+  "dataset": "dtd",
+  "phase": "original_r2_retest",
+  "shot": 5,
+  "episodes": 600,
+  "query_pool": 1877,
+  "allowed_classes": [
+    20,
+    10,
+    15,
+    32,
+    0,
+    45,
+    36,
+    31,
+    18,
+    28,
+    12,
+    5,
+    13,
+    17,
+    22,
+    24,
+    43,
+    27,
+    9,
+    6,
+    14,
+    40,
+    35,
+    1
+  ],
+  "seeds": [
+    129191,
+    129192,
+    129193
+  ],
+  "accuracy": {
+    "r2_overall": 0.9015333333333333,
+    "same_feature_prototype": 0.8941777777777777
+  },
+  "seed_accuracy": {
+    "r2_overall": [
+      0.9034666666666666,
+      0.8986,
+      0.9025333333333333
+    ],
+    "same_feature_prototype": [
+      0.8975333333333333,
+      0.8893333333333334,
+      0.8956666666666666
+    ]
+  },
+  "packaged_api_max_abs_score_error": 4.76837158203125e-07,
+  "packaged_api_prediction_flips": 0,
+  "elapsed_seconds": 0.2855570316314697,
+  "npz_sha256": "bb15fe300a132fc294c0bb266f419766f7bc0f9584b1c2bbe81644388edce6f0",
+  "deviations": [
+    "CPU float32 evaluator versus historical CUDA; no gradient training or query batch statistics",
+    "Images not yet rehashed locally; original recorded exact-RGB exclusions used unchanged",
+    "Original per-query predictions absent locally; point estimate comparison does not prove bitwise historical prediction identity"
+  ]
+}

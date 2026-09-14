@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "url": "https://thor.robots.ox.ac.uk/~vgg/data/pets/images.tar.gz",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/downloads/images.tar.gz",
+      "bytes": 791918971,
+      "md5": "5c4f3ee8e5d25df40f4fd59a7f44e54c",
+      "sha256": "67195c5e1c01f1ab5f9b6a5d22b8c27a580d896ece458917e61d459337fa318d",
+      "checksum_source": "installed torchvision OxfordIIITPet._RESOURCES"
+    },
+    {
+      "url": "https://thor.robots.ox.ac.uk/~vgg/data/pets/annotations.tar.gz",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/downloads/annotations.tar.gz",
+      "bytes": 19173078,
+      "md5": "95a8c909bbe2e81eed6a22bccdf3f68f",
+      "sha256": "52425fb6de5c424942b7626b428656fcbd798db970a937df61750c0f1d358e91",
+      "checksum_source": "installed torchvision OxfordIIITPet._RESOURCES"
+    }
+  ],
+  "license": "CC BY-SA 4.0 per Oxford official page",
+  "page": "https://www.robots.ox.ac.uk/~vgg/data/pets/",
+  "no_redistribution": true
+}

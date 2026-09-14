@@ -1,0 +1,66 @@
+{
+  "status": "all_complete",
+  "completed": [
+    {
+      "method": "r4_whiten",
+      "exit_code": 0,
+      "seconds": 138.153461933136,
+      "status": "complete"
+    },
+    {
+      "method": "r4_rank",
+      "exit_code": 0,
+      "seconds": 142.23371291160583,
+      "status": "complete"
+    },
+    {
+      "method": "r4_diffusion",
+      "exit_code": 0,
+      "seconds": 145.9042432308197,
+      "status": "complete"
+    },
+    {
+      "method": "r4_ensemble",
+      "exit_code": 0,
+      "seconds": 194.38162350654602,
+      "status": "complete"
+    },
+    {
+      "method": "r4_top100",
+      "exit_code": 0,
+      "seconds": 139.13891315460205,
+      "status": "complete"
+    },
+    {
+      "method": "r5_consensus",
+      "exit_code": 0,
+      "seconds": 36.66369819641113,
+      "status": "complete"
+    },
+    {
+      "method": "r5_median",
+      "exit_code": 0,
+      "seconds": 37.913434982299805,
+      "status": "complete"
+    },
+    {
+      "method": "r5_variance",
+      "exit_code": 0,
+      "seconds": 36.15075993537903,
+      "status": "complete"
+    },
+    {
+      "method": "r5_distribution",
+      "exit_code": 0,
+      "seconds": 38.245373487472534,
+      "status": "complete"
+    },
+    {
+      "method": "r5_support_cv",
+      "exit_code": 0,
+      "seconds": 47.38105034828186,
+      "status": "complete"
+    }
+  ],
+  "protocol_sha256": "19680abffb7c533e2ee8f095f236424ffadf0ad6c68ad36284a304377feca68d"
+}

@@ -1,0 +1,198 @@
+{
+  "per_metric": {
+    "dtd_matched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 76.86266666666667,
+        "support_proto": 73.20533333333334,
+        "distribution_logistic": 76.748,
+        "mean_logistic": 76.76266666666666,
+        "support_logistic": 74.10933333333332,
+        "distribution_ridge": 76.76666666666665,
+        "mean_ridge": 76.824,
+        "support_ridge": 74.032,
+        "r2_tuned": 77.00133333333333
+      },
+      "delta_vs_r2_pp": -0.11466666666666685,
+      "paired_ci95_pp": [
+        -0.2800000000000002,
+        0.04933333333333332
+      ]
+    },
+    "dtd_5shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 89.98133333333332,
+        "support_proto": 89.37066666666666,
+        "distribution_logistic": 89.98133333333332
+      },
+      "delta_vs_r2_pp": 0.0,
+      "paired_ci95_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    "dtd_mismatched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 74.07866666666668,
+        "support_proto": 73.20533333333334,
+        "distribution_logistic": 73.836,
+        "mean_logistic": 73.792,
+        "support_logistic": 74.10933333333332,
+        "distribution_ridge": 73.88533333333335,
+        "mean_ridge": 73.784,
+        "support_ridge": 74.032,
+        "r2_tuned": 74.072
+      },
+      "delta_vs_r2_pp": -0.24266666666666653,
+      "paired_ci95_pp": [
+        -0.39200000000000007,
+        -0.08533333333333354
+      ]
+    },
+    "eurosat_mismatched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 66.11733333333333,
+        "support_proto": 67.61866666666666,
+        "distribution_logistic": 66.60933333333332,
+        "mean_logistic": 66.608,
+        "support_logistic": 68.02133333333335,
+        "distribution_ridge": 67.416,
+        "mean_ridge": 67.32533333333335,
+        "support_ridge": 68.71066666666665,
+        "r2_tuned": 65.67466666666665
+      },
+      "delta_vs_r2_pp": 0.49199999999999977,
+      "paired_ci95_pp": [
+        0.3039999999999997,
+        0.6746666666666663
+      ]
+    },
+    "eurosat_matched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 74.03466666666665,
+        "support_proto": 67.61866666666666,
+        "distribution_logistic": 72.31066666666668,
+        "mean_logistic": 72.27466666666668,
+        "support_logistic": 68.02133333333335,
+        "distribution_ridge": 72.896,
+        "mean_ridge": 72.808,
+        "support_ridge": 68.71066666666665,
+        "r2_tuned": 74.47733333333333
+      },
+      "delta_vs_r2_pp": -1.7240000000000004,
+      "paired_ci95_pp": [
+        -1.9026666666666667,
+        -1.5453333333333337
+      ]
+    },
+    "eurosat_5shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 86.808,
+        "support_proto": 85.06266666666667,
+        "distribution_logistic": 86.808
+      },
+      "delta_vs_r2_pp": 0.0,
+      "paired_ci95_pp": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "macro_vs_controls": {
+    "r2": {
+      "delta_pp": -0.39733333333333337,
+      "paired_ci95_pp": [
+        -0.48766666666666664,
+        -0.3083166666666666
+      ]
+    },
+    "support_proto": {
+      "delta_pp": 1.964,
+      "paired_ci95_pp": [
+        1.7633333333333334,
+        2.1676666666666664
+      ]
+    },
+    "distribution_logistic": {
+      "delta_pp": 0.0,
+      "paired_ci95_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    "mean_logistic": {
+      "delta_pp": 0.016666666666666684,
+      "paired_ci95_pp": [
+        0.0019999999999999736,
+        0.03133333333333319
+      ]
+    },
+    "support_logistic": {
+      "delta_pp": 1.3106666666666666,
+      "paired_ci95_pp": [
+        1.157658333333333,
+        1.4643416666666664
+      ]
+    },
+    "distribution_ridge": {
+      "delta_pp": -0.36500000000000005,
+      "paired_ci95_pp": [
+        -0.4133333333333334,
+        -0.31566666666666693
+      ]
+    },
+    "mean_ridge": {
+      "delta_pp": -0.30933333333333346,
+      "paired_ci95_pp": [
+        -0.3589999999999999,
+        -0.2596666666666668
+      ]
+    },
+    "support_ridge": {
+      "delta_pp": 1.0046666666666666,
+      "paired_ci95_pp": [
+        0.8426666666666667,
+        1.1693499999999997
+      ]
+    },
+    "r2_tuned": {
+      "delta_pp": -0.4303333333333333,
+      "paired_ci95_pp": [
+        -0.5363333333333332,
+        -0.3223333333333333
+      ]
+    }
+  },
+  "gate": {
+    "positive_r2_macro_ci": false,
+    "no_cell_loss_above_0_5pp": false,
+    "beats_simple_controls": false,
+    "simple_controls": {
+      "r2_tuned": false,
+      "support_logistic": true,
+      "mean_logistic": true,
+      "support_ridge": true,
+      "mean_ridge": false,
+      "support_proto": true,
+      "distribution_ridge": false
+    },
+    "passed": false
+  },
+  "metrics_summary": {
+    "dtd_matched_1shot_accuracy": 76.748,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 73.836,
+    "eurosat_mismatched_1shot_accuracy": 66.60933333333332,
+    "eurosat_matched_1shot_accuracy": 72.31066666666668,
+    "eurosat_5shot_accuracy": 86.808,
+    "macro_1shot_accuracy": 72.376
+  },
+  "scope": "Paired locked task draws within historically viewed image pools; seed-stratified bootstrap preserves shared-gallery pairing. No independent-image or SOTA claim.",
+  "loss_neighborhood_interaction": {
+    "delta_pp": -0.03899999999999988,
+    "paired_ci95_pp": [
+      -0.067675,
+      -0.00966666666666658
+    ],
+    "interpretation": "Operational contrast between separately development-tuned heads, not a fixed-parameter causal effect."
+  }
+}

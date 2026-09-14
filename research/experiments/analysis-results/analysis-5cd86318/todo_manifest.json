@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "campaign_id": "analysis-5cd86318",
+  "campaign_origin": {
+    "kind": "analysis",
+    "reason": null,
+    "source_artifact_id": null,
+    "source_outline_ref": null,
+    "source_review_round": null,
+    "reviewer_item_ids": []
+  },
+  "selected_outline_ref": null,
+  "research_questions": [],
+  "experimental_designs": [],
+  "todo_items": [
+    {
+      "exp_id": null,
+      "todo_id": "press-fixed-penalty-challenge",
+      "slice_id": "press-fixed-penalty-challenge",
+      "title": "PRESS versus every fixed penalty on twelve cells",
+      "status": "pending",
+      "research_question": "",
+      "experimental_design": "",
+      "tier": null,
+      "paper_placement": null,
+      "paper_role": null,
+      "analysis_role": null,
+      "reviewer_question": null,
+      "target_display": null,
+      "main_or_appendix": null,
+      "failure_interpretation": null,
+      "section_id": null,
+      "item_id": "press-fixed-penalty-challenge",
+      "claim_links": [],
+      "completion_condition": "",
+      "why_now": "",
+      "success_criteria": "All12cells, rawscore and task parity, per-cell PRESS vsfixed/tuned/radius comparisons, selectionfrequency; explicitly falsify adaptivity ifconstantcontrolmatches.",
+      "abandonment_criteria": "Stop on task/feature mismatch; no retuninglambda range fromtheseoutcomes.",
+      "required_baselines": [],
+      "reviewer_item_ids": [],
+      "manuscript_targets": []
+    }
+  ],
+  "created_at": "2026-09-12T11:31:38+00:00",
+  "updated_at": "2026-09-12T11:31:38+00:00"
+}

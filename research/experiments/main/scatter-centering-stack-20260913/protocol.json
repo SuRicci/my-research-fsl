@@ -1,0 +1,82 @@
+{
+  "idea_id": "idea-71814a9c",
+  "decision_id": "decision-af86142e",
+  "tier": "auxiliary/dev",
+  "primary": "scatter_cs",
+  "incumbent": "mean_cs",
+  "methods": [
+    "mean_r2",
+    "mean_cs",
+    "scatter_r2",
+    "scatter_cs",
+    "mean_raw_lam01",
+    "scatter_raw_lam01"
+  ],
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "shots": [
+    1,
+    5
+  ],
+  "gamma_by_source": {
+    "dtd": {
+      "1": 10.0,
+      "5": 0.1
+    },
+    "eurosat": {
+      "1": 1.0,
+      "5": 1.0
+    }
+  },
+  "gamma_rule": "inherit original opposite-domain source choice without reselection",
+  "tasks": "all existing representation-scatter evaluation banks: 500 per domain and shot; 5 seeds; 75 queries",
+  "precision": "cached fusedfloat32 -> float64 before viewmean, residual,SVD,normalization,retrieval,ridge",
+  "retrieval_ties": "descending float64 similarity, stable ascending canonical gallery row index on exact ties",
+  "ordering": "support residual SVD -> transformed viewmean L2 -> transformed supportmean center -> L2 -> CS head",
+  "ridge": {
+    "raw1": 0.1,
+    "raw5": 1.0,
+    "cs1": 0.1,
+    "cs5": 0.1,
+    "raw_diagnostic": 0.1
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 26091399,
+    "unit": "paired tasks stratified by task seed, and by domain for pooled values; gallery conditions paired within task"
+  },
+  "gate": {
+    "incumbent_pooled_gain_pp": 0.5,
+    "pooled_ci_lower_pp": 0,
+    "domain_delta_min_pp": 0,
+    "domain_ci_lower_min_pp": -0.5,
+    "all_cell_ci_lower_min_pp": -0.5,
+    "scatter_only_pooled_ci_lower_pp": 0
+  },
+  "numeric_tolerance": 2e-05,
+  "audit_task_indices": [
+    0,
+    100,
+    200,
+    300,
+    400
+  ],
+  "historical_failure": "dtd/k1/selection/99/1/gamma0.1; strict original audit stays failed",
+  "permissions": {
+    "query_adaptation": false,
+    "gallery_labels": false,
+    "gamma_reselection": false,
+    "training": false
+  },
+  "resources": {
+    "threads": 6,
+    "free_gib_min": 10,
+    "output_max_mib": 40,
+    "deadline": "2026-09-15T09:00:00+00:00",
+    "local_only": true,
+    "spend": 0
+  },
+  "metric_boundary": "No new canonicalPets metrics. Explicit auxiliary report; historicalPetsbaseline unchanged. Exposeddevelopment, not prospectiveconfirmation. Full stack promotion requires gains over bothmeanCS andscatterR2 per challenge memo."
+}

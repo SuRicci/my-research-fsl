@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "task_count": 2000,
+  "checks": [
+    {
+      "domain": "dtd",
+      "shot": 1,
+      "equal_reference_score_error": 1.7881393432617188e-07,
+      "batch_error": 0.0
+    },
+    {
+      "domain": "dtd",
+      "shot": 5,
+      "equal_reference_score_error": 3.5762786865234375e-07,
+      "batch_error": 0.0
+    },
+    {
+      "domain": "eurosat",
+      "shot": 1,
+      "equal_reference_score_error": 2.980232238769531e-07,
+      "batch_error": 0.0
+    },
+    {
+      "domain": "eurosat",
+      "shot": 5,
+      "equal_reference_score_error": 4.172325134277344e-07,
+      "batch_error": 0.0
+    }
+  ],
+  "numpy": "1.24.4",
+  "torch": "2.3.0",
+  "fold_contract": "one heldout identity per class at5shot; no heldoutview in training mean at1shot; sameimage dependence explicit"
+}

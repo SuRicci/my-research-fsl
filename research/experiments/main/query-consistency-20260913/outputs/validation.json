@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "parent_full_task_checks": 2400,
+  "max_parent_score_error": 1.6653345369377348e-15,
+  "selection_hash": "abba2629f305ca34d96e6e7f706068ea850eb7ed01f0bf7ae68d97e5ec48ccb2",
+  "source_choices_unchanged": true,
+  "independent_audit": "pending"
+}

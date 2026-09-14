@@ -1,0 +1,67 @@
+{
+  "outcome_summary": "Fixed class-associated scatter does not improve the retained blend; keep77.334%incumbent.",
+  "evaluation_summary": {
+    "research_question": "Does class association improve shared scatter beyond equal-compute controls?",
+    "research_type": "auxiliary/dev fixed-recipe mechanism qualification",
+    "research_objective": "cumulative one-shot accuracy improvement under unchanged permissions",
+    "experimental_setup": "same1000tasks x2galleries,6views,sourcegamma10/1,rho0.5,independentqueries",
+    "experimental_results": {
+      "incumbent": {
+        "delta_pp": -0.01533333333333331,
+        "ci95_pp": [
+          -0.03333333333333329,
+          0.002683333333333297
+        ]
+      },
+      "metric_ensemble": {
+        "delta_pp": -0.006666666666666643,
+        "ci95_pp": [
+          -0.02133333333333329,
+          0.007999999999999953
+        ]
+      },
+      "foreign_metrics": {
+        "delta_pp": -0.010666666666666635,
+        "ci95_pp": [
+          -0.026666666666666585,
+          0.005333333333333348
+        ]
+      },
+      "scatter_cs": {
+        "delta_pp": 0.13066666666666657,
+        "ci95_pp": [
+          0.04533333333333309,
+          0.21666666666666634
+        ]
+      },
+      "scatter_r2": {
+        "delta_pp": 0.3506666666666668,
+        "ci95_pp": [
+          0.2693333333333332,
+          0.43468333333333353
+        ]
+      },
+      "mean_cs": {
+        "delta_pp": 1.7786666666666668,
+        "ci95_pp": [
+          1.582,
+          1.9726833333333336
+        ]
+      }
+    },
+    "experimental_analysis": "All fulloutput/numeric/statistical audits pass; primary gain and association gates fail.",
+    "experimental_conclusions": "Do not promote or grid-rescue this recipe."
+  },
+  "claim_update": {
+    "fixed_recipe_improvement": "not_supported",
+    "meaningful_increment_gate": "refuted",
+    "all_class_specific_methods": "untested"
+  },
+  "baseline_relation": "canonicalPetscontract unchanged; compare currentauxiliaryincumbent andcomponentcontrols",
+  "failure_mode": "direction_underperforming",
+  "next_action": "audit_existing_source_map_distortion",
+  "metrics_summary": {
+    "dev_macro_1shot_accuracy": 77.31866666666667,
+    "dev_macro_1shot_delta_vs_incumbent_pp": -0.01533333333333331
+  }
+}

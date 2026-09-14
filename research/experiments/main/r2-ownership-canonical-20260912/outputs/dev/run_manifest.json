@@ -1,0 +1,158 @@
+{
+  "config": {
+    "run_id": "r2-ownership-canonical-20260912",
+    "idea_id": "idea-5670808c",
+    "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+    "feature_variant": "canonical-openai-quickgelu-native-dinov2",
+    "ways": 5,
+    "queries_per_class": 15,
+    "shots": [
+      1,
+      5
+    ],
+    "fusion_weight": 0.5,
+    "top_k": 64,
+    "lambda_grid": [
+      0.1,
+      1.0,
+      0.01,
+      0.001
+    ],
+    "dev": {
+      "datasets": [
+        "dtd"
+      ],
+      "gallery_datasets": [
+        "dtd",
+        "eurosat"
+      ],
+      "seeds": [
+        26091101,
+        26091102
+      ],
+      "episodes_per_seed": 100,
+      "dtd_class_half": "first",
+      "shots": [
+        1,
+        5
+      ]
+    },
+    "eval": {
+      "datasets": [
+        "dtd",
+        "eurosat"
+      ],
+      "gallery_datasets": [
+        "dtd",
+        "eurosat"
+      ],
+      "seeds": [
+        26091201,
+        26091202,
+        26091203,
+        26091204,
+        26091205
+      ],
+      "episodes_per_seed": 200,
+      "dtd_class_half": "second"
+    },
+    "class_split_seed": 120909,
+    "batch_size": 16,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26091299,
+    "decision_gate": {
+      "macro_ci_lower_pp": 0,
+      "max_condition_loss_pp": 0.5,
+      "requires_simple_control_advantage": true
+    },
+    "permissions": {
+      "gallery_labels": false,
+      "query_batch_adaptation": false,
+      "encoder_training": false,
+      "query_independent": true
+    },
+    "generalization_scope": "developmental reuse of fixed image pools and locked evaluation tasks; no independent-image claim",
+    "five_shot_behavior": "primary and raw count/mass controls inherit canonical R2 exactly; centered secondary inherits CS_l2",
+    "random_control_seed": 26091273,
+    "mechanism": "original top64 ownership mask without refill",
+    "primary_method": "ownership"
+  },
+  "phase": "dev",
+  "feature_manifest": {
+    "variant": "canonical-openai-quickgelu-native-dinov2",
+    "historical_parity": false,
+    "precision": "float32 MPS with bicubic CPU fallback; normalized float16 storage",
+    "source_code_sha256": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+    "datasets": {
+      "eurosat": {
+        "query_unique": 5400,
+        "gallery_unique": 5000,
+        "backbones": {
+          "clip_vitb16_query": {
+            "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_clip_vitb16_query.pt",
+            "sha256": "132ca149faa9d6832554fc11e1b10897b23567732c652bbc9cc30ab8d72cc986",
+            "n": 5400
+          },
+          "clip_vitb16_gallery": {
+            "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_clip_vitb16_gallery.pt",
+            "sha256": "f2c83984b3bea53e3c697d6b91ade5cd8a8956427bbaa258240130e346c57fa0",
+            "n": 5000
+          },
+          "dinov2_vits14_query": {
+            "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_dinov2_vits14_query.pt",
+            "sha256": "002f96454d2c2e109a7851bd567efdbdc95290c138834f4e187d4293ce92a13c",
+            "n": 5400
+          },
+          "dinov2_vits14_gallery": {
+            "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_dinov2_vits14_gallery.pt",
+            "sha256": "f9e69410a919ef3ee42c315a2adf95611c1539d8fa6f8b5d3a95824bb875ae7d",
+            "n": 5000
+          }
+        }
+      },
+      "dtd": {
+        "query_unique": 1877,
+        "gallery_unique": 1876,
+        "backbones": {
+          "clip_vitb16_query": {
+            "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_clip_vitb16_query.pt",
+            "sha256": "a4600793a76023bfd3afab4f9418f6572e14c21d832c875ed20faadbc02fa46e",
+            "n": 1877
+          },
+          "clip_vitb16_gallery": {
+            "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_clip_vitb16_gallery.pt",
+            "sha256": "bb7414dfe51173a4c36e425ff89feb39be33dcd2289eb07e68658605205283fc",
+            "n": 1876
+          },
+          "dinov2_vits14_query": {
+            "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_dinov2_vits14_query.pt",
+            "sha256": "e41439a1488a518776677006e69c12ac66fd20d50310eca8c454fbe89be40432",
+            "n": 1877
+          },
+          "dinov2_vits14_gallery": {
+            "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_dinov2_vits14_gallery.pt",
+            "sha256": "e9ecb63f4d04f36e30c4e79b159a077d4224eba13d0b2555ed8812355b0a924b",
+            "n": 1876
+          }
+        }
+      }
+    },
+    "elapsed_seconds": 1647.49137
+  },
+  "code_sha256": {
+    "validate_implementation.py": "3a85b0e310083748aa4a8b099cd0d4bf0814682d7174d175965e4a8d21d1e6bb",
+    "geometry_reference.py": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c",
+    "baseline_methods.py": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b",
+    "evaluate.py": "d2e3d060743cc04441e64cbf3ef9abb9e761b0eadc9bee3f6b0f561b15d1f570",
+    "reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+    "package_results.py": "7459b2eb585f2e6bbe78ddff142ac36f49bc120a17cd16f0df4f36c9c5c5c222",
+    "paired_reference.py": "fad224dd1e5ca83ec055752dd3cc3934ca5e854a0e417c6dc52d261ad9e18a8b"
+  },
+  "command_argv": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "evaluate.py"
+  ],
+  "cwd": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912",
+  "torch": "2.3.0",
+  "numpy": "1.24.4"
+}

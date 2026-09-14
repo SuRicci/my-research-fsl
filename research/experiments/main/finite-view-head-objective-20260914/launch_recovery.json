@@ -1,0 +1,6 @@
+{
+  "failed_launch": "bash-a1f45be4",
+  "reason": "additional40MiBlaunchreservefailedbeforeload/manifest/training",
+  "changed": "hash-verified closedrun duplicate storage recovery; code/protocol/numericprecheckunchanged",
+  "recovery_receipt": "artifacts/reports/canonical-storage-recovery-20260914.json"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "computed",
+  "metric_gate_passed": false,
+  "elapsed_seconds": 29.48775815963745,
+  "selection_sha256": "08356d7b7251cfb8055f74cbbb9d81b214eef956bb1527bdb3a6634806f1ec93",
+  "output_audit_pending": true
+}

@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-09-13T14:17:26.555385+00:00",
+  "classification_outcomes_observed": false,
+  "sha256": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/study.py": "b55c338b1bc94aa3ad6f69f77c593bb8691c176a635bc3a0ceb7ee5564b05a82",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/verify.py": "aba383733ce4290bec5198d2894804666254705672d9f1b9866ba8f4b3e047f6",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/protocol.json": "1800b9df37a9736e374941221785df1e3333e4294bb5f41eb652c6c5637723e9",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer/json/metric_contract.json": "575445b7a69d3b0de38a0dc7a8b0bee1b5cd1f938459dc13f80f79508cfa0428"
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 /opt/anaconda3/envs/torch/bin/python experiments/main/dino-reconstruction-20260913/study.py --phase run"
+}

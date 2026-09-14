@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-09-13T11:16:14.988545+00:00",
+  "target_features_or_outcomes_observed": false,
+  "sha256": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/protocol.json": "2516de39e5ce78d9ed5f0289e16067bde899c831c462eb2068bc39b19ada1a36",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/tasks.npz": "90bfcba22c410de360b88b805a86a737f4273ae8524a38d417f805e187de03df",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/image_order.json": "7773024768efedfd46d3f01922a6de68c2df875ea37b40987cf6682216eb573b",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/galleries.json": "e796a6179a140556657f1af0b3af746f75d746134eea080d45be405fd31d9771",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-qualification-20260913/identities.json": "4af7a836c0ffad874058ed7bd8be672ffdfe56bc82998b9c4f1b6c384214c128",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/selection_lock.json": "abba2629f305ca34d96e6e7f706068ea850eb7ed01f0bf7ae68d97e5ec48ccb2"
+  }
+}

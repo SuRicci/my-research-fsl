@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "error": "AssertionError(('dtd_dtd/0', 'score_ensemble_r2', 0.00019640635998560696))",
+  "phase": "audit"
+}

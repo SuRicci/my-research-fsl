@@ -1,0 +1,63 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-1b88720d",
+  "id": "report-1b88720d",
+  "quest_id": "012",
+  "created_at": "2026-09-13T14:03:20+00:00",
+  "updated_at": "2026-09-13T14:03:20+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-8c3da981"
+  },
+  "status": "completed",
+  "branch": "run/dino-residual-20260913",
+  "head_commit": "b99606d8c667f160b1cfaf9bde81be8d1d6e135c",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "anchor": "experiment",
+  "report_type": "auxiliary_development_experiment",
+  "title": "Per-image residual descriptor qualification rejected after full audit",
+  "summary": "Residualfusion69.071333% versus parent77.374%, delta-8.302667pp CI[-8.652017,-7.939333]. DTD-11.845333pp;EuroSAT-4.760000pp. All1050000predictions,12real+4synthetic cases and35intervals independently checked; original parent/raw/mean scores exact. Reject fixed residual recipe; no canonical Pets metrics measured or altered.",
+  "idea_id": "idea-0430864a",
+  "evidence_paths": [
+    "experiments/main/dino-residual-20260913/RESULT.json",
+    "experiments/main/dino-residual-20260913/REPORT.md",
+    "experiments/main/dino-residual-20260913/outputs/statistics_audit.json"
+  ],
+  "evaluation_summary": {
+    "comparability": "Paired exposed-source development only; canonical Pets contract unchanged",
+    "claim_update": "Fixed residual remedy refuted",
+    "baseline_relation": "Parent retained77.374%",
+    "failure_mode": "Large losses on both source domains",
+    "next_action": "Decision: reject residual rescue and reassess distinct descriptor usage or source-trained classification",
+    "scope": "auxiliary/dev; not independent confirmation"
+  },
+  "run_id": "run-8c3da981",
+  "semantic_key": "report:experiment:auxiliary_development_experiment:none:9bc99ab49a32269931d0f9f74e4ebccb75cb5bc5e43f9892ee7accd1a3f89e62",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-1b88720d",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

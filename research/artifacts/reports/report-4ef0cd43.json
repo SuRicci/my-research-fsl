@@ -1,0 +1,89 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-4ef0cd43",
+  "id": "report-4ef0cd43",
+  "quest_id": "012",
+  "created_at": "2026-09-13T04:41:51+00:00",
+  "updated_at": "2026-09-13T04:41:51+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-660abd6f"
+  },
+  "status": "completed_with_limitations",
+  "branch": "run/representation-scatter-20260913",
+  "head_commit": "77e849b715adfc12934e9785fb7a8c234021d58e",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "source_qualification",
+  "title": "Real-view scatter: EuroSAT gains, failed cross-source gate, retained top64 numerical discrepancy",
+  "idea_id": "idea-503deb34",
+  "source_experiment_id": "representation-scatter-20260913",
+  "tier": "auxiliary/dev",
+  "summary": "Completed8cells/10methods/4000task conditions. One-shot macro scatter-minus-meanR2 gain: EuroSAT+3.4547pp [3.1213,3.8200]; DTD+0.0640pp [-0.0987,0.2293]. DTD also violates the per-cell noninferiority floor against augmented-support ridge. Frozen dense audit remains failed1/88 cases; all40sampled evaluation tasks pass, all aggregates and90statistical comparisons verified. Original top64 float32 tie discrepancy retained and diagnosed. No Pets/Caltech outcomes, no baseline refresh, no canonical-main metric claim.",
+  "result_scope": {
+    "canonical_main_result": false,
+    "source_domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "source_exposed": true,
+    "unique_task_episodes": 2000,
+    "task_conditions": 4000,
+    "paired_gallery_conditions": 2,
+    "method_count": 10,
+    "full_numerical_audit_passed": false
+  },
+  "metrics_summary": {
+    "eurosat_macro1shot_scatter_minus_mean_pp": 3.454666666666667,
+    "dtd_macro1shot_scatter_minus_mean_pp": 0.064
+  },
+  "validation_nodes": [
+    "science-55e35668",
+    "science-e7fc0ac0",
+    "science-883de613"
+  ],
+  "compute_node": "science-53e01eec",
+  "paths": {
+    "report": "experiments/main/representation-scatter-20260913/REPORT.md",
+    "analysis": "experiments/main/representation-scatter-20260913/outputs/analysis.json",
+    "numerical_diagnostics": "experiments/main/representation-scatter-20260913/outputs/output_audit_diagnostics.json",
+    "statistical_audit": "experiments/main/representation-scatter-20260913/outputs/statistical_audit.json",
+    "receipt": "experiments/main/representation-scatter-20260913/outputs/closure_receipt.json"
+  },
+  "next_stage": "decision",
+  "run_id": "run-660abd6f",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:source_qualification:none:1879a6b777ff032b657689294f836c3b7428f8503703c02001c115493888ed32",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-4ef0cd43",
+    "related_paths": [
+      "experiments/main/representation-scatter-20260913/REPORT.md",
+      "experiments/main/representation-scatter-20260913/outputs/analysis.json",
+      "experiments/main/representation-scatter-20260913/outputs/output_audit_diagnostics.json",
+      "experiments/main/representation-scatter-20260913/outputs/statistical_audit.json",
+      "experiments/main/representation-scatter-20260913/outputs/closure_receipt.json"
+    ],
+    "stage_status": "ready"
+  }
+}

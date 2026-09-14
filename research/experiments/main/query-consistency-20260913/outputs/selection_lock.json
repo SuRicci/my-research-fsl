@@ -1,0 +1,20 @@
+{
+  "choices": {
+    "dtd": {
+      "consistency_eta": 0.0,
+      "isotropic_eta": 0.0
+    },
+    "eurosat": {
+      "consistency_eta": 10.0,
+      "isotropic_eta": 0.0
+    }
+  },
+  "source_bank_hashes": {
+    "dtd_selection_ordinary": "18bd69c218f840d8eaf6d37e2c7f93bb2a0d934bba8fac67ad282dbbaba18a5c",
+    "dtd_selection_excluded": "2d6cf297bf52d0510531a339f02ff030355b72559c9538e8cbd4715a452511f4",
+    "eurosat_selection_ordinary": "51d7b675291958e4307612439c4c6d2fed2c081c3a3a0b17bad0fecb44b5b199",
+    "eurosat_selection_excluded": "55a8ce08ad08bbae9cf650f04adc1a1db36633b1092897455b6bcfe4552b9c3d"
+  },
+  "frozen_utc": "2026-09-13T10:47:46.497828+00:00",
+  "target_evaluation_started": false
+}

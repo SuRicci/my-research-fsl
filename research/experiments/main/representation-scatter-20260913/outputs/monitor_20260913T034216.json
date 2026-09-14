@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-09-13T03:42:16.180373+00:00",
+  "extraction_session": "bash-4927f933",
+  "observation_kind": "operational_monitor_only",
+  "prior_progress": {
+    "status": "running",
+    "backbone": "clip_vitb16",
+    "pool": "eurosat_gallery",
+    "images_done": 1536,
+    "pool_size": 5000,
+    "elapsed_seconds": 2547.7921249866486,
+    "free_gib": 11.383369445800781
+  },
+  "current_progress": {
+    "status": "running",
+    "backbone": "clip_vitb16",
+    "pool": "eurosat_gallery",
+    "images_done": 3520,
+    "pool_size": 5000,
+    "elapsed_seconds": 3045.249549150467,
+    "free_gib": 11.296195983886719
+  },
+  "complete_cache_count": 3,
+  "validated_cache_count": 3,
+  "audit_checked_at": "2026-09-13T03:33:04.912344+00:00",
+  "free_gib": 11.29608154296875,
+  "completed_pool_chunk_dirs_absent": {
+    "dtd_query_clip_vitb16": true,
+    "dtd_gallery_clip_vitb16": true,
+    "eurosat_query_clip_vitb16": true
+  },
+  "manual_cleanup_bytes": 0,
+  "new_accuracy_result": false,
+  "next_check_seconds": 240,
+  "decision": "retain decision-26360c22; all eight caches must pass before evaluation"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "kind": "synthetic",
+      "score_error": 6.661338147750939e-16,
+      "density_error": 4.996003610813204e-16,
+      "parent_error": 0.0
+    },
+    {
+      "kind": "synthetic",
+      "score_error": 8.881784197001252e-16,
+      "density_error": 8.881784197001252e-16,
+      "parent_error": 0.0
+    },
+    {
+      "kind": "eurosat_dtd",
+      "score_error": 6.661338147750939e-16,
+      "density_error": 7.771561172376096e-16,
+      "parent_error": 0.0
+    },
+    {
+      "kind": "eurosat_eurosat",
+      "score_error": 7.771561172376096e-16,
+      "density_error": 1.1102230246251565e-15,
+      "parent_error": 0.0
+    },
+    {
+      "kind": "dtd_dtd",
+      "score_error": 7.771561172376096e-16,
+      "density_error": 5.551115123125783e-16,
+      "parent_error": 0.0
+    },
+    {
+      "kind": "dtd_eurosat",
+      "score_error": 6.661338147750939e-16,
+      "density_error": 8.881784197001252e-16,
+      "parent_error": 0.0
+    }
+  ],
+  "query_class_gallery_permutation": "passed",
+  "torch": "2.3.0",
+  "numpy": "1.24.4"
+}

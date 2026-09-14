@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "verdict": "refuted_fixed_source_gate",
+  "source_hashes": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluation_contract.json": "b27bc495917a781274ab9c09997b21cc4c6bd4ae7c9be412c46b244c8e7dd469",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/metric.py": "4e19d5e659e2fd76cfe57c762c91c39bdfa66a8da9abb74109e2fa6ab86db614",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluate.py": "c614d00a1ed0b13fe12b3c4ce48ea298fc2cac6b14d365ef3d471fce89e77b4a",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/verify.py": "ba4c84300fa1dced6f7870b883e00abedf98677049e2952451e026ee8c261091",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/run.py": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/baseline_methods.py": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b"
+  }
+}

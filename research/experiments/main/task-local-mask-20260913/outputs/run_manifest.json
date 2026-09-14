@@ -1,0 +1,65 @@
+{
+  "argv": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/task-local-mask-20260913/study.py",
+    "--phase",
+    "run"
+  ],
+  "cwd": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "config": {
+    "idea_id": "idea-7e538f3a",
+    "tier": "auxiliary/dev",
+    "primary": "mask_cs",
+    "domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "shots": [
+      1,
+      5
+    ],
+    "steps": 40,
+    "lr": 100,
+    "rho": 0.9,
+    "eps": 1e-06,
+    "batch_size": 16,
+    "threads": 6,
+    "static_weights": [
+      0.5,
+      0.0,
+      1.0
+    ],
+    "gate": {
+      "one_shot_gain_pp": 0.5,
+      "one_shot_ci_lower": 0,
+      "all_cell_noninferiority_ci_lower_pp": -0.5
+    },
+    "bootstrap": {
+      "n": 5000,
+      "seed": 26091399
+    },
+    "resources": {
+      "free_gib_min": 10,
+      "output_max_mib": 30,
+      "deadline": "2026-09-15T09:00:00+00:00"
+    },
+    "scope": "500fixedtasks/domain/shot in reduced-view study banks; exposed development only; allPetsbaseline metrics unchanged; not submitted as newcanonicalmainresult",
+    "method_fidelity": "SUR-style supportloss and40Adadelta100; PyTorch rho/eps explicitlocalchoice, CLIP/DINO encoders andCS/ridge transfer differ from paper",
+    "no_source_selection": true,
+    "mask_inputs": "supportfeatures/supportlabels only, query/gallery-independent",
+    "comparators": [
+      "equal_cs",
+      "clip_cs",
+      "dino_cs",
+      "r2",
+      "mask_r2",
+      "equal_ncc",
+      "mask_ncc"
+    ],
+    "output_policy": "retain alltaskpredictions,masks,supportloss,taskids,statistics; audit scores only fixedcases; nofeaturecopies"
+  },
+  "lock_sha256": "24c654aaa44ee497e8d02eca6a25d77cd69c26de8d4143fe009ea29de2198447",
+  "started_utc": "2026-09-13T07:43:26.440805+00:00"
+}

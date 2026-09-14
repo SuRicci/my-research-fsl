@@ -1,0 +1,516 @@
+{
+  "created_at": "2026-09-14T08:37:13.465613+00:00",
+  "root": "/Users/decoqwq/DeepScientist/quests/012",
+  "files_by_suffix": {
+    ".yaml": 336,
+    ".md": 20087,
+    "": 458,
+    ".json": 61002,
+    ".py": 5590,
+    ".bib": 490,
+    ".pdf": 259,
+    ".csv": 68,
+    ".bst": 272,
+    ".sty": 816,
+    ".tex": 840,
+    ".fls": 2,
+    ".blg": 2,
+    ".aux": 2,
+    ".log": 6959,
+    ".txt": 1321,
+    ".out": 2,
+    ".fdb_latexmk": 2,
+    ".bbl": 2,
+    ".jsonl": 6981,
+    ".svg": 28,
+    ".png": 2823,
+    ".lock": 189,
+    ".rc": 27,
+    ".npz": 16849,
+    ".mplstyle": 55,
+    ".jpg": 908749,
+    ".mat": 34,
+    ".pt": 2682,
+    ".sh": 27,
+    ".npy": 45,
+    ".html": 1,
+    ".pth": 1,
+    ".gz": 14,
+    ".txt~": 1,
+    ".zip": 1
+  },
+  "bytes_by_suffix": {
+    ".yaml": 1020273,
+    ".md": 123666808,
+    "": 186443213,
+    ".json": 4011730359,
+    ".py": 35108800,
+    ".bib": 1759282,
+    ".pdf": 1766419457,
+    ".csv": 1990096,
+    ".bst": 8504190,
+    ".sty": 13996512,
+    ".tex": 12789200,
+    ".fls": 34622,
+    ".blg": 1854,
+    ".aux": 18486,
+    ".log": 46917462,
+    ".txt": 145546832,
+    ".out": 6124,
+    ".fdb_latexmk": 31718,
+    ".bbl": 10048,
+    ".jsonl": 1582948105,
+    ".svg": 65885,
+    ".png": 37525094,
+    ".lock": 0,
+    ".rc": 6723,
+    ".npz": 15701681466,
+    ".mplstyle": 55545,
+    ".jpg": 21832934965,
+    ".mat": 4804219,
+    ".pt": 2041655642,
+    ".sh": 13365,
+    ".npy": 546839168,
+    ".html": 65738,
+    ".pth": 346378731,
+    ".gz": 22860241,
+    ".txt~": 0,
+    ".zip": 137414764
+  },
+  "large_files": [
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-base-control-20260914/assets/dinov2_vitb14_pretrain.pth",
+      "bytes": 346378731,
+      "suffix": ".pth"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-domains/data/cifar100/cifar-100-python/train",
+      "bytes": 155249918,
+      "suffix": ""
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/tmp/caltech101-qualification/caltech-101.zip",
+      "bytes": 137414764,
+      "suffix": ".zip"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/assets/eurosat_query.npy",
+      "bytes": 74649728,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/assets/dtd_eurosat.npz",
+      "bytes": 73321286,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/assets/eurosat_eurosat.npz",
+      "bytes": 73321286,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-domains/data/cub200/CUB_200_2011/attributes/image_attribute_labels.txt",
+      "bytes": 73132180,
+      "suffix": ".txt"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/assets/eurosat_gallery.npy",
+      "bytes": 69120128,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/eurosat_query.npy",
+      "bytes": 66355328,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/events.jsonl",
+      "bytes": 62160470,
+      "suffix": ".jsonl"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/runs/run-3979d299/stdout.jsonl",
+      "bytes": 58160850,
+      "suffix": ".jsonl"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/assets/clip_vitb16.pt",
+      "bytes": 53382384,
+      "suffix": ".pt"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/codex_history/run-3979d299/events.jsonl",
+      "bytes": 52043307,
+      "suffix": ".jsonl"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-base-control-20260914/assets/eurosat_query.npy",
+      "bytes": 49766528,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/cache/artifact_projection.v2.json",
+      "bytes": 46325124,
+      "suffix": ".json"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-base-control-20260914/assets/eurosat_gallery.npy",
+      "bytes": 46080128,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/assets/dinov2_vits14.pt",
+      "bytes": 40054524,
+      "suffix": ".pt"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/assets/eurosat_query.npy",
+      "bytes": 38707328,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-domains/data/cifar100/cifar-100-python/test",
+      "bytes": 31049707,
+      "suffix": ""
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/literature/arxiv/pdfs/2512.12498.pdf",
+      "bytes": 30941252,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/literature/arxiv/pdfs/2104.14294.pdf",
+      "bytes": 30930829,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-a921652c/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/paper-r2-prevalidation-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/paper-r2-geometry-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-aca445b7/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-54125bda/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/paper-r2-ownership-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-8c090fcf/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-e1645299/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-5670808c/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-ca651025/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/literature/arxiv/pdfs/2412.17684.pdf",
+      "bytes": 28865223,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_eurosat_k1.npz",
+      "bytes": 28166507,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_eurosat_k1.npz",
+      "bytes": 28166507,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-aca445b7/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_eurosat_k1.npz",
+      "bytes": 28166507,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_eurosat_k1.npz",
+      "bytes": 28166507,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_eurosat_k1.npz",
+      "bytes": 28166507,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_dtd_k1.npz",
+      "bytes": 28154240,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_dtd_k1.npz",
+      "bytes": 28154240,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-aca445b7/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_dtd_k1.npz",
+      "bytes": 28154240,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_dtd_k1.npz",
+      "bytes": 28154240,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/dev/dtd_dtd_k1.npz",
+      "bytes": 28154240,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/eurosat_query_clip_vitb16.pt",
+      "bytes": 27692868,
+      "suffix": ".pt"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/assets/dtd_dtd.npz",
+      "bytes": 27510950,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/assets/eurosat_dtd.npz",
+      "bytes": 27510950,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-aca445b7/experiments/main/fsl-pets-transfer-20260913/outputs/cache/pets.npz",
+      "bytes": 27495686,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-aca445b7/experiments/main/fsl-pets-transfer-20260913/outputs/cache/dtd.npz",
+      "bytes": 27495686,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/cache/pets.npz",
+      "bytes": 27495686,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/cache/dtd.npz",
+      "bytes": 27495686,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/cache/pets.npz",
+      "bytes": 27495686,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/cache/dtd.npz",
+      "bytes": 27495686,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-aca445b7/experiments/main/fsl-pets-transfer-20260913/outputs/cache/query.npy",
+      "bytes": 26299520,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/cache/query.npy",
+      "bytes": 26299520,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/cache/query.npy",
+      "bytes": 26299520,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/cub200__dino.npz",
+      "bytes": 26011273,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/cub200__clip.npz",
+      "bytes": 25978568,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/cifar_fs__clip.npz",
+      "bytes": 25976744,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/flowers102__dino.npz",
+      "bytes": 25957524,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/assets/dtd_query.npy",
+      "bytes": 25947776,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/cifar_fs__dino.npz",
+      "bytes": 25936578,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/cub200__fusion.npz",
+      "bytes": 25934657,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/assets/dtd_gallery.npy",
+      "bytes": 25933952,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/flowers102__clip.npz",
+      "bytes": 25929174,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/flowers102__fusion.npz",
+      "bytes": 25875935,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/cifar_fs__fusion.npz",
+      "bytes": 25864166,
+      "suffix": ".npz"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/eurosat_gallery_clip_vitb16.pt",
+      "bytes": 25641680,
+      "suffix": ".pt"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/literature/arxiv/pdfs/2011.11156.pdf",
+      "bytes": 25436826,
+      "suffix": ".pdf"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/dtd_query.npy",
+      "bytes": 23064704,
+      "suffix": ".npy"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-domains/data/cub200/CUB_200_2011/parts/part_click_locs.txt",
+      "bytes": 21113936,
+      "suffix": ".txt"
+    }
+  ],
+  "skipped_dirs": [
+    ".codex",
+    ".git",
+    ".venv",
+    "__pycache__",
+    "codex-home",
+    "node_modules"
+  ],
+  "follow_symlinks": false
+}

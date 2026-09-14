@@ -1,0 +1,55 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-b02e759e",
+  "id": "report-b02e759e",
+  "quest_id": "012",
+  "created_at": "2026-09-13T08:16:52+00:00",
+  "updated_at": "2026-09-13T08:16:52+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-fc40cf10"
+  },
+  "status": "completed",
+  "branch": "run/support-risk-selection-20260913",
+  "head_commit": "dd19a5b1c69c5aeab5914e4df5e7a462aa056c4b",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "route_feasibility",
+  "title": "Global geometry preservation: verified assets and invariant null",
+  "summary": "36selected source-composition maps matchSHA256. Code has residual normalized map without explicitgeometrypenalty. Exactglobalisometry preservesnormalization/centering/retrieval/Gramridge scores; it cannotbe claimed asan improvement mechanism. No newmodelselected; audit selective non-isometric changes beforepromotion.",
+  "evidence_paths": [
+    "artifacts/idea/global_geometry_asset_audit_20260913.json",
+    "artifacts/idea/global_geometry_first_challenge_20260913.md",
+    "handoffs/CURRENT_CHECKPOINT.md"
+  ],
+  "claim_boundary": "asset metadata verified; score invariance is conditional algebraic deduction; no new geometric-distortion or classification measurement.",
+  "run_id": "run-fc40cf10",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:route_feasibility:none:d41407e3a93cf0b9a13da7aba065f97e0df2dee13e00a02d1d4605a7abc8e4d0",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-b02e759e",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

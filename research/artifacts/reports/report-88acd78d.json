@@ -1,0 +1,62 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-88acd78d",
+  "id": "report-88acd78d",
+  "quest_id": "012",
+  "created_at": "2026-09-13T12:47:39+00:00",
+  "updated_at": "2026-09-13T12:47:39+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-6d8656f0"
+  },
+  "status": "completed",
+  "branch": "run/query-consistency-20260913",
+  "head_commit": "87a6760c31a9dc964061bb9c9059268c0aa06ac9",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "source_control_evidence_map",
+  "title": "Source control rankings reverse on prospective Caltech transfer",
+  "summary": "Eight saved source banks were identity-joined over2000task conditions/1000episodes. Candidate macro77.374% was recovered; source-only ridge macro74.450667%. Candidate wins within both existing development domains but loses on Caltech. This rejects a universal support-only replacement and motivates a source-grounded transfer-dependence question; no new method selected or source numerical recertification.",
+  "evidence_paths": [
+    "experiments/analysis/source-control-map-20260913/REPORT.md",
+    "experiments/analysis/source-control-map-20260913/RESULT.json",
+    "experiments/analysis/source-control-map-20260913/compare.py"
+  ],
+  "science_nodes": [
+    "science-ce8dc455"
+  ],
+  "parent_report_id": "report-17f13d28",
+  "paper_role": "reference_only",
+  "claim_links": [],
+  "next_stage": "idea",
+  "next_direction": "Focus prior-work and unused-information audit; compare source-only constrained learning, numerical-contract repair and evidence synthesis before method promotion.",
+  "run_id": "run-6d8656f0",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:source_control_evidence_map:none:280d0d3d2ba75b9e283ab7a2f699b87fc3dfada0fd487d8ab9c5408a22138feb",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-88acd78d",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "status": "complete",
+  "scope": "Repeatedly exposed DTD/EuroSAT development only, source-configuration transfer as originally recorded. Saved-prediction identity and arithmetic audit; does not recertify original numerical source gates. No new fitting, model selection or Caltech use.",
+  "methods": [
+    "original_r2",
+    "mean_r2",
+    "mean_CS_l2",
+    "score_ensemble_r2",
+    "augmented_support_ridge",
+    "mean_logistic_C1",
+    "mean_logistic_C10",
+    "scatter_blend",
+    "query_consistency"
+  ],
+  "overall_accuracy_pct": {
+    "original_r2": 73.46066666666667,
+    "mean_r2": 75.20866666666666,
+    "mean_CS_l2": 75.53999999999999,
+    "score_ensemble_r2": 75.11066666666666,
+    "augmented_support_ridge": 74.45066666666666,
+    "mean_logistic_C1": 73.484,
+    "mean_logistic_C10": 73.91333333333333,
+    "scatter_blend": 77.334,
+    "query_consistency": 77.374
+  },
+  "domain_accuracy_pct": {
+    "dtd": {
+      "original_r2": 76.58533333333332,
+      "mean_r2": 77.952,
+      "mean_CS_l2": 77.81333333333333,
+      "score_ensemble_r2": 77.83466666666666,
+      "augmented_support_ridge": 76.744,
+      "mean_logistic_C1": 76.736,
+      "mean_logistic_C10": 76.62133333333333,
+      "scatter_blend": 78.07733333333333,
+      "query_consistency": 78.15733333333333
+    },
+    "eurosat": {
+      "original_r2": 70.336,
+      "mean_r2": 72.46533333333333,
+      "mean_CS_l2": 73.26666666666665,
+      "score_ensemble_r2": 72.38666666666666,
+      "augmented_support_ridge": 72.15733333333333,
+      "mean_logistic_C1": 70.232,
+      "mean_logistic_C10": 71.20533333333333,
+      "scatter_blend": 76.59066666666666,
+      "query_consistency": 76.59066666666666
+    }
+  },
+  "cells": {
+    "dtd_dtd": {
+      "accuracy_pct": {
+        "original_r2": 78.41600000000001,
+        "mean_r2": 79.81333333333333,
+        "mean_CS_l2": 79.816,
+        "score_ensemble_r2": 79.67466666666667,
+        "augmented_support_ridge": 76.744,
+        "mean_logistic_C1": 76.736,
+        "mean_logistic_C10": 76.62133333333333,
+        "scatter_blend": 79.88799999999999,
+        "query_consistency": 80.01066666666667
+      },
+      "comparisons": {
+        "original_r2": {
+          "delta_pp": 1.5946666666666665,
+          "candidate_only_correct": 1235,
+          "control_only_correct": 637,
+          "both_wrong": 6859,
+          "disagreement_predictions": 2451
+        },
+        "mean_r2": {
+          "delta_pp": 0.19733333333333322,
+          "candidate_only_correct": 560,
+          "control_only_correct": 486,
+          "both_wrong": 7010,
+          "disagreement_predictions": 1399
+        },
+        "mean_CS_l2": {
+          "delta_pp": 0.19466666666666657,
+          "candidate_only_correct": 596,
+          "control_only_correct": 523,
+          "both_wrong": 6973,
+          "disagreement_predictions": 1507
+        },
+        "score_ensemble_r2": {
+          "delta_pp": 0.33599999999999985,
+          "candidate_only_correct": 602,
+          "control_only_correct": 476,
+          "both_wrong": 7020,
+          "disagreement_predictions": 1431
+        },
+        "augmented_support_ridge": {
+          "delta_pp": 3.266666666666666,
+          "candidate_only_correct": 1963,
+          "control_only_correct": 738,
+          "both_wrong": 6758,
+          "disagreement_predictions": 3460
+        },
+        "mean_logistic_C1": {
+          "delta_pp": 3.2746666666666666,
+          "candidate_only_correct": 1995,
+          "control_only_correct": 767,
+          "both_wrong": 6729,
+          "disagreement_predictions": 3569
+        },
+        "mean_logistic_C10": {
+          "delta_pp": 3.389333333333333,
+          "candidate_only_correct": 2137,
+          "control_only_correct": 866,
+          "both_wrong": 6630,
+          "disagreement_predictions": 3887
+        },
+        "scatter_blend": {
+          "delta_pp": 0.12266666666666656,
+          "candidate_only_correct": 119,
+          "control_only_correct": 73,
+          "both_wrong": 7423,
+          "disagreement_predictions": 256
+        }
+      },
+      "task_conditions": 500
+    },
+    "dtd_eurosat": {
+      "accuracy_pct": {
+        "original_r2": 74.75466666666665,
+        "mean_r2": 76.09066666666666,
+        "mean_CS_l2": 75.81066666666666,
+        "score_ensemble_r2": 75.99466666666667,
+        "augmented_support_ridge": 76.744,
+        "mean_logistic_C1": 76.736,
+        "mean_logistic_C10": 76.62133333333333,
+        "scatter_blend": 76.26666666666667,
+        "query_consistency": 76.30399999999999
+      },
+      "comparisons": {
+        "original_r2": {
+          "delta_pp": 1.5493333333333332,
+          "candidate_only_correct": 1472,
+          "control_only_correct": 891,
+          "both_wrong": 7995,
+          "disagreement_predictions": 3197
+        },
+        "mean_r2": {
+          "delta_pp": 0.21333333333333349,
+          "candidate_only_correct": 757,
+          "control_only_correct": 677,
+          "both_wrong": 8209,
+          "disagreement_predictions": 1937
+        },
+        "mean_CS_l2": {
+          "delta_pp": 0.4933333333333333,
+          "candidate_only_correct": 804,
+          "control_only_correct": 619,
+          "both_wrong": 8267,
+          "disagreement_predictions": 1993
+        },
+        "score_ensemble_r2": {
+          "delta_pp": 0.30933333333333346,
+          "candidate_only_correct": 778,
+          "control_only_correct": 662,
+          "both_wrong": 8224,
+          "disagreement_predictions": 1956
+        },
+        "augmented_support_ridge": {
+          "delta_pp": -0.44,
+          "candidate_only_correct": 1227,
+          "control_only_correct": 1392,
+          "both_wrong": 7494,
+          "disagreement_predictions": 3648
+        },
+        "mean_logistic_C1": {
+          "delta_pp": -0.4320000000000001,
+          "candidate_only_correct": 1250,
+          "control_only_correct": 1412,
+          "both_wrong": 7474,
+          "disagreement_predictions": 3698
+        },
+        "mean_logistic_C10": {
+          "delta_pp": -0.31733333333333313,
+          "candidate_only_correct": 1390,
+          "control_only_correct": 1509,
+          "both_wrong": 7377,
+          "disagreement_predictions": 4001
+        },
+        "scatter_blend": {
+          "delta_pp": 0.037333333333333406,
+          "candidate_only_correct": 125,
+          "control_only_correct": 111,
+          "both_wrong": 8775,
+          "disagreement_predictions": 318
+        }
+      },
+      "task_conditions": 500
+    },
+    "eurosat_dtd": {
+      "accuracy_pct": {
+        "original_r2": 66.54933333333334,
+        "mean_r2": 68.60533333333333,
+        "mean_CS_l2": 70.49866666666667,
+        "score_ensemble_r2": 68.76266666666668,
+        "augmented_support_ridge": 72.15733333333333,
+        "mean_logistic_C1": 70.232,
+        "mean_logistic_C10": 71.20533333333333,
+        "scatter_blend": 73.48533333333333,
+        "query_consistency": 73.48533333333333
+      },
+      "comparisons": {
+        "original_r2": {
+          "delta_pp": 6.936000000000001,
+          "candidate_only_correct": 4012,
+          "control_only_correct": 1411,
+          "both_wrong": 8532,
+          "disagreement_predictions": 6805
+        },
+        "mean_r2": {
+          "delta_pp": 4.88,
+          "candidate_only_correct": 2923,
+          "control_only_correct": 1093,
+          "both_wrong": 8850,
+          "disagreement_predictions": 5070
+        },
+        "mean_CS_l2": {
+          "delta_pp": 2.986666666666667,
+          "candidate_only_correct": 2224,
+          "control_only_correct": 1104,
+          "both_wrong": 8839,
+          "disagreement_predictions": 4300
+        },
+        "score_ensemble_r2": {
+          "delta_pp": 4.722666666666667,
+          "candidate_only_correct": 2844,
+          "control_only_correct": 1073,
+          "both_wrong": 8870,
+          "disagreement_predictions": 4953
+        },
+        "augmented_support_ridge": {
+          "delta_pp": 1.328,
+          "candidate_only_correct": 1831,
+          "control_only_correct": 1333,
+          "both_wrong": 8610,
+          "disagreement_predictions": 4024
+        },
+        "mean_logistic_C1": {
+          "delta_pp": 3.253333333333333,
+          "candidate_only_correct": 2600,
+          "control_only_correct": 1380,
+          "both_wrong": 8563,
+          "disagreement_predictions": 5042
+        },
+        "mean_logistic_C10": {
+          "delta_pp": 2.2800000000000002,
+          "candidate_only_correct": 2253,
+          "control_only_correct": 1398,
+          "both_wrong": 8545,
+          "disagreement_predictions": 4624
+        },
+        "scatter_blend": {
+          "delta_pp": 0.0,
+          "candidate_only_correct": 0,
+          "control_only_correct": 0,
+          "both_wrong": 9943,
+          "disagreement_predictions": 0
+        }
+      },
+      "task_conditions": 500
+    },
+    "eurosat_eurosat": {
+      "accuracy_pct": {
+        "original_r2": 74.12266666666667,
+        "mean_r2": 76.32533333333333,
+        "mean_CS_l2": 76.03466666666667,
+        "score_ensemble_r2": 76.01066666666667,
+        "augmented_support_ridge": 72.15733333333333,
+        "mean_logistic_C1": 70.232,
+        "mean_logistic_C10": 71.20533333333333,
+        "scatter_blend": 79.696,
+        "query_consistency": 79.696
+      },
+      "comparisons": {
+        "original_r2": {
+          "delta_pp": 5.573333333333333,
+          "candidate_only_correct": 3185,
+          "control_only_correct": 1095,
+          "both_wrong": 6519,
+          "disagreement_predictions": 5130
+        },
+        "mean_r2": {
+          "delta_pp": 3.370666666666667,
+          "candidate_only_correct": 1964,
+          "control_only_correct": 700,
+          "both_wrong": 6914,
+          "disagreement_predictions": 3232
+        },
+        "mean_CS_l2": {
+          "delta_pp": 3.6613333333333338,
+          "candidate_only_correct": 2105,
+          "control_only_correct": 732,
+          "both_wrong": 6882,
+          "disagreement_predictions": 3431
+        },
+        "score_ensemble_r2": {
+          "delta_pp": 3.6853333333333342,
+          "candidate_only_correct": 2047,
+          "control_only_correct": 665,
+          "both_wrong": 6949,
+          "disagreement_predictions": 3276
+        },
+        "augmented_support_ridge": {
+          "delta_pp": 7.538666666666667,
+          "candidate_only_correct": 3458,
+          "control_only_correct": 631,
+          "both_wrong": 6983,
+          "disagreement_predictions": 4824
+        },
+        "mean_logistic_C1": {
+          "delta_pp": 9.464,
+          "candidate_only_correct": 4187,
+          "control_only_correct": 638,
+          "both_wrong": 6976,
+          "disagreement_predictions": 5668
+        },
+        "mean_logistic_C10": {
+          "delta_pp": 8.490666666666668,
+          "candidate_only_correct": 3926,
+          "control_only_correct": 742,
+          "both_wrong": 6872,
+          "disagreement_predictions": 5540
+        },
+        "scatter_blend": {
+          "delta_pp": 0.0,
+          "candidate_only_correct": 0,
+          "control_only_correct": 0,
+          "both_wrong": 7614,
+          "disagreement_predictions": 0
+        }
+      },
+      "task_conditions": 500
+    }
+  },
+  "input_sha256": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k1.npz": "3cff1d7011365e0d986fe91045a4924290c5e028eb08c870e27c58dd09c8f456",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_dtd.npz": "f1eb4c27bb6efe273a005900dfde32dfe177ccd779d2cae70c018fa501f83773",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k1.npz": "3444b1faf3e10bc4db38ebad51126439a7c6c389aa40746d4c1d36071c5fc8d2",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_eurosat.npz": "7284378158390122200c30cbd13f492f542acddd8cd1da8c1121531b02b02991",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz": "68d31492e8e8d1b9f5ab4b58a1c7db0e5fbd5bbe09300293828cad091abf7f4b",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_dtd.npz": "7ae5fdbecb839fb38dbcc63349b90327ff11dbfa92ee1e11d37c502b9ffd9623",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz": "d4c12f280c005fcf6219e5c1cd2bbae1ed55e81a6b79bb10c23152253461516f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_eurosat.npz": "ac84bcf58ca83944c7d1d6239ea881f8b892f5998af75edb90d0ba8a6054de39"
+  },
+  "bank_count": 8,
+  "task_condition_joins": 2000,
+  "distinct_episodes": 1000,
+  "gallery_independent_controls_equal": true
+}

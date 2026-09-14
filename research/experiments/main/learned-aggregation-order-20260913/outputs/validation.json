@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "max_numpy_score_error": 3.497202527569243e-15,
+  "max_gradient_error": 2.6630510574499056e-09,
+  "identity_null": true,
+  "linear_commutation": true,
+  "repeated_view_limit": true,
+  "query_independence": true,
+  "class_view_permutation": true,
+  "disjoint_task_counts": {
+    "dtd_k1": {
+      "train": 100,
+      "selection": 100,
+      "eval": 500
+    },
+    "dtd_k5": {
+      "train": 100,
+      "selection": 100,
+      "eval": 500
+    },
+    "eurosat_k1": {
+      "train": 100,
+      "selection": 100,
+      "eval": 500
+    },
+    "eurosat_k5": {
+      "train": 100,
+      "selection": 100,
+      "eval": 500
+    }
+  },
+  "parameters": 57344,
+  "source_timing": [
+    {
+      "mode": "map_before_mean",
+      "seconds_per_forward_backward": 0.014231610298156738,
+      "batch_size": 5
+    },
+    {
+      "mode": "map_after_mean",
+      "seconds_per_forward_backward": 0.006726813316345215,
+      "batch_size": 5
+    }
+  ]
+}

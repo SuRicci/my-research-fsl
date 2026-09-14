@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "checkpoint_rank_checks": 72,
+  "full_selected_source_prediction_checks": 270000,
+  "eval_prediction_arithmetic_checks": 1350000,
+  "independent_selected_model_checks": [
+    {
+      "configuration": "dtd_26091441_mean_feature",
+      "max_error": 8.604228440844963e-16
+    },
+    {
+      "configuration": "dtd_26091441_mean_view",
+      "max_error": 8.326672684688674e-16
+    },
+    {
+      "configuration": "dtd_26091441_max_view",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "configuration": "dtd_26091442_mean_feature",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "configuration": "dtd_26091442_mean_view",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "configuration": "dtd_26091442_max_view",
+      "max_error": 7.771561172376096e-16
+    },
+    {
+      "configuration": "dtd_26091443_mean_feature",
+      "max_error": 1.1657341758564144e-15
+    },
+    {
+      "configuration": "dtd_26091443_mean_view",
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "configuration": "dtd_26091443_max_view",
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "configuration": "eurosat_26091441_mean_feature",
+      "max_error": 1.942890293094024e-15
+    },
+    {
+      "configuration": "eurosat_26091441_mean_view",
+      "max_error": 1.304512053934559e-15
+    },
+    {
+      "configuration": "eurosat_26091441_max_view",
+      "max_error": 1.9984014443252818e-15
+    },
+    {
+      "configuration": "eurosat_26091442_mean_feature",
+      "max_error": 1.887379141862766e-15
+    },
+    {
+      "configuration": "eurosat_26091442_mean_view",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "configuration": "eurosat_26091442_max_view",
+      "max_error": 1.6653345369377348e-15
+    },
+    {
+      "configuration": "eurosat_26091443_mean_feature",
+      "max_error": 1.3739009929736312e-15
+    },
+    {
+      "configuration": "eurosat_26091443_mean_view",
+      "max_error": 1.5543122344752192e-15
+    },
+    {
+      "configuration": "eurosat_26091443_max_view",
+      "max_error": 2.067790383364354e-15
+    }
+  ],
+  "independent_target_model_checks": 36,
+  "max_target_error": 1.0547118733938987e-15,
+  "independent_primary_intervals": 8,
+  "scope": "all saved predictions/statistics; independent equations on selected source/target samples; conditional development only"
+}

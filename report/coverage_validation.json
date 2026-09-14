@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-09-14T09:23:08.246003+00:00",
+  "direction_count": 45,
+  "main_directory_count": 32,
+  "all_main_directories_covered": true,
+  "missing_main_directories": [],
+  "ledger_items": 42,
+  "all_ledger_items_covered": true,
+  "extra_measured_entries": [
+    "dino-residual-20260913",
+    "dino-reconstruction-20260913",
+    "dino-base-control-20260914"
+  ],
+  "each_direction_has_result_advantage_limit_question": true,
+  "all_directions_have_existing_evidence": true,
+  "chars": 26749,
+  "cleanup_protected_hash_mismatches": 0
+}

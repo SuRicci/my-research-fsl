@@ -1,0 +1,130 @@
+{
+  "status": "passed",
+  "parent_endpoint_task_checks": 4000,
+  "independent_blend_score_checks": 20,
+  "max_score_error": 9.756084828893563e-15,
+  "score_sum_one": true,
+  "checks": [
+    {
+      "domain": "eurosat",
+      "gallery": "eurosat",
+      "task": 0,
+      "max_error": 9.756084828893563e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "dtd",
+      "task": 0,
+      "max_error": 8.493206138382448e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "eurosat",
+      "task": 100,
+      "max_error": 3.858025010572419e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "dtd",
+      "task": 100,
+      "max_error": 6.6058269965196814e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "eurosat",
+      "task": 200,
+      "max_error": 4.884981308350689e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "dtd",
+      "task": 200,
+      "max_error": 6.022959908591474e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "eurosat",
+      "task": 300,
+      "max_error": 6.647460359943125e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "dtd",
+      "task": 300,
+      "max_error": 7.743805596760467e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "eurosat",
+      "task": 400,
+      "max_error": 6.827871601444713e-15
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "dtd",
+      "task": 400,
+      "max_error": 6.827871601444713e-15
+    },
+    {
+      "domain": "dtd",
+      "gallery": "dtd",
+      "task": 0,
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "eurosat",
+      "task": 0,
+      "max_error": 1.0547118733938987e-15
+    },
+    {
+      "domain": "dtd",
+      "gallery": "dtd",
+      "task": 100,
+      "max_error": 9.159339953157541e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "eurosat",
+      "task": 100,
+      "max_error": 1.0269562977782698e-15
+    },
+    {
+      "domain": "dtd",
+      "gallery": "dtd",
+      "task": 200,
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "eurosat",
+      "task": 200,
+      "max_error": 7.91033905045424e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "dtd",
+      "task": 300,
+      "max_error": 8.743006318923108e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "eurosat",
+      "task": 300,
+      "max_error": 1.27675647831893e-15
+    },
+    {
+      "domain": "dtd",
+      "gallery": "dtd",
+      "task": 400,
+      "max_error": 6.106226635438361e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "eurosat",
+      "task": 400,
+      "max_error": 6.938893903907228e-16
+    }
+  ],
+  "statistics": "same already-independently-audited pairedbootstrap helper; all means recomputed from fullprediction arrays"
+}

@@ -1,0 +1,71 @@
+{
+  "1": {
+    "control": {
+      "family": "uniform",
+      "w": 0.25,
+      "r": 64,
+      "mix": 0.5,
+      "name": "uniform_0.25_64_0.5___"
+    },
+    "candidate": {
+      "family": "retrieval_ridge",
+      "w": 0.5,
+      "r": 64,
+      "mix": 0.5,
+      "lam": 0.1,
+      "name": "retrieval_ridge_0.5_64_0.5___0.1"
+    },
+    "overall": {
+      "family": "retrieval_ridge",
+      "w": 0.5,
+      "r": 64,
+      "mix": 0.5,
+      "lam": 0.1,
+      "name": "retrieval_ridge_0.5_64_0.5___0.1"
+    },
+    "single_dino": {
+      "family": "kernel_residual",
+      "w": 0.0,
+      "r": 64,
+      "mix": 0.75,
+      "beta": 10.0,
+      "name": "kernel_residual_0.0_64_0.75__10.0_"
+    },
+    "dev_control": 0.8585333333333334,
+    "dev_candidate": 0.8621833333333333,
+    "dev_overall": 0.8621833333333333,
+    "dev_single_dino": 0.8569166666666667
+  },
+  "5": {
+    "control": {
+      "family": "raw_ridge",
+      "w": 0.5,
+      "lam": 1.0,
+      "name": "raw_ridge_0.5_____1.0"
+    },
+    "candidate": {
+      "family": "kernel_residual",
+      "w": 0.5,
+      "r": 64,
+      "mix": 0.25,
+      "beta": 20.0,
+      "name": "kernel_residual_0.5_64_0.25__20.0_"
+    },
+    "overall": {
+      "family": "raw_ridge",
+      "w": 0.5,
+      "lam": 1.0,
+      "name": "raw_ridge_0.5_____1.0"
+    },
+    "single_dino": {
+      "family": "raw_ridge",
+      "w": 0.0,
+      "lam": 1.0,
+      "name": "raw_ridge_0.0_____1.0"
+    },
+    "dev_control": 0.9496833333333334,
+    "dev_candidate": 0.9487666666666666,
+    "dev_overall": 0.9496833333333334,
+    "dev_single_dino": 0.9441166666666667
+  }
+}

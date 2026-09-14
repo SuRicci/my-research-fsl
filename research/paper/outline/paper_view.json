@@ -1,0 +1,385 @@
+{
+  "paper_type": "technical_note",
+  "outline_maturity": "early",
+  "working_title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+  "story_spine": {
+    "problem": "Independent unlabeled galleries can contain many classes outside a few-shot episode.",
+    "gap": "Open-set weighting can rank relevant samples well without ensuring that the total retained contribution of irrelevant samples is small.",
+    "method": "Evaluate a gallery-only transfer of established open-set prototype fitting, decompose its final averaging coefficients, and intervene separately on gallery mass and class composition.",
+    "main_result": "The source-default transfer underperforms strong local controls in two image-disjoint Pets pools; high inlier ranking quality coexists with dominant task-external weight.",
+    "scope_limit": "One target dataset, one frozen feature fusion, two gallery sources and fixed source defaults. The interventions are retrospective and oracle composition uses unavailable labels."
+  },
+  "narrative_strategy": {
+    "paper_archetype": null,
+    "central_thesis": "In a controlled gallery-only transfer of open-set prototype fitting, good inlier ranking can coexist with harmful accumulated weight from task-external samples.",
+    "central_insight": "The aggregate mass and composition retained by a prototype update must be examined separately from ranking quality.",
+    "reader_takeaway": "Evaluate relevance scores, total retained weight and strong classifier controls jointly before treating an unlabeled gallery as beneficial.",
+    "story_moves": [],
+    "interpretive_leaps": [],
+    "reader_should_learn": []
+  },
+  "insight_ladder": [
+    {
+      "level": "Observed performance -> scope",
+      "statement": "Source-default transfer fails a strong-control qualification even though it improves on closed-set fitting.",
+      "evidence": [
+        "oslo-gallery-pets-20260913"
+      ],
+      "claim_links": [
+        "C1"
+      ],
+      "risk": "A restricted transfer cannot stand in for the source method's original benchmark."
+    },
+    {
+      "level": "Observed weights -> interpretation",
+      "statement": "Ranking separation and total contaminant weight answer different questions.",
+      "evidence": [
+        "oslo-retained-influence"
+      ],
+      "claim_links": [
+        "C2"
+      ],
+      "risk": "Averaging coefficients do not measure causal or directional importance."
+    },
+    {
+      "level": "Intervention -> bounded explanation",
+      "statement": "Changing final mass reduces mismatch harm while class composition retains explanatory value.",
+      "evidence": [
+        "oslo-final-step-counterfactual"
+      ],
+      "claim_links": [
+        "C3"
+      ],
+      "risk": "Post hoc interventions do not qualify a new algorithm."
+    }
+  ],
+  "positioning": {
+    "closest_neighbor": "OSLO open-set transductive few-shot learning; local retrieval-weighted and support-centered classifiers.",
+    "novelty_boundary": "A scoped empirical failure analysis of a restricted gallery-only transfer. The original objective, inlier weighting, prototype fitting and centering are established components.",
+    "why_not_prior_work": null,
+    "not_claiming": [
+      "A new learning algorithm or state-of-the-art performance",
+      "A failure of original transductive OSLO",
+      "Independent-domain generalization",
+      "A deployable oracle filter or a theoretical accuracy ceiling"
+    ]
+  },
+  "evidence_grounding": {
+    "observed_facts": [
+      "OSLO_G is below R2 in all eight cells, including paired negative matched one-shot effects in both pools.",
+      "Mean matched one-shot inlier AUROC is about 0.93 but about 80% of gallery weight remains on task-external classes.",
+      "Mass balancing largely rescues mismatch but still loses matched one-shot; privileged composition filtering improves matched one-shot.",
+      "Separate source calibration failed its bidirectional gate and matched the same-mass control at prediction level."
+    ],
+    "allowed_interpretations": [
+      "Total retained mass can remain harmful despite favorable inlier ranking.",
+      "Mass and composition have distinguishable effects in this constrained final-step diagnostic."
+    ],
+    "must_not_claim": [
+      "New algorithm",
+      "Universal superiority or robustness",
+      "Original OSLO benchmark reproduction",
+      "Independent-domain confirmation",
+      "Deployable oracle membership",
+      "Causal directional importance from scalar averaging coefficients"
+    ],
+    "evidence_gaps": [
+      "No prospective admissible remedy",
+      "No second target dataset for OSLO transfer",
+      "No near-duplicate or pretraining-overlap audit",
+      "No independent sampling uncertainty over domains",
+      "No broad hyperparameter or gallery-size sensitivity"
+    ]
+  },
+  "core_claims": [
+    {
+      "claim_id": "C1",
+      "claim": "With fixed source defaults, gallery-only open-set fitting does not improve over R2 in the evaluated Pets conditions.",
+      "scope": "Eight cells across two fixed, image-disjoint same-domain pools, matched or DTD galleries and one or five support examples per class.",
+      "evidence_needed": [
+        "oslo-gallery-pets-20260913"
+      ],
+      "what_would_falsify_it": "A reproducible positive paired effect over R2 in an asserted cell, or a source/identity/permission mismatch invalidating the comparison."
+    },
+    {
+      "claim_id": "C2",
+      "claim": "Strong inlier ranking coexists with substantial total task-external gallery weight in the evaluated matched-gallery transfer.",
+      "scope": "Final fitted weights under the source-default gallery transfer; conditional descriptive statistics.",
+      "evidence_needed": [
+        "oslo-retained-influence"
+      ],
+      "what_would_falsify_it": "Incorrect class membership or weight accounting, failed prediction replay, or negligible retained external mass in these conditions."
+    },
+    {
+      "claim_id": "C3",
+      "claim": "Final-step mass balancing alleviates mismatch degradation but does not close the matched one-shot gap; privileged composition removal gives a separate diagnostic gain.",
+      "scope": "Retrospective interventions with earlier fitted weights and feature geometry held fixed.",
+      "evidence_needed": [
+        "oslo-final-step-counterfactual"
+      ],
+      "what_would_falsify_it": "Mass balancing closes the matched one-shot strong-control gap, oracle filtering gives no diagnostic gain, or original predictions fail exact replay."
+    },
+    {
+      "claim_id": "C4",
+      "claim": "A fixed source-trained membership calibrator with prior correction fails the two-direction development-transfer gate and yields no prediction benefit over a same-mass control.",
+      "scope": "Frozen features; historically exposed DTD and EuroSAT pools; paired one- and five-shot conditions. Separate from the OSLO experiment.",
+      "evidence_needed": [
+        "prior-calibration-source-transfer"
+      ],
+      "what_would_falsify_it": "Different same-mass predictions or a reproducible paired gate pass under the locked protocol, or an invalid source/task comparison."
+    }
+  ],
+  "method_abstraction": {
+    "paper_name": "Gallery-only OSLO transfer",
+    "intuition": "Adapt class prototypes using labeled support and an independent unlabeled gallery, while keeping test queries outside fitting.",
+    "mechanism_steps": [
+      "Initialize prototypes from labeled support in frozen fused feature space.",
+      "Alternate established soft class assignments, latent inlier weights and prototype updates using support and gallery only.",
+      "Classify each held-out query independently with fixed fitted prototypes.",
+      "Inspect final weight mass and apply retrospective mass or oracle-composition interventions for explanation."
+    ],
+    "appendix_only_details": [
+      "Source code hashes, exact commands and array provenance",
+      "Source-default hyperparameters and task seeds"
+    ],
+    "forbidden_main_text_terms": [
+      "worktree",
+      "quest",
+      "run_id",
+      "selected_outline"
+    ]
+  },
+  "evaluation_plan": {
+    "setting": "Five-way inductive classification with independent unlabeled gallery adaptation and frozen encoders.",
+    "datasets_or_benchmarks": [
+      "Oxford-IIIT Pets original fixed image pool",
+      "Oxford-IIIT Pets prospective image-disjoint confirmation pool",
+      "DTD as a mismatched gallery"
+    ],
+    "baselines": [
+      "R2 local retrieval-weighted classifier",
+      "CS_l2 support-centered control",
+      "Support-only multinomial logistic regression with fixed C1 and C10",
+      "Closed-set prototype fitting",
+      "Zero prototype update"
+    ],
+    "metrics": [
+      "Classification accuracy",
+      "Paired task-bootstrap accuracy difference and 95% interval",
+      "Final gallery averaging coefficient",
+      "Task-external fraction of retained gallery weight",
+      "Inlier ranking AUROC"
+    ],
+    "controlled_factors": [
+      "Frozen CLIP and DINO features with fixed fusion",
+      "Identical support/query task identities and seeds",
+      "No query adaptation or gallery-label use in eligible methods",
+      "Source defaults frozen before confirmation feature extraction",
+      "Intervals conditional on fixed pools, not domain sampling"
+    ]
+  },
+  "analysis_plan": [
+    {
+      "analysis_id": "A1",
+      "title": "Strong controls and source ablations",
+      "analysis_role": "stronger-baseline comparison",
+      "reviewer_question": "Does improvement survive closed-set, zero-update and strong local controls?",
+      "claim_links": [
+        "C1"
+      ],
+      "target_display": "Table 1: all eight cells and paired comparisons",
+      "main_or_appendix": "main_text",
+      "failure_interpretation": "Reject an improvement claim if strong controls are not exceeded."
+    },
+    {
+      "analysis_id": "A2",
+      "title": "Image-disjoint confirmation and condition breakdown",
+      "analysis_role": "robustness or sensitivity",
+      "reviewer_question": "Does the result persist on distinct images and both support regimes?",
+      "claim_links": [
+        "C1"
+      ],
+      "target_display": "Table 1 plus appendix seed and breed breakdown",
+      "main_or_appendix": "appendix",
+      "failure_interpretation": "Limit the claim to conditions that survive; distinct images do not establish a new domain."
+    },
+    {
+      "analysis_id": "A3",
+      "title": "Ranking versus accumulated weight",
+      "analysis_role": "mechanism or attribution check",
+      "reviewer_question": "Do relevance rankings control the aggregate contribution of task-external samples?",
+      "claim_links": [
+        "C2"
+      ],
+      "target_display": "Table 2: ranking and retained weight across eight cells",
+      "main_or_appendix": "main_text",
+      "failure_interpretation": "Reduce the explanation if label accounting or algebraic replay fails."
+    },
+    {
+      "analysis_id": "A4",
+      "title": "Mass versus composition intervention",
+      "analysis_role": "limitation or residual headroom analysis",
+      "reviewer_question": "Can a final mass correction explain the failure without privileged information?",
+      "claim_links": [
+        "C3"
+      ],
+      "target_display": "Table 3: retrospective mass and oracle-composition interventions",
+      "main_or_appendix": "main_text",
+      "failure_interpretation": "Keep the intervention diagnostic and decline a new-method claim."
+    },
+    {
+      "analysis_id": "A5",
+      "title": "Source calibration under domain shift",
+      "analysis_role": "limitation or residual headroom analysis",
+      "reviewer_question": "Does prior-corrected membership transfer beyond a scalar gallery influence control?",
+      "claim_links": [
+        "C4"
+      ],
+      "target_display": "Appendix tables: paired transfer differences and all eight accuracy conditions",
+      "main_or_appendix": "appendix",
+      "failure_interpretation": "Decline a general calibrated-remedy claim; retain the development boundary."
+    }
+  ],
+  "reviewer_objections": [
+    {
+      "objection": "The task differs from original OSLO.",
+      "answer_route": "limitation",
+      "linked_claims": [
+        "C1"
+      ],
+      "needed_evidence": [
+        "oslo-gallery-pets-20260913"
+      ]
+    },
+    {
+      "objection": "The same target dataset and exposed diagnostic pool restrict generalization.",
+      "answer_route": "claim_downgrade",
+      "linked_claims": [
+        "C1",
+        "C3"
+      ],
+      "needed_evidence": [
+        "oslo-gallery-pets-20260913",
+        "oslo-final-step-counterfactual"
+      ]
+    },
+    {
+      "objection": "High ranking quality says nothing about calibrated probabilities or causal influence.",
+      "answer_route": "writing",
+      "linked_claims": [
+        "C2"
+      ],
+      "needed_evidence": [
+        "oslo-retained-influence"
+      ]
+    },
+    {
+      "objection": "Oracle labels and post hoc interventions cannot establish an admissible improved method.",
+      "answer_route": "limitation",
+      "linked_claims": [
+        "C3"
+      ],
+      "needed_evidence": [
+        "oslo-final-step-counterfactual"
+      ]
+    }
+  ],
+  "analysis_budget_waiver": "Early technical note: five analysis questions use four measured evidence groups. A1 and A2 share the original main result. The fourth group is exposed-development calibration transfer, not an independent target confirmation or new OSLO dataset. No novel remedy or submission claim.",
+  "section_plan": [
+    {
+      "section_id": "introduction",
+      "title": "Introduction",
+      "paper_role": "main_text",
+      "claims": [],
+      "writing_job": "Introduction",
+      "status": "planned"
+    },
+    {
+      "section_id": "method",
+      "title": "Gallery-only prototype fitting",
+      "paper_role": "main_text",
+      "claims": [],
+      "writing_job": "Gallery-only prototype fitting",
+      "status": "planned"
+    },
+    {
+      "section_id": "evaluation",
+      "title": "Evaluation protocol",
+      "paper_role": "main_text",
+      "claims": [],
+      "writing_job": "Evaluation protocol",
+      "status": "planned"
+    },
+    {
+      "section_id": "results",
+      "title": "Qualification against strong controls",
+      "paper_role": "main_text",
+      "claims": [
+        "C1"
+      ],
+      "writing_job": "Qualification against strong controls",
+      "status": "planned"
+    },
+    {
+      "section_id": "influence",
+      "title": "Ranking and accumulated gallery weight",
+      "paper_role": "main_text",
+      "claims": [
+        "C2"
+      ],
+      "writing_job": "Ranking and accumulated gallery weight",
+      "status": "planned"
+    },
+    {
+      "section_id": "interventions",
+      "title": "Mass and composition interventions",
+      "paper_role": "main_text",
+      "claims": [
+        "C3"
+      ],
+      "writing_job": "Mass and composition interventions",
+      "status": "planned"
+    },
+    {
+      "section_id": "limitations",
+      "title": "Limitations",
+      "paper_role": "main_text",
+      "claims": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "writing_job": "Limitations",
+      "status": "planned"
+    },
+    {
+      "section_id": "conclusion",
+      "title": "Conclusion",
+      "paper_role": "main_text",
+      "claims": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "writing_job": "Conclusion",
+      "status": "planned"
+    },
+    {
+      "section_id": "calibration_transfer",
+      "title": "Source calibration under domain shift",
+      "paper_role": "appendix",
+      "claims": [
+        "C4"
+      ],
+      "writing_job": null,
+      "status": "ready"
+    }
+  ],
+  "terminology_map": {},
+  "forbidden_main_text_terms": [
+    "worktree",
+    "quest",
+    "run_id",
+    "selected_outline"
+  ]
+}

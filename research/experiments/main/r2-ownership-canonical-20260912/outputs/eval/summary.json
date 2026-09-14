@@ -1,0 +1,80 @@
+{
+  "dtd_matched_1shot_accuracy": {
+    "r2": 76.86266666666667,
+    "support_proto": 73.20533333333333,
+    "ownership": 76.98533333333333,
+    "count_nearest": 76.832,
+    "count_random": 76.93466666666666,
+    "mass_only": 75.84666666666668,
+    "exclusive_mass": 75.98533333333334,
+    "centered_ownership": 76.87733333333333,
+    "r2_tuned": 77.00133333333333,
+    "centered_r2": 76.87333333333333,
+    "support_tuned": 74.032
+  },
+  "dtd_mismatched_1shot_accuracy": {
+    "r2": 74.07866666666666,
+    "support_proto": 73.20533333333333,
+    "ownership": 73.92,
+    "count_nearest": 73.98800000000001,
+    "count_random": 73.91066666666667,
+    "mass_only": 73.88000000000001,
+    "exclusive_mass": 73.88933333333333,
+    "centered_ownership": 73.956,
+    "r2_tuned": 74.072,
+    "centered_r2": 73.87066666666668,
+    "support_tuned": 74.032
+  },
+  "dtd_5shot_accuracy": {
+    "ownership": 89.98133333333332,
+    "count_nearest": 89.98133333333332,
+    "count_random": 89.98133333333332,
+    "mass_only": 89.98133333333332,
+    "exclusive_mass": 89.98133333333332,
+    "centered_ownership": 89.952,
+    "r2_tuned": 89.98133333333332,
+    "centered_r2": 89.952,
+    "support_tuned": 89.98133333333332,
+    "r2": 89.98133333333332,
+    "support_proto": 89.37066666666668
+  },
+  "eurosat_mismatched_1shot_accuracy": {
+    "r2": 66.11733333333333,
+    "support_proto": 67.61866666666667,
+    "ownership": 65.76933333333334,
+    "count_nearest": 64.85066666666667,
+    "count_random": 65.18133333333334,
+    "mass_only": 67.732,
+    "exclusive_mass": 67.58933333333333,
+    "centered_ownership": 66.86666666666667,
+    "r2_tuned": 65.67466666666667,
+    "centered_r2": 68.124,
+    "support_tuned": 68.71066666666667
+  },
+  "eurosat_matched_1shot_accuracy": {
+    "r2": 74.03466666666667,
+    "support_proto": 67.61866666666667,
+    "ownership": 74.46533333333333,
+    "count_nearest": 73.892,
+    "count_random": 74.02533333333334,
+    "mass_only": 72.78533333333333,
+    "exclusive_mass": 72.832,
+    "centered_ownership": 73.65333333333332,
+    "r2_tuned": 74.47733333333333,
+    "centered_r2": 73.66533333333334,
+    "support_tuned": 68.71066666666667
+  },
+  "eurosat_5shot_accuracy": {
+    "ownership": 86.80799999999999,
+    "count_nearest": 86.80799999999999,
+    "count_random": 86.80799999999999,
+    "mass_only": 86.80799999999999,
+    "exclusive_mass": 86.80799999999999,
+    "centered_ownership": 88.21066666666665,
+    "r2_tuned": 86.80799999999999,
+    "centered_r2": 88.21066666666665,
+    "support_tuned": 86.80799999999999,
+    "r2": 86.80799999999999,
+    "support_proto": 85.06266666666666
+  }
+}

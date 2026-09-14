@@ -1,0 +1,15 @@
+{
+  "gamma": 1.0,
+  "gamma_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "mean_accuracy": [
+    0.9139999999999985,
+    0.9159999999999983,
+    0.9141538461538445
+  ],
+  "selection_domain": "eurosat",
+  "target_outcomes_used": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "documented_incidental_validation_refresh",
+  "failed_import_session": "bash-78e7b91d",
+  "file": "experiments/main/utility-composition-qualification-20260913/outputs/validation.json",
+  "current_sha256": "61d56b5bf262b62f98b65a825994d1d56d1212c36d1352f1682e9a1f6ad698a7",
+  "prior_byte_equality": "not established; output is untracked and no pre-import hash was captured",
+  "effect": "Legacy audit reads historical outputs and rewrites its validation.json only; it reported passed. No legacy model, prediction, protocol or data write exists in that script. New study now uses explicit audit path. Do not represent refreshed file timestamp as the original validation time."
+}

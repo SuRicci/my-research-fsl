@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-09-13T03:24:51.435484+00:00",
+  "session_id": "bash-4927f933",
+  "status": "healthy_running",
+  "prior_progress": {
+    "status": "running",
+    "backbone": "clip_vitb16",
+    "pool": "eurosat_query",
+    "images_done": 2592,
+    "pool_size": 5400,
+    "elapsed_seconds": 1453.8962528705597,
+    "free_gib": 11.684814453125
+  },
+  "current_progress": {
+    "status": "running",
+    "backbone": "clip_vitb16",
+    "pool": "eurosat_query",
+    "images_done": 4768,
+    "pool_size": 5400,
+    "elapsed_seconds": 2002.045783996582,
+    "free_gib": 11.448341369628906
+  },
+  "manifest_status": "running",
+  "complete_cache_count": 2,
+  "expected_cache_count": 8,
+  "inventory_file_count": 153,
+  "inventory_logical_bytes": 46882332,
+  "free_gib": 11.448532104492188,
+  "disk_floor_gib": 10,
+  "final_feature_tensor_bytes_expected": 126810880,
+  "largest_concurrent_final_and_chunk_duplicate_bytes": 27648000,
+  "additional_storage_budget_gib": 0.5,
+  "conservative_remaining_budget_gib": 0.45633742585778236,
+  "floor_margin_exceeds_remaining_budget": true,
+  "completed_pool_chunk_dirs_absent": {
+    "dtd_query_clip_vitb16": true,
+    "dtd_gallery_clip_vitb16": true
+  },
+  "cleanup_evidence": "extract_views.py verifies each chunk against retained final tensor before rmtree; completed pool chunk directories absent in this snapshot. This pass performs no deletions.",
+  "manual_cleanup_bytes": 0,
+  "scope": "Resource inventory and process progress only. Cache integrity remains limited to prior audit; no new accuracy or full encoding claim. External disk use may change independently.",
+  "next_action": "Supervise same session at approximately 240s cadence; on completed manifest run audit_caches.py and require encoding_complete=true before evaluate.py --phase run."
+}

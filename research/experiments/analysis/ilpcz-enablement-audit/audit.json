@@ -1,0 +1,190 @@
+{
+  "kind": "descriptive_saved_output_audit",
+  "created_at": "2026-09-12T18:55:11.082204+00:00",
+  "scope": "Already seen pools/tasks; no fitted gate, threshold or new prediction method. Oracle switching uses unavailable query labels and is a non-deployable upper bound.",
+  "development": {
+    "dtd_dtd_k1": {
+      "tasks": 200,
+      "ilpcz_accuracy_percent": 72.47333333333333,
+      "r2_accuracy_percent": 80.50666666666667,
+      "delta_pp": -8.033333333333333,
+      "win_tasks": 41,
+      "tie_tasks": 10,
+      "loss_tasks": 149,
+      "per_seed_delta_pp": {
+        "26091101": -8.813333333333333,
+        "26091102": -7.253333333333333
+      },
+      "median_selected_gallery_count": 1775.0,
+      "oracle_switch_upper_bound_pp": 1.16
+    },
+    "dtd_eurosat_k1": {
+      "tasks": 200,
+      "ilpcz_accuracy_percent": 39.06666666666666,
+      "r2_accuracy_percent": 75.08666666666666,
+      "delta_pp": -36.02,
+      "win_tasks": 1,
+      "tie_tasks": 0,
+      "loss_tasks": 199,
+      "per_seed_delta_pp": {
+        "26091101": -35.18666666666667,
+        "26091102": -36.85333333333333
+      },
+      "median_selected_gallery_count": 4595.0,
+      "oracle_switch_upper_bound_pp": 0.006666666666666714
+    },
+    "dtd_dtd_k5": {
+      "tasks": 200,
+      "ilpcz_accuracy_percent": 82.61333333333334,
+      "r2_accuracy_percent": 91.03333333333332,
+      "delta_pp": -8.42,
+      "win_tasks": 10,
+      "tie_tasks": 11,
+      "loss_tasks": 179,
+      "per_seed_delta_pp": {
+        "26091101": -8.72,
+        "26091102": -8.120000000000001
+      },
+      "median_selected_gallery_count": 1787.5,
+      "oracle_switch_upper_bound_pp": 0.1
+    }
+  },
+  "evaluation": {
+    "dtd_dtd_k1": {
+      "tasks": 1000,
+      "ilpcz_accuracy_percent": 69.20533333333333,
+      "r2_accuracy_percent": 76.86266666666667,
+      "delta_pp": -7.657333333333333,
+      "win_tasks": 220,
+      "tie_tasks": 45,
+      "loss_tasks": 735,
+      "per_seed_delta_pp": {
+        "26091201": -6.613333333333332,
+        "26091202": -8.913333333333332,
+        "26091203": -8.233333333333333,
+        "26091204": -5.973333333333333,
+        "26091205": -8.553333333333333
+      },
+      "median_selected_gallery_count": 1790.0
+    },
+    "dtd_eurosat_k1": {
+      "tasks": 1000,
+      "ilpcz_accuracy_percent": 42.76533333333333,
+      "r2_accuracy_percent": 74.07866666666668,
+      "delta_pp": -31.31333333333333,
+      "win_tasks": 1,
+      "tie_tasks": 1,
+      "loss_tasks": 998,
+      "per_seed_delta_pp": {
+        "26091201": -29.73333333333333,
+        "26091202": -32.47333333333333,
+        "26091203": -32.15333333333333,
+        "26091204": -31.06666666666667,
+        "26091205": -31.14
+      },
+      "median_selected_gallery_count": 4655.0
+    },
+    "dtd_dtd_k5": {
+      "tasks": 1000,
+      "ilpcz_accuracy_percent": 78.58,
+      "r2_accuracy_percent": 89.98133333333332,
+      "delta_pp": -11.401333333333334,
+      "win_tasks": 32,
+      "tie_tasks": 26,
+      "loss_tasks": 942,
+      "per_seed_delta_pp": {
+        "26091201": -10.673333333333336,
+        "26091202": -12.193333333333335,
+        "26091203": -11.473333333333334,
+        "26091204": -12.4,
+        "26091205": -10.266666666666666
+      },
+      "median_selected_gallery_count": 1790.0
+    },
+    "eurosat_dtd_k1": {
+      "tasks": 1000,
+      "ilpcz_accuracy_percent": 41.90533333333333,
+      "r2_accuracy_percent": 66.11733333333333,
+      "delta_pp": -24.212,
+      "win_tasks": 16,
+      "tie_tasks": 8,
+      "loss_tasks": 976,
+      "per_seed_delta_pp": {
+        "26091201": -24.15333333333333,
+        "26091202": -23.77333333333333,
+        "26091203": -24.693333333333335,
+        "26091204": -23.54,
+        "26091205": -24.9
+      },
+      "median_selected_gallery_count": 1805.0
+    },
+    "eurosat_eurosat_k1": {
+      "tasks": 1000,
+      "ilpcz_accuracy_percent": 87.68266666666666,
+      "r2_accuracy_percent": 74.03466666666665,
+      "delta_pp": 13.648,
+      "win_tasks": 894,
+      "tie_tasks": 20,
+      "loss_tasks": 86,
+      "per_seed_delta_pp": {
+        "26091201": 14.22,
+        "26091202": 12.553333333333335,
+        "26091203": 13.266666666666667,
+        "26091204": 14.006666666666668,
+        "26091205": 14.193333333333335
+      },
+      "median_selected_gallery_count": 4640.0
+    },
+    "eurosat_eurosat_k5": {
+      "tasks": 1000,
+      "ilpcz_accuracy_percent": 91.776,
+      "r2_accuracy_percent": 86.808,
+      "delta_pp": 4.968000000000001,
+      "win_tasks": 811,
+      "tie_tasks": 42,
+      "loss_tasks": 147,
+      "per_seed_delta_pp": {
+        "26091201": 5.106666666666667,
+        "26091202": 4.88,
+        "26091203": 4.906666666666668,
+        "26091204": 4.593333333333335,
+        "26091205": 5.353333333333335
+      },
+      "median_selected_gallery_count": 4655.0
+    }
+  },
+  "source_sha256": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/dev/dtd_dtd_k1_g2.npz": "e9541ca4082738dbcfee22c871618ee6f5a962dfea22ffb9d59034277cc57284",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/dev/dtd_dtd_k1.npz": "6a968308d1e3e079d4b871f3e6467b78cbea22e51becb6a335e9d6951d0dea0f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/dev/dtd_eurosat_k1_g2.npz": "57ecfa054467ef40b12c3898da5a27e98995850847c3e26a5d795752fe0afe04",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/dev/dtd_eurosat_k1.npz": "00b3fa2172873a9f4f46c60c89c35d9c0ae3f866800c716f69723c1e44d108c7",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/dev/dtd_dtd_k5_g2.npz": "ff392017cb080f32e2a5102900758a9f2c30f4a9f7b0be33580493a3e76be971",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/dev/dtd_dtd_k5.npz": "fcc9a0a9b26c44b778a6ee56c9dc3791d67e4cbef9917f1856548360b204007e",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/eval/dtd_dtd_k1_g2.npz": "1b861c4165803be2d60c71ce4d3f7b0a855c4a806baf01c9fed39ba5c3a0886d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/controls/dtd_dtd_k1.npz": "e732c23cca8471e50398abd51fd2fb0f32f982699f18261590211969f83534f6",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/eval/dtd_eurosat_k1_g2.npz": "452b2cc44c9cec3dc933057e2d7c9d7cc330276d34000a3382086b3d134d2573",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/controls/dtd_eurosat_k1.npz": "f0aa927b3b4b104b60b0158079f889c0d33adb21beb038997afe225869bf9d22",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/eval/dtd_dtd_k5_g2.npz": "970c5dbe6583d33694050f94b1462c604cf85e9bd6911370c4ae0105b6854675",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/controls/dtd_dtd_k5.npz": "b18720113b59bdadf4aa56f80dfc8f8ef066c58156895cea426d42bfcc61238c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/eval/eurosat_dtd_k1_g2.npz": "eb18993ae576dfaede379df63482b034aa1c33d87c37b305733d7d824ab9b00f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/controls/eurosat_dtd_k1.npz": "60b526e92917d81d9b23f82cf51d932e4f0a80a874865204369e280750d5ef36",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/eval/eurosat_eurosat_k1_g2.npz": "e8b8ae0843fa30fb3bdfa0ee1dbbeda7a013ab5f51a115576bb29049f1bb9616",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/controls/eurosat_eurosat_k1.npz": "bfd0445158a4a3181049c51e8415f3fd9cc2d30627e28c157ff143d103817260",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/eval/eurosat_eurosat_k5_g2.npz": "b3c645b6e42ec3ff141fee260cb8830c5a0e49cd6547ab4a23bff160dcb1d3cc",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/controls/eurosat_eurosat_k5.npz": "3d2187d86348486e79aca873ce3edc717524c5bf113109f71fe7e025795513a2"
+  },
+  "macro_1shot_per_seed_delta_pp": {
+    "26091201": -11.569999999999999,
+    "26091202": -13.151666666666666,
+    "26091203": -12.953333333333333,
+    "26091204": -11.643333333333333,
+    "26091205": -12.599999999999998
+  },
+  "validated_counts": {
+    "development_cells": 3,
+    "evaluation_cells": 6,
+    "development_cell_tasks": 600,
+    "evaluation_cell_tasks": 6000
+  },
+  "interpretation": "Seed consistency can retain a conditional effect, but task-level benefit frequencies and an oracle upper bound do not prove an observable, transferable selector. Original development is DTD-only; no EuroSAT selector may be tuned from these evaluation effects."
+}

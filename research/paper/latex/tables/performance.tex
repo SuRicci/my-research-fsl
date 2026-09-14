@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Pool / gallery / shot & OSLO$_G$ & Closed & Zero & R2 & CS$_{\ell_2}$ & LR1 & LR10 \\ \midrule
+Original / Pets / 1 & 94.92 & 90.50 & 94.75 & 96.24 & 96.26 & 94.28 & 94.33 \\
+Original / DTD / 1 & 64.19 & 36.93 & 94.40 & 93.93 & 93.96 & 94.28 & 94.33 \\
+Original / Pets / 5 & 97.19 & 94.38 & 98.44 & 98.44 & 98.55 & 98.41 & 98.56 \\
+Original / DTD / 5 & 93.30 & 49.41 & 98.46 & 98.44 & 98.55 & 98.41 & 98.56 \\
+Confirm. / Pets / 1 & 94.87 & 91.70 & 94.22 & 96.02 & 96.05 & 93.73 & 93.74 \\
+Confirm. / DTD / 1 & 63.99 & 38.08 & 93.74 & 93.39 & 93.44 & 93.73 & 93.74 \\
+Confirm. / Pets / 5 & 97.19 & 94.70 & 98.38 & 98.35 & 98.31 & 98.34 & 98.38 \\
+Confirm. / DTD / 5 & 92.98 & 48.76 & 98.35 & 98.35 & 98.31 & 98.34 & 98.38 \\
+\bottomrule\end{tabular}
+\caption{Accuracy (percent) for all conditions, with 500 paired tasks per cell. Confirmation is an image-disjoint pool from the same target dataset. Queries are always Pets images; DTD is the mismatched gallery. Closed removes inlier weighting; Zero retains initial centered support prototypes. LR1 and LR10 are support-only logistic controls with fixed regularization.}\label{tab:performance}
+\end{table}

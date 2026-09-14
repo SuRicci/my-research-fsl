@@ -1,0 +1,11 @@
+{
+  "dtd_cross_bridge32_map": 30.79966784468561,
+  "dtd_cross_bridge64_map": 30.872138376019876,
+  "dtd_matched_bridge32_map": 33.870372279053534,
+  "dtd_matched_bridge64_map": 35.61275445522558,
+  "eurosat_cross_bridge32_map": 58.18865865635002,
+  "eurosat_cross_bridge64_map": 57.47483804331485,
+  "eurosat_matched_bridge32_map": 50.86714179691578,
+  "eurosat_matched_bridge64_map": 46.74916280013905,
+  "macro_map": 43.05434178146304
+}

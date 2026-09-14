@@ -1,0 +1,109 @@
+{
+  "method": "r4_diffusion",
+  "dataset": "roxford",
+  "pair": [
+    "clip_b16",
+    "dino_s14"
+  ],
+  "budget": 64,
+  "seed": 51851,
+  "policy": "landmark_cover",
+  "bridge_ids": [
+    "rparis:gallery:paris_general_002156",
+    "rparis:gallery:paris_general_000101",
+    "rparis:gallery:paris_pantheon_000709",
+    "rparis:gallery:paris_pompidou_000573",
+    "rparis:gallery:paris_general_001129",
+    "rparis:gallery:paris_pantheon_000348",
+    "rparis:gallery:paris_moulinrouge_000696",
+    "rparis:gallery:paris_general_001371",
+    "rparis:gallery:paris_general_001501",
+    "rparis:gallery:paris_pompidou_000512",
+    "rparis:gallery:paris_triomphe_000142",
+    "rparis:gallery:paris_general_002104",
+    "rparis:gallery:paris_pantheon_000726",
+    "rparis:gallery:paris_invalides_000257",
+    "rparis:gallery:paris_invalides_000583",
+    "rparis:gallery:paris_museedorsay_001044",
+    "rparis:gallery:paris_pompidou_000185",
+    "rparis:gallery:paris_general_001303",
+    "rparis:gallery:paris_museedorsay_000942",
+    "rparis:gallery:paris_defense_000245",
+    "rparis:gallery:paris_eiffel_000002",
+    "rparis:gallery:paris_general_001999",
+    "rparis:gallery:paris_pantheon_001057",
+    "rparis:gallery:paris_pantheon_000420",
+    "rparis:gallery:paris_museedorsay_000315",
+    "rparis:gallery:paris_museedorsay_001107",
+    "rparis:gallery:paris_museedorsay_000302",
+    "rparis:gallery:paris_notredame_000370",
+    "rparis:gallery:paris_general_002601",
+    "rparis:gallery:paris_general_001656",
+    "rparis:gallery:paris_museedorsay_000259",
+    "rparis:gallery:paris_sacrecoeur_000655",
+    "rparis:gallery:paris_notredame_000037",
+    "rparis:gallery:paris_museedorsay_000357",
+    "rparis:gallery:paris_museedorsay_000574",
+    "rparis:gallery:paris_sacrecoeur_000650",
+    "rparis:gallery:paris_triomphe_000104",
+    "rparis:gallery:paris_moulinrouge_000837",
+    "rparis:gallery:paris_triomphe_001012",
+    "rparis:gallery:paris_notredame_000223",
+    "rparis:gallery:paris_notredame_000752",
+    "rparis:gallery:paris_museedorsay_000743",
+    "rparis:gallery:paris_triomphe_000425",
+    "rparis:gallery:paris_pantheon_000109",
+    "rparis:gallery:paris_general_002909",
+    "rparis:gallery:paris_pantheon_000874",
+    "rparis:gallery:paris_general_001654",
+    "rparis:gallery:paris_general_001535",
+    "rparis:gallery:paris_defense_000538",
+    "rparis:gallery:paris_museedorsay_000250",
+    "rparis:gallery:paris_general_000927",
+    "rparis:gallery:paris_pompidou_000531",
+    "rparis:gallery:paris_eiffel_000014",
+    "rparis:gallery:paris_pantheon_000864",
+    "rparis:gallery:paris_general_003115",
+    "rparis:gallery:paris_pompidou_000099",
+    "rparis:gallery:paris_pantheon_000112",
+    "rparis:gallery:paris_moulinrouge_000835",
+    "rparis:gallery:paris_general_002856",
+    "rparis:gallery:paris_general_000025",
+    "rparis:gallery:paris_defense_000466",
+    "rparis:gallery:paris_pompidou_000720",
+    "rparis:gallery:paris_general_000528",
+    "rparis:gallery:paris_notredame_000558"
+  ],
+  "parent_complete_sha256": "6c6b1454fbd5bab98c1df97ae7ae0c48b0413dbb028ecdb59aae518024046393",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/roxford/clip_b16__dino_s14__m64__s51851__landmark_cover/aps.npz",
+      "sha256": "825d84685d917eb7b756e5f61c43a5eb0700443389bf5d6de427e3c5c6b3947c"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/roxford/clip_b16__dino_s14__m64__s51851__landmark_cover/aps.npz",
+      "sha256": "c35fe3405f13dd3486767f3084f5cb65bcdf5ee07b9446eccc91cb307c592c26"
+    }
+  ],
+  "sha256": "d9d5f3dce14f7825bcfa1de4e1221e46216dff10ff0e3f93bca7ae34b11a0092",
+  "means": [
+    0.3076149398402302,
+    0.08851373006065659
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 64,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "max_weight_row_sum_error": 4.440892098500626e-16
+  },
+  "seconds": 0.6000423431396484
+}

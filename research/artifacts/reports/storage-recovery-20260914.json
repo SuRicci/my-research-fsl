@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-09-14T00:20:42.982347+00:00",
+  "action": "replace exact duplicate closed-run files by relative symlinks; paths and bytes preserved",
+  "rows": [
+    {
+      "bytes": 16596587,
+      "sha256": "53520fc5dad376973f72f3748b8a6bba12bd14c3f1a93541671fd1f99bfcf202",
+      "paths": [
+        "experiments/main/prior-calibration-qualification-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+        "experiments/main/prior-calibration-qualification-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz"
+      ],
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz",
+      "original_mtime_ns": 1789257399520064451,
+      "original_mode": 33188
+    },
+    {
+      "bytes": 16464659,
+      "sha256": "1c625895e9e40058c80cda3f2da53fb902a96a472b0dbf6dbb21c79c0d534637",
+      "paths": [
+        "experiments/main/prior-calibration-qualification-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+        "experiments/main/prior-calibration-qualification-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz"
+      ],
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz",
+      "original_mtime_ns": 1789257447376380503,
+      "original_mode": 33188
+    },
+    {
+      "bytes": 13917393,
+      "sha256": "ac84b5a8a63ac1befaaff93257185376b2f25765358e892d1b142a01d24e9b6c",
+      "paths": [
+        "experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+        "experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz"
+      ],
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz",
+      "original_mtime_ns": 1789275993981033136,
+      "original_mode": 33188
+    },
+    {
+      "bytes": 13852803,
+      "sha256": "61d9c80a53a55441913644825965d94e007210ee0ad00da8e79735c539ca396d",
+      "paths": [
+        "experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+        "experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz"
+      ],
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz",
+      "original_mtime_ns": 1789276003556545676,
+      "original_mode": 33188
+    },
+    {
+      "bytes": 7043360,
+      "sha256": "edc313350b86f7fce448bb0b03200112f8569dcec757351197591e2131d43c41",
+      "paths": [
+        "experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+        "experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz"
+      ],
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz",
+      "original_mtime_ns": 1789273397477618368,
+      "original_mode": 33188
+    },
+    {
+      "bytes": 7016146,
+      "sha256": "af86e93c7884028c070c03786d0e3519ea39c5c774489eecea6c787b46595acd",
+      "paths": [
+        "experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+        "experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz"
+      ],
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz",
+      "original_mtime_ns": 1789273859220117130,
+      "original_mode": 33188
+    }
+  ],
+  "deduplicated_logical_bytes": 74890948,
+  "free_before": 10728312832,
+  "free_after": 10803159040,
+  "archive_preserved": "Caltech zip is streaming raw input, not disposable"
+}

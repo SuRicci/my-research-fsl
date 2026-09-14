@@ -1,0 +1,7 @@
+{
+  "python": "3.8.18 | packaged by conda-forge | (default, Oct 10 2023, 15:46:56) \n[Clang 16.0.6 ]",
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "device": "cpu",
+  "threads": 6
+}

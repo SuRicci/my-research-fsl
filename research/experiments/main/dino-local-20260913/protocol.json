@@ -1,0 +1,47 @@
+{
+  "idea_id": "idea-6a1ad48b",
+  "decision_id": "decision-d3a12061",
+  "tier": "auxiliary/dev",
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "feature_pool_side": "query",
+  "expected_images": 7277,
+  "feature_shape": [
+    16,
+    384
+  ],
+  "feature_dtype": "float16",
+  "backbone": "dinov2_vits14",
+  "pool_grid": 4,
+  "local_k": 1,
+  "fusion_weight": 0.5,
+  "score_standardization": "per-query population std, floor 1e-12",
+  "methods": [
+    "parent",
+    "patch",
+    "fusion",
+    "mean_fusion",
+    "shuffled_fusion"
+  ],
+  "min_free_gib": 10,
+  "deadline": "2026-09-15T09:00:00+00:00",
+  "threads": 4,
+  "encoding_batch": 32,
+  "mps_fallback": "1",
+  "parent_bank": "experiments/main/query-consistency-20260913/outputs",
+  "parent_method_index": 1,
+  "baseline_contract": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer/json/metric_contract.json",
+  "metric_deviation": "Source development qualification only; all five canonical Pets metrics unchanged/unmeasured. No main-test submission.",
+  "audit_indices": [
+    0,
+    249,
+    499
+  ],
+  "bootstrap_seed": 26091399,
+  "bootstrap_replicates": 5000,
+  "min_gain_pp": 0.5,
+  "cell_ci_floor_pp": -0.5,
+  "source_exposure": "Repeatedly exposed development pools; no independent transfer claim."
+}

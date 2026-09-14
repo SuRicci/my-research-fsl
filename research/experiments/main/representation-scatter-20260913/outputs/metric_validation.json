@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "dense_metric_transform_max_error": 1.1666260420987312e-06,
+  "independent_numpy_prediction_max_error": 1.2061947738672973e-06,
+  "historical_r2_max_error": 0.0,
+  "full_task_conditions_verified": 4000,
+  "historical_predictions_reconstructed": 48,
+  "query_partition_invariant": true,
+  "class_permutation_equivariant": true,
+  "gallery_permutation_invariant": true,
+  "view_order_invariant": true,
+  "zero_strength_mean_parity": true,
+  "constant_views_r2_parity": true,
+  "augmented_support_total_weight": "5*shot",
+  "new_view_accuracy_observed": false
+}

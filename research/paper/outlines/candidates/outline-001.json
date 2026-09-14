@@ -1,0 +1,1218 @@
+{
+  "schema_version": 2,
+  "outline_id": "outline-001",
+  "status": "revised",
+  "title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+  "note": "Early scoped technical-note checkpoint, not a new-method or submission-ready paper. Selected over a diffuse baseline-history narrative by decision-d48fc2a1.",
+  "story": "In a controlled gallery-only transfer of open-set prototype fitting, good inlier ranking can coexist with harmful accumulated weight from task-external samples.",
+  "ten_questions": [],
+  "detailed_outline": {
+    "title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+    "abstract": null,
+    "research_questions": [],
+    "methodology": null,
+    "experimental_designs": [],
+    "contributions": []
+  },
+  "paper_view": {
+    "paper_type": "technical_note",
+    "outline_maturity": "early",
+    "working_title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+    "story_spine": {
+      "problem": "Independent unlabeled galleries can contain many classes outside a few-shot episode.",
+      "gap": "Open-set weighting can rank relevant samples well without ensuring that the total retained contribution of irrelevant samples is small.",
+      "method": "Evaluate a gallery-only transfer of established open-set prototype fitting, decompose its final averaging coefficients, and intervene separately on gallery mass and class composition.",
+      "main_result": "The source-default transfer underperforms strong local controls in two image-disjoint Pets pools; high inlier ranking quality coexists with dominant task-external weight.",
+      "scope_limit": "One target dataset, one frozen feature fusion, two gallery sources and fixed source defaults. The interventions are retrospective and oracle composition uses unavailable labels."
+    },
+    "narrative_strategy": {
+      "paper_archetype": null,
+      "central_thesis": "In a controlled gallery-only transfer of open-set prototype fitting, good inlier ranking can coexist with harmful accumulated weight from task-external samples.",
+      "central_insight": "The aggregate mass and composition retained by a prototype update must be examined separately from ranking quality.",
+      "reader_takeaway": "Evaluate relevance scores, total retained weight and strong classifier controls jointly before treating an unlabeled gallery as beneficial.",
+      "story_moves": [],
+      "interpretive_leaps": [],
+      "reader_should_learn": []
+    },
+    "insight_ladder": [
+      {
+        "level": "Observed performance -> scope",
+        "statement": "Source-default transfer fails a strong-control qualification even though it improves on closed-set fitting.",
+        "evidence": [
+          "oslo-pets-source-default"
+        ],
+        "claim_links": [
+          "C1"
+        ],
+        "risk": "A restricted transfer cannot stand in for the source method's original benchmark."
+      },
+      {
+        "level": "Observed weights -> interpretation",
+        "statement": "Ranking separation and total contaminant weight answer different questions.",
+        "evidence": [
+          "oslo-retained-influence"
+        ],
+        "claim_links": [
+          "C2"
+        ],
+        "risk": "Averaging coefficients do not measure causal or directional importance."
+      },
+      {
+        "level": "Intervention -> bounded explanation",
+        "statement": "Changing final mass reduces mismatch harm while class composition retains explanatory value.",
+        "evidence": [
+          "oslo-final-step-counterfactual"
+        ],
+        "claim_links": [
+          "C3"
+        ],
+        "risk": "Post hoc interventions do not qualify a new algorithm."
+      }
+    ],
+    "positioning": {
+      "closest_neighbor": "OSLO open-set transductive few-shot learning; local retrieval-weighted and support-centered classifiers.",
+      "novelty_boundary": "A scoped empirical failure analysis of a restricted gallery-only transfer. The original objective, inlier weighting, prototype fitting and centering are established components.",
+      "why_not_prior_work": null,
+      "not_claiming": [
+        "A new learning algorithm or state-of-the-art performance",
+        "A failure of original transductive OSLO",
+        "Independent-domain generalization",
+        "A deployable oracle filter or a theoretical accuracy ceiling"
+      ]
+    },
+    "evidence_grounding": {
+      "observed_facts": [
+        "OSLO_G is below R2 in all eight cells, including paired negative matched one-shot effects in both pools.",
+        "Mean matched one-shot inlier AUROC is about 0.93 but about 80% of gallery weight remains on task-external classes.",
+        "Mass balancing largely rescues mismatch but still loses matched one-shot; privileged composition filtering improves matched one-shot."
+      ],
+      "allowed_interpretations": [
+        "Total retained mass can remain harmful despite favorable inlier ranking.",
+        "Mass and composition have distinguishable effects in this constrained final-step diagnostic."
+      ],
+      "must_not_claim": [
+        "New algorithm",
+        "Universal superiority or robustness",
+        "Original OSLO benchmark reproduction",
+        "Independent-domain confirmation",
+        "Deployable oracle membership",
+        "Causal directional importance from scalar averaging coefficients"
+      ],
+      "evidence_gaps": [
+        "No prospective admissible remedy",
+        "No second target dataset for OSLO transfer",
+        "No near-duplicate or pretraining-overlap audit",
+        "No independent sampling uncertainty over domains",
+        "No broad hyperparameter or gallery-size sensitivity"
+      ]
+    },
+    "core_claims": [
+      {
+        "claim_id": "C1",
+        "claim": "With fixed source defaults, gallery-only open-set fitting does not improve over R2 in the evaluated Pets conditions.",
+        "scope": "Eight cells across two fixed, image-disjoint same-domain pools, matched or DTD galleries and one or five support examples per class.",
+        "evidence_needed": [
+          "oslo-pets-source-default"
+        ],
+        "what_would_falsify_it": "A reproducible positive paired effect over R2 in an asserted cell, or a source/identity/permission mismatch invalidating the comparison."
+      },
+      {
+        "claim_id": "C2",
+        "claim": "Strong inlier ranking coexists with substantial total task-external gallery weight in the evaluated matched-gallery transfer.",
+        "scope": "Final fitted weights under the source-default gallery transfer; conditional descriptive statistics.",
+        "evidence_needed": [
+          "oslo-retained-influence"
+        ],
+        "what_would_falsify_it": "Incorrect class membership or weight accounting, failed prediction replay, or negligible retained external mass in these conditions."
+      },
+      {
+        "claim_id": "C3",
+        "claim": "Final-step mass balancing alleviates mismatch degradation but does not close the matched one-shot gap; privileged composition removal gives a separate diagnostic gain.",
+        "scope": "Retrospective interventions with earlier fitted weights and feature geometry held fixed.",
+        "evidence_needed": [
+          "oslo-final-step-counterfactual"
+        ],
+        "what_would_falsify_it": "Mass balancing closes the matched one-shot strong-control gap, oracle filtering gives no diagnostic gain, or original predictions fail exact replay."
+      }
+    ],
+    "method_abstraction": {
+      "paper_name": "Gallery-only OSLO transfer",
+      "intuition": "Adapt class prototypes using labeled support and an independent unlabeled gallery, while keeping test queries outside fitting.",
+      "mechanism_steps": [
+        "Initialize prototypes from labeled support in frozen fused feature space.",
+        "Alternate established soft class assignments, latent inlier weights and prototype updates using support and gallery only.",
+        "Classify each held-out query independently with fixed fitted prototypes.",
+        "Inspect final weight mass and apply retrospective mass or oracle-composition interventions for explanation."
+      ],
+      "appendix_only_details": [
+        "Source code hashes, exact commands and array provenance",
+        "Source-default hyperparameters and task seeds"
+      ],
+      "forbidden_main_text_terms": [
+        "worktree",
+        "quest",
+        "run_id",
+        "selected_outline"
+      ]
+    },
+    "evaluation_plan": {
+      "setting": "Five-way inductive classification with independent unlabeled gallery adaptation and frozen encoders.",
+      "datasets_or_benchmarks": [
+        "Oxford-IIIT Pets original fixed image pool",
+        "Oxford-IIIT Pets prospective image-disjoint confirmation pool",
+        "DTD as a mismatched gallery"
+      ],
+      "baselines": [
+        "R2 local retrieval-weighted classifier",
+        "CS_l2 support-centered control",
+        "Support-only multinomial logistic regression with fixed C1 and C10",
+        "Closed-set prototype fitting",
+        "Zero prototype update"
+      ],
+      "metrics": [
+        "Classification accuracy",
+        "Paired task-bootstrap accuracy difference and 95% interval",
+        "Final gallery averaging coefficient",
+        "Task-external fraction of retained gallery weight",
+        "Inlier ranking AUROC"
+      ],
+      "controlled_factors": [
+        "Frozen CLIP and DINO features with fixed fusion",
+        "Identical support/query task identities and seeds",
+        "No query adaptation or gallery-label use in eligible methods",
+        "Source defaults frozen before confirmation feature extraction",
+        "Intervals conditional on fixed pools, not domain sampling"
+      ]
+    },
+    "analysis_plan": [
+      {
+        "analysis_id": "A1",
+        "title": "Strong controls and source ablations",
+        "analysis_role": "stronger-baseline comparison",
+        "reviewer_question": "Does improvement survive closed-set, zero-update and strong local controls?",
+        "claim_links": [
+          "C1"
+        ],
+        "target_display": "Table 1: all eight cells and paired comparisons",
+        "main_or_appendix": "main_text",
+        "failure_interpretation": "Reject an improvement claim if strong controls are not exceeded."
+      },
+      {
+        "analysis_id": "A2",
+        "title": "Image-disjoint confirmation and condition breakdown",
+        "analysis_role": "robustness or sensitivity",
+        "reviewer_question": "Does the result persist on distinct images and both support regimes?",
+        "claim_links": [
+          "C1"
+        ],
+        "target_display": "Table 1 plus appendix seed and breed breakdown",
+        "main_or_appendix": "appendix",
+        "failure_interpretation": "Limit the claim to conditions that survive; distinct images do not establish a new domain."
+      },
+      {
+        "analysis_id": "A3",
+        "title": "Ranking versus accumulated weight",
+        "analysis_role": "mechanism or attribution check",
+        "reviewer_question": "Do relevance rankings control the aggregate contribution of task-external samples?",
+        "claim_links": [
+          "C2"
+        ],
+        "target_display": "Table 2: ranking and retained weight across eight cells",
+        "main_or_appendix": "main_text",
+        "failure_interpretation": "Reduce the explanation if label accounting or algebraic replay fails."
+      },
+      {
+        "analysis_id": "A4",
+        "title": "Mass versus composition intervention",
+        "analysis_role": "limitation or residual headroom analysis",
+        "reviewer_question": "Can a final mass correction explain the failure without privileged information?",
+        "claim_links": [
+          "C3"
+        ],
+        "target_display": "Table 3: retrospective mass and oracle-composition interventions",
+        "main_or_appendix": "main_text",
+        "failure_interpretation": "Keep the intervention diagnostic and decline a new-method claim."
+      }
+    ],
+    "reviewer_objections": [
+      {
+        "objection": "The task differs from original OSLO.",
+        "answer_route": "limitation",
+        "linked_claims": [
+          "C1"
+        ],
+        "needed_evidence": [
+          "oslo-pets-source-default"
+        ]
+      },
+      {
+        "objection": "The same target dataset and exposed diagnostic pool restrict generalization.",
+        "answer_route": "claim_downgrade",
+        "linked_claims": [
+          "C1",
+          "C3"
+        ],
+        "needed_evidence": [
+          "oslo-pets-source-default",
+          "oslo-final-step-counterfactual"
+        ]
+      },
+      {
+        "objection": "High ranking quality says nothing about calibrated probabilities or causal influence.",
+        "answer_route": "writing",
+        "linked_claims": [
+          "C2"
+        ],
+        "needed_evidence": [
+          "oslo-retained-influence"
+        ]
+      },
+      {
+        "objection": "Oracle labels and post hoc interventions cannot establish an admissible improved method.",
+        "answer_route": "limitation",
+        "linked_claims": [
+          "C3"
+        ],
+        "needed_evidence": [
+          "oslo-final-step-counterfactual"
+        ]
+      }
+    ],
+    "analysis_budget_waiver": "Early technical note: four analysis questions reuse three measured evidence groups, with A1 and A2 sharing the same main result. They are not counted as independent experiments. Broader source-default sensitivity, additional target domains and a prospectively qualified remedy remain untested.",
+    "section_plan": [
+      {
+        "section_id": "introduction",
+        "title": "Introduction",
+        "paper_role": "main_text",
+        "claims": [],
+        "writing_job": "Introduction",
+        "status": "planned"
+      },
+      {
+        "section_id": "method",
+        "title": "Gallery-only prototype fitting",
+        "paper_role": "main_text",
+        "claims": [],
+        "writing_job": "Gallery-only prototype fitting",
+        "status": "planned"
+      },
+      {
+        "section_id": "evaluation",
+        "title": "Evaluation protocol",
+        "paper_role": "main_text",
+        "claims": [],
+        "writing_job": "Evaluation protocol",
+        "status": "planned"
+      },
+      {
+        "section_id": "results",
+        "title": "Qualification against strong controls",
+        "paper_role": "main_text",
+        "claims": [
+          "C1"
+        ],
+        "writing_job": "Qualification against strong controls",
+        "status": "planned"
+      },
+      {
+        "section_id": "influence",
+        "title": "Ranking and accumulated gallery weight",
+        "paper_role": "main_text",
+        "claims": [
+          "C2"
+        ],
+        "writing_job": "Ranking and accumulated gallery weight",
+        "status": "planned"
+      },
+      {
+        "section_id": "interventions",
+        "title": "Mass and composition interventions",
+        "paper_role": "main_text",
+        "claims": [
+          "C3"
+        ],
+        "writing_job": "Mass and composition interventions",
+        "status": "planned"
+      },
+      {
+        "section_id": "limitations",
+        "title": "Limitations",
+        "paper_role": "main_text",
+        "claims": [
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "writing_job": "Limitations",
+        "status": "planned"
+      },
+      {
+        "section_id": "conclusion",
+        "title": "Conclusion",
+        "paper_role": "main_text",
+        "claims": [
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "writing_job": "Conclusion",
+        "status": "planned"
+      }
+    ],
+    "terminology_map": {},
+    "forbidden_main_text_terms": [
+      "worktree",
+      "quest",
+      "run_id",
+      "selected_outline"
+    ]
+  },
+  "evidence_view": {
+    "claim_to_items": [
+      {
+        "claim_ids": [
+          "C1"
+        ],
+        "item_ids": [
+          "oslo-pets-source-default"
+        ]
+      },
+      {
+        "claim_ids": [
+          "C2"
+        ],
+        "item_ids": [
+          "oslo-retained-influence"
+        ]
+      },
+      {
+        "claim_ids": [
+          "C3"
+        ],
+        "item_ids": [
+          "oslo-final-step-counterfactual"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "section_id": "introduction",
+        "title": "Introduction",
+        "paper_role": "main_text",
+        "claims": [],
+        "required_items": [],
+        "optional_items": [],
+        "status": "evidence_mapped",
+        "note": "Write only the mapped evidence with the stated boundary.",
+        "result_table": []
+      },
+      {
+        "section_id": "method",
+        "title": "Gallery-only prototype fitting",
+        "paper_role": "main_text",
+        "claims": [],
+        "required_items": [],
+        "optional_items": [],
+        "status": "evidence_mapped",
+        "note": "Write only the mapped evidence with the stated boundary.",
+        "result_table": []
+      },
+      {
+        "section_id": "evaluation",
+        "title": "Evaluation protocol",
+        "paper_role": "main_text",
+        "claims": [],
+        "required_items": [],
+        "optional_items": [],
+        "status": "evidence_mapped",
+        "note": "Write only the mapped evidence with the stated boundary.",
+        "result_table": []
+      },
+      {
+        "section_id": "results",
+        "title": "Qualification against strong controls",
+        "paper_role": "main_text",
+        "claims": [
+          "C1"
+        ],
+        "required_items": [
+          "oslo-pets-source-default"
+        ],
+        "optional_items": [],
+        "status": "evidence_mapped",
+        "note": "Write only the mapped evidence with the stated boundary.",
+        "result_table": [
+          {
+            "item_id": "oslo-pets-source-default",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "main_text",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "main_text",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [
+              "C1"
+            ],
+            "setup_note": null,
+            "metric_summary": "Canonical/fresh matched one-shot OSLO_G 94.9173/94.8747%; R2 96.2400/96.0160%; delta -1.3227/-1.1413 pp.",
+            "result_summary": "OSLO_G is below R2 in all eight cells, including paired negative matched one-shot effects in both pools.",
+            "impact_summary": "Known source-default transfer only; no general OSLO rejection.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RESULT.json",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/validation.json"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          }
+        ]
+      },
+      {
+        "section_id": "influence",
+        "title": "Ranking and accumulated gallery weight",
+        "paper_role": "main_text",
+        "claims": [
+          "C2"
+        ],
+        "required_items": [
+          "oslo-retained-influence"
+        ],
+        "optional_items": [],
+        "status": "evidence_mapped",
+        "note": "Write only the mapped evidence with the stated boundary.",
+        "result_table": [
+          {
+            "item_id": "oslo-retained-influence",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "main_text",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "main_text",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [
+              "C2"
+            ],
+            "setup_note": null,
+            "metric_summary": "Matched canonical/fresh external weight share 80.408/80.826%; mismatch final gallery coefficient 99.485/99.487%.",
+            "result_summary": "Mean matched one-shot inlier AUROC is about 0.93 but about 80% of gallery weight remains on task-external classes.",
+            "impact_summary": "Algebraic mixture coefficient, not causal vector contribution or calibrated membership.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/attribution.json",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/REPORT.md"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          }
+        ]
+      },
+      {
+        "section_id": "interventions",
+        "title": "Mass and composition interventions",
+        "paper_role": "main_text",
+        "claims": [
+          "C3"
+        ],
+        "required_items": [
+          "oslo-final-step-counterfactual"
+        ],
+        "optional_items": [],
+        "status": "evidence_mapped",
+        "note": "Write only the mapped evidence with the stated boundary.",
+        "result_table": [
+          {
+            "item_id": "oslo-final-step-counterfactual",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "main_text",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "main_text",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [
+              "C3"
+            ],
+            "setup_note": null,
+            "metric_summary": "Mass-balanced matched one-shot delta vs R2 -0.4827/-0.6240 pp; oracle membership +1.6827/+1.8507 pp.",
+            "result_summary": "Mass balancing largely rescues mismatch but still loses matched one-shot; privileged composition filtering improves matched one-shot.",
+            "impact_summary": "Retrospective final-step intervention with earlier weights fixed; oracle labels unavailable at deployment.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/REPORT.md"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          }
+        ]
+      },
+      {
+        "section_id": "limitations",
+        "title": "Limitations",
+        "paper_role": "main_text",
+        "claims": [
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "required_items": [],
+        "optional_items": [],
+        "status": "evidence_mapped",
+        "note": "Write only the mapped evidence with the stated boundary.",
+        "result_table": []
+      },
+      {
+        "section_id": "conclusion",
+        "title": "Conclusion",
+        "paper_role": "main_text",
+        "claims": [
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "required_items": [],
+        "optional_items": [],
+        "status": "evidence_mapped",
+        "note": "Write only the mapped evidence with the stated boundary.",
+        "result_table": []
+      },
+      {
+        "section_id": "historical_context",
+        "title": "Reference-only historical evidence",
+        "paper_role": "reference_only",
+        "claims": [],
+        "required_items": [],
+        "optional_items": [
+          "canonical-additional-domains",
+          "ilpcz-gallery-control",
+          "multinomial-logistic-control",
+          "new-image-confirmation",
+          "press-fixed-penalty-challenge",
+          "retrieval-head-attribution",
+          "ridge-scale-robustness"
+        ],
+        "status": "evidence_mapped",
+        "note": "Control-plane retention only; not a manuscript history section. These results neither support nor refute the narrow OSLO claims.",
+        "result_table": [
+          {
+            "item_id": "canonical-additional-domains",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "reference_only",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "reference_only",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [],
+            "setup_note": null,
+            "metric_summary": null,
+            "result_summary": "No supported PRESS advantage over development-tuned fixed ridge in any of nine cells; three CLIP losses and CIFAR-FS DINO loss have negative pointwise95% task intervals. Fused PRESS-minus-fixed.001 is +.0013pp Flowers,0 CIFARFS,+.0013pp CUB. High Flowers/CUB accuracy ceilings and domain-dependent geometry effects limit generalization. This update repairs initially nested metric rows into81 explicit numeric entries; measured data are unchanged.",
+            "impact_summary": "Broad PRESS superiority and adaptive-benefit claims downgraded. Known geometric/penalty effects remain conditional. No new-method or SOTA claim.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          },
+          {
+            "item_id": "ilpcz-gallery-control",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "reference_only",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "reference_only",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [],
+            "setup_note": null,
+            "metric_summary": null,
+            "result_summary": "Macro one-shot 60.3897% vs R2 72.7733%, delta -12.3837pp [95% paired CI -12.7637,-12.0023]. Matched EuroSAT +13.648pp one-shot and +4.968pp five-shot; DTD matched -7.6573pp one-shot/-11.4013pp five-shot; mismatched galleries -31.3133pp DTD and -24.212pp EuroSAT.",
+            "impact_summary": "Reject universal replacement/robust advantage. Retain large conditional EuroSAT matched-gallery benefit as known-comparator evidence, motivating an enablement/reliability question rather than a novelty or original-table reproduction claim.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          },
+          {
+            "item_id": "multinomial-logistic-control",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "reference_only",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "reference_only",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [],
+            "setup_note": null,
+            "metric_summary": null,
+            "result_summary": "No broad logistic superiority: versus development-tuned ridge,5positive,8negative,8zero-containing pointwise95% task intervals. Original/newEuroSATfusionlogistic88.073/87.751%, belowfixedridge.1 by1.313/1.299pp. FixedC1isfrequentlyunder-calibrated; gainsagainstoriginalridge1canreflectregularizationchoice. Countsdescriptive,notaglobalmultiplicity-correctedtest.",
+            "impact_summary": "Strong-classifier comparison gap closed. Retain conditional known-method effects; no evidence that logistic or PRESS creates a generally improved method. New-method and SOTAclaimsremainunsupported.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          },
+          {
+            "item_id": "new-image-confirmation",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "reference_only",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "reference_only",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [],
+            "setup_note": null,
+            "metric_summary": null,
+            "result_summary": "Macro candidate 72.590% vs same-pool R2 72.265%, delta +0.325 pp, paired 95% CI [0.228,0.423675]; vs frozen dev-tuned R2 +0.261333 pp [0.153317,0.372667]. Per-cell deltas: DTD matched -0.125333, DTD mismatch -0.277333, DTD 5-shot +0.020; EuroSAT mismatch +1.962667, matched -0.260, 5-shot +1.309333 pp. All preset point-estimate guardrails pass; gains heterogeneous.",
+            "impact_summary": "Supports reproducible practical improvement within two existing datasets; no new-domain, independent image-sampling confidence, or novel-algorithm claim. Support centering is prior art.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          },
+          {
+            "item_id": "press-fixed-penalty-challenge",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "reference_only",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "reference_only",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [],
+            "setup_note": null,
+            "metric_summary": null,
+            "result_summary": "Allfourfusioncells PRESS vsfixedlambda.001 CIincludeszero, with deltas+.018667,+.026667,+.022667,+.029333pp. PRESS vsdev-tunedCLIP isnegativeall4cells (3CIs below0); DTD-DINO-.577333pp old/-.349333new. EuroSAT fusion gains vsdev-tunedbaseline remain+2.673333/+2.474667pp but fixedlambda.01/.001 largelymatches. Fixedlambda.1 iscompetitiveacrosscells asretrospectivediagnostic.",
+            "impact_summary": "Downgrade adaptive-selection explanation for fused-feature gains; small fixedpenalties account for most benefit. No universal PRESS superiority; no newalgorithmnovelty. Do notpromote retrospectivelybestfixedvalue asprospectivelyvalidated.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          },
+          {
+            "item_id": "retrieval-head-attribution",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "reference_only",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "reference_only",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [],
+            "setup_note": null,
+            "metric_summary": null,
+            "result_summary": "1-shot macro effects: combined+.360pp CI[.260325,.461333], retrieval alone+.133[.039,.229342], head alone+.317667[.223,.407342], interaction-.090667[-.177008,-.001]. EuroSAT mismatch is largest benefit; matched cells and DTD mismatch degrade. Five-shot radius control gains+.060pp DTD and+1.552pp EuroSAT over raw, exceeding full CS_l2 by+.089333pp and+.149333pp respectively (paired CIs exclude0). Neighbor overlap 40.2%-80.5%; overlap/delta correlations small and descriptive.",
+            "impact_summary": "Downgrade any special five-shot per-sample geometry explanation: a simpler scalar regularization control explains and exceeds its gain. Retain practical, heterogeneous 1-shot improvement and known-method attribution; no novelty claim.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          },
+          {
+            "item_id": "ridge-scale-robustness",
+            "title": null,
+            "kind": null,
+            "campaign_id": null,
+            "slice_id": null,
+            "run_id": null,
+            "paper_role": "reference_only",
+            "analysis_role": null,
+            "reviewer_question": null,
+            "target_display": null,
+            "main_or_appendix": "reference_only",
+            "failure_interpretation": null,
+            "status": "completed",
+            "claim_links": [],
+            "setup_note": null,
+            "metric_summary": null,
+            "result_summary": "Radius scaling loses to equally tuned global ridge in every CLIP cell: originalDTD-.290667pp, originalEuroSAT-.494667, newDTD-.400,newEuroSAT-.521333, all pairedCIs below0. DINO DTD approximatelyneutral (-.004/+.005333) but EuroSAT positive (+1.001333/+.937333). Fusion positive on DTD (+.060/+.105333) and EuroSAT (+1.552/+1.512), and exceeds CS_l2 in all four fusedcells. Detailed twelve-cell outcomes retained without selecting only positive encoders.",
+            "impact_summary": "Reject universal support-radius superiority. Retain encoder/domain-dependent practical benefit for frozen fused features, especially EuroSAT, and known regularization-scale explanation. Equal global tuning absorbs CLIP improvements. No novel method or broad-domain claim.",
+            "source_paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json"
+            ],
+            "mapping_status": "mapped",
+            "updated_at": null
+          }
+        ]
+      }
+    ],
+    "evidence_contract": {
+      "main_text_items_must_be_ready": true,
+      "appendix_items_may_be_ready_or_reference_only": true,
+      "record_results_back_into_outline": true,
+      "result_table_required": true
+    },
+    "unmapped_items": [],
+    "appendix_reproducibility": [
+      "Source mapping and hashes: paper/source_mapping_audit.json",
+      "Main source commit 9240a4e630874c50459e069db609db9163a81c03; local source and permission checks in experiments/main/oslo-gallery-pets-20260913/outputs/source_validation.json",
+      "5,000 paired bootstrap resamples stratified within five task seeds; fixed-pool intervals.",
+      "Two post hoc diagnostic groups reuse all 4,000 main tasks; no independent sample inflation."
+    ]
+  },
+  "sections": [
+    {
+      "section_id": "introduction",
+      "title": "Introduction",
+      "paper_role": "main_text",
+      "claims": [],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "method",
+      "title": "Gallery-only prototype fitting",
+      "paper_role": "main_text",
+      "claims": [],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "evaluation",
+      "title": "Evaluation protocol",
+      "paper_role": "main_text",
+      "claims": [],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "results",
+      "title": "Qualification against strong controls",
+      "paper_role": "main_text",
+      "claims": [
+        "C1"
+      ],
+      "required_items": [
+        "oslo-pets-source-default"
+      ],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": [
+        {
+          "item_id": "oslo-pets-source-default",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "main_text",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "main_text",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [
+            "C1"
+          ],
+          "setup_note": null,
+          "metric_summary": "Canonical/fresh matched one-shot OSLO_G 94.9173/94.8747%; R2 96.2400/96.0160%; delta -1.3227/-1.1413 pp.",
+          "result_summary": "OSLO_G is below R2 in all eight cells, including paired negative matched one-shot effects in both pools.",
+          "impact_summary": "Known source-default transfer only; no general OSLO rejection.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/validation.json"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "section_id": "influence",
+      "title": "Ranking and accumulated gallery weight",
+      "paper_role": "main_text",
+      "claims": [
+        "C2"
+      ],
+      "required_items": [
+        "oslo-retained-influence"
+      ],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": [
+        {
+          "item_id": "oslo-retained-influence",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "main_text",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "main_text",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [
+            "C2"
+          ],
+          "setup_note": null,
+          "metric_summary": "Matched canonical/fresh external weight share 80.408/80.826%; mismatch final gallery coefficient 99.485/99.487%.",
+          "result_summary": "Mean matched one-shot inlier AUROC is about 0.93 but about 80% of gallery weight remains on task-external classes.",
+          "impact_summary": "Algebraic mixture coefficient, not causal vector contribution or calibrated membership.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/attribution.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/REPORT.md"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "section_id": "interventions",
+      "title": "Mass and composition interventions",
+      "paper_role": "main_text",
+      "claims": [
+        "C3"
+      ],
+      "required_items": [
+        "oslo-final-step-counterfactual"
+      ],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": [
+        {
+          "item_id": "oslo-final-step-counterfactual",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "main_text",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "main_text",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [
+            "C3"
+          ],
+          "setup_note": null,
+          "metric_summary": "Mass-balanced matched one-shot delta vs R2 -0.4827/-0.6240 pp; oracle membership +1.6827/+1.8507 pp.",
+          "result_summary": "Mass balancing largely rescues mismatch but still loses matched one-shot; privileged composition filtering improves matched one-shot.",
+          "impact_summary": "Retrospective final-step intervention with earlier weights fixed; oracle labels unavailable at deployment.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/REPORT.md"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "section_id": "limitations",
+      "title": "Limitations",
+      "paper_role": "main_text",
+      "claims": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "conclusion",
+      "title": "Conclusion",
+      "paper_role": "main_text",
+      "claims": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "historical_context",
+      "title": "Reference-only historical evidence",
+      "paper_role": "reference_only",
+      "claims": [],
+      "required_items": [],
+      "optional_items": [
+        "canonical-additional-domains",
+        "ilpcz-gallery-control",
+        "multinomial-logistic-control",
+        "new-image-confirmation",
+        "press-fixed-penalty-challenge",
+        "retrieval-head-attribution",
+        "ridge-scale-robustness"
+      ],
+      "status": "evidence_mapped",
+      "note": "Control-plane retention only; not a manuscript history section. These results neither support nor refute the narrow OSLO claims.",
+      "result_table": [
+        {
+          "item_id": "canonical-additional-domains",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "reference_only",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [],
+          "setup_note": null,
+          "metric_summary": null,
+          "result_summary": "No supported PRESS advantage over development-tuned fixed ridge in any of nine cells; three CLIP losses and CIFAR-FS DINO loss have negative pointwise95% task intervals. Fused PRESS-minus-fixed.001 is +.0013pp Flowers,0 CIFARFS,+.0013pp CUB. High Flowers/CUB accuracy ceilings and domain-dependent geometry effects limit generalization. This update repairs initially nested metric rows into81 explicit numeric entries; measured data are unchanged.",
+          "impact_summary": "Broad PRESS superiority and adaptive-benefit claims downgraded. Known geometric/penalty effects remain conditional. No new-method or SOTA claim.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        },
+        {
+          "item_id": "ilpcz-gallery-control",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "reference_only",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [],
+          "setup_note": null,
+          "metric_summary": null,
+          "result_summary": "Macro one-shot 60.3897% vs R2 72.7733%, delta -12.3837pp [95% paired CI -12.7637,-12.0023]. Matched EuroSAT +13.648pp one-shot and +4.968pp five-shot; DTD matched -7.6573pp one-shot/-11.4013pp five-shot; mismatched galleries -31.3133pp DTD and -24.212pp EuroSAT.",
+          "impact_summary": "Reject universal replacement/robust advantage. Retain large conditional EuroSAT matched-gallery benefit as known-comparator evidence, motivating an enablement/reliability question rather than a novelty or original-table reproduction claim.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        },
+        {
+          "item_id": "multinomial-logistic-control",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "reference_only",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [],
+          "setup_note": null,
+          "metric_summary": null,
+          "result_summary": "No broad logistic superiority: versus development-tuned ridge,5positive,8negative,8zero-containing pointwise95% task intervals. Original/newEuroSATfusionlogistic88.073/87.751%, belowfixedridge.1 by1.313/1.299pp. FixedC1isfrequentlyunder-calibrated; gainsagainstoriginalridge1canreflectregularizationchoice. Countsdescriptive,notaglobalmultiplicity-correctedtest.",
+          "impact_summary": "Strong-classifier comparison gap closed. Retain conditional known-method effects; no evidence that logistic or PRESS creates a generally improved method. New-method and SOTAclaimsremainunsupported.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        },
+        {
+          "item_id": "new-image-confirmation",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "reference_only",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [],
+          "setup_note": null,
+          "metric_summary": null,
+          "result_summary": "Macro candidate 72.590% vs same-pool R2 72.265%, delta +0.325 pp, paired 95% CI [0.228,0.423675]; vs frozen dev-tuned R2 +0.261333 pp [0.153317,0.372667]. Per-cell deltas: DTD matched -0.125333, DTD mismatch -0.277333, DTD 5-shot +0.020; EuroSAT mismatch +1.962667, matched -0.260, 5-shot +1.309333 pp. All preset point-estimate guardrails pass; gains heterogeneous.",
+          "impact_summary": "Supports reproducible practical improvement within two existing datasets; no new-domain, independent image-sampling confidence, or novel-algorithm claim. Support centering is prior art.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        },
+        {
+          "item_id": "press-fixed-penalty-challenge",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "reference_only",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [],
+          "setup_note": null,
+          "metric_summary": null,
+          "result_summary": "Allfourfusioncells PRESS vsfixedlambda.001 CIincludeszero, with deltas+.018667,+.026667,+.022667,+.029333pp. PRESS vsdev-tunedCLIP isnegativeall4cells (3CIs below0); DTD-DINO-.577333pp old/-.349333new. EuroSAT fusion gains vsdev-tunedbaseline remain+2.673333/+2.474667pp but fixedlambda.01/.001 largelymatches. Fixedlambda.1 iscompetitiveacrosscells asretrospectivediagnostic.",
+          "impact_summary": "Downgrade adaptive-selection explanation for fused-feature gains; small fixedpenalties account for most benefit. No universal PRESS superiority; no newalgorithmnovelty. Do notpromote retrospectivelybestfixedvalue asprospectivelyvalidated.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        },
+        {
+          "item_id": "retrieval-head-attribution",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "reference_only",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [],
+          "setup_note": null,
+          "metric_summary": null,
+          "result_summary": "1-shot macro effects: combined+.360pp CI[.260325,.461333], retrieval alone+.133[.039,.229342], head alone+.317667[.223,.407342], interaction-.090667[-.177008,-.001]. EuroSAT mismatch is largest benefit; matched cells and DTD mismatch degrade. Five-shot radius control gains+.060pp DTD and+1.552pp EuroSAT over raw, exceeding full CS_l2 by+.089333pp and+.149333pp respectively (paired CIs exclude0). Neighbor overlap 40.2%-80.5%; overlap/delta correlations small and descriptive.",
+          "impact_summary": "Downgrade any special five-shot per-sample geometry explanation: a simpler scalar regularization control explains and exceeds its gain. Retain practical, heterogeneous 1-shot improvement and known-method attribution; no novelty claim.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        },
+        {
+          "item_id": "ridge-scale-robustness",
+          "title": null,
+          "kind": null,
+          "campaign_id": null,
+          "slice_id": null,
+          "run_id": null,
+          "paper_role": "reference_only",
+          "analysis_role": null,
+          "reviewer_question": null,
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "status": "completed",
+          "claim_links": [],
+          "setup_note": null,
+          "metric_summary": null,
+          "result_summary": "Radius scaling loses to equally tuned global ridge in every CLIP cell: originalDTD-.290667pp, originalEuroSAT-.494667, newDTD-.400,newEuroSAT-.521333, all pairedCIs below0. DINO DTD approximatelyneutral (-.004/+.005333) but EuroSAT positive (+1.001333/+.937333). Fusion positive on DTD (+.060/+.105333) and EuroSAT (+1.552/+1.512), and exceeds CS_l2 in all four fusedcells. Detailed twelve-cell outcomes retained without selecting only positive encoders.",
+          "impact_summary": "Reject universal support-radius superiority. Retain encoder/domain-dependent practical benefit for frozen fused features, especially EuroSAT, and known regularization-scale explanation. Equal global tuning absorbs CLIP improvements. No novel method or broad-domain claim.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json"
+          ],
+          "mapping_status": "mapped",
+          "updated_at": null
+        }
+      ]
+    }
+  ],
+  "evidence_contract": {
+    "main_text_items_must_be_ready": true,
+    "appendix_items_may_be_ready_or_reference_only": true,
+    "record_results_back_into_outline": true,
+    "result_table_required": true
+  },
+  "review_result": "Source-level mapping audit complete; independent skeptical review pending.",
+  "created_at": "2026-09-12T22:50:51+00:00",
+  "updated_at": "2026-09-13T00:15:56+00:00"
+}

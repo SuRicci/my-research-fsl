@@ -1,0 +1,125 @@
+{
+  "created_at": "2026-09-14T09:26:03.163164+00:00",
+  "files": [
+    {
+      "file": "baseline_index.json",
+      "bytes": 2681,
+      "sha256": "e24d839d019818d905ddade17b7520f21825e022ba61cb5e1c4cf3104e9e6bfd"
+    },
+    {
+      "file": "baseline_result_hashes.json",
+      "bytes": 89665,
+      "sha256": "f1124cce883909f4ef26661be56ca3b958afa25d814709a6ee2f422534d1306a"
+    },
+    {
+      "file": "cleanup_receipt.json",
+      "bytes": 6947041,
+      "sha256": "31619f3bc7ef84b2762f8f4c54c14ea68e816b3baca412ba889262dc3c112c04"
+    },
+    {
+      "file": "coverage_validation.json",
+      "bytes": 547,
+      "sha256": "b0e43756077fc50beee2ecd179775abef8910d883b740f6ba99946313211c455"
+    },
+    {
+      "file": "deleted_weight_hashes.json",
+      "bytes": 1048045,
+      "sha256": "c7766b92efadab3731784a161e9c10742605c84de1b39fe86de0b728e0b3404c"
+    },
+    {
+      "file": "directions_authored.json",
+      "bytes": 22033,
+      "sha256": "65d7bbb217cc5952213348c8dc4120c18bf014f0db22aa068714d0316fdc238a"
+    },
+    {
+      "file": "evidence_index.json",
+      "bytes": 116554,
+      "sha256": "cbf8088f40de934990c4e0860881daaf5badba7e4b2221b7c24521feb849a528"
+    },
+    {
+      "file": "git_compaction_receipt.json",
+      "bytes": 982,
+      "sha256": "8dccfabd63bc40ef56a741caddf6ad11ed7cb0bff70bf17851294d892b339942"
+    },
+    {
+      "file": "ledger_inventory.json",
+      "bytes": 160948,
+      "sha256": "1880c250cd1c723d331042bb07049718c8d207967d9949a80ffc77a0a404aff4"
+    },
+    {
+      "file": "pdf_qa.json",
+      "bytes": 738,
+      "sha256": "5ee24b4fb1c02fe63f758ea7aee885f1c00b1716337d5e6f8d409821d97e2d84"
+    },
+    {
+      "file": "protected_results_before.json",
+      "bytes": 6443635,
+      "sha256": "4e5c8bbf76aadde7e6da1d6474f9abd9c94b0e1fb3eab99aa6d985cdb1bad545"
+    },
+    {
+      "file": "report.css",
+      "bytes": 730,
+      "sha256": "cb37de78c7dfb0fc8fa2a73c78f6881273edd664f5ad206bdda30204613c5ef6"
+    },
+    {
+      "file": "result_dedup_receipt.json",
+      "bytes": 2562918,
+      "sha256": "e3812170dc99dfae534b61af1a6738b5247ba721287e9b5c1356508b1025192d"
+    },
+    {
+      "file": "result_storage_complete.json",
+      "bytes": 452,
+      "sha256": "5af0137543242fa652ca3c19bd2d1050f4d9a21bf15d81895b10d45cc3e5755f"
+    },
+    {
+      "file": "review_report.md",
+      "bytes": 3627,
+      "sha256": "21a50e110db6289e67091579d7a588585b73169da0fa48132aba1ff517bdba91"
+    },
+    {
+      "file": "review_validation.json",
+      "bytes": 384,
+      "sha256": "c25204aef055cbc1f794ee046a5a97d8473be030a9d6104c9393f402b8e9ac30"
+    },
+    {
+      "file": "storage_breakdown.json",
+      "bytes": 5552,
+      "sha256": "ad5501d67ed91bbb2a9a81caa1b3dc4795bea98acf7d98da11aed2109ca55b49"
+    },
+    {
+      "file": "storage_breakdown.md",
+      "bytes": 2562,
+      "sha256": "483ec68fc11a74ae9de326ebceea3a497e55043eb8e53d1eb7abf22964a3f9a6"
+    },
+    {
+      "file": "storage_du_snapshot.txt",
+      "bytes": 4294,
+      "sha256": "2bb660ac3196e73c03455ce8a9c94352fd2dd7bc3807d9703c28fa8462996af9"
+    },
+    {
+      "file": "恢复说明.md",
+      "bytes": 2837,
+      "sha256": "c6e1b8586e80bb7c1910b2922fb02479f146c6478835f2a8a290d0694fa6835d"
+    },
+    {
+      "file": "研究总报告.html",
+      "bytes": 65964,
+      "sha256": "c90ad2f6ab2f1a7bf0701a1efac68f97b61bbcecc430e1d8395768a16dd28bfc"
+    },
+    {
+      "file": "研究总报告.md",
+      "bytes": 53310,
+      "sha256": "345eeecc53f72de2b0187786ab50466a8d8fb8ce8fcdfe564dab221590e2ca0c"
+    },
+    {
+      "file": "研究总报告.pdf",
+      "bytes": 553526,
+      "sha256": "a4fdeb5acf8ab7be381a0aa3036fe1ac3e32bf2a23ddaa36e9ba49ccf987fb7a"
+    }
+  ],
+  "file_count": 23,
+  "source_workspace": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "original_results_policy": "original per-task outputs remain at evidence-index paths; not copied into this small report package",
+  "final_report_artifact": "report-eeac4715",
+  "final_pause_decision": "decision-45ed9b00"
+}

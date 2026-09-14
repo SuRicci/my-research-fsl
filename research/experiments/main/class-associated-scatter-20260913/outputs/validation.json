@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "parent_prediction_checks": 8000,
+  "full_score_aggregation_checks": true,
+  "numeric_validation": "numeric_validation.json",
+  "method_scope": "all task arrays, every prediction, independent aggregation and same paired interval recipe"
+}

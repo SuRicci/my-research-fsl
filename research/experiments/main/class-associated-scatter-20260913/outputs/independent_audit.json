@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "parent_task_prediction_checks": 8000,
+  "scalar_bootstrap_comparisons": {
+    "incumbent": {
+      "delta_pp": -0.015333333333333364,
+      "ci95_pp": [
+        -0.033333333333333354,
+        0.0026833333333331245
+      ]
+    },
+    "metric_ensemble": {
+      "delta_pp": -0.006666666666666663,
+      "ci95_pp": [
+        -0.021333333333333322,
+        0.007999999999999978
+      ]
+    },
+    "foreign_metrics": {
+      "delta_pp": -0.010666666666666675,
+      "ci95_pp": [
+        -0.02666666666666668,
+        0.005333333333333318
+      ]
+    }
+  },
+  "query_transitions": {
+    "eurosat_eurosat": {
+      "corrected": 6,
+      "harmed": 16
+    },
+    "eurosat_dtd": {
+      "corrected": 16,
+      "harmed": 19
+    },
+    "dtd_eurosat": {
+      "corrected": 35,
+      "harmed": 40
+    },
+    "dtd_dtd": {
+      "corrected": 24,
+      "harmed": 29
+    }
+  },
+  "code_lock_verified": true,
+  "scope": "all task arrays and scores; scalar bootstrap for three primary pooled comparisons; descriptive fixed pools"
+}

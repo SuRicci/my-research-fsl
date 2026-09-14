@@ -1,0 +1,39 @@
+{
+  "observed_at_utc": "2026-09-13T08:51:48.220987+00:00",
+  "codex_home": null,
+  "buckets": {
+    "codex": {
+      "limit_name": null,
+      "plan_type": "pro",
+      "windows": {
+        "primary": {
+          "used_percent": 34,
+          "remaining_percent": 66,
+          "window_minutes": 10080,
+          "resets_at_utc": "2026-09-19T08:11:47+00:00",
+          "resets_at_china": "2026-09-19T16:11:47+08:00"
+        }
+      }
+    },
+    "codex_bengalfox": {
+      "limit_name": "GPT-5.3-Codex-Spark",
+      "plan_type": "pro",
+      "windows": {
+        "primary": {
+          "used_percent": 0,
+          "remaining_percent": 100,
+          "window_minutes": 300,
+          "resets_at_utc": "2026-09-13T13:51:47+00:00",
+          "resets_at_china": "2026-09-13T21:51:47+08:00"
+        },
+        "secondary": {
+          "used_percent": 0,
+          "remaining_percent": 100,
+          "window_minutes": 10080,
+          "resets_at_utc": "2026-09-20T08:51:47+00:00",
+          "resets_at_china": "2026-09-20T16:51:47+08:00"
+        }
+      }
+    }
+  }
+}

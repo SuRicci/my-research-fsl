@@ -1,0 +1,218 @@
+[
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 1,
+    "mode": "map_before_mean",
+    "seed": 26091381,
+    "seconds": 1.5322041511535645,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 1,
+    "mode": "map_before_mean",
+    "seed": 26091382,
+    "seconds": 1.2358741760253906,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 1,
+    "mode": "map_before_mean",
+    "seed": 26091383,
+    "seconds": 1.329974889755249,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 1,
+    "mode": "map_after_mean",
+    "seed": 26091381,
+    "seconds": 0.9178099632263184,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 1,
+    "mode": "map_after_mean",
+    "seed": 26091382,
+    "seconds": 1.0533900260925293,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 1,
+    "mode": "map_after_mean",
+    "seed": 26091383,
+    "seconds": 1.2224969863891602,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 5,
+    "mode": "map_before_mean",
+    "seed": 26091381,
+    "seconds": 1.8427331447601318,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 5,
+    "mode": "map_before_mean",
+    "seed": 26091382,
+    "seconds": 2.0950918197631836,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 5,
+    "mode": "map_before_mean",
+    "seed": 26091383,
+    "seconds": 1.9008679389953613,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 5,
+    "mode": "map_after_mean",
+    "seed": 26091381,
+    "seconds": 1.0734858512878418,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 5,
+    "mode": "map_after_mean",
+    "seed": 26091382,
+    "seconds": 1.0922040939331055,
+    "episodes": 500
+  },
+  {
+    "source": "dtd",
+    "target": "eurosat",
+    "shot": 5,
+    "mode": "map_after_mean",
+    "seed": 26091383,
+    "seconds": 0.9308891296386719,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 1,
+    "mode": "map_before_mean",
+    "seed": 26091381,
+    "seconds": 1.188593864440918,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 1,
+    "mode": "map_before_mean",
+    "seed": 26091382,
+    "seconds": 1.3746278285980225,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 1,
+    "mode": "map_before_mean",
+    "seed": 26091383,
+    "seconds": 1.5839931964874268,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 1,
+    "mode": "map_after_mean",
+    "seed": 26091381,
+    "seconds": 0.6232678890228271,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 1,
+    "mode": "map_after_mean",
+    "seed": 26091382,
+    "seconds": 0.6361489295959473,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 1,
+    "mode": "map_after_mean",
+    "seed": 26091383,
+    "seconds": 0.6603479385375977,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 5,
+    "mode": "map_before_mean",
+    "seed": 26091381,
+    "seconds": 1.3774824142456055,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 5,
+    "mode": "map_before_mean",
+    "seed": 26091382,
+    "seconds": 1.7853202819824219,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 5,
+    "mode": "map_before_mean",
+    "seed": 26091383,
+    "seconds": 1.7334010601043701,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 5,
+    "mode": "map_after_mean",
+    "seed": 26091381,
+    "seconds": 0.9902231693267822,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 5,
+    "mode": "map_after_mean",
+    "seed": 26091382,
+    "seconds": 1.0299880504608154,
+    "episodes": 500
+  },
+  {
+    "source": "eurosat",
+    "target": "dtd",
+    "shot": 5,
+    "mode": "map_after_mean",
+    "seed": 26091383,
+    "seconds": 1.134012222290039,
+    "episodes": 500
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-024f7626",
+  "id": "report-024f7626",
+  "quest_id": "012",
+  "created_at": "2026-09-13T07:52:46+00:00",
+  "updated_at": "2026-09-13T07:52:46+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-81590001"
+  },
+  "status": "verified",
+  "branch": "run/task-local-mask-20260913",
+  "head_commit": "992dd305d351bb1c1f737585e4393b006c32a242",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_development_experiment",
+  "title": "Task-local frozen feature selection fails against fixed composition",
+  "idea_id": "idea-7e538f3a",
+  "summary": "Fixedsupport-onlySUR-stylemask: DTD-0.584pp[−0.8253,−0.3373], EuroSAT-3.6067pp[−3.9694,−3.2493] vs equalCS_l2. All5seed effectsnegative. MaskseffectivelyselectDINO.2000uniquetasks/8conditions independentlyaudited; no newPetsmetrics.",
+  "evaluation_summary": {
+    "outcome_summary": "Fixedtask-localobjectivefailsqualification",
+    "claim_update": "Refutedfixedprotocol, notalltaskfeatureselection",
+    "baseline_relation": "r2-pets-transfer unchanged; auxiliary exposedDTD/EuroSATtier",
+    "failure_mode": "objective_prefers_raw_crossclass_cosine_over_query_utility",
+    "next_action": "idea: availablewithinclassinformation vsheadalignedvalidation",
+    "evidence": "REPORT.md; outputs/analysis.json; outputs/independent_audit.json"
+  },
+  "evidence_paths": [
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/REPORT.md",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/analysis.json",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/independent_audit.json",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/monotonicity_diagnostic.json"
+  ],
+  "related_artifact_ids": [
+    "science-51f5c269",
+    "science-2300f252",
+    "report-a6dd36b5"
+  ],
+  "run_id": "run-81590001",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:auxiliary_development_experiment:none:ae15545966f7a7f30ebe4b9d48e4272a871ea7b22982fba4c39a305fdda8f166",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-024f7626",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

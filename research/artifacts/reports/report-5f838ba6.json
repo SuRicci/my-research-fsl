@@ -1,0 +1,54 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-5f838ba6",
+  "id": "report-5f838ba6",
+  "quest_id": "012",
+  "created_at": "2026-09-12T19:55:36+00:00",
+  "updated_at": "2026-09-12T19:55:36+00:00",
+  "source": {
+    "kind": "system",
+    "role": "artifact"
+  },
+  "status": "completed",
+  "branch": "run/r2-fusion-stage-canonical-20260912",
+  "head_commit": "26686eda882804551c6b1df007dcbe8bfeb5b561",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912",
+  "workspace_rel_path": ".ds/worktrees/r2-fusion-stage-canonical-20260912",
+  "report_type": "summary_refresh",
+  "report_id": "report-44123134",
+  "summary": "Quest summary refreshed from recent artifacts.",
+  "reason": "R4 baseline-2ec8a7ee accepted after60jobs and complete ranking audit; strongest fixed old_centered44.325898mAP, V0 43.306736,9metrics/13variants. R2 fusion run-eda8c43a closed below strong gate. Current work: R4 idea analytical/prior-work challenge, no new R4 idea selected or live process; canonical plan/status/idea frontier updated.",
+  "paths": {
+    "summary_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/SUMMARY.md",
+    "quest_root_summary_md": "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+  },
+  "semantic_key": "report:idea:summary_refresh:none:a3bd2c6ca568d8fcfe16bdfe1ebd67625f33488f99d9d64571bddecffbe47552",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-5f838ba6",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/SUMMARY.md",
+      "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+    ],
+    "stage_status": "ready"
+  }
+}

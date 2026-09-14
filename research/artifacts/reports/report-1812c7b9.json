@@ -1,0 +1,69 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-1812c7b9",
+  "id": "report-1812c7b9",
+  "quest_id": "012",
+  "created_at": "2026-09-13T09:24:25+00:00",
+  "updated_at": "2026-09-13T09:24:25+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-527f15e2"
+  },
+  "status": "completed",
+  "branch": "run/class-associated-scatter-20260913",
+  "head_commit": "29822b9d7d31a96db365c88f6ab39c9d209d92d6",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "class_associated_scatter_qualification",
+  "title": "Class-associated scatter fails fixed cumulative qualification",
+  "idea_id": "idea-c62de373",
+  "tier": "auxiliary/dev",
+  "summary": "77.31867% vs77.33400%incumbent; -0.01533pp95%CI[-0.03333,0.00268]. Equalcompute andforeignmetric controls not beaten. Full2000conditions and8000parentendpoint checks validated.",
+  "metrics_summary": {
+    "dev_macro_1shot_accuracy": 77.31866666666667,
+    "dev_macro_1shot_delta_vs_incumbent_pp": -0.01533333333333331
+  },
+  "claim_update": {
+    "fixed_recipe": "not_supported",
+    "all_class_covariance_methods": "untested"
+  },
+  "failure_mode": "direction_underperforming",
+  "baseline_relation": "canonicalPetsfive metrics unchanged; auxiliaryDtd/EuroSAT comparison only",
+  "evidence_paths": [
+    "experiments/main/class-associated-scatter-20260913/REPORT.md",
+    "experiments/main/class-associated-scatter-20260913/RESULT.json",
+    "experiments/main/class-associated-scatter-20260913/outputs/analysis.json",
+    "experiments/main/class-associated-scatter-20260913/outputs/independent_audit.json",
+    "experiments/main/class-associated-scatter-20260913/outputs/effect_size_diagnostic.json"
+  ],
+  "next_action": "audit_existing_source_map_distortion",
+  "run_id": "run-527f15e2",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:class_associated_scatter_qualification:none:3d17852551fd8ca8bc759c8a59bd19d83b79e3e2dccde4b283fea393354b24ff",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-1812c7b9",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

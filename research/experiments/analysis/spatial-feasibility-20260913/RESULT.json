@@ -1,0 +1,19 @@
+{
+  "status": "partial",
+  "classification_evaluated": false,
+  "failed_sessions": [
+    "bash-7e55b9fe",
+    "bash-a803ba81"
+  ],
+  "clip_pools_checked": 4,
+  "clip_images_checked": 32,
+  "clip_native_cls_max_abs": 3.5762786865234375e-07,
+  "clip_cached_cls_max_abs": 0.00014093518257141113,
+  "dino_parity_status": "not_reached",
+  "first_failure": "MPS adaptive pooling 14 to 4 unsupported",
+  "second_failure": "Missing inherited PYTORCH_ENABLE_MPS_FALLBACK=1; DINO bicubic unsupported",
+  "remaining_action": "No third standalone smoke. Restore verified launch environment in selected DINO source extraction; validate every batch.",
+  "selected_source_query_images": 7277,
+  "dino_4x4_float16_bytes": 89419776,
+  "free_gib_measured": 10.574249267578125
+}

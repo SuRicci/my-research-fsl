@@ -1,0 +1,10 @@
+{
+  "experiments/main/query-competence-20260913/study.py": "367e0717eb64d47a7ec2d683f95d8b909cf1a9e6adc11038ef241864d860093c",
+  "experiments/main/query-competence-20260913/protocol.json": "63ea644710ebf3246be8f5803f27819c0192bf5cc947fa14442c8378f202e7e4",
+  "experiments/main/scatter-score-fusion-20260913/study.py": "d39f553e1bbf594f34eafc2c71128e46155ee180ea76278392324267abaa9814",
+  "experiments/analysis/scatter-centering-attribution-20260913/analysis.py": "49e7ced77308de69475f0c0028a0b5b23bdc163c5dcc12d4b63097b711d76cb9",
+  "experiments/main/scatter-centering-stack-20260913/model.py": "a8b1bc480cf99ad1df0aca549e7381a3a89989069ca76818f6fe7f9ae757baaf",
+  "experiments/main/scatter-centering-stack-20260913/summarize.py": "1ed8fe5359ae2f3a962fe12faebb625fac729b1918a98883d8879ff8899249e0",
+  "experiments/main/representation-scatter-20260913/evaluate.py": "c614d00a1ed0b13fe12b3c4ce48ea298fc2cac6b14d365ef3d471fce89e77b4a",
+  "experiments/main/utility-composition-qualification-20260913/run.py": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c"
+}

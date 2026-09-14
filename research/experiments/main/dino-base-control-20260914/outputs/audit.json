@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "prediction_arithmetic_checks": 1350000,
+  "independent_intervals": 34,
+  "independent_primary_cases": [
+    {
+      "domain": "dtd",
+      "gallery": "dtd",
+      "task": 99,
+      "method": "base_consistency",
+      "max_abs": 6.661338147750939e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "dtd",
+      "task": 99,
+      "method": "base_scatter",
+      "max_abs": 7.771561172376096e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "eurosat",
+      "task": 99,
+      "method": "base_consistency",
+      "max_abs": 8.881784197001252e-16
+    },
+    {
+      "domain": "dtd",
+      "gallery": "eurosat",
+      "task": 99,
+      "method": "base_scatter",
+      "max_abs": 8.881784197001252e-16
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "dtd",
+      "task": 99,
+      "method": "base_consistency",
+      "max_abs": 6.661338147750939e-16
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "dtd",
+      "task": 99,
+      "method": "base_scatter",
+      "max_abs": 6.661338147750939e-16
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "eurosat",
+      "task": 99,
+      "method": "base_consistency",
+      "max_abs": 6.661338147750939e-16
+    },
+    {
+      "domain": "eurosat",
+      "gallery": "eurosat",
+      "task": 99,
+      "method": "base_scatter",
+      "max_abs": 6.661338147750939e-16
+    }
+  ],
+  "gate_passed": false,
+  "bank_hashes": {
+    "dtd_dtd": "ceb2226d17a347c3da29502e8affdda0ac44f1d4b606c3003f8c62e3c9d25315",
+    "dtd_eurosat": "6b3227edc8a840cde041a3ea0e8ef9084077ed00bd708fc25eb7ea6cb0124c73",
+    "eurosat_dtd": "160c75418894ff40421106954490c90ce7fdcdf43f4d22daad39b865b6941856",
+    "eurosat_eurosat": "88cdcb7bcac135ac73b9e74023512cd51d1407fe20681122ef1934b4898c283b"
+  },
+  "scope": "Complete saved arithmetic/task integrity; independent NumPy primary and parent on four fixed tasks; logistic optimizer not independently implemented."
+}

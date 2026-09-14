@@ -1,0 +1,22 @@
+{
+  "completed_at": "2026-09-13T04:41:25.703919+00:00",
+  "run_bash": "bash-825ca7da",
+  "frozen_audit_bash": "bash-7dee487f",
+  "diagnostic_bash": "bash-f9e21814",
+  "statistical_audit_bash": "bash-85c80ba6",
+  "strict_source_gate": "refuted",
+  "strict_numerical_audit": "failed",
+  "diagnostic_score_pass_count": 87,
+  "diagnostic_score_check_count": 88,
+  "sampled_eval_score_pass_count": 40,
+  "canonical_pets_contract_changed": false,
+  "pets_or_caltech_evaluated": false,
+  "free_gib": 10.940383911132812,
+  "next_stage": "idea",
+  "source_paths_sha256": {
+    "experiments/main/representation-scatter-20260913/REPORT.md": "d1bb9ce48faf6f76713238d8506538128dc94033d23e569f0e1bb716954fe79b",
+    "experiments/main/representation-scatter-20260913/outputs/analysis.json": "aabcaf1f6d127f645e90bc1841edca487fa0f179997831421f1b7e8661c1dbf3",
+    "experiments/main/representation-scatter-20260913/outputs/output_audit_diagnostics.json": "54086ecab9e540667bb9b110cab56d75e72819ec44dc388ff705c56c51a038e5",
+    "experiments/main/representation-scatter-20260913/outputs/statistical_audit.json": "f97fd873b8acfed2dda93053f89e38e820936aa5fc4637f2a1454d9c53887f47"
+  }
+}

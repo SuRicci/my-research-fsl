@@ -1,0 +1,11 @@
+{
+  "status": "audited",
+  "report": "experiments/main/scatter-centering-stack-20260913/REPORT.md",
+  "audit_status": "passed",
+  "fullpromotion": false,
+  "incumbent_increment_passed": true,
+  "main_session": "bash-a366bd26",
+  "audit_session": "bash-b6717efb",
+  "output_bytes": 1970771,
+  "free_gib": 10.719860076904297
+}

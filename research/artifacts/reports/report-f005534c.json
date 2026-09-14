@@ -1,0 +1,54 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-f005534c",
+  "id": "report-f005534c",
+  "quest_id": "012",
+  "created_at": "2026-09-12T19:29:16+00:00",
+  "updated_at": "2026-09-12T19:29:16+00:00",
+  "source": {
+    "kind": "system",
+    "role": "artifact"
+  },
+  "status": "completed",
+  "branch": "run/r2-fusion-stage-canonical-20260912",
+  "head_commit": "51080d9c37b59acab0151bc940175e00f813f648",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912",
+  "workspace_rel_path": ".ds/worktrees/r2-fusion-stage-canonical-20260912",
+  "report_type": "summary_refresh",
+  "report_id": "report-220d1061",
+  "summary": "Quest summary refreshed from recent artifacts.",
+  "reason": "Fusion main run-eda8c43a and decision-079e924e recorded; strong gate failed, R4 bounded trust/reuse audit active; no live experiment.",
+  "paths": {
+    "summary_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/SUMMARY.md",
+    "quest_root_summary_md": "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+  },
+  "semantic_key": "report:decision:summary_refresh:none:a152d815f91bf8ed8809e32ef0bec6285845ff98b7d3a16b35b8bfab52060ad8",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-f005534c",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/SUMMARY.md",
+      "/Users/decoqwq/DeepScientist/quests/012/SUMMARY.md"
+    ],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "scope": "posthoc failure counts, no fitting or parameter selection",
+  "all_banks": {
+    "dtd_dtd": {
+      "query_occurrences": 37500,
+      "changed_predictions": 550,
+      "repairs": 176,
+      "spoiled": 218,
+      "remaining_available_repairs": 502,
+      "source_or_target": "target",
+      "selection_count": [
+        1788,
+        31470,
+        4242
+      ],
+      "gain_pp": -0.11199999999999999
+    },
+    "dtd_eurosat": {
+      "query_occurrences": 37500,
+      "changed_predictions": 801,
+      "repairs": 282,
+      "spoiled": 291,
+      "remaining_available_repairs": 608,
+      "source_or_target": "target",
+      "selection_count": [
+        3333,
+        27687,
+        6480
+      ],
+      "gain_pp": -0.024
+    },
+    "dtd_selection_excluded": {
+      "query_occurrences": 7500,
+      "changed_predictions": 2,
+      "repairs": 1,
+      "spoiled": 1,
+      "remaining_available_repairs": 110,
+      "source_or_target": "source",
+      "selection_count": [
+        3317,
+        2757,
+        1426
+      ],
+      "gain_pp": 0.0
+    },
+    "dtd_selection_ordinary": {
+      "query_occurrences": 7500,
+      "changed_predictions": 2,
+      "repairs": 0,
+      "spoiled": 1,
+      "remaining_available_repairs": 98,
+      "source_or_target": "source",
+      "selection_count": [
+        3468,
+        2642,
+        1390
+      ],
+      "gain_pp": -0.013333333333333334
+    },
+    "dtd_train_excluded": {
+      "query_occurrences": 7500,
+      "changed_predictions": 7,
+      "repairs": 3,
+      "spoiled": 2,
+      "remaining_available_repairs": 108,
+      "source_or_target": "source",
+      "selection_count": [
+        3126,
+        2835,
+        1539
+      ],
+      "gain_pp": 0.013333333333333334
+    },
+    "dtd_train_ordinary": {
+      "query_occurrences": 7500,
+      "changed_predictions": 3,
+      "repairs": 1,
+      "spoiled": 1,
+      "remaining_available_repairs": 97,
+      "source_or_target": "source",
+      "selection_count": [
+        3361,
+        2661,
+        1478
+      ],
+      "gain_pp": 0.0
+    },
+    "eurosat_dtd": {
+      "query_occurrences": 37500,
+      "changed_predictions": 84,
+      "repairs": 9,
+      "spoiled": 41,
+      "remaining_available_repairs": 1245,
+      "source_or_target": "target",
+      "selection_count": [
+        17734,
+        13455,
+        6311
+      ],
+      "gain_pp": -0.08533333333333333
+    },
+    "eurosat_eurosat": {
+      "query_occurrences": 37500,
+      "changed_predictions": 21,
+      "repairs": 6,
+      "spoiled": 11,
+      "remaining_available_repairs": 558,
+      "source_or_target": "target",
+      "selection_count": [
+        27030,
+        7561,
+        2909
+      ],
+      "gain_pp": -0.013333333333333334
+    },
+    "eurosat_selection_excluded": {
+      "query_occurrences": 7500,
+      "changed_predictions": 228,
+      "repairs": 98,
+      "spoiled": 68,
+      "remaining_available_repairs": 156,
+      "source_or_target": "source",
+      "selection_count": [
+        2184,
+        3254,
+        2062
+      ],
+      "gain_pp": 0.4
+    },
+    "eurosat_selection_ordinary": {
+      "query_occurrences": 7500,
+      "changed_predictions": 158,
+      "repairs": 49,
+      "spoiled": 68,
+      "remaining_available_repairs": 151,
+      "source_or_target": "source",
+      "selection_count": [
+        2194,
+        3484,
+        1822
+      ],
+      "gain_pp": -0.2533333333333333
+    },
+    "eurosat_train_excluded": {
+      "query_occurrences": 7500,
+      "changed_predictions": 172,
+      "repairs": 91,
+      "spoiled": 52,
+      "remaining_available_repairs": 127,
+      "source_or_target": "source",
+      "selection_count": [
+        2134,
+        3327,
+        2039
+      ],
+      "gain_pp": 0.52
+    },
+    "eurosat_train_ordinary": {
+      "query_occurrences": 7500,
+      "changed_predictions": 133,
+      "repairs": 49,
+      "spoiled": 56,
+      "remaining_available_repairs": 139,
+      "source_or_target": "source",
+      "selection_count": [
+        2168,
+        3514,
+        1818
+      ],
+      "gain_pp": -0.09333333333333334
+    }
+  },
+  "target_total": {
+    "query_occurrences": 150000,
+    "changed_predictions": 1456,
+    "repairs": 473,
+    "spoiled": 561,
+    "remaining_available_repairs": 2913
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "method": "r4_diffusion",
+  "dataset": "holidays",
+  "pair": [
+    "clip_b16",
+    "dino_s14"
+  ],
+  "budget": 32,
+  "seed": 51854,
+  "policy": "landmark_random",
+  "bridge_ids": [
+    "rparis:gallery:paris_triomphe_000246",
+    "roxford:gallery:christ_church_000706",
+    "rparis:gallery:paris_moulinrouge_000478",
+    "roxford:gallery:all_souls_000011",
+    "rparis:gallery:paris_invalides_000369",
+    "rparis:gallery:paris_pantheon_000810",
+    "roxford:gallery:all_souls_000102",
+    "roxford:gallery:oxford_001189",
+    "rparis:gallery:paris_museedorsay_000512",
+    "roxford:gallery:all_souls_000042",
+    "rparis:gallery:paris_notredame_000308",
+    "roxford:gallery:new_000898",
+    "rparis:gallery:paris_general_003015",
+    "rparis:gallery:paris_eiffel_000260",
+    "roxford:gallery:ashmolean_000261",
+    "roxford:gallery:keble_000095",
+    "roxford:gallery:balliol_000135",
+    "roxford:gallery:magdalen_000838",
+    "rparis:gallery:paris_defense_000194",
+    "roxford:gallery:worcester_000134",
+    "rparis:gallery:paris_general_001241",
+    "rparis:gallery:paris_triomphe_000768",
+    "roxford:gallery:oriel_000004",
+    "roxford:gallery:all_souls_000041",
+    "roxford:gallery:bodleian_000246",
+    "rparis:gallery:paris_pantheon_000624",
+    "roxford:gallery:magdalen_000173",
+    "roxford:gallery:christ_church_000896",
+    "roxford:gallery:oxford_000015",
+    "rparis:gallery:paris_general_000931",
+    "rparis:gallery:paris_sacrecoeur_000006",
+    "rparis:gallery:paris_general_002778"
+  ],
+  "parent_complete_sha256": "e5e28970906582ce12ccae44192a3b838ec0d67cb06b9d2d08531d20afde92ad",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-followup-20260909/r4_holidays/evaluation/clip_b16__dino_s14__m32__s51854__landmark_random/predictions.npz",
+      "sha256": "46625fa637add5b3a8c43f8d71d75eae772a7b21795a693907685ab608baa8eb"
+    }
+  ],
+  "sha256": "9dacbbded822985c04a6dd8426b41ab50cf0d58936da91f958230263f074b129",
+  "means": [
+    0.8479565091490175
+  ],
+  "conditions": [
+    "map"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "max_weight_row_sum_error": 4.440892098500626e-16
+  },
+  "seconds": 0.7777707576751709
+}

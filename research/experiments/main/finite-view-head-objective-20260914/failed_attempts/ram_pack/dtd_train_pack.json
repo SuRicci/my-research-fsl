@@ -1,0 +1,9 @@
+{
+  "conditions": 200,
+  "identity_max_error": 5.551115123125783e-16,
+  "bytes": 1519616000,
+  "source_banks": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/dtd_train_ordinary.npz",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/dtd_train_excluded.npz"
+  ]
+}

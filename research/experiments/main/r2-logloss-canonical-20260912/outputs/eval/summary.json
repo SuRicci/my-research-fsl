@@ -1,0 +1,56 @@
+{
+  "dtd_matched_1shot_accuracy": {
+    "r2": 76.86266666666667,
+    "support_proto": 73.20533333333333,
+    "distribution_logistic": 76.748,
+    "mean_logistic": 76.76266666666666,
+    "support_logistic": 74.10933333333334,
+    "distribution_ridge": 76.76666666666667,
+    "mean_ridge": 76.824,
+    "support_ridge": 74.032,
+    "r2_tuned": 77.00133333333333
+  },
+  "dtd_mismatched_1shot_accuracy": {
+    "r2": 74.07866666666666,
+    "support_proto": 73.20533333333333,
+    "distribution_logistic": 73.836,
+    "mean_logistic": 73.792,
+    "support_logistic": 74.10933333333334,
+    "distribution_ridge": 73.88533333333332,
+    "mean_ridge": 73.78399999999999,
+    "support_ridge": 74.032,
+    "r2_tuned": 74.072
+  },
+  "dtd_5shot_accuracy": {
+    "r2": 89.98133333333332,
+    "support_proto": 89.37066666666668,
+    "distribution_logistic": 89.98133333333332
+  },
+  "eurosat_mismatched_1shot_accuracy": {
+    "r2": 66.11733333333333,
+    "support_proto": 67.61866666666667,
+    "distribution_logistic": 66.60933333333332,
+    "mean_logistic": 66.608,
+    "support_logistic": 68.02133333333333,
+    "distribution_ridge": 67.41600000000001,
+    "mean_ridge": 67.32533333333333,
+    "support_ridge": 68.71066666666667,
+    "r2_tuned": 65.67466666666667
+  },
+  "eurosat_matched_1shot_accuracy": {
+    "r2": 74.03466666666667,
+    "support_proto": 67.61866666666667,
+    "distribution_logistic": 72.31066666666666,
+    "mean_logistic": 72.27466666666666,
+    "support_logistic": 68.02133333333333,
+    "distribution_ridge": 72.896,
+    "mean_ridge": 72.808,
+    "support_ridge": 68.71066666666667,
+    "r2_tuned": 74.47733333333333
+  },
+  "eurosat_5shot_accuracy": {
+    "r2": 86.80799999999999,
+    "support_proto": 85.06266666666666,
+    "distribution_logistic": 86.80799999999999
+  }
+}

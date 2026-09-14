@@ -1,0 +1,13 @@
+{
+  "result": "small_positive_below_frozen_promotion_gate",
+  "claim_update": "retain+0.146pp[0.05998,0.23268]vsstack;not>=.5pp",
+  "baseline_relation": "sameexposeddev;canonicalPetsunchanged",
+  "failure_mode": "increment_below_prespecified_magnitude",
+  "next_action": "closefixedfusion;challengecompatibleoutside-mechanismdirectionwithoutweightgrid",
+  "metrics_summary": {
+    "dev_macro1shot_blend_accuracy": 77.334,
+    "dev_macro1shot_stack_accuracy": 77.188,
+    "dev_macro1shot_increment_pp": 0.146,
+    "dev_macro1shot_cumulative_vs_meanCS_pp": 1.794
+  }
+}

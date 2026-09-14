@@ -1,0 +1,81 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-618dcdd5",
+  "id": "report-618dcdd5",
+  "quest_id": "012",
+  "created_at": "2026-09-13T02:31:22+00:00",
+  "updated_at": "2026-09-13T02:31:22+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-2e59d784"
+  },
+  "status": "completed",
+  "branch": "run/source-coverage-factorial-20260913",
+  "head_commit": "8cda59bafbff981b86e5337ad7ee24679f359388",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_experiment",
+  "title": "Source gallery coverage × influence capacity: audited qualification rejected",
+  "idea_id": "idea-0f204a61",
+  "semantic_run_name": "source-coverage-factorial-20260913",
+  "tier": "auxiliary/dev",
+  "verdict": "refuted_source_gate",
+  "summary": "Forty-eight models across8target cells and3training allocations: coverage helps scalar by0.1080pp/0.3684pp, but mixed-adaptive minus mixed-scalar is−0.0920pp/−0.3836pp and fails promotion. All source identities and360independent model-task predictions audited.",
+  "metrics_summary": {
+    "dtd_to_eurosat_coverage_scalar_delta_pp": 0.108,
+    "eurosat_to_dtd_coverage_scalar_delta_pp": 0.36844444444444485,
+    "dtd_to_eurosat_candidate_vs_mixed_scalar_delta_pp": -0.092,
+    "eurosat_to_dtd_candidate_vs_mixed_scalar_delta_pp": -0.3835555555555561
+  },
+  "canonical_baseline": "r2-pets-transfer unchanged",
+  "metric_boundary": "Auxiliary source-development qualification; do not substitute source metrics for required canonical Pets metrics. No canonical main/test result submitted.",
+  "evidence_paths": [
+    "experiments/main/source-coverage-factorial-20260913/REPORT.md",
+    "experiments/main/source-coverage-factorial-20260913/RESULT.json",
+    "experiments/main/source-coverage-factorial-20260913/outputs/analysis.json",
+    "experiments/main/source-coverage-factorial-20260913/outputs/validation.json",
+    "experiments/main/source-coverage-factorial-20260913/outputs/accuracy.csv"
+  ],
+  "execution": "bash-4aa58cfb completed; bash-5eb6c48e audit passed",
+  "science_nodes": [
+    "science-d8e173bd",
+    "science-4832715a"
+  ],
+  "evaluation_summary": {
+    "research_question": "Can source-training coverage and class-adaptive influence resolve transfer failure?",
+    "comparison": "Crossed four-arm design; common labeled tasks, stress-aware source-selection, three allocations, established controls",
+    "finding": "Modest scalar coverage benefit but no robust candidate superiority; reverse adaptive deficits in all3allocations",
+    "baseline_relation": "Accepted Pets metric surface unchanged; exposed source-development evidence only",
+    "failure_mode": "Matched versus external gallery tradeoff and inferior adaptive capacity",
+    "next_action": "Reject fixed protocol; investigate additional image information under matched encoding budgets."
+  },
+  "run_id": "run-2e59d784",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:auxiliary_experiment:none:3b5eb04bf61432fa6ec422135c2aa0417d37c2b0cb1b230cf1e5e7f7353b9b11",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-618dcdd5",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

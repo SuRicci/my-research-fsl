@@ -1,0 +1,61 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-c64a98a2",
+  "id": "report-c64a98a2",
+  "quest_id": "012",
+  "created_at": "2026-09-13T13:39:34+00:00",
+  "updated_at": "2026-09-13T13:39:34+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-060a6e21"
+  },
+  "status": "completed",
+  "branch": "run/dino-local-20260913",
+  "head_commit": "c45564a9736f9af0dcf1079d0bcc1bb9cf7f91a1",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "failure_analysis",
+  "title": "Local descriptor complementarity is real but does not justify replacing the parent",
+  "summary": "6699patch-only correct vs18542parent-only correct across150000paired conditions. All16parent-margin quartiles show more parent-only correct cases. Descriptive margin-difference AUC0.621-0.691 is not a selector validation; label oracle is only a bound. Zero changed predictions or fitted parameters.",
+  "parent_report": "report-6eb4cbf9",
+  "paths": {
+    "report": "experiments/analysis/dino-error-complementarity-20260913/REPORT.md",
+    "result": "experiments/analysis/dino-error-complementarity-20260913/RESULT.json",
+    "code": "experiments/analysis/dino-error-complementarity-20260913/analyze.py"
+  },
+  "paper_role": "reference_only",
+  "claim_links": [],
+  "run_id": "run-060a6e21",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:failure_analysis:none:0e453be54a400a33377418136370e0d7edd0492cecb801f8d7a8d57aa30bf38b",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-c64a98a2",
+    "related_paths": [
+      "experiments/analysis/dino-error-complementarity-20260913/REPORT.md",
+      "experiments/analysis/dino-error-complementarity-20260913/RESULT.json",
+      "experiments/analysis/dino-error-complementarity-20260913/analyze.py"
+    ],
+    "stage_status": "ready"
+  }
+}

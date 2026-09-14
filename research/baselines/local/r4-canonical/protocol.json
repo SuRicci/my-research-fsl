@@ -1,0 +1,94 @@
+{
+  "baseline_id": "r4-canonical-local",
+  "variant_id": "semantic-mps32-v1",
+  "scope_id": "r4-dtd-eurosat-semantic-20260912",
+  "source_method": "unchanged frozen V0 v0_press; RBF0.5, standardized residual, PRESS coefficients .001/.01/.1/1/10",
+  "source_sha256": {
+    "methods.py": "3d7044afd1a8dddfb43a5a9c4dda7b91dae6a01e478dc5596beafd94a20b0146",
+    "lab_metrics.py": "fe9514227590993c9c0c07cf3b8e2215d71ee675948c84e3312f328655bd642d",
+    "improved.py": "d2ee38b5ff3243364137f87bc7fc412850605aace18f0ff3b8ad99170a730f4d",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lab_methods.py": "1ff3943740eee0f165f540e7abfc70e0c6d64f2b6370daab089a1c7f52e5d9ad",
+    "nextstage.py": "ba6da2bf06a62da24ee53f31ccdfcf1df8b62650eca26e78fd97b54f41c92bb1",
+    "geometry.py": "1de089bf948e81395b6bbbcd4d6e025f86ddb092236ec8723ddecc42ac501312"
+  },
+  "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+  "source_feature_manifest_sha256": "3d06ebf47f259fb41db5f5aaa85aab65ded94ff15a036d08e36c0cfcfa6e633b",
+  "datasets": [
+    "dtd",
+    "eurosat"
+  ],
+  "pair": [
+    "clip_vitb16",
+    "dinov2_vits14"
+  ],
+  "budgets": [
+    32,
+    64
+  ],
+  "bridge_seeds": [
+    26091301,
+    26091302,
+    26091303,
+    26091304,
+    26091305
+  ],
+  "split_seed": 120909,
+  "identity_selection_seed": 26091300,
+  "queries_per_class": 10,
+  "dtd_dev_class_half": "first23",
+  "dtd_eval_class_half": "remaining24",
+  "eurosat_eval_classes": "all10",
+  "gallery": "all canonical gallery identities; no gallery cap",
+  "bridge_pool": "canonical query pool excluding all retrieval queries; matched query class split or other-domain full remaining pool; sampled without replacement; shared prefixes for32/64",
+  "methods": [
+    "old_old",
+    "relative_centered",
+    "procrustes",
+    "ridge",
+    "wip_restricted",
+    "local_std",
+    "linear_std",
+    "v0_press",
+    "global_press",
+    "old_centered",
+    "old_whiten",
+    "centered_residual_2",
+    "new_new_oracle"
+  ],
+  "primary_method": "v0_press",
+  "metric": "class AP = sum precision at every relevant rank / number relevant gallery images; mean queries, then equal seed and cell means",
+  "evaluation_cells": 8,
+  "development_cells": 4,
+  "bootstrap": "5000 paired class-cluster and bridge-seed resamples; queries within a class stay together, shared queries across bridge seeds; fixed gallery",
+  "permissions": {
+    "method_inputs": [
+      "go",
+      "qo",
+      "qn",
+      "ao",
+      "an"
+    ],
+    "gallery_new_to_method": false,
+    "labels_to_method": false,
+    "query_batch_fit": false,
+    "encoder_training": false,
+    "logical_gallery_new_calls": 0,
+    "bridge_new_calls": "m unique images",
+    "query_old_new_calls": "one each; cached execution"
+  },
+  "deviations": [
+    "New semantic retrieval task using previously viewed DTD/EuroSAT image pools, not historical CUB/Oxford replication",
+    "Canonical local MPS feature variant/DINO preprocessing differs from historicalR4; feature hashes locked",
+    "Only CLIP-B16 to DINO available; unavailable B32\u2192B16 historical cells are reference-only",
+    "Development output is not confirmation; no parameter selection for frozen baseline",
+    "Interface isolation is trusted feature-only code, not adversarial process sandbox"
+  ],
+  "limits": {
+    "free_disk_min_gib": 10,
+    "expected_added_gib_max": 1,
+    "threads": 6,
+    "new_encoding_calls": 0,
+    "download_bytes": 0
+  }
+}

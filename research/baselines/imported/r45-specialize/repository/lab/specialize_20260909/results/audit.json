@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "candidates": 10,
+  "r4": {
+    "r4_whiten": {
+      "cells": 180,
+      "query_rankings": 38400,
+      "rank_ap_checks": true,
+      "baseline_max_map_error": 0.0
+    },
+    "r4_rank": {
+      "cells": 180,
+      "query_rankings": 38400,
+      "rank_ap_checks": true,
+      "baseline_max_map_error": 0.0
+    },
+    "r4_diffusion": {
+      "cells": 180,
+      "query_rankings": 38400,
+      "rank_ap_checks": true,
+      "baseline_max_map_error": 0.0
+    },
+    "r4_ensemble": {
+      "cells": 180,
+      "query_rankings": 38400,
+      "rank_ap_checks": true,
+      "baseline_max_map_error": 0.0
+    },
+    "r4_top100": {
+      "cells": 180,
+      "query_rankings": 38400,
+      "rank_ap_checks": true,
+      "baseline_max_map_error": 0.0
+    }
+  },
+  "r5": {
+    "r5_consensus": {
+      "files": 50,
+      "episodes": 30000,
+      "baseline_max_score_error": 0.0,
+      "baseline_prediction_flips": 0,
+      "identity_prediction_checks": true
+    },
+    "r5_median": {
+      "files": 50,
+      "episodes": 30000,
+      "baseline_max_score_error": 0.0,
+      "baseline_prediction_flips": 0,
+      "identity_prediction_checks": true
+    },
+    "r5_variance": {
+      "files": 50,
+      "episodes": 30000,
+      "baseline_max_score_error": 0.0,
+      "baseline_prediction_flips": 0,
+      "identity_prediction_checks": true
+    },
+    "r5_distribution": {
+      "files": 50,
+      "episodes": 30000,
+      "baseline_max_score_error": 0.0,
+      "baseline_prediction_flips": 0,
+      "identity_prediction_checks": true
+    },
+    "r5_support_cv": {
+      "files": 50,
+      "episodes": 30000,
+      "baseline_max_score_error": 0.0,
+      "baseline_prediction_flips": 0,
+      "identity_prediction_checks": true
+    }
+  },
+  "cv_uniform_control": {
+    "status": "complete",
+    "files": 50,
+    "episodes": 30000,
+    "summary_sha256": "ea2e6025bc230de1f0d3d9696825c9c282550d9876946c04c9f217d544c5b02c"
+  },
+  "protocol_sha256": "19680abffb7c533e2ee8f095f236424ffadf0ad6c68ad36284a304377feca68d",
+  "summary_hashes": {
+    "r4_whiten": "556c04b796fe0ecfebc06651b1fc4a09dad01ee92b800f5f27098685955b6525",
+    "r4_rank": "eeaac26ab6468d2aaf732ddc37940279feb2d54a16e78397cb8a422aef605109",
+    "r4_diffusion": "b421656a1549f3a3d44bbcbd5f43e42c1702cc60a964a14140a0051393730710",
+    "r4_ensemble": "d29063a05d64074efcf1f1244be8c087b120becd904c434eec273c9efd203b4c",
+    "r4_top100": "b75c5f00eb17cd0fa954d10ac4f00e16088ba9fd2bf4ecf434f8bbd3ba58ba5c",
+    "r5_consensus": "846ac6872f3c1082b26bd8e95d990ddff51aef5effd6bffd8fc1c050b87e3926",
+    "r5_median": "bfc2d3eb29d2a14498d23aa8fa64cb64b71d511138f44dab4a0ad2701a8bcf2f",
+    "r5_variance": "b8c73bc954546d6e7a39a67609b4391c7af5a37f4239429a69e0b1a4b4a33052",
+    "r5_distribution": "63d46f8d939244348c2f3964c8b67a30f02e30f081d15747d16ece643cf1eb9d",
+    "r5_support_cv": "840619b0cb025c8add1480f2e9fc4e072ce0628b0701aee89d9ad0d31b52364b"
+  },
+  "completed_at": 1788960474.5672083,
+  "aggregation_source_sha256": "b869a828537a11da1d7f3c5f6cf9051b5ea1c12ded729aee69a39743e38e5780",
+  "scope": "All 900 rank files and 250 candidate prediction files independently checked; earlier R4 audit reused without repeating computation; raw caches are external dependencies"
+}

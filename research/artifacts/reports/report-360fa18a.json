@@ -1,0 +1,55 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-360fa18a",
+  "id": "report-360fa18a",
+  "quest_id": "012",
+  "created_at": "2026-09-13T01:44:20+00:00",
+  "updated_at": "2026-09-13T01:44:20+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-b9c9739d"
+  },
+  "status": "completed",
+  "branch": "paper/gallery-transfer-calibration-update",
+  "head_commit": "f9a733b6b7d6291b7a5d8a966742977348b2523d",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "storage_cleanup",
+  "title": "Verified redundant archive cleanup",
+  "summary": "Removed four archives totaling 1,512,006,155 logical bytes after verifying extracted content; volume free space increased from 11,868,450,816 to 13,339,193,344 bytes during the operation. Three previously unextracted MATLAB sidecars preserved. Pets annotation archive retained because most contents were not extracted.",
+  "evidence_paths": [
+    ".ds/worktrees/oslo-gallery-pets-20260913/artifacts/reports/continuation-cleanup-20260913/summary.json",
+    ".ds/worktrees/oslo-gallery-pets-20260913/artifacts/reports/continuation-cleanup-20260913/archive_verification.json"
+  ],
+  "scope": "Explicit five archive candidates only. No features, predictions, logs, model weights, environments or Git history removed.",
+  "next_action": "Continue objective-aligned hypothesis selection and implementation.",
+  "run_id": "run-b9c9739d",
+  "anchor": "write",
+  "semantic_key": "report:write:storage_cleanup:none:14d678949e490553556d8d9a13cef6fa25ae970dc3360d007439b135e020f6fb",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-360fa18a",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

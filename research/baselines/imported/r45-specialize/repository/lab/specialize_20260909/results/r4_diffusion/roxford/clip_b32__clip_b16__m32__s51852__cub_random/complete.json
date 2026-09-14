@@ -1,0 +1,77 @@
+{
+  "method": "r4_diffusion",
+  "dataset": "roxford",
+  "pair": [
+    "clip_b32",
+    "clip_b16"
+  ],
+  "budget": 32,
+  "seed": 51852,
+  "policy": "cub_random",
+  "bridge_ids": [
+    "bridge:005.Crested_Auklet/Crested_Auklet_0052_794952.jpg",
+    "bridge:038.Great_Crested_Flycatcher/Great_Crested_Flycatcher_0107_29501.jpg",
+    "bridge:062.Herring_Gull/Herring_Gull_0093_46029.jpg",
+    "bridge:114.Black_throated_Sparrow/Black_Throated_Sparrow_0001_107233.jpg",
+    "bridge:144.Common_Tern/Common_Tern_0106_149345.jpg",
+    "bridge:007.Parakeet_Auklet/Parakeet_Auklet_0017_795924.jpg",
+    "bridge:169.Magnolia_Warbler/Magnolia_Warbler_0022_165693.jpg",
+    "bridge:022.Chuck_will_Widow/Chuck_Will_Widow_0053_796953.jpg",
+    "bridge:040.Olive_sided_Flycatcher/Olive_Sided_Flycatcher_0080_30515.jpg",
+    "bridge:034.Gray_crowned_Rosy_Finch/Gray_Crowned_Rosy_Finch_0038_797309.jpg",
+    "bridge:170.Mourning_Warbler/Mourning_Warbler_0047_795373.jpg",
+    "bridge:170.Mourning_Warbler/Mourning_Warbler_0009_166429.jpg",
+    "bridge:122.Harris_Sparrow/Harris_Sparrow_0087_116490.jpg",
+    "bridge:096.Hooded_Oriole/Hooded_Oriole_0053_90898.jpg",
+    "bridge:133.White_throated_Sparrow/White_Throated_Sparrow_0028_129118.jpg",
+    "bridge:030.Fish_Crow/Fish_Crow_0058_25999.jpg",
+    "bridge:036.Northern_Flicker/Northern_Flicker_0069_28924.jpg",
+    "bridge:113.Baird_Sparrow/Baird_Sparrow_0012_794552.jpg",
+    "bridge:066.Western_Gull/Western_Gull_0089_55306.jpg",
+    "bridge:052.Pied_billed_Grebe/Pied_Billed_Grebe_0071_35386.jpg",
+    "bridge:050.Eared_Grebe/Eared_Grebe_0045_34212.jpg",
+    "bridge:027.Shiny_Cowbird/Shiny_Cowbird_0063_24259.jpg",
+    "bridge:038.Great_Crested_Flycatcher/Great_Crested_Flycatcher_0050_29786.jpg",
+    "bridge:067.Anna_Hummingbird/Anna_Hummingbird_0126_55983.jpg",
+    "bridge:123.Henslow_Sparrow/Henslow_Sparrow_0054_116850.jpg",
+    "bridge:055.Evening_Grosbeak/Evening_Grosbeak_0102_37927.jpg",
+    "bridge:072.Pomarine_Jaeger/Pomarine_Jaeger_0006_795775.jpg",
+    "bridge:160.Black_throated_Blue_Warbler/Black_Throated_Blue_Warbler_0054_161158.jpg",
+    "bridge:005.Crested_Auklet/Crested_Auklet_0077_785257.jpg",
+    "bridge:151.Black_capped_Vireo/Black_Capped_Vireo_0005_797453.jpg",
+    "bridge:012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0025_8262.jpg",
+    "bridge:196.House_Wren/House_Wren_0012_187973.jpg"
+  ],
+  "parent_complete_sha256": "5b759d9ba961c1f485b05eadc08ec22977e2670fa23dda4a5f4eda3f0ba2ca46",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/roxford/clip_b32__clip_b16__m32__s51852__cub_random/aps.npz",
+      "sha256": "90ca5e8784195e0547417eb75d3655c2bc84746c40b1845526faf72ce9ae5241"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/roxford/clip_b32__clip_b16__m32__s51852__cub_random/aps.npz",
+      "sha256": "fa99bf97198b3c06bcc9111c93b9720190ab77ab436df053bea29b03da670d0b"
+    }
+  ],
+  "sha256": "26a3af9cb91596b38ada483a956b6a591b2d17d6077000c66c6af2562807481e",
+  "means": [
+    0.2625440246197965,
+    0.06838562641436711
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "max_weight_row_sum_error": 2.220446049250313e-16
+  },
+  "seconds": 0.4922020435333252
+}

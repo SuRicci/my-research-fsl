@@ -1,0 +1,71 @@
+{
+  "method": "r4_top100",
+  "dataset": "holidays",
+  "pair": [
+    "clip_b16",
+    "dino_s14"
+  ],
+  "budget": 32,
+  "seed": 51855,
+  "policy": "cub_random",
+  "bridge_ids": [
+    "bridge:049.Boat_tailed_Grackle/Boat_Tailed_Grackle_0035_33750.jpg",
+    "bridge:144.Common_Tern/Common_Tern_0106_149345.jpg",
+    "bridge:162.Canada_Warbler/Canada_Warbler_0120_162415.jpg",
+    "bridge:170.Mourning_Warbler/Mourning_Warbler_0009_166429.jpg",
+    "bridge:077.Tropical_Kingbird/Tropical_Kingbird_0039_69253.jpg",
+    "bridge:007.Parakeet_Auklet/Parakeet_Auklet_0017_795924.jpg",
+    "bridge:019.Gray_Catbird/Gray_Catbird_0031_21635.jpg",
+    "bridge:021.Eastern_Towhee/Eastern_Towhee_0035_22223.jpg",
+    "bridge:166.Golden_winged_Warbler/Golden_Winged_Warbler_0003_164469.jpg",
+    "bridge:055.Evening_Grosbeak/Evening_Grosbeak_0100_37863.jpg",
+    "bridge:015.Lazuli_Bunting/Lazuli_Bunting_0092_14656.jpg",
+    "bridge:023.Brandt_Cormorant/Brandt_Cormorant_0002_23072.jpg",
+    "bridge:042.Vermilion_Flycatcher/Vermilion_Flycatcher_0005_42478.jpg",
+    "bridge:005.Crested_Auklet/Crested_Auklet_0052_794952.jpg",
+    "bridge:079.Belted_Kingfisher/Belted_Kingfisher_0058_70848.jpg",
+    "bridge:150.Sage_Thrasher/Sage_Thrasher_0044_155610.jpg",
+    "bridge:016.Painted_Bunting/Painted_Bunting_0028_15205.jpg",
+    "bridge:009.Brewer_Blackbird/Brewer_Blackbird_0016_2225.jpg",
+    "bridge:143.Caspian_Tern/Caspian_Tern_0011_146058.jpg",
+    "bridge:127.Savannah_Sparrow/Savannah_Sparrow_0067_118491.jpg",
+    "bridge:133.White_throated_Sparrow/White_Throated_Sparrow_0028_129118.jpg",
+    "bridge:011.Rusty_Blackbird/Rusty_Blackbird_0122_6736.jpg",
+    "bridge:077.Tropical_Kingbird/Tropical_Kingbird_0103_69311.jpg",
+    "bridge:025.Pelagic_Cormorant/Pelagic_Cormorant_0102_23778.jpg",
+    "bridge:113.Baird_Sparrow/Baird_Sparrow_0022_794570.jpg",
+    "bridge:135.Bank_Swallow/Bank_Swallow_0035_129528.jpg",
+    "bridge:190.Red_cockaded_Woodpecker/Red_Cockaded_Woodpecker_0033_794721.jpg",
+    "bridge:106.Horned_Puffin/Horned_Puffin_0084_100637.jpg",
+    "bridge:169.Magnolia_Warbler/Magnolia_Warbler_0015_165817.jpg",
+    "bridge:175.Pine_Warbler/Pine_Warbler_0021_171525.jpg",
+    "bridge:004.Groove_billed_Ani/Groove_Billed_Ani_0010_1704.jpg",
+    "bridge:146.Forsters_Tern/Forsters_Tern_0071_152142.jpg"
+  ],
+  "parent_complete_sha256": "82675914b4fc58ba922f9be8001377a0dac83b2c22248bced7cac3d2c2140344",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-followup-20260909/r4_holidays/evaluation/clip_b16__dino_s14__m32__s51855__cub_random/predictions.npz",
+      "sha256": "889126474bcae69ffe6824756e6a48fd7093fc7b85df421ece3eefc56b85995a"
+    }
+  ],
+  "sha256": "94ac74dcd688f01c4f67e82c9f3a6d0c710d3fe6a62bdfb391c30b313082a41a",
+  "means": [
+    0.8757756039745275
+  ],
+  "conditions": [
+    "map"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "topk": 100
+  },
+  "seconds": 0.7825040817260742
+}

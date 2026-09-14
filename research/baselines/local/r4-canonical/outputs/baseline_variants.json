@@ -1,0 +1,145 @@
+{
+  "old_old": {
+    "dtd_cross_bridge32_map": 27.0458485540921,
+    "dtd_cross_bridge64_map": 27.0458485540921,
+    "dtd_matched_bridge32_map": 27.0458485540921,
+    "dtd_matched_bridge64_map": 27.0458485540921,
+    "eurosat_cross_bridge32_map": 54.43517341879788,
+    "eurosat_cross_bridge64_map": 54.43517341879788,
+    "eurosat_matched_bridge32_map": 54.43517341879788,
+    "eurosat_matched_bridge64_map": 54.43517341879788,
+    "macro_map": 40.74051098644499
+  },
+  "relative_centered": {
+    "dtd_cross_bridge32_map": 5.062234021914837,
+    "dtd_cross_bridge64_map": 5.26993989348678,
+    "dtd_matched_bridge32_map": 21.66355790091305,
+    "dtd_matched_bridge64_map": 28.30563021802359,
+    "eurosat_cross_bridge32_map": 16.15418668535662,
+    "eurosat_cross_bridge64_map": 17.753282310271178,
+    "eurosat_matched_bridge32_map": 41.69684227218114,
+    "eurosat_matched_bridge64_map": 43.340812900815045,
+    "macro_map": 22.40581077537028
+  },
+  "procrustes": {
+    "dtd_cross_bridge32_map": 3.750793058936815,
+    "dtd_cross_bridge64_map": 3.898075929238577,
+    "dtd_matched_bridge32_map": 21.894182992840314,
+    "dtd_matched_bridge64_map": 30.14038784562065,
+    "eurosat_cross_bridge32_map": 15.746765535162979,
+    "eurosat_cross_bridge64_map": 20.052983736737378,
+    "eurosat_matched_bridge32_map": 49.9807920694499,
+    "eurosat_matched_bridge64_map": 55.09367458898334,
+    "macro_map": 25.069706969621244
+  },
+  "ridge": {
+    "dtd_cross_bridge32_map": 2.951126229211049,
+    "dtd_cross_bridge64_map": 3.002913608302629,
+    "dtd_matched_bridge32_map": 11.267764898670373,
+    "dtd_matched_bridge64_map": 15.156569319399143,
+    "eurosat_cross_bridge32_map": 14.067909888564136,
+    "eurosat_cross_bridge64_map": 14.654754054656022,
+    "eurosat_matched_bridge32_map": 32.63182590459899,
+    "eurosat_matched_bridge64_map": 37.247117223069075,
+    "macro_map": 16.372497640808927
+  },
+  "wip_restricted": {
+    "dtd_cross_bridge32_map": 3.3634517393391037,
+    "dtd_cross_bridge64_map": 3.3904220007917263,
+    "dtd_matched_bridge32_map": 15.233820709808166,
+    "dtd_matched_bridge64_map": 23.691965410042666,
+    "eurosat_cross_bridge32_map": 15.275853817718579,
+    "eurosat_cross_bridge64_map": 16.025137361186705,
+    "eurosat_matched_bridge32_map": 42.18279331923698,
+    "eurosat_matched_bridge64_map": 50.957847122875236,
+    "macro_map": 21.265161435124895
+  },
+  "local_std": {
+    "dtd_cross_bridge32_map": 27.542374012452246,
+    "dtd_cross_bridge64_map": 27.58418216424761,
+    "dtd_matched_bridge32_map": 30.964660717751947,
+    "dtd_matched_bridge64_map": 33.3828382975448,
+    "eurosat_cross_bridge32_map": 54.19169192822565,
+    "eurosat_cross_bridge64_map": 53.83633726665078,
+    "eurosat_matched_bridge32_map": 57.00295426097771,
+    "eurosat_matched_bridge64_map": 56.471867228796015,
+    "macro_map": 42.62211323458085
+  },
+  "linear_std": {
+    "dtd_cross_bridge32_map": 26.412212813726843,
+    "dtd_cross_bridge64_map": 25.622393710481667,
+    "dtd_matched_bridge32_map": 31.628444374317528,
+    "dtd_matched_bridge64_map": 34.58571284622954,
+    "eurosat_cross_bridge32_map": 52.74576017853051,
+    "eurosat_cross_bridge64_map": 50.106364129042156,
+    "eurosat_matched_bridge32_map": 52.63891029660749,
+    "eurosat_matched_bridge64_map": 53.10620873568498,
+    "macro_map": 40.85575088557759
+  },
+  "v0_press": {
+    "dtd_cross_bridge32_map": 27.71466483262442,
+    "dtd_cross_bridge64_map": 28.195037702484683,
+    "dtd_matched_bridge32_map": 31.961253576458308,
+    "dtd_matched_bridge64_map": 34.75445167569063,
+    "eurosat_cross_bridge32_map": 55.02707428431934,
+    "eurosat_cross_bridge64_map": 54.8838847793421,
+    "eurosat_matched_bridge32_map": 57.11628386163272,
+    "eurosat_matched_bridge64_map": 56.80123791857014,
+    "macro_map": 43.306736078890296
+  },
+  "global_press": {
+    "dtd_cross_bridge32_map": 27.966146287320232,
+    "dtd_cross_bridge64_map": 28.435791455928204,
+    "dtd_matched_bridge32_map": 32.17737620735079,
+    "dtd_matched_bridge64_map": 34.83919346269379,
+    "eurosat_cross_bridge32_map": 55.21238681065862,
+    "eurosat_cross_bridge64_map": 55.16926556281773,
+    "eurosat_matched_bridge32_map": 56.77262627967109,
+    "eurosat_matched_bridge64_map": 56.33439287598478,
+    "macro_map": 43.36339736780316
+  },
+  "old_centered": {
+    "dtd_cross_bridge32_map": 30.67913154861484,
+    "dtd_cross_bridge64_map": 30.67913154861484,
+    "dtd_matched_bridge32_map": 30.67913154861484,
+    "dtd_matched_bridge64_map": 30.67913154861484,
+    "eurosat_cross_bridge32_map": 57.97266511389243,
+    "eurosat_cross_bridge64_map": 57.97266511389243,
+    "eurosat_matched_bridge32_map": 57.97266511389243,
+    "eurosat_matched_bridge64_map": 57.97266511389243,
+    "macro_map": 44.32589833125364
+  },
+  "old_whiten": {
+    "dtd_cross_bridge32_map": 29.58869174409065,
+    "dtd_cross_bridge64_map": 29.58869174409065,
+    "dtd_matched_bridge32_map": 29.58869174409065,
+    "dtd_matched_bridge64_map": 29.58869174409065,
+    "eurosat_cross_bridge32_map": 52.60091377055451,
+    "eurosat_cross_bridge64_map": 52.60091377055451,
+    "eurosat_matched_bridge32_map": 52.60091377055451,
+    "eurosat_matched_bridge64_map": 52.60091377055451,
+    "macro_map": 41.09480275732258
+  },
+  "centered_residual_2": {
+    "dtd_cross_bridge32_map": 30.88983217639603,
+    "dtd_cross_bridge64_map": 30.917894207736186,
+    "dtd_matched_bridge32_map": 33.76598324688723,
+    "dtd_matched_bridge64_map": 35.380756839152916,
+    "eurosat_cross_bridge32_map": 56.62840683912806,
+    "eurosat_cross_bridge64_map": 54.447829976559234,
+    "eurosat_matched_bridge32_map": 51.52973507547705,
+    "eurosat_matched_bridge64_map": 47.56372688934065,
+    "macro_map": 42.64052065633468
+  },
+  "new_new_oracle": {
+    "dtd_cross_bridge32_map": 37.97552320539392,
+    "dtd_cross_bridge64_map": 37.97552320539392,
+    "dtd_matched_bridge32_map": 37.97552320539392,
+    "dtd_matched_bridge64_map": 37.97552320539392,
+    "eurosat_cross_bridge32_map": 52.99807847167982,
+    "eurosat_cross_bridge64_map": 52.99807847167982,
+    "eurosat_matched_bridge32_map": 52.99807847167982,
+    "eurosat_matched_bridge64_map": 52.99807847167982,
+    "macro_map": 45.48680083853687
+  }
+}

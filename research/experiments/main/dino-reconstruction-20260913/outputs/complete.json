@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "seconds": 161.2012722492218,
+  "task_conditions": 2000,
+  "unique_episodes": 1000,
+  "independent_statistics": "passed",
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "threads": 4,
+  "free_gib": 10.107860565185547,
+  "formal_bash_id": "bash-47305d31",
+  "independent_audit_bash_id": "bash-1a2f52d9",
+  "actual_pre_outcome_freeze": "2026-09-13T14:17:26.555385+00:00"
+}

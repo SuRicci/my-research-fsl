@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-14T07:19:04.745487+00:00",
+  "encoding_session": "bash-8976bba9",
+  "encoding_status": "completed",
+  "encoding_finished_at": "2026-09-14T05:11:18+00:00",
+  "images": 14153,
+  "encoding_seconds": 4409.288649320602,
+  "classification_status": "running",
+  "incident": "Existing feature extraction completed, but fixed classification did not start for approximately two hours. Scheduler root cause not established. Prior running status was stale.",
+  "recovery": "Reuse all completed features; run feature audit, fixed study, then full audit in one managed fail-fast session. No protocol or evaluator change.",
+  "next_action": "feature audit then classification then full audit",
+  "free_gib": 12.41817855834961,
+  "scope": "SameRGB/sixviews/frozenencoders,not equal encodingFLOPs. Exposed source only. FivePetsmetrics unchanged/unmeasured; noCaltechreevaluation. Fixed checkpoint/parameters; no target tuning.",
+  "updated_at": "2026-09-14T07:22:54.847215+00:00",
+  "feature_validation": "passed all 14153 images",
+  "failed_session": "bash-b79cce73",
+  "failure_exit_code": 139,
+  "failure_location": "legacy feature loading before run_manifest and before any task outputs",
+  "diagnostics": {
+    "imports_threads_only": "bash-5174112f completed",
+    "sklearn_first_load": "bash-753e78db segmentation fault",
+    "common_first_ambiguous_module": "bash-ee2ea64c KeyError; diagnostic imported same-name module from changed sys.path",
+    "common_first_explicit_target": "bash-2e017125 completed; all source features loaded and 194 locked source files hashed"
+  },
+  "command_repair": "Import existing common module first, then load target study.py by exact path through existing common.module and call run; chain full audit after success.",
+  "cause_scope": "Observed import-order-dependent loading failure; lower-level native-library root cause not established. No scientific code, protocol, assets, threads or metric changes.",
+  "classification_session": "bash-8890632d",
+  "classification_log": "/Users/decoqwq/DeepScientist/quests/012/.ds/bash_exec/bash-8890632d/terminal.log",
+  "automatic_successor": "audit.py --phase full",
+  "next_check_at": "2026-09-14T07:26:54.847215+00:00"
+}

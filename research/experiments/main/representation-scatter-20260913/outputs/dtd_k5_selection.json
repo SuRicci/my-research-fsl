@@ -1,0 +1,15 @@
+{
+  "gamma": 0.1,
+  "gamma_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "mean_accuracy": [
+    0.916,
+    0.9147692307692308,
+    0.9138461538461539
+  ],
+  "selection_domain": "dtd",
+  "target_outcomes_used": false
+}

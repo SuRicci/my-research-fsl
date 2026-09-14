@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "idea_id": "idea-3a020710",
+  "decision_id": "decision-955f5a64",
+  "tier": "auxiliary/dev",
+  "objectives": [
+    "mean",
+    "raw_max",
+    "reference_max"
+  ],
+  "selectors": [
+    "pooled_ce",
+    "reference_max_ce"
+  ],
+  "source_domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "shot": 1,
+  "seeds": [
+    26091381,
+    26091382,
+    26091383
+  ],
+  "updates": 200,
+  "checkpoints": [
+    0,
+    50,
+    100,
+    200
+  ],
+  "train_tasks_per_group": 50,
+  "selection_tasks_per_group": 50,
+  "batch": "full100taskbank; exact empirical group risk each update",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "logit_scale": 10,
+  "penalty": 0.1,
+  "dimension": 896,
+  "rank": 32,
+  "gate": {
+    "min_gain_pp": 0.5,
+    "ci_lower_gt": 0,
+    "min_positive_seeds": 2
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 26091430,
+    "unit": "paired tasks stratified by5taskseeds; conditional on pools and3trainingseeds"
+  },
+  "primary": {
+    "objective": "reference_max",
+    "selector": "reference_max_ce"
+  },
+  "canonical_baseline": "r2-pets-transfer",
+  "canonical_deviation": "one-shot exposed-development screen; all5requiredPetsmetrics unchanged/unmeasured",
+  "resources": {
+    "threads": 6,
+    "min_free_gib": 10,
+    "max_output_mib": 20,
+    "deadline": "2026-09-15T09:00:00+00:00"
+  },
+  "audit_indices": [
+    0,
+    99,
+    199,
+    299,
+    499
+  ]
+}

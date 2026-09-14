@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "random",
+      "matching_error": 1.1102230246251565e-16,
+      "fusion_error": 7.771561172376096e-15
+    },
+    {
+      "case": "zero",
+      "matching_error": 0.0
+    },
+    {
+      "case": "constant",
+      "matching_error": 0.0
+    },
+    {
+      "case": "tiny",
+      "matching_error": 0.0
+    }
+  ],
+  "torch": "2.3.0",
+  "numpy": "1.24.4"
+}

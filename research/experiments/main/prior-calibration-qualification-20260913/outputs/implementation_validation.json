@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "em_estimate": 0.20051077928244004,
+  "mle_estimate": 0.20051143839964256,
+  "planted_prior": 0.2,
+  "em_iterations": 22,
+  "r2_max_error": 0.0,
+  "query_partition_invariant": true,
+  "class_permutation_invariant_features": true
+}

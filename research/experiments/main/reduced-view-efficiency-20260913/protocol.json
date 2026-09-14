@@ -1,0 +1,144 @@
+{
+  "tier": "auxiliary/dev",
+  "source_domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "shots": [
+    1,
+    5
+  ],
+  "subsets": [
+    [
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      3
+    ],
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      1,
+      5
+    ],
+    [
+      0,
+      2,
+      3
+    ],
+    [
+      0,
+      2,
+      4
+    ],
+    [
+      0,
+      2,
+      5
+    ],
+    [
+      0,
+      3,
+      4
+    ],
+    [
+      0,
+      3,
+      5
+    ],
+    [
+      0,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  "classifiers": [
+    "r2",
+    "CS_l2",
+    "linear_mean"
+  ],
+  "representation": "Normalize each cached fused view in float64; mean selected views then L2. Same subset for support/query/gallery.",
+  "r2": "Unchanged algebra: one-shot top64 cosine, equal centroid blend0.5, centered ridge0.1; five-shot raw support ridge1.0.",
+  "CS_l2": "Support-global center then per-vector L2; one-shot centered retrieval/blend/ridge0.1; five-shot centered support ridge0.1.",
+  "linear_mean": "Support-only centered ridge with frozen opposite-source full-six penalties from kernel selection_lock, same penalty for every subset.",
+  "numerics": "float64 common evaluation; descending cosine stable sort with original gallery index ascending for exact ties. Recompute original/full-six; no repair of historical float32 audits.",
+  "selection_tasks": "100 source selection episodes per shot from existing sampler; source gallery1024 per task with ordinary/excluded draws seed26091381.",
+  "eval_tasks": "Existing500episodes per domain/shot;5seeds; complete matched/mismatched galleries; exposed development sources only.",
+  "selection_rule": "One subset per source shared across shots, galleries and classifiers. Feasible if each source cell paired95%lower bound >=-0.5pp. Among feasible<=3views choose fewest views, then largest worst-cell mean delta, then largest macro mean delta, then lexicographic subset. Full-six fallback. Lock both directions before evaluation.",
+  "evaluation_gate": "Selected subset has<=3views for both directions; paired95%lower bound >=-0.5pp in all classifier/shot/gallery cells. Intersection-union claim across fixed selected cells; no test-picked frontier winner.",
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 26091359,
+  "noninferiority_margin_pp": 0.5,
+  "audit_indices": [
+    0,
+    99,
+    199,
+    299,
+    499
+  ],
+  "selection_audit_indices": [
+    0,
+    49,
+    99
+  ],
+  "score_atol": 1e-08,
+  "stat_atol": 1e-10,
+  "cost_contract": {
+    "structural": "K/6 encoder applications per image per backbone; gallery encoding offline versus query/support online reported separately",
+    "empirical": "MPS actual two frozen encoders,32fixed source images (16each),counts1/2/3/6 with original-anchored lexicographic sets plus any selected sets;1warmup and5timed interleaved repetitions, batch32, sync around measured end-to-end feature extraction; no general latency guarantee",
+    "timing_selection": "No accuracy-based hardware choices. Fixed view-batched extractor identical to retained extraction implementation.",
+    "timing_boundary": "Decoded32image crops preloaded; timed tensor preprocessing, MPS transfers, forward and CPU feature normalization. Excludes image decoding/cropping/model load; not end-to-end application latency."
+  },
+  "storage": "Save all uint8predictions and task identities, exact sampled float64scores; no copy of historical scorebanks.",
+  "resources": {
+    "threads": 6,
+    "local_only": true,
+    "spend": 0,
+    "free_gib_min": 10,
+    "new_gib_max": 0.1,
+    "deadline_utc": "2026-09-15T09:00:00+00:00"
+  },
+  "canonical_baseline": "r2-pets-transfer/frozen-v1 unchanged; allfivePetsmetrics unmeasured. Supplementary source report, not canonical replacement.",
+  "novelty": "No novel algorithm claim; bounded efficiency qualification of established view-policy idea.",
+  "idea_id": "idea-c63025d0",
+  "decision_id": "decision-7a22d1d3"
+}

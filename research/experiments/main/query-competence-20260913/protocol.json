@@ -1,0 +1,48 @@
+{
+  "idea_id": "idea-3c1c2eb3",
+  "run_id": "query-competence-20260913",
+  "tier": "auxiliary/dev",
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "gamma_by_source": {
+    "dtd": 10,
+    "eurosat": 1
+  },
+  "source_gallery_seed": 26091381,
+  "train_episodes": 100,
+  "source_selection_episodes": 100,
+  "source_train_seed": 26091361,
+  "source_selection_seed": 26091362,
+  "source_image_split_seed": 26091340,
+  "experts": [
+    "stack",
+    "raw",
+    "blend"
+  ],
+  "features": "15sorted expert scores plus3pairwise prediction agreement",
+  "learner": "three L2 logistic C1 lbfgs max_iter1000 tol1e-8, source-train standardization",
+  "inference": "argmax competence logits, ties blend/stack/raw; no target normalization",
+  "source_selection_role": "descriptive only; already used for source gamma, not pristine validation",
+  "eval_tasks_per_domain": 500,
+  "gallery_conditions": [
+    "matched",
+    "mismatched"
+  ],
+  "gate": {
+    "increment_pp": 0.5,
+    "pooled_ci_lower": 0,
+    "domain_delta_min": 0,
+    "cell_ci_lower_min": -0.5,
+    "beat_all_simple_controls": true
+  },
+  "resources": {
+    "cpu_threads": 6,
+    "minimum_free_gib": 10,
+    "maximum_outputs_mib": 50,
+    "local_only": true,
+    "spend": 0
+  },
+  "deadline": "2026-09-15T09:00:00+00:00"
+}

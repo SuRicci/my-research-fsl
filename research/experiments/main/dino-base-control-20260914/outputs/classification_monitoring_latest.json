@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-14T07:34:04.366147+00:00",
+  "session_id": "bash-8890632d",
+  "completed_cells": [
+    "dtd_eurosat",
+    "dtd_dtd",
+    "eurosat_dtd"
+  ],
+  "classification_progress": {
+    "domain": "eurosat",
+    "gallery": "eurosat",
+    "tasks_done": 351,
+    "seconds": 690.1515491008759
+  },
+  "features_validated": 14153,
+  "analysis_exists": false,
+  "audit_exists": false,
+  "free_gib": 11.992908477783203,
+  "next_action": "adopt existing classification and chained full audit; do not relaunch",
+  "next_check_seconds": 240
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "section_id": "results",
+  "title": "Qualification against strong controls",
+  "rows": [
+    {
+      "item_id": "oslo-gallery-pets-20260913",
+      "title": "Gallery-only OSLO fails strong-baseline qualification on canonical and fresh Pets images",
+      "kind": "main_experiment",
+      "status": "completed",
+      "paper_role": "main_text",
+      "section_id": "results",
+      "claim_links": [
+        "C1"
+      ],
+      "setup": "Frozen CLIP/DINO fusion.5-way1/5-shot,15queries/class,500tasks/cell; canonical test pool and prospective1804 image-disjoint same-domain trainval images;1876-image Pets or DTD galleries. Seven methods,eight cells,4000tasks. No query adaptation or gallery-label access.",
+      "result_summary": "OSLO_G is below R2 in all eight cells, including paired negative matched one-shot effects in both pools.",
+      "key_metrics": [
+        {
+          "metric_id": "pets_matched_1shot_accuracy",
+          "value": 94.91733333333335,
+          "direction": null,
+          "decimals": null
+        },
+        {
+          "metric_id": "pets_mismatched_1shot_accuracy",
+          "value": 64.192,
+          "direction": null,
+          "decimals": null
+        },
+        {
+          "metric_id": "pets_matched_5shot_accuracy",
+          "value": 97.19466666666666,
+          "direction": null,
+          "decimals": null
+        },
+        {
+          "metric_id": "pets_mismatched_5shot_accuracy",
+          "value": 93.304,
+          "direction": null,
+          "decimals": null
+        },
+        {
+          "metric_id": "pets_macro_1shot_accuracy",
+          "value": 79.55466666666666,
+          "direction": null,
+          "decimals": null
+        },
+        {
+          "metric_id": "pets_fresh_matched_1shot_accuracy",
+          "value": 94.87466666666666,
+          "direction": null,
+          "decimals": null
+        }
+      ],
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/validation.json"
+      ],
+      "run_id": "oslo-gallery-pets-20260913",
+      "selected_outline_ref": "outline-001",
+      "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+      "evaluation_summary": null,
+      "created_at": "2026-09-12T22:23:07+00:00",
+      "updated_at": "2026-09-12T22:53:10.340193+00:00",
+      "impact_summary": "Known source-default transfer only; no general OSLO rejection.",
+      "metric_summary": "Canonical/fresh matched one-shot OSLO_G 94.9173/94.8747%; R2 96.2400/96.0160%; delta -1.3227/-1.1413 pp.",
+      "mapping_status": "mapped",
+      "main_or_appendix": "main_text",
+      "source_paper_line_id": "main-outline-oslo-gallery-pets-20260913"
+    }
+  ]
+}

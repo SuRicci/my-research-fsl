@@ -1,0 +1,13 @@
+{
+  "dataset": "eurosat",
+  "phase": "eval",
+  "policy": "matched",
+  "budget": 32,
+  "seed": 26091303,
+  "npz_sha256": "19849a4f2d3080049a9f0f11b279b244ff1116fcb4bb47902425c75a225330dd",
+  "query_count": 100,
+  "gallery_count": 5000,
+  "bridge_count": 32,
+  "baseline_npz": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m32_s26091303.npz",
+  "baseline_npz_sha256": "4600a6013670da6f20ea44c23a604b4da4891f3e7636ef89670f9b849e5bfef7"
+}

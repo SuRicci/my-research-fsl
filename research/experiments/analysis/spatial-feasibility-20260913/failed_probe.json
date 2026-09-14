@@ -1,0 +1,7 @@
+{
+  "bash_id": "bash-7e55b9fe",
+  "status": "failed",
+  "error": "Adaptive pool MPS: input sizes must be divisible by output sizes.",
+  "change": "Transfer native patch tensors to CPU before adaptive average pooling; same pooling definition.",
+  "no_accuracy_evaluated": true
+}

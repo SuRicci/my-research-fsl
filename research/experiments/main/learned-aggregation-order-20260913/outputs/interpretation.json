@@ -1,0 +1,433 @@
+{
+  "metric_gate_passed": false,
+  "cells": [
+    {
+      "cell": "dtd_to_eurosat_k1_eurosat",
+      "candidate_mean_accuracy_pct": 65.53244444444444,
+      "learned_mean_accuracy_pct": 65.68977777777778,
+      "vs_learned_mean": {
+        "delta_pp": -0.15733333333333271,
+        "ci95_pp": [
+          -0.228444444444444,
+          -0.08622222222222209
+        ]
+      },
+      "vs_frozen_linear_mean": {
+        "delta_pp": -4.819555555555556,
+        "ci95_pp": [
+          -5.293333333333333,
+          -4.313755555555556
+        ]
+      },
+      "vs_frozen_mean_r2": {
+        "delta_pp": -10.792888888888887,
+        "ci95_pp": [
+          -11.376,
+          -10.208
+        ]
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_k1_dtd",
+      "candidate_mean_accuracy_pct": 65.53244444444444,
+      "learned_mean_accuracy_pct": 65.68977777777778,
+      "vs_learned_mean": {
+        "delta_pp": -0.15733333333333271,
+        "ci95_pp": [
+          -0.228444444444444,
+          -0.08622222222222209
+        ]
+      },
+      "vs_frozen_linear_mean": {
+        "delta_pp": -4.819555555555556,
+        "ci95_pp": [
+          -5.293333333333333,
+          -4.313755555555556
+        ]
+      },
+      "vs_frozen_mean_r2": {
+        "delta_pp": -3.072888888888888,
+        "ci95_pp": [
+          -3.610666666666666,
+          -2.541311111111111
+        ]
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_k5_eurosat",
+      "candidate_mean_accuracy_pct": 90.27377777777777,
+      "learned_mean_accuracy_pct": 90.27911111111113,
+      "vs_learned_mean": {
+        "delta_pp": -0.0053333333333333895,
+        "ci95_pp": [
+          -0.03288888888888896,
+          0.023111111111110954
+        ]
+      },
+      "vs_frozen_linear_mean": {
+        "delta_pp": -0.45422222222222264,
+        "ci95_pp": [
+          -0.5706666666666672,
+          -0.3359777777777782
+        ]
+      },
+      "vs_frozen_mean_r2": {
+        "delta_pp": 1.8871111111111105,
+        "ci95_pp": [
+          1.6470888888888882,
+          2.1182444444444433
+        ]
+      }
+    },
+    {
+      "cell": "dtd_to_eurosat_k5_dtd",
+      "candidate_mean_accuracy_pct": 90.27377777777777,
+      "learned_mean_accuracy_pct": 90.27911111111113,
+      "vs_learned_mean": {
+        "delta_pp": -0.0053333333333333895,
+        "ci95_pp": [
+          -0.03288888888888896,
+          0.023111111111110954
+        ]
+      },
+      "vs_frozen_linear_mean": {
+        "delta_pp": -0.45422222222222264,
+        "ci95_pp": [
+          -0.5706666666666672,
+          -0.3359777777777782
+        ]
+      },
+      "vs_frozen_mean_r2": {
+        "delta_pp": 1.8871111111111105,
+        "ci95_pp": [
+          1.6470888888888882,
+          2.1182444444444433
+        ]
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_k1_dtd",
+      "candidate_mean_accuracy_pct": 71.90311111111112,
+      "learned_mean_accuracy_pct": 71.73244444444444,
+      "vs_learned_mean": {
+        "delta_pp": 0.17066666666666677,
+        "ci95_pp": [
+          0.07288888888888942,
+          0.2737777777777779
+        ]
+      },
+      "vs_frozen_linear_mean": {
+        "delta_pp": -4.720888888888889,
+        "ci95_pp": [
+          -5.228466666666668,
+          -4.219555555555557
+        ]
+      },
+      "vs_frozen_mean_r2": {
+        "delta_pp": -7.910222222222223,
+        "ci95_pp": [
+          -8.475644444444445,
+          -7.353755555555557
+        ]
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_k1_eurosat",
+      "candidate_mean_accuracy_pct": 71.90311111111112,
+      "learned_mean_accuracy_pct": 71.73244444444444,
+      "vs_learned_mean": {
+        "delta_pp": 0.17066666666666677,
+        "ci95_pp": [
+          0.07288888888888942,
+          0.2737777777777779
+        ]
+      },
+      "vs_frozen_linear_mean": {
+        "delta_pp": -4.720888888888889,
+        "ci95_pp": [
+          -5.228466666666668,
+          -4.219555555555557
+        ]
+      },
+      "vs_frozen_mean_r2": {
+        "delta_pp": -4.187555555555555,
+        "ci95_pp": [
+          -4.720000000000001,
+          -3.6542000000000003
+        ]
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_k5_dtd",
+      "candidate_mean_accuracy_pct": 90.02844444444445,
+      "learned_mean_accuracy_pct": 90.056,
+      "vs_learned_mean": {
+        "delta_pp": -0.02755555555555631,
+        "ci95_pp": [
+          -0.0773555555555567,
+          0.0222222222222221
+        ]
+      },
+      "vs_frozen_linear_mean": {
+        "delta_pp": -0.8062222222222226,
+        "ci95_pp": [
+          -0.9831111111111114,
+          -0.627555555555556
+        ]
+      },
+      "vs_frozen_mean_r2": {
+        "delta_pp": -0.9075555555555559,
+        "ci95_pp": [
+          -1.111133333333334,
+          -0.7022222222222223
+        ]
+      }
+    },
+    {
+      "cell": "eurosat_to_dtd_k5_eurosat",
+      "candidate_mean_accuracy_pct": 90.02844444444445,
+      "learned_mean_accuracy_pct": 90.056,
+      "vs_learned_mean": {
+        "delta_pp": -0.02755555555555631,
+        "ci95_pp": [
+          -0.0773555555555567,
+          0.0222222222222221
+        ]
+      },
+      "vs_frozen_linear_mean": {
+        "delta_pp": -0.8062222222222226,
+        "ci95_pp": [
+          -0.9831111111111114,
+          -0.627555555555556
+        ]
+      },
+      "vs_frozen_mean_r2": {
+        "delta_pp": -0.9075555555555559,
+        "ci95_pp": [
+          -1.111133333333334,
+          -0.7022222222222223
+        ]
+      }
+    }
+  ],
+  "source_selection": [
+    {
+      "source": "dtd",
+      "shot": 1,
+      "mode": "map_before_mean",
+      "seed": 26091381,
+      "selected_step": 200,
+      "selection_gain_pp": 5.693333333333333,
+      "training_seconds": 7.862034797668457
+    },
+    {
+      "source": "dtd",
+      "shot": 1,
+      "mode": "map_after_mean",
+      "seed": 26091381,
+      "selected_step": 200,
+      "selection_gain_pp": 5.346666666666667,
+      "training_seconds": 3.8796751499176025
+    },
+    {
+      "source": "dtd",
+      "shot": 1,
+      "mode": "map_before_mean",
+      "seed": 26091382,
+      "selected_step": 200,
+      "selection_gain_pp": 6.226666666666667,
+      "training_seconds": 5.67978310585022
+    },
+    {
+      "source": "dtd",
+      "shot": 1,
+      "mode": "map_after_mean",
+      "seed": 26091382,
+      "selected_step": 200,
+      "selection_gain_pp": 5.946666666666666,
+      "training_seconds": 2.8282320499420166
+    },
+    {
+      "source": "dtd",
+      "shot": 1,
+      "mode": "map_before_mean",
+      "seed": 26091383,
+      "selected_step": 200,
+      "selection_gain_pp": 5.773333333333333,
+      "training_seconds": 5.304478883743286
+    },
+    {
+      "source": "dtd",
+      "shot": 1,
+      "mode": "map_after_mean",
+      "seed": 26091383,
+      "selected_step": 200,
+      "selection_gain_pp": 5.96,
+      "training_seconds": 2.945478916168213
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "mode": "map_before_mean",
+      "seed": 26091381,
+      "selected_step": 100,
+      "selection_gain_pp": 1.4307692307692308,
+      "training_seconds": 5.805644989013672
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "mode": "map_after_mean",
+      "seed": 26091381,
+      "selected_step": 100,
+      "selection_gain_pp": 1.3846153846153846,
+      "training_seconds": 3.4619710445404053
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "mode": "map_before_mean",
+      "seed": 26091382,
+      "selected_step": 50,
+      "selection_gain_pp": 1.3076923076923077,
+      "training_seconds": 6.7350850105285645
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "mode": "map_after_mean",
+      "seed": 26091382,
+      "selected_step": 50,
+      "selection_gain_pp": 1.323076923076923,
+      "training_seconds": 3.226856231689453
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "mode": "map_before_mean",
+      "seed": 26091383,
+      "selected_step": 50,
+      "selection_gain_pp": 1.2923076923076924,
+      "training_seconds": 6.8682990074157715
+    },
+    {
+      "source": "dtd",
+      "shot": 5,
+      "mode": "map_after_mean",
+      "seed": 26091383,
+      "selected_step": 50,
+      "selection_gain_pp": 1.3846153846153846,
+      "training_seconds": 3.5483651161193848
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "mode": "map_before_mean",
+      "seed": 26091381,
+      "selected_step": 200,
+      "selection_gain_pp": 23.026666666666667,
+      "training_seconds": 5.294600963592529
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "mode": "map_after_mean",
+      "seed": 26091381,
+      "selected_step": 200,
+      "selection_gain_pp": 23.04,
+      "training_seconds": 3.290588855743408
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "mode": "map_before_mean",
+      "seed": 26091382,
+      "selected_step": 200,
+      "selection_gain_pp": 22.8,
+      "training_seconds": 4.8822760581970215
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "mode": "map_after_mean",
+      "seed": 26091382,
+      "selected_step": 200,
+      "selection_gain_pp": 22.733333333333334,
+      "training_seconds": 3.3110361099243164
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "mode": "map_before_mean",
+      "seed": 26091383,
+      "selected_step": 200,
+      "selection_gain_pp": 23.106666666666666,
+      "training_seconds": 5.231621980667114
+    },
+    {
+      "source": "eurosat",
+      "shot": 1,
+      "mode": "map_after_mean",
+      "seed": 26091383,
+      "selected_step": 200,
+      "selection_gain_pp": 23.2,
+      "training_seconds": 3.2741687297821045
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "mode": "map_before_mean",
+      "seed": 26091381,
+      "selected_step": 200,
+      "selection_gain_pp": 5.984615384615385,
+      "training_seconds": 6.0565690994262695
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "mode": "map_after_mean",
+      "seed": 26091381,
+      "selected_step": 200,
+      "selection_gain_pp": 5.984615384615385,
+      "training_seconds": 3.579972982406616
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "mode": "map_before_mean",
+      "seed": 26091382,
+      "selected_step": 200,
+      "selection_gain_pp": 6.0,
+      "training_seconds": 6.365994930267334
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "mode": "map_after_mean",
+      "seed": 26091382,
+      "selected_step": 200,
+      "selection_gain_pp": 5.923076923076923,
+      "training_seconds": 3.254063129425049
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "mode": "map_before_mean",
+      "seed": 26091383,
+      "selected_step": 200,
+      "selection_gain_pp": 6.030769230769231,
+      "training_seconds": 6.254387140274048
+    },
+    {
+      "source": "eurosat",
+      "shot": 5,
+      "mode": "map_after_mean",
+      "seed": 26091383,
+      "selected_step": 200,
+      "selection_gain_pp": 6.061538461538461,
+      "training_seconds": 4.191142797470093
+    }
+  ],
+  "free_gib": 10.342361450195312,
+  "output_bytes": 52215645
+}

@@ -1,0 +1,19 @@
+{
+  "precision": "MPS float32; unsupported bicubic CPU fallback; stored normalized float16",
+  "datasets": {
+    "eurosat": {
+      "query_total": 5400,
+      "query_unique": 5400,
+      "gallery_unique": 5000,
+      "parity": {
+        "clip_vitb16": {
+          "n": 10,
+          "min_cosine": 0.8400136232376099,
+          "mean_cosine": 0.9205975532531738,
+          "max_abs_difference": 0.16824916005134583,
+          "threshold_min_cosine": 0.999
+        }
+      }
+    }
+  }
+}

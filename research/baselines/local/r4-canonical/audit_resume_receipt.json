@@ -1,0 +1,9 @@
+{
+  "timestamp": 1789242393.017361,
+  "original_managed_session": "bash-beb358e9",
+  "measurement_jobs_preserved": 60,
+  "change": "Read each NPZ member once into arrays; all mathematical checks and metric computations unchanged. Main evaluation code/protocol/raw rankings unchanged.",
+  "before_sha256": "ede5b59b9eda95fdda92ecda9bdc8f1ab56db827a6b5ca5a39e578e557c84e2e",
+  "after_sha256": "76621d45aecf7564243a28156ec5c56ce11baab04a767c19838bb6c6ca9eaa76",
+  "next_command": "/opt/anaconda3/envs/torch/bin/python audit_results.py"
+}

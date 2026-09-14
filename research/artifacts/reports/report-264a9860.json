@@ -1,0 +1,55 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-264a9860",
+  "id": "report-264a9860",
+  "quest_id": "012",
+  "created_at": "2026-09-13T11:03:34+00:00",
+  "updated_at": "2026-09-13T11:03:34+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-a23fdfc4"
+  },
+  "status": "completed",
+  "branch": "run/query-consistency-20260913",
+  "head_commit": "5d50a113cda17ca6cf09c72b41f578758630b40f",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "accumulated_stack_development_comparison",
+  "title": "Accumulated gain is real on development but strongly domain dependent",
+  "summary": "Identity-checked cumulative gain vs six-view mean R2 is2.165333pp; DTD0.205333pp and EuroSAT4.125333pp. Explicitly conditional/exposed; no qualification rescue.",
+  "evidence_paths": [
+    "experiments/analysis/accumulated-stack-comparison-20260913/REPORT.md",
+    "experiments/analysis/accumulated-stack-comparison-20260913/RESULT.json"
+  ],
+  "science_node_id": "science-01e72727",
+  "next_recommendation": "Limited independent Caltech package qualification then frozen prospective evaluation; preserve failed gates.",
+  "run_id": "run-a23fdfc4",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:accumulated_stack_development_comparison:none:498f8d1a132a4e9d5fd71b992e4de5024ae42721f9d0da0139caab06ef6d9d2f",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-264a9860",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

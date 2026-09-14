@@ -1,0 +1,62 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-173f0c7d",
+  "id": "report-173f0c7d",
+  "quest_id": "012",
+  "created_at": "2026-09-12T23:16:15+00:00",
+  "updated_at": "2026-09-12T23:16:15+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-2e5854b1"
+  },
+  "status": "completed",
+  "branch": "paper/oslo-gallery-failure-study",
+  "head_commit": "a28a0b7985bdbc62a903d2ad6301a4e100a3b0f0",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "review",
+  "title": "Scoped gallery-transfer technical note: skeptical review and source QA",
+  "summary": "Seven-page early technical note retains three current evidence groups, five tables and eight verified references. C1-C3 are supported only within the fixed transfer and retrospective diagnostic scope. New algorithm, independent-domain generalization and submission readiness are not established. This was a skeptical self-audit, not a separately independent review.",
+  "outline_id": "outline-001",
+  "source_run_id": "oslo-gallery-pets-20260913",
+  "review_path": "paper/review/review.md",
+  "revision_log_path": "paper/review/revision_log.md",
+  "experiment_todo_path": "paper/review/experiment_todo.md",
+  "claim_evidence_map_path": "paper/claim_evidence_map.json",
+  "qa_report_path": "paper/qa_report.json",
+  "verdict": "retain_draft_checkpoint_then_idea",
+  "evidence_group_count": 3,
+  "table_count": 5,
+  "sampled_episode_count": 2000,
+  "task_condition_evaluation_count": 4000,
+  "next_skill": "idea",
+  "run_id": "run-2e5854b1",
+  "anchor": "decision",
+  "semantic_key": "report:decision:review:none:73622a2f276b7ff452f4e0cdc4bd941413c5ddf7a310f9d5a73c96b4002c85c1",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-173f0c7d",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

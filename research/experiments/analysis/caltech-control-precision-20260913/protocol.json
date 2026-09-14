@@ -1,0 +1,35 @@
+{
+  "idea_id": "idea-d163b4c0",
+  "decision_id": "decision-595d942d",
+  "parent": "experiments/analysis/caltech101-transfer-20260913",
+  "method": "score_ensemble_r2",
+  "gallery_count": 3,
+  "tasks_per_gallery": 500,
+  "dtype": "float64",
+  "tie_rule": "descending stable argsort in frozen canonical gallery order",
+  "k": 64,
+  "influence": 0.5,
+  "ridge": 0.1,
+  "views": 6,
+  "audit_tasks": [
+    0,
+    100,
+    200,
+    300,
+    400
+  ],
+  "audit_queries": [
+    0,
+    17,
+    74
+  ],
+  "original_tolerance": 2e-05,
+  "diagnostic_tolerance": 1e-10,
+  "bootstrap_seed": 26091399,
+  "bootstrap_replicates": 5000,
+  "output_limit_mib": 16,
+  "min_free_gib": 10,
+  "deadline": "2026-09-15T09:00:00+00:00",
+  "frozen_utc": "2026-09-13T14:30:20.392614+00:00",
+  "scope": "numerical variant on existing exposedCaltech,not fresh independent evaluation;Petsunmeasured"
+}

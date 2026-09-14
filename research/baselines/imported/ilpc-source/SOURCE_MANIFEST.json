@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/MichalisLazarou/iLPC",
+  "commit": "149fa2e6f80ed7a7161272e6e0e0c4f546b0d7c8",
+  "commit_date": "2025-02-10T00:46:07Z",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/MichalisLazarou/iLPC/149fa2e6f80ed7a7161272e6e0e0c4f546b0d7c8/README.md",
+      "bytes": 5248,
+      "sha256": "cca30c1356de8d51423785a872140e5229b33b0a6a4429a4392b1619426df800"
+    },
+    {
+      "path": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/MichalisLazarou/iLPC/149fa2e6f80ed7a7161272e6e0e0c4f546b0d7c8/LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "4a7f1e29dc1c92fc36b432ca5f7e66e69019f65e577926059319a662eb39b4dd"
+    },
+    {
+      "path": "iterative_graph_functions.py",
+      "url": "https://raw.githubusercontent.com/MichalisLazarou/iLPC/149fa2e6f80ed7a7161272e6e0e0c4f546b0d7c8/iterative_graph_functions.py",
+      "bytes": 19294,
+      "sha256": "d0dd9d81c16cc8c825b640edf38cc3dccf26976958d3ccc0dd2a77342dd96ebc"
+    },
+    {
+      "path": "semi_distractive_wrn.py",
+      "url": "https://raw.githubusercontent.com/MichalisLazarou/iLPC/149fa2e6f80ed7a7161272e6e0e0c4f546b0d7c8/semi_distractive_wrn.py",
+      "bytes": 17509,
+      "sha256": "07fecf17dfa45a4022136c0cf4eb42585423294df3aa3efeecd34a707160328f"
+    },
+    {
+      "path": "semi_distractive_res.py",
+      "url": "https://raw.githubusercontent.com/MichalisLazarou/iLPC/149fa2e6f80ed7a7161272e6e0e0c4f546b0d7c8/semi_distractive_res.py",
+      "bytes": 19030,
+      "sha256": "7d0da1bd658a416c01ab91c4e8494d74d4ef2457eb653db61ea1ede8337bc33d"
+    },
+    {
+      "path": "test_arguments.py",
+      "url": "https://raw.githubusercontent.com/MichalisLazarou/iLPC/149fa2e6f80ed7a7161272e6e0e0c4f546b0d7c8/test_arguments.py",
+      "bytes": 5557,
+      "sha256": "c8f0fe537923367883bcdb3e3c95c828865fa71c88eab6547634980817c7b3b9"
+    },
+    {
+      "path": "configs.py",
+      "url": "https://raw.githubusercontent.com/MichalisLazarou/iLPC/149fa2e6f80ed7a7161272e6e0e0c4f546b0d7c8/configs.py",
+      "bytes": 273,
+      "sha256": "83e7999ad1c7280aeffa7336597b461c447deb584e847f89c74084809aca7078"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "source_locks_match": true,
+  "source_fold_image_disjointness": {
+    "dtd": {
+      "training_support_distinct": 391,
+      "selection_distinct": 939,
+      "overlap": 0
+    },
+    "eurosat": {
+      "training_support_distinct": 459,
+      "selection_distinct": 2553,
+      "overlap": 0
+    }
+  },
+  "cell_count": 8,
+  "task_condition_evaluations": 4000,
+  "unique_sampled_tasks": 2000,
+  "training_episodes": 200,
+  "source_control_selection_episodes": 200,
+  "cells": [
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "tasks": 500,
+      "method_count": 19,
+      "same_mass_prediction_disagreements": 0,
+      "sha256": "53d6e3d4836601f4bcb32ae0661680fdae3e4508be3b3c00cc2f7eb02eccf051"
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k5",
+      "tasks": 500,
+      "method_count": 19,
+      "same_mass_prediction_disagreements": 0,
+      "sha256": "53520fc5dad376973f72f3748b8a6bba12bd14c3f1a93541671fd1f99bfcf202"
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "tasks": 500,
+      "method_count": 19,
+      "same_mass_prediction_disagreements": 0,
+      "sha256": "e0722bdf95f05c3fb07d4d8c9ef5bd687c6800bbdbc3d4bc5b1981a4efd0bb82"
+    },
+    {
+      "cell": "dtd_to_eurosat_eurosat_k5",
+      "tasks": 500,
+      "method_count": 19,
+      "same_mass_prediction_disagreements": 0,
+      "sha256": "53520fc5dad376973f72f3748b8a6bba12bd14c3f1a93541671fd1f99bfcf202"
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "tasks": 500,
+      "method_count": 19,
+      "same_mass_prediction_disagreements": 0,
+      "sha256": "9d3b5cdedbbb22f06c707bed6c1764f07275c2fbeeb460ddbf71c326192d7e51"
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k5",
+      "tasks": 500,
+      "method_count": 19,
+      "same_mass_prediction_disagreements": 0,
+      "sha256": "1c625895e9e40058c80cda3f2da53fb902a96a472b0dbf6dbb21c79c0d534637"
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "tasks": 500,
+      "method_count": 19,
+      "same_mass_prediction_disagreements": 0,
+      "sha256": "182ba8647ff5ec480a48471e05b8d77574ebaadbd37f03f07d1b52aa264b91b2"
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k5",
+      "tasks": 500,
+      "method_count": 19,
+      "same_mass_prediction_disagreements": 0,
+      "sha256": "1c625895e9e40058c80cda3f2da53fb902a96a472b0dbf6dbb21c79c0d534637"
+    }
+  ],
+  "real_data_mle_checks": [
+    {
+      "cell": "dtd_to_eurosat_eurosat_k1",
+      "em_prior": 0.9999999864092177,
+      "independent_mle": 0.9999940391380134,
+      "absolute_error": 5.9472712042873965e-06
+    },
+    {
+      "cell": "dtd_to_eurosat_dtd_k1",
+      "em_prior": 1.1044827767081253e-07,
+      "independent_mle": 5.960861986537216e-06,
+      "absolute_error": 5.850413708866404e-06
+    },
+    {
+      "cell": "eurosat_to_dtd_dtd_k1",
+      "em_prior": 7.756358841601882e-10,
+      "independent_mle": 5.960861986537216e-06,
+      "absolute_error": 5.960086350653056e-06
+    },
+    {
+      "cell": "eurosat_to_dtd_eurosat_k1",
+      "em_prior": 2.473858830841812e-10,
+      "independent_mle": 5.960861986537216e-06,
+      "absolute_error": 5.960614600654132e-06
+    }
+  ],
+  "five_shot_exact_r2": true,
+  "run_artifact_bytes": 132858078,
+  "free_gib": 11.141170501708984,
+  "boundary": "Auxiliary development evidence; no canonical Pets results or Caltech outcomes added."
+}

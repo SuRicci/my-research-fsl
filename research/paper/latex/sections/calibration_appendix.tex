@@ -1,0 +1,27 @@
+\clearpage
+\section{Source calibration under domain shift}\label{app:calibration}
+This separate development experiment tests a possible remedy, rather than extending the primary OSLO comparison. All DTD and EuroSAT pools had been used in earlier development; these outcomes provide no prospective confirmation on an unexposed dataset. DTD~\citep{dtd} and EuroSAT~\citep{eurosat} use the same frozen feature fusion as the primary evaluation. A model is trained on each domain and evaluated on the other, with matched and fully mismatched galleries.
+
+\paragraph{Source development and inference permissions.}
+Each source uses 100 one-shot episodes to train a binary classifier of gallery membership in the episode's classes. Supports come from one half of the available source query pool. Another 100 episodes from the other half select one fixed control using source-domain accuracy and a matched source gallery. Training supports and control-selection images are disjoint. Source gallery labels are used only for training; target gallery labels and query labels are excluded from adaptation. The same source-selection budget is available to the listed controls, and the calibrated model's architecture and penalty are fixed.
+
+Seven statistics describe a gallery sample relative to the support prototypes: maximum cosine similarity and the gap between its two highest similarities for each encoder and the fused features, plus agreement between the encoders' highest-scoring classes. Standardized statistics feed a class-balanced logistic regressor with $C=1$, L-BFGS tolerance $10^{-8}$ and at most 1,000 iterations. Its output $p$ is treated as a posterior under reference prior one-half. This is a fixed approximation, not a demonstrated guarantee of probability calibration.
+
+\paragraph{Prior correction and controls.}
+Maximum-likelihood prior adjustment is established under label-shift assumptions~\citep{alexandari2020}. Here the binary corrected posterior is
+\[
+ q_\pi(p)=\frac{\pi p}{\pi p+(1-\pi)(1-p)}.
+\]
+Starting from $\pi=0.5$, each iteration sets $\pi$ to the gallery average of $q_\pi(p)$, stopping at change below $10^{-7}$ or 200 iterations; input probabilities are clipped to $[10^{-6},1-10^{-6}]$. Transfer of class-conditional score distributions is an assumption to test, not an asserted property of these domains.
+
+For one-shot classification, the 64 neighbors retrieved by R2 are averaged using these posterior weights and normalized. The mixture coefficient with the support prototype is one-half of their mean posterior. The ridge penalty is $0.1$. The same-mass control uses exactly that coefficient with an unweighted neighbor mean; composition-only retains posterior weighting but fixes the coefficient to one-half. Fixed-prior uses the original posterior without estimating $\pi$. All four rules use exactly R2's support-only five-shot fallback. The nine uncentered mix/penalty controls use mixture coefficients in $\{0,0.25,0.5\}$ and penalties in $\{0.01,0.1,1\}$ for one shot, with the same five-shot fallback. Centered controls use their stated penalty for both support counts. LR1 and LR10 retain the support-only definition above.
+
+\paragraph{Evaluation and findings.}
+Each transfer direction uses five seeds with 100 tasks per support count and 15 queries per class. The two gallery conditions share task indices, giving 2,000 distinct sampled tasks and 4,000 task-condition evaluations. Three thousand paired bootstrap replicates preserve equal seed representation and average gallery conditions within task for the one-shot macro contrast. Intervals describe task sampling conditional on the fixed pools.
+
+\input{tables/calibration_deltas}
+\input{tables/calibration_accuracy}
+
+The positive DTD-to-EuroSAT contrast in Table~\ref{tab:calibration-deltas} does not establish better gallery composition: the same-mass control makes identical predictions in every evaluated condition. Reverse transfer loses against its source-selected control. The five-shot fallback also trails the centered control on EuroSAT. The prespecified requirement of positive one-shot intervals against the source-selected and strong controls in both directions, plus no cell loss exceeding 0.5 percentage points, is therefore not satisfied.
+
+On matched EuroSAT, the mean estimated membership prior is effectively 1 despite a true fraction of 0.5. On matched DTD it is effectively 0 despite a mean true fraction of 0.1064. Fully mismatched galleries also produce priors near zero. In this setup the correction behaves mainly as a domain-dependent switch for gallery influence. Independent numerical maximization on four retained tasks agrees with the implemented estimates within $10^{-5}$. These findings are compatible with score miscalibration or class-conditional shift; they neither isolate a single cause nor rule out other learned relevance models. Exact five-shot fallback, task identities, source-fold separation and prediction-to-accuracy consistency were verified. No new target dataset is evaluated by this experiment.

@@ -1,0 +1,9 @@
+{
+  "time": "2026-09-13T11:37:05.712679+00:00",
+  "failed_session": "bash-6c1e160a",
+  "cause": "Existing torch environment is Python3.8; Path.is_relative_to is unavailable. Numerical checks finished, but code hash capture failed.",
+  "change": "Use resolved parent membership for Python3.8 compatibility; remove unused argparse import.",
+  "method_or_protocol_changed": false,
+  "target_classification_observed": false,
+  "next": "Repeat once after actual compatibility patch; keep original numerical and failure records."
+}

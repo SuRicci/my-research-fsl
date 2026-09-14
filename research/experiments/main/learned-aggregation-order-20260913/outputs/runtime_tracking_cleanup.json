@@ -1,0 +1,9 @@
+{
+  "action": "untrack_ephemeral_runner_state_without_filesystem_deletion",
+  "file_count": 672,
+  "verified_preserved_files": 671,
+  "bytes_preserved": 296910573,
+  "deleted_filesystem_bytes": 0,
+  "purpose": "Prevent repeated runtime database/session snapshots entering future research commits; old history preserved.",
+  "ignore_rule": "/.ds/codex-home/"
+}

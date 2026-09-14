@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "section_id": "calibration_transfer",
+  "title": "Source-trained gallery calibration under domain shift",
+  "rows": [
+    {
+      "item_id": "prior-calibration-source-transfer",
+      "title": "Source-trained gallery calibration under domain shift",
+      "kind": "analysis_report",
+      "section_id": "calibration_transfer",
+      "paper_role": "appendix",
+      "main_or_appendix": "appendix",
+      "status": "completed",
+      "claim_links": [
+        "C4"
+      ],
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/protocol.json"
+      ],
+      "metric_summary": "DTD to EuroSAT one-shot +0.4787 pp [0.3027, 0.6693]; reverse -1.4493 pp [-1.7160, -1.1679] versus source-selected controls; same-mass prediction differences 0.",
+      "result_summary": "Source calibration fails the prespecified bidirectional gate; estimates collapse toward 0 or 1 and no composition benefit is established.",
+      "impact_summary": "Auxiliary exposed-development evidence; not independent-domain confirmation, canonical Pets evaluation, or a general failure theorem.",
+      "setup_note": "Separate calibrators trained on 100 source episodes per domain; 100 source-only control-selection episodes; 500 evaluation tasks per target/support count, shared across two gallery sources.",
+      "mapping_status": "mapped",
+      "selected_outline_ref": "outline-001",
+      "updated_at": "2026-09-13T00:15:41.307293+00:00",
+      "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run"
+    }
+  ]
+}

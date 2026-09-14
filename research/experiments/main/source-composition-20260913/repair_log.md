@@ -1,0 +1,1 @@
+First precheck bash-c4f47d48 failed before training because inherited sys.path resolved verify to a prior module. Renamed the new audit module verify_composition.py; no numerical tolerance or data/protocol change. Next check resolves this concrete import change.

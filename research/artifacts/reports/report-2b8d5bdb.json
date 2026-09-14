@@ -1,0 +1,136 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-2b8d5bdb",
+  "id": "report-2b8d5bdb",
+  "quest_id": "012",
+  "created_at": "2026-09-12T10:44:31+00:00",
+  "updated_at": "2026-09-12T10:44:31+00:00",
+  "source": {
+    "kind": "agent"
+  },
+  "status": "completed",
+  "branch": "run/r2-geometry-canonical-20260912",
+  "head_commit": "047dd58660bdb47fa23ac07a484d98cff3723612",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912",
+  "workspace_rel_path": ".ds/worktrees/r2-geometry-canonical-20260912",
+  "report_type": "analysis_campaign_create",
+  "summary": "Analysis campaign `analysis-bb5b0939` created with 2 slices.",
+  "reason": "The main experiment completed and now requires structured follow-up analysis slices.",
+  "idea_id": "idea-54125bda",
+  "campaign_id": "analysis-bb5b0939",
+  "worktree_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912",
+  "flow_type": "analysis_campaign",
+  "protocol_step": "create",
+  "paths": {
+    "campaign_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/campaign.md"
+  },
+  "details": {
+    "campaign_title": "Support-centering pre-outline evidence checks",
+    "campaign_goal": "Confirm the local standard-method gain on unused query images, then isolate retrieval/head preprocessing. This is pre-outline scientific evidence work, not a writing-facing campaign.",
+    "parent_run_id": "r2-geometry-canonical-20260912",
+    "paper_line_id": null,
+    "paper_line_branch": null,
+    "paper_line_root": null,
+    "campaign_origin": {
+      "kind": "post_main_result",
+      "reason": null,
+      "source_artifact_id": null,
+      "source_outline_ref": null,
+      "source_review_round": null,
+      "reviewer_item_ids": []
+    },
+    "selected_outline_ref": null,
+    "todo_manifest_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/todo_manifest.json",
+    "slice_count": 2,
+    "slices": [
+      {
+        "slice_id": "new-image-confirmation",
+        "title": "New-image confirmation within existing datasets",
+        "branch": "analysis/idea-54125bda/analysis-bb5b0939-new-image-confirmation",
+        "worktree_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation",
+        "run_kind": "analysis.slice",
+        "goal": "Freeze parentparameters and compare on previouslyunusedDTDval1andEuroSATtrainimages.",
+        "research_question": "",
+        "experimental_design": "",
+        "section_id": null,
+        "item_id": "new-image-confirmation",
+        "exp_id": null,
+        "paper_role": null,
+        "paper_placement": null,
+        "analysis_role": null,
+        "reviewer_question": null,
+        "target_display": null,
+        "main_or_appendix": null,
+        "failure_interpretation": null,
+        "tier": null,
+        "claim_links": [],
+        "why_now": "",
+        "completion_condition": "",
+        "must_not_simplify": "",
+        "required_baselines": [],
+        "success_criteria": "",
+        "abandonment_criteria": "",
+        "reviewer_item_ids": [],
+        "manuscript_targets": []
+      },
+      {
+        "slice_id": "retrieval-head-attribution",
+        "title": "Retrieval/head factorial and failure summary",
+        "branch": "analysis/idea-54125bda/analysis-bb5b0939-retrieval-head-attribution",
+        "worktree_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution",
+        "run_kind": "analysis.slice",
+        "goal": "Separate centeredretrievalandcenteredclassification usingcachedparenttasks.",
+        "research_question": "",
+        "experimental_design": "",
+        "section_id": null,
+        "item_id": "retrieval-head-attribution",
+        "exp_id": null,
+        "paper_role": null,
+        "paper_placement": null,
+        "analysis_role": null,
+        "reviewer_question": null,
+        "target_display": null,
+        "main_or_appendix": null,
+        "failure_interpretation": null,
+        "tier": null,
+        "claim_links": [],
+        "why_now": "",
+        "completion_condition": "",
+        "must_not_simplify": "",
+        "required_baselines": [],
+        "success_criteria": "",
+        "abandonment_criteria": "",
+        "reviewer_item_ids": [],
+        "manuscript_targets": []
+      }
+    ]
+  },
+  "semantic_key": "report:decision:analysis_campaign_create:create:5a042b70b4c4ed7e51d80cc6e49c9617ac9c9a7299ab2446695dd5e0f87c6cec",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-2b8d5bdb",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/campaign.md"
+    ],
+    "stage_status": "ready"
+  }
+}

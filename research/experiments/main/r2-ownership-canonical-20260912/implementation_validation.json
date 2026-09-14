@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "raw_r2_endpoint_error": 0.0,
+  "centered_r2_endpoint_error": 0.0,
+  "independent_scalar_pool_error": 5.960464477539063e-08,
+  "query_subset_error": 5.960464477539063e-08,
+  "class_permutation_error": 1.4901161193847656e-07,
+  "empty_pool_fallback_error": 0.0,
+  "synthetic_only": true,
+  "all_finite": true
+}

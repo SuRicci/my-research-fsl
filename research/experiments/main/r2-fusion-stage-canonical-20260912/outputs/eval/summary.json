@@ -1,0 +1,68 @@
+{
+  "dtd_matched_1shot_accuracy": {
+    "late_shared": 77.15733333333333,
+    "early_shared": 77.00133333333333,
+    "early_native": 77.00133333333333,
+    "centered_native": 76.87333333333333,
+    "late_support": 73.62533333333333,
+    "clip_native": 66.472,
+    "dino_native": 76.424,
+    "r2": 76.86266666666667,
+    "cs_l2_fixed": 76.87333333333333
+  },
+  "dtd_mismatched_1shot_accuracy": {
+    "late_shared": 74.048,
+    "early_shared": 74.072,
+    "early_native": 74.072,
+    "centered_native": 73.87066666666668,
+    "late_support": 73.62533333333333,
+    "clip_native": 63.7,
+    "dino_native": 73.25066666666666,
+    "r2": 74.07866666666666,
+    "cs_l2_fixed": 73.87066666666668
+  },
+  "dtd_5shot_accuracy": {
+    "late_shared": 89.98133333333332,
+    "early_shared": 89.98133333333332,
+    "early_native": 89.98133333333332,
+    "centered_native": 89.98133333333332,
+    "late_support": 89.98133333333332,
+    "clip_native": 89.98133333333332,
+    "dino_native": 89.98133333333332,
+    "r2": 89.98133333333332,
+    "cs_l2_fixed": 89.98133333333332
+  },
+  "eurosat_mismatched_1shot_accuracy": {
+    "late_shared": 65.90133333333334,
+    "early_shared": 65.67466666666667,
+    "early_native": 65.67466666666667,
+    "centered_native": 68.124,
+    "late_support": 68.504,
+    "clip_native": 63.530666666666654,
+    "dino_native": 61.94400000000001,
+    "r2": 66.11733333333333,
+    "cs_l2_fixed": 68.124
+  },
+  "eurosat_matched_1shot_accuracy": {
+    "late_shared": 74.81466666666667,
+    "early_shared": 74.47733333333333,
+    "early_native": 74.47733333333333,
+    "centered_native": 73.66533333333334,
+    "late_support": 68.504,
+    "clip_native": 69.78,
+    "dino_native": 69.71733333333334,
+    "r2": 74.03466666666667,
+    "cs_l2_fixed": 73.66533333333334
+  },
+  "eurosat_5shot_accuracy": {
+    "late_shared": 86.80799999999999,
+    "early_shared": 86.80799999999999,
+    "early_native": 86.80799999999999,
+    "centered_native": 86.80799999999999,
+    "late_support": 86.80799999999999,
+    "clip_native": 86.80799999999999,
+    "dino_native": 86.80799999999999,
+    "r2": 86.80799999999999,
+    "cs_l2_fixed": 86.80799999999999
+  }
+}

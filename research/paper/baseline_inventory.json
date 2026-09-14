@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "canonical_baseline_ref": {
+    "baseline_id": "r2-pets-transfer",
+    "variant_id": "frozen-v1",
+    "baseline_path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer",
+    "baseline_root_rel_path": "baselines/local/r2-pets-transfer",
+    "metric_contract_json_path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer/json/metric_contract.json",
+    "metric_contract_json_rel_path": "baselines/local/r2-pets-transfer/json/metric_contract.json",
+    "source_mode": "local",
+    "confirmed_at": "2026-09-12T21:25:10+00:00",
+    "comment": null
+  },
+  "supplementary_baselines": [
+    {
+      "baseline_id": "r2-canonical-local",
+      "variant_id": null,
+      "usage_scope": "supplementary",
+      "status": "registered",
+      "reason": null,
+      "benchmark": null,
+      "split": null,
+      "baseline_root_rel_path": null,
+      "storage_mode": null,
+      "metrics_summary": {},
+      "evidence_paths": [],
+      "published": false,
+      "published_entry_id": null,
+      "origin": {
+        "stage": "analysis_campaign",
+        "campaign_id": "analysis-bb5b0939",
+        "slice_id": "new-image-confirmation"
+      },
+      "created_at": "2026-09-12T11:01:02+00:00",
+      "updated_at": "2026-09-12T11:01:02+00:00"
+    },
+    {
+      "baseline_id": "r2-canonical-local",
+      "variant_id": "mps32-v1",
+      "usage_scope": "supplementary",
+      "status": "registered",
+      "reason": null,
+      "benchmark": null,
+      "split": null,
+      "baseline_root_rel_path": null,
+      "storage_mode": null,
+      "metrics_summary": {},
+      "evidence_paths": [],
+      "published": false,
+      "published_entry_id": null,
+      "origin": {
+        "stage": "analysis_campaign",
+        "campaign_id": "analysis-1985c6ec",
+        "slice_id": "ilpcz-gallery-control"
+      },
+      "created_at": "2026-09-12T18:46:29+00:00",
+      "updated_at": "2026-09-12T18:46:29+00:00"
+    }
+  ],
+  "updated_at": "2026-09-13T00:27:53+00:00"
+}

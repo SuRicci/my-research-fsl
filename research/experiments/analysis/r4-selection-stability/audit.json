@@ -1,0 +1,62 @@
+{
+  "scope": "No-refit descriptive audit of already seen development and evaluation outputs. Bootstrap argmax frequency is instability, not probability of generalization or a new selector.",
+  "source_jobs": 20,
+  "bootstrap_repeats": 5000,
+  "geometry": {
+    "raw": {
+      "development_alpha2_minus_alpha1_pp": 0.07458086647513038,
+      "paired_ci95_pp": [
+        -0.5820142317024398,
+        0.6795698105851069
+      ],
+      "bootstrap_argmax_counts": {
+        "raw_a0": 0,
+        "raw_a0.5": 0,
+        "raw_a1": 2004,
+        "raw_a2": 2996
+      }
+    },
+    "center": {
+      "development_alpha2_minus_alpha1_pp": 0.15478397971573785,
+      "paired_ci95_pp": [
+        -0.4672164193490394,
+        0.7125350437251888
+      ],
+      "bootstrap_argmax_counts": {
+        "center_a0": 0,
+        "center_a0.5": 0,
+        "center_a1": 1411,
+        "center_a2": 3589
+      }
+    }
+  },
+  "source_sha256": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m32_s26091301.npz": "78f05bc0d9d3ea27fca42379920c17af86d6f1df5361835eda1784d36f6b14ce",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m32_s26091302.npz": "49349210f0e92f479cc9981ee62bc60ae16de942d6a3d3e52340466650c3c1b6",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m32_s26091303.npz": "cd2f1fb68d8989974d274928b5f27f97dcd6a57ad032e0ad6b6e1e58a5b9e5a1",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m32_s26091304.npz": "4421973a192c38a110fee3be8259873d0d08eb31a68686b1f99c0bd0db01ac9c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m32_s26091305.npz": "7e821871bc1b20ccc6a61d85fac869696f78cb5932aed0668b7319e16a76cb83",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m64_s26091301.npz": "a6f681cbc06082df7f5d48af8c11cdabb3edf94d61a7854064dcf9ab5aa9fc5d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m64_s26091302.npz": "2f20565a7893f1580adeafa6394d87a6055d6aaf2efe0f5261a272a0830cb81d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m64_s26091303.npz": "71b500fb7ce7448ba251d0bd05fa1ad1cb0ec49b7bc2dbd9b8f0da8961d672ac",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m64_s26091304.npz": "380017bb7699ab09ba55ea0845ca387560d8c25df89a2081fe749340818d4151",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_cross_m64_s26091305.npz": "ead6e2237d553c3e4db7bb72913100cef6a1000d9a31ff4f5807f354bc032210",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m32_s26091301.npz": "9e0a4d1466027f274e04334551803b24a24d1e462b2f68161ceaf145e315ea63",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m32_s26091302.npz": "6845b55d196cdb1931fea098da9eebf70b8b335a449d9730a92541ee4d3fea31",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m32_s26091303.npz": "8baf4b66227ed5f19ea435a120b9b141afa2a3d0eefaefee015f5f036ce75796",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m32_s26091304.npz": "343b59b6850beec7d52b1d25412232661a2a9ba2e336a217e8868b322085a84c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m32_s26091305.npz": "11014a247fb592ba83d5b26154398f0d7a6756eef06262487a934677c8f2f643",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m64_s26091301.npz": "7e4537b478f288813f653226077c9e6550d8e1575edd9f19594ea063d48f4005",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m64_s26091302.npz": "d3e08a53cdc10e524789540f2e99c801c48ffcf3df8950bb892f8cab43296a8f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m64_s26091303.npz": "516da66e3c4357973ad05962c04ff3b3e6b2bda162cd03eba03119f3aaba4f5b",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m64_s26091304.npz": "2ed189420556a89a633628ef9250150c5a3c15b6494770109f61ac81b6db0f2d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/dev/dtd_matched_m64_s26091305.npz": "0c369fbf12b4fcf960d7c27661c00a422e2ab18f2a7036d71e130280e714eb63"
+  },
+  "primary_evaluation_macro_map": 43.05434178146304,
+  "primary_evaluation_delta_vs_old_centered_pp": -1.2715565497906027,
+  "posthoc_alpha1_macro_map": {
+    "raw": 45.67097097001677,
+    "center": 45.77132769036484
+  },
+  "interpretation": "A small development preference plus overlapping uncertainty cannot establish reliable transfer selection. Posthoc evaluation alpha1 remains only a diagnostic; any new calibration rule needs prospective freezing and independent qualification."
+}

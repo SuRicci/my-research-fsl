@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "experiments/main/oslo-gallery-pets-20260913/outputs/analysis.json": "bcd1ac0786698e264b834435b265474447d9c521a7ec8f5e936991f527025496",
+    "experiments/analysis/oslo_influence/attribution.json": "916f44d2cbb394497f5f3709f2f86556048e9aa3068e92dabfc97d6c0e3bda31",
+    "experiments/analysis/oslo_final_step_intervention/analysis.json": "9eb94b0b793480b3f18be84b6d481f88f13b59f83272cdaf15331f8e83e0d9d9"
+  },
+  "tables": {
+    "performance": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/analysis.json",
+    "paired_primary": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/analysis.json",
+    "influence": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/attribution.json",
+    "interventions": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json",
+    "paired_interventions": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json"
+  },
+  "unique_evidence_groups": 3,
+  "condition_evaluations": 4000,
+  "sampled_episodes": 2000
+}

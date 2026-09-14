@@ -1,0 +1,9 @@
+{
+  "status": "running",
+  "backbone": "dinov2_vits14",
+  "pool": "eurosat_gallery",
+  "images_done": 5000,
+  "pool_size": 5000,
+  "elapsed_seconds": 4647.808390855789,
+  "free_gib": 11.042247772216797
+}

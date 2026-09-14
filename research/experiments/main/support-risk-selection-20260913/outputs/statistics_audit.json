@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "primary_comparisons": {
+    "dtd": {
+      "delta_pp": -0.34799999999999986,
+      "ci95_pp": [
+        -0.5106666666666666,
+        -0.18799999999999992
+      ]
+    },
+    "eurosat": {
+      "delta_pp": -0.672,
+      "ci95_pp": [
+        -0.8759999999999999,
+        -0.4640000000000001
+      ]
+    }
+  },
+  "method": "independent scalar accumulation of paired per-task bootstrap; sampled foldMSE/accuracy parity"
+}

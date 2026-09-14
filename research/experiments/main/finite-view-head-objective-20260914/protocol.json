@@ -1,0 +1,76 @@
+{
+  "idea_id": "idea-c31cbd8f",
+  "decision_id": "decision-8a8a0c43",
+  "tier": "auxiliary/dev",
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "arms": [
+    "mean_feature",
+    "mean_view",
+    "max_view"
+  ],
+  "primary": "max_view",
+  "gamma": {
+    "dtd": 10,
+    "eurosat": 1
+  },
+  "seeds": [
+    26091441,
+    26091442,
+    26091443
+  ],
+  "updates": 200,
+  "checkpoints": [
+    0,
+    50,
+    100,
+    200
+  ],
+  "batch": 8,
+  "rank": 32,
+  "dimension": 896,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "logit_scale": 10.0,
+  "ridge_penalty": 0.1,
+  "train_tasks": 100,
+  "selection_tasks": 100,
+  "eval_tasks": 500,
+  "views": 6,
+  "audit_indices": [
+    0,
+    99,
+    199,
+    299,
+    499
+  ],
+  "gate": {
+    "minimum_gain_pp": 0.5,
+    "ci_lower_gt": 0,
+    "cell_lower_floor_pp": -0.5,
+    "positive_seeds": 2
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 26091444,
+    "unit": "task stratified by five seeds, gallery averaged within task; training-seed accuracy average"
+  },
+  "resources": {
+    "threads": 6,
+    "free_gib_min": 10,
+    "output_mib_max": 20,
+    "launch_reserve_mib": 40,
+    "deadline": "2026-09-15T09:00:00+00:00"
+  },
+  "canonical_deviation": "All5Petsmetricids unchanged/unmeasured; source development qualification only",
+  "head": "fixed scatter+retrieval+twohead blend; shared post-transform residual map; mean-feature final inference",
+  "execution_amendment": {
+    "reason": "whole-source RAM pack caused swap/disk-floor breach before anyfit; stream deterministic saved taskpacks with8conditionLRU",
+    "loss_model_tasks_seeds_unchanged": true,
+    "failed_process": "bash-aaea7a83",
+    "cache_payload_max_mib": 65,
+    "memory_note": "final batch materialization adds another~60MiB; total process memory additionally includes frozen feature assets"
+  }
+}

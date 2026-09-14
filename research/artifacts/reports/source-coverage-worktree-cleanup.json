@@ -1,0 +1,13 @@
+{
+  "status": "removed_clean_duplicate_worktree",
+  "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-0f204a61",
+  "preserved_commit": "ba61f60a275e8a63dcab7cad0f027c792ff5f854",
+  "preserved_branch": "idea/012-idea-0f204a61",
+  "descendant_branch": "run/source-coverage-factorial-20260913",
+  "tracked_changes": 0,
+  "untracked_files": 0,
+  "free_before": 9937801216,
+  "free_after": 13068595200,
+  "recovered_bytes": 3130793984,
+  "timestamp": "2026-09-13T02:20:01.088065+00:00"
+}

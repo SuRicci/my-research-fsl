@@ -1,0 +1,2265 @@
+{
+  "claim_to_items": [
+    {
+      "claim_ids": [
+        "C1"
+      ],
+      "item_ids": [
+        "oslo-gallery-pets-20260913"
+      ]
+    },
+    {
+      "claim_ids": [
+        "C2"
+      ],
+      "item_ids": [
+        "oslo-retained-influence"
+      ]
+    },
+    {
+      "claim_ids": [
+        "C3"
+      ],
+      "item_ids": [
+        "oslo-final-step-counterfactual"
+      ]
+    },
+    {
+      "claim_ids": [
+        "C4"
+      ],
+      "item_ids": [
+        "prior-calibration-source-transfer"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "introduction",
+      "title": "Introduction",
+      "paper_role": "main_text",
+      "claims": [],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "method",
+      "title": "Gallery-only prototype fitting",
+      "paper_role": "main_text",
+      "claims": [],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "evaluation",
+      "title": "Evaluation protocol",
+      "paper_role": "main_text",
+      "claims": [],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "results",
+      "title": "Qualification against strong controls",
+      "paper_role": "main_text",
+      "claims": [
+        "C1"
+      ],
+      "required_items": [
+        "oslo-gallery-pets-20260913"
+      ],
+      "optional_items": [],
+      "status": "ready",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": [
+        {
+          "item_id": "oslo-gallery-pets-20260913",
+          "title": "Gallery-only OSLO fails strong-baseline qualification on canonical and fresh Pets images",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "main_text",
+          "section_id": "results",
+          "claim_links": [
+            "C1"
+          ],
+          "setup": "Frozen CLIP/DINO fusion.5-way1/5-shot,15queries/class,500tasks/cell; canonical test pool and prospective1804 image-disjoint same-domain trainval images;1876-image Pets or DTD galleries. Seven methods,eight cells,4000tasks. No query adaptation or gallery-label access.",
+          "result_summary": "OSLO_G is below R2 in all eight cells, including paired negative matched one-shot effects in both pools.",
+          "key_metrics": [
+            {
+              "metric_id": "pets_matched_1shot_accuracy",
+              "value": 94.91733333333335,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_mismatched_1shot_accuracy",
+              "value": 64.192,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_matched_5shot_accuracy",
+              "value": 97.19466666666666,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_mismatched_5shot_accuracy",
+              "value": 93.304,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_macro_1shot_accuracy",
+              "value": 79.55466666666666,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_fresh_matched_1shot_accuracy",
+              "value": 94.87466666666666,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/validation.json"
+          ],
+          "run_id": "oslo-gallery-pets-20260913",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": null,
+          "created_at": "2026-09-12T22:23:07+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "impact_summary": "Known source-default transfer only; no general OSLO rejection.",
+          "metric_summary": "Canonical/fresh matched one-shot OSLO_G 94.9173/94.8747%; R2 96.2400/96.0160%; delta -1.3227/-1.1413 pp.",
+          "mapping_status": "mapped",
+          "main_or_appendix": "main_text",
+          "source_paper_line_id": "main-outline-oslo-gallery-pets-20260913"
+        }
+      ]
+    },
+    {
+      "section_id": "influence",
+      "title": "Ranking and accumulated gallery weight",
+      "paper_role": "main_text",
+      "claims": [
+        "C2"
+      ],
+      "required_items": [
+        "oslo-retained-influence"
+      ],
+      "optional_items": [],
+      "status": "ready",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": [
+        {
+          "item_id": "oslo-retained-influence",
+          "section_id": "influence",
+          "paper_role": "main_text",
+          "status": "completed",
+          "result_summary": "Mean matched one-shot inlier AUROC is about 0.93 but about 80% of gallery weight remains on task-external classes.",
+          "impact_summary": "Algebraic mixture coefficient, not causal vector contribution or calibrated membership.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/attribution.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/REPORT.md"
+          ],
+          "claim_links": [
+            "C2"
+          ],
+          "metric_summary": "Matched canonical/fresh external weight share 80.408/80.826%; mismatch final gallery coefficient 99.485/99.487%.",
+          "mapping_status": "mapped",
+          "main_or_appendix": "main_text",
+          "selected_outline_ref": "outline-001",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "kind": "analysis_report",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run"
+        }
+      ]
+    },
+    {
+      "section_id": "interventions",
+      "title": "Mass and composition interventions",
+      "paper_role": "main_text",
+      "claims": [
+        "C3"
+      ],
+      "required_items": [
+        "oslo-final-step-counterfactual"
+      ],
+      "optional_items": [],
+      "status": "ready",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": [
+        {
+          "item_id": "oslo-final-step-counterfactual",
+          "section_id": "interventions",
+          "paper_role": "main_text",
+          "status": "completed",
+          "result_summary": "Mass balancing largely rescues mismatch but still loses matched one-shot; privileged composition filtering improves matched one-shot.",
+          "impact_summary": "Retrospective final-step intervention with earlier weights fixed; oracle labels unavailable at deployment.",
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/REPORT.md"
+          ],
+          "claim_links": [
+            "C3"
+          ],
+          "metric_summary": "Mass-balanced matched one-shot delta vs R2 -0.4827/-0.6240 pp; oracle membership +1.6827/+1.8507 pp.",
+          "mapping_status": "mapped",
+          "main_or_appendix": "main_text",
+          "selected_outline_ref": "outline-001",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "kind": "analysis_report",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run"
+        }
+      ]
+    },
+    {
+      "section_id": "limitations",
+      "title": "Limitations",
+      "paper_role": "main_text",
+      "claims": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "conclusion",
+      "title": "Conclusion",
+      "paper_role": "main_text",
+      "claims": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "required_items": [],
+      "optional_items": [],
+      "status": "evidence_mapped",
+      "note": "Write only the mapped evidence with the stated boundary.",
+      "result_table": []
+    },
+    {
+      "section_id": "historical_context",
+      "title": "Reference-only historical evidence",
+      "paper_role": "reference_only",
+      "claims": [],
+      "required_items": [],
+      "optional_items": [
+        "canonical-additional-domains",
+        "ilpcz-gallery-control",
+        "multinomial-logistic-control",
+        "new-image-confirmation",
+        "press-fixed-penalty-challenge",
+        "retrieval-head-attribution",
+        "ridge-scale-robustness",
+        "fsl-pets-transfer-20260913",
+        "r2-fusion-stage-canonical-20260912",
+        "r2-geometry-canonical-20260912",
+        "r2-logloss-canonical-20260912",
+        "r2-ownership-canonical-20260912",
+        "r2-prevalidation-canonical-20260912",
+        "r2-residual-canonical-20260912",
+        "r4-transport-geometry-20260913",
+        "utility-composition-qualification-20260913",
+        "source-coverage-factorial-20260913",
+        "representation-scatter-20260913",
+        "view-distribution-kernel-20260913",
+        "learned-aggregation-order-20260913",
+        "reduced-view-efficiency-20260913",
+        "source-composition-20260913",
+        "task-local-mask-20260913",
+        "support-risk-selection-20260913",
+        "scatter-centering-stack-20260913",
+        "scatter-score-fusion-20260913",
+        "class-associated-scatter-20260913",
+        "scatter-centering-attribution-20260913",
+        "source-map-distortion-20260913",
+        "finite-query-selector-20260913",
+        "query-competence-20260913",
+        "query-consistency-20260913",
+        "caltech101-transfer-20260913",
+        "gallery-density-20260913",
+        "dino-local-20260913"
+      ],
+      "status": "ready",
+      "note": "Control-plane retention only; not a manuscript history section. These results neither support nor refute the narrow OSLO claims.",
+      "result_table": [
+        {
+          "item_id": "canonical-additional-domains",
+          "title": "Canonical CUB Flowers and CIFAR-FS panel",
+          "kind": "analysis_slice",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "analysis_role": null,
+          "reviewer_question": "",
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "claim_links": [],
+          "setup": "Three source-verified official image-test pools; fixed CLIP/DINO/fused features; nine five-way five-shot cells with five seeds x200 paired tasks. Identical frozen four-coefficient grid and development-only choices for all controls. Full sources and exclusions documented in SOURCE_AUDIT.md.",
+          "result_summary": "No supported PRESS advantage over development-tuned fixed ridge in any of nine cells; three CLIP losses and CIFAR-FS DINO loss have negative pointwise95% task intervals. Fused PRESS-minus-fixed.001 is +.0013pp Flowers,0 CIFARFS,+.0013pp CUB. High Flowers/CUB accuracy ceilings and domain-dependent geometry effects limit generalization. This update repairs initially nested metric rows into81 explicit numeric entries; measured data are unchanged.",
+          "key_metrics": [
+            {
+              "metric_id": "flowers102__clip__press_accuracy",
+              "value": 99.324,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "flowers102__clip__fixed_1p0_accuracy",
+              "value": 99.15866666666668,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "flowers102__clip__fixed_0p1_accuracy",
+              "value": 99.37066666666666,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "flowers102__clip__fixed_0p01_accuracy",
+              "value": 99.35066666666667,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "flowers102__clip__fixed_0p001_accuracy",
+              "value": 99.31600000000002,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "flowers102__clip__dev_tuned_accuracy",
+              "value": 99.37066666666666,
+              "direction": "maximize",
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json"
+          ],
+          "campaign_id": "analysis-1b946833",
+          "slice_id": "canonical-additional-domains",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": null,
+          "claim_impact": "Broad PRESS superiority and adaptive-benefit claims downgraded. Known geometric/penalty effects remain conditional. No new-method or SOTA claim.",
+          "created_at": "2026-09-12T12:19:51+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "impact_summary": "Broad PRESS superiority and adaptive-benefit claims downgraded. Known geometric/penalty effects remain conditional. No new-method or SOTA claim.",
+          "mapping_status": "mapped"
+        },
+        {
+          "item_id": "ilpcz-gallery-control",
+          "title": "iLPC-z local frozen-gallery comparator",
+          "kind": "analysis_slice",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "analysis_role": null,
+          "reviewer_question": "",
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "claim_links": [],
+          "setup": "Published iLPC-z formulas reimplemented locally; frozen canonical CLIP/DINO fusion; support labels and independent unlabeled full galleries; queries excluded from adaptation. Four graph settings selected only on original DTD development tasks; k20 alpha0.5 selected for both shots; final logistic C10.",
+          "result_summary": "Macro one-shot 60.3897% vs R2 72.7733%, delta -12.3837pp [95% paired CI -12.7637,-12.0023]. Matched EuroSAT +13.648pp one-shot and +4.968pp five-shot; DTD matched -7.6573pp one-shot/-11.4013pp five-shot; mismatched galleries -31.3133pp DTD and -24.212pp EuroSAT.",
+          "key_metrics": [
+            {
+              "metric_id": "dtd_matched_1shot_accuracy",
+              "value": 69.20533333333333,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_mismatched_1shot_accuracy",
+              "value": 42.76533333333333,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_5shot_accuracy",
+              "value": 78.58,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_mismatched_1shot_accuracy",
+              "value": 41.90533333333333,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_matched_1shot_accuracy",
+              "value": 87.68266666666666,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_5shot_accuracy",
+              "value": 91.776,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json"
+          ],
+          "campaign_id": "analysis-1985c6ec",
+          "slice_id": "ilpcz-gallery-control",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "comparability": "Same image/features/support-label/query permissions and paired task identities; method and full-gallery adaptation differ intentionally."
+          },
+          "claim_impact": "Reject universal replacement/robust advantage. Retain large conditional EuroSAT matched-gallery benefit as known-comparator evidence, motivating an enablement/reliability question rather than a novelty or original-table reproduction claim.",
+          "created_at": "2026-09-12T18:46:29+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "impact_summary": "Reject universal replacement/robust advantage. Retain large conditional EuroSAT matched-gallery benefit as known-comparator evidence, motivating an enablement/reliability question rather than a novelty or original-table reproduction claim.",
+          "mapping_status": "mapped"
+        },
+        {
+          "item_id": "multinomial-logistic-control",
+          "title": "Five-shot multinomial logistic control",
+          "kind": "analysis_slice",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "analysis_role": null,
+          "reviewer_question": "",
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "claim_links": [],
+          "setup": "Support-only multinomial-lbfgs; normalized canonical CLIP/DINO/fusion; C=[1,10,100,1000] on200originalDTDdevelopmenttasks perrepresentation, ties prefer smallerC. SelectedC100CLIP,C10DINO/fusion frozen before all21saved1000-taskcells. C1 also retained; no query adaptation, gallery information or encoder update.",
+          "result_summary": "No broad logistic superiority: versus development-tuned ridge,5positive,8negative,8zero-containing pointwise95% task intervals. Original/newEuroSATfusionlogistic88.073/87.751%, belowfixedridge.1 by1.313/1.299pp. FixedC1isfrequentlyunder-calibrated; gainsagainstoriginalridge1canreflectregularizationchoice. Countsdescriptive,notaglobalmultiplicity-correctedtest.",
+          "key_metrics": [
+            {
+              "metric_id": "original__dtd__clip__fixed_1p0_accuracy",
+              "value": 84.40666666666665,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "original__dtd__clip__dev_tuned_accuracy",
+              "value": 85.63466666666667,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "original__dtd__clip__radius_accuracy",
+              "value": 85.344,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "original__dtd__clip__centered_accuracy",
+              "value": 85.56666666666668,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "original__dtd__clip__prototype_accuracy",
+              "value": 82.98,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "original__dtd__clip__press_accuracy",
+              "value": 85.48666666666666,
+              "direction": "maximize",
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json"
+          ],
+          "campaign_id": "analysis-8a348b17",
+          "slice_id": "multinomial-logistic-control",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": null,
+          "claim_impact": "Strong-classifier comparison gap closed. Retain conditional known-method effects; no evidence that logistic or PRESS creates a generally improved method. New-method and SOTAclaimsremainunsupported.",
+          "created_at": "2026-09-12T12:46:19+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "impact_summary": "Strong-classifier comparison gap closed. Retain conditional known-method effects; no evidence that logistic or PRESS creates a generally improved method. New-method and SOTAclaimsremainunsupported.",
+          "mapping_status": "mapped"
+        },
+        {
+          "item_id": "new-image-confirmation",
+          "title": "New-image confirmation within existing datasets",
+          "kind": "analysis_slice",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "analysis_role": null,
+          "reviewer_question": "",
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "claim_links": [],
+          "setup": "Frozen parent parameters, canonical frozen CLIP/DINO. 1,870 unique DTD val1 and 2,000 EuroSAT remaining train images, zero decoded-RGB overlap with original query/gallery pools. Same original galleries and class split; five fresh seeds, 1,000 paired tasks per six cells. Independently remeasure R2 on this pool.",
+          "result_summary": "Macro candidate 72.590% vs same-pool R2 72.265%, delta +0.325 pp, paired 95% CI [0.228,0.423675]; vs frozen dev-tuned R2 +0.261333 pp [0.153317,0.372667]. Per-cell deltas: DTD matched -0.125333, DTD mismatch -0.277333, DTD 5-shot +0.020; EuroSAT mismatch +1.962667, matched -0.260, 5-shot +1.309333 pp. All preset point-estimate guardrails pass; gains heterogeneous.",
+          "key_metrics": [
+            {
+              "metric_id": "macro_1shot_accuracy",
+              "value": 72.59,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json"
+          ],
+          "campaign_id": "analysis-bb5b0939",
+          "slice_id": "new-image-confirmation",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "takeaway": "New images preserve modest average benefit with EuroSAT concentration.",
+            "claim_update": "strengthens",
+            "baseline_relation": "mixed",
+            "comparability": "high",
+            "failure_mode": "none",
+            "next_action": "analysis_campaign"
+          },
+          "claim_impact": "Supports reproducible practical improvement within two existing datasets; no new-domain, independent image-sampling confidence, or novel-algorithm claim. Support centering is prior art.",
+          "created_at": "2026-09-12T11:01:02+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "impact_summary": "Supports reproducible practical improvement within two existing datasets; no new-domain, independent image-sampling confidence, or novel-algorithm claim. Support centering is prior art.",
+          "mapping_status": "mapped"
+        },
+        {
+          "item_id": "press-fixed-penalty-challenge",
+          "title": "PRESS versus every fixed penalty on twelve cells",
+          "kind": "analysis_slice",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "analysis_role": null,
+          "reviewer_question": "",
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "claim_links": [],
+          "setup": "All12priorfive-shot cells andsamefourpenalties; exactPRESS withoutcalibration versusallfixedpenalties, priorDTD-devtuned andradius controls. No selection onquerylabels.",
+          "result_summary": "Allfourfusioncells PRESS vsfixedlambda.001 CIincludeszero, with deltas+.018667,+.026667,+.022667,+.029333pp. PRESS vsdev-tunedCLIP isnegativeall4cells (3CIs below0); DTD-DINO-.577333pp old/-.349333new. EuroSAT fusion gains vsdev-tunedbaseline remain+2.673333/+2.474667pp but fixedlambda.01/.001 largelymatches. Fixedlambda.1 iscompetitiveacrosscells asretrospectivediagnostic.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json"
+          ],
+          "campaign_id": "analysis-5cd86318",
+          "slice_id": "press-fixed-penalty-challenge",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "takeaway": "Most fused gains are explainable by fixed small penalties; adaptive superiority is unsupported.",
+            "claim_update": "narrows",
+            "baseline_relation": "mixed",
+            "comparability": "high",
+            "failure_mode": "none",
+            "next_action": "analysis_campaign"
+          },
+          "claim_impact": "Downgrade adaptive-selection explanation for fused-feature gains; small fixedpenalties account for most benefit. No universal PRESS superiority; no newalgorithmnovelty. Do notpromote retrospectivelybestfixedvalue asprospectivelyvalidated.",
+          "created_at": "2026-09-12T11:38:04+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "impact_summary": "Downgrade adaptive-selection explanation for fused-feature gains; small fixedpenalties account for most benefit. No universal PRESS superiority; no newalgorithmnovelty. Do notpromote retrospectivelybestfixedvalue asprospectivelyvalidated.",
+          "mapping_status": "mapped"
+        },
+        {
+          "item_id": "retrieval-head-attribution",
+          "title": "Retrieval/head factorial and failure summary",
+          "kind": "analysis_slice",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "analysis_role": null,
+          "reviewer_question": "",
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "claim_links": [],
+          "setup": "Full original six cells, five seeds/1000 paired tasks each; fixed parent image features and indices. 1-shot 2x2 raw/centered retrieval by raw/centered classifier, lambda .1/top64/blend .5. 5-shot adds raw ridge lambda_eff=mean centered-support squared radius to raw lambda1 and per-sample CS_l2.",
+          "result_summary": "1-shot macro effects: combined+.360pp CI[.260325,.461333], retrieval alone+.133[.039,.229342], head alone+.317667[.223,.407342], interaction-.090667[-.177008,-.001]. EuroSAT mismatch is largest benefit; matched cells and DTD mismatch degrade. Five-shot radius control gains+.060pp DTD and+1.552pp EuroSAT over raw, exceeding full CS_l2 by+.089333pp and+.149333pp respectively (paired CIs exclude0). Neighbor overlap 40.2%-80.5%; overlap/delta correlations small and descriptive.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json"
+          ],
+          "campaign_id": "analysis-bb5b0939",
+          "slice_id": "retrieval-head-attribution",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "takeaway": "Simpler regularization control exceeds the five-shot centered method; one-shot mechanisms are heterogeneous.",
+            "claim_update": "narrows",
+            "baseline_relation": "mixed",
+            "comparability": "high",
+            "failure_mode": "none",
+            "next_action": "analysis_campaign"
+          },
+          "claim_impact": "Downgrade any special five-shot per-sample geometry explanation: a simpler scalar regularization control explains and exceeds its gain. Retain practical, heterogeneous 1-shot improvement and known-method attribution; no novelty claim.",
+          "created_at": "2026-09-12T11:06:11+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "impact_summary": "Downgrade any special five-shot per-sample geometry explanation: a simpler scalar regularization control explains and exceeds its gain. Retain practical, heterogeneous 1-shot improvement and known-method attribution; no novelty claim.",
+          "mapping_status": "mapped"
+        },
+        {
+          "item_id": "ridge-scale-robustness",
+          "title": "Ridge scale controls across encoders and pools",
+          "kind": "analysis_slice",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "analysis_role": null,
+          "reviewer_question": "",
+          "target_display": null,
+          "main_or_appendix": "reference_only",
+          "failure_interpretation": null,
+          "claim_links": [],
+          "setup": "12 five-shot cells: original/new pools x DTD/EuroSAT x CLIP/DINO/fusion. 1,000 paired tasks each. Raw/radius/CS_l2 each tune identical four coefficient values on original DTD development only. Fixedlambda1 and prototype included.",
+          "result_summary": "Radius scaling loses to equally tuned global ridge in every CLIP cell: originalDTD-.290667pp, originalEuroSAT-.494667, newDTD-.400,newEuroSAT-.521333, all pairedCIs below0. DINO DTD approximatelyneutral (-.004/+.005333) but EuroSAT positive (+1.001333/+.937333). Fusion positive on DTD (+.060/+.105333) and EuroSAT (+1.552/+1.512), and exceeds CS_l2 in all four fusedcells. Detailed twelve-cell outcomes retained without selecting only positive encoders.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json"
+          ],
+          "campaign_id": "analysis-2cc2d420",
+          "slice_id": "ridge-scale-robustness",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "takeaway": "Scale adaptation is representation- and domain-dependent after equal global tuning.",
+            "claim_update": "narrows",
+            "baseline_relation": "mixed",
+            "comparability": "high",
+            "failure_mode": "none",
+            "next_action": "revise_idea"
+          },
+          "claim_impact": "Reject universal support-radius superiority. Retain encoder/domain-dependent practical benefit for frozen fused features, especially EuroSAT, and known regularization-scale explanation. Equal global tuning absorbs CLIP improvements. No novel method or broad-domain claim.",
+          "created_at": "2026-09-12T11:15:31+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "impact_summary": "Reject universal support-radius superiority. Retain encoder/domain-dependent practical benefit for frozen fused features, especially EuroSAT, and known regularization-scale explanation. Equal global tuning absorbs CLIP improvements. No novel method or broad-domain claim.",
+          "mapping_status": "mapped"
+        },
+        {
+          "item_id": "fsl-pets-transfer-20260913",
+          "title": "Frozen iLPC Pets qualification fails strong-control and mismatch gates",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Official Pets trainval unlabeled1876image gallery;3669exact-RGB-unique test images supply disjoint supports/queries. Equal1876image DTD mismatch gallery. Frozen canonical CLIP-B16/DINO-S14,MPSfloat32 withfloat16storage,fusion0.5.5way,15queries/class,1/5shot,5seedsx100tasks/cell. No target tuning,query adaptation,gallery labels or encoder training.",
+          "result_summary": "Matched1shot96.0533% versusR296.2400%,delta-0.1867pp95%[-0.5920,+0.2000]; versusCS_l2delta-0.2107[-0.6053,+0.1813]. Gain over supportC10+1.7200[1.2799,2.1520] does not beat gallery controls. Mismatch1shot58.5573% vsR293.9307%,delta-35.3733[-36.3573,-34.4160],loss in500/500tasks. Matched5shot97.8187% vsR298.4427%,delta-0.6240[-0.8480,-0.4133]; mismatch5shot92.6693% vsR298.4427%,delta-5.7733[-6.1600,-5.4000]. Newscope macro1shot77.3053% vsR295.0853%,delta-17.78[-18.3254,-17.2560].",
+          "key_metrics": [
+            {
+              "metric_id": "pets_matched_1shot_accuracy",
+              "value": 96.05333333333334,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_mismatched_1shot_accuracy",
+              "value": 58.55733333333334,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_matched_5shot_accuracy",
+              "value": 97.81866666666667,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_mismatched_5shot_accuracy",
+              "value": 92.66933333333334,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "pets_macro_1shot_accuracy",
+              "value": 77.30533333333334,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            ".ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/RUN.md",
+            ".ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/paired_accuracy.npz",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/ilpc_complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/confirmed_comparator.json"
+          ],
+          "run_id": "fsl-pets-transfer-20260913",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "claim_update": "{'matched_superiority': 'not_supported; pairedCIcrosszero vsR2/CS_l2 and upperboundsbelowprecommitted0.5pp', 'robust_replacement': 'refuted', 'benefit_over_support_logistic': 'supported_only_for_matched1shot'}",
+            "baseline_relation": "R2 comparison anchor and CS_l2/support controls retained; no incumbent promotion. Old7R2/9R4metrics unchanged in their original scopes.",
+            "failure_mode": "direction_underperforming; mismatch pseudolabel propagation harmful, mechanistic causality not established by this comparison alone.",
+            "next_action": "Decision: close this frozen qualification without Pets tuning; choose a structurally distinct route or bounded failure synthesis from retained evidence."
+          },
+          "created_at": "2026-09-12T21:39:21+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "main_or_appendix": "reference_only",
+          "mapping_status": "mapped",
+          "impact_summary": "Different candidate/contract. Historical evidence only; no support for C1-C3.",
+          "source_paper_line_id": "main-outline-fsl-pets-transfer-20260913"
+        },
+        {
+          "item_id": "r2-fusion-stage-canonical-20260912",
+          "title": "Shared-retrieval late ridge fusion: small R2 gain, strong gate failed",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Original canonical frozenCLIP/DINO features, DTD-only development, query independence and shared top64 retrieval.20 settings per trainable family, deterministic selection on400dev tasks before4000one-shot evaluation tasks.2000five-shot task rows inheritR2.",
+          "result_summary": "Macro72.9803 versusR2 72.7733: +0.2070pp CI[0.1257,0.2893]. Versusdev-selected early_shared+0.1740pp CI[0.1107,0.2397]. VersusCS_l2 -0.1530pp CI[-0.2703,-0.0330]. Seven baseline rows exactly reconciled.",
+          "key_metrics": [
+            {
+              "metric_id": "dtd_matched_1shot_accuracy",
+              "value": 77.15733333333333,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_5shot_accuracy",
+              "value": 89.98133333333332,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_mismatched_1shot_accuracy",
+              "value": 74.048,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_mismatched_1shot_accuracy",
+              "value": 65.90133333333334,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_matched_1shot_accuracy",
+              "value": 74.81466666666667,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_5shot_accuracy",
+              "value": 86.80799999999999,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            ".ds/worktrees/r2-fusion-stage-canonical-20260912/experiments/main/r2-fusion-stage-canonical-20260912/RUN.md",
+            ".ds/worktrees/r2-fusion-stage-canonical-20260912/experiments/main/r2-fusion-stage-canonical-20260912/RESULT.json",
+            "experiments/main/r2-fusion-stage-canonical-20260912/RESULTS.md",
+            "experiments/main/r2-fusion-stage-canonical-20260912/outputs/validation_report.json",
+            "experiments/main/r2-fusion-stage-canonical-20260912/outputs/all_metrics.json",
+            "experiments/main/r2-fusion-stage-canonical-20260912/outputs/run_manifest.json"
+          ],
+          "run_id": "r2-fusion-stage-canonical-20260912",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "claim_update": "{'small_local_fusion_effect': 'supported_with_limits', 'robust_half_point_gain': 'refuted', 'strongest_control_superiority': 'refuted', 'novel_algorithm': 'unsupported'}",
+            "baseline_relation": "{'primary_delta_pp': 0.207, 'ci95_pp': [0.12566666666666657, 0.2893333333333331], 'cs_l2_delta_pp': -0.153, 'seven_baseline_values_reconciled': True, 'five_shot_inherited': True}",
+            "failure_mode": "Insufficient magnitude and weaker than establishedCS_l2; same historically seen pools, not independent-image/domain confirmation.",
+            "next_action": "decision -> R4 trusted-reuse audit"
+          },
+          "created_at": "2026-09-12T19:24:22+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "main_or_appendix": "reference_only",
+          "mapping_status": "mapped",
+          "impact_summary": "Different candidate/contract. Historical evidence only; no support for C1-C3.",
+          "source_paper_line_id": "main-outline-r2-fusion-stage-canonical-20260912"
+        },
+        {
+          "item_id": "r2-geometry-canonical-20260912",
+          "title": "Known support-centering improves the local frozen R2 comparison",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Same canonical features,5-way75queries,5seeds200episodes/cell, four1shot plus two5shot conditions. Supportmean defines transform for support/query/gallery. Raw/tunedR2,gallery-centering and centered/rawsupportcontrols included. Per-shot ridge strengths selected using same four-lambda grid on DTDdevelopment classes. CenteredR2 selects0.1 for1shot and1 for5shot, equal to fixedR2 strengths.",
+          "result_summary": "CenteredR2 macro73.1333% vsR272.7733%, +0.3600pp CI[0.2603,0.4613]; versus tunedR2+0.3270pp CI[0.2183,0.4367]. All predeclared promotion gates pass. EuroSATmismatched1shot+2.0067pp; matched1shot-0.3693pp; DTDmismatched-0.208pp and matched+0.0107pp. EuroSAT5shot+1.4027pp; DTD5shot-0.0293pp.",
+          "key_metrics": [
+            {
+              "metric_id": "dtd_matched_1shot_accuracy",
+              "value": 76.87333333333335,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_5shot_accuracy",
+              "value": 89.952,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_mismatched_1shot_accuracy",
+              "value": 73.87066666666665,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_mismatched_1shot_accuracy",
+              "value": 68.124,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_matched_1shot_accuracy",
+              "value": 73.66533333333334,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_5shot_accuracy",
+              "value": 88.21066666666665,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            ".ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/RUN.md",
+            ".ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/comparison.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/run_manifest.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/implementation_validation.json"
+          ],
+          "run_id": "r2-geometry-canonical-20260912",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "takeaway": "Known support-centering gives a positive local0.36pp macro gain and passes preset gates; new-image confirmation needed.",
+            "claim_update": "strengthens",
+            "baseline_relation": "mixed",
+            "comparability": "high",
+            "failure_mode": "none",
+            "next_action": "analysis_campaign"
+          },
+          "created_at": "2026-09-12T10:41:01+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "main_or_appendix": "reference_only",
+          "mapping_status": "mapped",
+          "impact_summary": "Different candidate/contract. Historical evidence only; no support for C1-C3.",
+          "source_paper_line_id": "main-outline-r2-geometry-canonical-20260912"
+        },
+        {
+          "item_id": "r2-logloss-canonical-20260912",
+          "title": "Loss-sensitive neighborhood adaptation: second family comparison",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Same accepted canonical frozen CLIP/DINO features, seven metrics, four1shot cells and two5shot safeguards. Same locked task draws;5seeds\u00d7200episodes/cell. No gallery labels, query-batch adaptation or encoder training. Equal four-value regularization grid on DTD development for seven tunable heads; selected neighborhood/mean/support logistic lambda1. FixedR2 and tunedR2 reported.",
+          "result_summary": "Neighborhood logistic macro72.376% vsR272.7733%; delta-0.3973pp CI[-0.4877,-0.3083]. Versus tunedR2 -0.4303pp. Versus mean logistic +0.0167pp, versus distributionridge -0.365pp. Operational loss-by-neighborhood contrast -0.039pp CI[-0.0677,-0.0097]. All promotion gates fail.",
+          "key_metrics": [
+            {
+              "metric_id": "dtd_matched_1shot_accuracy",
+              "value": 76.748,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_5shot_accuracy",
+              "value": 89.98133333333332,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_mismatched_1shot_accuracy",
+              "value": 73.836,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_mismatched_1shot_accuracy",
+              "value": 66.60933333333332,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_matched_1shot_accuracy",
+              "value": 72.31066666666668,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_5shot_accuracy",
+              "value": 86.808,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            ".ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/RUN.md",
+            ".ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/comparison.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/solver_summary.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/run_manifest.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/implementation_validation.json"
+          ],
+          "run_id": "r2-logloss-canonical-20260912",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "takeaway": "Log-loss neighborhood adaptation is0.397pp worse than canonicalR2 and fails promotion.",
+            "claim_update": "weakens",
+            "baseline_relation": "worse",
+            "comparability": "high",
+            "failure_mode": "direction",
+            "next_action": "revise_idea"
+          },
+          "created_at": "2026-09-12T10:28:28+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "main_or_appendix": "reference_only",
+          "mapping_status": "mapped",
+          "impact_summary": "Different candidate/contract. Historical evidence only; no support for C1-C3.",
+          "source_paper_line_id": "main-outline-r2-logloss-canonical-20260912"
+        },
+        {
+          "item_id": "r2-ownership-canonical-20260912",
+          "title": "Exclusive gallery ownership fails the strong one-shot improvement gate",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Same frozen canonical features, splits, original tasks, four-lambda DTD development budget and all seven required metrics. Five-shot primary inherits R2.",
+          "result_summary": "Macro72.785%;vsR2+0.011667pp CI[-0.115333,0.138342],vsCS_l2-0.348333pp CI[-0.477667,-0.221992]. Positive comparisons to count/mass controls do not rescue the failed system gate.",
+          "key_metrics": [
+            {
+              "metric_id": "dtd_matched_1shot_accuracy",
+              "value": 76.98533333333333,
+              "direction": "higher_is_better",
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_5shot_accuracy",
+              "value": 89.98133333333332,
+              "direction": "higher_is_better",
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_mismatched_1shot_accuracy",
+              "value": 73.92,
+              "direction": "higher_is_better",
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_mismatched_1shot_accuracy",
+              "value": 65.76933333333335,
+              "direction": "higher_is_better",
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_matched_1shot_accuracy",
+              "value": 74.46533333333333,
+              "direction": "higher_is_better",
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_5shot_accuracy",
+              "value": 86.808,
+              "direction": "higher_is_better",
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            ".ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/RUN.md",
+            ".ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/comparison.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/metrics_summary.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/run_completion.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/implementation_validation.json"
+          ],
+          "run_id": "r2-ownership-canonical-20260912",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "claim_update": "Robust improvement refuted for the fixed intervention; incremental count-control signal remains partial.",
+            "baseline_relation": "No established macro advantage over R2; worse than CS_l2.",
+            "failure_mode": "Single-pass ownership fails strong-system gate.",
+            "next_action": "Continue decision-61eadffc: official iLPC same-permission source/cost audit."
+          },
+          "created_at": "2026-09-12T13:46:50+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "main_or_appendix": "reference_only",
+          "mapping_status": "mapped",
+          "impact_summary": "Different candidate/contract. Historical evidence only; no support for C1-C3.",
+          "source_paper_line_id": "main-outline-r2-ownership-canonical-20260912"
+        },
+        {
+          "item_id": "r2-prevalidation-canonical-20260912",
+          "title": "Support-only bounded prevalidated ridge selection",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Canonical frozen fused CLIP/DINO, existing six cells/1000paired tasks each. New five-shot bounded PreVal-inspired selector uses four fixedlambda values and positive outputscale[0,100]. PRESS-MSE same-grid selector control. Four one-shot cells inherit parent CS_l2 policy verbatim; their improvement is not attributed to this pass.",
+          "result_summary": "Five-shot candidate DTD89.852% (-.129333pp vsR2), EuroSAT89.505333%(+2.697333pp). Two-cell mean gain+1.284pp CI[1.160667,1.405333] vsdev-tunedraw;+.478pp[.384,.573333] vsradius. VsPRESS-MSE only+.021333pp[-.012667,.054667], not established. Scaleupperbound chosen94/1000DTD and58/1000Euroepisodes; nozero-scalechoices. Inheritedone-shotmacro73.133333% (+.360pp vsR2) unchanged fromparent.",
+          "key_metrics": [
+            {
+              "metric_id": "dtd_matched_1shot_accuracy",
+              "value": 76.87333333333335,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_5shot_accuracy",
+              "value": 89.852,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_mismatched_1shot_accuracy",
+              "value": 73.87066666666665,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_mismatched_1shot_accuracy",
+              "value": 68.124,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_matched_1shot_accuracy",
+              "value": 73.66533333333334,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_5shot_accuracy",
+              "value": 89.50533333333334,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/RUN.md",
+            ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/comparison.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/run_manifest.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/validation.json"
+          ],
+          "run_id": "r2-prevalidation-canonical-20260912",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "takeaway": "Support-only model selection improves five-shot mean; calibration adds no established benefit over PRESS.",
+            "claim_update": "strengthens",
+            "baseline_relation": "mixed",
+            "comparability": "high",
+            "failure_mode": "none",
+            "next_action": "analysis_campaign"
+          },
+          "created_at": "2026-09-12T11:30:23+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "main_or_appendix": "reference_only",
+          "mapping_status": "mapped",
+          "impact_summary": "Different candidate/contract. Historical evidence only; no support for C1-C3.",
+          "source_paper_line_id": "main-outline-r2-prevalidation-canonical-20260912"
+        },
+        {
+          "item_id": "r2-residual-canonical-20260912",
+          "title": "Support-anchored residual transfer: locked canonical FSL comparison",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Frozen canonical CLIP ViT-B/16 QuickGELU and native DINOv2 ViT-S/14; fixed half-fusion. DTD and EuroSAT four paired 1-shot query/gallery conditions and two 5-shot safeguards. Five seeds \u00d7 200 episodes per cell. No gallery labels, encoder training, or query-batch adaptation. DTD development classes disjoint from evaluation classes; historically viewed image pools.",
+          "result_summary": "Residual macro 1-shot accuracy 71.133% versus R2 72.7733%; delta -1.6403 pp, paired 95% CI [-1.793,-1.491]. EuroSAT mismatched +2.1307 pp, matched -5.6267 pp; DTD matched -2.9973 pp, mismatched -0.068 pp. Residual also trails support ridge by 0.2383 pp and mass-matched/isotropic controls by about 0.05 pp. All three promotion gates fail. Five-shot behavior intentionally unchanged.",
+          "key_metrics": [
+            {
+              "metric_id": "dtd_matched_1shot_accuracy",
+              "value": 73.86533333333333,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_5shot_accuracy",
+              "value": 89.98133333333332,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_mismatched_1shot_accuracy",
+              "value": 74.01066666666667,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_mismatched_1shot_accuracy",
+              "value": 68.248,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_matched_1shot_accuracy",
+              "value": 68.408,
+              "direction": null,
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_5shot_accuracy",
+              "value": 86.808,
+              "direction": null,
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            ".ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/RUN.md",
+            ".ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/RESULT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/comparison.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/run_manifest.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/baseline/metrics_summary.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/implementation_validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/provenance.json"
+          ],
+          "run_id": "r2-residual-canonical-20260912",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "takeaway": "Residual-only gallery transfer loses 1.64 pp to canonical R2 and fails all three promotion gates.",
+            "claim_update": "weakens",
+            "baseline_relation": "worse",
+            "comparability": "high",
+            "failure_mode": "direction",
+            "next_action": "revise_idea"
+          },
+          "created_at": "2026-09-12T10:12:04+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "main_or_appendix": "reference_only",
+          "mapping_status": "mapped",
+          "impact_summary": "Different candidate/contract. Historical evidence only; no support for C1-C3.",
+          "source_paper_line_id": "main-outline-r2-residual-canonical-20260912"
+        },
+        {
+          "item_id": "r4-transport-geometry-20260913",
+          "title": "Old-space interpolation geometry under fixed bridge permissions",
+          "kind": "main_experiment",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Canonical20DTDdevelopment+40evaluation jobs,32/64bridges,five seeds,fullgallery. Original V0delta/PRESS. Both geometries selected globalalpha2 from identical DTDdevelopment grid[0,.5,1,2]. All9metrics13variants retained.",
+          "result_summary": "Primary center_a2 macro43.054342 vsoldcentered44.325898: -1.271557pp,95%[-3.039835,+0.685570]. Equalraw/centered_residual_2 contrast+0.413821pp,95%[-0.230425,+1.148866]. DTD+2.109602pp;EuroSAT-4.652715pp. Posthoc smaller-alpha rows remain diagnostics.",
+          "key_metrics": [
+            {
+              "metric_id": "dtd_cross_bridge32_map",
+              "value": 30.79966784468561,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_cross_bridge64_map",
+              "value": 30.872138376019876,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_matched_bridge32_map",
+              "value": 33.870372279053534,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "dtd_matched_bridge64_map",
+              "value": 35.61275445522558,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_cross_bridge32_map",
+              "value": 58.18865865635002,
+              "direction": "maximize",
+              "decimals": null
+            },
+            {
+              "metric_id": "eurosat_cross_bridge64_map",
+              "value": 57.47483804331485,
+              "direction": "maximize",
+              "decimals": null
+            }
+          ],
+          "source_paths": [
+            ".ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RUN.md",
+            ".ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RESULTS.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/all_metrics.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/validation_report.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/selection.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/completion.json"
+          ],
+          "run_id": "r4-transport-geometry-20260913",
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "evaluation_summary": {
+            "claim_update": "{'robust_geometry_upgrade': 'refuted', 'geometry_only_benefit': 'inconclusive', 'independent_generalization': 'unsupported', 'novel_algorithm': 'unsupported'}",
+            "baseline_relation": "{'primary_delta_pp': -1.2715565497906027, 'primary_ci95_pp': [-3.039835210316906, 0.6855698352983759], 'equal_control_delta_pp': 0.413821125128365, 'all9metrics13variants_reconciled': True}",
+            "failure_mode": "DTD-selectedalpha2 transfers poorly toEuroSATmatched; interpolation geometry contrastCIincludes0.",
+            "next_action": "decision -> close local kernel route; reconsider calibration/information boundary"
+          },
+          "created_at": "2026-09-12T20:25:38+00:00",
+          "updated_at": "2026-09-12T22:53:10.340193+00:00",
+          "main_or_appendix": "reference_only",
+          "mapping_status": "mapped",
+          "impact_summary": "Different candidate/contract. Historical evidence only; no support for C1-C3.",
+          "source_paper_line_id": "main-outline-r4-transport-geometry-20260913"
+        },
+        {
+          "item_id": "utility-composition-qualification-20260913",
+          "title": "Direct utility weighting: source qualification did not pass",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "The fixed utility-trained composition fails robust development-transfer qualification; this is a separate exposed-domain method.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/result.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/validation.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/REPORT.md": "756a76e0640c94ddc61af8eae961089a0aaecb5eea1cd25b2db3f445c74060a6",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/protocol.json": "0a3a1562babfb8c4cd70d3607c88e7f192bb401a2af3fb4c1ce2a7f81750519d",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/RESULT.json": "9e1bfc87fb20becdf3cc6d6008162daee6430b4e36244f62547faba6e33d38a8",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/result.json": "9e1bfc87fb20becdf3cc6d6008162daee6430b4e36244f62547faba6e33d38a8",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/analysis.json": "a45baaf198453c9395f5ecf96e6994c8deea1700b8ad97607718c7498fb42025",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/complete.json": "9e8d4ccb2214982d46598550d80f507610cbb3a2939609eebe184efcc7793552",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/validation.json": "61d56b5bf262b62f98b65a825994d1d56d1212c36d1352f1682e9a1f6ad698a7"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "source-coverage-factorial-20260913",
+          "title": "Source coverage changes transfer, but class-adaptive influence fails qualification",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Mixed source-gallery coverage does not rescue the fixed adaptive-influence candidate.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/result.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/validation.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/REPORT.md": "f7f28926bec18ffb445284f86c38bd4628d403b6b0997a0506103d0de0708273",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/protocol.json": "bae6a13f335a340f45c9eac15ccc42522f10fc16e8cb99c99db4ec41f5b0b9af",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/RESULT.json": "63853e89af0db0e8f2b842cfa9b6a2f2982d4c107934511a38c9c641dfcd734a",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/result.json": "63853e89af0db0e8f2b842cfa9b6a2f2982d4c107934511a38c9c641dfcd734a",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/analysis.json": "e9f841140921e285dc007a44564adb18a36c1804c6cb9ec6fd6b43f32ca09c65",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/complete.json": "87d741cff13abccd0f8c1054d11fb82e5021d48a151e5e6da16aa75958dbbf61",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/validation.json": "d6d1cc177044b881653893e41cd30f20988bc4f9dfdeab8d3979210080f94d06"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "representation-scatter-20260913",
+          "title": "Real-view scatter: completed source qualification and numerical audit",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Finite-view scatter has conditional development gains, but the original numerical audit and full promotion gate failed. Complete one-shot source precision audit20260914:1200configurations/90000predictions, unchanged counts and gamma10/1; independent float64 passes, original one full-score failure remains. Five-shot/target/statistical selection stability not inferred.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/audit.py",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/outputs/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/outputs/validation.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/REPORT.md": "d1bb9ce48faf6f76713238d8506538128dc94033d23e569f0e1bb716954fe79b",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/analysis.json": "aabcaf1f6d127f645e90bc1841edca487fa0f179997831421f1b7e8661c1dbf3",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/complete.json": "35035f12cdd8db3f792f43ad7afe9b05c368b8f621569c9d02ec7bf1acd447e5",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/protocol.json": "faa0ab7408e0e702eb16d8aa553ae58541aa5b564d76d658c96bb109b2a6bd18",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/audit.py": "c437fe452bd92e79299eb61a25a09d1116706f304dcf25d9f4e696abb417c368",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/REPORT.md": "c4a4db2a96c14049fdff983b23f77c840bfe8b1735bd946a03a4638a4f5f12ab",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/outputs/RESULT.json": "1d4f864159f7dd353052c744915aeba6d04a8639283e1f8df556390f6ec3072e",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/outputs/validation.json": "6d29d11adca5d14d10857f481a33f17f9ddce6d13cfd21403c38c64202d7a96e"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-14T03:21:40.823512+00:00"
+        },
+        {
+          "item_id": "view-distribution-kernel-20260913",
+          "title": "View-distribution kernels: completed auxiliary source test",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Finite-view distribution-kernel qualification was completed; it did not establish the prespecified transferable advantage over mean-based controls.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/validation.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/REPORT.md": "7a7fe2d5ff4927f78ee43e0bd1425f7a4d6cfc2ba73e9fd62ef8020c1aec0ea1",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/protocol.json": "1cb606d64040c65f979ac58c89a0160710ca52fd23e4e60ba4193d2c9e7c1639",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/analysis.json": "b579ca30ca8f785deb6340995fc7393de46a50151665525e275138b5aeb92c64",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/complete.json": "7745a08eed9c55ddcb3f997519b4d1549028fed78e9d80e2e275a479c5b449bf",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/validation.json": "3b9da374480c246f4d64a9ff5a27f2106db2759cb765c48bfa63efe202b2ca67"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "learned-aggregation-order-20260913",
+          "title": "Learned nonlinear aggregation order: source qualification report",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "The learned before-mean versus after-mean contrast is small and domain-dependent; fixed target-promotion gate failed.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/independent_audit.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/REPORT.md": "1046ba8122dd81f3d0f272672f27167fa6122c73db0f9fe67095c226c58f73af",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/protocol.json": "4bf8139cec1a94a35ec356e743323306acaf742b482533c7d5d59a9dab64780d",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/analysis.json": "aa382ec54ac7e1cc27e0e5300756f26201d46cb01e9761014d70801f77b1f6e9",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/complete.json": "f39719ae5531c1405c05775d22dc46964968ec99898776edc17fba61ba8e93e8",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/validation.json": "2ddc59544ad374fdcbd33a970edbdc4acbd1c2936567c81bfac031ac40ab980c",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/independent_audit.json": "e108be7a4fa3c47a084d615ce5e48bb9d79b491030afcfcf1393a8e33c5caa1e"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "reduced-view-efficiency-20260913",
+          "title": "Reduced-view efficiency: fixed source rule not qualified",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Both source-only policies choose six-view fallback; this fixed rule does not certify a three-view replacement.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/independent_audit.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/REPORT.md": "7e3726454170c5951bde39553872c144058c921cbf734b6c4911fcebc4cc4a75",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/protocol.json": "c6739a9d67d851803cdcf400b7536a177cd7b2880b1ecc06b37de9f06e9f2c59",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/analysis.json": "35848c6c21f5492e416ede17faa0a03cd83664a5510c5860b85c7744eb44b891",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/complete.json": "012abb734b8953f9cc116b6b7fe1ae9963a4245931e5778ea201501b76c65260",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/independent_audit.json": "3b7fa8d4e8473ff422377d47e1afdc8219d9b72d2ae7f45ab8d65ffc107c93b2"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "source-composition-20260913",
+          "title": "Matched-budget source composition: verified development result",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Mixed-source training improves over original-source training but loses to the direct untrained reference.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/independent_audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/independent_statistics.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/REPORT.md": "b500c1fb899c22cbac9d7af21a9502a2aec3bddb4573ed54b45af298381a094b",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/protocol.json": "28954d510cf37dbab487b4854fd85e916695c51f7384ce71b75744d59791c9a8",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/analysis.json": "6fb260e6507bb6cc5f3955aba852ca62330b2241ebcf833fe3951e29d3d8c9e8",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/complete.json": "4a722f3f1a031c686db0cf432bc45fc55ccec62b7a3da05880fcd8f6a9e50e99",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/independent_audit.json": "337d36a61bd1280bc30575b3a1becbcc0736f44be54fd03db04d9df5b8dd2afa",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/REPORT.md": "e3f0a88f374aa31db16fbceecce458aecd401b7ef24fd711e6d70e53aacf0009",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/RESULT.json": "6984da08ffbb64909a484359fdf0b793270941f068f419920ce6d8085d37fef8",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/independent_statistics.json": "7331ce0b7de86a5cab3ffe1e023a70b6294fe142742870d3b920e9ded1d639fe"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T23:25:54.521981+00:00",
+          "geometry_followup_report_id": "report-061d0490",
+          "geometry_followup": "36selectedmaps: generic pair-distortion fails the prerequired source-observable relation beyond update magnitude. Observational only, no new classifier accuracy; see linked report."
+        },
+        {
+          "item_id": "task-local-mask-20260913",
+          "title": "Task-local frozen representation masks: verified development result",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Task-local encoder selection loses to fixed equal representation in both development domains.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/result.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/independent_audit.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/REPORT.md": "2848bec9f917873e7e4908ea17600d28e1dcc2acc0a53844e0151643bef9fb21",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/protocol.json": "c6e0212974706ab3cbd365c35b586c481b067dc6443cf73b052231bdb0c32e44",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/RESULT.json": "926d5126e2f9619d81a3e15976a8fc9b42aab2efd1aead6ec22f66274990b2ad",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/result.json": "926d5126e2f9619d81a3e15976a8fc9b42aab2efd1aead6ec22f66274990b2ad",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/analysis.json": "f460ed8655634e243ada292de718c27704eda3c4e82614c0fd9f1dfa51c3149a",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/independent_audit.json": "40e12d67d768f964e953d0162ed4cc8eede27632b28eb1e5d65e7413e5d7b0bd"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "support-risk-selection-20260913",
+          "title": "Support validation for finite representation selection: verified development result",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Head-aligned support validation does not select a better representation; both one-shot and five-shot primary selectors underperform.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/result.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/outputs/analysis.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/REPORT.md": "8180d473d774ab32f194269f18730bf546792f0b77a79689531627170575a3d4",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/protocol.json": "7d43077ea0241c013a2ff4143f02f2a217999b6902502d39a0c9df09424c76c2",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/RESULT.json": "98cedd9f66ff4976952ef4d01d77c25c6ff26e4154f14c90142abfc73868c573",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/result.json": "98cedd9f66ff4976952ef4d01d77c25c6ff26e4154f14c90142abfc73868c573",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/outputs/analysis.json": "362126925351ee794d4c3e37eab15a22b729114ba245b335b1751a49bcbf2049"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "scatter-centering-stack-20260913",
+          "title": "Cumulative scatter-centering: verified increment with a retained boundary",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "The scatter/centering composition gains1.648pp over meanCS in pooled one-shot development, but its stronger comparison against scatter alone fails a domain/cell gate.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/numeric_validation.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/REPORT.md": "2e3edcd4f25a9377924b2679e992fcf93fe1732c41726ff15412511f6c738f6c",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/protocol.json": "291977c551ea14bf06df7cd282671aeeaeec7fa82ce9282e3674b0400343ec7f",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/analysis.json": "1cebed17fa55e6946eced5d3022ffbe37521ca1b85dd1c888bc9d0b031608a2b",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/complete.json": "6fecdf9c2510b9385aef4002b67f27edbdb0154d415b3b331ffa3d642597742d",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/numeric_validation.json": "1f6e842a28ec4d34cfd8b3daf1c6f243ecb7b8c907807ad1f6f34ce67704ccf1"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "scatter-score-fusion-20260913",
+          "title": "Fixed prediction fusion: a small verified increment",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Equal predictive fusion reaches77.334%, adding0.146pp over scatterCS, below the fixed0.5pppromotion threshold. Retained best measured conditional candidate.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/validation.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/REPORT.md": "7319ef490d12e2cb681d05dbab1b267961f2001faf22daa79edd82b5465e1d0b",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/protocol.json": "fed9f03702e230c44cb5d4cbd35bd04d30f090ee29beb9fea2e3c32217e8c654",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/analysis.json": "86944a72c591d6544bc638eb30f8218567ace176cfa39adf5e9411f05c986b65",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/complete.json": "4c13d16e63558e9082906610152db12a0f1f2c87967d0253396114b4720736d9",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/validation.json": "eba255e1f20cf64c114b6244c072a488e52192d2c1b301cfec4fd469815f90a8"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "class-associated-scatter-20260913",
+          "title": "Class-associated scatter: fixed recipe does not improve the retained stack",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Class-associated scatter reaches77.31867%,-0.01533pp vs77.334% incumbent; fixed cumulative and association gates fail after independent audit.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/result.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/independent_audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/numeric_validation.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/REPORT.md": "cf8e07ab5c72709755653b65b53ea144cc206b3c8b871636947739c76b0a6c66",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/protocol.json": "13093e7149b9155eb5b3e9be479e6dea272b455380ec0fbab10195e6de4e4350",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/RESULT.json": "f3e0e72152f0ceae95443675c3e7a33728764fea22ad295d4e14b10cfcad8616",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/result.json": "f3e0e72152f0ceae95443675c3e7a33728764fea22ad295d4e14b10cfcad8616",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/analysis.json": "3dd8e2865d87f12afa781c41e338cef0781c1cf6cf90e94bf0e094ac9faa143b",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/complete.json": "d1d3a305bf8936fa5e06fd34fcceb5ef4ebc7e779716f79011574cc7e2841960",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/validation.json": "587fea800f3d546e83c59a496dfc6cd1b1454ab60fb506bb246fffe380770515",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/independent_audit.json": "3f39bd16bf3a7b92bbe5af4c3c105f655eae59ba80dee94a1b692e35cb176c8e",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/numeric_validation.json": "3762d77ccc7e4728ee97408b5f1f82b5b1c04f6542299eefbb266a4d2c74e9ac"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "scatter-centering-attribution-20260913",
+          "title": "One-shot centering attribution",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Fixed retrieval-by-geometry attribution identifies domain-dependent component effects; no simple hybrid establishes a stronger remedy.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/complete.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/validation.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/REPORT.md": "22ddd8ef4018cab3ec1e9d720d7be752f51b30d9d47bfebfbe68a6f98de888b4",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/protocol.json": "dee7e1d95fad06f1279c97d1ba6de5f3a2827c9c2218384956100d693a997d57",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/analysis.json": "659bb7dbf0fc96b57f3830c0934cc0d4ce80b361a5e85ec1c6bb419a50c20af9",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/complete.json": "81e080f19a4d9a0506bead3ebf71339bf5c19fbc405e0c200c4039b498658815",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/validation.json": "290718e5f94e479aa5cab208a81b5e982ac98e14e93b8144ba15a180ae9c0d83"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "source-map-distortion-20260913",
+          "title": "Saved source-map distortion audit",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate frozen-feature development optimization; not the gallery-only OSLO target protocol. Read linked protocol for exact views, labels, tasks and source exposure.",
+          "result_summary": "Saved36-map audit shows larger target Gram changes can accompany smaller transfer loss; does not justify generic geometry-preservation training.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/result.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/REPORT.md": "5e9108f923d7797baad9de3923dddcae2551fd519a2ceacd05ee2166ea55abaf",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/protocol.json": "a67f51da351cbb27a4c59b1f15675abfa634747726880a71399f0bcfd554c869",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/RESULT.json": "00e5020d5cd34dfd7f1f0893919a3d36cafafeac7421b401e55107f76a0d744b",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/result.json": "00e5020d5cd34dfd7f1f0893919a3d36cafafeac7421b401e55107f76a0d744b"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Retained for research continuity. Does not support or refute C1-C4 and must not inflate manuscript evidence counts or independent confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Current pass verified linked files and hashes. Original study audits remain authoritative; current class-associated and source-map diagnostics were independently checked in this pass.",
+          "created_at": "2026-09-13T09:32:37.628850+00:00",
+          "updated_at": "2026-09-13T09:32:37.628850+00:00"
+        },
+        {
+          "item_id": "finite-query-selector-20260913",
+          "title": "Finite three-expert query oracle and source feasibility",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate six-view frozen-feature exposed-development optimization. Source-only fitting where applicable; not the gallery-only OSLO protocol.",
+          "result_summary": "Oracle79.217333% versus fixedblend77.334%,headroom1.883333pp; diagnostic only, not deployable accuracy. Sourceidentity andfeatureaudit passed.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/source_feasibility.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/REPORT.md": "d3cb1429c1ff47be3ef6259cddf101125699fe0ae765bce680af59a37e33f1f7",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/protocol.json": "a9f2c83ad54217a341143aac037ab1d0279c312ae02afaf4ef1425529b4cfd3a",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/analysis.json": "d598822aa22eb7067f5c2c2e2c8142dcd51f29ded82b7491b6e8fa9db1997469",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/validation.json": "409f9595e727d81685e3a2ecfeb2705827be2a52523fc05327ce5c58d233584a",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/source_feasibility.json": "514b1c6f0d43e0c27fb9909b2747d55e672c5612554131669c33fe9154c6496e"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "report_id": "report-2f57b8a3",
+          "claim_impact": "No support or refutation of C1-C4; retain for research continuity without increasing the four manuscript evidence groups.",
+          "mapping_status": "mapped",
+          "verification_scope": "Fullprediction audit; source hash/identity validation; independent main numerical/statistical audit.",
+          "created_at": "2026-09-13T10:29:51.751672+00:00",
+          "updated_at": "2026-09-13T10:29:51.751672+00:00"
+        },
+        {
+          "item_id": "query-competence-20260913",
+          "title": "Source-trained query competence qualification",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate six-view frozen-feature exposed-development optimization. Source-only fitting where applicable; not the gallery-only OSLO protocol.",
+          "result_summary": "Fixed competence77.275333%,delta-0.058667pp[-0.103333,-0.013333]vs77.334%blend.473repairs<561spoiled; recipe rejected.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/independent_validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/failure_counts.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/REPORT.md": "26497306fffddb249396837af1f59d90029ba15423f0728bc33d4b6a6adf5aa0",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/protocol.json": "63ea644710ebf3246be8f5803f27819c0192bf5cc947fa14442c8378f202e7e4",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/analysis.json": "8fdc773ced658a07e9e41df366a32b1c3e8bde20db253b06e8864be507e31c2f",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/independent_validation.json": "f8bfeee9bd50c88e505f2beb63a5ff0b41faa06178104187b749d47de0009214",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/failure_counts.json": "24aabeb31476f69425993bd8d3ab37dfa4675a4358042840c53f4bf0eb8a21bc"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "report_id": "report-a597c022",
+          "claim_impact": "No support or refutation of C1-C4; retain for research continuity without increasing the four manuscript evidence groups.",
+          "mapping_status": "mapped",
+          "verification_scope": "Fullprediction audit; source hash/identity validation; independent main numerical/statistical audit.",
+          "created_at": "2026-09-13T10:29:51.751672+00:00",
+          "updated_at": "2026-09-13T10:29:51.751672+00:00"
+        },
+        {
+          "item_id": "query-consistency-20260913",
+          "title": "Query-local consistency on accumulated scatter blend",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Separate six-view, per-query adapted development study;400source and2000target task conditions. Different inference protocol from gallery-only OSLO.",
+          "result_summary": "77.374%vs77.334%,+0.040pp[0.013983,0.067333]; small development point retained,minimum0.5ppgatefailed. DTD+0.08pp,EuroSATunchanged.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/independent_audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/selection_lock.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/CONTRACT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/analyze.py",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/REPORT.md"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/REPORT.md": "025f10d3455c04ae649195c83d38d874b84076c7f11cf39441e38b923c246ce6",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/RESULT.json": "cd817b2b8d4e45ab70160b4dece4cb99557df2101c0359e7b26fdc419cab8d80",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/protocol.json": "5ad7abb795feca0e1e4ada75c25f424e32d8ae6ab5f0cf6ff9254883edc5395f",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/analysis.json": "4686080570b67e38bd1c3063c48234e14f0e273f26c3dfe0afe7783b319b4eb9",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/independent_audit.json": "00e42f86ca3a6cd1a218bc7a3a27f514b7d018c4aa9eb244929f38c4bac7293b",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/selection_lock.json": "abba2629f305ca34d96e6e7f706068ea850eb7ed01f0bf7ae68d97e5ec48ccb2",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/CONTRACT.md": "f713122ad0d35b625fff19f65c75767742c0950ea3c7294158532ea074dffeaa",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/analyze.py": "1bca2c7ab5800d9142b73b96be5369617b51a1b4452345a3eae9fdd28bbf0b49",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/RESULT.json": "3825deee2637569e36308fd82204a34a2e0f63ac6191641ca15a4fc76852fead",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/REPORT.md": "319f7e069f11acc1adb40580517fa30a6570a782fa49ca6029035cf5664e2a4a"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "report_id": "report-0eb34a5e",
+          "decision_id": "decision-1be082a0",
+          "claim_impact": "Reference only; no support/refutation of C1-C4 and no additional manuscript evidence group.",
+          "mapping_status": "mapped",
+          "verification_scope": "All savedpredictions/sourcechoices/pairedstatistics; independent direct-primal checks on20actual tasks.",
+          "created_at": "2026-09-13T10:56:01.133775+00:00",
+          "updated_at": "2026-09-13T10:56:01.133775+00:00",
+          "supplementary_analysis": {
+            "report_id": "report-264a9860",
+            "summary": "Identity-joined accumulatedstack versusmean6viewR2:+2.165333pp,DTD+0.205333pp,EuroSAT+4.125333pp; post-hoc exposeddata,notfailed-gaterescue",
+            "paths": [
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/CONTRACT.md",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/analyze.py",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/RESULT.json",
+              "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/REPORT.md"
+            ]
+          }
+        },
+        {
+          "item_id": "caltech101-transfer-20260913",
+          "title": "Prospective Caltech cumulative-stack transfer and numerical boundary",
+          "kind": "auxiliary_external_transfer_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "New-domain six-view, per-query-adapted protocol. 500 shared tasks, three galleries, two fixed source configurations, ten methods. Different scope from gallery-only OSLO.",
+          "result_summary": "Both fixed configurations failed promotion:98.032%/97.978667% versus augmented-support ridge98.330667% and C10 logistic98.392%. Original full numerical audit failed. Bounded240-checkdiagnosis:238passed,2copiesofoneensemble-neighborprecisioneventfailed;72intervalsverified.",
+          "verification_status": "partial_original_full_audit_failed",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/audit_failure.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/diagnostics/audit_diagnosis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/compare.py",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/statistics_audit.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/REPORT.md": "fcc7998c666043555bfab470690df20eba05a5ebb4df10aa609011a1bb0f622e",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/RESULT.json": "bf1f0c016a2cbf905df9dd9fed9edfc003044a727ceb000deeaea32fbe30ac34",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/protocol.json": "2516de39e5ce78d9ed5f0289e16067bde899c831c462eb2068bc39b19ada1a36",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/analysis.json": "f611f005cc55146374e1a28f719f84a70b2df8df99a03b5d592f3172248fcc51",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/audit_failure.json": "b44b38d5c761852e442f2b47f7ce2460966f8f420f653676e86df45b923356c4",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/diagnostics/audit_diagnosis.json": "ff16733a127e7bc584e7aca44848f9e64818e2cf9844ce7bd7951b2ffaf4b31c",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/REPORT.md": "2d79dfec632b58279b3bf56242e63f60c15859f7305f8af88be1c87b66385a5f",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/RESULT.json": "ea8b71fd71a81a93d925f9dae83c546277d5966439fb07d253a6f7c5b06712ca",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/compare.py": "9bb8e66f286d183ce9d7b4f7ffad0597a55f9f9feb82965dcc87741ec25f8fb4",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/REPORT.md": "ce4d422f390c60d0da1321e35cf57adb8785eb9369d6c24fb42f1c267abfe33a",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/RESULT.json": "da0f278f5ba4ab93b8662d48d8b912e953f12993f48cfa7e6e259143360cbdd7",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/protocol.json": "4f60c28f113d1d5010d435b8b732073721e963d56e458f14c9bca419bae9d4fd",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/audit.json": "a5ef16cfc9463c8210561f3b93b95f93c66623d66306b285be2a57d592bb30d6",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/statistics_audit.json": "c8e39f2a31c35cb1ef853e7ab2d1cd22537294a1d339edb5540cd24d2d408d5a"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "report_id": "report-17f13d28",
+          "decision_id": "decision-156853da",
+          "claim_impact": "Reference only; neither supports nor refutes existing C1-C4. Original numerical failure and no broad-generalization promotion remain visible.",
+          "mapping_status": "mapped",
+          "created_at": "2026-09-13T12:39:16.959055+00:00",
+          "updated_at": "2026-09-13T23:02:57.197634+00:00",
+          "source_control_followup": "Eight existing development banks reconstructed; support-only ridge ranking reverses across development and Caltech. No new fitting, full-audit pass or C1-C4 claim.",
+          "precision_repair_followup": {
+            "report_id": "report-ad0ad77a",
+            "science_node_id": "science-1426a0f9",
+            "validation_node_id": "science-73d9a50d",
+            "status": "passed_numerical_variant",
+            "prediction_entries": 112500,
+            "prediction_changes": 0,
+            "interval_count": 12,
+            "max_score_error": 3.3306690738754696e-16,
+            "summary": "Float64 comparator passes fixed independent parity and statistics checks with zero prediction changes. DTD-primary minus repaired control -0.047111pp; EuroSAT-primary -0.100444pp. Original failed audit retained; no transfer-superiority promotion or new independent evaluation.",
+            "paper_role": "reference_only"
+          }
+        },
+        {
+          "item_id": "gallery-density-20260913",
+          "title": "Fixed gallery-local density correction on cumulative classification",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Existing DTD/EuroSAT six-view cumulative stack,500episodes per domain,two galleries,four fixed methods. Query-local adaptation differs from gallery-only OSLO.",
+          "result_summary": "Local77.268667%vsparent77.374%;delta-0.105333ppCI[-0.186667,-0.023333].Allfixedgatesfail.600000predictions,12independenttaskconditionsand21intervalsverified.",
+          "verification_status": "passed_within_auxiliary_scope",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/statistics_audit.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/REPORT.md": "8925816284c7e31b9a425afaf4ae80e33dfe8b9421be152147a4299d2f23a997",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/RESULT.json": "fb89f91b2cc5f46e9338bb5be40ceb799dff6313ec419612a7f837eac3cea4e0",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/protocol.json": "0f0cd98f8642dc4a29b979bb5ab71c57e7d07680e02049a4e95771d858220e38",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/analysis.json": "ab685dae9fd60e099a4332fff69dd10f27619e6a777c6221513e9ddc9b926681",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/audit.json": "72dfab02e2224ad438a0b145aa221a63cfb1d556b1f4eba6ea718687525a14ba",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/statistics_audit.json": "73014ae89172fa16dfaf48049ee188fc0793b981bcc08eea22e3cea024c415dd"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "report_id": "report-f4e63c98",
+          "decision_id": "decision-18d903c7",
+          "claim_impact": "Reference only; no C1-C4 support or refutation. Retain failed fixed recipe and original historical numerical boundaries.",
+          "mapping_status": "mapped",
+          "created_at": "2026-09-13T13:11:53.345254+00:00",
+          "updated_at": "2026-09-13T13:11:53.345254+00:00"
+        },
+        {
+          "item_id": "dino-local-20260913",
+          "title": "Fixed native DINO local matching and saved-error complementarity",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "7277 verified source query-pool images; native 4x4 pooled DINO descriptors on500episodes per domain and two inherited galleries. Fixed one-shot local matching, equal standardized fusion, mean and shuffled ownership controls.",
+          "result_summary": "Fusion75.786% vs parent77.374%; delta-1.588pp CI[-1.806683,-1.366]. Both domains lose. Versus mean fusion+0.034pp CI[-0.030,0.097333]. All750000predictions,12real scalar audit conditions plus synthetic case,and21intervals verified. Post-hoc overlap6699patch-only vs18542parent-only correct; no selector validated.",
+          "verification_status": "passed_within_auxiliary_scope",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/manifest.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/statistics_audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-error-complementarity-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-error-complementarity-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-descriptor-geometry-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-descriptor-geometry-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/statistics_audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/design_lock.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/PROVENANCE_NOTE.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/statistics_audit.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/REPORT.md": "d4b2312fb551513135de5e299850c00127fd8773d67bcd6d5117e10794756105",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/RESULT.json": "34d67cb58248b83465c5978f8b31fc05783df2ea79b896dce620e80caa353489",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/protocol.json": "81b5ae99ffbde63409dad8fac06ef4b2c7fcad926b997fb522249f3ae6e743c3",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/manifest.json": "dcb3c2de0dfb1f7db64a08c0ea149fd4656dac1424e42a5808be7ab858dbbada",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/analysis.json": "fbdc31769b37b701b678790486d6fdbac981b768af17880074aa51b7f7ee46f3",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/audit.json": "917bfa1a5446ce66a417d86c5a67d8c3e1b5f3fac4f14331bda10bb1e3512867",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/statistics_audit.json": "933452227556bef81b48fb277ebaa2c8c1165c81ecefcb29dfea4857968f8ad2",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-error-complementarity-20260913/REPORT.md": "9d83cf885f18519db1a4b54358d585d6096d4d6448dd64cbe59ff4075ecd9e63",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-error-complementarity-20260913/RESULT.json": "851ae7a06e7fb46afdd91d584ae1c441da321207c98d1a17771b68546615443c",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-descriptor-geometry-20260913/REPORT.md": "c776d442ffb3bbfa7684d1f298ad4e989ac73560afcef616e7708e5b8a407ec4",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-descriptor-geometry-20260913/RESULT.json": "03abc9af30451cc90b984c8fd457daa77e1d448a2dc30de2354218c8a9cb6d46",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/REPORT.md": "2cb33aa2da76ed4a3a3d655a402523d9abef69015e233e0079cc4daf26b5a51e",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/RESULT.json": "79d90ade4e95c4f6d268e7a589d1566c22a63250d35ebe3f5ba65290d92492ef",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/protocol.json": "d4fea64e26ffe4abd331e9b2ebd7690fbebb3cc3082509949e57886027cbadc9",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/audit.json": "1b8400c7535698424e3b286c85931ef882b1dcac3f623012f427ee16f3bfd095",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/statistics_audit.json": "7215601df2183e803e111ea177796fd6b9cb4f3edcec3a63ba0857ac63759322",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/REPORT.md": "157f37a07b02c6ac3eb804fb48aa6910b79a43fd620d79e92046163b0532a947",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/RESULT.json": "a5c6c74a3a3550f3dfaad113d4835349298bd5c469bceddb4e2f6efd528c1429",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/protocol.json": "1800b9df37a9736e374941221785df1e3333e4294bb5f41eb652c6c5637723e9",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/design_lock.json": "1f28e7bf66523b15660bce18a189c4ebba83d8932f5c76ba42b267cbdfa6c81c",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/PROVENANCE_NOTE.json": "5b0b401b31e9fcd9c5ee1989b8729e901bbd1e0927f96ecfb9fe47de8aa1339d",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/analysis.json": "75ff6d635f48bfe39339fed0a6be124ba7223d9118f7e3163937d1625339f09c",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/audit.json": "6dd329e73859cc4ac931cd3c3aa4423bfeaa25a3d19ea7b9a419beee361758fb",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/statistics_audit.json": "7215601df2183e803e111ea177796fd6b9cb4f3edcec3a63ba0857ac63759322"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "report_id": "report-6eb4cbf9",
+          "decision_id": "decision-a5867e1a",
+          "claim_impact": "Reference only. Reject frozen local fusion; no C1-C4 support/refutation, no generalization or novelty claim. Two earlier probe failures retained; actual extraction succeeded with inherited CPU fallback.",
+          "mapping_status": "mapped",
+          "created_at": "2026-09-13T13:42:00.561587+00:00",
+          "updated_at": "2026-09-13T14:24:26.177143+00:00",
+          "followup_report_id": "report-c64a98a2",
+          "followup_decision_id": "decision-e8139224",
+          "geometry_report_id": "report-e05bada8",
+          "geometry_followup": "Label-free7277image diagnosis: shared image component83.51-84.30%; Gram participation rank1.411-1.426of16. No semantic utility or performance claim.",
+          "residual_followup": {
+            "report_id": "report-1b88720d",
+            "decision_id": "decision-2b499ddc",
+            "idea_id": "idea-0430864a",
+            "summary": "Fixed per-image residual fusion69.071333% vs77.374%, delta-8.302667pp CI[-8.652017,-7.939333]. DTD-11.845333pp;EuroSAT-4.760000pp.1050000predictions,12real+4synthetic numerical cases and35intervals verified. Reject fixed removal remedy; dominant shared energy is not evidence of nuisance."
+          },
+          "reconstruction_followup": {
+            "report_id": "report-bdd3bffd",
+            "decision_id": "decision-8152f574",
+            "idea_id": "idea-80b11941",
+            "summary": "Fixed normalized reconstruction fusion75.323333%vsparent77.374%,delta-2.050667pp CI[-2.286,-1.807983]. Fullspan-rank1+0.007333pp CI[-0.110017,0.125333]. Both domains lose;1050000predictions,12real+4synthetic numerical cases and35intervals verified. Reject fixed transfer,not trainedFRN.",
+            "paper_role": "reference_only"
+          }
+        },
+        {
+          "item_id": "source-group-objective-20260914",
+          "title": "Source-group objective qualification: fixed protocol rejected",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Frozen-feature one-shot source training objective and selection factorization; separate from gallery-only OSLO target protocol.",
+          "result_summary": "Relative worst-group risk improves over matched mean training but fails the identity and strong-stack qualification. Candidate minus identity +0.0827pp and -1.0213pp in the two exposed-development directions.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/independent_audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/summary_repair.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/legacy_import_audit.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/REPORT.md": "8f8a9e75ed42e5e7efa2574d5b420f91a179bf845c0a5ba7fc889113d95259ea",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/RESULT.json": "20ba27dff3face0591c3b43ee8ef6fa640e1ea5c1778d2defdf9d66b799ac140",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/protocol.json": "b6d422a3e2f173b200a9379f1f0dd51a4ba5b5d9a049f83c41a7f8dbb0a6040e",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/analysis.json": "371dd6aeb8e7ddb1de10cdda7e47743daa15e02438d917de55072a4a6964f693",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/independent_audit.json": "cff37d63db98bc946620eecf6bece277438faa1749e3c2e8d43ab03aed99d659",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/summary_repair.json": "6e739973cc430cd96dd48384eea0790bda58e098cc44017adf70a58942eeb0a1",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/legacy_import_audit.json": "055fadd34d8bcabe53d5d0c4d50dabd8845184ad338b74c2c542617aca9418fb"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Reference-only research history. Does not support or refute manuscript C1-C4; does not add independent target confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "science-2978ee2a independent audit; report-54e9c664; original run inputs and summary-only repair preserved.",
+          "report_id": "report-54e9c664",
+          "decision_id": "decision-6bde6800",
+          "created_at": "2026-09-14T00:06:34.634281+00:00",
+          "updated_at": "2026-09-14T00:06:34.634281+00:00"
+        },
+        {
+          "item_id": "finite-view-head-objective-20260914",
+          "title": "Head-aligned finite-view objective: verified rejection",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Frozen-feature one-shot source objective contrast retaining the exact scatter/retrieval/head null; separate from the gallery-only OSLO target protocol.",
+          "result_summary": "Worst-view accuracy72.7467%DTD/74.2418%EuroSAT, minus scatter-5.3307/-2.3489pp; both fixed gates fail despite small gains over loss controls.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/audit.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/code_lock.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/selection_lock.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/REPORT.md": "820649efc1671c30abe7af263853757565ae41381726f71a9d1539bae2f0ecaf",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/RESULT.json": "17cf79371e48bb76638f6e7362957154d4c796a2d0bd36d29e0535e383d94faa",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/protocol.json": "ae2f4785fe77f8056ec77c5edc44e6e39458e28666d7afa6fbad00560cb59165",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/analysis.json": "6de1e483662762b0cb36fb737f909cdc019aeb7a74cf458be18984089d333dd8",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/audit.json": "52222c65b798736f3101e015113c2d8b7e00eb6fa2d2357ff0ba9beac3fbbe27",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/code_lock.json": "e4d8f5189d73ade261073c631f20f6c0c57c2d5ada549b9eccfd521df695fd37",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/selection_lock.json": "ae57e7db83226e4d8d50f8268df2c2d476ea92292feb107a84521cdc862b7727"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Reference-only history; does not support or refute manuscript C1-C4 or add independent target evidence.",
+          "mapping_status": "mapped",
+          "verification_scope": "science-70b35c21 independent audit; report-208e4aa2; original raw computation preserved.",
+          "report_id": "report-208e4aa2",
+          "decision_id": "decision-b4f65a11",
+          "created_at": "2026-09-14T01:11:30.127560+00:00",
+          "updated_at": "2026-09-14T01:11:30.127560+00:00"
+        },
+        {
+          "item_id": "dino-depth-readout-20260914",
+          "title": "Fixed multi-depth DINO readout: source qualification rejected",
+          "kind": "auxiliary_development_report",
+          "status": "completed",
+          "paper_role": "reference_only",
+          "main_or_appendix": "reference_only",
+          "section_id": "historical_context",
+          "claim_links": [],
+          "setup": "Fixed blocks 9-12 with unchanged six views and frozen encoders; 1000 paired exposed-development tasks and 2000 gallery conditions.",
+          "result_summary": "Versus retained final-layer consistency: DTD -3.3400 pp; EuroSAT +0.9813 pp; pooled -1.1793 pp [95% paired CI -1.4073, -0.9546]. Fixed robust gate failed.",
+          "key_metrics": [],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/RESULT.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/protocol.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/audit.json"
+          ],
+          "source_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/REPORT.md": "ac00171991b8efc11ae2c2e254b8708cf6ade22640e995ff2fdcbee9f9f2d940",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/RESULT.json": "16471df39d32bf2467c2129e45767b43f9ea7a7c2a2d9a4b0df5de4a175e8238",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/protocol.json": "ec521d4d8ddf40235033e6039e031ef9e8202a28dd2b6fc9987a77253abd71dd",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/analysis.json": "7be2ec5cfc88e37f48ceb1a86c9569661f349ebc09cb2e407c16ad0c135a7e2b",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/audit.json": "c9257c6e742fcfffaf6ba7d28d227adc69d8ef3f55d96600ac232a4477ed63c1"
+          },
+          "selected_outline_ref": "outline-001",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+          "claim_impact": "Reference-only history; does not support or refute OSLO manuscript C1-C4 and does not add independent target confirmation.",
+          "mapping_status": "mapped",
+          "verification_scope": "Independent full audit: 1200000 prediction checks, 22 intervals, four prespecified primary equations; logistic solver not independently reimplemented.",
+          "report_id": "report-66118f68",
+          "decision_id": "decision-0f89b8dd",
+          "created_at": "2026-09-14T02:46:04.883954+00:00",
+          "updated_at": "2026-09-14T02:46:04.883954+00:00",
+          "metric_summary": "DTD 74.8173%; EuroSAT 77.5720%; pooled loss versus final consistency 1.1793 pp.",
+          "impact_summary": "Fixed multi-depth recipe rejected; retained conditional final-layer incumbent unchanged. No layer or weight resweep."
+        }
+      ]
+    },
+    {
+      "section_id": "calibration_transfer",
+      "title": "Source-trained gallery calibration under domain shift",
+      "paper_role": "appendix",
+      "claims": [
+        "C4"
+      ],
+      "required_items": [],
+      "optional_items": [
+        "prior-calibration-source-transfer"
+      ],
+      "status": "ready",
+      "note": null,
+      "result_table": [
+        {
+          "item_id": "prior-calibration-source-transfer",
+          "title": "Source-trained gallery calibration under domain shift",
+          "kind": "analysis_report",
+          "section_id": "calibration_transfer",
+          "paper_role": "appendix",
+          "main_or_appendix": "appendix",
+          "status": "completed",
+          "claim_links": [
+            "C4"
+          ],
+          "source_paths": [
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/REPORT.md",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/analysis.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/validation.json",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/protocol.json"
+          ],
+          "metric_summary": "DTD to EuroSAT one-shot +0.4787 pp [0.3027, 0.6693]; reverse -1.4493 pp [-1.7160, -1.1679] versus source-selected controls; same-mass prediction differences 0.",
+          "result_summary": "Source calibration fails the prespecified bidirectional gate; estimates collapse toward 0 or 1 and no composition benefit is established.",
+          "impact_summary": "Auxiliary exposed-development evidence; not independent-domain confirmation, canonical Pets evaluation, or a general failure theorem.",
+          "setup_note": "Separate calibrators trained on 100 source episodes per domain; 100 source-only control-selection episodes; 500 evaluation tasks per target/support count, shared across two gallery sources.",
+          "mapping_status": "mapped",
+          "selected_outline_ref": "outline-001",
+          "updated_at": "2026-09-13T00:15:41.307293+00:00",
+          "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run"
+        }
+      ]
+    }
+  ],
+  "evidence_contract": {
+    "main_text_items_must_be_ready": true,
+    "appendix_items_may_be_ready_or_reference_only": true,
+    "record_results_back_into_outline": true,
+    "result_table_required": true
+  },
+  "unmapped_items": [],
+  "appendix_reproducibility": [
+    "Source mapping and hashes: paper/source_mapping_audit.json",
+    "Main source commit 9240a4e630874c50459e069db609db9163a81c03; local source and permission checks in experiments/main/oslo-gallery-pets-20260913/outputs/source_validation.json",
+    "5,000 paired bootstrap resamples stratified within five task seeds; fixed-pool intervals.",
+    "Two post hoc diagnostic groups reuse all 4,000 main tasks; no independent sample inflation."
+  ],
+  "updated_at": "2026-09-14T03:21:40.823512+00:00"
+}

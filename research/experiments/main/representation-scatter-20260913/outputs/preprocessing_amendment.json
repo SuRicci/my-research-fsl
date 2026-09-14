@@ -1,0 +1,7 @@
+[
+  {
+    "reason": "Distinct crop coordinates need not imply different pixels in repetitive textures. First DTD banded images produced4unique pixel views at6distinct transformations; geometric checks pass. Preserve all fixed views and report complete pixel-uniqueness histogram. No model/classifier outcomes observed; no view selected by content.",
+    "failed_check": "bash-70dfad09",
+    "diagnosis": "bash-c5ce73f0"
+  }
+]

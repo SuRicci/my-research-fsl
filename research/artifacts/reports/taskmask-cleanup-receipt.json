@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-13T07:42:22.925428+00:00",
+  "reason": "Taskmaskprecheckblockedbydiskfloor;removeinactiveancestorcheckoutcopiesonly;commitsandbranchesretained;alluntrackedcopiedandhashed",
+  "free_before_bytes": 8880340992,
+  "free_after_bytes": 11645632512,
+  "observed_free_delta_bytes": 2765291520,
+  "worktrees": [
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-01adcb83",
+      "head": "85b0e579fd7379392b3c710d44e21e8fc18bc8a1",
+      "branch": "idea/012-idea-01adcb83",
+      "status": "?? artifacts/reports/asset-clone-pets-idea/candidate_manifest.json\n?? artifacts/reports/asset-clone-pets-idea/clone_assets.py\n?? artifacts/reports/asset-clone-pets-idea/completion.json\n",
+      "ignored": "",
+      "ancestor_current": true,
+      "untracked_preserved": [
+        {
+          "original": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-01adcb83/artifacts/reports/asset-clone-pets-idea/candidate_manifest.json",
+          "preserved": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/handoffs/reclaimed-worktree-records/idea-idea-01adcb83/artifacts/reports/asset-clone-pets-idea/candidate_manifest.json",
+          "sha256": "6084bd33bd3e45db7b723f31bbd4c20af26ad9e0ee3ff01b53ebad1de47cdc4c"
+        },
+        {
+          "original": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-01adcb83/artifacts/reports/asset-clone-pets-idea/clone_assets.py",
+          "preserved": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/handoffs/reclaimed-worktree-records/idea-idea-01adcb83/artifacts/reports/asset-clone-pets-idea/clone_assets.py",
+          "sha256": "11c76f1b9fe04b5730c11f354900eca4fa12f35cebd75fa40e6dc256c9957708"
+        },
+        {
+          "original": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-01adcb83/artifacts/reports/asset-clone-pets-idea/completion.json",
+          "preserved": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/handoffs/reclaimed-worktree-records/idea-idea-01adcb83/artifacts/reports/asset-clone-pets-idea/completion.json",
+          "sha256": "ff6ba79f01cceb19b81c0cf9dc8ed96777ea90a81303a43ac7507535edb9df60"
+        }
+      ],
+      "restore_command": "git worktree add /Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-01adcb83 idea/012-idea-01adcb83"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-134c9aa0",
+      "head": "5fe10bcab73373fa1e3320b170e4e2c595bfb027",
+      "branch": "idea/012-idea-134c9aa0",
+      "status": "",
+      "ignored": "",
+      "ancestor_current": true,
+      "untracked_preserved": [],
+      "restore_command": "git worktree add /Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-134c9aa0 idea/012-idea-134c9aa0"
+    }
+  ],
+  "evidence_boundary": "Filesystemfreechangeincludesconcurrentsystemactivity;notexclusivecleanupmeasurement"
+}

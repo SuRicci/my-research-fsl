@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "ok": true,
+  "compile_ok": true,
+  "exit_code": 0,
+  "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2026_conference.tex",
+  "compile_bash_id": "bash-d4d8c046",
+  "pdf_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/gallery_transfer_note.pdf",
+  "pdf_sha256": "b6e2e9320d925acd4f4448cd254b463ca26504b3f13f2563ac1a236975b87651",
+  "page_count": 9,
+  "log_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/latex/build/iclr2026_conference.log",
+  "warnings": [],
+  "render_dir": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/tmp/pdfs/positioning_final",
+  "failed_attempts": [
+    {
+      "bash_id": "bash-17a0f837",
+      "reason": "compile succeeded; post-compile renderer import fitz unavailable",
+      "resolved": "existing pdftoppm renderer used without recompile"
+    }
+  ],
+  "updated_at": "2026-09-13T09:48:30.604020+00:00",
+  "layout_revision": "Set bibliography item spacing to2pt after visual proof found near-empty overflow page; normal font size retained.",
+  "visual_review": {
+    "status": "passed",
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "render_session": "bash-64bf1be9 / bash-1e28bf1c",
+    "checks": [
+      "Final pages1-4 pixel-identical to already inspected render",
+      "Final pages5-9 visually inspected; all tables and bibliography readable",
+      "Near-empty bibliography overflow removed; no clipping or missing citations"
+    ],
+    "boundary": "Draft proof only; does not establish submission quality"
+  }
+}

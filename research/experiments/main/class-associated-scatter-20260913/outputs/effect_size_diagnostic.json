@@ -1,0 +1,33 @@
+{
+  "cells": {
+    "dtd_dtd": {
+      "queries": 37500,
+      "prediction_disagreements": 75,
+      "rms_score_delta": 0.0011428787957456022,
+      "max_abs_score_delta": 0.01580348937397033,
+      "max_class_bank_spread": 0.02229602481323939
+    },
+    "dtd_eurosat": {
+      "queries": 37500,
+      "prediction_disagreements": 99,
+      "rms_score_delta": 0.0013143782781864892,
+      "max_abs_score_delta": 0.0129896367703968,
+      "max_class_bank_spread": 0.02646686866145259
+    },
+    "eurosat_dtd": {
+      "queries": 37500,
+      "prediction_disagreements": 42,
+      "rms_score_delta": 0.0006047819239952155,
+      "max_abs_score_delta": 0.007198853795480353,
+      "max_class_bank_spread": 0.008427691945976368
+    },
+    "eurosat_eurosat": {
+      "queries": 37500,
+      "prediction_disagreements": 23,
+      "rms_score_delta": 0.00034874402812920313,
+      "max_abs_score_delta": 0.003960818915945574,
+      "max_class_bank_spread": 0.0071572690895190805
+    }
+  },
+  "scope": "posthoc description from existing complete banks; no additional method or tuning"
+}

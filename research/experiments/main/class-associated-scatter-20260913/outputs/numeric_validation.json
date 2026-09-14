@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "regular",
+      "max_error": 1.4710455076283324e-15
+    },
+    {
+      "case": "gamma_zero",
+      "max_error": 4.718447854656915e-16
+    },
+    {
+      "case": "shared",
+      "max_error": 1.1657341758564144e-15
+    },
+    {
+      "case": "zero_scatter",
+      "max_error": 7.216449660063518e-16
+    },
+    {
+      "target": "eurosat",
+      "task": 0,
+      "gallery": "eurosat",
+      "full_metric_bank_max_error": 1.7319479184152442e-14
+    },
+    {
+      "target": "eurosat",
+      "task": 0,
+      "gallery": "dtd",
+      "full_metric_bank_max_error": 1.890154699424329e-14
+    },
+    {
+      "target": "eurosat",
+      "task": 250,
+      "gallery": "eurosat",
+      "full_metric_bank_max_error": 6.467049118441537e-15
+    },
+    {
+      "target": "eurosat",
+      "task": 250,
+      "gallery": "dtd",
+      "full_metric_bank_max_error": 7.174816296640074e-15
+    },
+    {
+      "target": "dtd",
+      "task": 0,
+      "gallery": "eurosat",
+      "full_metric_bank_max_error": 2.4702462297909733e-15
+    },
+    {
+      "target": "dtd",
+      "task": 0,
+      "gallery": "dtd",
+      "full_metric_bank_max_error": 1.817990202823694e-15
+    },
+    {
+      "target": "dtd",
+      "task": 250,
+      "gallery": "eurosat",
+      "full_metric_bank_max_error": 1.1934897514720433e-15
+    },
+    {
+      "target": "dtd",
+      "task": 250,
+      "gallery": "dtd",
+      "full_metric_bank_max_error": 1.3183898417423734e-15
+    }
+  ],
+  "class_equivariance": true,
+  "query_partition": true,
+  "identical_class_scatter_null": true,
+  "numpy": "1.24.4",
+  "torch": "2.3.0",
+  "elapsed_seconds": 7.307485103607178,
+  "tolerance": 2e-05,
+  "scope": "4 synthetic dense cases and4 realtasks x2 galleries x5 metrics, exact neighbors and all3 prediction aggregations"
+}

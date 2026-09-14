@@ -1,0 +1,1006 @@
+{
+  "status": "passed",
+  "updated_at": "2026-09-14T03:06:06.830320+00:00",
+  "table_count": 7,
+  "numeric_values_checked": 326,
+  "tables": [
+    {
+      "table": "performance",
+      "rows": 8,
+      "passed": true
+    },
+    {
+      "table": "interventions",
+      "rows": 8,
+      "passed": true
+    },
+    {
+      "table": "influence",
+      "rows": 8,
+      "passed": true
+    },
+    {
+      "table": "paired_primary",
+      "rows": 8,
+      "passed": true
+    },
+    {
+      "table": "paired_interventions",
+      "rows": 6,
+      "passed": true
+    },
+    {
+      "table": "calibration_accuracy",
+      "rows": 19,
+      "passed": true
+    },
+    {
+      "table": "calibration_deltas",
+      "rows": 2,
+      "passed": true
+    }
+  ],
+  "paper_facing_groups": 4,
+  "ledger_items": 42,
+  "reference_only_items": 38,
+  "prior_validator_analysis_count": 19,
+  "count_boundary": "Table count is seven, not fourteen input/environment matches. Four measured evidence groups support five analysis questions; two diagnostics reuse the main task set. Historical inventory entries are not independent analyses.",
+  "inventory": [
+    {
+      "item_id": "canonical-additional-domains",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md": "a77ac0ddde6b0172390bb1d2ce132f7ab8b2d5baeb8b3363c69bd2b5c3eab319",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json": "ff2edd33f09a15c975f4a28a3d538ff5c294b09f6a582d9113f7bacea150959d"
+      }
+    },
+    {
+      "item_id": "ilpcz-gallery-control",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md": "6657fc29ea96ba94f39a244472184f33f77b880b1311921db686f777494f0d17",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json": "6c8d1a602c0aa4380857a8655429c9d596a5c01775cbda4c02546855ce40d463"
+      }
+    },
+    {
+      "item_id": "multinomial-logistic-control",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md": "92c4d88739f1d2eeb72163e50a18bfb09f89626ebb8840b9b576e8a9694f4f15",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json": "a0569fbe5e202b73ca9cedaed8554224bb0e4f6887dc6e9a50fd6b3b98dbe891"
+      }
+    },
+    {
+      "item_id": "new-image-confirmation",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md": "3bc4ecccaadda5a71aaa6a1d8f8daab9dd91837525958cfcdc76a2399ae6ddf8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json": "6842a3347894c7b6dc9dd134cc780500554258f02114f06a09d76265713cf430"
+      }
+    },
+    {
+      "item_id": "press-fixed-penalty-challenge",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md": "1390b0fb436a53dc19e1bf0c791ee7b2aafdebb11a37aae0f45a3665605b2fea",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json": "a0414809590f604fdcd11782b87c066e1d5bfe25f14890bb38eb84d560b09ea3"
+      }
+    },
+    {
+      "item_id": "retrieval-head-attribution",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md": "4982aff8eb58fef4186530f645642759335b9efe0ddac27881db208cb9588546",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json": "1ed83afe4ed03f363880fd1ae9fc8ed5c7df6cff6869417187168358ab7b1f86"
+      }
+    },
+    {
+      "item_id": "ridge-scale-robustness",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md": "5d168c878882b72555e571ab3579183136e9cf37b36dea735044f5f716610015",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json": "11883bd2698dc71b89b11f2d953c291d23a40e06699e44141333bc56eb3ed0bc"
+      }
+    },
+    {
+      "item_id": "fsl-pets-transfer-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        ".ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/RUN.md",
+        ".ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/paired_accuracy.npz",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/ilpc_complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/confirmed_comparator.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/REPORT.md": "7a5687a02b9e1aa0e11cf2ff9a908ac3104697c404a5431a9ffcaa630187285b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json": "36c334ac72234f3bf800980f5c86f4497163169b8e7aac77befcfd02ea692d46",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/validation.json": "b3abfb4649e2d872e15330fca51eb3ae3b52a0d3e78983cf4363667de3c56aea",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/paired_accuracy.npz": "3215dc2ca4122861d1640994eca422e399d009bbb12767b73d401ac7a545ac08",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/ilpc_complete.json": "b4bcfc64b49a601e940decd700ecd3308fc1e5a9a392977d50c98de57f7a16b0",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json": "94f281238bebb62542d911513541a81f22d37564645653956c9612c4eb247262",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/confirmed_comparator.json": "ae6acc911307582c1f7dc36031b346ed332f11ba2e4f87d759f38b7fb4ef1dbf"
+      }
+    },
+    {
+      "item_id": "oslo-gallery-pets-20260913",
+      "status": "completed",
+      "paper_role": "main_text",
+      "claim_links": [
+        "C1"
+      ],
+      "classification": "completed and written",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RESULT.json": "02314575606742113aea78efa67c6f037ca9805ed1119fa659426a6f37043590",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/validation.json": "020365b08aa1c6610fa8414ca3e05b0837a7b4992dec4d1737964a46bb75cc0b"
+      }
+    },
+    {
+      "item_id": "r2-fusion-stage-canonical-20260912",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        ".ds/worktrees/r2-fusion-stage-canonical-20260912/experiments/main/r2-fusion-stage-canonical-20260912/RUN.md",
+        ".ds/worktrees/r2-fusion-stage-canonical-20260912/experiments/main/r2-fusion-stage-canonical-20260912/RESULT.json",
+        "experiments/main/r2-fusion-stage-canonical-20260912/RESULTS.md",
+        "experiments/main/r2-fusion-stage-canonical-20260912/outputs/validation_report.json",
+        "experiments/main/r2-fusion-stage-canonical-20260912/outputs/all_metrics.json",
+        "experiments/main/r2-fusion-stage-canonical-20260912/outputs/run_manifest.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/RESULTS.md": "24c6a3ea7ac55c3f1c887c3ede4b815c9d857bcbb81fa315e359ca4a8b89c37c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/validation_report.json": "1a225e62151f03fb0683f9015e22abdbb7943e20d3446cd0c4d50df54422fd30",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/all_metrics.json": "2dc348bd1437bf93e80ce913a00ea2b45c1029c6720854d46a8162a3314b2ee8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/outputs/run_manifest.json": "c8e9a850ab27479a40422dc3a02cc2851b0649df7ccb50d8eae56a3d26afaa7a"
+      }
+    },
+    {
+      "item_id": "r2-geometry-canonical-20260912",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        ".ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/RUN.md",
+        ".ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/implementation_validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/comparison.json": "eda0545c2ea0c12115a8dc917cbba60169f6e19467bd0f33f817be8c1228b951",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/RESULT.md": "b21908931b9d3d1619c55b11c5cc83460c17dd175df0a952a6dc64e691e5a490",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval/run_manifest.json": "5b727b1973c717447374fbc71eedf93f3a070dcf31d4a42aedf16658931cc2ad",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/implementation_validation.json": "67586e3fa8a9ce735574a2a12df58155fdd08749cad2f5805acf6c88252e670f"
+      }
+    },
+    {
+      "item_id": "r2-logloss-canonical-20260912",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        ".ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/RUN.md",
+        ".ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/solver_summary.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/implementation_validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/comparison.json": "5735c0be8df14690e76de6839079bc9084466d54d5907b5a17bdaa01a25ca0bc",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/RESULT.md": "4352ec1cb80951222ae197141b38a898909e80951c2ad15817f4aac39081fc79",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/solver_summary.json": "fe9298236d5f89fbaa3799de2df7ed7b2fd6fe840bf6ce036462af65eb7bb621",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/outputs/eval/run_manifest.json": "6a3928bf570d37f326fdcf74541c12af7e0f79378ce619643984e9d823d986bf",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/implementation_validation.json": "8afb58369bdd3dfe90a7b569c5cbf7d657f2042c2881cffc8716fb9f741ed7ca"
+      }
+    },
+    {
+      "item_id": "r2-ownership-canonical-20260912",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        ".ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/RUN.md",
+        ".ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/metrics_summary.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/run_completion.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/implementation_validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/comparison.json": "c1256b08db515953349353215db21610c5a4502eba4757a29d47426a5dab3581",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/metrics_summary.json": "b837f4e266244149ea7e86ecff8396d8c239a5ba76caf37d76b3bbffdd2fdc7b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/eval/validation.json": "f8e25ea9b4950fe0783d288a9ab39fd848778fc5c3b491ea2f75e79e0fa119b1",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/outputs/run_completion.json": "d701ba20abd757b2410a425c6e0f26c29c15531a44c93f5e53b412011bd55036",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/implementation_validation.json": "eebeb07783e77ca594bd33fe97f73eca2679f42371261f7c067dad5a823209a8"
+      }
+    },
+    {
+      "item_id": "r2-prevalidation-canonical-20260912",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/RUN.md",
+        ".ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/comparison.json": "9b99f098bd60e1db3c2ba3ca51a92f1be20cb620e78e6869cf483e3e6f0c0f09",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/RESULT.md": "abc9f29d3f3cf80c86ec5f5b6192f6598c4d187f056494dfd435382330ddd963",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/outputs/eval/run_manifest.json": "b1bc8ac29b7727ca3234df84f423b03b6e5c5203b2f4bcbbbb14d7a286b07385",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/validation.json": "947fa49c6a3d70c7339ff5303bb33dc7bb59217d737f4bd0ffdaed44f4c86aae"
+      }
+    },
+    {
+      "item_id": "r2-residual-canonical-20260912",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        ".ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/RUN.md",
+        ".ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/baseline/metrics_summary.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/implementation_validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/provenance.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/RESULT.md": "445b89024f54ff96a920e8b73da7e2dec4ba6a316394db977a20b8bafedd587d",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/comparison.json": "748bd16bf085975187312fe70f22f2d7a40a05dfee0ff30101280a50159aa3d0",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/eval/run_manifest.json": "1305acdfd36d77b9170c848b3a7896c6f33c93acec7a50ac02ae5c90f15ae7b2",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/outputs/baseline/metrics_summary.json": "da8c8452ce2b7e13ea4c05fb6e3fedccead5102696852182cd6b632656aa9287",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/implementation_validation.json": "804fbaccf9160a58bbc56a2d3a7021e084245817fd1434740d48f1946d9ff269",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/provenance.json": "d879db5f89ef6f03c7351d217fa74901e07c19e7b94848ea7f77f462c3cf0c22"
+      }
+    },
+    {
+      "item_id": "r4-transport-geometry-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        ".ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RUN.md",
+        ".ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RESULTS.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/all_metrics.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/validation_report.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/selection.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/completion.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RESULTS.md": "d01af4d7638eec813f26ab5decb2e010fc08a13dec32853e4b660657dbd54a9c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/analysis.json": "1480a81be27360ee963dbd6474a604b38e189c24151f72b527f246f0b61ab466",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/all_metrics.json": "84f98303cc54148e3c1fc7efae4d7ae8524dd98dd1a8102cfff776acd803fd44",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/validation_report.json": "28391c751f5e3b28490e9c64a4bd7b61910a557afaf3aba135593916ceef46e0",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/selection.json": "a92e16e2ee8f38214b52c636b52dea049dfc0bb012cacc9f5664ac3de1a1db83",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/completion.json": "627ad18e3f3bd2a53dfc8c7d45cf6148cc235e1c2dcb0303134d6ad44ee28728"
+      }
+    },
+    {
+      "item_id": "oslo-retained-influence",
+      "status": "completed",
+      "paper_role": "main_text",
+      "claim_links": [
+        "C2"
+      ],
+      "classification": "completed and written",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/attribution.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/REPORT.md"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/attribution.json": "916f44d2cbb394497f5f3709f2f86556048e9aa3068e92dabfc97d6c0e3bda31",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/REPORT.md": "ae5d3ce319ed20d2f2daa4cdb82589cafaacdbc2c97ba56386f11920998bff01"
+      }
+    },
+    {
+      "item_id": "oslo-final-step-counterfactual",
+      "status": "completed",
+      "paper_role": "main_text",
+      "claim_links": [
+        "C3"
+      ],
+      "classification": "completed and written",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/REPORT.md"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json": "9eb94b0b793480b3f18be84b6d481f88f13b59f83272cdaf15331f8e83e0d9d9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/REPORT.md": "b9a84e7709b79a63bbcb3e0c70fed12b63c115d1f0b829e251d469339f90fe94"
+      }
+    },
+    {
+      "item_id": "prior-calibration-source-transfer",
+      "status": "completed",
+      "paper_role": "appendix",
+      "claim_links": [
+        "C4"
+      ],
+      "classification": "appendix-only",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/protocol.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/REPORT.md": "f040214b370a3d04a614e8b439a466a624b717f85b139697d03343786a9f8a04",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/analysis.json": "267beeccb283a6935f5c64aeb451e23f4da4498c66f21914c19c684165cd35d5",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/validation.json": "6b515e6fc9484490c734df8601fbce25a6c04597750554acd563bcdbc14d719a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/protocol.json": "051cab1891cdedcab5cc44abb33d125a717fb47d07cbec50e9797791719b9ac5"
+      }
+    },
+    {
+      "item_id": "utility-composition-qualification-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/result.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/REPORT.md": "756a76e0640c94ddc61af8eae961089a0aaecb5eea1cd25b2db3f445c74060a6",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/protocol.json": "0a3a1562babfb8c4cd70d3607c88e7f192bb401a2af3fb4c1ce2a7f81750519d",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/RESULT.json": "9e1bfc87fb20becdf3cc6d6008162daee6430b4e36244f62547faba6e33d38a8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/result.json": "9e1bfc87fb20becdf3cc6d6008162daee6430b4e36244f62547faba6e33d38a8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/analysis.json": "a45baaf198453c9395f5ecf96e6994c8deea1700b8ad97607718c7498fb42025",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/complete.json": "9e8d4ccb2214982d46598550d80f507610cbb3a2939609eebe184efcc7793552",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/validation.json": "61d56b5bf262b62f98b65a825994d1d56d1212c36d1352f1682e9a1f6ad698a7"
+      }
+    },
+    {
+      "item_id": "source-coverage-factorial-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/result.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/REPORT.md": "f7f28926bec18ffb445284f86c38bd4628d403b6b0997a0506103d0de0708273",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/protocol.json": "bae6a13f335a340f45c9eac15ccc42522f10fc16e8cb99c99db4ec41f5b0b9af",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/RESULT.json": "63853e89af0db0e8f2b842cfa9b6a2f2982d4c107934511a38c9c641dfcd734a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/result.json": "63853e89af0db0e8f2b842cfa9b6a2f2982d4c107934511a38c9c641dfcd734a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/analysis.json": "e9f841140921e285dc007a44564adb18a36c1804c6cb9ec6fd6b43f32ca09c65",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/complete.json": "87d741cff13abccd0f8c1054d11fb82e5021d48a151e5e6da16aa75958dbbf61",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/validation.json": "d6d1cc177044b881653893e41cd30f20988bc4f9dfdeab8d3979210080f94d06"
+      }
+    },
+    {
+      "item_id": "representation-scatter-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/audit.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/outputs/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/outputs/validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/REPORT.md": "d1bb9ce48faf6f76713238d8506538128dc94033d23e569f0e1bb716954fe79b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/analysis.json": "aabcaf1f6d127f645e90bc1841edca487fa0f179997831421f1b7e8661c1dbf3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/complete.json": "35035f12cdd8db3f792f43ad7afe9b05c368b8f621569c9d02ec7bf1acd447e5",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/protocol.json": "faa0ab7408e0e702eb16d8aa553ae58541aa5b564d76d658c96bb109b2a6bd18",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/audit.py": "c437fe452bd92e79299eb61a25a09d1116706f304dcf25d9f4e696abb417c368",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/REPORT.md": "c4a4db2a96c14049fdff983b23f77c840bfe8b1735bd946a03a4638a4f5f12ab",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/outputs/RESULT.json": "1d4f864159f7dd353052c744915aeba6d04a8639283e1f8df556390f6ec3072e",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-selection-precision-20260914/outputs/validation.json": "6d29d11adca5d14d10857f481a33f17f9ddce6d13cfd21403c38c64202d7a96e"
+      }
+    },
+    {
+      "item_id": "view-distribution-kernel-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/REPORT.md": "7a7fe2d5ff4927f78ee43e0bd1425f7a4d6cfc2ba73e9fd62ef8020c1aec0ea1",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/protocol.json": "1cb606d64040c65f979ac58c89a0160710ca52fd23e4e60ba4193d2c9e7c1639",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/analysis.json": "b579ca30ca8f785deb6340995fc7393de46a50151665525e275138b5aeb92c64",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/complete.json": "7745a08eed9c55ddcb3f997519b4d1549028fed78e9d80e2e275a479c5b449bf",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/validation.json": "3b9da374480c246f4d64a9ff5a27f2106db2759cb765c48bfa63efe202b2ca67"
+      }
+    },
+    {
+      "item_id": "learned-aggregation-order-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/independent_audit.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/REPORT.md": "1046ba8122dd81f3d0f272672f27167fa6122c73db0f9fe67095c226c58f73af",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/protocol.json": "4bf8139cec1a94a35ec356e743323306acaf742b482533c7d5d59a9dab64780d",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/analysis.json": "aa382ec54ac7e1cc27e0e5300756f26201d46cb01e9761014d70801f77b1f6e9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/complete.json": "f39719ae5531c1405c05775d22dc46964968ec99898776edc17fba61ba8e93e8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/validation.json": "2ddc59544ad374fdcbd33a970edbdc4acbd1c2936567c81bfac031ac40ab980c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/outputs/independent_audit.json": "e108be7a4fa3c47a084d615ce5e48bb9d79b491030afcfcf1393a8e33c5caa1e"
+      }
+    },
+    {
+      "item_id": "reduced-view-efficiency-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/independent_audit.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/REPORT.md": "7e3726454170c5951bde39553872c144058c921cbf734b6c4911fcebc4cc4a75",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/protocol.json": "c6739a9d67d851803cdcf400b7536a177cd7b2880b1ecc06b37de9f06e9f2c59",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/analysis.json": "35848c6c21f5492e416ede17faa0a03cd83664a5510c5860b85c7744eb44b891",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/complete.json": "012abb734b8953f9cc116b6b7fe1ae9963a4245931e5778ea201501b76c65260",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/reduced-view-efficiency-20260913/outputs/independent_audit.json": "3b7fa8d4e8473ff422377d47e1afdc8219d9b72d2ae7f45ab8d65ffc107c93b2"
+      }
+    },
+    {
+      "item_id": "source-composition-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/independent_audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/independent_statistics.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/REPORT.md": "b500c1fb899c22cbac9d7af21a9502a2aec3bddb4573ed54b45af298381a094b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/protocol.json": "28954d510cf37dbab487b4854fd85e916695c51f7384ce71b75744d59791c9a8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/analysis.json": "6fb260e6507bb6cc5f3955aba852ca62330b2241ebcf833fe3951e29d3d8c9e8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/complete.json": "4a722f3f1a031c686db0cf432bc45fc55ccec62b7a3da05880fcd8f6a9e50e99",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/independent_audit.json": "337d36a61bd1280bc30575b3a1becbcc0736f44be54fd03db04d9df5b8dd2afa",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/REPORT.md": "e3f0a88f374aa31db16fbceecce458aecd401b7ef24fd711e6d70e53aacf0009",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/RESULT.json": "6984da08ffbb64909a484359fdf0b793270941f068f419920ce6d8085d37fef8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/independent_statistics.json": "7331ce0b7de86a5cab3ffe1e023a70b6294fe142742870d3b920e9ded1d639fe"
+      }
+    },
+    {
+      "item_id": "task-local-mask-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/result.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/independent_audit.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/REPORT.md": "2848bec9f917873e7e4908ea17600d28e1dcc2acc0a53844e0151643bef9fb21",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/protocol.json": "c6e0212974706ab3cbd365c35b586c481b067dc6443cf73b052231bdb0c32e44",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/RESULT.json": "926d5126e2f9619d81a3e15976a8fc9b42aab2efd1aead6ec22f66274990b2ad",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/result.json": "926d5126e2f9619d81a3e15976a8fc9b42aab2efd1aead6ec22f66274990b2ad",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/analysis.json": "f460ed8655634e243ada292de718c27704eda3c4e82614c0fd9f1dfa51c3149a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/task-local-mask-20260913/outputs/independent_audit.json": "40e12d67d768f964e953d0162ed4cc8eede27632b28eb1e5d65e7413e5d7b0bd"
+      }
+    },
+    {
+      "item_id": "support-risk-selection-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/result.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/outputs/analysis.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/REPORT.md": "8180d473d774ab32f194269f18730bf546792f0b77a79689531627170575a3d4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/protocol.json": "7d43077ea0241c013a2ff4143f02f2a217999b6902502d39a0c9df09424c76c2",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/RESULT.json": "98cedd9f66ff4976952ef4d01d77c25c6ff26e4154f14c90142abfc73868c573",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/result.json": "98cedd9f66ff4976952ef4d01d77c25c6ff26e4154f14c90142abfc73868c573",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/support-risk-selection-20260913/outputs/analysis.json": "362126925351ee794d4c3e37eab15a22b729114ba245b335b1751a49bcbf2049"
+      }
+    },
+    {
+      "item_id": "scatter-centering-stack-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/numeric_validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/REPORT.md": "2e3edcd4f25a9377924b2679e992fcf93fe1732c41726ff15412511f6c738f6c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/protocol.json": "291977c551ea14bf06df7cd282671aeeaeec7fa82ce9282e3674b0400343ec7f",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/analysis.json": "1cebed17fa55e6946eced5d3022ffbe37521ca1b85dd1c888bc9d0b031608a2b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/complete.json": "6fecdf9c2510b9385aef4002b67f27edbdb0154d415b3b331ffa3d642597742d",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/outputs/numeric_validation.json": "1f6e842a28ec4d34cfd8b3daf1c6f243ecb7b8c907807ad1f6f34ce67704ccf1"
+      }
+    },
+    {
+      "item_id": "scatter-score-fusion-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/REPORT.md": "7319ef490d12e2cb681d05dbab1b267961f2001faf22daa79edd82b5465e1d0b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/protocol.json": "fed9f03702e230c44cb5d4cbd35bd04d30f090ee29beb9fea2e3c32217e8c654",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/analysis.json": "86944a72c591d6544bc638eb30f8218567ace176cfa39adf5e9411f05c986b65",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/complete.json": "4c13d16e63558e9082906610152db12a0f1f2c87967d0253396114b4720736d9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/outputs/validation.json": "eba255e1f20cf64c114b6244c072a488e52192d2c1b301cfec4fd469815f90a8"
+      }
+    },
+    {
+      "item_id": "class-associated-scatter-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/result.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/independent_audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/numeric_validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/REPORT.md": "cf8e07ab5c72709755653b65b53ea144cc206b3c8b871636947739c76b0a6c66",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/protocol.json": "13093e7149b9155eb5b3e9be479e6dea272b455380ec0fbab10195e6de4e4350",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/RESULT.json": "f3e0e72152f0ceae95443675c3e7a33728764fea22ad295d4e14b10cfcad8616",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/result.json": "f3e0e72152f0ceae95443675c3e7a33728764fea22ad295d4e14b10cfcad8616",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/analysis.json": "3dd8e2865d87f12afa781c41e338cef0781c1cf6cf90e94bf0e094ac9faa143b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/complete.json": "d1d3a305bf8936fa5e06fd34fcceb5ef4ebc7e779716f79011574cc7e2841960",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/validation.json": "587fea800f3d546e83c59a496dfc6cd1b1454ab60fb506bb246fffe380770515",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/independent_audit.json": "3f39bd16bf3a7b92bbe5af4c3c105f655eae59ba80dee94a1b692e35cb176c8e",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/outputs/numeric_validation.json": "3762d77ccc7e4728ee97408b5f1f82b5b1c04f6542299eefbb266a4d2c74e9ac"
+      }
+    },
+    {
+      "item_id": "scatter-centering-attribution-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/complete.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/validation.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/REPORT.md": "22ddd8ef4018cab3ec1e9d720d7be752f51b30d9d47bfebfbe68a6f98de888b4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/protocol.json": "dee7e1d95fad06f1279c97d1ba6de5f3a2827c9c2218384956100d693a997d57",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/analysis.json": "659bb7dbf0fc96b57f3830c0934cc0d4ce80b361a5e85ec1c6bb419a50c20af9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/complete.json": "81e080f19a4d9a0506bead3ebf71339bf5c19fbc405e0c200c4039b498658815",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/scatter-centering-attribution-20260913/outputs/validation.json": "290718e5f94e479aa5cab208a81b5e982ac98e14e93b8144ba15a180ae9c0d83"
+      }
+    },
+    {
+      "item_id": "source-map-distortion-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/result.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/REPORT.md": "5e9108f923d7797baad9de3923dddcae2551fd519a2ceacd05ee2166ea55abaf",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/protocol.json": "a67f51da351cbb27a4c59b1f15675abfa634747726880a71399f0bcfd554c869",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/RESULT.json": "00e5020d5cd34dfd7f1f0893919a3d36cafafeac7421b401e55107f76a0d744b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-distortion-20260913/result.json": "00e5020d5cd34dfd7f1f0893919a3d36cafafeac7421b401e55107f76a0d744b"
+      }
+    },
+    {
+      "item_id": "finite-query-selector-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/source_feasibility.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/REPORT.md": "d3cb1429c1ff47be3ef6259cddf101125699fe0ae765bce680af59a37e33f1f7",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/protocol.json": "a9f2c83ad54217a341143aac037ab1d0279c312ae02afaf4ef1425529b4cfd3a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/analysis.json": "d598822aa22eb7067f5c2c2e2c8142dcd51f29ded82b7491b6e8fa9db1997469",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/validation.json": "409f9595e727d81685e3a2ecfeb2705827be2a52523fc05327ce5c58d233584a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/finite-query-selector-20260913/outputs/source_feasibility.json": "514b1c6f0d43e0c27fb9909b2747d55e672c5612554131669c33fe9154c6496e"
+      }
+    },
+    {
+      "item_id": "query-competence-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/independent_validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/failure_counts.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/REPORT.md": "26497306fffddb249396837af1f59d90029ba15423f0728bc33d4b6a6adf5aa0",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/protocol.json": "63ea644710ebf3246be8f5803f27819c0192bf5cc947fa14442c8378f202e7e4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/analysis.json": "8fdc773ced658a07e9e41df366a32b1c3e8bde20db253b06e8864be507e31c2f",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/independent_validation.json": "f8bfeee9bd50c88e505f2beb63a5ff0b41faa06178104187b749d47de0009214",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-competence-20260913/outputs/failure_counts.json": "24aabeb31476f69425993bd8d3ab37dfa4675a4358042840c53f4bf0eb8a21bc"
+      }
+    },
+    {
+      "item_id": "query-consistency-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/independent_audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/selection_lock.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/CONTRACT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/analyze.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/REPORT.md"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/REPORT.md": "025f10d3455c04ae649195c83d38d874b84076c7f11cf39441e38b923c246ce6",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/RESULT.json": "cd817b2b8d4e45ab70160b4dece4cb99557df2101c0359e7b26fdc419cab8d80",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/protocol.json": "5ad7abb795feca0e1e4ada75c25f424e32d8ae6ab5f0cf6ff9254883edc5395f",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/analysis.json": "4686080570b67e38bd1c3063c48234e14f0e273f26c3dfe0afe7783b319b4eb9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/independent_audit.json": "00e42f86ca3a6cd1a218bc7a3a27f514b7d018c4aa9eb244929f38c4bac7293b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/selection_lock.json": "abba2629f305ca34d96e6e7f706068ea850eb7ed01f0bf7ae68d97e5ec48ccb2",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/CONTRACT.md": "f713122ad0d35b625fff19f65c75767742c0950ea3c7294158532ea074dffeaa",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/analyze.py": "1bca2c7ab5800d9142b73b96be5369617b51a1b4452345a3eae9fdd28bbf0b49",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/RESULT.json": "3825deee2637569e36308fd82204a34a2e0f63ac6191641ca15a4fc76852fead",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/accumulated-stack-comparison-20260913/REPORT.md": "319f7e069f11acc1adb40580517fa30a6570a782fa49ca6029035cf5664e2a4a"
+      }
+    },
+    {
+      "item_id": "caltech101-transfer-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/audit_failure.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/diagnostics/audit_diagnosis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/compare.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/statistics_audit.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/REPORT.md": "fcc7998c666043555bfab470690df20eba05a5ebb4df10aa609011a1bb0f622e",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/RESULT.json": "bf1f0c016a2cbf905df9dd9fed9edfc003044a727ceb000deeaea32fbe30ac34",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/protocol.json": "2516de39e5ce78d9ed5f0289e16067bde899c831c462eb2068bc39b19ada1a36",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/analysis.json": "f611f005cc55146374e1a28f719f84a70b2df8df99a03b5d592f3172248fcc51",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/audit_failure.json": "b44b38d5c761852e442f2b47f7ce2460966f8f420f653676e86df45b923356c4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/diagnostics/audit_diagnosis.json": "ff16733a127e7bc584e7aca44848f9e64818e2cf9844ce7bd7951b2ffaf4b31c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/REPORT.md": "2d79dfec632b58279b3bf56242e63f60c15859f7305f8af88be1c87b66385a5f",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/RESULT.json": "ea8b71fd71a81a93d925f9dae83c546277d5966439fb07d253a6f7c5b06712ca",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-control-map-20260913/compare.py": "9bb8e66f286d183ce9d7b4f7ffad0597a55f9f9feb82965dcc87741ec25f8fb4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/REPORT.md": "ce4d422f390c60d0da1321e35cf57adb8785eb9369d6c24fb42f1c267abfe33a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/RESULT.json": "da0f278f5ba4ab93b8662d48d8b912e953f12993f48cfa7e6e259143360cbdd7",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/protocol.json": "4f60c28f113d1d5010d435b8b732073721e963d56e458f14c9bca419bae9d4fd",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/audit.json": "a5ef16cfc9463c8210561f3b93b95f93c66623d66306b285be2a57d592bb30d6",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/statistics_audit.json": "c8e39f2a31c35cb1ef853e7ab2d1cd22537294a1d339edb5540cd24d2d408d5a"
+      }
+    },
+    {
+      "item_id": "gallery-density-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/statistics_audit.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/REPORT.md": "8925816284c7e31b9a425afaf4ae80e33dfe8b9421be152147a4299d2f23a997",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/RESULT.json": "fb89f91b2cc5f46e9338bb5be40ceb799dff6313ec419612a7f837eac3cea4e0",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/protocol.json": "0f0cd98f8642dc4a29b979bb5ab71c57e7d07680e02049a4e95771d858220e38",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/analysis.json": "ab685dae9fd60e099a4332fff69dd10f27619e6a777c6221513e9ddc9b926681",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/audit.json": "72dfab02e2224ad438a0b145aa221a63cfb1d556b1f4eba6ea718687525a14ba",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/gallery-density-20260913/outputs/statistics_audit.json": "73014ae89172fa16dfaf48049ee188fc0793b981bcc08eea22e3cea024c415dd"
+      }
+    },
+    {
+      "item_id": "dino-local-20260913",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/statistics_audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-error-complementarity-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-error-complementarity-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-descriptor-geometry-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-descriptor-geometry-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/statistics_audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/design_lock.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/PROVENANCE_NOTE.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/statistics_audit.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/REPORT.md": "d4b2312fb551513135de5e299850c00127fd8773d67bcd6d5117e10794756105",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/RESULT.json": "34d67cb58248b83465c5978f8b31fc05783df2ea79b896dce620e80caa353489",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/protocol.json": "81b5ae99ffbde63409dad8fac06ef4b2c7fcad926b997fb522249f3ae6e743c3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/manifest.json": "dcb3c2de0dfb1f7db64a08c0ea149fd4656dac1424e42a5808be7ab858dbbada",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/analysis.json": "fbdc31769b37b701b678790486d6fdbac981b768af17880074aa51b7f7ee46f3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/audit.json": "917bfa1a5446ce66a417d86c5a67d8c3e1b5f3fac4f14331bda10bb1e3512867",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/statistics_audit.json": "933452227556bef81b48fb277ebaa2c8c1165c81ecefcb29dfea4857968f8ad2",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-error-complementarity-20260913/REPORT.md": "9d83cf885f18519db1a4b54358d585d6096d4d6448dd64cbe59ff4075ecd9e63",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-error-complementarity-20260913/RESULT.json": "851ae7a06e7fb46afdd91d584ae1c441da321207c98d1a17771b68546615443c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-descriptor-geometry-20260913/REPORT.md": "c776d442ffb3bbfa7684d1f298ad4e989ac73560afcef616e7708e5b8a407ec4",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/dino-descriptor-geometry-20260913/RESULT.json": "03abc9af30451cc90b984c8fd457daa77e1d448a2dc30de2354218c8a9cb6d46",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/REPORT.md": "2cb33aa2da76ed4a3a3d655a402523d9abef69015e233e0079cc4daf26b5a51e",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/RESULT.json": "79d90ade4e95c4f6d268e7a589d1566c22a63250d35ebe3f5ba65290d92492ef",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/protocol.json": "d4fea64e26ffe4abd331e9b2ebd7690fbebb3cc3082509949e57886027cbadc9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/audit.json": "1b8400c7535698424e3b286c85931ef882b1dcac3f623012f427ee16f3bfd095",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-residual-20260913/outputs/statistics_audit.json": "7215601df2183e803e111ea177796fd6b9cb4f3edcec3a63ba0857ac63759322",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/REPORT.md": "157f37a07b02c6ac3eb804fb48aa6910b79a43fd620d79e92046163b0532a947",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/RESULT.json": "a5c6c74a3a3550f3dfaad113d4835349298bd5c469bceddb4e2f6efd528c1429",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/protocol.json": "1800b9df37a9736e374941221785df1e3333e4294bb5f41eb652c6c5637723e9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/design_lock.json": "1f28e7bf66523b15660bce18a189c4ebba83d8932f5c76ba42b267cbdfa6c81c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/PROVENANCE_NOTE.json": "5b0b401b31e9fcd9c5ee1989b8729e901bbd1e0927f96ecfb9fe47de8aa1339d",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/analysis.json": "75ff6d635f48bfe39339fed0a6be124ba7223d9118f7e3163937d1625339f09c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/audit.json": "6dd329e73859cc4ac931cd3c3aa4423bfeaa25a3d19ea7b9a419beee361758fb",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/statistics_audit.json": "7215601df2183e803e111ea177796fd6b9cb4f3edcec3a63ba0857ac63759322"
+      }
+    },
+    {
+      "item_id": "source-group-objective-20260914",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/independent_audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/summary_repair.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/legacy_import_audit.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/REPORT.md": "8f8a9e75ed42e5e7efa2574d5b420f91a179bf845c0a5ba7fc889113d95259ea",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/RESULT.json": "20ba27dff3face0591c3b43ee8ef6fa640e1ea5c1778d2defdf9d66b799ac140",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/protocol.json": "b6d422a3e2f173b200a9379f1f0dd51a4ba5b5d9a049f83c41a7f8dbb0a6040e",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/analysis.json": "371dd6aeb8e7ddb1de10cdda7e47743daa15e02438d917de55072a4a6964f693",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/independent_audit.json": "cff37d63db98bc946620eecf6bece277438faa1749e3c2e8d43ab03aed99d659",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/summary_repair.json": "6e739973cc430cd96dd48384eea0790bda58e098cc44017adf70a58942eeb0a1",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/legacy_import_audit.json": "055fadd34d8bcabe53d5d0c4d50dabd8845184ad338b74c2c542617aca9418fb"
+      }
+    },
+    {
+      "item_id": "finite-view-head-objective-20260914",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/audit.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/code_lock.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/selection_lock.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/REPORT.md": "820649efc1671c30abe7af263853757565ae41381726f71a9d1539bae2f0ecaf",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/RESULT.json": "17cf79371e48bb76638f6e7362957154d4c796a2d0bd36d29e0535e383d94faa",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/protocol.json": "ae2f4785fe77f8056ec77c5edc44e6e39458e28666d7afa6fbad00560cb59165",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/analysis.json": "6de1e483662762b0cb36fb737f909cdc019aeb7a74cf458be18984089d333dd8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/audit.json": "52222c65b798736f3101e015113c2d8b7e00eb6fa2d2357ff0ba9beac3fbbe27",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/code_lock.json": "e4d8f5189d73ade261073c631f20f6c0c57c2d5ada549b9eccfd521df695fd37",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/finite-view-head-objective-20260914/outputs/selection_lock.json": "ae57e7db83226e4d8d50f8268df2c2d476ea92292feb107a84521cdc862b7727"
+      }
+    },
+    {
+      "item_id": "dino-depth-readout-20260914",
+      "status": "completed",
+      "paper_role": "reference_only",
+      "claim_links": [],
+      "classification": "historical/reference-only; excluded from manuscript",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/REPORT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/audit.json"
+      ],
+      "current_source_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/REPORT.md": "ac00171991b8efc11ae2c2e254b8708cf6ade22640e995ff2fdcbee9f9f2d940",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/RESULT.json": "16471df39d32bf2467c2129e45767b43f9ea7a7c2a2d9a4b0df5de4a175e8238",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/protocol.json": "ec521d4d8ddf40235033e6039e031ef9e8202a28dd2b6fc9987a77253abd71dd",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/analysis.json": "7be2ec5cfc88e37f48ceb1a86c9569661f349ebc09cb2e407c16ad0c135a7e2b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-depth-readout-20260914/outputs/audit.json": "c9257c6e742fcfffaf6ba7d28d227adc69d8ef3f55d96600ac232a4477ed63c1"
+      }
+    }
+  ],
+  "scope": "Table and prose/source mapping audit only; original raw-prediction audits remain authoritative. No new raw-prediction replay this review.",
+  "reference_mapping_updated_at": "2026-09-14T03:21:40.823512+00:00"
+}

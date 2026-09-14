@@ -1,0 +1,200 @@
+{
+  "signature": "5f8a74865b700a9b4e490c424f808c66198014a81031b409033ad5f79d1ec250",
+  "config": {
+    "run_id": "fsl-pets-transfer-20260913",
+    "idea_id": "idea-01adcb83",
+    "scope_id": "pets-frozen-gallery-transfer-v1",
+    "frozen_at": "2026-09-12T20:46:59.082898+00:00",
+    "dataset": "Oxford-IIIT Pets",
+    "query_support_split": "official test; exact RGB unique",
+    "gallery_split": "official trainval; exact RGB unique; exclude every test identity",
+    "gallery_size": 1876,
+    "gallery_selection_seed": 26091310,
+    "gallery_selection_uses_labels": false,
+    "gallery_conditions": [
+      "pets",
+      "dtd"
+    ],
+    "shots": [
+      1,
+      5
+    ],
+    "ways": 5,
+    "queries_per_class": 15,
+    "seeds": [
+      26091311,
+      26091312,
+      26091313,
+      26091314,
+      26091315
+    ],
+    "episodes_per_seed": 100,
+    "methods": [
+      "r2",
+      "CS_l2",
+      "support_logistic_C1",
+      "support_logistic_C10",
+      "ilpcz_local"
+    ],
+    "hyperparameter_selection": "none on Pets; frozen existing source configurations",
+    "ilpcz": {
+      "k": 20,
+      "alpha": 0.5,
+      "C": 10,
+      "selection_per_class": 3
+    },
+    "feature_fusion_weight": 0.5,
+    "primary_metric": "pets_matched_1shot_accuracy",
+    "new_metric_ids": [
+      "pets_matched_1shot_accuracy",
+      "pets_mismatched_1shot_accuracy",
+      "pets_matched_5shot_accuracy",
+      "pets_mismatched_5shot_accuracy",
+      "pets_macro_1shot_accuracy"
+    ],
+    "old_contracts_retained": [
+      "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/json/metric_contract.json",
+      "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/json/metric_contract.json"
+    ],
+    "baseline_transition": "measure and confirm separate Pets R2 comparator before candidate interpretation; no overwrites",
+    "permissions": {
+      "gallery_labels": false,
+      "query_batch_adaptation": false,
+      "encoder_training": false
+    },
+    "sources_sha256": {
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/ilpcz.py": "b4363273c20ec3ca7b69d788aadd285dc8cb55c37b5d160b16d00271bb92b100",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/selection.json": "63bee5e04b251af2a6ed975d95d1d3c1ed265c7691c2bb30ea02328582e741aa",
+      "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/recover_gallery.py": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/artifacts/idea/selected_idea.md": "b21088be91ad22de90f509589d1e5acc1d362430ce86d5a4c9c0d229e0956adb",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c"
+    },
+    "source_ilpc_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control",
+    "asset_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets",
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 26091399,
+      "unit": "paired tasks stratified by seed; conditional on fixed image pools"
+    },
+    "thresholds": {
+      "matched_gain_pp": 0.5,
+      "paired_ci_lower": 0,
+      "max_mismatch_loss_pp_for_robust_label": 0.5
+    },
+    "resources": {
+      "free_gib_min": 10,
+      "added_gib_max": 2.5,
+      "local_only": true,
+      "spend": 0,
+      "deadline_utc": "2026-09-15T09:00:00+00:00"
+    },
+    "method_settings": {
+      "r2": {
+        "one_shot": "top64 mean, normalize, mix0.5, centered ridge0.1",
+        "five_shot": "support-only centered ridge1"
+      },
+      "CS_l2": {
+        "centering_origin": "support mean",
+        "l2_after_centering": true,
+        "one_shot": "top64 gallery after support centering, mix0.5, ridge0.1",
+        "five_shot": "support-centered-and-renormalized ridge0.1; prespecified fixed extension"
+      },
+      "support_logistic": {
+        "C": [
+          1,
+          10
+        ],
+        "solver": "lbfgs",
+        "multi_class": "multinomial",
+        "max_iter": 2000,
+        "tol": 1e-08,
+        "random_state": 26091275
+      }
+    },
+    "pre_outcome_amendments": [
+      {
+        "reason": "Code-level taxonomy correction: CS_l2 uses the gallery in1shot. No comparator removed. Exact five-shot fixed geometry specification now explicit; old one-shot gain does not imply its five-shot behavior.",
+        "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py",
+        "time": "2026-09-13T04:50:00+08:00",
+        "predictions_observed": false
+      },
+      {
+        "reason": "Refresh selected-idea document hash after already-recorded source taxonomy and 2025 iLPC extension citation clarification; all method parameters, tasks and thresholds unchanged.",
+        "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/artifacts/idea/selected_idea.md",
+        "previous_sha256": "144fe648ead6078270428ad50e445ae8bcaa2b4dede1863fe0ff849f89ede60c",
+        "current_sha256": "b21088be91ad22de90f509589d1e5acc1d362430ce86d5a4c9c0d229e0956adb",
+        "time": "2026-09-12T21:01:28.314287+00:00",
+        "predictions_observed": false
+      }
+    ]
+  },
+  "feature_manifest": {
+    "variant": "canonical-openai-quickgelu-native-dinov2",
+    "precision": "float32 MPS, normalized float16 storage",
+    "encoder_source_sha256": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+    "protocol_sha256": "589b1981a5813b8d0b08d1eba7c2dbe6df5f98f543d1fd4e043cd9e11dbe5bd3",
+    "identity_sha256": "819fb0797c5abe6617d1f7e24d66157e94ca18fa7f6be8a088a40b4ba826816d",
+    "torch_version": "2.3.0",
+    "files": {
+      "clip_vitb16_query": {
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/features/clip_vitb16_query.pt",
+        "sha256": "edc3ed00c1081374d18b117cdc1da7b47a61861afdda3f203f64d1e79fb06ba3",
+        "shape": [
+          3669,
+          512
+        ]
+      },
+      "clip_vitb16_gallery": {
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/features/clip_vitb16_gallery.pt",
+        "sha256": "082b26b00a6d7cf0c952c58b7634812858fbcc5705d4c4d1001ebd0d2fa8fd71",
+        "shape": [
+          1876,
+          512
+        ]
+      },
+      "dinov2_vits14_query": {
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/features/dinov2_vits14_query.pt",
+        "sha256": "a9f0ebbde2b4831210459edf897bbcc0fa0dd7a3b6879a51fb3a8cc789813f54",
+        "shape": [
+          3669,
+          384
+        ]
+      },
+      "dinov2_vits14_gallery": {
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/features/dinov2_vits14_gallery.pt",
+        "sha256": "1aaaeda7d1d6d934367df35fb7e0ac27db0498b128c292045d291286730d50c5",
+        "shape": [
+          1876,
+          384
+        ]
+      }
+    }
+  },
+  "source_copies": {
+    "ilpcz.py": {
+      "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/ilpcz.py",
+      "sha256": "b4363273c20ec3ca7b69d788aadd285dc8cb55c37b5d160b16d00271bb92b100"
+    },
+    "reference_eval.py": {
+      "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/reference_eval.py",
+      "sha256": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661"
+    },
+    "baseline_methods.py": {
+      "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/baseline_methods.py",
+      "sha256": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b"
+    },
+    "geometry_reference.py": {
+      "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py",
+      "sha256": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c"
+    }
+  },
+  "adapter_sha256": "0a77944483a70b3ab7032ab2517af5a9acfbc42197ef9294906308e03e56678c",
+  "command": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/fsl-pets-transfer-20260913/evaluate.py",
+    "--phase",
+    "ilpc"
+  ],
+  "started_at": "2026-09-12T21:26:08.972191+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "result": "small_conditional_gain_below_gate",
+  "dev_accuracy_pct": 77.374,
+  "parent_accuracy_pct": 77.334,
+  "delta_pp": 0.03999999999999995,
+  "ci95_pp": [
+    0.0139833333333332,
+    0.0673333333333333
+  ],
+  "promotion": false,
+  "claim_update": "partial: small fixed-development gain; useful-scale improvement not supported",
+  "baseline_relation": "same-task development parent; canonical Pets unmeasured",
+  "failure_mode": "direction_underperforming_minimum_effect",
+  "next_action": "audit independent validation feasibility without tuning the failed gate",
+  "evidence_paths": [
+    "experiments/main/query-consistency-20260913/REPORT.md",
+    "experiments/main/query-consistency-20260913/outputs/analysis.json",
+    "experiments/main/query-consistency-20260913/outputs/independent_audit.json"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-1bd3d9bd",
+  "id": "report-1bd3d9bd",
+  "quest_id": "012",
+  "created_at": "2026-09-13T09:28:34+00:00",
+  "updated_at": "2026-09-13T09:28:34+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-527f15e2"
+  },
+  "status": "completed",
+  "branch": "run/class-associated-scatter-20260913",
+  "head_commit": "cc2cc50a4fa05ffc755a9d7c966234cc359cf990",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "saved_source_map_distortion_audit",
+  "title": "Saved source-map distortion does not justify generic preservation training",
+  "summary": "36selectedmaps independently audited. EuroSAT1shot mixedsource increases targetGramRMSE0.09769to0.13080 while reducing loss6.06667to5.17778pp; no monotonicproxy or causalpenalty claim.",
+  "evidence_paths": [
+    "experiments/analysis/source-map-distortion-20260913/REPORT.md",
+    "experiments/analysis/source-map-distortion-20260913/result.json"
+  ],
+  "parent_evidence": "experiments/main/source-composition-20260913/REPORT.md",
+  "paper_role": "reference_only",
+  "next_action": "reconcile_paper_evidence",
+  "run_id": "run-527f15e2",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:saved_source_map_distortion_audit:none:3d17852551fd8ca8bc759c8a59bd19d83b79e3e2dccde4b283fea393354b24ff",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-1bd3d9bd",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

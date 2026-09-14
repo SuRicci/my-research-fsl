@@ -1,0 +1,77 @@
+{
+  "method": "r4_whiten",
+  "dataset": "roxford",
+  "pair": [
+    "clip_b32",
+    "clip_b16"
+  ],
+  "budget": 32,
+  "seed": 51855,
+  "policy": "landmark_random",
+  "bridge_ids": [
+    "rparis:gallery:paris_general_001332",
+    "rparis:gallery:paris_sacrecoeur_000489",
+    "rparis:gallery:paris_museedorsay_000612",
+    "rparis:gallery:paris_invalides_000559",
+    "rparis:gallery:paris_museedorsay_000754",
+    "rparis:gallery:paris_museedorsay_000004",
+    "rparis:gallery:paris_pantheon_001110",
+    "rparis:gallery:paris_louvre_000149",
+    "rparis:gallery:paris_moulinrouge_000383",
+    "rparis:gallery:paris_sacrecoeur_000250",
+    "rparis:gallery:paris_triomphe_000128",
+    "rparis:gallery:paris_invalides_000619",
+    "rparis:gallery:paris_sacrecoeur_000318",
+    "rparis:gallery:paris_defense_000439",
+    "rparis:gallery:paris_general_002821",
+    "rparis:gallery:paris_moulinrouge_000828",
+    "rparis:gallery:paris_general_001377",
+    "rparis:gallery:paris_moulinrouge_000771",
+    "rparis:gallery:paris_general_000780",
+    "rparis:gallery:paris_sacrecoeur_000717",
+    "rparis:gallery:paris_general_000731",
+    "rparis:gallery:paris_notredame_000892",
+    "rparis:gallery:paris_general_002512",
+    "rparis:gallery:paris_louvre_000145",
+    "rparis:gallery:paris_louvre_000188",
+    "rparis:gallery:paris_pompidou_000507",
+    "rparis:gallery:paris_museedorsay_000961",
+    "rparis:gallery:paris_museedorsay_000289",
+    "rparis:gallery:paris_museedorsay_000258",
+    "rparis:gallery:paris_notredame_000647",
+    "rparis:gallery:paris_general_000096",
+    "rparis:gallery:paris_general_002461"
+  ],
+  "parent_complete_sha256": "53301689d1efc42fbb5a864bcd8b5da19458ed78c44c21d8d675e2fc42cee364",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/roxford/clip_b32__clip_b16__m32__s51855__landmark_random/aps.npz",
+      "sha256": "03a6db56ada1eb42e6ee9608849bb7e53a3ea2146719ccaa8a81e44c6d32cc2e"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/roxford/clip_b32__clip_b16__m32__s51855__landmark_random/aps.npz",
+      "sha256": "eb64a558ad87cb37d1d95ef043187dd872f08fe1393d98d7c285a810a84d1226"
+    }
+  ],
+  "sha256": "05b72f065d442f7c63d70f1e430cabdd2223bb181bd99420351d94debb85d4f9",
+  "means": [
+    0.2797330775651843,
+    0.08103545583545659
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "bridge_rows_used": 0
+  },
+  "seconds": 0.5350856781005859
+}

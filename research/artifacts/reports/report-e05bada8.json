@@ -1,0 +1,60 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-e05bada8",
+  "id": "report-e05bada8",
+  "quest_id": "012",
+  "created_at": "2026-09-13T13:44:18+00:00",
+  "updated_at": "2026-09-13T13:44:18+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-060a6e21"
+  },
+  "status": "completed",
+  "branch": "run/dino-local-20260913",
+  "head_commit": "476b306430f235bf672d23a5c6907e9c08964e47",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "idea_diagnostic",
+  "title": "Native descriptor sets are dominated by a shared image component",
+  "summary": "Label-free complete7277-image diagnosis: shared image-component energy84.30%DTD/83.51%EuroSAT, Gram participation rank1.411/1.426 of16. This motivates, but does not validate, per-image residual descriptors. No new classifier/predictions, no method improvement or semantic claim.",
+  "paths": {
+    "report": "experiments/analysis/dino-descriptor-geometry-20260913/REPORT.md",
+    "result": "experiments/analysis/dino-descriptor-geometry-20260913/RESULT.json",
+    "code": "experiments/analysis/dino-descriptor-geometry-20260913/analyze.py"
+  },
+  "paper_role": "reference_only",
+  "parent_report_id": "report-6eb4cbf9",
+  "run_id": "run-060a6e21",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:idea_diagnostic:none:0e453be54a400a33377418136370e0d7edd0492cecb801f8d7a8d57aa30bf38b",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-e05bada8",
+    "related_paths": [
+      "experiments/analysis/dino-descriptor-geometry-20260913/REPORT.md",
+      "experiments/analysis/dino-descriptor-geometry-20260913/RESULT.json",
+      "experiments/analysis/dino-descriptor-geometry-20260913/analyze.py"
+    ],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "bash_id": "bash-612daaa5",
+  "science_node_id": "science-ce3c92f3",
+  "decision_id": "decision-bc6f816a",
+  "command": "OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 /opt/anaconda3/envs/torch/bin/python experiments/analysis/source-selection-precision-20260914/audit.py --phase run",
+  "monitor": "bash_exec read/list/await; never launch duplicate if manifest exists",
+  "started_after_precheck": "bash-b9e93492",
+  "status": "completed",
+  "validation_bash_id": "bash-0001bf0c",
+  "validation_node_id": "science-15117a13",
+  "finished_at": "2026-09-14T03:21:40.823512+00:00"
+}

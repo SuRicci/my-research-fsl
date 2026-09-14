@@ -1,0 +1,63 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-a4b680fc",
+  "id": "report-a4b680fc",
+  "quest_id": "012",
+  "created_at": "2026-09-13T03:02:46+00:00",
+  "updated_at": "2026-09-13T03:02:46+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-e2839bd1"
+  },
+  "status": "running",
+  "branch": "run/representation-scatter-20260913",
+  "head_commit": "1fcab3f9533606a4751ff4315a0183b9cb6ba828",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "experiment_preparation",
+  "title": "Representation source qualification launched with validated ten-method evaluator",
+  "summary": "Five additional deterministic image views are actively being extracted; no new-view accuracy yet. Ten-method equal-encoding/one-view comparisons and4000taskconditions are validated, including established CS_l2. Source-selected scatter candidate remains a hypothesis.",
+  "idea_id": "idea-503deb34",
+  "decision_id": "decision-26360c22",
+  "bash_id": "bash-4927f933",
+  "science_node_id": "science-6328b88a",
+  "evidence_paths": [
+    "experiments/main/representation-scatter-20260913/CHECKPOINT.md",
+    "experiments/main/representation-scatter-20260913/protocol.json",
+    "experiments/main/representation-scatter-20260913/evaluation_contract.json",
+    "experiments/main/representation-scatter-20260913/outputs/metric_validation.json",
+    "experiments/main/representation-scatter-20260913/outputs/encoding_validation.json",
+    "artifacts/reports/representation-cleanup.json"
+  ],
+  "next_action": "Monitor existing extraction; on completed validatedcachelaunch evaluate.py --phase run; preserve source-only report boundary",
+  "metric_boundary": "No canonical Pets or Caltech results from this preparation",
+  "run_id": "run-e2839bd1",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:experiment_preparation:none:130db008d690bcc6b012532ff6430af30b7a29744696a753269d805a48227fc4",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-a4b680fc",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

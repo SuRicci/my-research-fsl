@@ -1,0 +1,6 @@
+# Active node: finite query-selector feasibility
+Objective: determine whether existing raw-scatter, centered-scatter and equal-fusion predictions leave enough conditional one-shot headroom for a finite per-query selector to warrant source-only feasibility/literature work.
+Evidence: incumbent77.334%from frozen fusion; class-associated null result andsource-map audit; prior support-level selectors failed. Same tasks/galleries/views; preserve statistical pairing andallcells. No new training, scores or target datasets before selection.
+Success: source-linked finite-family oracle ceiling and one explicit choice. Less than0.5pppooled headroom rejects this family; higher headroom is only necessary, not sufficient for a trainablemethod. Report per-domain andcell boundaries; no oracle or exposed-dev superiority claim.
+Next: inspect prediction-bank schemas/hashes andreuse previousoracle analysis if it already answers this exact question; compute only missing finite-family headroom; if plausible, compare prior art andsource trainingassetavailability before submit_idea. No covariance/fusion grids or generic preservation fit. Use current paperbranch for brief/diagnostic only; newrun requires dedicatedexperimentbranch.
+Decision-f7f139bf; paperrevision andcanonicalmirror complete, report-f2d7e57c. Limits:localonly/zeroextra spend/free>=10GiB/deadline2026-09-15T09:00Z.

@@ -1,0 +1,8 @@
+{
+  "status": "running",
+  "backbone": "dinov2_vits14",
+  "images_done": 8677,
+  "image_count": 8677,
+  "elapsed_seconds": 3839.865579843521,
+  "free_gib": 10.874114990234375
+}

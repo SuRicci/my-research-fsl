@@ -1,0 +1,12 @@
+{
+  "status": "complete_verified",
+  "run": "bash-ab3c3e0e",
+  "promotion": false,
+  "retained_small_gain_pp": 0.146,
+  "live_compute": false,
+  "free_gib": 10.707355499267578,
+  "report_id": "report-64b6342f",
+  "decision_id": "decision-94b76cd4",
+  "science_id": "science-618b8ef2",
+  "validation_id": "science-5ac7a4b3"
+}

@@ -1,0 +1,1730 @@
+{
+  "dtd_26091381_mean": {
+    "source": "dtd",
+    "seed": 26091381,
+    "objective": "mean",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.40972378849983215
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.5900360941886902,
+          0.04981788620352745
+        ],
+        "group_correct": [
+          2969,
+          3725
+        ],
+        "train_group_ce": [
+          0.10054092109203339,
+          0.03164391964673996
+        ],
+        "objective": 0.06609241664409637
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.6005299091339111,
+          0.06768178194761276
+        ],
+        "group_correct": [
+          2979,
+          3686
+        ],
+        "train_group_ce": [
+          0.0272368211299181,
+          0.011290818452835083
+        ],
+        "objective": 0.019263818860054016
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.6155710816383362,
+          0.07853486388921738
+        ],
+        "group_correct": [
+          2970,
+          3672
+        ],
+        "train_group_ce": [
+          0.012355843558907509,
+          0.0058088842779397964
+        ],
+        "objective": 0.009082363918423653
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.3199269771575928,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_mean_step50.pt",
+        "sha256": "6e4cb2945b873afc8ac8c49c017c64d8463d42231c4aa08f5b059dcee1fde18e",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_mean_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_mean_step0.pt",
+        "sha256": "fb3280d5483265730f985cf535aa9cf0770e13fc4bf6587244a6717aadd71e02",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_mean_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 10.418510913848877
+  },
+  "dtd_26091381_raw_max": {
+    "source": "dtd",
+    "seed": 26091381,
+    "objective": "raw_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.7499075531959534
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.5939040780067444,
+          0.058208879083395004
+        ],
+        "group_correct": [
+          2958,
+          3727
+        ],
+        "train_group_ce": [
+          0.09648124128580093,
+          0.08436894416809082
+        ],
+        "objective": 0.09648124128580093
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.5968794226646423,
+          0.06208914518356323
+        ],
+        "group_correct": [
+          2986,
+          3706
+        ],
+        "train_group_ce": [
+          0.0319252535700798,
+          0.031007617712020874
+        ],
+        "objective": 0.0319252535700798
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.6134514212608337,
+          0.0763925164937973
+        ],
+        "group_correct": [
+          2968,
+          3681
+        ],
+        "train_group_ce": [
+          0.013514084741473198,
+          0.013442041352391243
+        ],
+        "objective": 0.013514084741473198
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.32605648040771484,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_raw_max_step50.pt",
+        "sha256": "991c5bdf14af80f11b54e6b9dae8343480cbefbfd1b9d45b651af518f473f075",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_raw_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_raw_max_step0.pt",
+        "sha256": "f28eea0861f5e7d1fa0411c9dc2a4fdf13deaf7f457db8596886db0b52b6c073",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_raw_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 8.80251407623291
+  },
+  "dtd_26091381_reference_max": {
+    "source": "dtd",
+    "seed": 26091381,
+    "objective": "reference_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.0
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.690485954284668,
+          0.04268694296479225
+        ],
+        "group_correct": [
+          2871,
+          3724
+        ],
+        "train_group_ce": [
+          0.6779404282569885,
+          0.010330629535019398
+        ],
+        "objective": -0.059209372848272324
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.653375506401062,
+          0.04309777170419693
+        ],
+        "group_correct": [
+          2892,
+          3724
+        ],
+        "train_group_ce": [
+          0.5214925408363342,
+          0.005682206247001886
+        ],
+        "objective": -0.0638577938079834
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.6792414784431458,
+          0.048811014741659164
+        ],
+        "group_correct": [
+          2844,
+          3709
+        ],
+        "train_group_ce": [
+          0.548151969909668,
+          0.0037034815177321434
+        ],
+        "objective": -0.06583651900291443
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.34823665022850037,
+        "step": 100,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_reference_max_step100.pt",
+        "sha256": "95d1b021bd48646ea96b9aeef148afbf48fa6902d9432aa09b2efa385e578c23",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_reference_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": -0.006162375211715698,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_reference_max_step50.pt",
+        "sha256": "dc667c02444df99dbf337ee67a07bcf85d88458565c591db8e4d33c355e35dfe",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091381_reference_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 9.075225114822388
+  },
+  "dtd_26091382_mean": {
+    "source": "dtd",
+    "seed": 26091382,
+    "objective": "mean",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.40972378849983215
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.5386693477630615,
+          0.051633838564157486
+        ],
+        "group_correct": [
+          3023,
+          3721
+        ],
+        "train_group_ce": [
+          0.10106287151575089,
+          0.03183823451399803
+        ],
+        "objective": 0.06645055115222931
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.5628604292869568,
+          0.06306242942810059
+        ],
+        "group_correct": [
+          3027,
+          3693
+        ],
+        "train_group_ce": [
+          0.027393870055675507,
+          0.011581669561564922
+        ],
+        "objective": 0.019487770274281502
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.6002413630485535,
+          0.07336341589689255
+        ],
+        "group_correct": [
+          2993,
+          3669
+        ],
+        "train_group_ce": [
+          0.012479372322559357,
+          0.005869594402611256
+        ],
+        "objective": 0.009174482896924019
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.29515159130096436,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_mean_step50.pt",
+        "sha256": "80928bab464d2f2975e879ee9c6b2f91086fb920e90b545f14f4b1e3d9beb1c4",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_mean_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_mean_step0.pt",
+        "sha256": "0eac006a7ce7cdb48b8e7c0ce76f2f593f9736d563716fde33ae5ee17bdb49ca",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_mean_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 9.835213899612427
+  },
+  "dtd_26091382_raw_max": {
+    "source": "dtd",
+    "seed": 26091382,
+    "objective": "raw_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.7499075531959534
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.5371057391166687,
+          0.058464180678129196
+        ],
+        "group_correct": [
+          3018,
+          3721
+        ],
+        "train_group_ce": [
+          0.09658922255039215,
+          0.08854254335165024
+        ],
+        "objective": 0.09658922255039215
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.5530173778533936,
+          0.0598689466714859
+        ],
+        "group_correct": [
+          3044,
+          3703
+        ],
+        "train_group_ce": [
+          0.03162626177072525,
+          0.03172614052891731
+        ],
+        "objective": 0.03172614052891731
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.5830334424972534,
+          0.0727882832288742
+        ],
+        "group_correct": [
+          3005,
+          3684
+        ],
+        "train_group_ce": [
+          0.013594720512628555,
+          0.013463522307574749
+        ],
+        "objective": 0.013594720512628555
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.2977849543094635,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_raw_max_step50.pt",
+        "sha256": "53a9d69b8508fd20c8517058d62c5f121cac92d7c246d0389fa6a2cb3e5973ad",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_raw_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_raw_max_step0.pt",
+        "sha256": "b74c9c3737add933c0260e4b82bdb08066f64adb502042914ffc69c77f70df15",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_raw_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 10.229163885116577
+  },
+  "dtd_26091382_reference_max": {
+    "source": "dtd",
+    "seed": 26091382,
+    "objective": "reference_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.0
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.6608968377113342,
+          0.04255286976695061
+        ],
+        "group_correct": [
+          2896,
+          3724
+        ],
+        "train_group_ce": [
+          0.6126594543457031,
+          0.010911332443356514
+        ],
+        "objective": -0.05862867087125778
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.6891416311264038,
+          0.04693060740828514
+        ],
+        "group_correct": [
+          2854,
+          3714
+        ],
+        "train_group_ce": [
+          0.6322944760322571,
+          0.005124007351696491
+        ],
+        "objective": -0.06441599130630493
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.6873152256011963,
+          0.04614894464612007
+        ],
+        "group_correct": [
+          2857,
+          3720
+        ],
+        "train_group_ce": [
+          0.5724867582321167,
+          0.003657848807051778
+        ],
+        "objective": -0.06588215380907059
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.35172486305236816,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_reference_max_step50.pt",
+        "sha256": "e57b0def255291370e7707d73879fdb0603c30d4a643db5909deaa12916ec034",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_reference_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": -0.0062964484095573425,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_reference_max_step50.pt",
+        "sha256": "e57b0def255291370e7707d73879fdb0603c30d4a643db5909deaa12916ec034",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091382_reference_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 13.166131973266602
+  },
+  "dtd_26091383_mean": {
+    "source": "dtd",
+    "seed": 26091383,
+    "objective": "mean",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.40972378849983215
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.5646751523017883,
+          0.043252378702163696
+        ],
+        "group_correct": [
+          3001,
+          3728
+        ],
+        "train_group_ce": [
+          0.1048424243927002,
+          0.03195817768573761
+        ],
+        "objective": 0.0684003010392189
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.5826360583305359,
+          0.054835375398397446
+        ],
+        "group_correct": [
+          3001,
+          3709
+        ],
+        "train_group_ce": [
+          0.027055244892835617,
+          0.011741380207240582
+        ],
+        "objective": 0.019398313015699387
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.6108153462409973,
+          0.0630030408501625
+        ],
+        "group_correct": [
+          2976,
+          3692
+        ],
+        "train_group_ce": [
+          0.012265099212527275,
+          0.005836623255163431
+        ],
+        "objective": 0.00905086100101471
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.3039637804031372,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_mean_step50.pt",
+        "sha256": "c0a46494be0568c2de799f6026f69707099cb7695397d71e6866e3b0699c7ddd",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_mean_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": -0.0055969394743442535,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_mean_step50.pt",
+        "sha256": "c0a46494be0568c2de799f6026f69707099cb7695397d71e6866e3b0699c7ddd",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_mean_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 10.798366069793701
+  },
+  "dtd_26091383_raw_max": {
+    "source": "dtd",
+    "seed": 26091383,
+    "objective": "raw_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.7499075531959534
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.565107524394989,
+          0.05676669999957085
+        ],
+        "group_correct": [
+          3013,
+          3725
+        ],
+        "train_group_ce": [
+          0.10021959990262985,
+          0.08885248750448227
+        ],
+        "objective": 0.10021959990262985
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.5668509602546692,
+          0.05608675628900528
+        ],
+        "group_correct": [
+          3020,
+          3707
+        ],
+        "train_group_ce": [
+          0.03163441643118858,
+          0.03098297491669655
+        ],
+        "objective": 0.03163441643118858
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.5968166589736938,
+          0.06688661128282547
+        ],
+        "group_correct": [
+          3001,
+          3686
+        ],
+        "train_group_ce": [
+          0.013534417375922203,
+          0.013428040780127048
+        ],
+        "objective": 0.013534417375922203
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.3109371066093445,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_raw_max_step50.pt",
+        "sha256": "644f6ab82add580d8b7f1a005592aaaebb57015a2dc30d0efe8387c2507e52b3",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_raw_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_raw_max_step0.pt",
+        "sha256": "b3971e24f542d521fce2afc3417a90d3a54f25d6d278a52f480aa6473a8c050d",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_raw_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 10.660587072372437
+  },
+  "dtd_26091383_reference_max": {
+    "source": "dtd",
+    "seed": 26091383,
+    "objective": "reference_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.7096244692802429,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2840,
+          3739
+        ],
+        "train_group_ce": [
+          0.7499075531959534,
+          0.06954000145196915
+        ],
+        "objective": 0.0
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.6715368032455444,
+          0.038923852145671844
+        ],
+        "group_correct": [
+          2890,
+          3733
+        ],
+        "train_group_ce": [
+          0.623733401298523,
+          0.011433370411396027
+        ],
+        "objective": -0.05810663104057312
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.6955891847610474,
+          0.04617032781243324
+        ],
+        "group_correct": [
+          2832,
+          3718
+        ],
+        "train_group_ce": [
+          0.6432034969329834,
+          0.005201810039579868
+        ],
+        "objective": -0.06433819234371185
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.6626237630844116,
+          0.04427322745323181
+        ],
+        "group_correct": [
+          2865,
+          3720
+        ],
+        "train_group_ce": [
+          0.4780671298503876,
+          0.003930544480681419
+        ],
+        "objective": -0.06560945510864258
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.3534485101699829,
+        "step": 200,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_reference_max_step200.pt",
+        "sha256": "a141cf829cd4638885c1b1964a457185e62fcca1d3d7e360f36fd337ee065b9b",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_reference_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": -0.009925466030836105,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_reference_max_step50.pt",
+        "sha256": "630c8cc420b9971a7995a9c8961ccb3f39ac6a312313d779fe8019b16b40b275",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/dtd_26091383_reference_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.7499075531959534,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.7096244692802429,
+      0.04884931817650795
+    ],
+    "seconds": 10.598593950271606
+  },
+  "eurosat_26091381_mean": {
+    "source": "eurosat",
+    "seed": 26091381,
+    "objective": "mean",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.46348434686660767
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.28877612948417664,
+          0.04686226695775986
+        ],
+        "group_correct": [
+          3410,
+          3734
+        ],
+        "train_group_ce": [
+          0.09479279071092606,
+          0.03944302350282669
+        ],
+        "objective": 0.06711790710687637
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.21909856796264648,
+          0.06185893714427948
+        ],
+        "group_correct": [
+          3492,
+          3700
+        ],
+        "train_group_ce": [
+          0.026401620358228683,
+          0.015263504348695278
+        ],
+        "objective": 0.020832562819123268
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.20376288890838623,
+          0.08598536998033524
+        ],
+        "group_correct": [
+          3520,
+          3656
+        ],
+        "train_group_ce": [
+          0.011353463865816593,
+          0.006841899827122688
+        ],
+        "objective": 0.009097682312130928
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.14047876000404358,
+        "step": 100,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_mean_step100.pt",
+        "sha256": "e32bbd6fc90cdc2cb24770ee07bbcd67ed422e62ad2834abfefdee00213a2f23",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_mean_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": -0.0019870512187480927,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_mean_step50.pt",
+        "sha256": "1afbbc3be23cbe9815fbef30cb6770efc26566d63f29ade7b2a898a21fa1d02e",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_mean_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 10.641203165054321
+  },
+  "eurosat_26091381_raw_max": {
+    "source": "eurosat",
+    "seed": 26091381,
+    "objective": "raw_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.8574286699295044
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.2812959551811218,
+          0.056729551404714584
+        ],
+        "group_correct": [
+          3422,
+          3733
+        ],
+        "train_group_ce": [
+          0.09055402874946594,
+          0.07941221445798874
+        ],
+        "objective": 0.09055402874946594
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.22131924331188202,
+          0.053556282073259354
+        ],
+        "group_correct": [
+          3483,
+          3726
+        ],
+        "train_group_ce": [
+          0.03801402822136879,
+          0.038101375102996826
+        ],
+        "objective": 0.038101375102996826
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.19711296260356903,
+          0.06108132377266884
+        ],
+        "group_correct": [
+          3514,
+          3702
+        ],
+        "train_group_ce": [
+          0.01537917461246252,
+          0.015386192128062248
+        ],
+        "objective": 0.015386192128062248
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.12909714877605438,
+        "step": 200,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_raw_max_step200.pt",
+        "sha256": "3f4f6b4987ce1308e8d78b8f352f1353f21c6306d558768f33ea67fa9df9ecf3",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_raw_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_raw_max_step0.pt",
+        "sha256": "ae58457ef0953b51d90f8fce6399cf8311813623ac0f855eda5ee2ca06c1ee6b",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_raw_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 10.709391832351685
+  },
+  "eurosat_26091381_reference_max": {
+    "source": "eurosat",
+    "seed": 26091381,
+    "objective": "reference_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.0
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.8033643364906311,
+          0.04482055827975273
+        ],
+        "group_correct": [
+          2645,
+          3721
+        ],
+        "train_group_ce": [
+          0.7698730826377869,
+          0.010604413226246834
+        ],
+        "objective": -0.05893559008836746
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.821056067943573,
+          0.051403678953647614
+        ],
+        "group_correct": [
+          2621,
+          3709
+        ],
+        "train_group_ce": [
+          0.7908644080162048,
+          0.004745761398226023
+        ],
+        "objective": -0.06479424238204956
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.7221249938011169,
+          0.0538727305829525
+        ],
+        "group_correct": [
+          2783,
+          3700
+        ],
+        "train_group_ce": [
+          0.6305606961250305,
+          0.0036182734183967113
+        ],
+        "objective": -0.06592173129320145
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.3879988491535187,
+        "step": 200,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_reference_max_step200.pt",
+        "sha256": "2fbf398a659489d1484765e201ef9732add3cf6afa67d204c0a3c91e9be5a071",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_reference_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": -0.0040287598967552185,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_reference_max_step50.pt",
+        "sha256": "59137af7b0e1a310991683b7bc17ffc69d78603f7f6f64ea49f49e3b7d1d812b",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091381_reference_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 10.800638198852539
+  },
+  "eurosat_26091382_mean": {
+    "source": "eurosat",
+    "seed": 26091382,
+    "objective": "mean",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.46348434686660767
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.29243025183677673,
+          0.05057622864842415
+        ],
+        "group_correct": [
+          3410,
+          3736
+        ],
+        "train_group_ce": [
+          0.09641169756650925,
+          0.051576726138591766
+        ],
+        "objective": 0.0739942118525505
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.2363172024488449,
+          0.06267786771059036
+        ],
+        "group_correct": [
+          3469,
+          3691
+        ],
+        "train_group_ce": [
+          0.028961781412363052,
+          0.018472427502274513
+        ],
+        "objective": 0.023717105388641357
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.21489456295967102,
+          0.07382327318191528
+        ],
+        "group_correct": [
+          3504,
+          3674
+        ],
+        "train_group_ce": [
+          0.012746689841151237,
+          0.00775822252035141
+        ],
+        "objective": 0.010252456180751324
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.14435891807079315,
+        "step": 200,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_mean_step200.pt",
+        "sha256": "67bb75c387ba3bfcf4dc22600e888fa7e94fb93fbf4ae8f8ed6317b9e8d08b10",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_mean_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_mean_step0.pt",
+        "sha256": "e77195c1f93c28d9bddf550d86e6d541103c93a989e19a0c12926c06fc922d81",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_mean_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 10.764795064926147
+  },
+  "eurosat_26091382_raw_max": {
+    "source": "eurosat",
+    "seed": 26091382,
+    "objective": "raw_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.8574286699295044
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.28919076919555664,
+          0.0546899288892746
+        ],
+        "group_correct": [
+          3412,
+          3736
+        ],
+        "train_group_ce": [
+          0.09476323425769806,
+          0.07593657821416855
+        ],
+        "objective": 0.09476323425769806
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.24371808767318726,
+          0.05586041137576103
+        ],
+        "group_correct": [
+          3458,
+          3725
+        ],
+        "train_group_ce": [
+          0.03979693725705147,
+          0.039947252720594406
+        ],
+        "objective": 0.039947252720594406
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.22128289937973022,
+          0.07275965064764023
+        ],
+        "group_correct": [
+          3498,
+          3683
+        ],
+        "train_group_ce": [
+          0.016204416751861572,
+          0.01621229574084282
+        ],
+        "objective": 0.01621229574084282
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.14702127873897552,
+        "step": 200,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_raw_max_step200.pt",
+        "sha256": "be86442224c836db3a813e802c295309d843276b9d92118ec07decbde2364602",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_raw_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_raw_max_step0.pt",
+        "sha256": "a6272b12dc0d40cf556f3ec8687b19284d0f171867686cbc1e7f3f6ee04f49fb",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_raw_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 10.838626861572266
+  },
+  "eurosat_26091382_reference_max": {
+    "source": "eurosat",
+    "seed": 26091382,
+    "objective": "reference_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.0
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.8155222535133362,
+          0.04417286068201065
+        ],
+        "group_correct": [
+          2632,
+          3723
+        ],
+        "train_group_ce": [
+          0.7856870293617249,
+          0.009814055636525154
+        ],
+        "objective": -0.05972594767808914
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.7772274613380432,
+          0.04794823005795479
+        ],
+        "group_correct": [
+          2714,
+          3717
+        ],
+        "train_group_ce": [
+          0.6756570935249329,
+          0.005537926219403744
+        ],
+        "objective": -0.06400207430124283
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.7909456491470337,
+          0.05077344924211502
+        ],
+        "group_correct": [
+          2700,
+          3707
+        ],
+        "train_group_ce": [
+          0.6860998868942261,
+          0.003771289251744747
+        ],
+        "objective": -0.06576871126890182
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.41258785128593445,
+        "step": 100,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_reference_max_step100.pt",
+        "sha256": "ef40b7cab2077dc3b96ecd6716c71d897fb6ff34dc79532300ea0f8ee7550bd0",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_reference_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": -0.004676457494497299,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_reference_max_step50.pt",
+        "sha256": "b53135ecb417ad117e42f8e49837074e9cffbfcd9abc45ef64cb58a083c12579",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091382_reference_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 13.505023002624512
+  },
+  "eurosat_26091383_mean": {
+    "source": "eurosat",
+    "seed": 26091383,
+    "objective": "mean",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.46348434686660767
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.3045118451118469,
+          0.05257086083292961
+        ],
+        "group_correct": [
+          3385,
+          3733
+        ],
+        "train_group_ce": [
+          0.09020768851041794,
+          0.04577554389834404
+        ],
+        "objective": 0.06799161434173584
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.23595504462718964,
+          0.06219232454895973
+        ],
+        "group_correct": [
+          3480,
+          3707
+        ],
+        "train_group_ce": [
+          0.026402320712804794,
+          0.016502203419804573
+        ],
+        "objective": 0.02145226299762726
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.2017764300107956,
+          0.06635425239801407
+        ],
+        "group_correct": [
+          3523,
+          3691
+        ],
+        "train_group_ce": [
+          0.011362414807081223,
+          0.007027528714388609
+        ],
+        "objective": 0.00919497199356556
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.13406534492969513,
+        "step": 200,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_mean_step200.pt",
+        "sha256": "0843ea6e26938f7dbaa861b22a6830443b7d601fbc815decbabad5704a218c2a",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_mean_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_mean_step0.pt",
+        "sha256": "378bdf9e186d1bcac0380173f6d5afdff3e8095a5e35f362f66d87a287a1a930",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_mean_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 11.916788816452026
+  },
+  "eurosat_26091383_raw_max": {
+    "source": "eurosat",
+    "seed": 26091383,
+    "objective": "raw_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.8574286699295044
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.30203068256378174,
+          0.055212754756212234
+        ],
+        "group_correct": [
+          3389,
+          3732
+        ],
+        "train_group_ce": [
+          0.0881071537733078,
+          0.07820476591587067
+        ],
+        "objective": 0.0881071537733078
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.2501921057701111,
+          0.0583629347383976
+        ],
+        "group_correct": [
+          3464,
+          3719
+        ],
+        "train_group_ce": [
+          0.036811523139476776,
+          0.03680039197206497
+        ],
+        "objective": 0.036811523139476776
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.21320761740207672,
+          0.06790929287672043
+        ],
+        "group_correct": [
+          3503,
+          3698
+        ],
+        "train_group_ce": [
+          0.015033476985991001,
+          0.015087460167706013
+        ],
+        "objective": 0.015087460167706013
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.14055845141410828,
+        "step": 200,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_raw_max_step200.pt",
+        "sha256": "faae9ffd37d79a6b97f3f9781581ff95c336449400a213e214e6c8d4116c628d",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_raw_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": 0.0,
+        "step": 0,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_raw_max_step0.pt",
+        "sha256": "3574d6ff182553b89234de3a56eb1641fb0530fff2e09192511e9853eb7273b2",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_raw_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 11.10763430595398
+  },
+  "eurosat_26091383_reference_max": {
+    "source": "eurosat",
+    "seed": 26091383,
+    "objective": "reference_max",
+    "history": [
+      {
+        "step": 0,
+        "group_ce": [
+          0.8682922720909119,
+          0.04884931817650795
+        ],
+        "group_correct": [
+          2568,
+          3739
+        ],
+        "train_group_ce": [
+          0.8574286699295044,
+          0.06954000145196915
+        ],
+        "objective": 0.0
+      },
+      {
+        "step": 50,
+        "group_ce": [
+          0.8087713718414307,
+          0.0440077930688858
+        ],
+        "group_correct": [
+          2651,
+          3724
+        ],
+        "train_group_ce": [
+          0.7722528576850891,
+          0.010414160788059235
+        ],
+        "objective": -0.05912584066390991
+      },
+      {
+        "step": 100,
+        "group_ce": [
+          0.7343284487724304,
+          0.049371760338544846
+        ],
+        "group_correct": [
+          2745,
+          3713
+        ],
+        "train_group_ce": [
+          0.6576054096221924,
+          0.005280608776956797
+        ],
+        "objective": -0.06425939500331879
+      },
+      {
+        "step": 200,
+        "group_ce": [
+          0.7561644315719604,
+          0.05248992145061493
+        ],
+        "group_correct": [
+          2724,
+          3703
+        ],
+        "train_group_ce": [
+          0.6750296950340271,
+          0.0037590113934129477
+        ],
+        "objective": -0.06578098982572556
+      }
+    ],
+    "selected": {
+      "pooled_ce": {
+        "value": 0.3918501138687134,
+        "step": 100,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_reference_max_step100.pt",
+        "sha256": "13869322569379a6e5857a8f56d9e75afc05860251d4cbefc4e1e001c097b192",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_reference_max_pooled_ce_selection.npz"
+      },
+      "reference_max_ce": {
+        "value": -0.004841525107622147,
+        "step": 50,
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_reference_max_step50.pt",
+        "sha256": "115efe61a08d919af25391788467f5c7361842c4e347ee4fe6182ea1525969a0",
+        "selection_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-group-objective-20260914/outputs/models/eurosat_26091383_reference_max_reference_max_ce_selection.npz"
+      }
+    },
+    "train_identity_ce": [
+      0.8574286699295044,
+      0.06954000145196915
+    ],
+    "selection_identity_ce": [
+      0.8682922720909119,
+      0.04884931817650795
+    ],
+    "seconds": 10.985962867736816
+  }
+}

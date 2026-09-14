@@ -1,0 +1,14 @@
+{
+  "clip_vitb16": {
+    "min_cosine": 0.9784355163574219,
+    "mean_cosine": 0.9878576993942261,
+    "n": 10,
+    "activation": "GELU"
+  },
+  "dinov2_vits14": {
+    "min_cosine": 0.9438843131065369,
+    "mean_cosine": 0.9829810857772827,
+    "n": 10,
+    "activation": "native"
+  }
+}

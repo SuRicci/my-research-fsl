@@ -1,0 +1,13 @@
+{
+  "frozen_auditor_sha256": "56b9b341bed17e9b40b0904c1193c04fd0e1190a93b05f8a5da1d6b55e8e00d8",
+  "diagnostic_sha256": "1d7319a9293da46ead0cf64f7e18fff90793c8a4d6fab9313217cd52f94078a9",
+  "failure_log": ".ds/bash_exec/bash-7dee487f/terminal.log",
+  "single_task_diagnosis_log": ".ds/bash_exec/bash-39d431fd/terminal.log",
+  "purpose": "Collect full fixed88case discrepancy scope; retain original frozen failure. No scientific rerun or tolerance relaxation.",
+  "serialization_repair": {
+    "failed_bash": "bash-33c4a1b7",
+    "error": "NumPy int64 neighbor identity JSON serialization at final report write",
+    "previous_diagnostic_sha256": "feca299c75b8cac2fa7aac5256ca453565ecd7b499b9045d3e0ce73afbdc07d7",
+    "change": "Convert diagnostic neighbor ids to Python int; no numerical or validation changes"
+  }
+}

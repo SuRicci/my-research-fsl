@@ -1,0 +1,46 @@
+{
+  "tier": "auxiliary/dev",
+  "idea_id": "idea-7e538f3a",
+  "status": "verified",
+  "verdict": "refuted_fixed_protocol",
+  "primary": "mask_cs",
+  "evaluation_summary": {
+    "outcome_summary": "Task-localmasklossimprovesbutclassificationdegradesvsfixedcompositionbothdomains",
+    "claim_update": "fixedqualificationhypothesisrefuted; doesnotrefutealltaskselectors",
+    "baseline_relation": "canonicalPetscontractunchanged; exposeddevelopmentonly",
+    "failure_mode": "support_objective_prefers_one_encoder_almostindependentlyoftask",
+    "next_action": "idea: inspectavailablewithinclassinformationandpriorviewselectionfailure",
+    "evidence": "outputs/analysis.json; outputs/independent_audit.json; outputs/monotonicity_diagnostic.json"
+  },
+  "one_shot_deltas": {
+    "dtd": {
+      "mean_pp": -0.584,
+      "ci95_pp": [
+        -0.8253333333333331,
+        -0.3373000000000003
+      ],
+      "by_seed_pp": {
+        "26091371": -0.39333333333333365,
+        "26091372": -0.2066666666666669,
+        "26091373": -0.9999999999999997,
+        "26091374": -0.526666666666666,
+        "26091375": -0.7933333333333338
+      }
+    },
+    "eurosat": {
+      "mean_pp": -3.6066666666666665,
+      "ci95_pp": [
+        -3.9693666666666663,
+        -3.2493333333333334
+      ],
+      "by_seed_pp": {
+        "26091371": -3.6066666666666656,
+        "26091372": -3.5133333333333336,
+        "26091373": -3.7000000000000006,
+        "26091374": -3.7066666666666666,
+        "26091375": -3.506666666666667
+      }
+    }
+  },
+  "gate_passed": false
+}

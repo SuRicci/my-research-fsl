@@ -1,0 +1,67 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-77f9a6fd",
+  "id": "report-77f9a6fd",
+  "quest_id": "012",
+  "created_at": "2026-09-13T08:12:10+00:00",
+  "updated_at": "2026-09-13T08:12:10+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-fc40cf10"
+  },
+  "status": "completed",
+  "branch": "run/support-risk-selection-20260913",
+  "head_commit": "35c1bf156c96a1b86a0d248509e63a50bd433e2d",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_development_result",
+  "title": "Support-risk selection fails fixed two-domain qualification",
+  "summary": "Verified2000task fixed study: one-shot selector-minus-equalCS DTD-0.348pp[-0.5107,-0.1880],EuroSAT-0.672pp[-0.876,-0.464]. Five-shot imageCV also harms-0.5573/-1.3467pp. Gatefailed; incumbentfixedsixviewreference unchanged.",
+  "idea_id": "idea-8cbaafc7",
+  "verdict": "refuted_fixed_protocol",
+  "experiment_tier": "auxiliary/dev",
+  "evidence_paths": [
+    "experiments/main/support-risk-selection-20260913/protocol.json",
+    "experiments/main/support-risk-selection-20260913/outputs/analysis.json",
+    "experiments/main/support-risk-selection-20260913/outputs/audit.json",
+    "experiments/main/support-risk-selection-20260913/outputs/completion.json"
+  ],
+  "execution": "bash-a5f133a9 completed140.63s; independent auditbash-fc75ecd9 passed72query/396fold cases and fullreferenceparity.",
+  "evaluation_summary": {
+    "claim_update": "Refuted fixedfinite support validation; no general impossibility claim.",
+    "baseline_relation": "AuxiliaryDTD/EuroSATdevelopment; canonicalPetsmetrics unchanged, no newly evaluatedPetsresult.",
+    "failure_mode": "direction_underperforming",
+    "next_action": "Reject fixedCVobjective; assess outside-family geometry-preservation evidence versus synthesis.",
+    "result": "Negativepaired1shot inbothdomains; 5shotindependentimageCVdoesnotrescue.",
+    "scope": "2000unique tasks/8conditions; bootstrapconditionalonfixedpools."
+  },
+  "run_id": "run-fc40cf10",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:auxiliary_development_result:none:d41407e3a93cf0b9a13da7aba065f97e0df2dee13e00a02d1d4605a7abc8e4d0",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-77f9a6fd",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

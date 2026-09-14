@@ -1,0 +1,67 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-8756c32c",
+  "id": "report-8756c32c",
+  "quest_id": "012",
+  "created_at": "2026-09-13T00:15:56+00:00",
+  "updated_at": "2026-09-13T00:15:56+00:00",
+  "source": {
+    "kind": "agent"
+  },
+  "status": "completed",
+  "branch": "paper/gallery-transfer-calibration-update",
+  "head_commit": "e5afde08e6cd87e189a290ac3277e2f8bdc83645",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "paper_outline_revised",
+  "summary": "Paper outline `outline-001` revised.",
+  "reason": "Update the existing failure-study story with audited auxiliary evidence without recasting it as an improved algorithm.",
+  "flow_type": "paper_outline",
+  "protocol_step": "revise",
+  "paths": {
+    "selected_outline_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/selected_outline.json",
+    "outline_manifest_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline/manifest.json",
+    "outline_selection_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline_selection.md",
+    "paper_line_state_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/paper_line_state.json",
+    "revised_outline_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outlines/revisions/outline-001.json"
+  },
+  "details": {
+    "outline_id": "outline-001",
+    "title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+    "selected_reason": "Update the existing failure-study story with audited auxiliary evidence without recasting it as an improved algorithm.",
+    "paper_line_id": "paper-gallery-transfer-calibration-update-outline-001-run",
+    "paper_branch": "paper/gallery-transfer-calibration-update"
+  },
+  "semantic_key": "report:write:paper_outline_revised:revise:cf7cc595e0ed09011f42551488d749f15f5c17c3cf60171d0cd244746f4b29fa",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-8756c32c",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/selected_outline.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline/manifest.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline_selection.md",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/paper_line_state.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outlines/revisions/outline-001.json"
+    ],
+    "stage_status": "ready"
+  }
+}

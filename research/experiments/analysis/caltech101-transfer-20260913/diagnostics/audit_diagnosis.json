@@ -1,0 +1,2294 @@
+{
+  "status": "diagnostic_complete_original_audit_still_failed",
+  "frozen_audit_failure_sha256": "b44b38d5c761852e442f2b47f7ce2460966f8f420f653676e86df45b923356c4",
+  "fixed_sample_checks": 240,
+  "failed_checks": 2,
+  "method_summary": {
+    "augmented_support_ridge": {
+      "checks": 30,
+      "failures": 0,
+      "max_error": 1.2790613723723254e-07,
+      "prediction_mismatches": 0
+    },
+    "mean_CS_l2": {
+      "checks": 30,
+      "failures": 0,
+      "max_error": 4.4309409252818455e-07,
+      "prediction_mismatches": 0
+    },
+    "mean_r2": {
+      "checks": 30,
+      "failures": 0,
+      "max_error": 5.113735062067803e-07,
+      "prediction_mismatches": 0
+    },
+    "original_r2": {
+      "checks": 30,
+      "failures": 0,
+      "max_error": 5.069227431153678e-07,
+      "prediction_mismatches": 0
+    },
+    "query_consistency": {
+      "checks": 30,
+      "failures": 0,
+      "max_error": 7.702172233337023e-15,
+      "prediction_mismatches": 0
+    },
+    "scatter_blend": {
+      "checks": 30,
+      "failures": 0,
+      "max_error": 7.702172233337023e-15,
+      "prediction_mismatches": 0
+    },
+    "scatter_r2": {
+      "checks": 30,
+      "failures": 0,
+      "max_error": 7.965850201685498e-15,
+      "prediction_mismatches": 0
+    },
+    "score_ensemble_r2": {
+      "checks": 30,
+      "failures": 2,
+      "max_error": 0.00019640635998560696,
+      "prediction_mismatches": 0
+    }
+  },
+  "bank_checks": [
+    {
+      "cell": "dtd_caltech101",
+      "score_prediction_accuracy_identity": "passed",
+      "scores_sha256": "37733103c98e524438263cf9990be79a0bbd4e16630b300db79a9d7ed9bddc9f"
+    },
+    {
+      "cell": "dtd_dtd",
+      "score_prediction_accuracy_identity": "passed",
+      "scores_sha256": "9815b8d5bb56ddd7e215931b46a82a6b4ef4971086b48e932ed067fc05ed1be5"
+    },
+    {
+      "cell": "dtd_eurosat",
+      "score_prediction_accuracy_identity": "passed",
+      "scores_sha256": "975cc1ec3dce96610c04655fa6d57de2820dbdb235b42a167efd5fad1fc66566"
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "score_prediction_accuracy_identity": "passed",
+      "scores_sha256": "6e49e4170937716f838d50efcc0ba4e40418254487cf91c13d78ea833c949c84"
+    },
+    {
+      "cell": "eurosat_dtd",
+      "score_prediction_accuracy_identity": "passed",
+      "scores_sha256": "8f98f2a69f93e3470aec357ddfda9312acc4e191a6793613c527db89326c787f"
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "score_prediction_accuracy_identity": "passed",
+      "scores_sha256": "8f69bc0e68f73141bda0c14f83c82387c0c9be66ede911750c62410c477b848d"
+    }
+  ],
+  "independent_intervals": 72,
+  "max_interval_error_pp": 0.0,
+  "checks": [
+    {
+      "cell": "dtd_caltech101",
+      "task": 0,
+      "method": "original_r2",
+      "max_error": 2.5773725886857335e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 2.3290060791048006e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 0,
+      "method": "mean_CS_l2",
+      "max_error": 6.734870150459926e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 0,
+      "method": "score_ensemble_r2",
+      "max_error": 7.187106909611884e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 0,
+      "method": "augmented_support_ridge",
+      "max_error": 4.243507373269395e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 5.551115123125783e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 0,
+      "method": "scatter_blend",
+      "max_error": 4.85722573273506e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 0,
+      "method": "query_consistency",
+      "max_error": 4.85722573273506e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 100,
+      "method": "original_r2",
+      "max_error": 1.346950395664237e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 1.7116261641358932e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 100,
+      "method": "mean_CS_l2",
+      "max_error": 1.7477236946561447e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 100,
+      "method": "score_ensemble_r2",
+      "max_error": 7.691150810673619e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 100,
+      "method": "augmented_support_ridge",
+      "max_error": 1.2790613723723254e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 6.938893903907228e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 100,
+      "method": "scatter_blend",
+      "max_error": 6.564193633096238e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 100,
+      "method": "query_consistency",
+      "max_error": 6.564193633096238e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 200,
+      "method": "original_r2",
+      "max_error": 2.3072810106938846e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 1.445191810667268e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 200,
+      "method": "mean_CS_l2",
+      "max_error": 1.799958589954187e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 200,
+      "method": "score_ensemble_r2",
+      "max_error": 5.099606823627534e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 200,
+      "method": "augmented_support_ridge",
+      "max_error": 4.973273409758505e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 3.469446951953614e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 200,
+      "method": "scatter_blend",
+      "max_error": 3.4208746946262636e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 200,
+      "method": "query_consistency",
+      "max_error": 3.4208746946262636e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 300,
+      "method": "original_r2",
+      "max_error": 2.6905160166457165e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 7.5568048041319e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 300,
+      "method": "mean_CS_l2",
+      "max_error": 3.162730040084938e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 300,
+      "method": "score_ensemble_r2",
+      "max_error": 1.932516081604163e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 300,
+      "method": "augmented_support_ridge",
+      "max_error": 1.0461821453588982e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 2.858824288409778e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 300,
+      "method": "scatter_blend",
+      "max_error": 2.4424906541753444e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 300,
+      "method": "query_consistency",
+      "max_error": 2.4424906541753444e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 400,
+      "method": "original_r2",
+      "max_error": 1.8160914705411813e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 1.2511341540566434e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 400,
+      "method": "mean_CS_l2",
+      "max_error": 1.8963667081095537e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 400,
+      "method": "score_ensemble_r2",
+      "max_error": 6.478187808411917e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 400,
+      "method": "augmented_support_ridge",
+      "max_error": 7.228686299542986e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 5.10702591327572e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 400,
+      "method": "scatter_blend",
+      "max_error": 4.218847493575595e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_caltech101",
+      "task": 400,
+      "method": "query_consistency",
+      "max_error": 4.218847493575595e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 0,
+      "method": "original_r2",
+      "max_error": 1.6411747316702474e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 2.670605643295687e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 0,
+      "method": "mean_CS_l2",
+      "max_error": 6.352984294188957e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 0,
+      "method": "score_ensemble_r2",
+      "max_error": 0.00019640635998560696,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": false,
+      "neighbor_diagnostic": {
+        "neighbor_boundary_changes": [
+          {
+            "view": 5,
+            "class": 2,
+            "symmetric_difference": [
+              86,
+              281
+            ],
+            "float64_boundary_gap": 1.090586786989256e-07,
+            "float64_scores_at_differing_ids": [
+              0.3937355806757188,
+              0.3937354716170401
+            ]
+          }
+        ],
+        "fixed_float32_neighbors_dense_score_error": 6.399982049008768e-08,
+        "fixed_float32_neighbors_prediction_mismatches": 0,
+        "interpretation": "Diagnostic conditioning on original float32 selected identities; not a replacement for the failed fully independent audit."
+      }
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 0,
+      "method": "augmented_support_ridge",
+      "max_error": 4.243507373269395e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 5.440092820663267e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 0,
+      "method": "scatter_blend",
+      "max_error": 5.551115123125783e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 0,
+      "method": "query_consistency",
+      "max_error": 5.551115123125783e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 100,
+      "method": "original_r2",
+      "max_error": 2.8122701767330227e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 5.113735062067803e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 100,
+      "method": "mean_CS_l2",
+      "max_error": 4.4309409252818455e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 100,
+      "method": "score_ensemble_r2",
+      "max_error": 3.203138659868543e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 100,
+      "method": "augmented_support_ridge",
+      "max_error": 1.2790613723723254e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 6.5503158452884236e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 100,
+      "method": "scatter_blend",
+      "max_error": 5.9396931817445875e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 100,
+      "method": "query_consistency",
+      "max_error": 5.9396931817445875e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 200,
+      "method": "original_r2",
+      "max_error": 2.4414548427387217e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 2.42614934142793e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 200,
+      "method": "mean_CS_l2",
+      "max_error": 1.9701504960778493e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 200,
+      "method": "score_ensemble_r2",
+      "max_error": 7.471916563250858e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 200,
+      "method": "augmented_support_ridge",
+      "max_error": 4.973273409758505e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 6.467049118441537e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 200,
+      "method": "scatter_blend",
+      "max_error": 6.022959908591474e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 200,
+      "method": "query_consistency",
+      "max_error": 6.022959908591474e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 300,
+      "method": "original_r2",
+      "max_error": 4.367972572527634e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 5.000402139021531e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 300,
+      "method": "mean_CS_l2",
+      "max_error": 1.5502098515973728e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 300,
+      "method": "score_ensemble_r2",
+      "max_error": 1.4869420084107077e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 300,
+      "method": "augmented_support_ridge",
+      "max_error": 1.0461821453588982e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 3.747002708109903e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 300,
+      "method": "scatter_blend",
+      "max_error": 3.5388358909926865e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 300,
+      "method": "query_consistency",
+      "max_error": 3.5388358909926865e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 400,
+      "method": "original_r2",
+      "max_error": 4.48985295387061e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 1.4560810290831228e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 400,
+      "method": "mean_CS_l2",
+      "max_error": 3.4645078761386117e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 400,
+      "method": "score_ensemble_r2",
+      "max_error": 5.3229810448307546e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 400,
+      "method": "augmented_support_ridge",
+      "max_error": 7.228686299542986e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 5.10702591327572e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 400,
+      "method": "scatter_blend",
+      "max_error": 5.10702591327572e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_dtd",
+      "task": 400,
+      "method": "query_consistency",
+      "max_error": 5.10702591327572e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 0,
+      "method": "original_r2",
+      "max_error": 4.467225920290474e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 1.4605718312576954e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 0,
+      "method": "mean_CS_l2",
+      "max_error": 9.521510230259267e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 0,
+      "method": "score_ensemble_r2",
+      "max_error": 7.246555145355715e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 0,
+      "method": "augmented_support_ridge",
+      "max_error": 4.243507373269395e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 5.523359547510154e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 0,
+      "method": "scatter_blend",
+      "max_error": 6.328271240363392e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 0,
+      "method": "query_consistency",
+      "max_error": 6.328271240363392e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 100,
+      "method": "original_r2",
+      "max_error": 2.647562158397676e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 2.2541444791301934e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 100,
+      "method": "mean_CS_l2",
+      "max_error": 2.789406101655345e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 100,
+      "method": "score_ensemble_r2",
+      "max_error": 1.699488891837575e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 100,
+      "method": "augmented_support_ridge",
+      "max_error": 1.2790613723723254e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 7.965850201685498e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 100,
+      "method": "scatter_blend",
+      "max_error": 7.702172233337023e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 100,
+      "method": "query_consistency",
+      "max_error": 7.702172233337023e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 200,
+      "method": "original_r2",
+      "max_error": 2.930565463632462e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 2.3202428756086135e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 200,
+      "method": "mean_CS_l2",
+      "max_error": 1.6193428951927213e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 200,
+      "method": "score_ensemble_r2",
+      "max_error": 9.083367025208844e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 200,
+      "method": "augmented_support_ridge",
+      "max_error": 4.973273409758505e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 3.3306690738754696e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 200,
+      "method": "scatter_blend",
+      "max_error": 3.70536934468646e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 200,
+      "method": "query_consistency",
+      "max_error": 3.70536934468646e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 300,
+      "method": "original_r2",
+      "max_error": 5.069227431153678e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 4.0196655892721367e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 300,
+      "method": "mean_CS_l2",
+      "max_error": 3.340606262725032e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 300,
+      "method": "score_ensemble_r2",
+      "max_error": 1.8127384715516115e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 300,
+      "method": "augmented_support_ridge",
+      "max_error": 1.0461821453588982e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 3.774758283725532e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 300,
+      "method": "scatter_blend",
+      "max_error": 3.3306690738754696e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 300,
+      "method": "query_consistency",
+      "max_error": 3.3306690738754696e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 400,
+      "method": "original_r2",
+      "max_error": 3.296659323304141e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 1.499853077291391e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 400,
+      "method": "mean_CS_l2",
+      "max_error": 1.6299772687133895e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 400,
+      "method": "score_ensemble_r2",
+      "max_error": 7.441687538412012e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 400,
+      "method": "augmented_support_ridge",
+      "max_error": 7.228686299542986e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 5.329070518200751e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 400,
+      "method": "scatter_blend",
+      "max_error": 4.9960036108132044e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "dtd_eurosat",
+      "task": 400,
+      "method": "query_consistency",
+      "max_error": 4.9960036108132044e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 0,
+      "method": "original_r2",
+      "max_error": 2.5773725886857335e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 2.3290060791048006e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 0,
+      "method": "mean_CS_l2",
+      "max_error": 6.734870150459926e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 0,
+      "method": "score_ensemble_r2",
+      "max_error": 7.187106909611884e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 0,
+      "method": "augmented_support_ridge",
+      "max_error": 4.243507373269395e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 5.828670879282072e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 0,
+      "method": "scatter_blend",
+      "max_error": 4.85722573273506e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 0,
+      "method": "query_consistency",
+      "max_error": 4.579669976578771e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 100,
+      "method": "original_r2",
+      "max_error": 1.346950395664237e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 1.7116261641358932e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 100,
+      "method": "mean_CS_l2",
+      "max_error": 1.7477236946561447e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 100,
+      "method": "score_ensemble_r2",
+      "max_error": 7.691150810673619e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 100,
+      "method": "augmented_support_ridge",
+      "max_error": 1.2790613723723254e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 6.938893903907228e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 100,
+      "method": "scatter_blend",
+      "max_error": 6.938893903907228e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 100,
+      "method": "query_consistency",
+      "max_error": 7.806255641895632e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 200,
+      "method": "original_r2",
+      "max_error": 2.3072810106938846e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 1.445191810667268e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 200,
+      "method": "mean_CS_l2",
+      "max_error": 1.799958589954187e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 200,
+      "method": "score_ensemble_r2",
+      "max_error": 5.099606823627534e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 200,
+      "method": "augmented_support_ridge",
+      "max_error": 4.973273409758505e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 7.771561172376096e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 200,
+      "method": "scatter_blend",
+      "max_error": 6.938893903907228e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 200,
+      "method": "query_consistency",
+      "max_error": 6.89986262569775e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 300,
+      "method": "original_r2",
+      "max_error": 2.6905160166457165e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 7.5568048041319e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 300,
+      "method": "mean_CS_l2",
+      "max_error": 3.162730040084938e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 300,
+      "method": "score_ensemble_r2",
+      "max_error": 1.932516081604163e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 300,
+      "method": "augmented_support_ridge",
+      "max_error": 1.0461821453588982e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 8.881784197001252e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 300,
+      "method": "scatter_blend",
+      "max_error": 6.661338147750939e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 300,
+      "method": "query_consistency",
+      "max_error": 8.881784197001252e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 400,
+      "method": "original_r2",
+      "max_error": 1.8160914705411813e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 1.2511341540566434e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 400,
+      "method": "mean_CS_l2",
+      "max_error": 1.8963667081095537e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 400,
+      "method": "score_ensemble_r2",
+      "max_error": 6.478187808411917e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 400,
+      "method": "augmented_support_ridge",
+      "max_error": 7.228686299542986e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 5.412337245047638e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 400,
+      "method": "scatter_blend",
+      "max_error": 3.885780586188048e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_caltech101",
+      "task": 400,
+      "method": "query_consistency",
+      "max_error": 5.551115123125783e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 0,
+      "method": "original_r2",
+      "max_error": 1.6411747316702474e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 2.670605643295687e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 0,
+      "method": "mean_CS_l2",
+      "max_error": 6.352984294188957e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 0,
+      "method": "score_ensemble_r2",
+      "max_error": 0.00019640635998560696,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": false,
+      "neighbor_diagnostic": {
+        "neighbor_boundary_changes": [
+          {
+            "view": 5,
+            "class": 2,
+            "symmetric_difference": [
+              86,
+              281
+            ],
+            "float64_boundary_gap": 1.090586786989256e-07,
+            "float64_scores_at_differing_ids": [
+              0.3937355806757188,
+              0.3937354716170401
+            ]
+          }
+        ],
+        "fixed_float32_neighbors_dense_score_error": 6.399982049008768e-08,
+        "fixed_float32_neighbors_prediction_mismatches": 0,
+        "interpretation": "Diagnostic conditioning on original float32 selected identities; not a replacement for the failed fully independent audit."
+      }
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 0,
+      "method": "augmented_support_ridge",
+      "max_error": 4.243507373269395e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 4.996003610813204e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 0,
+      "method": "scatter_blend",
+      "max_error": 5.273559366969494e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 0,
+      "method": "query_consistency",
+      "max_error": 6.661338147750939e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 100,
+      "method": "original_r2",
+      "max_error": 2.8122701767330227e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 5.113735062067803e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 100,
+      "method": "mean_CS_l2",
+      "max_error": 4.4309409252818455e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 100,
+      "method": "score_ensemble_r2",
+      "max_error": 3.203138659868543e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 100,
+      "method": "augmented_support_ridge",
+      "max_error": 1.2790613723723254e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 6.106226635438361e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 100,
+      "method": "scatter_blend",
+      "max_error": 6.938893903907228e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 100,
+      "method": "query_consistency",
+      "max_error": 7.632783294297951e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 200,
+      "method": "original_r2",
+      "max_error": 2.4414548427387217e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 2.42614934142793e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 200,
+      "method": "mean_CS_l2",
+      "max_error": 1.9701504960778493e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 200,
+      "method": "score_ensemble_r2",
+      "max_error": 7.471916563250858e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 200,
+      "method": "augmented_support_ridge",
+      "max_error": 4.973273409758505e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 8.881784197001252e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 200,
+      "method": "scatter_blend",
+      "max_error": 7.632783294297951e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 200,
+      "method": "query_consistency",
+      "max_error": 9.08995101411847e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 300,
+      "method": "original_r2",
+      "max_error": 4.367972572527634e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 5.000402139021531e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 300,
+      "method": "mean_CS_l2",
+      "max_error": 1.5502098515973728e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 300,
+      "method": "score_ensemble_r2",
+      "max_error": 1.4869420084107077e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 300,
+      "method": "augmented_support_ridge",
+      "max_error": 1.0461821453588982e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 6.661338147750939e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 300,
+      "method": "scatter_blend",
+      "max_error": 6.245004513516506e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 300,
+      "method": "query_consistency",
+      "max_error": 5.551115123125783e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 400,
+      "method": "original_r2",
+      "max_error": 4.48985295387061e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 1.4560810290831228e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 400,
+      "method": "mean_CS_l2",
+      "max_error": 3.4645078761386117e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 400,
+      "method": "score_ensemble_r2",
+      "max_error": 5.3229810448307546e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 400,
+      "method": "augmented_support_ridge",
+      "max_error": 7.228686299542986e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 1.3322676295501878e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 400,
+      "method": "scatter_blend",
+      "max_error": 5.551115123125783e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_dtd",
+      "task": 400,
+      "method": "query_consistency",
+      "max_error": 7.771561172376096e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 0,
+      "method": "original_r2",
+      "max_error": 4.467225920290474e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 0,
+      "method": "mean_r2",
+      "max_error": 1.4605718312576954e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 0,
+      "method": "mean_CS_l2",
+      "max_error": 9.521510230259267e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 0,
+      "method": "score_ensemble_r2",
+      "max_error": 7.246555145355715e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 0,
+      "method": "augmented_support_ridge",
+      "max_error": 4.243507373269395e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 0,
+      "method": "scatter_r2",
+      "max_error": 8.881784197001252e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 0,
+      "method": "scatter_blend",
+      "max_error": 6.661338147750939e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 0,
+      "method": "query_consistency",
+      "max_error": 7.771561172376096e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 100,
+      "method": "original_r2",
+      "max_error": 2.647562158397676e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 100,
+      "method": "mean_r2",
+      "max_error": 2.2541444791301934e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 100,
+      "method": "mean_CS_l2",
+      "max_error": 2.789406101655345e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 100,
+      "method": "score_ensemble_r2",
+      "max_error": 1.699488891837575e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 100,
+      "method": "augmented_support_ridge",
+      "max_error": 1.2790613723723254e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 100,
+      "method": "scatter_r2",
+      "max_error": 9.159339953157541e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 100,
+      "method": "scatter_blend",
+      "max_error": 7.771561172376096e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 100,
+      "method": "query_consistency",
+      "max_error": 9.992007221626409e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 200,
+      "method": "original_r2",
+      "max_error": 2.930565463632462e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 200,
+      "method": "mean_r2",
+      "max_error": 2.3202428756086135e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 200,
+      "method": "mean_CS_l2",
+      "max_error": 1.6193428951927213e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 200,
+      "method": "score_ensemble_r2",
+      "max_error": 9.083367025208844e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 200,
+      "method": "augmented_support_ridge",
+      "max_error": 4.973273409758505e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 200,
+      "method": "scatter_r2",
+      "max_error": 8.604228440844963e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 200,
+      "method": "scatter_blend",
+      "max_error": 8.049116928532385e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 200,
+      "method": "query_consistency",
+      "max_error": 9.228728892196614e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 300,
+      "method": "original_r2",
+      "max_error": 5.069227431153678e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 300,
+      "method": "mean_r2",
+      "max_error": 4.0196655892721367e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 300,
+      "method": "mean_CS_l2",
+      "max_error": 3.340606262725032e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 300,
+      "method": "score_ensemble_r2",
+      "max_error": 1.8127384715516115e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 300,
+      "method": "augmented_support_ridge",
+      "max_error": 1.0461821453588982e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 300,
+      "method": "scatter_r2",
+      "max_error": 6.938893903907228e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 300,
+      "method": "scatter_blend",
+      "max_error": 6.661338147750939e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 300,
+      "method": "query_consistency",
+      "max_error": 5.793976409762536e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 400,
+      "method": "original_r2",
+      "max_error": 3.296659323304141e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 400,
+      "method": "mean_r2",
+      "max_error": 1.499853077291391e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 400,
+      "method": "mean_CS_l2",
+      "max_error": 1.6299772687133895e-07,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 400,
+      "method": "score_ensemble_r2",
+      "max_error": 7.441687538412012e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 400,
+      "method": "augmented_support_ridge",
+      "max_error": 7.228686299542986e-08,
+      "fixed_tolerance": 2e-05,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 400,
+      "method": "scatter_r2",
+      "max_error": 8.881784197001252e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 400,
+      "method": "scatter_blend",
+      "max_error": 8.881784197001252e-16,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    },
+    {
+      "cell": "eurosat_eurosat",
+      "task": 400,
+      "method": "query_consistency",
+      "max_error": 1.1102230246251565e-15,
+      "fixed_tolerance": 1e-09,
+      "prediction_mismatches": 0,
+      "passed": true
+    }
+  ],
+  "seconds": 37.50659775733948,
+  "scope": "All original 30 cell-task audit samples and 72 paired intervals. Numerical diagnosis only: original failed audit unchanged; no tolerance relaxation, parameter selection, evaluator rerun or complete-validation claim."
+}

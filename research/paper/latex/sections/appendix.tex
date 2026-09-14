@@ -1,0 +1,28 @@
+\appendix
+\section{Paired performance differences}\label{app:paired}
+\input{tables/paired_primary}
+Original task seeds are 26091311--26091315 and confirmation seeds are 26091331--26091335, with 100 episodes per seed and support count. Each episode is reused across gallery conditions. Bootstrap seed is 26091399. Complete per-seed and breed values accompany the retained source data as descriptive breakdowns.
+
+\section{Paired diagnostic differences}\label{app:interventions}
+\input{tables/paired_interventions}
+Both diagnostics reproduce original predictions exactly. With a fully mismatched gallery, oracle filtering eliminates all gallery mass and agrees with zero update. Balanced nonempty galleries have scalar coefficient one-half. These checks validate the finite intervention, not an independent algorithm qualification.
+
+\section{Frozen comparison implementations}
+R2 first normalizes each encoder block and concatenates them with equal squared-norm contribution. For one-shot tasks it retrieves the 64 gallery features most similar to each normalized support prototype, normalizes their mean, and averages that vector with the prototype at equal weight before normalizing again. A five-class ridge classifier is fitted to these five augmented representatives and one-hot targets, using regularization $\lambda=0.1$. For five-shot tasks it instead fits the original 25 support features with $\lambda=1$; its predictions then do not depend on the gallery.
+
+CS$_{\ell_2}$ subtracts the support feature mean from support, query and eligible gallery features and normalizes each resulting vector. It uses the same one-shot retrieval and augmentation recipe in the transformed geometry, and a ridge penalty of $0.1$ for both support counts. Thus this frozen control differs from R2 in centering and, for five-shot tasks, regularization; their contrast is not a pure centering ablation.
+
+Both ridge heads use an unpenalized intercept: with row-centered training features $A_c=A-\bar A$ and targets $Y_c=Y-\bar Y$, scores are
+\[
+ (Q-\bar A)A_c^\top(A_cA_c^\top+\lambda I)^{-1}Y_c+\bar Y.
+\]
+LR1 and LR10 fit support-only multinomial logistic regression on the same uncentered fused representation, using the L-BFGS solver, $C=1$ or $10$, tolerance $10^{-8}$ and at most 2,000 iterations. No convergence warning occurred in the retained evaluations. These controls use fixed settings rather than parameter selection on confirmation queries.
+
+\section{Reproducibility and source availability}
+Retained evaluation materials include the fixed protocol, code/model hashes, image-identity manifests, task indices, predictions and reference-implementation checks. Canonical comparator predictions match the frozen outputs exactly. Source parity and query permutation, splitting and insertion checks are retained separately from the complete task-identity and accuracy audit.
+
+The prototype-fitting source is pinned to public OSLO revision \texttt{9240a4e630874c50459e}\allowbreak\texttt{069db609db9163a81c03}. The Method section specifies its restriction: support and independent gallery determine centering and fitting; queries only receive predictions. Feature extraction used float32 on an integrated GPU, with normalized half-precision feature storage. Evaluation and bootstrap environments are retained in manifests.
+
+Public dataset and original model/code sources are cited above. Derived feature caches and task outputs have not been deposited publicly. No public reproducibility package or dataset accession is claimed; the review materials preserve provenance for subsequent checking.
+
+\input{sections/calibration_appendix}

@@ -1,0 +1,13 @@
+\section{Introduction}
+Independent unlabeled galleries are attractive resources for few-shot classification, but a gallery can contain mostly classes outside a given episode. Small relevance weights on individual samples need not imply a small accumulated contribution from irrelevant samples.
+
+We examine this distinction in a restricted gallery-only transfer of Open-Set Likelihood Optimization (OSLO; \citealp{oslo}). Prototypes are fitted from labeled support and an independent gallery; queries do not participate in adaptation. The source-default transfer underperforms strong local controls in every evaluated condition, despite favorable inlier ranking. The contribution is a scoped empirical diagnosis of that discrepancy, not an improved classification algorithm.
+
+Three results structure the analysis: source-default fitting improves on a closed-set ablation but fails against stronger classifiers; approximately four-fifths of retained gallery weight is task-external despite mean inlier AUROC near 0.93; and final-step mass and composition interventions have different effects. The conclusions concern a fixed transfer on Oxford-IIIT Pets, not original transductive OSLO or a general impossibility result.
+
+\subsection{Related work}
+Distractor-containing unlabeled episodes and prototype augmentation are established in semi-supervised few-shot learning \citep{ren2018}. OSLO alternates latent inlier scores, class assignments and parametric fitting in a transductive open-set problem \citep{oslo}. Our study changes the unlabeled pool from queries to an independent gallery and evaluates closed-set query classification.
+
+Partial optimal transport has also been used to derive an outlier mass score and train an OOD detector jointly with a semi-supervised classifier \citep{ijcai2024p536}. Transported mass in that learned selection objective differs from the scalar averaging coefficients inspected here. Our retrospective interventions characterize a fixed gallery-only predictor and do not establish an alternative to learned open-set selection.
+
+Simple feature transformations can materially affect few-shot classification \citep{simpleshot}, motivating centering and strong-classifier controls. Retrieval augmentation can also include encoder finetuning, as in SWAT \citep{swat}, which differs from the frozen-feature regime here. We make no numerical comparison to the original OSLO or SWAT benchmark tables. The objectives, encoders and preprocessing operations used here are existing methods.

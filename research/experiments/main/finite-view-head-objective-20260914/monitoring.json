@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-14T00:56:51.357218+00:00",
+  "bash_id": "bash-f86bf840",
+  "science_node_id": "science-80536029",
+  "status": "running",
+  "saved_fit_count": 13,
+  "expected_fit_count": 18,
+  "immutable_hash_count": 29,
+  "all_hashes_match": true,
+  "selected_model_hash_count": 13,
+  "free_gib": 12.25906753540039,
+  "output_mib": 11.826704025268555,
+  "selection_lock_present": false,
+  "computation_complete_present": false,
+  "audit_status": "not_yet_run",
+  "actual_git_branch": "run/finite-view-head-objective-20260914",
+  "runtime_workspace_branch": "run/source-group-objective-20260914",
+  "runtime_research_head": "run/representation-scatter-20260913",
+  "branch_evidence": "artifact.git(status) 2026-09-14T00:55Z; actual workspace takes precedence over stale research-map projection",
+  "next": "Continue existing managed session; after computed completion run unchanged audit.py and record result/decision. No duplicate launch."
+}

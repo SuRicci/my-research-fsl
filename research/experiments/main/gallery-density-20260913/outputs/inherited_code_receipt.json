@@ -1,0 +1,21 @@
+{
+  "inherited_lock": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/code_lock.json",
+  "sha256": "822495b37a1cef00e4369cca7457b908eb545dd373e4cf09bfa27140f5f5e4a8",
+  "checks": {
+    "experiments/main/query-competence-20260913/study.py": true,
+    "experiments/main/query-competence-20260913/protocol.json": true,
+    "experiments/main/scatter-score-fusion-20260913/study.py": true,
+    "experiments/analysis/scatter-centering-attribution-20260913/analysis.py": true,
+    "experiments/main/scatter-centering-stack-20260913/model.py": true,
+    "experiments/main/scatter-centering-stack-20260913/summarize.py": true,
+    "experiments/main/representation-scatter-20260913/evaluate.py": true,
+    "experiments/main/utility-composition-qualification-20260913/run.py": true,
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/consistency_model.py": true,
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/verify.py": true,
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/study.py": true,
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/protocol.json": true,
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/model.py": true
+  },
+  "new_code_lock_sha256": "ae759546990dda6c9316ea5a28a6856a107368e2fb4979d6bc5df4f46c071e49",
+  "timestamp": "2026-09-13T13:04:32.397002+00:00"
+}

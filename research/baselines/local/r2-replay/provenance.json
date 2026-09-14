@@ -1,0 +1,19 @@
+{
+  "baseline_id": "r2-frozen-local",
+  "source_root": "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research",
+  "source_method": "Frozen CLIP-B16 and DINOv2-S14 R2",
+  "source_paper": "https://arxiv.org/abs/2406.11148",
+  "paper_comparability": "SWAT uses finetuning and retrieval permissions different from this frozen local R2. No claim of reproducing SWAT paper numbers.",
+  "source_files": {
+    "methods.py": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b",
+    "optimized.py": "54331cd6fc93c06125a35c67cd01ab68bd626ab7ea7e738ed7ba667951f7056e",
+    "source/original_r2_protocol.json": "c63ea0de28519c42b1f72997cdae7ae0abf8f73874efc441d70c7eb98d137642",
+    "source/original_r2_summary.json": "f00e0642033da2e5e4571264c2f4bf88241da4b276eb3a733b1c991aada01fe5",
+    "source/original_r2_external_feature_parity.json": "77130111c03a3e9344d1fc9a40f30d782f273a93df55bb99f75d78e7ee475baf",
+    "source/dtd_test_query_dedup.json": "0b242b4cc7a7a27f48bb706f02ebcb3795ca34edb5632c0f7e6e0578090dd52b",
+    "source/original_r2_comparison.csv": "8c30b77995cc8996b6ced3e49e305a43d186af2d6b9c5e2687d1073599e8f1e0",
+    "source/original_r2_selection.json": "c4f3e6fd54d3026e10b21056e2157c63bc7b995f9788b0694bd72d162167b29f"
+  },
+  "accepted_scope": "DTD official fold1 test, original R2 retest class partition, 5-way5-shot15 queries/class,3 seeds x200 episodes, gallery unused",
+  "deferred_scope": "All original 1-shot, other datasets, and R4 remain tracked historical evidence until directly verified."
+}

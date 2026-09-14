@@ -1,0 +1,55 @@
+{
+  "packs": 8,
+  "total_object_records": 86058,
+  "unique_objects": 86058,
+  "per_pack": [
+    {
+      "name": "pack-c3f344402685ba3711b7730f732fc6b67dc8bcf0",
+      "bytes": 530305917,
+      "objects": 8062,
+      "unique_to_pack": 8062
+    },
+    {
+      "name": "pack-15e1ca2e8bc80597ccdc6d7a0cfb3d4f9f343625",
+      "bytes": 1374612878,
+      "objects": 7336,
+      "unique_to_pack": 7336
+    },
+    {
+      "name": "pack-6fb1ef2dd353326aaccb889905cfde76e69ab297",
+      "bytes": 861734361,
+      "objects": 36905,
+      "unique_to_pack": 36905
+    },
+    {
+      "name": "pack-ba3a77660b97f0e649be4f6118313f58d7af6eb8",
+      "bytes": 1148107356,
+      "objects": 1,
+      "unique_to_pack": 1
+    },
+    {
+      "name": "pack-9273cba058451f30fdfeecb39d4e185bb4452783",
+      "bytes": 1556456171,
+      "objects": 12626,
+      "unique_to_pack": 12626
+    },
+    {
+      "name": "pack-485d752a3df76cbb0fc6dab8cf8acb79b066b074",
+      "bytes": 1805457481,
+      "objects": 15480,
+      "unique_to_pack": 15480
+    },
+    {
+      "name": "pack-34ff865e40e1b75c26ef8b47371e101f14330ae3",
+      "bytes": 639500171,
+      "objects": 5647,
+      "unique_to_pack": 5647
+    },
+    {
+      "name": "pack-baaaea63842bea18f05b5e60adaf26ae6e1e999f",
+      "bytes": 826510707,
+      "objects": 1,
+      "unique_to_pack": 1
+    }
+  ]
+}

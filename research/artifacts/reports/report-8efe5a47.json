@@ -1,0 +1,74 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-8efe5a47",
+  "id": "report-8efe5a47",
+  "quest_id": "012",
+  "created_at": "2026-09-13T04:48:00+00:00",
+  "updated_at": "2026-09-13T04:48:00+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-660abd6f"
+  },
+  "status": "in_progress",
+  "branch": "run/representation-scatter-20260913",
+  "head_commit": "27a821765f80d897dd5a74da7166236d4dc706f4",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "idea_literature_checkpoint",
+  "title": "Post-scatter representation overlap audit and next decision scope",
+  "summary": "Targeted primary-source sweep added four arXiv abstract reads and two official CVF method summaries. Covariance classification, task projection and class-preserving augmentation are established; a plain geometry swap has no supported novelty claim. Next inspect closest estimator equations and aggregation overlap, then challenge a small differentiated frontier. No selected successor or new compute; this is an incomplete idea-stage checkpoint after completed source report-4ef0cd43 and decision-adb84793.",
+  "paths": {
+    "survey": "artifacts/idea/representation_literature_survey.md",
+    "next_action": "artifacts/idea/representation_followup_gap.md",
+    "objective": "artifacts/idea/objective_contract.md",
+    "board": "artifacts/idea/current_board_packet.md",
+    "plan": "PLAN.md",
+    "checklist": "CHECKLIST.md"
+  },
+  "next_stage": "idea",
+  "next_action": "read_closest_method_equations_then_challenge_candidates",
+  "source_decision_id": "decision-adb84793",
+  "prior_work_ids": [
+    "1912.03432",
+    "1905.06549",
+    "2602.23013",
+    "2609.09860"
+  ],
+  "claim_scope": "No method novelty, target improvement or quest completion claim.",
+  "run_id": "run-660abd6f",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:idea_literature_checkpoint:none:1879a6b777ff032b657689294f836c3b7428f8503703c02001c115493888ed32",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-8efe5a47",
+    "related_paths": [
+      "artifacts/idea/representation_literature_survey.md",
+      "artifacts/idea/representation_followup_gap.md",
+      "artifacts/idea/objective_contract.md",
+      "artifacts/idea/current_board_packet.md",
+      "PLAN.md",
+      "CHECKLIST.md"
+    ],
+    "stage_status": "ready"
+  }
+}

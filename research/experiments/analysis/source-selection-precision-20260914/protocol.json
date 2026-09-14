@@ -1,0 +1,34 @@
+{
+  "parent": "representation-scatter-20260913",
+  "parent_review": "report-904dfac3",
+  "decision_id": "decision-bc6f816a",
+  "review_issue": "R14-3",
+  "paper_role": "reference_only",
+  "claim_links": [],
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "shots": [
+    1
+  ],
+  "episodes": 100,
+  "gallery_conditions": 2,
+  "gamma": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "comparisons": 1200,
+  "queries_per_task": 75,
+  "score_atol": 2e-05,
+  "tie_rule": "smallest gamma at maximum integer correct count",
+  "comparison": "Independent dense float64 eigendecomposition/primal ridge versus saved float32 scores and low-rank Torch float64 replay, same frozen normalized float32 feature inputs",
+  "no_new_target_evaluation": true,
+  "canonical_metric_deviation": "All five required Pets metrics unchanged/unmeasured. Auxiliary one-shot source selection validity only; five-shot history not validated here.",
+  "threads": 2,
+  "min_free_gib": 10,
+  "max_new_mib": 50,
+  "deadline": "2026-09-15T09:00:00+00:00",
+  "stop_rule": "No grid expansion or tolerance relaxation; complete full locked population and report disagreements. Any changed winner requires a separate precision-variant decision before target computation."
+}

@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "scope": "Live selector assignment on four real source prediction banks plus exact-tie/all-tie/no-tie cases; no target outcomes",
+  "selections": {
+    "dtd_k1_selection": {
+      "counts": [
+        11809,
+        11817,
+        11819
+      ],
+      "gamma": 10.0,
+      "expected": 10.0
+    },
+    "dtd_k5_selection": {
+      "counts": [
+        11908,
+        11892,
+        11880
+      ],
+      "gamma": 0.1,
+      "expected": 0.1
+    },
+    "eurosat_k1_selection": {
+      "counts": [
+        11257,
+        11282,
+        11282
+      ],
+      "gamma": 1.0,
+      "expected": 1.0
+    },
+    "eurosat_k5_selection": {
+      "counts": [
+        11882,
+        11908,
+        11884
+      ],
+      "gamma": 1.0,
+      "expected": 1.0
+    }
+  },
+  "locked_evaluator_matches": true
+}

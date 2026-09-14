@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "score_comparisons": 48,
+  "independent_episodes": 192,
+  "max_score_error": 1.8456265414856787e-06,
+  "checkpoint_rank_checks": 96,
+  "statistic_checks": 150,
+  "max_statistic_error": 9.71445146547012e-16,
+  "original_scatter_strict_audit": "failed; retained separately",
+  "canonical_target_results": false
+}

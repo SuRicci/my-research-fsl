@@ -1,0 +1,10 @@
+{
+  "baseline_id": "r2-pets-transfer",
+  "variant_id": "frozen-v1",
+  "artifact_id": "baseline-0503efcd",
+  "confirmed_at": "2026-09-12T21:25:10+00:00",
+  "metric_contract_path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer/json/metric_contract.json",
+  "metric_contract_sha256": "575445b7a69d3b0de38a0dc7a8b0bee1b5cd1f938459dc13f80f79508cfa0428",
+  "validation_sha256": "94f281238bebb62542d911513541a81f22d37564645653956c9612c4eb247262",
+  "decision_id": "decision-cf80e7d2"
+}

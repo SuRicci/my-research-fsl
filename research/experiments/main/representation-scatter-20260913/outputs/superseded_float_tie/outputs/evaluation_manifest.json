@@ -1,0 +1,140 @@
+{
+  "command": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/representation-scatter-20260913/evaluate.py",
+    "--phase",
+    "run"
+  ],
+  "sources": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluation_contract.json": "b27bc495917a781274ab9c09997b21cc4c6bd4ae7c9be412c46b244c8e7dd469",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/metric.py": "4e19d5e659e2fd76cfe57c762c91c39bdfa66a8da9abb74109e2fa6ab86db614",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluate.py": "8c3930bf44bb77741e30133ed5c074f938f822b1cef950ffbc1c55fa60e5d810",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/verify.py": "ba4c84300fa1dced6f7870b883e00abedf98677049e2952451e026ee8c261091",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/run.py": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/baseline_methods.py": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b"
+  },
+  "config": {
+    "run_id": "representation-scatter-20260913",
+    "idea_id": "idea-503deb34",
+    "decision_id": "decision-26360c22",
+    "tier": "auxiliary/dev",
+    "source_domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+    "encoder_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay",
+    "views": [
+      "original_resize224_centercrop224",
+      "resize256_top_left224",
+      "resize256_top_right224",
+      "resize256_bottom_left224",
+      "resize256_bottom_right224",
+      "resize256_center224"
+    ],
+    "interpolation": "PIL bicubic; torchvision integer Resize preserves aspect ratio",
+    "feature_fusion_weight": 0.5,
+    "shots": [
+      1,
+      5
+    ],
+    "ways": 5,
+    "queries_per_class": 15,
+    "source_5shot_query_count": 13,
+    "selection_seed": 26091362,
+    "image_split_seed": 26091340,
+    "selection_episodes": 100,
+    "eval_seeds": [
+      26091371,
+      26091372,
+      26091373,
+      26091374,
+      26091375
+    ],
+    "episodes_per_seed": 100,
+    "gallery_conditions": [
+      "matched",
+      "mismatched"
+    ],
+    "gamma_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "gamma_selection": "mean accuracy on fixed opposite-domain selection tasks, matched and mismatched galleries equally weighted; ties smallest gamma; no evaluation-target choices",
+    "methods": [
+      "original_r2",
+      "mean_r2",
+      "medoid_r2",
+      "score_ensemble_r2",
+      "mean_logistic_C1",
+      "mean_logistic_C10",
+      "augmented_support_ridge",
+      "scatter_r2"
+    ],
+    "scatter": "support-only mean-centered six-view residuals; T=(I+gamma*d*C/trace(C))^-1/2; apply to image view means then L2; R2 head unchanged",
+    "augmented_support_ridge": "centered ridge using all6support views with weight1/6 each; lambda0.1for1shot,1for5shot; query mean",
+    "gate": {
+      "both_directions": true,
+      "macro_gain_pp": 0.5,
+      "macro_ci_lower_pp": 0,
+      "all_cell_ci_lower_min_pp": -0.5,
+      "all_equal_budget_controls": true,
+      "bootstrap_replicates": 5000,
+      "bootstrap_seed": 26091359
+    },
+    "permissions": {
+      "query_batch_adaptation": false,
+      "encoder_training": false,
+      "class_names": false,
+      "target_gallery_labels": false,
+      "scatter_estimation": "support views only",
+      "same_views_all_roles": true
+    },
+    "resources": {
+      "free_gib_min": 10,
+      "added_gib_max": 0.5,
+      "deadline_utc": "2026-09-15T09:00:00+00:00",
+      "local_only": true,
+      "spend": 0,
+      "cpu_threads": 6,
+      "image_batch": 32,
+      "encoding_workers": 6
+    },
+    "metric_boundary": "Source qualification only; required five Pets metric ids remain unchanged and unmeasured. Promotion requires new explicit six-view comparator variant before full Pets tests; Caltech untouched. No canonical main score from source cells.",
+    "pre_outcome_amendments": [
+      {
+        "reason": "Distinct crop coordinates need not imply different pixels in repetitive textures. First DTD banded images produced4unique pixel views at6distinct transformations; geometric checks pass. Preserve all fixed views and report complete pixel-uniqueness histogram. No model/classifier outcomes observed; no view selected by content.",
+        "failed_check": "bash-70dfad09",
+        "diagnosis": "bash-c5ce73f0"
+      }
+    ]
+  },
+  "clarification": {
+    "scope": "Clarification before any classifier outcomes; encoding protocol immutable",
+    "source_selection_gallery": "1024source gallery identities; half conditions drawn from all source classes, half excludes all task classes using source-only labels; identical draws for each gamma. No evaluation-domain features used for gamma selection.",
+    "source_gallery_seed": 26091381,
+    "source_gallery_size": 1024,
+    "selection_rule": "Mean100paired selection tasks per shot over ordinary and all-task-excluded source conditions; ties smallest gamma",
+    "target_eval": "Each fixed500task bank with complete canonical matched and mismatched gallery; all8methods; no source selection changes after evaluation",
+    "confidence": "5000paired bootstrap draws stratified by task seed, same resampling for all methods; conditional on fixed image pools",
+    "methods": [
+      "original_r2",
+      "mean_r2",
+      "medoid_r2",
+      "score_ensemble_r2",
+      "mean_logistic_C1",
+      "mean_logistic_C10",
+      "augmented_support_ridge",
+      "scatter_r2",
+      "original_CS_l2",
+      "mean_CS_l2"
+    ],
+    "pre_outcome_control_addition": "Add established support-centering/l2 baseline on original and mean6viewfeatures,lambda0.1. Existing accepted strong comparator was missing from initial8armdraft;10arms now required. No candidate or encoding parameter changes; no new-view accuracy observed."
+  },
+  "torch": "2.3.0",
+  "numpy": "1.24.4"
+}

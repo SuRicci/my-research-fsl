@@ -1,0 +1,68 @@
+{
+  "r2-replay": {
+    "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/json/metric_contract.json",
+    "primary": {
+      "metric_id": "dtd_5shot_accuracy",
+      "value": 90.15333333333334,
+      "direction": "maximize"
+    },
+    "metrics_summary": {
+      "dtd_5shot_accuracy": 90.15333333333334
+    },
+    "sha256": "703179cf5a59fc3926834a8456e4359dc9bc03da639c5a2103307f26ff31f1ca"
+  },
+  "r2-canonical": {
+    "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/json/metric_contract.json",
+    "primary": {
+      "metric_id": "macro_1shot_accuracy",
+      "value": 72.77333333333333,
+      "direction": "maximize"
+    },
+    "metrics_summary": {
+      "dtd_matched_1shot_accuracy": 76.86266666666667,
+      "dtd_mismatched_1shot_accuracy": 74.07866666666666,
+      "dtd_5shot_accuracy": 89.98133333333332,
+      "eurosat_mismatched_1shot_accuracy": 66.11733333333333,
+      "eurosat_matched_1shot_accuracy": 74.03466666666667,
+      "eurosat_5shot_accuracy": 86.80799999999999,
+      "macro_1shot_accuracy": 72.77333333333333
+    },
+    "sha256": "9e985e1db32bc16b0f0336f86449fd0436c51561974c94420a2f06e30a4958ab"
+  },
+  "r4-canonical-local": {
+    "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/json/metric_contract.json",
+    "primary": {
+      "metric_id": "macro_map",
+      "value": 44.32589833125364,
+      "direction": "maximize"
+    },
+    "metrics_summary": {
+      "dtd_cross_bridge32_map": 30.67913154861484,
+      "dtd_cross_bridge64_map": 30.67913154861484,
+      "dtd_matched_bridge32_map": 30.67913154861484,
+      "dtd_matched_bridge64_map": 30.67913154861484,
+      "eurosat_cross_bridge32_map": 57.97266511389243,
+      "eurosat_cross_bridge64_map": 57.97266511389243,
+      "eurosat_matched_bridge32_map": 57.97266511389243,
+      "eurosat_matched_bridge64_map": 57.97266511389243,
+      "macro_map": 44.32589833125364
+    },
+    "sha256": "df84b62d2f1ba955758448d8fc2388a9e6ca97550f22eac6eda8a11f9a9396d9"
+  },
+  "r2-pets-transfer": {
+    "path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer/json/metric_contract.json",
+    "primary": {
+      "metric_id": "pets_matched_1shot_accuracy",
+      "value": 96.24,
+      "direction": "maximize"
+    },
+    "metrics_summary": {
+      "pets_matched_1shot_accuracy": 96.24,
+      "pets_mismatched_1shot_accuracy": 93.93066666666667,
+      "pets_matched_5shot_accuracy": 98.44266666666668,
+      "pets_mismatched_5shot_accuracy": 98.44266666666668,
+      "pets_macro_1shot_accuracy": 95.08533333333332
+    },
+    "sha256": "575445b7a69d3b0de38a0dc7a8b0bee1b5cd1f938459dc13f80f79508cfa0428"
+  }
+}

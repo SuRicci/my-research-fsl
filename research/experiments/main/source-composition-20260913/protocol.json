@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "idea_id": "idea-f7d886cd",
+  "decision_id": "decision-d990f983",
+  "scope": "auxiliary exposed-development source composition, not canonical target comparison",
+  "source_domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "shots": [
+    1,
+    5
+  ],
+  "modes": [
+    "map_after_mean"
+  ],
+  "dimension": 896,
+  "rank": 32,
+  "bias": false,
+  "training_seeds": [
+    26091381,
+    26091382,
+    26091383
+  ],
+  "train_episodes": 100,
+  "selection_episodes": 100,
+  "updates": 200,
+  "batch_size": 5,
+  "checkpoints": [
+    0,
+    50,
+    100,
+    200
+  ],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "ridge_penalty": 0.1,
+  "logit_scale": 10,
+  "selection_order": [
+    "maximum integer correct",
+    "minimum cross entropy",
+    "earliest checkpoint"
+  ],
+  "source_task_contract": "Original100episode train bank; Flowers100train tasks from82class split; mixfirst50each. Source selection common50original+50Flowers20heldoutclass. Both sources13queriesat5shot,15at1shot.",
+  "eval_contract": "reuse exact2000unique historical episodes,5taskseeds,500perdomain/shot; eight gallery conditions reference existing predictions",
+  "primary_estimand": "Accuracy averaged over3paired trainingseeds, not logit ensemble",
+  "bootstrap": "5000paired task draws stratified by taskseed, conditional on fixed source pools and3trainingseeds; report all seed effects",
+  "gate": {
+    "gain_pp": 0.5,
+    "ci_lower_gt": 0,
+    "all_cell_ci_lower_min": -0.5,
+    "min_positive_training_seeds": 2
+  },
+  "validation": {
+    "score_atol": 3e-05,
+    "double_formula_atol": 1e-08,
+    "gradient_atol": 1e-06,
+    "audit_eval_indices": [
+      0,
+      99,
+      199,
+      299,
+      499
+    ],
+    "audit_selection_indices": [
+      0,
+      49,
+      50,
+      99
+    ]
+  },
+  "resources": {
+    "threads": 6,
+    "free_gib_min": 10,
+    "added_output_gib_max": 0.04,
+    "local_only": true,
+    "spend": 0,
+    "deadline_utc": "2026-09-15T09:00:00+00:00"
+  },
+  "canonical_baseline_id": "r2-pets-transfer",
+  "canonical_metric_ids": [
+    "pets_matched_1shot_accuracy",
+    "pets_mismatched_1shot_accuracy",
+    "pets_matched_5shot_accuracy",
+    "pets_mismatched_5shot_accuracy",
+    "pets_macro_1shot_accuracy"
+  ],
+  "baseline_deviation": "No Pets/Caltech evaluation; baseline five metric ids preserved. OneviewR2/CS_l2/linear controls use verified reduced-view outputs. No canonical target improvement claim.",
+  "novelty": "No algorithm novelty; local training-source composition intervention",
+  "cost_boundary": "equal encoder calls, feature information, parameters, training labels/tasks/updates/checkpoints; premean map has sixfold head applications, not equal FLOPs",
+  "run_id": "source-composition-20260913",
+  "arms": [
+    "original",
+    "flowers",
+    "mixed"
+  ],
+  "flower_split_seed": 260913101,
+  "flower_train_classes": 82
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-ad0ad77a",
+  "id": "report-ad0ad77a",
+  "quest_id": "012",
+  "created_at": "2026-09-13T23:00:38+00:00",
+  "updated_at": "2026-09-13T23:00:38+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-5783bfa3"
+  },
+  "status": "completed",
+  "branch": "run/caltech-control-precision-20260913",
+  "head_commit": "16992b147724aa8e69bcc38d03fe46bdc68bcc02",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_control_repair",
+  "title": "Caltech comparator precision repair passes; transfer superiority remains unsupported",
+  "idea_id": "idea-d163b4c0",
+  "summary": "Recovered completed numerical variant without rerun. Zero changes in 112500 predictions; all fixed parity and interval audits pass. Both source-fixed primary configurations fail to outperform repaired score-ensemble R2 on exposed Caltech.",
+  "scope": "auxiliary_exposed_target_control_repair",
+  "evidence_paths": [
+    "experiments/analysis/caltech-control-precision-20260913/RESULT.json",
+    "experiments/analysis/caltech-control-precision-20260913/REPORT.md",
+    "experiments/analysis/caltech-control-precision-20260913/outputs/audit.json",
+    "experiments/analysis/caltech-control-precision-20260913/outputs/statistics_audit.json",
+    "handoffs/continuation-recovery-20260914.json"
+  ],
+  "metrics_summary": {
+    "repaired_control_macro_accuracy": 98.07911111111112,
+    "prediction_changes": 0,
+    "max_score_error": 3.3306690738754696e-16,
+    "dtd_primary_minus_repaired_control_pp": -0.04711111111111115,
+    "eurosat_primary_minus_repaired_control_pp": -0.10044444444444452
+  },
+  "canonical_pets_metrics": "unchanged_unmeasured",
+  "next_stage": "decision",
+  "run_id": "run-5783bfa3",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:auxiliary_control_repair:none:7d4d877f1fc8afa094a7d7a89cd79308a0d3615a23f5168d7cd1f9f8db868605",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-ad0ad77a",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

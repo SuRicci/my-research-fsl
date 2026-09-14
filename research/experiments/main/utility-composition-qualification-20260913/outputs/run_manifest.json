@@ -1,0 +1,143 @@
+{
+  "command": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/utility-composition-qualification-20260913/run.py",
+    "--phase",
+    "run",
+    "--resume"
+  ],
+  "config": {
+    "run_id": "utility-composition-qualification-20260913",
+    "idea_id": "idea-ea0a696f",
+    "tier": "auxiliary/dev",
+    "source_domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+    "shots": [
+      1,
+      5
+    ],
+    "ways": 5,
+    "queries_per_class": 15,
+    "feature_fusion_weight": 0.5,
+    "train_episodes": 100,
+    "selection_episodes": 100,
+    "eval_seeds": [
+      26091371,
+      26091372,
+      26091373,
+      26091374,
+      26091375
+    ],
+    "episodes_per_seed": 100,
+    "train_seed": 26091361,
+    "selection_seed": 26091362,
+    "image_split_seed": 26091340,
+    "gallery_conditions": [
+      "matched",
+      "mismatched"
+    ],
+    "calibration": {
+      "shot": 1,
+      "features": [
+        "clip_max_cosine",
+        "clip_top2_gap",
+        "dino_max_cosine",
+        "dino_top2_gap",
+        "encoder_argmax_agreement",
+        "fused_max_cosine",
+        "fused_top2_gap"
+      ],
+      "C": 1,
+      "solver": "lbfgs",
+      "max_iter": 1000,
+      "tol": 1e-08,
+      "class_weight": "balanced",
+      "reference_prior": 0.5,
+      "em_init": 0.5,
+      "em_max_iter": 200,
+      "em_tolerance": 1e-07,
+      "probability_clip": 1e-06
+    },
+    "retrieval": {
+      "top_k": 64,
+      "base_mix": 0.5,
+      "ridge_lambda": 0.1,
+      "predictor": "R2 prior-weighted mean; mix=0.5 times mean posterior of retrieved neighbors",
+      "five_shot": "exact unchanged R2 support ridge lambda1; no gallery use"
+    },
+    "source_control_grid": {
+      "mix": [
+        0,
+        0.25,
+        0.5
+      ],
+      "lambda": [
+        0.01,
+        0.1,
+        1
+      ],
+      "logistic_C": [
+        1,
+        10
+      ],
+      "selection": "one fixed winner per source domain on held-out source images, matched source gallery only; candidate C and schema never selected"
+    },
+    "gate": {
+      "macro_ci_lower_pp": 0,
+      "max_cell_loss_pp": 0.5,
+      "require_both_transfer_directions": true,
+      "require_equal_mass_advantage": true,
+      "bootstrap_replicates": 3000,
+      "bootstrap_seed": 26091359
+    },
+    "permissions": {
+      "source_gallery_labels": "training/scoring only",
+      "target_gallery_labels": false,
+      "query_batch_adaptation": false,
+      "encoder_training": false,
+      "class_names": false,
+      "shared_source_development_budget": true
+    },
+    "metric_boundary": "Auxiliary source qualification, not replacement for canonical five Pets metrics. If it fails, record a rejected qualification report and decision without relabeling source metrics as Pets. If it passes, freeze trained candidate before all canonical Pets cells and separately gated Caltech acquisition.",
+    "resources": {
+      "cpu_threads": 6,
+      "batch_size": 8,
+      "free_gib_min": 10,
+      "added_gib_max": 0.5,
+      "deadline_utc": "2026-09-15T09:00:00+00:00"
+    },
+    "epochs": 80,
+    "learning_rate": 0.03,
+    "checkpoints": [
+      20,
+      40,
+      80
+    ],
+    "query_logit_scale": 10.0,
+    "method": "four bounded relational coefficients, normalized exp weights, learned global alpha per shot; exact ridge.1",
+    "source_development_labels": "Source query/support and source gallery labels available to all eligible learned controls; target labels used only for scoring.",
+    "pre_outcome_amendment": "BCE uses one nuisance intercept while fitting binary prevalence; it cancels in normalized exp inference weights. Utility and BCE relative composition each have exactly four coefficients. No source-conditional prior transfer.",
+    "source_5shot_query_count": 13,
+    "data_feasibility_amendment": {
+      "reason": "DTD minimum37 images yields half18;5support+15queries infeasible. Source5shot train/selection only uses13queries/class for both domains and all controls. Target evaluation remains15.",
+      "based_on": "complete source class counts, not target outcomes",
+      "completed_one_shot_models_and_cells": "retained unchanged",
+      "first_attempt": "bash-3afbad8f"
+    }
+  },
+  "source_hashes": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/run.py": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/utility.py": "a1e4784daac4d4f00ff4ae3d06ab1629abb4c88fc008ca91417e9a279daf04b2",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/protocol.json": "0a3a1562babfb8c4cd70d3607c88e7f192bb401a2af3fb4c1ce2a7f81750519d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/qualify.py": "d991b7b3d7e7f3b2d81634c00a69a3a2e6b9b2532c13bd5c5069bd0731ad489a",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/baseline_methods.py": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b"
+  },
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "python": "3.8.18 | packaged by conda-forge | (default, Oct 10 2023, 15:46:56) \n[Clang 16.0.6 ]"
+}

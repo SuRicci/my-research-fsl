@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "label": "synthetic_k1",
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k1",
+      "method": "mean_cs",
+      "max_error": 4.718447854656915e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k1",
+      "method": "scatter_r2",
+      "max_error": 1.6653345369377348e-15,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k1",
+      "method": "scatter_cs",
+      "max_error": 1.3322676295501878e-15,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k1",
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k1",
+      "method": "scatter_raw_lam01",
+      "max_error": 1.6653345369377348e-15,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k5",
+      "method": "mean_r2",
+      "max_error": 3.885780586188048e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k5",
+      "method": "mean_cs",
+      "max_error": 2.4424906541753444e-15,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k5",
+      "method": "scatter_r2",
+      "max_error": 1.1657341758564144e-15,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k5",
+      "method": "scatter_cs",
+      "max_error": 3.1363800445660672e-15,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k5",
+      "method": "mean_raw_lam01",
+      "max_error": 2.3314683517128287e-15,
+      "neighbors_equal": true
+    },
+    {
+      "label": "synthetic_k5",
+      "method": "scatter_raw_lam01",
+      "max_error": 3.469446951953614e-15,
+      "neighbors_equal": true
+    },
+    {
+      "label": "original_failure_dtd99",
+      "method": "mean_r2",
+      "max_error": 6.661338147750939e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "original_failure_dtd99",
+      "method": "mean_cs",
+      "max_error": 5.551115123125783e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "original_failure_dtd99",
+      "method": "scatter_r2",
+      "max_error": 6.661338147750939e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "original_failure_dtd99",
+      "method": "scatter_cs",
+      "max_error": 5.551115123125783e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "original_failure_dtd99",
+      "method": "mean_raw_lam01",
+      "max_error": 6.661338147750939e-16,
+      "neighbors_equal": true
+    },
+    {
+      "label": "original_failure_dtd99",
+      "method": "scatter_raw_lam01",
+      "max_error": 6.661338147750939e-16,
+      "neighbors_equal": true
+    }
+  ],
+  "max_error": 3.469446951953614e-15,
+  "query_partition": true,
+  "class_equivariance": true,
+  "zero_gamma_identity": true,
+  "stable_tie_order": true,
+  "original_failure_repaired_for_new_float64_variant": true,
+  "original_frozen_audit_status": "failed_unchanged",
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "elapsed_seconds": 1.0211448669433594
+}

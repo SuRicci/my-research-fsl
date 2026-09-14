@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "independent_matching_cases": [
+    {
+      "case": "synthetic",
+      "local_score_error": 1.6653345369377348e-16,
+      "fusion_score_error": 4.565792188770956e-15
+    },
+    {
+      "case": "dtd",
+      "task": 0,
+      "local_score_error": 8.881784197001252e-16,
+      "fusion_score_error": 2.3314683517128287e-15
+    },
+    {
+      "case": "dtd",
+      "task": 249,
+      "local_score_error": 1.1102230246251565e-15,
+      "fusion_score_error": 3.608224830031759e-15
+    },
+    {
+      "case": "dtd",
+      "task": 499,
+      "local_score_error": 1.2212453270876722e-15,
+      "fusion_score_error": 3.552713678800501e-15
+    },
+    {
+      "case": "dtd_eurosat",
+      "task": 0,
+      "local_score_error": 8.881784197001252e-16,
+      "fusion_score_error": 2.3314683517128287e-15
+    },
+    {
+      "case": "dtd_eurosat",
+      "task": 249,
+      "local_score_error": 1.1102230246251565e-15,
+      "fusion_score_error": 3.594347042223944e-15
+    },
+    {
+      "case": "dtd_eurosat",
+      "task": 499,
+      "local_score_error": 1.2212453270876722e-15,
+      "fusion_score_error": 3.552713678800501e-15
+    },
+    {
+      "case": "eurosat",
+      "task": 0,
+      "local_score_error": 9.992007221626409e-16,
+      "fusion_score_error": 3.3306690738754696e-15
+    },
+    {
+      "case": "eurosat",
+      "task": 249,
+      "local_score_error": 1.6653345369377348e-15,
+      "fusion_score_error": 4.6629367034256575e-15
+    },
+    {
+      "case": "eurosat",
+      "task": 499,
+      "local_score_error": 1.4432899320127035e-15,
+      "fusion_score_error": 9.103828801926284e-15
+    },
+    {
+      "case": "eurosat_eurosat",
+      "task": 0,
+      "local_score_error": 9.992007221626409e-16,
+      "fusion_score_error": 3.164135620181696e-15
+    },
+    {
+      "case": "eurosat_eurosat",
+      "task": 249,
+      "local_score_error": 1.6653345369377348e-15,
+      "fusion_score_error": 4.6629367034256575e-15
+    },
+    {
+      "case": "eurosat_eurosat",
+      "task": 499,
+      "local_score_error": 1.4432899320127035e-15,
+      "fusion_score_error": 9.103828801926284e-15
+    }
+  ],
+  "query_class_patch_permutation": "passed",
+  "checked_prediction_entries": 750000,
+  "all_parent_scores_exact": true,
+  "output_hashes": {
+    "dtd_dtd": "4c999d9084053b56ed88db65bdb1e8b67082f43e3c4a5ebc9f3279e91160071c",
+    "dtd_eurosat": "4161d2e683cac7b4020405aed1782fa6d326d44e3fc06c160cdf150e9f9685c3",
+    "eurosat_dtd": "2a8d9e96fed28219cc7722889427f2b5e716756611d9cc54fb650a3088b770dd",
+    "eurosat_eurosat": "5f3b058c8bf495a8779168a75f39ce271e74a0f7f24c05add35a15518077ab74"
+  },
+  "parent_hashes": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_dtd.npz": "f1eb4c27bb6efe273a005900dfde32dfe177ccd779d2cae70c018fa501f83773",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_eurosat.npz": "7284378158390122200c30cbd13f492f542acddd8cd1da8c1121531b02b02991",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_dtd.npz": "7ae5fdbecb839fb38dbcc63349b90327ff11dbfa92ee1e11d37c502b9ffd9623",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_eurosat.npz": "ac84bcf58ca83944c7d1d6239ea881f8b892f5998af75edb90d0ba8a6054de39"
+  }
+}

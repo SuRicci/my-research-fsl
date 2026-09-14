@@ -1,0 +1,27 @@
+{
+  "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+  "sha256": "d5227ec87c2b48b3953af2bbc63f144c423ce958d64dc6f855e028e6ab5aaa4f",
+  "base_names": [
+    "r2",
+    "cs_0.01",
+    "cs_0.1",
+    "cs_1",
+    "grid_0_0.01",
+    "grid_0_0.1",
+    "grid_0_1",
+    "grid_0.25_0.01",
+    "grid_0.25_0.1",
+    "grid_0.25_1",
+    "grid_0.5_0.01",
+    "grid_0.5_0.1",
+    "grid_0.5_1",
+    "logistic_1",
+    "logistic_10"
+  ],
+  "selection_winners": [
+    "cs_0.01",
+    "cs_0.1",
+    "cs_0.1"
+  ],
+  "first_task_control_reconstruction": "passed"
+}

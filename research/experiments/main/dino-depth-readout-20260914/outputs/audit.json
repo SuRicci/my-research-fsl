@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "prediction_arithmetic_checks": 1200000,
+  "independent_intervals": 22,
+  "independent_primary_cases": [
+    {
+      "target": "dtd",
+      "gallery": "dtd",
+      "task": 99,
+      "max_error": 8.881784197001252e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "eurosat",
+      "task": 99,
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "dtd",
+      "task": 99,
+      "max_error": 6.661338147750939e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task": 99,
+      "max_error": 7.008282842946301e-16
+    }
+  ],
+  "gate_passed": false,
+  "scope": "all saved prediction/statistic arithmetic and task labels; independent NumPy extraction, covariance, retrieval, ridge and consistency on four prespecified task cases. Logistic solver not independently reimplemented."
+}

@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "all_saved_bank_count": 8,
+  "all_saved_prediction_count": 900000,
+  "independent_interval_checks": 21,
+  "max_interval_error_pp": 0,
+  "source_integer_selection_verified": true,
+  "direct_primal_task_checks": 20,
+  "direct_primal_query_method_scores": 240,
+  "max_direct_primal_error": 7.216449660063518e-16,
+  "score_checks": [
+    {
+      "target": "eurosat",
+      "gallery": "dtd",
+      "task": 0,
+      "max_error": 1.942890293094024e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "dtd",
+      "task": 99,
+      "max_error": 3.191891195797325e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "dtd",
+      "task": 199,
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "dtd",
+      "task": 299,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "dtd",
+      "task": 499,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task": 0,
+      "max_error": 4.996003610813204e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task": 99,
+      "max_error": 1.5265566588595902e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task": 199,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task": 299,
+      "max_error": 2.914335439641036e-16
+    },
+    {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task": 499,
+      "max_error": 7.216449660063518e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "dtd",
+      "task": 0,
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "dtd",
+      "task": 99,
+      "max_error": 2.636779683484747e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "dtd",
+      "task": 199,
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "dtd",
+      "task": 299,
+      "max_error": 2.7755575615628914e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "dtd",
+      "task": 499,
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "eurosat",
+      "task": 0,
+      "max_error": 4.440892098500626e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "eurosat",
+      "task": 99,
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "eurosat",
+      "task": 199,
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "eurosat",
+      "task": 299,
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "target": "dtd",
+      "gallery": "eurosat",
+      "task": 499,
+      "max_error": 5.551115123125783e-16
+    }
+  ],
+  "boundary": "Independent NumPy direct-primal head solves on existing verified frozen preprocessing; every saved score-to-prediction/accuracy and all source choices audited. No independent image generalization claim.",
+  "seconds": 14.757088899612427
+}

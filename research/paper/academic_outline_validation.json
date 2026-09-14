@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "ok": true,
+  "academic_outline_ready": true,
+  "analysis_plan_ready": true,
+  "outline_path": "/Users/decoqwq/DeepScientist/quests/012/paper/outline/manifest.json",
+  "outline_id": "outline-001",
+  "paper_type": "technical_note",
+  "outline_maturity": "early",
+  "central_thesis": "In a controlled gallery-only transfer of open-set prototype fitting, good inlier ranking can coexist with harmful accumulated weight from task-external samples.",
+  "central_insight": "The aggregate mass and composition retained by a prototype update must be examined separately from ranking quality.",
+  "story_missing": [],
+  "claim_count": 4,
+  "insight_count": 3,
+  "analysis_count": 5,
+  "reviewer_objection_count": 4,
+  "positioning_ready": true,
+  "analysis_budget_waiver": "Early technical note: five analysis questions use four measured evidence groups. A1 and A2 share the original main result. The fourth group is exposed-development calibration transfer, not an independent target confirmation or new OSLO dataset. No novel remedy or submission claim.",
+  "blockers": [],
+  "warnings": [
+    "paper_view.core_claims has more than three claims; consider narrowing the paper"
+  ],
+  "language_violations": [],
+  "updated_at": "2026-09-14T03:02:08+00:00"
+}

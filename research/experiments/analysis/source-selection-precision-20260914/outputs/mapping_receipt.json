@@ -1,0 +1,14 @@
+{
+  "updated": {
+    "paper/outline/sections/historical_context/result_table.json": 1,
+    "paper/outline/evidence_view.json": 1,
+    "paper/selected_outline.json": 2,
+    "paper/evidence_ledger.json": 1,
+    "paper/paper_experiment_matrix.json": 1
+  },
+  "ledger_total": 42,
+  "reference_only": 38,
+  "paper_groups": 4,
+  "pdf_unchanged": true,
+  "no_claim_links_added": true
+}

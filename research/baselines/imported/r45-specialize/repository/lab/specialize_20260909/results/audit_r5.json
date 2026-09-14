@@ -1,0 +1,37 @@
+{
+  "r5_consensus": {
+    "files": 50,
+    "episodes": 30000,
+    "baseline_max_score_error": 0.0,
+    "baseline_prediction_flips": 0,
+    "identity_prediction_checks": true
+  },
+  "r5_median": {
+    "files": 50,
+    "episodes": 30000,
+    "baseline_max_score_error": 0.0,
+    "baseline_prediction_flips": 0,
+    "identity_prediction_checks": true
+  },
+  "r5_variance": {
+    "files": 50,
+    "episodes": 30000,
+    "baseline_max_score_error": 0.0,
+    "baseline_prediction_flips": 0,
+    "identity_prediction_checks": true
+  },
+  "r5_distribution": {
+    "files": 50,
+    "episodes": 30000,
+    "baseline_max_score_error": 0.0,
+    "baseline_prediction_flips": 0,
+    "identity_prediction_checks": true
+  },
+  "r5_support_cv": {
+    "files": 50,
+    "episodes": 30000,
+    "baseline_max_score_error": 0.0,
+    "baseline_prediction_flips": 0,
+    "identity_prediction_checks": true
+  }
+}

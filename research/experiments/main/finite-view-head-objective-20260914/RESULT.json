@@ -1,0 +1,356 @@
+{
+  "status": "verified",
+  "idea_id": "idea-c31cbd8f",
+  "science_node_id": "science-80536029",
+  "validation_node_id": "science-70b35c21",
+  "bash_id": "bash-f86bf840",
+  "audit_bash_id": "bash-b4a2ea89",
+  "protocol_scope": "auxiliary exposed development; canonical Pets metrics unmeasured",
+  "gate_passed": false,
+  "raw_compute_audit_pending_flag": "historical compute-time value; superseded by this verified RESULT and outputs/audit.json",
+  "analysis": {
+    "status": "computed",
+    "gate_passed": false,
+    "domains": {
+      "dtd": {
+        "accuracy_pct": {
+          "mean_feature": 72.69511111111112,
+          "mean_view": 72.51022222222223,
+          "max_view": 72.74666666666667
+        },
+        "comparisons": {
+          "mean_feature": {
+            "delta_pp": 0.05155555555555574,
+            "ci95_pp": [
+              -0.09601111111111094,
+              0.2026666666666664
+            ]
+          },
+          "mean_view": {
+            "delta_pp": 0.2364444444444443,
+            "ci95_pp": [
+              0.12533333333333344,
+              0.3480000000000002
+            ]
+          },
+          "scatter": {
+            "delta_pp": -5.330666666666666,
+            "ci95_pp": [
+              -5.715122222222221,
+              -4.9279666666666655
+            ]
+          },
+          "consistency": {
+            "delta_pp": -5.410666666666666,
+            "ci95_pp": [
+              -5.7911666666666655,
+              -5.0159777777777785
+            ]
+          }
+        },
+        "seed_effects_pp": {
+          "mean_feature": [
+            0.10133333333333407,
+            0.18133333333333393,
+            -0.1280000000000005
+          ],
+          "mean_view": [
+            0.2493333333333334,
+            0.20533333333333392,
+            0.25466666666666604
+          ]
+        },
+        "passed": false
+      },
+      "eurosat": {
+        "accuracy_pct": {
+          "mean_feature": 74.06933333333335,
+          "mean_view": 74.04088888888889,
+          "max_view": 74.24177777777778
+        },
+        "comparisons": {
+          "mean_feature": {
+            "delta_pp": 0.17244444444444434,
+            "ci95_pp": [
+              0.10754444444444325,
+              0.23644444444444454
+            ]
+          },
+          "mean_view": {
+            "delta_pp": 0.20088888888888895,
+            "ci95_pp": [
+              0.14222222222222217,
+              0.2591111111111106
+            ]
+          },
+          "scatter": {
+            "delta_pp": -2.3488888888888897,
+            "ci95_pp": [
+              -2.594233333333334,
+              -2.098655555555556
+            ]
+          },
+          "consistency": {
+            "delta_pp": -2.3488888888888897,
+            "ci95_pp": [
+              -2.594233333333334,
+              -2.098655555555556
+            ]
+          }
+        },
+        "seed_effects_pp": {
+          "mean_feature": [
+            0.16800000000000023,
+            0.1920000000000001,
+            0.1573333333333332
+          ],
+          "mean_view": [
+            0.1906666666666668,
+            0.21066666666666678,
+            0.20133333333333323
+          ]
+        },
+        "passed": false
+      }
+    },
+    "cells": {
+      "dtd_dtd": {
+        "accuracy_pct": [
+          [
+            77.06133333333332,
+            77.144,
+            77.08266666666665
+          ],
+          [
+            76.952,
+            77.21066666666668,
+            76.776
+          ],
+          [
+            77.06933333333332,
+            77.33333333333333,
+            76.81066666666666
+          ]
+        ],
+        "primary_vs_scatter": {
+          "delta_pp": -2.816888888888889,
+          "ci95_pp": [
+            -3.1511333333333345,
+            -2.469333333333334
+          ]
+        }
+      },
+      "dtd_eurosat": {
+        "accuracy_pct": [
+          [
+            68.08000000000001,
+            68.18133333333333,
+            68.62133333333334
+          ],
+          [
+            67.89333333333335,
+            68.06666666666668,
+            68.16266666666667
+          ],
+          [
+            68.27466666666668,
+            68.35466666666666,
+            68.63733333333332
+          ]
+        ],
+        "primary_vs_scatter": {
+          "delta_pp": -7.844444444444444,
+          "ci95_pp": [
+            -8.39288888888889,
+            -7.276444444444444
+          ]
+        }
+      },
+      "eurosat_dtd": {
+        "accuracy_pct": [
+          [
+            70.24000000000001,
+            69.672,
+            70.13333333333334
+          ],
+          [
+            70.20533333333333,
+            69.71733333333334,
+            70.09866666666666
+          ],
+          [
+            70.55999999999999,
+            70.0,
+            70.34666666666666
+          ]
+        ],
+        "primary_vs_scatter": {
+          "delta_pp": -3.1831111111111117,
+          "ci95_pp": [
+            -3.5582222222222217,
+            -2.813288888888889
+          ]
+        }
+      },
+      "eurosat_eurosat": {
+        "accuracy_pct": [
+          [
+            78.31466666666667,
+            78.00799999999998,
+            78.048
+          ],
+          [
+            78.304,
+            77.92533333333334,
+            77.99466666666667
+          ],
+          [
+            78.33066666666666,
+            78.064,
+            78.14933333333333
+          ]
+        ],
+        "primary_vs_scatter": {
+          "delta_pp": -1.5146666666666668,
+          "ci95_pp": [
+            -1.7484666666666662,
+            -1.281777777777778
+          ]
+        }
+      }
+    },
+    "fit_count": 18,
+    "unique_tasks": 1000,
+    "task_gallery_conditions": 2000,
+    "scope": "All5Petsmetricids unchanged/unmeasured; source development qualification only; repeatedly exposed development, fixed-pool conditional uncertainty",
+    "audit_pending": true
+  },
+  "validation": {
+    "status": "passed",
+    "checkpoint_rank_checks": 72,
+    "full_selected_source_prediction_checks": 270000,
+    "eval_prediction_arithmetic_checks": 1350000,
+    "independent_selected_model_checks": [
+      {
+        "configuration": "dtd_26091441_mean_feature",
+        "max_error": 8.604228440844963e-16
+      },
+      {
+        "configuration": "dtd_26091441_mean_view",
+        "max_error": 8.326672684688674e-16
+      },
+      {
+        "configuration": "dtd_26091441_max_view",
+        "max_error": 9.992007221626409e-16
+      },
+      {
+        "configuration": "dtd_26091442_mean_feature",
+        "max_error": 7.771561172376096e-16
+      },
+      {
+        "configuration": "dtd_26091442_mean_view",
+        "max_error": 6.661338147750939e-16
+      },
+      {
+        "configuration": "dtd_26091442_max_view",
+        "max_error": 7.771561172376096e-16
+      },
+      {
+        "configuration": "dtd_26091443_mean_feature",
+        "max_error": 1.1657341758564144e-15
+      },
+      {
+        "configuration": "dtd_26091443_mean_view",
+        "max_error": 9.992007221626409e-16
+      },
+      {
+        "configuration": "dtd_26091443_max_view",
+        "max_error": 6.661338147750939e-16
+      },
+      {
+        "configuration": "eurosat_26091441_mean_feature",
+        "max_error": 1.942890293094024e-15
+      },
+      {
+        "configuration": "eurosat_26091441_mean_view",
+        "max_error": 1.304512053934559e-15
+      },
+      {
+        "configuration": "eurosat_26091441_max_view",
+        "max_error": 1.9984014443252818e-15
+      },
+      {
+        "configuration": "eurosat_26091442_mean_feature",
+        "max_error": 1.887379141862766e-15
+      },
+      {
+        "configuration": "eurosat_26091442_mean_view",
+        "max_error": 1.7763568394002505e-15
+      },
+      {
+        "configuration": "eurosat_26091442_max_view",
+        "max_error": 1.6653345369377348e-15
+      },
+      {
+        "configuration": "eurosat_26091443_mean_feature",
+        "max_error": 1.3739009929736312e-15
+      },
+      {
+        "configuration": "eurosat_26091443_mean_view",
+        "max_error": 1.5543122344752192e-15
+      },
+      {
+        "configuration": "eurosat_26091443_max_view",
+        "max_error": 2.067790383364354e-15
+      }
+    ],
+    "independent_target_model_checks": 36,
+    "max_target_error": 1.0547118733938987e-15,
+    "independent_primary_intervals": 8,
+    "scope": "all saved predictions/statistics; independent equations on selected source/target samples; conditional development only"
+  },
+  "provenance": {
+    "input_hashes_checked": 29,
+    "selected_model_hashes_checked": 18,
+    "selection_lock_unchanged": true,
+    "file_sha256": {
+      "experiments/main/finite-view-head-objective-20260914/study.py": "1195c78be4639525b581eeab4d31a4f2308a4e507a7b6d05410c39002778413f",
+      "experiments/main/finite-view-head-objective-20260914/audit.py": "94c35dd9a708906982ea2b1267b4f2b33b21e330add7d9c384684345dbb81b38",
+      "experiments/main/finite-view-head-objective-20260914/protocol.json": "ae2f4785fe77f8056ec77c5edc44e6e39458e28666d7afa6fbad00560cb59165",
+      "experiments/main/finite-view-head-objective-20260914/outputs/analysis.json": "6de1e483662762b0cb36fb737f909cdc019aeb7a74cf458be18984089d333dd8",
+      "experiments/main/finite-view-head-objective-20260914/outputs/audit.json": "52222c65b798736f3101e015113c2d8b7e00eb6fa2d2357ff0ba9beac3fbbe27",
+      "experiments/main/finite-view-head-objective-20260914/outputs/selection_lock.json": "ae57e7db83226e4d8d50f8268df2c2d476ea92292feb107a84521cdc862b7727",
+      "experiments/main/finite-view-head-objective-20260914/outputs/code_lock.json": "e4d8f5189d73ade261073c631f20f6c0c57c2d5ada549b9eccfd521df695fd37",
+      "experiments/main/finite-view-head-objective-20260914/outputs/complete.json": "c422ee5839672e90232bd00dc9e93bc2dab6908d83418901e94fab40fe1e1559",
+      "experiments/main/finite-view-head-objective-20260914/outputs/manifest.json": "4aba0731d65484ca821a646bafd75eae7ae4899298bfbf8ce6277e42a7455cf8",
+      "experiments/main/finite-view-head-objective-20260914/outputs/dtd_eurosat.npz": "73ba176010471de3745ff67be555f4ad430e611d074471c4fb765262bfd8394c",
+      "experiments/main/finite-view-head-objective-20260914/outputs/dtd_dtd.npz": "9de88614639346ad6aee82296c30f1a9354ca51360a5456b8c10ef0d95fa2f2d",
+      "experiments/main/finite-view-head-objective-20260914/outputs/eurosat_eurosat.npz": "e1495b6152c4883bcd31326b9707146f697096e81121c74c54500914cc0d9853",
+      "experiments/main/finite-view-head-objective-20260914/outputs/eurosat_dtd.npz": "7189f480affd6f4d1a1ef146cede4063955b31053eb2d546c3cc798292692fde",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091441_mean_feature.pt": "a54bd3695772efdbfc71eb649a312fb0506573caff6fd0b5d4bb12b6bbd979ac",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091443_max_view.pt": "ae6f5430b9bbfc08b5db79e3fac54bab795c948e888f6edc8b3ce7ba16a8b21b",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091442_mean_view.pt": "28b84e4c1ffb143d764540f2dd3fd8d7b3450fdbe3df2fc3c253a5d010b2a7a7",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091443_mean_view.pt": "5884de0eb068b852fd93d17feddb4fb5136dec1198024391766d800b93dabbde",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091441_mean_feature.pt": "bd7bac1d0c6087af35457295a1a150358da40293c2c210dd24b19caf3a511386",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091442_mean_view.pt": "0f1a4260a0646a7cf9675a64e67cb36d0023e771bff1d2cdc8f33e16c6c2789d",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091443_max_view.pt": "cae4629e828889b7e3e45ea349faca756799e9714257f607431024dc194d9393",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091443_mean_view.pt": "968a9b579d2e768bf6d7200b2b6e8810f06b8a3f6c47396056e0242aec9a61dc",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091441_mean_view.pt": "0cd77be64ff2630a21ca3024b801ae855be2dd439555d3a6ed3dcef2a9d59e23",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091442_mean_feature.pt": "c8aaa7833a61251337cd76ceb95985bba4ebafa57b07cdff5f8b55f9da6f64e2",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091441_max_view.pt": "a989175cadbc29e142636dc672f4acd2eec25219a63342a200042af98cc4a7de",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091442_mean_feature.pt": "b9fd52f358dbd3d70e587b0ec69ac732ceb5b4f77b1b55ef8d8df287e0bceda1",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091442_max_view.pt": "954780aef06317e5772ce6af3ff249016d04c2fc54f8b9636add13a7f1183cf4",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091441_mean_view.pt": "3ef461328379dd9a785f0d17c6163dc414a2600ea168d74c34e3c2d822e68bfb",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091443_mean_feature.pt": "ff59158469ed887f5a1e375d82313517310c875da4b7d4f827b1f37e779a5512",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091441_max_view.pt": "af626135548196d91b5837bd6d22004cfa84e1fa77c24df077d9510a0b9d3cde",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/dtd_26091442_max_view.pt": "a9a9888f3b587b61b366d4a8dce85ff88d2be80949e15a3482afe49e0fd9cd7f",
+      "experiments/main/finite-view-head-objective-20260914/outputs/models/eurosat_26091443_mean_feature.pt": "3b0c4d02227acaaec3abcbbcd9fdd010f9ef05fe74042c978e1a5c53c444d4f3"
+    }
+  },
+  "resources": {
+    "compute_seconds": 1077.0634899139404,
+    "output_mib": 17.249391555786133,
+    "free_gib": 12.215950012207031
+  },
+  "created_at": "2026-09-14T01:08:12.204505+00:00"
+}

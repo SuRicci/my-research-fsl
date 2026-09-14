@@ -1,0 +1,123 @@
+{
+  "config": {
+    "schema_version": 1,
+    "idea_id": "idea-aea8951a",
+    "decision_id": "decision-c173c093",
+    "scope": "auxiliary_development_source_qualification",
+    "source_domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "shots": [
+      1,
+      5
+    ],
+    "modes": [
+      "map_before_mean",
+      "map_after_mean"
+    ],
+    "dimension": 896,
+    "rank": 32,
+    "bias": false,
+    "training_seeds": [
+      26091381,
+      26091382,
+      26091383
+    ],
+    "train_episodes": 100,
+    "selection_episodes": 100,
+    "updates": 200,
+    "batch_size": 5,
+    "checkpoints": [
+      0,
+      50,
+      100,
+      200
+    ],
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "ridge_penalty": 0.1,
+    "logit_scale": 10,
+    "selection_order": [
+      "maximum integer correct",
+      "minimum cross entropy",
+      "earliest checkpoint"
+    ],
+    "source_task_contract": "reuse representation-scatter evaluate.sampler.tasks: identity-disjoint train/selection,13queries/class at5shot and15at1shot",
+    "eval_contract": "reuse exact2000unique historical episodes,5taskseeds,500perdomain/shot; eight gallery conditions reference existing predictions",
+    "primary_estimand": "mean accuracy over3paired trainingseeds, not logits ensemble",
+    "bootstrap": "5000paired task draws stratified by taskseed, conditional on fixed source pools and3trainingseeds; report all seed effects",
+    "gate": {
+      "gain_pp": 0.5,
+      "ci_lower_gt": 0,
+      "all_cell_ci_lower_min": -0.5,
+      "min_positive_training_seeds": 2
+    },
+    "validation": {
+      "score_atol": 3e-05,
+      "double_formula_atol": 1e-08,
+      "gradient_atol": 1e-06,
+      "audit_eval_indices": [
+        0,
+        99,
+        199,
+        299,
+        499
+      ],
+      "audit_selection_indices": [
+        0,
+        49,
+        99
+      ]
+    },
+    "resources": {
+      "threads": 6,
+      "free_gib_min": 10,
+      "added_output_gib_max": 0.1,
+      "local_only": true,
+      "spend": 0,
+      "deadline_utc": "2026-09-15T09:00:00+00:00"
+    },
+    "canonical_baseline_id": "r2-pets-transfer",
+    "canonical_metric_ids": [
+      "pets_matched_1shot_accuracy",
+      "pets_mismatched_1shot_accuracy",
+      "pets_matched_5shot_accuracy",
+      "pets_mismatched_5shot_accuracy",
+      "pets_macro_1shot_accuracy"
+    ],
+    "baseline_deviation": "No canonical target measurement in this auxiliary source study. Do not submit source values under target metric ids; future target comparison needs explicit six-view and source-trained-head budget variant.",
+    "novelty": "none claimed; matched learned-order mechanism test inspired by established learned aggregation/calibration",
+    "cost_boundary": "equal encoder calls, feature information, parameters, training labels/tasks/updates/checkpoints; premean map has sixfold head applications, not equal FLOPs"
+  },
+  "source_hashes": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/model.py": "05a2e5aed400def764f825fff1e6a5d9b98331d6b1a7eaf792a140d1d0820725",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/verify_order.py": "47642078d328ffdb048beee6ef2455519d5a71d6d5a4ca196c55683c0a974bb9",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/train_eval.py": "af189bcb2ee5d3247f6494e8f231be21db8a7741113a45b7a5fff41955e7cddf",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/protocol.json": "0a3a1562babfb8c4cd70d3607c88e7f192bb401a2af3fb4c1ce2a7f81750519d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/learned-aggregation-order-20260913/protocol.json": "4bf8139cec1a94a35ec356e743323306acaf742b482533c7d5d59a9dab64780d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluate.py": "c614d00a1ed0b13fe12b3c4ce48ea298fc2cac6b14d365ef3d471fce89e77b4a",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/metric.py": "4e19d5e659e2fd76cfe57c762c91c39bdfa66a8da9abb74109e2fa6ab86db614",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/extract_views.py": "6bae4f70759e9ffb3f86c6e04e1ec55f0ed93dd4cb76c43f950916dcc4e8a697",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/feature_manifest.json": "d63bdbf077a970c0f8ff47b5bf7638eff2d5a4fca3cc2f70a2ed0284903495a3",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/run.py": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/baseline_methods.py": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r2-pets-transfer/json/metric_contract.json": "575445b7a69d3b0de38a0dc7a8b0bee1b5cd1f938459dc13f80f79508cfa0428",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz": "9cb2fe1074b09b5dd8456bedf3895deb979fbd947c170559d2ef21ef2550f125",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz": "ac84b5a8a63ac1befaaff93257185376b2f25765358e892d1b142a01d24e9b6c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz": "dce198742fb0cabf9ac373202518a8e1d2d924c128938ff6ff332e8e1a24c334",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz": "ac84b5a8a63ac1befaaff93257185376b2f25765358e892d1b142a01d24e9b6c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_dtd_k1.npz": "448dee5ea1226fb39b043e9caf40801c9aade83b06e60bcea4354e52dbc6aefd",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz": "61d9c80a53a55441913644825965d94e007210ee0ad00da8e79735c539ca396d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_eurosat_k1.npz": "efaf0bd6eb0b5a791bb5d160404c28c5b2b5eea5a610576b313e3db9df2439c0",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz": "61d9c80a53a55441913644825965d94e007210ee0ad00da8e79735c539ca396d"
+  },
+  "command": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/learned-aggregation-order-20260913/train_eval.py",
+    "--phase",
+    "run"
+  ]
+}

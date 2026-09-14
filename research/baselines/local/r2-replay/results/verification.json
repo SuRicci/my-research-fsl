@@ -1,0 +1,28 @@
+{
+  "verdict": "verified_close",
+  "local_r2_accuracy": 0.9015333333333333,
+  "historical_r2_accuracy": 0.901488888888889,
+  "difference_pp": 0.004444444444429152,
+  "per_seed_difference_pp": [
+    -0.0200000000000089,
+    0.02666666666666373,
+    0.00666666666665483
+  ],
+  "r2_fixed_pool_episode_ci95_pct": [
+    89.62222222222222,
+    90.66888888888889
+  ],
+  "gain_over_same_feature_prototype_pp": 0.7355555555555557,
+  "paired_gain_ci95_pp": [
+    0.5577777777777679,
+    0.9155555555555583
+  ],
+  "query_image_count": 957,
+  "source_query_image_count": 957,
+  "support_query_overlap": 0,
+  "prediction_accuracy_recomputed": true,
+  "api_score_error": 4.76837158203125e-07,
+  "api_flips": 0,
+  "uncertainty_scope": "Seed-stratified paired episode bootstrap conditional on historically viewed fixed image pool; not new-image or domain-generalization uncertainty.",
+  "unresolved": "Historical raw predictions absent; small numeric difference cause not isolated. Original RGB exclusions reused but current image rehash pending."
+}

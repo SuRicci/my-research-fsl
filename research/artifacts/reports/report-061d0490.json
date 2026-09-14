@@ -1,0 +1,71 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-061d0490",
+  "id": "report-061d0490",
+  "quest_id": "012",
+  "created_at": "2026-09-13T23:24:54+00:00",
+  "updated_at": "2026-09-13T23:24:54+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-29657b89"
+  },
+  "status": "completed",
+  "branch": "run/caltech-control-precision-20260913",
+  "head_commit": "a4b31aee98948f27c2b0f57910a0c3513646bf0c",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_analysis",
+  "title": "Whole-feature geometry does not isolate source-map transfer harm",
+  "summary": "36selectedsource-composition models and13424existingimages analyzed without fitting. Source pair-distortion adjusted for displacement gives one-shot correlations+0.169/+0.586; target-side adjusted signs disagree. This fails the deferred generic geometry-preservation reopen condition, not all selective regularizers. All108numeric and48independent statistical checks pass.",
+  "evidence_paths": [
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/REPORT.md",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/RESULT.json",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/source-map-geometry-20260914/independent_statistics.json"
+  ],
+  "parent_result": "experiments/main/source-composition-20260913/outputs/analysis.json",
+  "science_node_ids": [
+    "science-a3728d02",
+    "science-2c3f9ed4"
+  ],
+  "metrics_summary": {
+    "selected_models": 36,
+    "existing_images": 13424,
+    "numerical_cases": 108,
+    "correlation_checks": 48
+  },
+  "comparability": "auxiliary observational same-model/feature diagnosis; not canonical target comparison or causal intervention",
+  "paper_role": "reference_only",
+  "section_id": "historical_context",
+  "item_id": "source-composition-20260913",
+  "claim_links": [],
+  "next_stage": "decision",
+  "run_id": "run-29657b89",
+  "anchor": "idea",
+  "semantic_key": "report:idea:auxiliary_analysis:none:a2476b50cc55c6fb240fc42ce738668875b48c0227f25630eebe835919c2e39f",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-061d0490",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-13T04:01:39.928783+00:00",
+  "audit_node": "science-000f426c",
+  "audit_run": "bash-65405c39",
+  "extraction_session": "bash-4927f933",
+  "status": "healthy_running",
+  "latest_progress": {
+    "status": "running",
+    "backbone": "dinov2_vits14",
+    "pool": "eurosat_gallery",
+    "images_done": 32,
+    "pool_size": 5000,
+    "elapsed_seconds": 4213.117966175079,
+    "free_gib": 11.12343978881836
+  },
+  "manifest_complete_cache_count": 7,
+  "expected_cache_count": 8,
+  "integrity_status": "passed_for_completed_files",
+  "no_classifier_result": true,
+  "next_check_seconds": 240,
+  "decision": "retain decision-26360c22; no route change",
+  "manual_cleanup_bytes_this_pass": 0,
+  "next_action": "Once all caches complete, rerun audit_caches.py and require encoding_complete true before evaluation.",
+  "resource_report": "outputs/resource_monitor.json",
+  "free_gib": 11.123363494873047,
+  "audit_snapshot": "outputs/cache_integrity_20260913T040013.json",
+  "validated_cache_count": 6,
+  "validated_image_encoder_pairs": 17906,
+  "completed_pool_chunk_dirs_absent": {
+    "dtd_query_clip_vitb16": true,
+    "dtd_gallery_clip_vitb16": true,
+    "eurosat_query_clip_vitb16": true,
+    "eurosat_gallery_clip_vitb16": true,
+    "dtd_query_dinov2_vits14": true,
+    "dtd_gallery_dinov2_vits14": true
+  },
+  "monitor_run": "bash-ce16fdca",
+  "audit_repeated_this_pass": true
+}

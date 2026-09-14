@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "case": "synthetic",
+      "max_error": 2.220446049250313e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "caltech101",
+      "task": 0,
+      "max_error": 1.3877787807814457e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "caltech101",
+      "task": 100,
+      "max_error": 2.220446049250313e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "caltech101",
+      "task": 200,
+      "max_error": 1.5959455978986625e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "caltech101",
+      "task": 300,
+      "max_error": 3.3306690738754696e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "caltech101",
+      "task": 400,
+      "max_error": 1.1796119636642288e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "dtd",
+      "task": 0,
+      "max_error": 3.3306690738754696e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "dtd",
+      "task": 100,
+      "max_error": 1.942890293094024e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "dtd",
+      "task": 200,
+      "max_error": 3.3306690738754696e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "dtd",
+      "task": 300,
+      "max_error": 2.220446049250313e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "dtd",
+      "task": 400,
+      "max_error": 1.1102230246251565e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "eurosat",
+      "task": 0,
+      "max_error": 1.1102230246251565e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "eurosat",
+      "task": 100,
+      "max_error": 2.220446049250313e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "eurosat",
+      "task": 200,
+      "max_error": 2.220446049250313e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "eurosat",
+      "task": 300,
+      "max_error": 2.220446049250313e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    },
+    {
+      "case": "eurosat",
+      "task": 400,
+      "max_error": 2.220446049250313e-16,
+      "passed_original_tolerance": true,
+      "passed_strict_diagnostic": true,
+      "argmax_equal": true
+    }
+  ],
+  "max_error": 3.3306690738754696e-16,
+  "input_hashes": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/dtd_caltech101.npz": "37733103c98e524438263cf9990be79a0bbd4e16630b300db79a9d7ed9bddc9f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/eurosat_caltech101.npz": "6e49e4170937716f838d50efcc0ba4e40418254487cf91c13d78ea833c949c84",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/dtd_dtd.npz": "9815b8d5bb56ddd7e215931b46a82a6b4ef4971086b48e932ed067fc05ed1be5",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/eurosat_dtd.npz": "8f98f2a69f93e3470aec357ddfda9312acc4e191a6793613c527db89326c787f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/dtd_eurosat.npz": "975cc1ec3dce96610c04655fa6d57de2820dbdb235b42a167efd5fad1fc66566",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech101-transfer-20260913/outputs/eurosat_eurosat.npz": "8f69bc0e68f73141bda0c14f83c82387c0c9be66ede911750c62410c477b848d"
+  },
+  "output_hashes": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/caltech101.npz": "965569fbb1ef883df8a3edbf43e211a96894711c9efd0f3956aa1ff41772b440",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/dtd.npz": "9aeb414cdf99bb8f31f0033030a08323376db7155e10d2ca0f00a4e043dbe114",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/caltech-control-precision-20260913/outputs/eurosat.npz": "d3212958d5b58d8f3e945651e09a584fefbb1b499d3452f1337e17c7425ac20d"
+  },
+  "historical_failure_sha256": "b44b38d5c761852e442f2b47f7ce2460966f8f420f653676e86df45b923356c4",
+  "invariances": "class,query order andquery partition"
+}

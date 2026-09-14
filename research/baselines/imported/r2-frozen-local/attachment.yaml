@@ -1,0 +1,125 @@
+attached_at: '2026-09-12T09:17:32+00:00'
+source_baseline_id: r2-frozen-local
+source_variant_id: null
+entry:
+  registry_kind: baseline
+  schema_version: 1
+  entry_id: r2-frozen-local
+  baseline_id: r2-frozen-local
+  status: quest_local
+  created_at: '2026-09-12T09:17:32+00:00'
+  updated_at: '2026-09-12T09:17:32+00:00'
+  path: /Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay
+  summary: 'Comparison-ready within the explicitly verified DTD5 slice only: frozen
+    equal CLIP-B16/DINOv2-S14 support-only ridge, 600 tasks across3 original seeds,
+    accuracy90.1533% vs original90.1489% (difference0.004444pp). Full16 original rows
+    preserved separately as historical reference, not erased or called locally reproduced.
+    1-shot candidates must first extend the contract with their own same-permission
+    comparator. Historical raw predictions absent; RGB rehash pending; not SWAT reproduction
+    or a novel method.'
+  baseline_kind: verified_local_existing
+  primary_metric:
+    metric_id: dtd_5shot_accuracy
+    value: 90.15333333333334
+    direction: maximize
+  metrics_summary:
+    dtd_5shot_accuracy: 90.15333333333334
+  baseline_variants: []
+  default_variant_id: null
+  metric_contract:
+    evaluation_protocol:
+      scope_id: r2-dtd5-original-retest-local
+      dataset: DTD official fold1 test
+      classes:
+      - 20
+      - 10
+      - 15
+      - 32
+      - 0
+      - 45
+      - 36
+      - 31
+      - 18
+      - 28
+      - 12
+      - 5
+      - 13
+      - 17
+      - 22
+      - 24
+      - 43
+      - 27
+      - 9
+      - 6
+      - 14
+      - 40
+      - 35
+      - 1
+      seeds:
+      - 129191
+      - 129192
+      - 129193
+      episodes_per_seed: 200
+      n_way: 5
+      shots:
+      - 5
+      queries_per_class: 15
+      features: restored v0/r224 CLIP-B16+DINOv2-S14, equal normalized concatenation
+      gallery_access: false
+      query_batch_statistics: false
+      encoder_training: false
+      labels_to_method: support labels only
+      ridge_lambda: 1
+      code_paths:
+      - baselines/local/r2-replay/replay_dtd5.py
+      - baselines/local/r2-replay/methods.py
+      - baselines/local/r2-replay/optimized.py
+      code_hashes:
+        replay_dtd5.py: 6afe0566af078015f54c9d8d8f2ce268bc505495d8eb6a64fbc7c46eaa26615d
+        methods.py: c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b
+        optimized.py: 54331cd6fc93c06125a35c67cd01ab68bd626ab7ea7e738ed7ba667951f7056e
+      historical_full_surface: source/original_r2_summary.json preserves all16 original
+        rows; they are reference_only and not claimed locally reproduced.
+      expansion_rule: Add dataset/shot metrics as explicit contract variants after
+        measured validation. Do not compare a 1-shot candidate to this 5-shot number.
+      caveats: Historical raw predictions absent; small numeric difference cause not
+        isolated. Original RGB exclusions reused but current image rehash pending.
+    metrics_summary:
+      dtd_5shot_accuracy: 90.15333333333334
+    contract_id: r2-frozen-local-v1
+    primary_metric_id: dtd_5shot_accuracy
+    metrics:
+    - metric_id: dtd_5shot_accuracy
+      description: R2 frozen dual-encoder 5-way 5-shot accuracy on original DTD fold1
+        retest partition, 600 episodes from 3 seeds, 15 queries per class.
+      derivation: 100 * mean(predictions[r2_overall] == yq), all 45000 query decisions
+        in saved paired tasks.
+      source_ref: baselines/local/r2-replay/results/dtd_k5_original_retest.npz
+      direction: maximize
+      label: DTD 5-way 5-shot accuracy
+      unit: '%'
+      required: true
+      decimals: null
+      chart_group: default
+  metric_details:
+  - metric_id: dtd_5shot_accuracy
+    description: R2 frozen dual-encoder 5-way 5-shot accuracy on original DTD fold1
+      retest partition, 600 episodes from 3 seeds, 15 queries per class.
+    derivation: 100 * mean(predictions[r2_overall] == yq), all 45000 query decisions
+      in saved paired tasks.
+    source_ref: baselines/local/r2-replay/results/dtd_k5_original_retest.npz
+    direction: maximize
+    label: DTD 5-way 5-shot accuracy
+    unit: '%'
+    required: true
+    decimals: null
+    chart_group: default
+    origin_path: null
+    value: 90.15333333333334
+selected_variant: null
+confirmation:
+  source_mode: local
+  baseline_root: /Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay
+  comment: null
+  metric_contract_json_path: /Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/json/metric_contract.json
+  metric_contract_json_rel_path: baselines/local/r2-replay/json/metric_contract.json

@@ -1,0 +1,39 @@
+{
+  "status": "closed_auxiliary_study",
+  "verdict": "fixed_source_efficiency_rule_not_qualified",
+  "claim_classification": "not_established",
+  "run": "bash-7456b532",
+  "audit": "bash-5d6db1b7",
+  "benchmark": "bash-f5893a8b",
+  "computed_seconds": 499.9376277923584,
+  "independent_score_cases": 3264,
+  "evaluation_statistic_checks": 408,
+  "source_subsets": {
+    "dtd": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "eurosat": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "three_view_benchmark_speedup": 1.995275438069888,
+  "canonical_pets_metrics_changed": false,
+  "target_evaluations_added": false,
+  "evidence_sha256": {
+    "experiments/main/reduced-view-efficiency-20260913/REPORT.md": "7e3726454170c5951bde39553872c144058c921cbf734b6c4911fcebc4cc4a75",
+    "experiments/main/reduced-view-efficiency-20260913/outputs/analysis.json": "35848c6c21f5492e416ede17faa0a03cd83664a5510c5860b85c7744eb44b891",
+    "experiments/main/reduced-view-efficiency-20260913/outputs/independent_audit.json": "3b7fa8d4e8473ff422377d47e1afdc8219d9b72d2ae7f45ab8d65ffc107c93b2",
+    "experiments/main/reduced-view-efficiency-20260913/outputs/encoding_timing.json": "fe15cb51be51cfd0e0aa18d3b4e5e99fadc16dd374bc11ef5b5042430d5cca36",
+    "experiments/main/reduced-view-efficiency-20260913/outputs/historical_bridge_and_frontier.json": "272a90bd1e0492a2cd32465fbd7fade9e5e9e7ea40ae2db130a269f8720c884e"
+  }
+}

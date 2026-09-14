@@ -1,0 +1,1684 @@
+{
+  "status": "computed",
+  "scope": "auxiliary observational diagnosis on already exposed source and transfer assets; no fitting, no new target classifier outcomes",
+  "model_count": 36,
+  "zero_step_models": 6,
+  "domains": {
+    "dtd": {
+      "image_count": 1877,
+      "sampled_pairs": 4096,
+      "unique_sampled_pairs": 4039,
+      "orthogonal_cosine_max_error": 3.3306690738754696e-16,
+      "orthogonal_mean_sq_displacement": 2.0000000000000004
+    },
+    "eurosat": {
+      "image_count": 5400,
+      "sampled_pairs": 4096,
+      "unique_sampled_pairs": 4095,
+      "orthogonal_cosine_max_error": 3.3306690738754696e-16,
+      "orthogonal_mean_sq_displacement": 2.0000000000000004
+    },
+    "flowers": {
+      "image_count": 6147,
+      "sampled_pairs": 4096,
+      "unique_sampled_pairs": 4063,
+      "orthogonal_cosine_max_error": 3.3306690738754696e-16,
+      "orthogonal_mean_sq_displacement": 2.0000000000000004
+    }
+  },
+  "rows": [
+    {
+      "key": "dtd_k1_original_26091381",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091381,
+      "selected_step": 100,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.4810593036103898,
+          "raw_residual_energy": 0.6447376461652194,
+          "pair_cosine_rms_change": 0.18337239143737513,
+          "within_cosine_change": 0.060454278230473085,
+          "between_cosine_change": -0.16943065555574024,
+          "class_gap_change": 0.22988493378621333
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.26883023494685476,
+          "raw_residual_energy": 0.2950543985141762,
+          "pair_cosine_rms_change": 0.05288831977959365,
+          "within_cosine_change": -0.01649433955756298,
+          "between_cosine_change": -0.028177276386851368,
+          "class_gap_change": 0.01168293682928839
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.2259619282612831,
+          "raw_residual_energy": 0.2636166902989766,
+          "pair_cosine_rms_change": 0.043200175667498675,
+          "within_cosine_change": 0.011881429709450983,
+          "between_cosine_change": 0.03337346015474463,
+          "class_gap_change": -0.021492030445293644
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 1.8133333333333346,
+        "source_original_delta_pp": 3.8133333333333352,
+        "source_flowers_delta_pp": -0.18666666666666676,
+        "transfer_delta_pp": -1.4399999999999997,
+        "transfer_accuracy_pct": 67.52266666666667,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k1_flowers_26091381",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091381,
+      "selected_step": 0,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 6.024899474405938e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.1203047541926722e-16,
+          "within_cosine_change": -1.8858341537669743e-16,
+          "between_cosine_change": -1.3209648219020265e-16,
+          "class_gap_change": -5.648693318649478e-17
+        },
+        "eurosat": {
+          "mean_sq_displacement": 7.028166756631336e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 3.2982335358450397e-16,
+          "within_cosine_change": -2.940356291780688e-16,
+          "between_cosine_change": -2.3809079707781677e-16,
+          "class_gap_change": -5.594483210025203e-17
+        },
+        "flowers": {
+          "mean_sq_displacement": 6.505691514748655e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.993145844978455e-16,
+          "within_cosine_change": -3.010287331906003e-16,
+          "between_cosine_change": -1.671297648886405e-16,
+          "class_gap_change": -1.338989683019598e-16
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.0,
+        "source_original_delta_pp": 0.0,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": 0.0,
+        "transfer_accuracy_pct": 68.96266666666665,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k1_mixed_26091381",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091381,
+      "selected_step": 50,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.2214652015993521,
+          "raw_residual_energy": 0.2344001917897567,
+          "pair_cosine_rms_change": 0.10602443341946306,
+          "within_cosine_change": 0.0004234790433019533,
+          "between_cosine_change": -0.10451403391932018,
+          "class_gap_change": 0.10493751296262213
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.12621688246657625,
+          "raw_residual_energy": 0.12734448000184256,
+          "pair_cosine_rms_change": 0.021064994638099552,
+          "within_cosine_change": -0.009439526638136912,
+          "between_cosine_change": -0.01690485997298742,
+          "class_gap_change": 0.0074653333348505095
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.0918077454950729,
+          "raw_residual_energy": 0.09313362366031458,
+          "pair_cosine_rms_change": 0.026092573389143024,
+          "within_cosine_change": -0.005556734644921206,
+          "between_cosine_change": -0.026490425329366008,
+          "class_gap_change": 0.020933690684444804
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 1.7466666666666675,
+        "source_original_delta_pp": 3.493333333333335,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.25600000000000006,
+        "transfer_accuracy_pct": 68.70666666666668,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k1_original_26091382",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091382,
+      "selected_step": 100,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.4933569822727957,
+          "raw_residual_energy": 0.6668100424894087,
+          "pair_cosine_rms_change": 0.181945449045712,
+          "within_cosine_change": 0.0637211790285917,
+          "between_cosine_change": -0.16624120450220806,
+          "class_gap_change": 0.22996238353079976
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.287706162964806,
+          "raw_residual_energy": 0.31324174996231496,
+          "pair_cosine_rms_change": 0.05387639934242999,
+          "within_cosine_change": -0.020891024898258993,
+          "between_cosine_change": -0.032390284281570945,
+          "class_gap_change": 0.011499259383311953
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.28135552427566,
+          "raw_residual_energy": 0.3330576167616285,
+          "pair_cosine_rms_change": 0.047855801677334164,
+          "within_cosine_change": 0.01162005809239038,
+          "between_cosine_change": 0.03457244793017199,
+          "class_gap_change": -0.022952389837781608
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 2.2800000000000007,
+        "source_original_delta_pp": 4.960000000000002,
+        "source_flowers_delta_pp": -0.3999999999999999,
+        "transfer_delta_pp": -1.6506666666666658,
+        "transfer_accuracy_pct": 67.312,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k1_flowers_26091382",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091382,
+      "selected_step": 0,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 6.024899474405938e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.1203047541926722e-16,
+          "within_cosine_change": -1.8858341537669743e-16,
+          "between_cosine_change": -1.3209648219020265e-16,
+          "class_gap_change": -5.648693318649478e-17
+        },
+        "eurosat": {
+          "mean_sq_displacement": 7.028166756631336e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 3.2982335358450397e-16,
+          "within_cosine_change": -2.940356291780688e-16,
+          "between_cosine_change": -2.3809079707781677e-16,
+          "class_gap_change": -5.594483210025203e-17
+        },
+        "flowers": {
+          "mean_sq_displacement": 6.505691514748655e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.993145844978455e-16,
+          "within_cosine_change": -3.010287331906003e-16,
+          "between_cosine_change": -1.671297648886405e-16,
+          "class_gap_change": -1.338989683019598e-16
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.0,
+        "source_original_delta_pp": 0.0,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": 0.0,
+        "transfer_accuracy_pct": 68.96266666666665,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k1_mixed_26091382",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091382,
+      "selected_step": 100,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.4821316847411576,
+          "raw_residual_energy": 0.6096703135178199,
+          "pair_cosine_rms_change": 0.18657912986602157,
+          "within_cosine_change": 0.03531466727989392,
+          "between_cosine_change": -0.18561460603899632,
+          "class_gap_change": 0.22092927331889023
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.2123832658939203,
+          "raw_residual_energy": 0.21595112609978806,
+          "pair_cosine_rms_change": 0.05910518746793152,
+          "within_cosine_change": -0.0359482763937934,
+          "between_cosine_change": -0.053344723392165845,
+          "class_gap_change": 0.017396446998372443
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.2995071726736394,
+          "raw_residual_energy": 0.30448403282760667,
+          "pair_cosine_rms_change": 0.12546957301952952,
+          "within_cosine_change": -0.033251218797200936,
+          "between_cosine_change": -0.15067454609676995,
+          "class_gap_change": 0.117423327299569
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 2.0266666666666673,
+        "source_original_delta_pp": 4.506666666666668,
+        "source_flowers_delta_pp": -0.45333333333333364,
+        "transfer_delta_pp": -1.1573333333333335,
+        "transfer_accuracy_pct": 67.80533333333332,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k1_original_26091383",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091383,
+      "selected_step": 100,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.48861804525342645,
+          "raw_residual_energy": 0.6610210462625445,
+          "pair_cosine_rms_change": 0.1900669484603474,
+          "within_cosine_change": 0.05949404537402653,
+          "between_cosine_change": -0.1779963003900906,
+          "class_gap_change": 0.23749034576411712
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.30118126623796126,
+          "raw_residual_energy": 0.33652572891927285,
+          "pair_cosine_rms_change": 0.049070397595330405,
+          "within_cosine_change": -0.014362531280930745,
+          "between_cosine_change": -0.023929770485756244,
+          "class_gap_change": 0.009567239204825499
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.36195175484792436,
+          "raw_residual_energy": 0.450482530061162,
+          "pair_cosine_rms_change": 0.06462179213749085,
+          "within_cosine_change": 0.022672481340177617,
+          "between_cosine_change": 0.060928895572789805,
+          "class_gap_change": -0.03825641423261219
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 1.853333333333334,
+        "source_original_delta_pp": 4.000000000000002,
+        "source_flowers_delta_pp": -0.2933333333333332,
+        "transfer_delta_pp": -1.4933333333333334,
+        "transfer_accuracy_pct": 67.46933333333332,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k1_flowers_26091383",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091383,
+      "selected_step": 0,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 6.024899474405938e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.1203047541926722e-16,
+          "within_cosine_change": -1.8858341537669743e-16,
+          "between_cosine_change": -1.3209648219020265e-16,
+          "class_gap_change": -5.648693318649478e-17
+        },
+        "eurosat": {
+          "mean_sq_displacement": 7.028166756631336e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 3.2982335358450397e-16,
+          "within_cosine_change": -2.940356291780688e-16,
+          "between_cosine_change": -2.3809079707781677e-16,
+          "class_gap_change": -5.594483210025203e-17
+        },
+        "flowers": {
+          "mean_sq_displacement": 6.505691514748655e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.993145844978455e-16,
+          "within_cosine_change": -3.010287331906003e-16,
+          "between_cosine_change": -1.671297648886405e-16,
+          "class_gap_change": -1.338989683019598e-16
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.0,
+        "source_original_delta_pp": 0.0,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": 0.0,
+        "transfer_accuracy_pct": 68.96266666666665,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k1_mixed_26091383",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091383,
+      "selected_step": 100,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.4466272177338243,
+          "raw_residual_energy": 0.5534346444902393,
+          "pair_cosine_rms_change": 0.1969628870850705,
+          "within_cosine_change": 0.02402590992175393,
+          "between_cosine_change": -0.20942215043083073,
+          "class_gap_change": 0.23344806035258467
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.21490107147157564,
+          "raw_residual_energy": 0.22142935795500854,
+          "pair_cosine_rms_change": 0.06794911577757971,
+          "within_cosine_change": -0.041005774553232,
+          "between_cosine_change": -0.065667280750203,
+          "class_gap_change": 0.02466150619697101
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.29509721777848474,
+          "raw_residual_energy": 0.3030520476225107,
+          "pair_cosine_rms_change": 0.1199794450690463,
+          "within_cosine_change": -0.030916059766690703,
+          "between_cosine_change": -0.14523075468003313,
+          "class_gap_change": 0.11431469491334242
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 1.5333333333333345,
+        "source_original_delta_pp": 3.4666666666666686,
+        "source_flowers_delta_pp": -0.3999999999999997,
+        "transfer_delta_pp": -1.2719999999999998,
+        "transfer_accuracy_pct": 67.69066666666667,
+        "transfer_zero_accuracy_pct": 68.96266666666665
+      }
+    },
+    {
+      "key": "dtd_k5_original_26091381",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091381,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.390742969740326,
+          "raw_residual_energy": 0.5088670242321901,
+          "pair_cosine_rms_change": 0.15715698948995108,
+          "within_cosine_change": 0.028606246818604984,
+          "between_cosine_change": -0.15607382294254044,
+          "class_gap_change": 0.18468006976114543
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.20412034672878598,
+          "raw_residual_energy": 0.23250816560919882,
+          "pair_cosine_rms_change": 0.054652812915242446,
+          "within_cosine_change": -0.017918522829118187,
+          "between_cosine_change": -0.031356188113276603,
+          "class_gap_change": 0.013437665284158417
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.15925715679479238,
+          "raw_residual_energy": 0.1740872733062676,
+          "pair_cosine_rms_change": 0.05909491395160619,
+          "within_cosine_change": -0.021653474994034087,
+          "between_cosine_change": -0.054648150689488514,
+          "class_gap_change": 0.03299467569545443
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.9538461538461538,
+        "source_original_delta_pp": 1.9384615384615382,
+        "source_flowers_delta_pp": -0.030769230769230663,
+        "transfer_delta_pp": -1.1626666666666663,
+        "transfer_accuracy_pct": 88.45866666666667,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "dtd_k5_flowers_26091381",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091381,
+      "selected_step": 100,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.05676465393761678,
+          "raw_residual_energy": 0.056052565748104514,
+          "pair_cosine_rms_change": 0.051237705557326194,
+          "within_cosine_change": -0.03887867268462773,
+          "between_cosine_change": -0.05431456215251195,
+          "class_gap_change": 0.015435889467884219
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.023682717616670512,
+          "raw_residual_energy": 0.023674646188557833,
+          "pair_cosine_rms_change": 0.019624004832568535,
+          "within_cosine_change": -0.014155503970343184,
+          "between_cosine_change": -0.021451004167513645,
+          "class_gap_change": 0.00729550019717046
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.20128683530469074,
+          "raw_residual_energy": 0.19231138227235095,
+          "pair_cosine_rms_change": 0.1514400410329748,
+          "within_cosine_change": -0.05126511091232093,
+          "between_cosine_change": -0.1961024752786773,
+          "class_gap_change": 0.14483736436635636
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.06153846153846154,
+        "source_original_delta_pp": 0.12307692307692308,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.007999999999999941,
+        "transfer_accuracy_pct": 89.61333333333333,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "dtd_k5_mixed_26091381",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091381,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.34581262264571294,
+          "raw_residual_energy": 0.4274177733542331,
+          "pair_cosine_rms_change": 0.13740847237790582,
+          "within_cosine_change": 0.015213758736129398,
+          "between_cosine_change": -0.13040379106523425,
+          "class_gap_change": 0.14561754980136365
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.17465286209673603,
+          "raw_residual_energy": 0.19165326651020126,
+          "pair_cosine_rms_change": 0.0392417395699306,
+          "within_cosine_change": -0.01079740432435204,
+          "between_cosine_change": -0.020222851790419973,
+          "class_gap_change": 0.009425447466067933
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.13592977657810318,
+          "raw_residual_energy": 0.14419063452901568,
+          "pair_cosine_rms_change": 0.05520537642517649,
+          "within_cosine_change": -0.016234770044091996,
+          "between_cosine_change": -0.0524507895226739,
+          "class_gap_change": 0.036216019478581905
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.7846153846153846,
+        "source_original_delta_pp": 1.6,
+        "source_flowers_delta_pp": -0.030769230769230663,
+        "transfer_delta_pp": -0.7893333333333332,
+        "transfer_accuracy_pct": 88.832,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "dtd_k5_original_26091382",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091382,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.422252002907077,
+          "raw_residual_energy": 0.524599383043728,
+          "pair_cosine_rms_change": 0.16415684946829914,
+          "within_cosine_change": 0.02233327732105661,
+          "between_cosine_change": -0.16948965584248535,
+          "class_gap_change": 0.19182293316354196
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.30014505785309614,
+          "raw_residual_energy": 0.3369571454179234,
+          "pair_cosine_rms_change": 0.06594259278276385,
+          "within_cosine_change": -0.022622982824852915,
+          "between_cosine_change": -0.045563525439188235,
+          "class_gap_change": 0.02294054261433532
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.22351703189345287,
+          "raw_residual_energy": 0.2573326748282799,
+          "pair_cosine_rms_change": 0.050255557415481995,
+          "within_cosine_change": -0.006465662513545686,
+          "between_cosine_change": -0.014872782863898988,
+          "class_gap_change": 0.008407120350353302
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.7846153846153846,
+        "source_original_delta_pp": 1.6,
+        "source_flowers_delta_pp": -0.030769230769230663,
+        "transfer_delta_pp": -1.509333333333333,
+        "transfer_accuracy_pct": 88.112,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "dtd_k5_flowers_26091382",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091382,
+      "selected_step": 100,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.042163971994207496,
+          "raw_residual_energy": 0.041928284029134365,
+          "pair_cosine_rms_change": 0.04900020920885117,
+          "within_cosine_change": -0.037139423434219485,
+          "between_cosine_change": -0.05242387040660495,
+          "class_gap_change": 0.015284446972385464
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.022952823378440755,
+          "raw_residual_energy": 0.02294589538731445,
+          "pair_cosine_rms_change": 0.018851007067312457,
+          "within_cosine_change": -0.013714280162920273,
+          "between_cosine_change": -0.02062655398973408,
+          "class_gap_change": 0.006912273826813805
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.17501948265236117,
+          "raw_residual_energy": 0.1684483823717096,
+          "pair_cosine_rms_change": 0.14540307409986206,
+          "within_cosine_change": -0.05050946705200968,
+          "between_cosine_change": -0.18905624112617764,
+          "class_gap_change": 0.13854677407416796
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.0461538461538461,
+        "source_original_delta_pp": 0.0923076923076922,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.03733333333333302,
+        "transfer_accuracy_pct": 89.584,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "dtd_k5_mixed_26091382",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091382,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.3284945466614291,
+          "raw_residual_energy": 0.3890042139751097,
+          "pair_cosine_rms_change": 0.13321649715020534,
+          "within_cosine_change": 0.010459778184872131,
+          "between_cosine_change": -0.12861607151260418,
+          "class_gap_change": 0.1390758496974763
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.24913688039769066,
+          "raw_residual_energy": 0.27517375130679417,
+          "pair_cosine_rms_change": 0.03875075914115197,
+          "within_cosine_change": -0.006262972158979809,
+          "between_cosine_change": -0.014453512129226156,
+          "class_gap_change": 0.008190539970246347
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.167916552706335,
+          "raw_residual_energy": 0.1824496316140417,
+          "pair_cosine_rms_change": 0.04673068438522983,
+          "within_cosine_change": -0.008694477695451985,
+          "between_cosine_change": -0.0326268359055782,
+          "class_gap_change": 0.023932358210126216
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.8615384615384615,
+        "source_original_delta_pp": 1.7538461538461538,
+        "source_flowers_delta_pp": -0.030769230769230663,
+        "transfer_delta_pp": -1.1066666666666665,
+        "transfer_accuracy_pct": 88.51466666666667,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "dtd_k5_original_26091383",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091383,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.4325936468593689,
+          "raw_residual_energy": 0.5270327345108915,
+          "pair_cosine_rms_change": 0.1721602563795686,
+          "within_cosine_change": 0.009339345472016897,
+          "between_cosine_change": -0.18804022162750128,
+          "class_gap_change": 0.19737956709951818
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.2594757245823004,
+          "raw_residual_energy": 0.289229925510466,
+          "pair_cosine_rms_change": 0.07032945964215116,
+          "within_cosine_change": -0.02892022465544509,
+          "between_cosine_change": -0.054532904254286425,
+          "class_gap_change": 0.025612679598841337
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.2554378922228831,
+          "raw_residual_energy": 0.29798330628526315,
+          "pair_cosine_rms_change": 0.04683255793347932,
+          "within_cosine_change": -0.005816126146768644,
+          "between_cosine_change": -0.009975806568233285,
+          "class_gap_change": 0.004159680421464642
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.9846153846153847,
+        "source_original_delta_pp": 2.0307692307692307,
+        "source_flowers_delta_pp": -0.06153846153846133,
+        "transfer_delta_pp": -1.6213333333333328,
+        "transfer_accuracy_pct": 88.0,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "dtd_k5_flowers_26091383",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091383,
+      "selected_step": 50,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.014282704411133239,
+          "raw_residual_energy": 0.014301391902751561,
+          "pair_cosine_rms_change": 0.01779905835478115,
+          "within_cosine_change": -0.012730669425837171,
+          "between_cosine_change": -0.017744937959485944,
+          "class_gap_change": 0.005014268533648773
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.006344188002581845,
+          "raw_residual_energy": 0.006360350140711333,
+          "pair_cosine_rms_change": 0.006757238288718381,
+          "within_cosine_change": -0.004825896558581547,
+          "between_cosine_change": -0.007237955948741004,
+          "class_gap_change": 0.002412059390159457
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.06532730932230843,
+          "raw_residual_energy": 0.064878623582406,
+          "pair_cosine_rms_change": 0.058311306820269374,
+          "within_cosine_change": -0.020154242711082373,
+          "between_cosine_change": -0.07303530525102017,
+          "class_gap_change": 0.052881062539937795
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.06153846153846133,
+        "source_original_delta_pp": 0.12307692307692265,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.005333333333333412,
+        "transfer_accuracy_pct": 89.616,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "dtd_k5_mixed_26091383",
+      "source": "dtd",
+      "target": "eurosat",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091383,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.3426864496290344,
+          "raw_residual_energy": 0.3956358245722331,
+          "pair_cosine_rms_change": 0.14525689977336276,
+          "within_cosine_change": -1.845294113905771e-05,
+          "between_cosine_change": -0.15187256448874104,
+          "class_gap_change": 0.15185411154760198
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.1943806330826917,
+          "raw_residual_energy": 0.21441950403642027,
+          "pair_cosine_rms_change": 0.046308367852595705,
+          "within_cosine_change": -0.014394298200783546,
+          "between_cosine_change": -0.030998776562770843,
+          "class_gap_change": 0.016604478361987297
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.18748881714340423,
+          "raw_residual_energy": 0.20722278571203312,
+          "pair_cosine_rms_change": 0.042058628165847815,
+          "within_cosine_change": -0.00692142338855212,
+          "between_cosine_change": -0.025868231611364173,
+          "class_gap_change": 0.018946808222812053
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.7076923076923076,
+        "source_original_delta_pp": 1.4153846153846152,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -1.0906666666666665,
+        "transfer_accuracy_pct": 88.53066666666666,
+        "transfer_zero_accuracy_pct": 89.62133333333334
+      }
+    },
+    {
+      "key": "eurosat_k1_original_26091381",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091381,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.25853877670483044,
+          "raw_residual_energy": 0.3140837660019427,
+          "pair_cosine_rms_change": 0.09461178101107189,
+          "within_cosine_change": -0.03141191632458881,
+          "between_cosine_change": -0.0433366251063121,
+          "class_gap_change": 0.01192470878172329
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.941259875295392,
+          "raw_residual_energy": 1.1849536076752145,
+          "pair_cosine_rms_change": 0.43243055145643167,
+          "within_cosine_change": -0.02007677221821936,
+          "between_cosine_change": -0.5510553952831014,
+          "class_gap_change": 0.5309786230648821
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.19459188292126472,
+          "raw_residual_energy": 0.23661634310295535,
+          "pair_cosine_rms_change": 0.05365706359706254,
+          "within_cosine_change": 0.01191679251709041,
+          "between_cosine_change": 0.04355467662680388,
+          "class_gap_change": -0.03163788410971347
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 12.520000000000001,
+        "source_original_delta_pp": 25.360000000000007,
+        "source_flowers_delta_pp": -0.3199999999999996,
+        "transfer_delta_pp": -6.429333333333334,
+        "transfer_accuracy_pct": 68.98933333333333,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k1_flowers_26091381",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091381,
+      "selected_step": 0,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 6.024899474405938e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.1203047541926722e-16,
+          "within_cosine_change": -1.8858341537669743e-16,
+          "between_cosine_change": -1.3209648219020265e-16,
+          "class_gap_change": -5.648693318649478e-17
+        },
+        "eurosat": {
+          "mean_sq_displacement": 7.028166756631336e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 3.2982335358450397e-16,
+          "within_cosine_change": -2.940356291780688e-16,
+          "between_cosine_change": -2.3809079707781677e-16,
+          "class_gap_change": -5.594483210025203e-17
+        },
+        "flowers": {
+          "mean_sq_displacement": 6.505691514748655e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.993145844978455e-16,
+          "within_cosine_change": -3.010287331906003e-16,
+          "between_cosine_change": -1.671297648886405e-16,
+          "class_gap_change": -1.338989683019598e-16
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.0,
+        "source_original_delta_pp": 0.0,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": 0.0,
+        "transfer_accuracy_pct": 75.41866666666667,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k1_mixed_26091381",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091381,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.252236962844891,
+          "raw_residual_energy": 0.2840611787728057,
+          "pair_cosine_rms_change": 0.12188896074151749,
+          "within_cosine_change": -0.06587183405774324,
+          "between_cosine_change": -0.09842413852442161,
+          "class_gap_change": 0.03255230446667837
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.900508226618132,
+          "raw_residual_energy": 1.075653356706904,
+          "pair_cosine_rms_change": 0.4323346678976012,
+          "within_cosine_change": -0.03339874403464767,
+          "between_cosine_change": -0.5400004415522807,
+          "class_gap_change": 0.506601697517633
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.3965314638712908,
+          "raw_residual_energy": 0.4207758536330023,
+          "pair_cosine_rms_change": 0.1903591617090919,
+          "within_cosine_change": -0.03627865816206168,
+          "between_cosine_change": -0.2369852539030483,
+          "class_gap_change": 0.20070659574098662
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 11.240000000000002,
+        "source_original_delta_pp": 22.826666666666668,
+        "source_flowers_delta_pp": -0.34666666666666646,
+        "transfer_delta_pp": -6.082666666666666,
+        "transfer_accuracy_pct": 69.33599999999998,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k1_original_26091382",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091382,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.20757454393179642,
+          "raw_residual_energy": 0.24651677060717425,
+          "pair_cosine_rms_change": 0.09750361047188338,
+          "within_cosine_change": -0.04200144454340701,
+          "between_cosine_change": -0.05682631115661593,
+          "class_gap_change": 0.01482486661320892
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.9421410594971031,
+          "raw_residual_energy": 1.1682517049389414,
+          "pair_cosine_rms_change": 0.435573216801141,
+          "within_cosine_change": -0.02783448227793283,
+          "between_cosine_change": -0.5576000347801768,
+          "class_gap_change": 0.529765552502244
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.11721837468355377,
+          "raw_residual_energy": 0.12959697418883423,
+          "pair_cosine_rms_change": 0.030433615208138268,
+          "within_cosine_change": -0.0017563600915954762,
+          "between_cosine_change": 0.004618256874387454,
+          "class_gap_change": -0.00637461696598293
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 12.000000000000002,
+        "source_original_delta_pp": 24.240000000000002,
+        "source_flowers_delta_pp": -0.23999999999999977,
+        "transfer_delta_pp": -5.896,
+        "transfer_accuracy_pct": 69.52266666666667,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k1_flowers_26091382",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091382,
+      "selected_step": 0,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 6.024899474405938e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.1203047541926722e-16,
+          "within_cosine_change": -1.8858341537669743e-16,
+          "between_cosine_change": -1.3209648219020265e-16,
+          "class_gap_change": -5.648693318649478e-17
+        },
+        "eurosat": {
+          "mean_sq_displacement": 7.028166756631336e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 3.2982335358450397e-16,
+          "within_cosine_change": -2.940356291780688e-16,
+          "between_cosine_change": -2.3809079707781677e-16,
+          "class_gap_change": -5.594483210025203e-17
+        },
+        "flowers": {
+          "mean_sq_displacement": 6.505691514748655e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.993145844978455e-16,
+          "within_cosine_change": -3.010287331906003e-16,
+          "between_cosine_change": -1.671297648886405e-16,
+          "class_gap_change": -1.338989683019598e-16
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.0,
+        "source_original_delta_pp": 0.0,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": 0.0,
+        "transfer_accuracy_pct": 75.41866666666667,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k1_mixed_26091382",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091382,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.20366490758072545,
+          "raw_residual_energy": 0.2215447975940989,
+          "pair_cosine_rms_change": 0.12210444915833961,
+          "within_cosine_change": -0.07405199994803374,
+          "between_cosine_change": -0.10912999305478405,
+          "class_gap_change": 0.035077993106750305
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.8706629874531269,
+          "raw_residual_energy": 1.00319103821762,
+          "pair_cosine_rms_change": 0.4235054858998293,
+          "within_cosine_change": -0.04404366618538307,
+          "between_cosine_change": -0.5367602775468463,
+          "class_gap_change": 0.4927166113614632
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.4473491111599867,
+          "raw_residual_energy": 0.44390594791542676,
+          "pair_cosine_rms_change": 0.22397492585064957,
+          "within_cosine_change": -0.0572531827880415,
+          "between_cosine_change": -0.28324912217891374,
+          "class_gap_change": 0.22599593939087223
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 11.466666666666667,
+        "source_original_delta_pp": 23.30666666666667,
+        "source_flowers_delta_pp": -0.3733333333333333,
+        "transfer_delta_pp": -4.818666666666667,
+        "transfer_accuracy_pct": 70.6,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k1_original_26091383",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "original",
+      "seed": 26091383,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.23797864496659918,
+          "raw_residual_energy": 0.2925987926538361,
+          "pair_cosine_rms_change": 0.09910033828460674,
+          "within_cosine_change": -0.028227038188079482,
+          "between_cosine_change": -0.04755664339411551,
+          "class_gap_change": 0.019329605206036025
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.8749534928517616,
+          "raw_residual_energy": 1.1319482044276803,
+          "pair_cosine_rms_change": 0.43138185723231354,
+          "within_cosine_change": -0.016210885152843756,
+          "between_cosine_change": -0.5519575276136942,
+          "class_gap_change": 0.5357466424608505
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.16941648861915828,
+          "raw_residual_energy": 0.1990687979640757,
+          "pair_cosine_rms_change": 0.04189959307841164,
+          "within_cosine_change": 0.008414079490794816,
+          "between_cosine_change": 0.03173822242999698,
+          "class_gap_change": -0.023324142939202163
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 12.213333333333333,
+        "source_original_delta_pp": 24.69333333333333,
+        "source_flowers_delta_pp": -0.26666666666666616,
+        "transfer_delta_pp": -5.874666666666667,
+        "transfer_accuracy_pct": 69.54400000000001,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k1_flowers_26091383",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "flowers",
+      "seed": 26091383,
+      "selected_step": 50,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.05521322876532848,
+          "raw_residual_energy": 0.054283938393769444,
+          "pair_cosine_rms_change": 0.04458800935842306,
+          "within_cosine_change": -0.03312980926161742,
+          "between_cosine_change": -0.046682091146028795,
+          "class_gap_change": 0.013552281884411377
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.021653883640955763,
+          "raw_residual_energy": 0.02154134535819228,
+          "pair_cosine_rms_change": 0.01310358176639948,
+          "within_cosine_change": -0.009264400509497528,
+          "between_cosine_change": -0.014554804947664418,
+          "class_gap_change": 0.00529040443816689
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.34137485808197715,
+          "raw_residual_energy": 0.3242124318986734,
+          "pair_cosine_rms_change": 0.1952932025395759,
+          "within_cosine_change": -0.046010060905827724,
+          "between_cosine_change": -0.2536610429869747,
+          "class_gap_change": 0.20765098208114702
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.13333333333333325,
+        "source_original_delta_pp": 0.21333333333333326,
+        "source_flowers_delta_pp": 0.053333333333333226,
+        "transfer_delta_pp": -0.2533333333333333,
+        "transfer_accuracy_pct": 75.16533333333334,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k1_mixed_26091383",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 1,
+      "arm": "mixed",
+      "seed": 26091383,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.2219275743706986,
+          "raw_residual_energy": 0.24259355305366545,
+          "pair_cosine_rms_change": 0.11689850127412103,
+          "within_cosine_change": -0.06606472784602907,
+          "between_cosine_change": -0.10069065628762755,
+          "class_gap_change": 0.03462592844159848
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.8377100091077078,
+          "raw_residual_energy": 0.9849232625395248,
+          "pair_cosine_rms_change": 0.4363656732517656,
+          "within_cosine_change": -0.041789049168561535,
+          "between_cosine_change": -0.5558820311413136,
+          "class_gap_change": 0.5140929819727521
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.39633536526186747,
+          "raw_residual_energy": 0.39505939696332604,
+          "pair_cosine_rms_change": 0.2181919429701038,
+          "within_cosine_change": -0.056279592708453015,
+          "between_cosine_change": -0.2744754403323994,
+          "class_gap_change": 0.2181958476239464
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 11.373333333333333,
+        "source_original_delta_pp": 23.413333333333338,
+        "source_flowers_delta_pp": -0.6666666666666667,
+        "transfer_delta_pp": -4.632,
+        "transfer_accuracy_pct": 70.78666666666666,
+        "transfer_zero_accuracy_pct": 75.41866666666667
+      }
+    },
+    {
+      "key": "eurosat_k5_original_26091381",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091381,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.17710085579404516,
+          "raw_residual_energy": 0.20075517461067166,
+          "pair_cosine_rms_change": 0.060510497286295824,
+          "within_cosine_change": -0.016970188263270753,
+          "between_cosine_change": -0.022175666030111837,
+          "class_gap_change": 0.005205477766841084
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.6409264507692987,
+          "raw_residual_energy": 0.6587584592244464,
+          "pair_cosine_rms_change": 0.3000240932019586,
+          "within_cosine_change": -0.05280931987033564,
+          "between_cosine_change": -0.37618335288782667,
+          "class_gap_change": 0.323374033017491
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.13078251860442086,
+          "raw_residual_energy": 0.1472072883724176,
+          "pair_cosine_rms_change": 0.03293402236154215,
+          "within_cosine_change": -0.0006549782810971526,
+          "between_cosine_change": 0.00530721020685238,
+          "class_gap_change": -0.005962188487949533
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 3.6153846153846154,
+        "source_original_delta_pp": 7.23076923076923,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -1.1066666666666671,
+        "transfer_accuracy_pct": 89.13333333333333,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    },
+    {
+      "key": "eurosat_k5_flowers_26091381",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091381,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.08204019455972648,
+          "raw_residual_energy": 0.08091522669579425,
+          "pair_cosine_rms_change": 0.09405113207309729,
+          "within_cosine_change": -0.07338807837149473,
+          "between_cosine_change": -0.1030345344195589,
+          "class_gap_change": 0.029646456048064165
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.039711615277635864,
+          "raw_residual_energy": 0.039853739803919465,
+          "pair_cosine_rms_change": 0.03831483545784511,
+          "within_cosine_change": -0.027541069602640487,
+          "between_cosine_change": -0.042501752854306865,
+          "class_gap_change": 0.014960683251666378
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.26710874058775574,
+          "raw_residual_energy": 0.25141975781930703,
+          "pair_cosine_rms_change": 0.21316266314152024,
+          "within_cosine_change": -0.06859782173077147,
+          "between_cosine_change": -0.279473930624015,
+          "class_gap_change": 0.2108761088932435
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.04615384615384621,
+        "source_original_delta_pp": 0.09230769230769242,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.17333333333333348,
+        "transfer_accuracy_pct": 90.06666666666668,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    },
+    {
+      "key": "eurosat_k5_mixed_26091381",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091381,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.15140238838850847,
+          "raw_residual_energy": 0.1606953011147487,
+          "pair_cosine_rms_change": 0.0648881197276186,
+          "within_cosine_change": -0.03573022657287834,
+          "between_cosine_change": -0.04934670487424481,
+          "class_gap_change": 0.013616478301366468
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.6380331687740232,
+          "raw_residual_energy": 0.6293231956715405,
+          "pair_cosine_rms_change": 0.29675713675893767,
+          "within_cosine_change": -0.07169849672618342,
+          "between_cosine_change": -0.36984620130011014,
+          "class_gap_change": 0.2981477045739267
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.16010735822327912,
+          "raw_residual_energy": 0.17029765671559915,
+          "pair_cosine_rms_change": 0.0385448827650427,
+          "within_cosine_change": -0.006580830464611744,
+          "between_cosine_change": -0.029702489482574982,
+          "class_gap_change": 0.023121659017963238
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 3.4769230769230766,
+        "source_original_delta_pp": 6.953846153846153,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.7813333333333335,
+        "transfer_accuracy_pct": 89.45866666666666,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    },
+    {
+      "key": "eurosat_k5_original_26091382",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091382,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.14681216095883692,
+          "raw_residual_energy": 0.158511985311823,
+          "pair_cosine_rms_change": 0.05816904599134871,
+          "within_cosine_change": -0.02801580117445783,
+          "between_cosine_change": -0.034018742331503975,
+          "class_gap_change": 0.006002941157046145
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.743759932131349,
+          "raw_residual_energy": 0.7458398128297026,
+          "pair_cosine_rms_change": 0.3376079437573746,
+          "within_cosine_change": -0.07423871231383394,
+          "between_cosine_change": -0.42949834490690497,
+          "class_gap_change": 0.35525963259307103
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.11182732828768381,
+          "raw_residual_energy": 0.1217424219874404,
+          "pair_cosine_rms_change": 0.025290593705260253,
+          "within_cosine_change": -0.004039629959300992,
+          "between_cosine_change": 0.0006801476784358895,
+          "class_gap_change": -0.004719777637736882
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 3.7538461538461543,
+        "source_original_delta_pp": 7.5076923076923086,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.8133333333333336,
+        "transfer_accuracy_pct": 89.42666666666666,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    },
+    {
+      "key": "eurosat_k5_flowers_26091382",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091382,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.07203002447781988,
+          "raw_residual_energy": 0.07162960323390197,
+          "pair_cosine_rms_change": 0.09534981543393517,
+          "within_cosine_change": -0.07433591034482966,
+          "between_cosine_change": -0.10476012157420685,
+          "class_gap_change": 0.03042421122937719
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.04043322440565943,
+          "raw_residual_energy": 0.04060931542713247,
+          "pair_cosine_rms_change": 0.03859260392699586,
+          "within_cosine_change": -0.028008021245019388,
+          "between_cosine_change": -0.04279359922804031,
+          "class_gap_change": 0.014785577983020923
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.2775021234578491,
+          "raw_residual_energy": 0.26018570023249227,
+          "pair_cosine_rms_change": 0.21575396275673978,
+          "within_cosine_change": -0.07169066760707178,
+          "between_cosine_change": -0.28362050221359625,
+          "class_gap_change": 0.21192983460652448
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.07692307692307676,
+        "source_original_delta_pp": 0.15384615384615352,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.07200000000000016,
+        "transfer_accuracy_pct": 90.16799999999999,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    },
+    {
+      "key": "eurosat_k5_mixed_26091382",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091382,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.1178722155449753,
+          "raw_residual_energy": 0.12415880487483634,
+          "pair_cosine_rms_change": 0.06380114039708167,
+          "within_cosine_change": -0.038320132983825236,
+          "between_cosine_change": -0.048646993133081004,
+          "class_gap_change": 0.010326860149255768
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.6482948994743697,
+          "raw_residual_energy": 0.6277785918727956,
+          "pair_cosine_rms_change": 0.318167403513754,
+          "within_cosine_change": -0.08567575778782295,
+          "between_cosine_change": -0.3942442547186994,
+          "class_gap_change": 0.30856849693087646
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.09877541144833243,
+          "raw_residual_energy": 0.1023618887116787,
+          "pair_cosine_rms_change": 0.03677584629270528,
+          "within_cosine_change": -0.011630140167769058,
+          "between_cosine_change": -0.03383918186325257,
+          "class_gap_change": 0.02220904169548351
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 3.292307692307692,
+        "source_original_delta_pp": 6.615384615384615,
+        "source_flowers_delta_pp": -0.030769230769230663,
+        "transfer_delta_pp": -0.8400000000000005,
+        "transfer_accuracy_pct": 89.4,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    },
+    {
+      "key": "eurosat_k5_original_26091383",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "original",
+      "seed": 26091383,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.15777238634453986,
+          "raw_residual_energy": 0.16885011702260402,
+          "pair_cosine_rms_change": 0.07628297244525485,
+          "within_cosine_change": -0.04370717990897252,
+          "between_cosine_change": -0.05782817498709658,
+          "class_gap_change": 0.01412099507812406
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.6943130218973897,
+          "raw_residual_energy": 0.68961783481951,
+          "pair_cosine_rms_change": 0.3493722201932256,
+          "within_cosine_change": -0.08317625660116533,
+          "between_cosine_change": -0.4459353888845648,
+          "class_gap_change": 0.36275913228339945
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.11385826995883812,
+          "raw_residual_energy": 0.12318883477399999,
+          "pair_cosine_rms_change": 0.026372870192078072,
+          "within_cosine_change": -0.00595633228332512,
+          "between_cosine_change": -0.0028267064460659134,
+          "class_gap_change": -0.003129625837259207
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 3.769230769230769,
+        "source_original_delta_pp": 7.538461538461538,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -1.0266666666666666,
+        "transfer_accuracy_pct": 89.21333333333334,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    },
+    {
+      "key": "eurosat_k5_flowers_26091383",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "flowers",
+      "seed": 26091383,
+      "selected_step": 0,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 6.024899474405938e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.1203047541926722e-16,
+          "within_cosine_change": -1.8858341537669743e-16,
+          "between_cosine_change": -1.3209648219020265e-16,
+          "class_gap_change": -5.648693318649478e-17
+        },
+        "eurosat": {
+          "mean_sq_displacement": 7.028166756631336e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 3.2982335358450397e-16,
+          "within_cosine_change": -2.940356291780688e-16,
+          "between_cosine_change": -2.3809079707781677e-16,
+          "class_gap_change": -5.594483210025203e-17
+        },
+        "flowers": {
+          "mean_sq_displacement": 6.505691514748655e-32,
+          "raw_residual_energy": 0.0,
+          "pair_cosine_rms_change": 2.993145844978455e-16,
+          "within_cosine_change": -3.010287331906003e-16,
+          "between_cosine_change": -1.671297648886405e-16,
+          "class_gap_change": -1.338989683019598e-16
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 0.0,
+        "source_original_delta_pp": 0.0,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": 0.0,
+        "transfer_accuracy_pct": 90.23999999999998,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    },
+    {
+      "key": "eurosat_k5_mixed_26091383",
+      "source": "eurosat",
+      "target": "dtd",
+      "shot": 5,
+      "arm": "mixed",
+      "seed": 26091383,
+      "selected_step": 200,
+      "geometry": {
+        "dtd": {
+          "mean_sq_displacement": 0.12691626496356345,
+          "raw_residual_energy": 0.13021216711592218,
+          "pair_cosine_rms_change": 0.07159978978489363,
+          "within_cosine_change": -0.048051453927664384,
+          "between_cosine_change": -0.06380108734020605,
+          "class_gap_change": 0.015749633412541666
+        },
+        "eurosat": {
+          "mean_sq_displacement": 0.5731744671667477,
+          "raw_residual_energy": 0.5577104831732496,
+          "pair_cosine_rms_change": 0.31550106193728195,
+          "within_cosine_change": -0.0911713362909657,
+          "between_cosine_change": -0.3941730103207685,
+          "class_gap_change": 0.3030016740298028
+        },
+        "flowers": {
+          "mean_sq_displacement": 0.14016332490558522,
+          "raw_residual_energy": 0.14118760585252862,
+          "pair_cosine_rms_change": 0.05884165778625608,
+          "within_cosine_change": -0.02069267731352304,
+          "between_cosine_change": -0.06911609720152831,
+          "class_gap_change": 0.04842341988800527
+        }
+      },
+      "saved_accuracy": {
+        "source_macro_delta_pp": 3.507692307692308,
+        "source_original_delta_pp": 7.015384615384615,
+        "source_flowers_delta_pp": 0.0,
+        "transfer_delta_pp": -0.7066666666666668,
+        "transfer_accuracy_pct": 89.53333333333335,
+        "transfer_zero_accuracy_pct": 90.23999999999998
+      }
+    }
+  ],
+  "correlations": {
+    "dtd_k1": {
+      "nonzero_model_count": 6,
+      "geometry_pool": {
+        "dtd": {
+          "displacement_vs_transfer": -0.9571959290265603,
+          "distortion_vs_transfer": -0.8991470734434941,
+          "distortion_vs_transfer_adjusted_displacement": 0.16905430054025725,
+          "class_gap_vs_transfer": -0.9521615676960704
+        },
+        "flowers": {
+          "displacement_vs_transfer": -0.8250759580857645,
+          "distortion_vs_transfer": -0.23610374993989117,
+          "distortion_vs_transfer_adjusted_displacement": 0.5240417365183226,
+          "class_gap_vs_transfer": 0.2568118546615575
+        },
+        "eurosat": {
+          "displacement_vs_transfer": -0.9483914145316195,
+          "distortion_vs_transfer": -0.7651243209668751,
+          "distortion_vs_transfer_adjusted_displacement": -0.9285462939104592,
+          "class_gap_vs_transfer": -0.2434853920987035
+        }
+      }
+    },
+    "dtd_k5": {
+      "nonzero_model_count": 9,
+      "geometry_pool": {
+        "dtd": {
+          "displacement_vs_transfer": -0.9717462188077146,
+          "distortion_vs_transfer": -0.9644718458407705,
+          "distortion_vs_transfer_adjusted_displacement": 0.040288592931402994,
+          "class_gap_vs_transfer": -0.9760541760861159
+        },
+        "flowers": {
+          "displacement_vs_transfer": -0.5827946554542969,
+          "distortion_vs_transfer": 0.7401927911538719,
+          "distortion_vs_transfer_adjusted_displacement": 0.9578271738068882,
+          "class_gap_vs_transfer": 0.8546515286867897
+        },
+        "eurosat": {
+          "displacement_vs_transfer": -0.9777279528782897,
+          "distortion_vs_transfer": -0.9652223627093605,
+          "distortion_vs_transfer_adjusted_displacement": -0.7833218496391972,
+          "class_gap_vs_transfer": -0.8652118909652899
+        }
+      }
+    },
+    "eurosat_k1": {
+      "nonzero_model_count": 7,
+      "geometry_pool": {
+        "eurosat": {
+          "displacement_vs_transfer": -0.9736184422188211,
+          "distortion_vs_transfer": -0.9522654307535927,
+          "distortion_vs_transfer_adjusted_displacement": 0.5856885209007331,
+          "class_gap_vs_transfer": -0.9626600000330888
+        },
+        "flowers": {
+          "displacement_vs_transfer": 0.3498037726391767,
+          "distortion_vs_transfer": 0.49291744780332575,
+          "distortion_vs_transfer_adjusted_displacement": 0.804750792148786,
+          "class_gap_vs_transfer": 0.5273595392527606
+        },
+        "dtd": {
+          "displacement_vs_transfer": -0.9719593028007858,
+          "distortion_vs_transfer": -0.7685984996050924,
+          "distortion_vs_transfer_adjusted_displacement": 0.25422421746164187,
+          "class_gap_vs_transfer": -0.16682016590005103
+        }
+      }
+    },
+    "eurosat_k5": {
+      "nonzero_model_count": 8,
+      "geometry_pool": {
+        "eurosat": {
+          "displacement_vs_transfer": -0.9382799745343479,
+          "distortion_vs_transfer": -0.9315686809659377,
+          "distortion_vs_transfer_adjusted_displacement": -0.03460438536470051,
+          "class_gap_vs_transfer": -0.9496563148607636
+        },
+        "flowers": {
+          "displacement_vs_transfer": 0.9272253977614923,
+          "distortion_vs_transfer": 0.9540302087411964,
+          "distortion_vs_transfer_adjusted_displacement": 0.5996422111426617,
+          "class_gap_vs_transfer": 0.9696949480292466
+        },
+        "dtd": {
+          "displacement_vs_transfer": -0.9477458478855986,
+          "distortion_vs_transfer": 0.8587723284411303,
+          "distortion_vs_transfer_adjusted_displacement": 0.41864882927519564,
+          "class_gap_vs_transfer": 0.925344382059237
+        }
+      }
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "independent_cases": 108,
+    "maximum_transform_error": 4.718447854656915e-16,
+    "maximum_pair_delta_error": 1.7763568394002505e-15,
+    "all_input_hashes_match": true,
+    "identity_models_zero": true,
+    "orthogonal_null_passed": true
+  },
+  "elapsed_seconds": 24.168853998184204,
+  "free_gib": 10.13376235961914
+}

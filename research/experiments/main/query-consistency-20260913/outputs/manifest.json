@@ -1,0 +1,83 @@
+{
+  "argv": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/query-consistency-20260913/study.py"
+  ],
+  "config": {
+    "semantic_run_id": "query-consistency-20260913",
+    "tier": "auxiliary/dev",
+    "domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "gamma_by_source": {
+      "dtd": 10,
+      "eurosat": 1
+    },
+    "eta_grid": [
+      0.0,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "ridge_lambda": 0.1,
+    "source_banks": "experiments/main/query-competence-20260913/outputs/{source}_selection_{ordinary,excluded}.npz",
+    "source_selection": "integer correct maximum pooled two galleries; ties lower eta; isotropic selected independently; both domain choices frozen before target",
+    "eval_episodes_per_domain": 500,
+    "target_galleries": [
+      "dtd",
+      "eurosat"
+    ],
+    "shots": [
+      1
+    ],
+    "views": 6,
+    "controls": [
+      "incumbent",
+      "isotropic",
+      "query_view_mean"
+    ],
+    "gate": {
+      "increment_pp": 0.5,
+      "pooled_ci_lower": 0,
+      "domain_delta_min": 0,
+      "cell_ci_lower_min": -0.5,
+      "beat_controls": true
+    },
+    "resources": {
+      "threads": 6,
+      "min_free_gib": 10,
+      "output_limit_mib": 80,
+      "spend": 0,
+      "local_only": true
+    },
+    "deadline": "2026-09-15T09:00:00+00:00",
+    "canonical_metric_deviation": "All five required Pets metrics unmeasured and unchanged; this auxiliary qualification is recorded as report/science rather than a fake canonical main score.",
+    "audit_indices": [
+      0,
+      99,
+      199,
+      299,
+      499
+    ],
+    "idea_id": "idea-b189d548"
+  },
+  "code_hashes": {
+    "experiments/main/query-competence-20260913/study.py": "367e0717eb64d47a7ec2d683f95d8b909cf1a9e6adc11038ef241864d860093c",
+    "experiments/main/query-competence-20260913/protocol.json": "63ea644710ebf3246be8f5803f27819c0192bf5cc947fa14442c8378f202e7e4",
+    "experiments/main/scatter-score-fusion-20260913/study.py": "d39f553e1bbf594f34eafc2c71128e46155ee180ea76278392324267abaa9814",
+    "experiments/analysis/scatter-centering-attribution-20260913/analysis.py": "49e7ced77308de69475f0c0028a0b5b23bdc163c5dcc12d4b63097b711d76cb9",
+    "experiments/main/scatter-centering-stack-20260913/model.py": "a8b1bc480cf99ad1df0aca549e7381a3a89989069ca76818f6fe7f9ae757baaf",
+    "experiments/main/scatter-centering-stack-20260913/summarize.py": "1ed8fe5359ae2f3a962fe12faebb625fac729b1918a98883d8879ff8899249e0",
+    "experiments/main/representation-scatter-20260913/evaluate.py": "c614d00a1ed0b13fe12b3c4ce48ea298fc2cac6b14d365ef3d471fce89e77b4a",
+    "experiments/main/utility-composition-qualification-20260913/run.py": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/consistency_model.py": "2c6cacda211b088f460c42fdb234dbf5051b338125e61fefe4ad8a94586606db",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/verify.py": "ae797a871504b52c2b4db52cc96c34fa8c2934a0b67e877af8883f40ba572585",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/study.py": "86836e3cc3402fd503a922f68877ceb0c4e790373a47e48966b8fc405279e944",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/protocol.json": "5ad7abb795feca0e1e4ada75c25f424e32d8ae6ab5f0cf6ff9254883edc5395f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/model.py": "a8b1bc480cf99ad1df0aca549e7381a3a89989069ca76818f6fe7f9ae757baaf"
+  },
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "started_utc": "2026-09-13T10:47:36.909160+00:00"
+}

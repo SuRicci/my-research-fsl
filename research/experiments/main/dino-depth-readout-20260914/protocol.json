@@ -1,0 +1,87 @@
+{
+  "idea_id": "idea-f8cdb193",
+  "decision_id": "decision-ad023a56",
+  "tier": "auxiliary/dev",
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "source_gamma": {
+    "dtd": 10,
+    "eurosat": 1
+  },
+  "source_eta": {
+    "dtd": 0,
+    "eurosat": 10
+  },
+  "base_dimension": 896,
+  "concat_dimension": 2048,
+  "blocks_zero_based": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "new_blocks": [
+    8,
+    9,
+    10
+  ],
+  "views": 6,
+  "expected_images": 14153,
+  "threads": 6,
+  "batch": 32,
+  "encoding_workers": 6,
+  "min_free_gib": 10,
+  "max_new_mib": 350,
+  "deadline": "2026-09-15T09:00:00+00:00",
+  "eval_tasks": 500,
+  "queries_per_class": 15,
+  "audit_indices": [
+    0,
+    99,
+    199,
+    299,
+    499
+  ],
+  "methods": [
+    "depth_consistency",
+    "final_consistency",
+    "final_scatter",
+    "depth_score_mean",
+    "depth_logistic_C1",
+    "depth_logistic_C10",
+    "depth_augmented_ridge",
+    "depth_scatter"
+  ],
+  "primary": "depth_consistency",
+  "gate_controls": [
+    "final_consistency",
+    "final_scatter",
+    "depth_score_mean",
+    "depth_logistic_C1",
+    "depth_logistic_C10",
+    "depth_augmented_ridge"
+  ],
+  "gate": {
+    "pooled_gain_pp": 0.5,
+    "pooled_ci_lower_gt": 0,
+    "each_domain_point_min_pp": 0,
+    "each_gallery_ci_lower_min_pp": -0.5
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 26091461,
+    "unit": "task stratified by original task seed and domain; gallery conditions averaged within task"
+  },
+  "source_selection": "none new; inherited gamma/eta and all layer/feature weights fixed before outcomes",
+  "metric_boundary": "Five canonicalPetsmetrics unchanged/unmeasured; exposed development only; no Caltechreevaluation",
+  "gamma_rule": "gamma_effective=source_gamma*896/feature_dimension",
+  "feature_rule": "half CLIP and half DINO weight, DINO energy split equally across4normalizedCLSblocks; final-block features reused from verified cache",
+  "encoding_parity": {
+    "max_abs": 0.001,
+    "min_cosine": 0.99999,
+    "native_intermediate_last_abs": 1e-06
+  },
+  "scope": "query-local inference, frozen encoders, no classnames, gallerylabels or targetselection; equalimages/views/pretrainedweights, not equalheadFLOPs"
+}

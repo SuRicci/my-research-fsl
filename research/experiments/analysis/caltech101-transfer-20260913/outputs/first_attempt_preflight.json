@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "target_features_or_classification_observed": false,
+  "source_score_parity_checks": 36,
+  "source_max_score_error": 0.0,
+  "independent_score_checks": 48,
+  "max_independent_score_error": 3.6800895636401876e-07,
+  "invariances": [
+    "query_order",
+    "query_partition",
+    "class_permutation",
+    "eta_zero_parent"
+  ],
+  "checks": [
+    {
+      "label": "synthetic/dtd",
+      "method": "original_r2",
+      "max_error": 6.130454721642309e-08
+    },
+    {
+      "label": "synthetic/dtd",
+      "method": "mean_r2",
+      "max_error": 1.0010017659212167e-07
+    },
+    {
+      "label": "synthetic/dtd",
+      "method": "mean_CS_l2",
+      "max_error": 7.159470449824568e-08
+    },
+    {
+      "label": "synthetic/dtd",
+      "method": "score_ensemble_r2",
+      "max_error": 3.000017034793245e-08
+    },
+    {
+      "label": "synthetic/dtd",
+      "method": "augmented_support_ridge",
+      "max_error": 1.2631870793811117e-07
+    },
+    {
+      "label": "synthetic/dtd",
+      "method": "scatter_r2",
+      "max_error": 1.582067810090848e-15
+    },
+    {
+      "label": "synthetic/dtd",
+      "method": "scatter_blend",
+      "max_error": 1.3877787807814457e-15
+    },
+    {
+      "label": "synthetic/dtd",
+      "method": "query_consistency",
+      "max_error": 1.3877787807814457e-15
+    },
+    {
+      "label": "synthetic/eurosat",
+      "method": "original_r2",
+      "max_error": 6.130454721642309e-08
+    },
+    {
+      "label": "synthetic/eurosat",
+      "method": "mean_r2",
+      "max_error": 1.0010017659212167e-07
+    },
+    {
+      "label": "synthetic/eurosat",
+      "method": "mean_CS_l2",
+      "max_error": 7.159470449824568e-08
+    },
+    {
+      "label": "synthetic/eurosat",
+      "method": "score_ensemble_r2",
+      "max_error": 3.000017034793245e-08
+    },
+    {
+      "label": "synthetic/eurosat",
+      "method": "augmented_support_ridge",
+      "max_error": 1.2631870793811117e-07
+    },
+    {
+      "label": "synthetic/eurosat",
+      "method": "scatter_r2",
+      "max_error": 1.27675647831893e-15
+    },
+    {
+      "label": "synthetic/eurosat",
+      "method": "scatter_blend",
+      "max_error": 1.2212453270876722e-15
+    },
+    {
+      "label": "synthetic/eurosat",
+      "method": "query_consistency",
+      "max_error": 1.1379786002407855e-15
+    },
+    {
+      "label": "source/eurosat/0",
+      "method": "original_r2",
+      "max_error": 2.0116832152861086e-07
+    },
+    {
+      "label": "source/eurosat/0",
+      "method": "mean_r2",
+      "max_error": 1.5979171708035977e-07
+    },
+    {
+      "label": "source/eurosat/0",
+      "method": "mean_CS_l2",
+      "max_error": 3.6800895636401876e-07
+    },
+    {
+      "label": "source/eurosat/0",
+      "method": "score_ensemble_r2",
+      "max_error": 6.377243338961947e-08
+    },
+    {
+      "label": "source/eurosat/0",
+      "method": "augmented_support_ridge",
+      "max_error": 4.98732680709324e-08
+    },
+    {
+      "label": "source/eurosat/0",
+      "method": "scatter_r2",
+      "max_error": 6.161737786669619e-15
+    },
+    {
+      "label": "source/eurosat/0",
+      "method": "scatter_blend",
+      "max_error": 6.106226635438361e-15
+    },
+    {
+      "label": "source/eurosat/0",
+      "method": "query_consistency",
+      "max_error": 6.106226635438361e-15
+    },
+    {
+      "label": "source/eurosat/100",
+      "method": "original_r2",
+      "max_error": 2.9627928710418416e-07
+    },
+    {
+      "label": "source/eurosat/100",
+      "method": "mean_r2",
+      "max_error": 1.3744169208296242e-07
+    },
+    {
+      "label": "source/eurosat/100",
+      "method": "mean_CS_l2",
+      "max_error": 2.468768687258205e-07
+    },
+    {
+      "label": "source/eurosat/100",
+      "method": "score_ensemble_r2",
+      "max_error": 1.7621125747435684e-07
+    },
+    {
+      "label": "source/eurosat/100",
+      "method": "augmented_support_ridge",
+      "max_error": 3.9604899138012684e-08
+    },
+    {
+      "label": "source/eurosat/100",
+      "method": "scatter_r2",
+      "max_error": 2.275957200481571e-15
+    },
+    {
+      "label": "source/eurosat/100",
+      "method": "scatter_blend",
+      "max_error": 2.4424906541753444e-15
+    },
+    {
+      "label": "source/eurosat/100",
+      "method": "query_consistency",
+      "max_error": 2.4424906541753444e-15
+    },
+    {
+      "label": "source/dtd/0",
+      "method": "original_r2",
+      "max_error": 1.7273190688893436e-07
+    },
+    {
+      "label": "source/dtd/0",
+      "method": "mean_r2",
+      "max_error": 1.7987765321691995e-07
+    },
+    {
+      "label": "source/dtd/0",
+      "method": "mean_CS_l2",
+      "max_error": 1.867899612761903e-07
+    },
+    {
+      "label": "source/dtd/0",
+      "method": "score_ensemble_r2",
+      "max_error": 7.499585696901789e-08
+    },
+    {
+      "label": "source/dtd/0",
+      "method": "augmented_support_ridge",
+      "max_error": 3.189268094061504e-08
+    },
+    {
+      "label": "source/dtd/0",
+      "method": "scatter_r2",
+      "max_error": 6.938893903907228e-16
+    },
+    {
+      "label": "source/dtd/0",
+      "method": "scatter_blend",
+      "max_error": 5.551115123125783e-16
+    },
+    {
+      "label": "source/dtd/0",
+      "method": "query_consistency",
+      "max_error": 5.273559366969494e-16
+    },
+    {
+      "label": "source/dtd/100",
+      "method": "original_r2",
+      "max_error": 1.0021120577796694e-07
+    },
+    {
+      "label": "source/dtd/100",
+      "method": "mean_r2",
+      "max_error": 1.8154909220413629e-07
+    },
+    {
+      "label": "source/dtd/100",
+      "method": "mean_CS_l2",
+      "max_error": 1.2676557135937738e-07
+    },
+    {
+      "label": "source/dtd/100",
+      "method": "score_ensemble_r2",
+      "max_error": 3.4099633033912724e-08
+    },
+    {
+      "label": "source/dtd/100",
+      "method": "augmented_support_ridge",
+      "max_error": 4.762359506749192e-08
+    },
+    {
+      "label": "source/dtd/100",
+      "method": "scatter_r2",
+      "max_error": 3.608224830031759e-16
+    },
+    {
+      "label": "source/dtd/100",
+      "method": "scatter_blend",
+      "max_error": 3.3306690738754696e-16
+    },
+    {
+      "label": "source/dtd/100",
+      "method": "query_consistency",
+      "max_error": 3.608224830031759e-16
+    }
+  ],
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "seconds": 18.065644025802612
+}

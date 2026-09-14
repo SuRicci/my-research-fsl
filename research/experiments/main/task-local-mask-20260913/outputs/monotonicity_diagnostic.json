@@ -1,0 +1,43 @@
+{
+  "kind": "report",
+  "report_type": "posthoc_mechanism_analysis",
+  "scope": "Existingtaskfeatures/predictionsonly; no newclassifierorparameterselection",
+  "derivation": "Forunitone-shotsupports,theownclasscosineis1. Weightedconcatcrossclasscosine=w*c_clip+(1-w)*c_dino. Ifeveryoffdiagonalclipcosinedominatesdino,eachwrongclasslogitandNLLstrictlyincreasewithw. Thus lossminimizationdriveswto0independentlyofunknownqueryutility. This is an algebraic conditional statement; fraction of tasks satisfying condition measuredbelow.",
+  "findings": {
+    "dtd": {
+      "all_pair_clip_cos_greater_fraction": 1.0,
+      "min_pairwise_cos_gap": 0.09024905180593146,
+      "mean_clip_offdiag_cos": 0.6572644681802579,
+      "mean_dino_offdiag_cos": 0.07430242761122477,
+      "dino_endpoint_minus_equal_cs_pp": -0.5933333333333333,
+      "mask_minus_dino_endpoint_pp": 0.009333333333333305,
+      "equal_cs_beats_dino_task_fraction": 0.552,
+      "weight_std": 1.6356325431843288e-05
+    },
+    "eurosat": {
+      "all_pair_clip_cos_greater_fraction": 0.972,
+      "min_pairwise_cos_gap": -0.08562176686317002,
+      "mean_clip_offdiag_cos": 0.7965740190054743,
+      "mean_dino_offdiag_cos": 0.3804362434368824,
+      "dino_endpoint_minus_equal_cs_pp": -3.6253333333333333,
+      "mask_minus_dino_endpoint_pp": 0.018666666666666665,
+      "equal_cs_beats_dino_task_fraction": 0.812,
+      "weight_std": 2.9990678740432486e-05
+    }
+  },
+  "inputs": {
+    "experiments/main/task-local-mask-20260913/outputs/eurosat_dtd_k1.npz": "0685a5d8db5d98eda2d88f8fd7c40f77bd8808866bdec879f0c370f027a31e8a",
+    "experiments/main/task-local-mask-20260913/outputs/masks_eurosat_k5.npz": "a467a05e40729cff411c16de0ea5b51550e21c473ec7b36423d838acf2dd886a",
+    "experiments/main/task-local-mask-20260913/outputs/masks_dtd_k5.npz": "ad19bb46f3f42e1b48b33cdb1fb0ec8c399bac09e3c7f9752d3e260740878e0e",
+    "experiments/main/task-local-mask-20260913/outputs/masks_dtd_k1.npz": "a3d7b9970f0fdfc016e279a614851dd0e26fa9d04a2661c7001f0c878f20eb12",
+    "experiments/main/task-local-mask-20260913/outputs/masks_eurosat_k1.npz": "81565b11c95b6fb42b865c174118bc4b6fe56569ac669de93882707063708d97",
+    "experiments/main/task-local-mask-20260913/outputs/eurosat_dtd_k5.npz": "adda1cda9ee8677c0a10445da259eb2a02f5a5b4bcc816342ea05724f3948c8b",
+    "experiments/main/task-local-mask-20260913/outputs/dtd_dtd_k5.npz": "096412f656adca24a806941149c3a5504a6a3ea617c245d9caddbee707c6b416",
+    "experiments/main/task-local-mask-20260913/outputs/dtd_dtd_k1.npz": "ee3bbb8c4cbfb6943284b5a49c2634f6b8f258e26c1073b4a185b62507f35911",
+    "experiments/main/task-local-mask-20260913/outputs/eurosat_eurosat_k1.npz": "6e6cdfa97ddfcb7372eed5b91d581bc99e9a7b9af15e855f05e879e21f7971de",
+    "experiments/main/task-local-mask-20260913/outputs/eurosat_eurosat_k5.npz": "c931192b1e0ec93b05a676d3f7f455b79bf2fcfaac2bc4456b6725c1869bb15b",
+    "experiments/main/task-local-mask-20260913/outputs/dtd_eurosat_k1.npz": "d50f4f9aa524218f72ec4dc6a763d05fe4c117f0c112ce436e17b8a4f93b2da1",
+    "experiments/main/task-local-mask-20260913/outputs/dtd_eurosat_k5.npz": "ea8b645e037fff9443f9f497c282a555ee51bde54a121a21ac47ffa9c18dda9a"
+  },
+  "causal_limit": "Demonstrates optimizerobjective preference on fixedsupportpairs, not a universal statement aboutCLIPdistancequality; no claimall1shotmethodsareunidentifiable."
+}

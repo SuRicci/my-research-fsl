@@ -1,0 +1,14 @@
+\section{Analysis}
+\subsection{Ranking and accumulated weight diverge}
+\input{tables/influence}
+Matched one-shot mean task AUROC is 0.9280 and 0.9263, but 80.408\% and 80.826\% of retained gallery weight is task-external. Ranking and retained mass answer different questions: the latter also depends on the number of irrelevant samples and their absolute weights. Good ordering does not demonstrate calibrated membership probabilities.
+
+In mismatched one-shot conditions every gallery example is task-external, yet the final gallery coefficient averages approximately 99.5\%. Little scalar mass remains on support in the final unnormalized average. This is an algebraic observation, not a measure of feature-vector direction or a causal contribution for each image. All 4,000 task-condition predictions replay exactly, linking the accounting to the evaluated procedure.
+
+\subsection{Mass and composition have distinct effects}
+\input{tables/interventions}
+Final mass balancing raises mismatched one-shot accuracy from 64.192\% to 94.301\% in the original pool and from 63.992\% to 93.613\% in confirmation. Most mismatch harm can be removed by this constrained intervention. However, matched one-shot accuracy remains below R2 by 0.483 and 0.624 pp, with both paired intervals negative (Appendix~\ref{app:interventions}). Mass correction alone does not meet the improvement objective.
+
+Oracle filtering gives matched one-shot accuracies of 97.923\% and 97.867\%, exceeding R2 by 1.683 and 1.851 pp. This diagnoses composition in an already-fitted state; it is not an admissible deployment comparison because gallery labels are unavailable at inference. It is also not a theoretical upper bound: earlier contaminated updates remain fixed. Combining filtering and balancing changes performance again, so the two operations are not interchangeable.
+
+Both diagnostics reuse the main evaluation tasks rather than adding independent test samples. Weight accounting is descriptive; final-step interventions isolate particular changes to a saved fitted state. Neither establishes that a learned membership estimator will generalize or that membership is the only useful next design direction.

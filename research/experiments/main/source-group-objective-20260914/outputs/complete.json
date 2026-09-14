@@ -1,0 +1,10 @@
+{
+  "status": "computed",
+  "qualification_gate_passed": false,
+  "selection_lock_sha256": "be35dff1874e4ec6d5d4b827d7f8b12254f7da4627dc53555d031707cc8bfeae",
+  "audit_pending": true,
+  "recovered_summary_only": true,
+  "original_training_session": "bash-1da1787d",
+  "training_fit_seconds": 194.85437107086182,
+  "summary_seconds": 2.486640214920044
+}

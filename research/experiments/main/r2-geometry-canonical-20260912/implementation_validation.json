@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "zero_origin_reference_error": 0.0,
+  "batch_error": 0.0,
+  "query_independence_error": 5.960464477539063e-08,
+  "real_dev_eight_episode_seconds": 0.0549168586730957
+}

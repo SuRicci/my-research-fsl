@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "n_samples": 16,
+  "rows": [
+    {
+      "backbone": "clip_vitb16",
+      "item": [
+        "cub200",
+        "query",
+        0
+      ],
+      "cosine": 0.9999992251396179,
+      "max_abs_error": 0.00026112794876098633
+    },
+    {
+      "backbone": "clip_vitb16",
+      "item": [
+        "cub200",
+        "query",
+        2897
+      ],
+      "cosine": 0.9999987483024597,
+      "max_abs_error": 0.00040094112046062946
+    },
+    {
+      "backbone": "clip_vitb16",
+      "item": [
+        "cub200",
+        "gallery",
+        0
+      ],
+      "cosine": 0.9999978542327881,
+      "max_abs_error": 0.0005785226821899414
+    },
+    {
+      "backbone": "clip_vitb16",
+      "item": [
+        "cub200",
+        "gallery",
+        2997
+      ],
+      "cosine": 0.999999463558197,
+      "max_abs_error": 0.00020713172852993011
+    },
+    {
+      "backbone": "clip_vitb16",
+      "item": [
+        "eurosat",
+        "query",
+        0
+      ],
+      "cosine": 0.9999976754188538,
+      "max_abs_error": 0.0004847422242164612
+    },
+    {
+      "backbone": "clip_vitb16",
+      "item": [
+        "eurosat",
+        "query",
+        2700
+      ],
+      "cosine": 0.9999983906745911,
+      "max_abs_error": 0.0005789622664451599
+    },
+    {
+      "backbone": "clip_vitb16",
+      "item": [
+        "eurosat",
+        "gallery",
+        4
+      ],
+      "cosine": 0.9999991059303284,
+      "max_abs_error": 0.00026316195726394653
+    },
+    {
+      "backbone": "clip_vitb16",
+      "item": [
+        "eurosat",
+        "gallery",
+        11201
+      ],
+      "cosine": 0.9999984502792358,
+      "max_abs_error": 0.0003635173197835684
+    },
+    {
+      "backbone": "dinov2_vits14",
+      "item": [
+        "cub200",
+        "query",
+        0
+      ],
+      "cosine": 0.9999969005584717,
+      "max_abs_error": 0.00045878905802965164
+    },
+    {
+      "backbone": "dinov2_vits14",
+      "item": [
+        "cub200",
+        "query",
+        2897
+      ],
+      "cosine": 0.9999902844429016,
+      "max_abs_error": 0.000703856348991394
+    },
+    {
+      "backbone": "dinov2_vits14",
+      "item": [
+        "cub200",
+        "gallery",
+        0
+      ],
+      "cosine": 0.9999963045120239,
+      "max_abs_error": 0.0004654601216316223
+    },
+    {
+      "backbone": "dinov2_vits14",
+      "item": [
+        "cub200",
+        "gallery",
+        2997
+      ],
+      "cosine": 0.9999970197677612,
+      "max_abs_error": 0.0004054229357279837
+    },
+    {
+      "backbone": "dinov2_vits14",
+      "item": [
+        "eurosat",
+        "query",
+        0
+      ],
+      "cosine": 0.9999908208847046,
+      "max_abs_error": 0.0007996559143066406
+    },
+    {
+      "backbone": "dinov2_vits14",
+      "item": [
+        "eurosat",
+        "query",
+        2700
+      ],
+      "cosine": 0.9999966621398926,
+      "max_abs_error": 0.00046596676111221313
+    },
+    {
+      "backbone": "dinov2_vits14",
+      "item": [
+        "eurosat",
+        "gallery",
+        4
+      ],
+      "cosine": 0.9999949932098389,
+      "max_abs_error": 0.0005389591678977013
+    },
+    {
+      "backbone": "dinov2_vits14",
+      "item": [
+        "eurosat",
+        "gallery",
+        11201
+      ],
+      "cosine": 0.9999953508377075,
+      "max_abs_error": 0.0005345307290554047
+    }
+  ]
+}

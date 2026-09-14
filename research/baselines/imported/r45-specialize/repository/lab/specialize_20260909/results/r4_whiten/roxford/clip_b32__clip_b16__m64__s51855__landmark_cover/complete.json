@@ -1,0 +1,109 @@
+{
+  "method": "r4_whiten",
+  "dataset": "roxford",
+  "pair": [
+    "clip_b32",
+    "clip_b16"
+  ],
+  "budget": 64,
+  "seed": 51855,
+  "policy": "landmark_cover",
+  "bridge_ids": [
+    "rparis:gallery:paris_invalides_000581",
+    "rparis:gallery:paris_museedorsay_000289",
+    "rparis:gallery:paris_notredame_001004",
+    "rparis:gallery:paris_sacrecoeur_000717",
+    "rparis:gallery:paris_pantheon_000496",
+    "rparis:gallery:paris_notredame_000414",
+    "rparis:gallery:paris_louvre_000188",
+    "rparis:gallery:paris_sacrecoeur_000071",
+    "rparis:gallery:paris_pantheon_001027",
+    "rparis:gallery:paris_pantheon_000230",
+    "rparis:gallery:paris_general_001635",
+    "rparis:gallery:paris_museedorsay_000447",
+    "rparis:gallery:paris_notredame_000789",
+    "rparis:gallery:paris_general_002867",
+    "rparis:gallery:paris_pantheon_000846",
+    "rparis:gallery:paris_museedorsay_000754",
+    "rparis:gallery:paris_pantheon_000079",
+    "rparis:gallery:paris_moulinrouge_000814",
+    "rparis:gallery:paris_pantheon_000007",
+    "rparis:gallery:paris_pompidou_000750",
+    "rparis:gallery:paris_museedorsay_001100",
+    "rparis:gallery:paris_museedorsay_000198",
+    "rparis:gallery:paris_triomphe_000762",
+    "rparis:gallery:paris_pantheon_001110",
+    "rparis:gallery:paris_notredame_000752",
+    "rparis:gallery:paris_invalides_000409",
+    "rparis:gallery:paris_pantheon_000257",
+    "rparis:gallery:paris_defense_000499",
+    "rparis:gallery:paris_triomphe_000770",
+    "rparis:gallery:paris_general_001624",
+    "rparis:gallery:paris_moulinrouge_000739",
+    "rparis:gallery:paris_invalides_000560",
+    "rparis:gallery:paris_general_001413",
+    "rparis:gallery:paris_museedorsay_000347",
+    "rparis:gallery:paris_triomphe_000564",
+    "rparis:gallery:paris_general_001682",
+    "rparis:gallery:paris_general_001377",
+    "rparis:gallery:paris_pantheon_000550",
+    "rparis:gallery:paris_invalides_000564",
+    "rparis:gallery:paris_pantheon_000534",
+    "rparis:gallery:paris_notredame_000892",
+    "rparis:gallery:paris_general_002979",
+    "rparis:gallery:paris_sacrecoeur_000478",
+    "rparis:gallery:paris_museedorsay_000997",
+    "rparis:gallery:paris_louvre_000229",
+    "rparis:gallery:paris_pompidou_000062",
+    "rparis:gallery:paris_sacrecoeur_000489",
+    "rparis:gallery:paris_pantheon_000055",
+    "rparis:gallery:paris_pompidou_000700",
+    "rparis:gallery:paris_general_002332",
+    "rparis:gallery:paris_museedorsay_000187",
+    "rparis:gallery:paris_moulinrouge_000021",
+    "rparis:gallery:paris_invalides_000347",
+    "rparis:gallery:paris_general_000780",
+    "rparis:gallery:paris_triomphe_000689",
+    "rparis:gallery:paris_general_002624",
+    "rparis:gallery:paris_pantheon_000586",
+    "rparis:gallery:paris_triomphe_000335",
+    "rparis:gallery:paris_pantheon_000950",
+    "rparis:gallery:paris_museedorsay_001024",
+    "rparis:gallery:paris_pantheon_001072",
+    "rparis:gallery:paris_pompidou_000153",
+    "rparis:gallery:paris_general_000906",
+    "rparis:gallery:paris_pompidou_000304"
+  ],
+  "parent_complete_sha256": "d567c9ab9ca7bf1da2cebf6f16e263fade6e3d4e2799891e7822a63d9281cbb8",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/roxford/clip_b32__clip_b16__m64__s51855__landmark_cover/aps.npz",
+      "sha256": "28d0955e6492b0eb9e26954eceae823efb3415cd817a378ab5130a9236428542"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/roxford/clip_b32__clip_b16__m64__s51855__landmark_cover/aps.npz",
+      "sha256": "46b674ed75819d2b836b90d8c2feae0d56edf0a03966cb703d355f537cc534bc"
+    }
+  ],
+  "sha256": "03d98f981a0dae0e4f5717d990a48420281141ab773b0235726ccaae5bedaba4",
+  "means": [
+    0.2797330775651843,
+    0.08103545583545659
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 64,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "bridge_rows_used": 0
+  },
+  "seconds": 0.5382237434387207
+}

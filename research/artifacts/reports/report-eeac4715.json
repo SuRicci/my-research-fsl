@@ -1,0 +1,80 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-eeac4715",
+  "id": "report-eeac4715",
+  "quest_id": "012",
+  "created_at": "2026-09-14T09:26:36+00:00",
+  "updated_at": "2026-09-14T09:26:36+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-a591ce8c"
+  },
+  "status": "completed",
+  "branch": "run/dino-base-control-20260914",
+  "head_commit": "f008582110887e36dfb3f88708585f11e36e7623",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "pause_summary",
+  "title": "实验4与实验5综合报告、可核验清理与用户要求的暂时暂停",
+  "summary": "已完成最后DINOv2-B固定控制及40例独立复核；其+0.224pp条件区间跨零，未通过升级门槛。17页中文综合报告逐项覆盖45方向、32主目录、42原账本条目和294来源路径，分别记录结果、优点、限制、问题。权重/原图/再生缓存已按用户要求清理，20716保护文件哈希一致；相同结果合并、Git无损压缩完成。报告、源码、证据索引、清理/哈希回执和恢复入口已归档。仅暂时暂停，不是论文投稿或quest完成。",
+  "delivery_dir": "/Users/decoqwq/DeepScientist/quests/012/handoffs/pause-20260914",
+  "report_path": "/Users/decoqwq/DeepScientist/quests/012/handoffs/pause-20260914/研究总报告.md",
+  "pdf_path": "/Users/decoqwq/DeepScientist/quests/012/handoffs/pause-20260914/研究总报告.pdf",
+  "archive_path": "/Users/decoqwq/DeepScientist/quests/012/handoffs/研究总报告与证据索引-20260914.zip",
+  "source_result_artifact_id": "report-334f4d70",
+  "source_decision_artifact_id": "decision-7e9d7567",
+  "validation": {
+    "directions": 45,
+    "main_directories": 32,
+    "ledger_items": 42,
+    "evidence_paths": 294,
+    "pdf_pages": 17,
+    "protected_hash_mismatches": 0,
+    "git_compaction_refs_unchanged": true,
+    "managed_session_summary_running_count": 0
+  },
+  "storage": {
+    "content_unique_results_code_config_paper_gib": 3.464816321618855,
+    "git_object_gib_approx": 8.55,
+    "final_report_snapshot_free_gib": 27.75408935546875,
+    "initial_cleanup_observed_free_delta_bytes": 14837686272,
+    "result_dedup_observed_free_delta_bytes": 545021952,
+    "git_compaction_observed_free_delta_bytes": 140947456,
+    "physical_caveat": "APFS共享及系统外部变化使路径逻辑体积、du和磁盘空闲差额不可直接相加；未删除Git历史对象。"
+  },
+  "next_action": "park_and_continue_later_on_fresh_user_message",
+  "limitations": [
+    "Saved results remain auditable; deleted model/data/features must be restored for full replay.",
+    "Original immutable result arrays now share hard links; write new outputs to new paths.",
+    "Paper remains draft_checkpoint, no submission-ready or new-general-algorithm claim."
+  ],
+  "run_id": "run-a591ce8c",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:pause_summary:none:4ed9c52acfd4aeb732c1a78289c9e54ae465c79e21d0617493d12acfdfb65989",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-eeac4715",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

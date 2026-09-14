@@ -1,0 +1,76 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-b3d5d69a",
+  "id": "report-b3d5d69a",
+  "quest_id": "012",
+  "created_at": "2026-09-13T00:27:50+00:00",
+  "updated_at": "2026-09-13T00:27:50+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-42f8bf3b"
+  },
+  "status": "draft_checkpoint_reviewed",
+  "branch": "paper/gallery-transfer-calibration-update",
+  "head_commit": "e5afde08e6cd87e189a290ac3277e2f8bdc83645",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "paper_review",
+  "title": "Audited nine-page failure-study update with source-calibration appendix",
+  "verdict": "technical_note_only",
+  "reason": "All four scoped claims map to verified evidence; no robust novel algorithm or submission-ready package is established.",
+  "evidence_paths": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/review/review.md",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/review/revision_log.md",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/calibration_report_validation.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/compile_report.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/claim_evidence_map.json"
+  ],
+  "verified_counts": {
+    "pdf_pages": 9,
+    "tables": 7,
+    "primary_evidence_groups": 3,
+    "auxiliary_development_groups": 1,
+    "historical_reference_only_groups": 15,
+    "unique_ledger_items": 19,
+    "new_accuracy_values": 152,
+    "references": 10
+  },
+  "runtime_count_boundary": "Generic coverage scan double-counts imported table/section files and mixes historical groups; use explicit inventory, not its inflated group/table counts.",
+  "remaining_limits": [
+    "No robust new algorithm improvement",
+    "No independent target success",
+    "Source-default scope and retrospective diagnostics",
+    "No comprehensive SOTA or public source-data package"
+  ],
+  "next_stage": "decision",
+  "next_action": "Deliver the reviewed draft and request explicit approval for scoped round/quest closure; otherwise reopen only a justified distinct research premise.",
+  "run_id": "run-42f8bf3b",
+  "anchor": "write",
+  "semantic_key": "report:write:paper_review:none:3d9a442c9ef3ef42eca1249d094eece1a5be9ef9d0e4f6b923b86b523aef3c2a",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-b3d5d69a",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

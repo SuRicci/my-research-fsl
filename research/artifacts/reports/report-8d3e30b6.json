@@ -1,0 +1,56 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-8d3e30b6",
+  "id": "report-8d3e30b6",
+  "quest_id": "012",
+  "created_at": "2026-09-14T03:37:41+00:00",
+  "updated_at": "2026-09-14T03:37:41+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-86f0c68e"
+  },
+  "status": "completed",
+  "branch": "run/dino-depth-readout-20260914",
+  "head_commit": "d28c895d3e8e608e13bcaddb40baffbf295103f2",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "literature_survey",
+  "title": "Frozen-backbone control frontier after precision closure",
+  "summary": "Eight primary/reused comparisons support one incremental but valuable matched-backbone question. MIV is support-label admissible but requires uncached spatial/augmentation inputs; FMA and L2C direct comparison conflict with frozen/image-only constraints. Official DINOv2 base available without credentials; no local performance claim.",
+  "evidence_paths": [
+    "artifacts/idea/backbone_control_survey_20260914.md",
+    "artifacts/idea/candidates.md",
+    "artifacts/idea/pre_idea_drafts/backbone-control.md",
+    "literature/backbone-control-20260914/provenance.json"
+  ],
+  "next_stage": "idea",
+  "run_id": "run-86f0c68e",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:literature_survey:none:5ef6c95316de83f7dbacd7f764ddece9ccde51ff011151d7bfee10a8a4afa0b8",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-8d3e30b6",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

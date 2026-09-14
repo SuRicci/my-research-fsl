@@ -1,0 +1,18 @@
+{
+  "ilpcz.py": {
+    "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/ilpcz.py",
+    "sha256": "b4363273c20ec3ca7b69d788aadd285dc8cb55c37b5d160b16d00271bb92b100"
+  },
+  "reference_eval.py": {
+    "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/reference_eval.py",
+    "sha256": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661"
+  },
+  "baseline_methods.py": {
+    "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/baseline_methods.py",
+    "sha256": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b"
+  },
+  "geometry_reference.py": {
+    "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py",
+    "sha256": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c"
+  }
+}

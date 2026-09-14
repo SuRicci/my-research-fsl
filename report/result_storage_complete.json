@@ -1,0 +1,9 @@
+{
+  "experiment_protected_paths": 20716,
+  "baseline_result_paths": 327,
+  "combined_unique_file_count": 12508,
+  "combined_unique_logical_gib": 3.464816321618855,
+  "baseline_logical_gib": 2.8170926524326205,
+  "combined_all_paths_logical_gib": 14.548563187010586,
+  "scope": "experiment result/code/config/paper protected manifest plus baseline npz/npy output/results banks; excludes git, runtime logs, literature and uncategorized input archives"
+}

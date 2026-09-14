@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scalar_r2_score_max_error": 1.189872236850853e-07,
+  "finite_difference_max_error": 2.357447310280536e-11,
+  "query_partition_invariant": true,
+  "class_permutation_equivariant": true,
+  "gallery_permutation_invariant": true,
+  "all_source_task_feasibility": {
+    "dtd": {
+      "min_excluded_gallery_available": 1676,
+      "allocations": 3,
+      "shots": 2,
+      "source_train_and_selection_disjoint": true
+    },
+    "eurosat": {
+      "min_excluded_gallery_available": 2500,
+      "allocations": 3,
+      "shots": 2,
+      "source_train_and_selection_disjoint": true
+    }
+  }
+}

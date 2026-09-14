@@ -1,0 +1,30 @@
+{
+  "kind": "report",
+  "report_type": "cleanup_audit",
+  "worktrees": [
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-01adcb83",
+      "head": "85b0e579fd7379392b3c710d44e21e8fc18bc8a1",
+      "branch": "idea/012-idea-01adcb83",
+      "status": "?? artifacts/reports/asset-clone-pets-idea/candidate_manifest.json\n?? artifacts/reports/asset-clone-pets-idea/clone_assets.py\n?? artifacts/reports/asset-clone-pets-idea/completion.json\n",
+      "ignored": "",
+      "ancestor_current": true
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-134c9aa0",
+      "head": "5fe10bcab73373fa1e3320b170e4e2c595bfb027",
+      "branch": "idea/012-idea-134c9aa0",
+      "status": "",
+      "ignored": "",
+      "ancestor_current": true
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-aca445b7",
+      "head": "ceb2aa6577796b5eb9a78a6aaaa17581bef0dccf",
+      "branch": "idea/012-idea-aca445b7",
+      "status": "?? artifacts/reports/asset-clone-oslo-idea/candidate_manifest.json\n?? artifacts/reports/asset-clone-oslo-idea/clone_assets.py\n?? artifacts/reports/asset-clone-oslo-idea/completion.json\n",
+      "ignored": "",
+      "ancestor_current": true
+    }
+  ]
+}

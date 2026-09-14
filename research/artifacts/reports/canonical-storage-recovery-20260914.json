@@ -1,0 +1,419 @@
+{
+  "timestamp": "2026-09-14T00:34:24.692645+00:00",
+  "scope": "duplicate archived R4 and completed source-coverage outputs only; canonical files unchanged",
+  "count": 68,
+  "deduplicated_logical_bytes": 680335107,
+  "free_before": 10763153408,
+  "free_after": 10847809536,
+  "rows": [
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m32_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m32_s26091303.npz",
+      "bytes": 8993972,
+      "sha256": "ae4359d7b8465f73f649733337c02dcef3463b064b561a5757109e8776ab7787"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m32_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m32_s26091302.npz",
+      "bytes": 8989984,
+      "sha256": "21f93cb142d572e03f1ae33e1342d361762f829c307976a95fcaab7b9cbe870a"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m32_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m32_s26091301.npz",
+      "bytes": 8990912,
+      "sha256": "32748f5ae50bd3a6ee8955010b653e65e2713a8dad7ed6e73de245ed04e74ad9"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m32_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m32_s26091305.npz",
+      "bytes": 8994391,
+      "sha256": "192c91fcacd33136eb4bc5b19538deda488a380bf06a38dfa44bc80902de7a29"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m32_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m32_s26091304.npz",
+      "bytes": 9005182,
+      "sha256": "76073abc2b8a283efef09c492fd8d01efc43de4e32d4a03cb7391021733aea48"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m32_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m32_s26091301.npz",
+      "bytes": 9019924,
+      "sha256": "5bb50255ffe5cc1c34fa21d905fbbc64a4d953e04f0240e98f81dc3571ba92f6"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m32_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m32_s26091303.npz",
+      "bytes": 9019032,
+      "sha256": "6948641bfff9bca4488b49e7f4db27cee96928338ca13bd07fa9472953d376b6"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m32_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m32_s26091302.npz",
+      "bytes": 9022197,
+      "sha256": "64e6a72a0c29e567e4a7d814718b05406f7d1b1348f007957d13fa90b3293d52"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m32_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m32_s26091305.npz",
+      "bytes": 9016979,
+      "sha256": "108ec8a0b7d011d24a81c81748f850e787308abba724ee109ab1d188e76f11b4"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m32_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m32_s26091304.npz",
+      "bytes": 9015302,
+      "sha256": "34939806a66a2e23ad813048e62108a9bd521130d73fe61c1aa6a252c616bd16"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m64_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m64_s26091305.npz",
+      "bytes": 9002902,
+      "sha256": "76fa0ba5a9580ff4770e7f8b2686e9d2d46c7389326c349a4c33c3e23f982063"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m64_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m64_s26091304.npz",
+      "bytes": 9001192,
+      "sha256": "a236dc413301be18b88f4d9646efde9ac9e19840d305b6e56d5b4be35dcf3581"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m64_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m64_s26091301.npz",
+      "bytes": 9001181,
+      "sha256": "175bdad6c6434c85f4b91f5ed1dd29ed0abd369733a7e0de388835f83959c732"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m64_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m64_s26091303.npz",
+      "bytes": 9003334,
+      "sha256": "c403ca1aef46f9eeb2797ac8b9d8d6919436db7dca40f1bf595e815f0542bf24"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_cross_m64_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_cross_m64_s26091302.npz",
+      "bytes": 8998736,
+      "sha256": "0426e8ae300f112740f7a16a902662937900433edeee608552392322810658e3"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m64_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m64_s26091305.npz",
+      "bytes": 9019770,
+      "sha256": "0c437db77601cc9d044d102827bc4583109c6d23d3f881a4c4d69f3540cd26cc"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m64_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m64_s26091304.npz",
+      "bytes": 9019143,
+      "sha256": "f63a02519a1c08fb3b911f1936207bfa59573a945ae83c4d7df509bb78d667d2"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m64_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m64_s26091303.npz",
+      "bytes": 9020667,
+      "sha256": "8ef99bc59f03464765222f5cbd30f3f5c9dd5dfc2201965381f72109c86b79fe"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m64_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m64_s26091302.npz",
+      "bytes": 9021174,
+      "sha256": "edcfbdd8a51224e566d19a923745bed676b9f510afdfbe80065072568eb9eb21"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/dev/dtd_matched_m64_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/dev/dtd_matched_m64_s26091301.npz",
+      "bytes": 9019974,
+      "sha256": "b771254736a92300f69c1ea463f0c8931458da120764d2104857b5b3aa24d32e"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m64_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m64_s26091303.npz",
+      "bytes": 11363514,
+      "sha256": "9d5ce26a2fad0d5891c70fec2e8f11bc94fa04969cf4dcb47a71ccf5a8bd7eff"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m32_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m32_s26091302.npz",
+      "bytes": 11360346,
+      "sha256": "c6298d37649456c33ad07b4ce8a1341e39c9e8748df7bc6586738a41bb0b45ba"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m32_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m32_s26091303.npz",
+      "bytes": 9390962,
+      "sha256": "02c3b9cc9cb2b0503bdb866bae918b6f1a623ecfb0b3b97c522b3eb40142beec"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m32_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m32_s26091302.npz",
+      "bytes": 9387599,
+      "sha256": "504c16884ef68cdebd83144b50b77401a5dec6f24e82d5357cc47ea6e2670a01"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m32_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m32_s26091303.npz",
+      "bytes": 11365140,
+      "sha256": "40b0f8cabeddd5ea35cf74d5e831d8652553e1794ba1b8462e5a9a03d6a1ecdc"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m64_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m64_s26091302.npz",
+      "bytes": 11361980,
+      "sha256": "0444c56fdb30cd93d6679560349f37a1e7563c91b0c9e324d1438ac0d1fe0de4"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m32_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m32_s26091301.npz",
+      "bytes": 11358613,
+      "sha256": "168775fb156baabd38cc11a0d06ee7d4ca0ed556e91cf12011194b57f08bf3da"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m32_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m32_s26091301.npz",
+      "bytes": 9389351,
+      "sha256": "eff863fce4f534918e76715ee313b8c8677e44bc83c4993e4c416c9c113a8fd1"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m64_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m64_s26091301.npz",
+      "bytes": 11363746,
+      "sha256": "824fa9c410f1df0ed84922aceec85a4f4da19b0bad5b1bfe8a1588295b07494e"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m32_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m32_s26091304.npz",
+      "bytes": 11360859,
+      "sha256": "bb14eb9df5ea08ca4804accf9d625814dea0b5e6ca4ae8fd9ffa074b5a516af3"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m64_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m64_s26091305.npz",
+      "bytes": 11363108,
+      "sha256": "c6700f7ccdc70b4c99a08c1ac0338381020a74af54d0c03d84cd197d22bbc9bf"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m32_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m32_s26091305.npz",
+      "bytes": 9391585,
+      "sha256": "c9ed6d23bf1610e9285c5132e9c0a63827b11ff2c9fcc34eb78d75750d180fcf"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m32_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m32_s26091304.npz",
+      "bytes": 9402983,
+      "sha256": "be961ad38bdaf6be2dcf7caffc35cb65900e1617011a94e7b12bd004735b3ee1"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m64_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m64_s26091304.npz",
+      "bytes": 11362270,
+      "sha256": "c07d767d1195b26dd2af8d32d9adf9a43e94ab807d2128afaee31150d6083a25"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m32_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m32_s26091305.npz",
+      "bytes": 11361184,
+      "sha256": "1465678c21fc8fd8f043a005c0bc2e8bd61970ad9ce5470bbc72f9ebe455d4f3"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m32_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m32_s26091301.npz",
+      "bytes": 9415711,
+      "sha256": "2040662a91b09dd9bec9dc81d7e6320465ea6aac63b5350ed799cc4beae52e5b"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m32_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m32_s26091303.npz",
+      "bytes": 9419121,
+      "sha256": "37e499ff1716f149ffcdc53f95335aa22e148a088348a5cf4296292474981c79"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m32_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m32_s26091302.npz",
+      "bytes": 9416390,
+      "sha256": "6ea82c7f66ff3758b7f4828c1b84694c33653d24c60bb75d4b0f1cf4398c81c8"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m32_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m32_s26091305.npz",
+      "bytes": 9415670,
+      "sha256": "21a107b6801587b82d9a0b6fc49ef0609a5c45afb49071b334493c211659e4fb"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m32_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m32_s26091304.npz",
+      "bytes": 9416417,
+      "sha256": "9eb5132543c5aea192a9c8482d736446ded1cca27897bc0e1f341242ed09007d"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m64_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m64_s26091304.npz",
+      "bytes": 11363127,
+      "sha256": "e02ddefa091cc4fef63b24b0591b58e5cd395a61a4297d1f37378b85067ace91"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m32_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m32_s26091305.npz",
+      "bytes": 11362794,
+      "sha256": "b603948e4f1d7facd4a37844fb9153bdc48c1f5848814733aeab057a2f35399f"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m64_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m64_s26091305.npz",
+      "bytes": 9400238,
+      "sha256": "ad37f8ca4e7a0ae5d00672d823c3d6431d20f702a878a1c6641988f5e803d157"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m64_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m64_s26091304.npz",
+      "bytes": 9399840,
+      "sha256": "960ea8a700ac1fae85f82735b7f5a76118c7bd5754bf136fdfbe35d6ab358326"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m32_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m32_s26091304.npz",
+      "bytes": 11363273,
+      "sha256": "593f0ec5b82b659de104fe26a56c1bac3b4ccdd89d79e8e0613eacac31d72dde"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m64_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m64_s26091305.npz",
+      "bytes": 11363842,
+      "sha256": "2471859a0ff90a331b6037bfc456c190add36dac84aaa70361faca653285541e"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m64_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m64_s26091301.npz",
+      "bytes": 11362554,
+      "sha256": "1a83ed90f93a64cadc87fa19245a2a862c4d51feb58c0e689093a2bd851a18fa"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m64_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m64_s26091301.npz",
+      "bytes": 9399819,
+      "sha256": "66b56de54e3c6755a76edf48c22216404ec2bb3fd45b41635d41721b69571ea8"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m32_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m32_s26091301.npz",
+      "bytes": 11362722,
+      "sha256": "4c7eb9d9784fb28d533c28c69056cd7ca799fee40128ce0d2ee770c06d1ca5d9"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m32_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m32_s26091303.npz",
+      "bytes": 11362445,
+      "sha256": "4600a6013670da6f20ea44c23a604b4da4891f3e7636ef89670f9b849e5bfef7"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m64_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m64_s26091302.npz",
+      "bytes": 11362873,
+      "sha256": "df807ff38effd5a162a22e99369784964ea4c4a310849f6f37844f16b72cf204"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m64_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m64_s26091303.npz",
+      "bytes": 9400565,
+      "sha256": "0d789782dea0ad0ebcc30816712373c999568c246fa67af757e5742132ad9766"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_cross_m64_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_cross_m64_s26091302.npz",
+      "bytes": 9395943,
+      "sha256": "54e576b704680854355c81762081a98587a648754304e7ac6f9cd05dcd87ac08"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_cross_m64_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_cross_m64_s26091303.npz",
+      "bytes": 11363022,
+      "sha256": "16f7c95e32f8eb89e05570cdd3cdc8d263f14f26cb12bfeb0ecf49ab11b01039"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/eurosat_matched_m32_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/eurosat_matched_m32_s26091302.npz",
+      "bytes": 11362346,
+      "sha256": "392b011ffbcf39d86b7f9035d08273810c428fe4eeea7959bc71f4d81757cc7f"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m64_s26091305.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m64_s26091305.npz",
+      "bytes": 9420229,
+      "sha256": "fa69439b413cea90b9d64bc3038a84e196c9f3e1a5e3a3c23b486947e9bcacd8"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m64_s26091304.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m64_s26091304.npz",
+      "bytes": 9421137,
+      "sha256": "ec1666509c693a3e239e5fad0414d43d32c6d7039c654412d7ff1cae32ac1d2e"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m64_s26091303.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m64_s26091303.npz",
+      "bytes": 9419009,
+      "sha256": "853e10efbedac3d24d834b3637d1f9f650fc400259a6fbc82ca370b972b52d93"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m64_s26091302.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m64_s26091302.npz",
+      "bytes": 9420185,
+      "sha256": "92b03415420630bd2cdd655a0ca99241eec89513ea081fe74697d604e4ff595a"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m64_s26091301.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/outputs/eval/dtd_matched_m64_s26091301.npz",
+      "bytes": 9420452,
+      "sha256": "d4f4c664ec52b1bbf8c520e3bcf06a38692fbbe1fc6df143d0769fc51c4e3ae2"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/experiments/main/source-coverage-factorial-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz",
+      "bytes": 10574135,
+      "sha256": "2da3951816f812a4589e5122b63852353278bd72099e0250a4ad73c16e45f116"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/cells/eurosat_to_dtd_eurosat_k1.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/experiments/main/source-coverage-factorial-20260913/outputs/cells/eurosat_to_dtd_eurosat_k1.npz",
+      "bytes": 10531157,
+      "sha256": "66f18d709d869fc68993aa2fc35e0609a75fe9a7f5c18103c783b8c9a495b3b8"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/cells/eurosat_to_dtd_dtd_k1.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/experiments/main/source-coverage-factorial-20260913/outputs/cells/eurosat_to_dtd_dtd_k1.npz",
+      "bytes": 10492832,
+      "sha256": "deaaf9cbce6877885bff945c152fba96a7a8ff465494af85e1e52ff4af84750e"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/experiments/main/source-coverage-factorial-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz",
+      "bytes": 10554059,
+      "sha256": "fd7f72ee0749979360f6d34225b9d4836ffaa389647379a81e6bd9b0a73a7b99"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/experiments/main/source-coverage-factorial-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz",
+      "bytes": 10701617,
+      "sha256": "5d6e225467a5ddf1cfb45e7cdf8f67fccba2de23a488d7049f1e64c13d023d66"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/experiments/main/source-coverage-factorial-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz",
+      "bytes": 10646546,
+      "sha256": "695d9fbde8731fb2a247410bb55f86e618fac97e28d467a3176912cf28b1e86b"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/experiments/main/source-coverage-factorial-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz",
+      "bytes": 10597836,
+      "sha256": "996fac16c3ece9f9843467d46b053f5f445fe245d0ea439c8416679df0d50c88"
+    },
+    {
+      "alias": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-coverage-factorial-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz",
+      "retained": "/Users/decoqwq/DeepScientist/quests/012/experiments/main/source-coverage-factorial-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz",
+      "bytes": 10668013,
+      "sha256": "8020a4def32ae30294a429553e64350f0be8c889c292242ba8661d34b206652b"
+    }
+  ],
+  "portability": "relative aliases resolve to retained canonicalquest files; expanding aliases recreates independent copy ifexported"
+}

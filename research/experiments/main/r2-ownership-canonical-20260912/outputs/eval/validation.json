@@ -1,0 +1,8 @@
+{
+  "reference_endpoint_max_error": 0.0,
+  "reference_predictions_equal": true,
+  "task_identity_equal": true,
+  "ownership_recomputed": true,
+  "five_shot_inherited_exact": true,
+  "required_metrics": 7
+}

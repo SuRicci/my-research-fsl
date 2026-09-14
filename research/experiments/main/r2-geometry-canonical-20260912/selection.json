@@ -1,0 +1,67 @@
+{
+  "lambdas": {
+    "1": {
+      "r2_tuned": 0.01,
+      "centered_r2": 0.1,
+      "centered_support": 0.01,
+      "support_ridge": 0.1,
+      "gallery_r2": 0.001
+    },
+    "5": {
+      "r2_tuned": 1,
+      "centered_r2": 1,
+      "centered_support": 1,
+      "support_ridge": 1
+    }
+  },
+  "dev_accuracy": {
+    "1": {
+      "r2": 0.7779666666666667,
+      "support_proto": 0.7495333333333334,
+      "centered_proto": 0.7614666666666666,
+      "r2_tuned_0.001": 0.7780666666666667,
+      "r2_tuned_0.01": 0.7781333333333332,
+      "r2_tuned_0.1": 0.7779666666666667,
+      "r2_tuned_1": 0.7737666666666667,
+      "centered_r2_0.001": 0.7771333333333333,
+      "centered_r2_0.01": 0.7770999999999999,
+      "centered_r2_0.1": 0.7772666666666667,
+      "centered_r2_1": 0.7769666666666668,
+      "centered_support_0.001": 0.7604,
+      "centered_support_0.01": 0.7604000000000001,
+      "centered_support_0.1": 0.7602,
+      "centered_support_1": 0.7590666666666667,
+      "support_ridge_0.001": 0.7615999999999999,
+      "support_ridge_0.01": 0.7616666666666666,
+      "support_ridge_0.1": 0.7622666666666666,
+      "support_ridge_1": 0.7619333333333332,
+      "gallery_r2_0.001": 0.7673333333333332,
+      "gallery_r2_0.01": 0.7671,
+      "gallery_r2_0.1": 0.7664666666666666,
+      "gallery_r2_1": 0.7608333333333334
+    },
+    "5": {
+      "r2": 0.9103333333333333,
+      "support_proto": 0.9086000000000002,
+      "centered_proto": 0.9056666666666666,
+      "r2_tuned_0.001": 0.9072666666666666,
+      "r2_tuned_0.01": 0.9075333333333333,
+      "r2_tuned_0.1": 0.9102,
+      "r2_tuned_1": 0.9103333333333333,
+      "centered_r2_0.001": 0.9084666666666666,
+      "centered_r2_0.01": 0.9087999999999999,
+      "centered_r2_0.1": 0.9091999999999999,
+      "centered_r2_1": 0.9110666666666667,
+      "centered_support_0.001": 0.9084666666666666,
+      "centered_support_0.01": 0.9087999999999999,
+      "centered_support_0.1": 0.9091999999999999,
+      "centered_support_1": 0.9110666666666667,
+      "support_ridge_0.001": 0.9072666666666666,
+      "support_ridge_0.01": 0.9075333333333333,
+      "support_ridge_0.1": 0.9102,
+      "support_ridge_1": 0.9103333333333333
+    }
+  },
+  "rule": "per-shot equal DTD development-cell mean, fixed4lambda grid; tie0.1,1,0.01,0.001",
+  "locked_before_eval": true
+}

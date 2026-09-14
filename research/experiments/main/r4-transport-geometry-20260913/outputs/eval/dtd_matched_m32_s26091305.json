@@ -1,0 +1,13 @@
+{
+  "dataset": "dtd",
+  "phase": "eval",
+  "policy": "matched",
+  "budget": 32,
+  "seed": 26091305,
+  "npz_sha256": "8ec380cf187d09fca7dd16edd4cce4cf0b2ec2734d8e4f1689fb8227142d634e",
+  "query_count": 240,
+  "gallery_count": 1876,
+  "bridge_count": 32,
+  "baseline_npz": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/baselines/local/r4-canonical/outputs/eval/dtd_matched_m32_s26091305.npz",
+  "baseline_npz_sha256": "21a107b6801587b82d9a0b6fc49ef0609a5c45afb49071b334493c211659e4fb"
+}

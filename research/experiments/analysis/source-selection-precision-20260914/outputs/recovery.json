@@ -1,0 +1,7 @@
+{
+  "failed_precheck": "bash-3b366f61",
+  "failure": "Old reference head creates float32 targets even for float64 inputs; dtype mismatch before validation outcome.",
+  "repair": "Keep old source files immutable; local low-rank float64 branch uses explicit float64 identity targets and dual ridge, compared against independent dense/primal NumPy.",
+  "precheck_budget": 2,
+  "no_main_run_started": true
+}

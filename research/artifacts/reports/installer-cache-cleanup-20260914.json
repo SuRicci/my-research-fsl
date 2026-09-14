@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-14T00:44:07.395215+00:00",
+  "remaining_archive_count": 0,
+  "remaining_archive_bytes": 0,
+  "free_gib": 10.380180358886719,
+  "environment_python_exists": true,
+  "scope": "conda clean --tarballs only; no installed packages/envs removed",
+  "former_dry_run_bytes": 1335407123,
+  "pip_cache_action": "pip cache purge; download/http and built wheel caches only",
+  "pip_cached_bytes_before_approx": 2055400000,
+  "free_after_pip_gib": 12.303524017333984,
+  "updated_at": "2026-09-14T00:44:49.229525+00:00"
+}

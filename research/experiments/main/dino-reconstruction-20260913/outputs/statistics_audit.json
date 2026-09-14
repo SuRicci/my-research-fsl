@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "independent_interval_count": 35,
+  "max_interval_error_pp": 7.105427357601002e-15,
+  "checked_prediction_entries": 1050000,
+  "bootstrap": "count-weighted; domains+seeds stratified; galleries averaged within episode; conditional development intervals"
+}

@@ -1,0 +1,518 @@
+{
+  "idea_id": "idea-80b11941",
+  "decision_id": "decision-42dbf9aa",
+  "science_node": "science-d0bb4456",
+  "status": "completed",
+  "evaluation_summary": {
+    "scope": "Source-only follow-up qualification; no canonical Pets values measured or copied as new results.",
+    "cells": {
+      "dtd_dtd": {
+        "accuracy_pct": {
+          "parent": 80.01066666666667,
+          "reconstruction": 74.04533333333335,
+          "reconstruction_fusion": 78.21333333333334,
+          "raw_local_fusion": 78.57066666666667,
+          "rank1_fusion": 78.03466666666668,
+          "shuffled_fusion": 44.77066666666667,
+          "mean_fusion": 78.46133333333334
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -1.7973333333333337,
+            "ci95_pp": [
+              -2.1413333333333333,
+              -1.4613333333333336
+            ]
+          },
+          "raw_local_fusion": {
+            "delta_pp": -0.3573333333333335,
+            "ci95_pp": [
+              -0.5306666666666668,
+              -0.18126666666666755
+            ]
+          },
+          "rank1_fusion": {
+            "delta_pp": 0.1786666666666666,
+            "ci95_pp": [
+              -0.024066666666666764,
+              0.38666666666666627
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 33.44266666666667,
+            "ci95_pp": [
+              32.44533333333333,
+              34.50666666666666
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -0.24800000000000008,
+            "ci95_pp": [
+              -0.45333333333333337,
+              -0.037266666666667614
+            ]
+          }
+        },
+        "repairs": 886,
+        "spoils": 1560
+      },
+      "dtd_eurosat": {
+        "accuracy_pct": {
+          "parent": 76.30399999999999,
+          "reconstruction": 74.04533333333335,
+          "reconstruction_fusion": 76.41866666666665,
+          "raw_local_fusion": 76.52533333333334,
+          "rank1_fusion": 76.224,
+          "shuffled_fusion": 40.946666666666665,
+          "mean_fusion": 76.376
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": 0.11466666666666665,
+            "ci95_pp": [
+              -0.22933333333333353,
+              0.46399999999999947
+            ]
+          },
+          "raw_local_fusion": {
+            "delta_pp": -0.10666666666666641,
+            "ci95_pp": [
+              -0.2826666666666664,
+              0.07733333333333356
+            ]
+          },
+          "rank1_fusion": {
+            "delta_pp": 0.19466666666666668,
+            "ci95_pp": [
+              -0.023999999999999817,
+              0.4213333333333333
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 35.472,
+            "ci95_pp": [
+              34.455933333333334,
+              36.55746666666667
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": 0.04266666666666694,
+            "ci95_pp": [
+              -0.17066666666666627,
+              0.2560000000000001
+            ]
+          }
+        },
+        "repairs": 1338,
+        "spoils": 1295
+      },
+      "eurosat_dtd": {
+        "accuracy_pct": {
+          "parent": 73.48533333333333,
+          "reconstruction": 64.17866666666666,
+          "reconstruction_fusion": 71.168,
+          "raw_local_fusion": 71.75466666666667,
+          "rank1_fusion": 71.39999999999999,
+          "shuffled_fusion": 46.309333333333335,
+          "mean_fusion": 71.85866666666666
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -2.3173333333333335,
+            "ci95_pp": [
+              -2.7413333333333334,
+              -1.906600000000001
+            ]
+          },
+          "raw_local_fusion": {
+            "delta_pp": -0.5866666666666667,
+            "ci95_pp": [
+              -0.7386666666666666,
+              -0.43733333333333335
+            ]
+          },
+          "rank1_fusion": {
+            "delta_pp": -0.23200000000000034,
+            "ci95_pp": [
+              -0.40266666666666695,
+              -0.061333333333333726
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 24.858666666666664,
+            "ci95_pp": [
+              23.807866666666666,
+              25.912066666666668
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -0.6906666666666668,
+            "ci95_pp": [
+              -0.8773333333333336,
+              -0.5040000000000002
+            ]
+          }
+        },
+        "repairs": 1268,
+        "spoils": 2137
+      },
+      "eurosat_eurosat": {
+        "accuracy_pct": {
+          "parent": 79.696,
+          "reconstruction": 64.17866666666666,
+          "reconstruction_fusion": 75.49333333333333,
+          "raw_local_fusion": 76.29333333333334,
+          "rank1_fusion": 75.60533333333332,
+          "shuffled_fusion": 51.43466666666667,
+          "mean_fusion": 76.312
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -4.202666666666667,
+            "ci95_pp": [
+              -4.648,
+              -3.7786666666666675
+            ]
+          },
+          "raw_local_fusion": {
+            "delta_pp": -0.8000000000000004,
+            "ci95_pp": [
+              -0.9466666666666669,
+              -0.6560000000000007
+            ]
+          },
+          "rank1_fusion": {
+            "delta_pp": -0.11199999999999999,
+            "ci95_pp": [
+              -0.2693333333333333,
+              0.04799999999999992
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 24.058666666666664,
+            "ci95_pp": [
+              23.117266666666662,
+              25.050733333333337
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -0.818666666666667,
+            "ci95_pp": [
+              -0.9786666666666671,
+              -0.6533333333333337
+            ]
+          }
+        },
+        "repairs": 897,
+        "spoils": 2473
+      }
+    },
+    "domains": {
+      "dtd": {
+        "accuracy_pct": {
+          "parent": 78.15733333333333,
+          "reconstruction": 74.04533333333335,
+          "reconstruction_fusion": 77.316,
+          "raw_local_fusion": 77.548,
+          "rank1_fusion": 77.12933333333332,
+          "shuffled_fusion": 42.85866666666667,
+          "mean_fusion": 77.41866666666667
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -0.8413333333333334,
+            "ci95_pp": [
+              -1.146666666666667,
+              -0.5426333333333341
+            ]
+          },
+          "raw_local_fusion": {
+            "delta_pp": -0.23200000000000012,
+            "ci95_pp": [
+              -0.3787000000000006,
+              -0.07866666666666693
+            ]
+          },
+          "rank1_fusion": {
+            "delta_pp": 0.18666666666666645,
+            "ci95_pp": [
+              1.3850682753502403e-16,
+              0.3786666666666663
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 34.45733333333334,
+            "ci95_pp": [
+              33.484,
+              35.49603333333334
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -0.10266666666666692,
+            "ci95_pp": [
+              -0.27866666666666673,
+              0.0799999999999997
+            ]
+          }
+        }
+      },
+      "eurosat": {
+        "accuracy_pct": {
+          "parent": 76.59066666666666,
+          "reconstruction": 64.17866666666666,
+          "reconstruction_fusion": 73.33066666666667,
+          "raw_local_fusion": 74.024,
+          "rank1_fusion": 73.50266666666666,
+          "shuffled_fusion": 48.87200000000001,
+          "mean_fusion": 74.08533333333332
+        },
+        "comparisons": {
+          "parent": {
+            "delta_pp": -3.2600000000000002,
+            "ci95_pp": [
+              -3.6320000000000006,
+              -2.893300000000001
+            ]
+          },
+          "raw_local_fusion": {
+            "delta_pp": -0.6933333333333336,
+            "ci95_pp": [
+              -0.812,
+              -0.5786666666666672
+            ]
+          },
+          "rank1_fusion": {
+            "delta_pp": -0.17200000000000004,
+            "ci95_pp": [
+              -0.30799999999999994,
+              -0.036000000000000025
+            ]
+          },
+          "shuffled_fusion": {
+            "delta_pp": 24.458666666666666,
+            "ci95_pp": [
+              23.49866666666667,
+              25.43333333333333
+            ]
+          },
+          "mean_fusion": {
+            "delta_pp": -0.7546666666666672,
+            "ci95_pp": [
+              -0.8973333333333339,
+              -0.6119666666666671
+            ]
+          }
+        }
+      }
+    },
+    "pooled": {
+      "parent": {
+        "delta_pp": -2.050666666666667,
+        "ci95_pp": [
+          -2.286,
+          -1.8079833333333337
+        ]
+      },
+      "raw_local_fusion": {
+        "delta_pp": -0.4626666666666669,
+        "ci95_pp": [
+          -0.556666666666667,
+          -0.3673333333333339
+        ]
+      },
+      "rank1_fusion": {
+        "delta_pp": 0.007333333333333203,
+        "ci95_pp": [
+          -0.11001666666666707,
+          0.1253333333333333
+        ]
+      },
+      "shuffled_fusion": {
+        "delta_pp": 29.458000000000006,
+        "ci95_pp": [
+          28.757983333333325,
+          30.183350000000004
+        ]
+      },
+      "mean_fusion": {
+        "delta_pp": -0.428666666666667,
+        "ci95_pp": [
+          -0.5420000000000005,
+          -0.31733333333333386
+        ]
+      }
+    },
+    "accuracy_pct": {
+      "parent": 77.374,
+      "reconstruction": 69.112,
+      "reconstruction_fusion": 75.32333333333334,
+      "raw_local_fusion": 75.786,
+      "rank1_fusion": 75.31599999999999,
+      "shuffled_fusion": 45.86533333333333,
+      "mean_fusion": 75.752
+    },
+    "gate": {
+      "passed": false,
+      "tests": {
+        "increment": false,
+        "positive_ci": false,
+        "domains": false,
+        "cells": false,
+        "controls": false
+      }
+    }
+  },
+  "claim_update": "refuted_fixed_recipe",
+  "baseline_relation": "Cumulative source-development parent retained; canonicalPets unchanged/unmeasured",
+  "failure_mode": "direction_underperforming",
+  "next_action": "decision_measurement_repair_contract",
+  "validation": {
+    "numerical": {
+      "status": "passed",
+      "independent_cases": [
+        {
+          "case": "random",
+          "matching_error": 2.7755575615628914e-16,
+          "fusion_error": 1.8207657603852567e-14
+        },
+        {
+          "case": "zero",
+          "reconstruction_error": 0.0
+        },
+        {
+          "case": "constant",
+          "reconstruction_error": 1.6154612370034016e-16
+        },
+        {
+          "case": "rank1",
+          "reconstruction_error": 2.220446049250313e-16
+        },
+        {
+          "case": "dtd_dtd",
+          "task": 0,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 3.241851231905457e-14
+        },
+        {
+          "case": "dtd_dtd",
+          "task": 249,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 4.6629367034256575e-15
+        },
+        {
+          "case": "dtd_dtd",
+          "task": 499,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 1.0769163338864018e-14
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 0,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 3.241851231905457e-14
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 249,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 4.884981308350689e-15
+        },
+        {
+          "case": "dtd_eurosat",
+          "task": 499,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 1.0769163338864018e-14
+        },
+        {
+          "case": "eurosat_dtd",
+          "task": 0,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 4.3298697960381105e-15
+        },
+        {
+          "case": "eurosat_dtd",
+          "task": 249,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 2.4980018054066022e-15
+        },
+        {
+          "case": "eurosat_dtd",
+          "task": 499,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 6.078471059822732e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 0,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 4.218847493575595e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 249,
+          "matching_error": 3.3306690738754696e-16,
+          "fusion_error": 2.525757381022231e-15
+        },
+        {
+          "case": "eurosat_eurosat",
+          "task": 499,
+          "matching_error": 4.440892098500626e-16,
+          "fusion_error": 6.106226635438361e-15
+        }
+      ],
+      "permutations_and_query_independence": "passed",
+      "checked_prediction_entries": 1050000,
+      "input_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/dtd_query.npy": "ca0fb9d6d5935c21f6116b324931430e21ee2217e77d8377d01e1face9578278",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/dtd_query_identities.json": "066771a7e3d7de66eb2df554d85a9c79b21ac1c12f3efb49897ecf3987de3ccc",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/dtd_dtd.npz": "4c999d9084053b56ed88db65bdb1e8b67082f43e3c4a5ebc9f3279e91160071c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_dtd.npz": "f1eb4c27bb6efe273a005900dfde32dfe177ccd779d2cae70c018fa501f83773",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/dtd_eurosat.npz": "4161d2e683cac7b4020405aed1782fa6d326d44e3fc06c160cdf150e9f9685c3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/dtd_eurosat.npz": "7284378158390122200c30cbd13f492f542acddd8cd1da8c1121531b02b02991",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/eurosat_query.npy": "04df6fb99b673242cba43f0441927313bd64381df73c357234239908190ccc8e",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/assets/eurosat_query_identities.json": "b4f19936a3254fb27b574fb4516e18f0941ed49e3535d9a5008c4a390f52c112",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/eurosat_dtd.npz": "2a8d9e96fed28219cc7722889427f2b5e716756611d9cc54fb650a3088b770dd",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_dtd.npz": "7ae5fdbecb839fb38dbcc63349b90327ff11dbfa92ee1e11d37c502b9ffd9623",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-local-20260913/outputs/eurosat_eurosat.npz": "5f3b058c8bf495a8779168a75f39ce271e74a0f7f24c05add35a15518077ab74",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/query-consistency-20260913/outputs/eurosat_eurosat.npz": "ac84bcf58ca83944c7d1d6239ea881f8b892f5998af75edb90d0ba8a6054de39"
+      },
+      "output_hashes": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/dtd_dtd.npz": "5fd515f066b0ab4e25286df0c89688be7933349cde289af5f1e62c8c2a953a9b",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/dtd_eurosat.npz": "774fd0ce5e40545ef21fa140d0fadeb03a52856dde129f6254a8109ba1949085",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/eurosat_dtd.npz": "312b77e31460446d4a2283d5640c7084c5c8af33125cfb796ea8f7ee3da4de00",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/eurosat_eurosat.npz": "df731b1f2cca13dcbf1e8e77a98b5a2f1b4a016edb7b36f5f86650a38ced7676"
+      },
+      "parent_raw_mean_exact": true
+    },
+    "statistics": {
+      "status": "passed",
+      "independent_interval_count": 35,
+      "max_interval_error_pp": 7.105427357601002e-15,
+      "checked_prediction_entries": 1050000,
+      "bootstrap": "count-weighted; domains+seeds stratified; galleries averaged within episode; conditional development intervals"
+    }
+  },
+  "execution": {
+    "status": "completed",
+    "seconds": 161.2012722492218,
+    "task_conditions": 2000,
+    "unique_episodes": 1000,
+    "independent_statistics": "passed",
+    "torch": "2.3.0",
+    "numpy": "1.24.4",
+    "threads": 4,
+    "free_gib": 10.107860565185547,
+    "formal_bash_id": "bash-47305d31",
+    "independent_audit_bash_id": "bash-1a2f52d9",
+    "actual_pre_outcome_freeze": "2026-09-13T14:17:26.555385+00:00"
+  },
+  "evidence_paths": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/REPORT.md",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/protocol.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/design_lock.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/PROVENANCE_NOTE.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/analysis.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/audit.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/dino-reconstruction-20260913/outputs/statistics_audit.json"
+  ]
+}

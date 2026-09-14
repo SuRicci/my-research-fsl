@@ -1,0 +1,49 @@
+{
+  "idea_id": "idea-f6de44e6",
+  "parent_report": "report-f208e67c",
+  "attribution_report": "report-9dc47b6f",
+  "tier": "auxiliary/dev",
+  "formula": "blend=.5*scatter_cs_scores+.5*scatter_r2_scores",
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "shots": [
+    1
+  ],
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "task_count_per_domain": 500,
+  "gallery_conditions": [
+    "matched",
+    "mismatched"
+  ],
+  "primary_increment_reference": "scatter_cs77.188%",
+  "scope": "same exposeddevelopment tasks; no newfive-shot orPetsmetrics",
+  "gate": {
+    "vs_stack_pooled_gain_pp": 0.5,
+    "vs_raw_pooled_gain_pp": 0,
+    "pooled_ci_lower_pp": 0,
+    "per_domain_delta_min_pp": 0,
+    "allcell_ci_lower_min_pp": -0.5
+  },
+  "audit_indices": [
+    0,
+    100,
+    200,
+    300,
+    400
+  ],
+  "numeric_tolerance": 2e-05,
+  "parameter_selection": "none; no further weights/scaling/temperatures",
+  "resources": {
+    "threads": 6,
+    "min_free_gib": 10,
+    "max_outputs_mib": 10,
+    "local_only": true,
+    "spend": 0,
+    "deadline": "2026-09-15T09:00:00+00:00"
+  }
+}

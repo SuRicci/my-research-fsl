@@ -1,0 +1,26 @@
+{
+  "added_count": 14,
+  "ledger_before": 19,
+  "ledger_after": 33,
+  "items": [
+    "utility-composition-qualification-20260913",
+    "source-coverage-factorial-20260913",
+    "representation-scatter-20260913",
+    "view-distribution-kernel-20260913",
+    "learned-aggregation-order-20260913",
+    "reduced-view-efficiency-20260913",
+    "source-composition-20260913",
+    "task-local-mask-20260913",
+    "support-risk-selection-20260913",
+    "scatter-centering-stack-20260913",
+    "scatter-score-fusion-20260913",
+    "class-associated-scatter-20260913",
+    "scatter-centering-attribution-20260913",
+    "source-map-distortion-20260913"
+  ],
+  "paper_role": "reference_only",
+  "main_claims_changed": false,
+  "manuscript_text_changed": false,
+  "original_report_boundaries_preserved": true,
+  "updated_at": "2026-09-13T09:32:37.628850+00:00"
+}

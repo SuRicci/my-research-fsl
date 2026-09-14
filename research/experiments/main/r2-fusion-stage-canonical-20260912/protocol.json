@@ -1,0 +1,85 @@
+{
+  "run_id": "r2-fusion-stage-canonical-20260912",
+  "idea_id": "idea-a921652c",
+  "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+  "feature_variant": "canonical-openai-quickgelu-native-dinov2",
+  "ways": 5,
+  "queries_per_class": 15,
+  "shots": [
+    1,
+    5
+  ],
+  "fusion_weight": 0.5,
+  "top_k": 64,
+  "candidate_count": 16,
+  "pseudo_mass_per_class": 1,
+  "lambda_grid": [
+    0.1,
+    1.0,
+    0.01,
+    0.001
+  ],
+  "dev": {
+    "datasets": [
+      "dtd"
+    ],
+    "gallery_datasets": [
+      "dtd",
+      "eurosat"
+    ],
+    "seeds": [
+      26091101,
+      26091102
+    ],
+    "episodes_per_seed": 100,
+    "dtd_class_half": "first"
+  },
+  "eval": {
+    "datasets": [
+      "dtd",
+      "eurosat"
+    ],
+    "gallery_datasets": [
+      "dtd",
+      "eurosat"
+    ],
+    "seeds": [
+      26091201,
+      26091202,
+      26091203,
+      26091204,
+      26091205
+    ],
+    "episodes_per_seed": 200,
+    "dtd_class_half": "second"
+  },
+  "class_split_seed": 120909,
+  "batch_size": 16,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 26091299,
+  "decision_gate": {
+    "macro_ci_lower_pp": 0,
+    "max_condition_loss_pp": 0.5,
+    "requires_simple_control_advantage": true
+  },
+  "permissions": {
+    "gallery_labels": false,
+    "query_batch_adaptation": false,
+    "encoder_training": false,
+    "query_independent": true
+  },
+  "generalization_scope": "locked new task draws on historically viewed image pools; not independent-image or independent-domain confirmation",
+  "five_shot_behavior": "all candidate rows inherit R2 unchanged; no mechanism claim",
+  "weights": [
+    0.5,
+    0.25,
+    0.75,
+    0.0,
+    1.0
+  ],
+  "primary_method": "late_shared",
+  "source_run": "r2-ownership-canonical-20260912",
+  "baseline_contract_path": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/json/metric_contract.json",
+  "parameter_selection": "20 settings per family, equal-cell original DTD development mean, ordered ties; freeze before evaluation",
+  "threads": 6
+}

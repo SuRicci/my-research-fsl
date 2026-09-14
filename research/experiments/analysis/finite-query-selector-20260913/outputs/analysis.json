@@ -1,0 +1,232 @@
+{
+  "protocol": {
+    "parent_decision": "decision-f7f139bf",
+    "parent_report": "report-64b6342f",
+    "experts": [
+      "stack",
+      "raw",
+      "blend"
+    ],
+    "domains": [
+      "dtd",
+      "eurosat"
+    ],
+    "headroom_gate_pp": 0.5,
+    "scope": "Existing exposed development one-shot predictions only; no new scores, fits, seeds or datasets",
+    "bootstrap": "Inherited5000 replicates, paired tasks within seed; average galleries before domain/pooled resampling",
+    "claim_boundary": "Target labels define unattainable finite-family oracle only; no deployment or continuous-weight bound"
+  },
+  "numpy": "1.24.4",
+  "python": "/opt/anaconda3/envs/torch/bin/python",
+  "input_hashes": {
+    "experiments/main/scatter-score-fusion-20260913/outputs/dtd_dtd.npz": "f722452b9924b5c34c78ede7d70692cbf5147dd6430f5a9773b4fa7e4614354a",
+    "experiments/main/scatter-score-fusion-20260913/outputs/dtd_eurosat.npz": "bc3b9f5abb2c883a0b8ea08c33466fa650b88cf7fc355eceaf8b28a182e5d8e9",
+    "experiments/main/scatter-score-fusion-20260913/outputs/eurosat_dtd.npz": "7e0ed33f5cdda16052f27596d1c7027245fe114de3833f27d1c812576cf02700",
+    "experiments/main/scatter-score-fusion-20260913/outputs/eurosat_eurosat.npz": "cfeb0b008b49dc4b2f6cb86ffd3647f16ee8d9c7afeb2bd11c8f8d1bbaf98b7c"
+  },
+  "script_sha256": "a216cdd845bb85e23df6b77b7f04d0f199c9ebff337d499460725553039c8828",
+  "cells": {
+    "dtd_dtd": {
+      "accuracy_pct": {
+        "stack": 79.86133333333332,
+        "raw": 79.78933333333335,
+        "blend": 79.88799999999999,
+        "query_oracle": 81.11466666666668,
+        "task_oracle": 80.66133333333333
+      },
+      "query_oracle_minus_blend": {
+        "delta_pp": 1.2266666666666666,
+        "ci95_pp": [
+          1.096,
+          1.3573999999999995
+        ]
+      },
+      "task_oracle_minus_blend": {
+        "delta_pp": 0.7733333333333332,
+        "ci95_pp": [
+          0.6799333333333331,
+          0.872
+        ]
+      },
+      "query_occurrences": 37500,
+      "disagreement_count": 1316,
+      "correctable_blend_errors": 460,
+      "vulnerable_blend_correct": 506,
+      "all_experts_wrong_count": 7082,
+      "blend_errors": 7542,
+      "raw_only_rescues": 201,
+      "stack_only_rescues": 259,
+      "both_rescue": 0,
+      "sampled_score_task_count": 5
+    },
+    "dtd_eurosat": {
+      "accuracy_pct": {
+        "stack": 75.944,
+        "raw": 76.24266666666666,
+        "blend": 76.26666666666667,
+        "query_oracle": 77.864,
+        "task_oracle": 77.18666666666667
+      },
+      "query_oracle_minus_blend": {
+        "delta_pp": 1.5973333333333333,
+        "ci95_pp": [
+          1.4586666666666668,
+          1.7386666666666666
+        ]
+      },
+      "task_oracle_minus_blend": {
+        "delta_pp": 0.9200000000000004,
+        "ci95_pp": [
+          0.8160000000000001,
+          1.0213333333333336
+        ]
+      },
+      "query_occurrences": 37500,
+      "disagreement_count": 1888,
+      "correctable_blend_errors": 599,
+      "vulnerable_blend_correct": 723,
+      "all_experts_wrong_count": 8301,
+      "blend_errors": 8900,
+      "raw_only_rescues": 313,
+      "stack_only_rescues": 286,
+      "both_rescue": 0,
+      "sampled_score_task_count": 5
+    },
+    "eurosat_dtd": {
+      "accuracy_pct": {
+        "stack": 73.50666666666666,
+        "raw": 72.14133333333334,
+        "blend": 73.48533333333333,
+        "query_oracle": 76.72,
+        "task_oracle": 74.82933333333332
+      },
+      "query_oracle_minus_blend": {
+        "delta_pp": 3.234666666666666,
+        "ci95_pp": [
+          3.034666666666667,
+          3.442666666666666
+        ]
+      },
+      "task_oracle_minus_blend": {
+        "delta_pp": 1.3439999999999999,
+        "ci95_pp": [
+          1.2,
+          1.4906666666666668
+        ]
+      },
+      "query_occurrences": 37500,
+      "disagreement_count": 3698,
+      "correctable_blend_errors": 1213,
+      "vulnerable_blend_correct": 1668,
+      "all_experts_wrong_count": 8730,
+      "blend_errors": 9943,
+      "raw_only_rescues": 543,
+      "stack_only_rescues": 670,
+      "both_rescue": 0,
+      "sampled_score_task_count": 5
+    },
+    "eurosat_eurosat": {
+      "accuracy_pct": {
+        "stack": 79.43999999999998,
+        "raw": 79.69866666666667,
+        "blend": 79.696,
+        "query_oracle": 81.17066666666666,
+        "task_oracle": 80.61066666666665
+      },
+      "query_oracle_minus_blend": {
+        "delta_pp": 1.4746666666666666,
+        "ci95_pp": [
+          1.3226666666666669,
+          1.6293333333333333
+        ]
+      },
+      "task_oracle_minus_blend": {
+        "delta_pp": 0.9146666666666664,
+        "ci95_pp": [
+          0.797333333333333,
+          1.0346666666666662
+        ]
+      },
+      "query_occurrences": 37500,
+      "disagreement_count": 1481,
+      "correctable_blend_errors": 553,
+      "vulnerable_blend_correct": 637,
+      "all_experts_wrong_count": 7061,
+      "blend_errors": 7614,
+      "raw_only_rescues": 314,
+      "stack_only_rescues": 239,
+      "both_rescue": 0,
+      "sampled_score_task_count": 5
+    }
+  },
+  "domains": {
+    "dtd": {
+      "accuracy_pct": {
+        "stack": 77.90266666666666,
+        "raw": 78.01599999999999,
+        "blend": 78.07733333333333,
+        "query_oracle": 79.48933333333333,
+        "task_oracle": 78.924
+      },
+      "query_oracle_minus_blend": {
+        "delta_pp": 1.412,
+        "ci95_pp": [
+          1.3119999999999998,
+          1.516
+        ]
+      },
+      "per_seed_headroom_pp": {
+        "26091371": 1.3133333333333332,
+        "26091372": 1.4800000000000002,
+        "26091373": 1.426666666666667,
+        "26091374": 1.3266666666666664,
+        "26091375": 1.5133333333333334
+      }
+    },
+    "eurosat": {
+      "accuracy_pct": {
+        "stack": 76.47333333333334,
+        "raw": 75.92000000000002,
+        "blend": 76.59066666666666,
+        "query_oracle": 78.94533333333334,
+        "task_oracle": 77.71999999999998
+      },
+      "query_oracle_minus_blend": {
+        "delta_pp": 2.3546666666666667,
+        "ci95_pp": [
+          2.2253333333333334,
+          2.488
+        ]
+      },
+      "per_seed_headroom_pp": {
+        "26091371": 2.5199999999999996,
+        "26091372": 2.4066666666666663,
+        "26091373": 2.36,
+        "26091374": 2.2266666666666666,
+        "26091375": 2.26
+      }
+    }
+  },
+  "pooled_accuracy_pct": {
+    "stack": 77.188,
+    "raw": 76.968,
+    "blend": 77.334,
+    "query_oracle": 79.21733333333333,
+    "task_oracle": 78.322
+  },
+  "pooled_query_oracle_minus_blend": {
+    "delta_pp": 1.8833333333333333,
+    "ci95_pp": [
+      1.7993333333333332,
+      1.9680000000000004
+    ]
+  },
+  "necessary_headroom_gate": true,
+  "warning": "Oracles read target query labels. Finite three-expert ceiling only; not trainable accuracy, continuous mixture bound, independent target evidence or promotion.",
+  "validation": {
+    "all_four_cell_parent_means_match": true,
+    "all_galleries_pair_identical_tasks": true,
+    "query_oracle_dominates_task_oracle": true
+  },
+  "finished_utc": "2026-09-13T10:03:29.254377+00:00"
+}

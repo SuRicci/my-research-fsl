@@ -1,0 +1,65 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-6db66fe5",
+  "id": "report-6db66fe5",
+  "quest_id": "012",
+  "created_at": "2026-09-12T12:23:33+00:00",
+  "updated_at": "2026-09-12T12:23:33+00:00",
+  "source": {
+    "kind": "agent"
+  },
+  "status": "completed",
+  "branch": "run/r2-prevalidation-canonical-20260912",
+  "head_commit": "fa5af661d4ec2100672514a7fe602a8954fb9b72",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912",
+  "workspace_rel_path": ".ds/worktrees/r2-prevalidation-canonical-20260912",
+  "report_type": "analysis_campaign_summary",
+  "summary": "Analysis campaign `analysis-1b946833` is complete and merged back into the parent experiment branch.",
+  "reason": "All configured analysis slices completed, so the quest can return to writing on the parent branch.",
+  "idea_id": "idea-8c090fcf",
+  "campaign_id": "analysis-1b946833",
+  "worktree_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912",
+  "flow_type": "analysis_campaign",
+  "protocol_step": "complete",
+  "paths": {
+    "summary_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/SUMMARY.md"
+  },
+  "details": {
+    "slice_count": 1,
+    "completed_slices": [
+      {
+        "slice_id": "canonical-additional-domains",
+        "status": "completed",
+        "mirror_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/canonical-additional-domains.md"
+      }
+    ]
+  },
+  "semantic_key": "report:decision:analysis_campaign_summary:complete:986fd6d0c39f827174825e353e212119dd3559ae10a73f04143fc8ee3b876db3",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-6db66fe5",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/SUMMARY.md"
+    ],
+    "stage_status": "ready"
+  }
+}

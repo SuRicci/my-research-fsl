@@ -1,0 +1,38 @@
+{
+  "report_id": "report-77f9a6fd",
+  "idea_id": "idea-8cbaafc7",
+  "tier": "auxiliary/dev",
+  "status": "refuted_fixed_protocol",
+  "macro_1shot": {
+    "dtd": {
+      "delta_pp": -0.34799999999999986,
+      "ci95_pp": [
+        -0.5106666666666667,
+        -0.18800000000000006
+      ],
+      "seed_deltas_pp": [
+        -0.3466666666666663,
+        -0.14000000000000035,
+        -0.6066666666666676,
+        -0.11999999999999866,
+        -0.5266666666666664
+      ]
+    },
+    "eurosat": {
+      "delta_pp": -0.672,
+      "ci95_pp": [
+        -0.876,
+        -0.4639999999999999
+      ],
+      "seed_deltas_pp": [
+        -0.8666666666666665,
+        -0.5599999999999998,
+        -0.8666666666666674,
+        -0.32000000000000006,
+        -0.7466666666666663
+      ]
+    }
+  },
+  "canonical_baseline_unchanged": true,
+  "report_path": "experiments/main/support-risk-selection-20260913/REPORT.md"
+}

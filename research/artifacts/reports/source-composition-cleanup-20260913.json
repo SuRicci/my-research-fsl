@@ -1,0 +1,115 @@
+{
+  "status": "lossless_compression_verified",
+  "count": 13,
+  "files": [
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/cifar_fs_test/clip_vitb16/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/cifar_fs_test/clip_vitb16/index.json.gz",
+      "original_bytes": 1410890,
+      "compressed_bytes": 112340,
+      "sha256_uncompressed": "0c6e78e722a091ce274254f0fc28c9b517361ee35f6761b1a168cad404739a8a",
+      "sha256_compressed": "e74b599e002b4679f88fa59e41f60a79307f36271c7eb2476244e6410cf847e3"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/cifar_fs_test/dinov2_vits14/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/cifar_fs_test/dinov2_vits14/index.json.gz",
+      "original_bytes": 1442814,
+      "compressed_bytes": 111385,
+      "sha256_uncompressed": "59994cdec4e5d71fccd718d4450656a7bb512862ebad7c2ab1378bf4582a52f9",
+      "sha256_compressed": "48ac27df13e541b5a9597d8d1b08ff474b6563b48e5767a315dcbef9aa77b0d1"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/cub200_test/clip_vitb16/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/cub200_test/clip_vitb16/index.json.gz",
+      "original_bytes": 4011376,
+      "compressed_bytes": 321285,
+      "sha256_uncompressed": "9f76cd419292d0f346e251191a856a09aa6f4d8d033f35cb78657597aadbebcb",
+      "sha256_compressed": "7c2313df6624219134190af2a72798e1c9d1506f473014b48e3cb706e42b5f64"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/cub200_test/dinov2_vits14/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/cub200_test/dinov2_vits14/index.json.gz",
+      "original_bytes": 4104107,
+      "compressed_bytes": 324248,
+      "sha256_uncompressed": "232c1e2c9c3d710c6c9f0cc66fdfdabe9908ec50d15aa482dabc52b528c5a288",
+      "sha256_compressed": "e8f29eff7d90ac28f2cfa9cb03cc4527be0a0149650dd550ff0d3b1d90c3078a"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/dtd_test/clip_vitb16/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/dtd_test/clip_vitb16/index.json.gz",
+      "original_bytes": 1250540,
+      "compressed_bytes": 104605,
+      "sha256_uncompressed": "0685917dc514445f04667d22f64508e91e6cf6e0fa7232cb99029be7bb7d6bdb",
+      "sha256_compressed": "cf81a1d192a3c3ffd59d47544867ad8f9f70285a460e0c20ed6c0453a728d781"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/dtd_test/dinov2_vits14/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/dtd_test/dinov2_vits14/index.json.gz",
+      "original_bytes": 1280539,
+      "compressed_bytes": 103969,
+      "sha256_uncompressed": "7c488fbcbd8fb8fa4d24e265f48d6bea807816b83372d50c1f8d612eb451df82",
+      "sha256_compressed": "7b6f18dacce4692c0c41900e1be1f260a6d3b3ee384bf0e994964329ef8dc98c"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/eurosat/clip_vitb16/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/eurosat/clip_vitb16/index.json.gz",
+      "original_bytes": 3565414,
+      "compressed_bytes": 298494,
+      "sha256_uncompressed": "37bbc9a5380bbbb8ec0a1dae3b9236fd42208bdd5657c977a010635bb55a59db",
+      "sha256_compressed": "91c3ba657836aed1f6319ef8256a8cdf6bb861639b36875c69699fe0808a73fe"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/eurosat/dinov2_vits14/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/eurosat/dinov2_vits14/index.json.gz",
+      "original_bytes": 3651663,
+      "compressed_bytes": 299065,
+      "sha256_uncompressed": "0725306efd52a8719e71e9cb8b040a404d638f69b190488d33465a427e64760b",
+      "sha256_compressed": "80e73621b9f6c5d12564a51bcfe55b5ede6c36df2042c4306bb3bb61ac6db607"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/flowers102/clip_vitb16/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/flowers102/clip_vitb16/index.json.gz",
+      "original_bytes": 4208647,
+      "compressed_bytes": 337953,
+      "sha256_uncompressed": "bdbf0b25c8d28e3ea483736b9238fa65f2a87941b9d33c1952f05b71297d7ea6",
+      "sha256_compressed": "258f86da6dd6bdbed9db15d90d5501bbdd9ff5635a8378ce8aaf770643d88aae"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/flowers102/dinov2_vits14/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/flowers102/dinov2_vits14/index.json.gz",
+      "original_bytes": 4306947,
+      "compressed_bytes": 343150,
+      "sha256_uncompressed": "c5cdc8bb1ecc3ab4fa60a8f79becf1ebe6c41342c3237c4975276bf89f2574ae",
+      "sha256_compressed": "285234e5bb61c03cf73af88a6184676adb7c335b8af087b147a0e6eddaedcf7c"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/miniimagenet_test/clip_vitb16/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/miniimagenet_test/clip_vitb16/index.json.gz",
+      "original_bytes": 8909899,
+      "compressed_bytes": 666981,
+      "sha256_uncompressed": "34555379d5dad41ad157ae346d337a8399c6d6d107e6a626056bfa685f0311bf",
+      "sha256_compressed": "9d0a55f3eb9f1ec75b9117e246a8aa8cbc9df7ebdd220134d3a826f00e62452b"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/miniimagenet_test/dinov2_vits14/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/miniimagenet_test/dinov2_vits14/index.json.gz",
+      "original_bytes": 9101878,
+      "compressed_bytes": 663535,
+      "sha256_uncompressed": "d5b5886de9fcca69ba0696fdd03e1b1b3019e5155fec2131d0ed242c33193233",
+      "sha256_compressed": "6b13a4e927dd954bc53a7c9112aab63964214acd43d1a596a28dee35ba953ecc"
+    },
+    {
+      "original_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/text/clip_vitb16/index.json",
+      "compressed_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index/text/clip_vitb16/index.json.gz",
+      "original_bytes": 239,
+      "compressed_bytes": 153,
+      "sha256_uncompressed": "400698aa7c7faac97cc602d98bbe538b8075e6add6d273a27ec9f5d347cb935c",
+      "sha256_compressed": "7853984cc57e5d7487e1e6212c4271e0d98396e171e64bac40574cceceb1cfa8"
+    }
+  ],
+  "logical_bytes_saved": 43557790,
+  "free_bytes_before": 10812645376,
+  "free_bytes_after": 10856185856,
+  "restore": "For each receipt row: p=Path(compressed_path); Path(original_path).write_bytes(gzip.decompress(p.read_bytes())); verify sha256_uncompressed. Restore before rerunning historical recover_queries.py; no active experiment reads tmp/cache-index.",
+  "preserved": "all index metadata losslessly retained; feature arrays,weights,predictions,source scripts,audit evidence and raw logs untouched"
+}

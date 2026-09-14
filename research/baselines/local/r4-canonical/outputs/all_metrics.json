@@ -1,0 +1,412 @@
+{
+  "rows": [
+    {
+      "phase": "dev",
+      "dataset": "dtd",
+      "bridge_policy": "cross",
+      "budget": 32,
+      "mean_map": {
+        "old_old": 32.828394719908324,
+        "relative_centered": 4.903002989765732,
+        "procrustes": 4.152403261807659,
+        "ridge": 3.125106705816204,
+        "wip_restricted": 3.9821657875854504,
+        "local_std": 33.445462902356546,
+        "linear_std": 32.076321770738105,
+        "v0_press": 33.59330112058145,
+        "global_press": 33.72313637948266,
+        "old_centered": 36.59390013221845,
+        "old_whiten": 35.66870029659264,
+        "centered_residual_2": 36.696347625400605,
+        "new_new_oracle": 44.63136904864509
+      },
+      "v0_seed_map": [
+        33.54499301762005,
+        33.2795039685289,
+        34.091123882332276,
+        33.368442445720085,
+        33.68244228870596
+      ]
+    },
+    {
+      "phase": "dev",
+      "dataset": "dtd",
+      "bridge_policy": "cross",
+      "budget": 64,
+      "mean_map": {
+        "old_old": 32.828394719908324,
+        "relative_centered": 5.144545346740495,
+        "procrustes": 4.340005780302997,
+        "ridge": 3.1826046527445353,
+        "wip_restricted": 3.7513069524457063,
+        "local_std": 33.39851513153715,
+        "linear_std": 30.528143907225946,
+        "v0_press": 33.97763090623613,
+        "global_press": 34.14140729252545,
+        "old_centered": 36.59390013221845,
+        "old_whiten": 35.66870029659264,
+        "centered_residual_2": 36.645336503501476,
+        "new_new_oracle": 44.63136904864509
+      },
+      "v0_seed_map": [
+        33.832487657915266,
+        33.70795852625189,
+        34.12296354048643,
+        34.22560432954082,
+        33.99914047698622
+      ]
+    },
+    {
+      "phase": "dev",
+      "dataset": "dtd",
+      "bridge_policy": "matched",
+      "budget": 32,
+      "mean_map": {
+        "old_old": 32.828394719908324,
+        "relative_centered": 27.83390068222929,
+        "procrustes": 29.589802159653132,
+        "ridge": 16.9039165470445,
+        "wip_restricted": 22.266521355863894,
+        "local_std": 38.05833348313111,
+        "linear_std": 38.81521364447115,
+        "v0_press": 38.694788113289334,
+        "global_press": 38.92378526179351,
+        "old_centered": 36.59390013221845,
+        "old_whiten": 35.66870029659264,
+        "centered_residual_2": 40.30506911463241,
+        "new_new_oracle": 44.63136904864509
+      },
+      "v0_seed_map": [
+        38.48736134770765,
+        39.03367796775471,
+        38.73195885676351,
+        38.45310330814023,
+        38.767839086080556
+      ]
+    },
+    {
+      "phase": "dev",
+      "dataset": "dtd",
+      "bridge_policy": "matched",
+      "budget": 64,
+      "mean_map": {
+        "old_old": 32.828394719908324,
+        "relative_centered": 33.1447325819678,
+        "procrustes": 36.8520135466935,
+        "ridge": 21.440952878088584,
+        "wip_restricted": 30.141421666418246,
+        "local_std": 40.00135778863949,
+        "linear_std": 41.57105987734215,
+        "v0_press": 41.56397110997213,
+        "global_press": 41.543427677259174,
+        "old_centered": 36.59390013221845,
+        "old_whiten": 35.66870029659264,
+        "centered_residual_2": 41.81010667234838,
+        "new_new_oracle": 44.63136904864509
+      },
+      "v0_seed_map": [
+        41.53571540073678,
+        41.403031839159524,
+        42.137432739590295,
+        40.65459122220981,
+        42.08908434816428
+      ]
+    },
+    {
+      "phase": "eval",
+      "dataset": "dtd",
+      "bridge_policy": "cross",
+      "budget": 32,
+      "mean_map": {
+        "old_old": 27.0458485540921,
+        "relative_centered": 5.062234021914837,
+        "procrustes": 3.750793058936815,
+        "ridge": 2.951126229211049,
+        "wip_restricted": 3.3634517393391037,
+        "local_std": 27.542374012452246,
+        "linear_std": 26.412212813726843,
+        "v0_press": 27.71466483262442,
+        "global_press": 27.966146287320232,
+        "old_centered": 30.67913154861484,
+        "old_whiten": 29.58869174409065,
+        "centered_residual_2": 30.88983217639603,
+        "new_new_oracle": 37.97552320539392
+      },
+      "v0_seed_map": [
+        27.66241957899317,
+        27.527996707483982,
+        27.956998458279315,
+        27.61388507913224,
+        27.812024339233364
+      ],
+      "metric_id": "dtd_cross_bridge32_map",
+      "best_control": "centered_residual_2",
+      "v0_minus_best_control_pp": -3.175167343771612,
+      "v0_minus_resampled_best_ci95_pp": [
+        -5.37966774793473,
+        -1.2529226328361331
+      ],
+      "v0_minus_old_pp": 0.6688162785323186,
+      "oracle_minus_old_pp": 10.92967465130182
+    },
+    {
+      "phase": "eval",
+      "dataset": "dtd",
+      "bridge_policy": "cross",
+      "budget": 64,
+      "mean_map": {
+        "old_old": 27.0458485540921,
+        "relative_centered": 5.26993989348678,
+        "procrustes": 3.898075929238577,
+        "ridge": 3.002913608302629,
+        "wip_restricted": 3.3904220007917263,
+        "local_std": 27.58418216424761,
+        "linear_std": 25.622393710481667,
+        "v0_press": 28.195037702484683,
+        "global_press": 28.435791455928204,
+        "old_centered": 30.67913154861484,
+        "old_whiten": 29.58869174409065,
+        "centered_residual_2": 30.917894207736186,
+        "new_new_oracle": 37.97552320539392
+      },
+      "v0_seed_map": [
+        28.029117610707804,
+        28.000682516917774,
+        28.220615604400074,
+        28.33085931358112,
+        28.393913466816663
+      ],
+      "metric_id": "dtd_cross_bridge64_map",
+      "best_control": "centered_residual_2",
+      "v0_minus_best_control_pp": -2.722856505251503,
+      "v0_minus_resampled_best_ci95_pp": [
+        -4.878009808499441,
+        -0.8541317610776619
+      ],
+      "v0_minus_old_pp": 1.1491891483925833,
+      "oracle_minus_old_pp": 10.92967465130182
+    },
+    {
+      "phase": "eval",
+      "dataset": "dtd",
+      "bridge_policy": "matched",
+      "budget": 32,
+      "mean_map": {
+        "old_old": 27.0458485540921,
+        "relative_centered": 21.66355790091305,
+        "procrustes": 21.894182992840314,
+        "ridge": 11.267764898670373,
+        "wip_restricted": 15.233820709808166,
+        "local_std": 30.964660717751947,
+        "linear_std": 31.628444374317528,
+        "v0_press": 31.961253576458308,
+        "global_press": 32.17737620735079,
+        "old_centered": 30.67913154861484,
+        "old_whiten": 29.58869174409065,
+        "centered_residual_2": 33.76598324688723,
+        "new_new_oracle": 37.97552320539392
+      },
+      "v0_seed_map": [
+        31.02256631510106,
+        33.069488447370375,
+        32.24238973623076,
+        31.759149310413843,
+        31.712674073175496
+      ],
+      "metric_id": "dtd_matched_bridge32_map",
+      "best_control": "centered_residual_2",
+      "v0_minus_best_control_pp": -1.804729670428923,
+      "v0_minus_resampled_best_ci95_pp": [
+        -3.9873826297336157,
+        -0.16054861205887114
+      ],
+      "v0_minus_old_pp": 4.915405022366208,
+      "oracle_minus_old_pp": 10.92967465130182
+    },
+    {
+      "phase": "eval",
+      "dataset": "dtd",
+      "bridge_policy": "matched",
+      "budget": 64,
+      "mean_map": {
+        "old_old": 27.0458485540921,
+        "relative_centered": 28.30563021802359,
+        "procrustes": 30.14038784562065,
+        "ridge": 15.156569319399143,
+        "wip_restricted": 23.691965410042666,
+        "local_std": 33.3828382975448,
+        "linear_std": 34.58571284622954,
+        "v0_press": 34.75445167569063,
+        "global_press": 34.83919346269379,
+        "old_centered": 30.67913154861484,
+        "old_whiten": 29.58869174409065,
+        "centered_residual_2": 35.380756839152916,
+        "new_new_oracle": 37.97552320539392
+      },
+      "v0_seed_map": [
+        34.10611825927109,
+        35.529147897806794,
+        34.49792564156968,
+        34.75822879333072,
+        34.88083778647489
+      ],
+      "metric_id": "dtd_matched_bridge64_map",
+      "best_control": "centered_residual_2",
+      "v0_minus_best_control_pp": -0.626305163462284,
+      "v0_minus_resampled_best_ci95_pp": [
+        -2.9291669386200505,
+        0.05053362560858373
+      ],
+      "v0_minus_old_pp": 7.708603121598532,
+      "oracle_minus_old_pp": 10.92967465130182
+    },
+    {
+      "phase": "eval",
+      "dataset": "eurosat",
+      "bridge_policy": "cross",
+      "budget": 32,
+      "mean_map": {
+        "old_old": 54.43517341879788,
+        "relative_centered": 16.15418668535662,
+        "procrustes": 15.746765535162979,
+        "ridge": 14.067909888564136,
+        "wip_restricted": 15.275853817718579,
+        "local_std": 54.19169192822565,
+        "linear_std": 52.74576017853051,
+        "v0_press": 55.02707428431934,
+        "global_press": 55.21238681065862,
+        "old_centered": 57.97266511389243,
+        "old_whiten": 52.60091377055451,
+        "centered_residual_2": 56.62840683912806,
+        "new_new_oracle": 52.99807847167982
+      },
+      "v0_seed_map": [
+        55.22206852524292,
+        54.544699869377446,
+        55.21530127761125,
+        55.03220548797717,
+        55.12109626138799
+      ],
+      "metric_id": "eurosat_cross_bridge32_map",
+      "best_control": "old_centered",
+      "v0_minus_best_control_pp": -2.945590829573092,
+      "v0_minus_resampled_best_ci95_pp": [
+        -5.261594081977577,
+        -0.81446329692155
+      ],
+      "v0_minus_old_pp": 0.5919008655214597,
+      "oracle_minus_old_pp": -1.4370949471180623
+    },
+    {
+      "phase": "eval",
+      "dataset": "eurosat",
+      "bridge_policy": "cross",
+      "budget": 64,
+      "mean_map": {
+        "old_old": 54.43517341879788,
+        "relative_centered": 17.753282310271178,
+        "procrustes": 20.052983736737378,
+        "ridge": 14.654754054656022,
+        "wip_restricted": 16.025137361186705,
+        "local_std": 53.83633726665078,
+        "linear_std": 50.106364129042156,
+        "v0_press": 54.8838847793421,
+        "global_press": 55.16926556281773,
+        "old_centered": 57.97266511389243,
+        "old_whiten": 52.60091377055451,
+        "centered_residual_2": 54.447829976559234,
+        "new_new_oracle": 52.99807847167982
+      },
+      "v0_seed_map": [
+        55.734644350863135,
+        53.1409597295307,
+        55.36855377952834,
+        55.07345966706614,
+        55.101806369722205
+      ],
+      "metric_id": "eurosat_cross_bridge64_map",
+      "best_control": "old_centered",
+      "v0_minus_best_control_pp": -3.0887803345503357,
+      "v0_minus_resampled_best_ci95_pp": [
+        -6.439919137503048,
+        -0.4776357726546533
+      ],
+      "v0_minus_old_pp": 0.4487113605442161,
+      "oracle_minus_old_pp": -1.4370949471180623
+    },
+    {
+      "phase": "eval",
+      "dataset": "eurosat",
+      "bridge_policy": "matched",
+      "budget": 32,
+      "mean_map": {
+        "old_old": 54.43517341879788,
+        "relative_centered": 41.69684227218114,
+        "procrustes": 49.9807920694499,
+        "ridge": 32.63182590459899,
+        "wip_restricted": 42.18279331923698,
+        "local_std": 57.00295426097771,
+        "linear_std": 52.63891029660749,
+        "v0_press": 57.11628386163272,
+        "global_press": 56.77262627967109,
+        "old_centered": 57.97266511389243,
+        "old_whiten": 52.60091377055451,
+        "centered_residual_2": 51.52973507547705,
+        "new_new_oracle": 52.99807847167982
+      },
+      "v0_seed_map": [
+        58.90108247537527,
+        54.976167051779456,
+        57.443642461634184,
+        57.939284781567004,
+        56.321242537807706
+      ],
+      "metric_id": "eurosat_matched_bridge32_map",
+      "best_control": "old_centered",
+      "v0_minus_best_control_pp": -0.856381252259709,
+      "v0_minus_resampled_best_ci95_pp": [
+        -6.447966739048673,
+        0.6614046287116161
+      ],
+      "v0_minus_old_pp": 2.681110442834843,
+      "oracle_minus_old_pp": -1.4370949471180623
+    },
+    {
+      "phase": "eval",
+      "dataset": "eurosat",
+      "bridge_policy": "matched",
+      "budget": 64,
+      "mean_map": {
+        "old_old": 54.43517341879788,
+        "relative_centered": 43.340812900815045,
+        "procrustes": 55.09367458898334,
+        "ridge": 37.247117223069075,
+        "wip_restricted": 50.957847122875236,
+        "local_std": 56.471867228796015,
+        "linear_std": 53.10620873568498,
+        "v0_press": 56.80123791857014,
+        "global_press": 56.33439287598478,
+        "old_centered": 57.97266511389243,
+        "old_whiten": 52.60091377055451,
+        "centered_residual_2": 47.56372688934065,
+        "new_new_oracle": 52.99807847167982
+      },
+      "v0_seed_map": [
+        58.23348148434939,
+        54.02390592641454,
+        56.938636112643536,
+        58.62311403272836,
+        56.1870520367148
+      ],
+      "metric_id": "eurosat_matched_bridge64_map",
+      "best_control": "old_centered",
+      "v0_minus_best_control_pp": -1.1714271953222948,
+      "v0_minus_resampled_best_ci95_pp": [
+        -8.227209232695847,
+        0.786389159236508
+      ],
+      "v0_minus_old_pp": 2.366064499772257,
+      "oracle_minus_old_pp": -1.4370949471180623
+    }
+  ]
+}

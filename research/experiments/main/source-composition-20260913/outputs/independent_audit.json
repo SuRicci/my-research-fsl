@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "fitted_models": 36,
+  "recomputed_query_predictions": 1602000,
+  "independent_score_cases": 324,
+  "max_score_error": 1.312557625698929e-06,
+  "independent_statistics": 60,
+  "immutable_inputs": "passed",
+  "paired_initializations": "passed",
+  "selection_lock": "passed",
+  "scope": "conditional development evidence; no new canonical target result"
+}

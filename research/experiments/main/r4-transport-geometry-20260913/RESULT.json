@@ -1,0 +1,1655 @@
+{
+  "schema_version": 1,
+  "result_kind": "main_experiment",
+  "quest_id": "012",
+  "run_id": "r4-transport-geometry-20260913",
+  "title": "Old-space interpolation geometry under fixed bridge permissions",
+  "status": "completed",
+  "verdict": "negative",
+  "idea_id": "idea-134c9aa0",
+  "branch": "run/r4-transport-geometry-20260913",
+  "parent_branch": "idea/012-idea-134c9aa0",
+  "worktree_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913",
+  "head_commit": "827ad56bf2de8930625bbabb6da6b25aa05c79bf",
+  "baseline_ref": {
+    "baseline_id": "r4-canonical-local",
+    "variant_id": "semantic-mps32-v1",
+    "metric_contract_json_rel_path": "baselines/local/r4-canonical-local/json/metric_contract.json",
+    "metric_contract": {
+      "evaluation_protocol": {
+        "scope_id": "r4-dtd-eurosat-semantic-20260912",
+        "protocol": {
+          "baseline_id": "r4-canonical-local",
+          "variant_id": "semantic-mps32-v1",
+          "scope_id": "r4-dtd-eurosat-semantic-20260912",
+          "source_method": "unchanged frozen V0 v0_press; RBF0.5, standardized residual, PRESS coefficients .001/.01/.1/1/10",
+          "source_sha256": {
+            "methods.py": "3d7044afd1a8dddfb43a5a9c4dda7b91dae6a01e478dc5596beafd94a20b0146",
+            "lab_metrics.py": "fe9514227590993c9c0c07cf3b8e2215d71ee675948c84e3312f328655bd642d",
+            "improved.py": "d2ee38b5ff3243364137f87bc7fc412850605aace18f0ff3b8ad99170a730f4d",
+            "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "lab_methods.py": "1ff3943740eee0f165f540e7abfc70e0c6d64f2b6370daab089a1c7f52e5d9ad",
+            "nextstage.py": "ba6da2bf06a62da24ee53f31ccdfcf1df8b62650eca26e78fd97b54f41c92bb1",
+            "geometry.py": "1de089bf948e81395b6bbbcd4d6e025f86ddb092236ec8723ddecc42ac501312"
+          },
+          "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+          "source_feature_manifest_sha256": "3d06ebf47f259fb41db5f5aaa85aab65ded94ff15a036d08e36c0cfcfa6e633b",
+          "datasets": [
+            "dtd",
+            "eurosat"
+          ],
+          "pair": [
+            "clip_vitb16",
+            "dinov2_vits14"
+          ],
+          "budgets": [
+            32,
+            64
+          ],
+          "bridge_seeds": [
+            26091301,
+            26091302,
+            26091303,
+            26091304,
+            26091305
+          ],
+          "split_seed": 120909,
+          "identity_selection_seed": 26091300,
+          "queries_per_class": 10,
+          "dtd_dev_class_half": "first23",
+          "dtd_eval_class_half": "remaining24",
+          "eurosat_eval_classes": "all10",
+          "gallery": "all canonical gallery identities; no gallery cap",
+          "bridge_pool": "canonical query pool excluding all retrieval queries; matched query class split or other-domain full remaining pool; sampled without replacement; shared prefixes for32/64",
+          "methods": [
+            "old_old",
+            "relative_centered",
+            "procrustes",
+            "ridge",
+            "wip_restricted",
+            "local_std",
+            "linear_std",
+            "v0_press",
+            "global_press",
+            "old_centered",
+            "old_whiten",
+            "centered_residual_2",
+            "new_new_oracle"
+          ],
+          "primary_method": "v0_press",
+          "metric": "class AP = sum precision at every relevant rank / number relevant gallery images; mean queries, then equal seed and cell means",
+          "evaluation_cells": 8,
+          "development_cells": 4,
+          "bootstrap": "5000 paired class-cluster and bridge-seed resamples; queries within a class stay together, shared queries across bridge seeds; fixed gallery",
+          "permissions": {
+            "method_inputs": [
+              "go",
+              "qo",
+              "qn",
+              "ao",
+              "an"
+            ],
+            "gallery_new_to_method": false,
+            "labels_to_method": false,
+            "query_batch_fit": false,
+            "encoder_training": false,
+            "logical_gallery_new_calls": 0,
+            "bridge_new_calls": "m unique images",
+            "query_old_new_calls": "one each; cached execution"
+          },
+          "deviations": [
+            "New semantic retrieval task using previously viewed DTD/EuroSAT image pools, not historical CUB/Oxford replication",
+            "Canonical local MPS feature variant/DINO preprocessing differs from historicalR4; feature hashes locked",
+            "Only CLIP-B16 to DINO available; unavailable B32→B16 historical cells are reference-only",
+            "Development output is not confirmation; no parameter selection for frozen baseline",
+            "Interface isolation is trusted feature-only code, not adversarial process sandbox"
+          ],
+          "limits": {
+            "free_disk_min_gib": 10,
+            "expected_added_gib_max": 1,
+            "threads": 6,
+            "new_encoding_calls": 0,
+            "download_bytes": 0
+          }
+        },
+        "code_paths": [
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/evaluate.py",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/audit_results.py"
+        ],
+        "code_hashes": {
+          "evaluate.py": "725d52edbe7b689c772fe028ae616ce9899028cdf386b5177669f9d2e3b646dd",
+          "audit_results.py": "76621d45aecf7564243a28156ec5c56ce11baab04a767c19838bb6c6ca9eaa76"
+        },
+        "historical_parity": false,
+        "accepted_comparator_method": "old_centered"
+      },
+      "comparison_primary_method": "old_centered",
+      "baseline_variants": {
+        "old_old": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 27.0458485540921,
+            "dtd_cross_bridge64_map": 27.0458485540921,
+            "dtd_matched_bridge32_map": 27.0458485540921,
+            "dtd_matched_bridge64_map": 27.0458485540921,
+            "eurosat_cross_bridge32_map": 54.43517341879788,
+            "eurosat_cross_bridge64_map": 54.43517341879788,
+            "eurosat_matched_bridge32_map": 54.43517341879788,
+            "eurosat_matched_bridge64_map": 54.43517341879788,
+            "macro_map": 40.74051098644499
+          },
+          "role": "same_permission_control"
+        },
+        "relative_centered": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 5.062234021914837,
+            "dtd_cross_bridge64_map": 5.26993989348678,
+            "dtd_matched_bridge32_map": 21.66355790091305,
+            "dtd_matched_bridge64_map": 28.30563021802359,
+            "eurosat_cross_bridge32_map": 16.15418668535662,
+            "eurosat_cross_bridge64_map": 17.753282310271178,
+            "eurosat_matched_bridge32_map": 41.69684227218114,
+            "eurosat_matched_bridge64_map": 43.340812900815045,
+            "macro_map": 22.40581077537028
+          },
+          "role": "same_permission_control"
+        },
+        "procrustes": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 3.750793058936815,
+            "dtd_cross_bridge64_map": 3.898075929238577,
+            "dtd_matched_bridge32_map": 21.894182992840314,
+            "dtd_matched_bridge64_map": 30.14038784562065,
+            "eurosat_cross_bridge32_map": 15.746765535162979,
+            "eurosat_cross_bridge64_map": 20.052983736737378,
+            "eurosat_matched_bridge32_map": 49.9807920694499,
+            "eurosat_matched_bridge64_map": 55.09367458898334,
+            "macro_map": 25.069706969621244
+          },
+          "role": "same_permission_control"
+        },
+        "ridge": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 2.951126229211049,
+            "dtd_cross_bridge64_map": 3.002913608302629,
+            "dtd_matched_bridge32_map": 11.267764898670373,
+            "dtd_matched_bridge64_map": 15.156569319399143,
+            "eurosat_cross_bridge32_map": 14.067909888564136,
+            "eurosat_cross_bridge64_map": 14.654754054656022,
+            "eurosat_matched_bridge32_map": 32.63182590459899,
+            "eurosat_matched_bridge64_map": 37.247117223069075,
+            "macro_map": 16.372497640808927
+          },
+          "role": "same_permission_control"
+        },
+        "wip_restricted": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 3.3634517393391037,
+            "dtd_cross_bridge64_map": 3.3904220007917263,
+            "dtd_matched_bridge32_map": 15.233820709808166,
+            "dtd_matched_bridge64_map": 23.691965410042666,
+            "eurosat_cross_bridge32_map": 15.275853817718579,
+            "eurosat_cross_bridge64_map": 16.025137361186705,
+            "eurosat_matched_bridge32_map": 42.18279331923698,
+            "eurosat_matched_bridge64_map": 50.957847122875236,
+            "macro_map": 21.265161435124895
+          },
+          "role": "same_permission_control"
+        },
+        "local_std": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 27.542374012452246,
+            "dtd_cross_bridge64_map": 27.58418216424761,
+            "dtd_matched_bridge32_map": 30.964660717751947,
+            "dtd_matched_bridge64_map": 33.3828382975448,
+            "eurosat_cross_bridge32_map": 54.19169192822565,
+            "eurosat_cross_bridge64_map": 53.83633726665078,
+            "eurosat_matched_bridge32_map": 57.00295426097771,
+            "eurosat_matched_bridge64_map": 56.471867228796015,
+            "macro_map": 42.62211323458085
+          },
+          "role": "same_permission_control"
+        },
+        "linear_std": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 26.412212813726843,
+            "dtd_cross_bridge64_map": 25.622393710481667,
+            "dtd_matched_bridge32_map": 31.628444374317528,
+            "dtd_matched_bridge64_map": 34.58571284622954,
+            "eurosat_cross_bridge32_map": 52.74576017853051,
+            "eurosat_cross_bridge64_map": 50.106364129042156,
+            "eurosat_matched_bridge32_map": 52.63891029660749,
+            "eurosat_matched_bridge64_map": 53.10620873568498,
+            "macro_map": 40.85575088557759
+          },
+          "role": "same_permission_control"
+        },
+        "v0_press": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 27.71466483262442,
+            "dtd_cross_bridge64_map": 28.195037702484683,
+            "dtd_matched_bridge32_map": 31.961253576458308,
+            "dtd_matched_bridge64_map": 34.75445167569063,
+            "eurosat_cross_bridge32_map": 55.02707428431934,
+            "eurosat_cross_bridge64_map": 54.8838847793421,
+            "eurosat_matched_bridge32_map": 57.11628386163272,
+            "eurosat_matched_bridge64_map": 56.80123791857014,
+            "macro_map": 43.306736078890296
+          },
+          "role": "historical_frozen_local_method"
+        },
+        "global_press": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 27.966146287320232,
+            "dtd_cross_bridge64_map": 28.435791455928204,
+            "dtd_matched_bridge32_map": 32.17737620735079,
+            "dtd_matched_bridge64_map": 34.83919346269379,
+            "eurosat_cross_bridge32_map": 55.21238681065862,
+            "eurosat_cross_bridge64_map": 55.16926556281773,
+            "eurosat_matched_bridge32_map": 56.77262627967109,
+            "eurosat_matched_bridge64_map": 56.33439287598478,
+            "macro_map": 43.36339736780316
+          },
+          "role": "same_permission_control"
+        },
+        "old_centered": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 30.67913154861484,
+            "dtd_cross_bridge64_map": 30.67913154861484,
+            "dtd_matched_bridge32_map": 30.67913154861484,
+            "dtd_matched_bridge64_map": 30.67913154861484,
+            "eurosat_cross_bridge32_map": 57.97266511389243,
+            "eurosat_cross_bridge64_map": 57.97266511389243,
+            "eurosat_matched_bridge32_map": 57.97266511389243,
+            "eurosat_matched_bridge64_map": 57.97266511389243,
+            "macro_map": 44.32589833125364
+          },
+          "role": "same_permission_control"
+        },
+        "old_whiten": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 29.58869174409065,
+            "dtd_cross_bridge64_map": 29.58869174409065,
+            "dtd_matched_bridge32_map": 29.58869174409065,
+            "dtd_matched_bridge64_map": 29.58869174409065,
+            "eurosat_cross_bridge32_map": 52.60091377055451,
+            "eurosat_cross_bridge64_map": 52.60091377055451,
+            "eurosat_matched_bridge32_map": 52.60091377055451,
+            "eurosat_matched_bridge64_map": 52.60091377055451,
+            "macro_map": 41.09480275732258
+          },
+          "role": "same_permission_control"
+        },
+        "centered_residual_2": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 30.88983217639603,
+            "dtd_cross_bridge64_map": 30.917894207736186,
+            "dtd_matched_bridge32_map": 33.76598324688723,
+            "dtd_matched_bridge64_map": 35.380756839152916,
+            "eurosat_cross_bridge32_map": 56.62840683912806,
+            "eurosat_cross_bridge64_map": 54.447829976559234,
+            "eurosat_matched_bridge32_map": 51.52973507547705,
+            "eurosat_matched_bridge64_map": 47.56372688934065,
+            "macro_map": 42.64052065633468
+          },
+          "role": "same_permission_control"
+        },
+        "new_new_oracle": {
+          "metrics_summary": {
+            "dtd_cross_bridge32_map": 37.97552320539392,
+            "dtd_cross_bridge64_map": 37.97552320539392,
+            "dtd_matched_bridge32_map": 37.97552320539392,
+            "dtd_matched_bridge64_map": 37.97552320539392,
+            "eurosat_cross_bridge32_map": 52.99807847167982,
+            "eurosat_cross_bridge64_map": 52.99807847167982,
+            "eurosat_matched_bridge32_map": 52.99807847167982,
+            "eurosat_matched_bridge64_map": 52.99807847167982,
+            "macro_map": 45.48680083853687
+          },
+          "role": "evaluator_only_reference"
+        }
+      },
+      "comparison_scope_note": "Frozen measurement primary remains V0 in protocol and original metrics_summary. For future comparisons select strongest uniform measured allowed control old_centered as baseline incumbent; all13 variants retained. This choice is post-measurement comparator ranking, not new-method confirmation or retroactive change of the V0 result.",
+      "contract_id": "r4-canonical-local-semantic-mps32-v1",
+      "primary_metric_id": "macro_map",
+      "metrics": [
+        {
+          "metric_id": "dtd_cross_bridge32_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_cross_bridge32_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "dtd_cross_bridge32_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "dtd_cross_bridge32_map",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "dtd_cross_bridge64_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_cross_bridge64_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "dtd_cross_bridge64_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "dtd_cross_bridge64_map",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "dtd_matched_bridge32_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_matched_bridge32_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "dtd_matched_bridge32_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "dtd_matched_bridge32_map",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "dtd_matched_bridge64_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_matched_bridge64_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "dtd_matched_bridge64_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "dtd_matched_bridge64_map",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "eurosat_cross_bridge32_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_cross_bridge32_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "eurosat_cross_bridge32_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "eurosat_cross_bridge32_map",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "eurosat_cross_bridge64_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_cross_bridge64_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "eurosat_cross_bridge64_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "eurosat_cross_bridge64_map",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "eurosat_matched_bridge32_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_matched_bridge32_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "eurosat_matched_bridge32_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "eurosat_matched_bridge32_map",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "eurosat_matched_bridge64_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_matched_bridge64_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "eurosat_matched_bridge64_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "eurosat_matched_bridge64_map",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "macro_map",
+          "description": "Mean class-retrieval AP of fixed old-gallery-centering control for macro_map",
+          "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+          "origin_path": "macro_map",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "macro_map",
+          "decimals": null,
+          "chart_group": "default"
+        }
+      ]
+    },
+    "metric_lines": [
+      {
+        "metric_id": "dtd_cross_bridge32_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 30.67913154861484,
+        "raw_value": 30.67913154861484
+      },
+      {
+        "metric_id": "dtd_cross_bridge64_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 30.67913154861484,
+        "raw_value": 30.67913154861484
+      },
+      {
+        "metric_id": "dtd_matched_bridge32_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 30.67913154861484,
+        "raw_value": 30.67913154861484
+      },
+      {
+        "metric_id": "dtd_matched_bridge64_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 30.67913154861484,
+        "raw_value": 30.67913154861484
+      },
+      {
+        "metric_id": "eurosat_cross_bridge32_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 57.97266511389243,
+        "raw_value": 57.97266511389243
+      },
+      {
+        "metric_id": "eurosat_cross_bridge64_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 57.97266511389243,
+        "raw_value": 57.97266511389243
+      },
+      {
+        "metric_id": "eurosat_matched_bridge32_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 57.97266511389243,
+        "raw_value": 57.97266511389243
+      },
+      {
+        "metric_id": "eurosat_matched_bridge64_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 57.97266511389243,
+        "raw_value": 57.97266511389243
+      },
+      {
+        "metric_id": "macro_map",
+        "label": "r4-canonical-local:semantic-mps32-v1",
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "selected": true,
+        "value": 44.32589833125364,
+        "raw_value": 44.32589833125364
+      }
+    ]
+  },
+  "run_context": {
+    "dataset_scope": "r4-dtd-eurosat-semantic-20260912",
+    "config_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/protocol.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/PLAN.md"
+    ],
+    "notes": [
+      "Seen image pools; fixed-gallery class/seed bootstrap is not independent-domain evidence.",
+      "All13baseline variants reconcile; new-new remains evaluator-only reference, not an upper bound.",
+      "Initial record attempt rejected generic scope full; corrected metadata to exact unchanged canonical scope, without rerun or metric change."
+    ]
+  },
+  "hypothesis": "Centered interpolation neighborhoods add>=0.5pp macro mAP over old_centered and beat equally selected raw transport.",
+  "setup": "Canonical20DTDdevelopment+40evaluation jobs,32/64bridges,five seeds,fullgallery. Original V0delta/PRESS. Both geometries selected globalalpha2 from identical DTDdevelopment grid[0,.5,1,2]. All9metrics13variants retained.",
+  "execution": "Numerical validation bash-3cca6ae6 passed; main bash-d3e38239 completed60jobs in36.896seconds; independent full-rank/identity audit bash-57db6d6a passed114000new method-query rankings, maxAP error4.44e-16. No encoding/downloads.",
+  "results_summary": "Primary center_a2 macro43.054342 vsoldcentered44.325898: -1.271557pp,95%[-3.039835,+0.685570]. Equalraw/centered_residual_2 contrast+0.413821pp,95%[-0.230425,+1.148866]. DTD+2.109602pp;EuroSAT-4.652715pp. Posthoc smaller-alpha rows remain diagnostics.",
+  "conclusion": "Strong gate failed. Close this kernel/preprocessing family on current exposed grid. Primary is not replaceable by a better posthoc alpha. No robust upgrade, novelty or independent-generalization claim. Next decision re-evaluates calibration/transfer evidence.",
+  "metrics_summary": {
+    "dtd_cross_bridge32_map": 30.79966784468561,
+    "dtd_cross_bridge64_map": 30.872138376019876,
+    "dtd_matched_bridge32_map": 33.870372279053534,
+    "dtd_matched_bridge64_map": 35.61275445522558,
+    "eurosat_cross_bridge32_map": 58.18865865635002,
+    "eurosat_cross_bridge64_map": 57.47483804331485,
+    "eurosat_matched_bridge32_map": 50.86714179691578,
+    "eurosat_matched_bridge64_map": 46.74916280013905,
+    "macro_map": 43.05434178146304
+  },
+  "metric_rows": [
+    {
+      "metric_id": "dtd_cross_bridge32_map",
+      "value": 30.79966784468561,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 30.79966784468561
+    },
+    {
+      "metric_id": "dtd_cross_bridge64_map",
+      "value": 30.872138376019876,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 30.872138376019876
+    },
+    {
+      "metric_id": "dtd_matched_bridge32_map",
+      "value": 33.870372279053534,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 33.870372279053534
+    },
+    {
+      "metric_id": "dtd_matched_bridge64_map",
+      "value": 35.61275445522558,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 35.61275445522558
+    },
+    {
+      "metric_id": "eurosat_cross_bridge32_map",
+      "value": 58.18865865635002,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 58.18865865635002
+    },
+    {
+      "metric_id": "eurosat_cross_bridge64_map",
+      "value": 57.47483804331485,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 57.47483804331485
+    },
+    {
+      "metric_id": "eurosat_matched_bridge32_map",
+      "value": 50.86714179691578,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 50.86714179691578
+    },
+    {
+      "metric_id": "eurosat_matched_bridge64_map",
+      "value": 46.74916280013905,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 46.74916280013905
+    },
+    {
+      "metric_id": "macro_map",
+      "value": 43.05434178146304,
+      "unit": "%",
+      "direction": "maximize",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/metrics_summary.json",
+      "numeric_value": 43.05434178146304
+    }
+  ],
+  "metric_contract": {
+    "evaluation_protocol": {
+      "scope_id": "r4-dtd-eurosat-semantic-20260912",
+      "protocol": {
+        "baseline_id": "r4-canonical-local",
+        "variant_id": "semantic-mps32-v1",
+        "scope_id": "r4-dtd-eurosat-semantic-20260912",
+        "source_method": "unchanged frozen V0 v0_press; RBF0.5, standardized residual, PRESS coefficients .001/.01/.1/1/10",
+        "source_sha256": {
+          "methods.py": "3d7044afd1a8dddfb43a5a9c4dda7b91dae6a01e478dc5596beafd94a20b0146",
+          "lab_metrics.py": "fe9514227590993c9c0c07cf3b8e2215d71ee675948c84e3312f328655bd642d",
+          "improved.py": "d2ee38b5ff3243364137f87bc7fc412850605aace18f0ff3b8ad99170a730f4d",
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "lab_methods.py": "1ff3943740eee0f165f540e7abfc70e0c6d64f2b6370daab089a1c7f52e5d9ad",
+          "nextstage.py": "ba6da2bf06a62da24ee53f31ccdfcf1df8b62650eca26e78fd97b54f41c92bb1",
+          "geometry.py": "1de089bf948e81395b6bbbcd4d6e025f86ddb092236ec8723ddecc42ac501312"
+        },
+        "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+        "source_feature_manifest_sha256": "3d06ebf47f259fb41db5f5aaa85aab65ded94ff15a036d08e36c0cfcfa6e633b",
+        "datasets": [
+          "dtd",
+          "eurosat"
+        ],
+        "pair": [
+          "clip_vitb16",
+          "dinov2_vits14"
+        ],
+        "budgets": [
+          32,
+          64
+        ],
+        "bridge_seeds": [
+          26091301,
+          26091302,
+          26091303,
+          26091304,
+          26091305
+        ],
+        "split_seed": 120909,
+        "identity_selection_seed": 26091300,
+        "queries_per_class": 10,
+        "dtd_dev_class_half": "first23",
+        "dtd_eval_class_half": "remaining24",
+        "eurosat_eval_classes": "all10",
+        "gallery": "all canonical gallery identities; no gallery cap",
+        "bridge_pool": "canonical query pool excluding all retrieval queries; matched query class split or other-domain full remaining pool; sampled without replacement; shared prefixes for32/64",
+        "methods": [
+          "old_old",
+          "relative_centered",
+          "procrustes",
+          "ridge",
+          "wip_restricted",
+          "local_std",
+          "linear_std",
+          "v0_press",
+          "global_press",
+          "old_centered",
+          "old_whiten",
+          "centered_residual_2",
+          "new_new_oracle"
+        ],
+        "primary_method": "v0_press",
+        "metric": "class AP = sum precision at every relevant rank / number relevant gallery images; mean queries, then equal seed and cell means",
+        "evaluation_cells": 8,
+        "development_cells": 4,
+        "bootstrap": "5000 paired class-cluster and bridge-seed resamples; queries within a class stay together, shared queries across bridge seeds; fixed gallery",
+        "permissions": {
+          "method_inputs": [
+            "go",
+            "qo",
+            "qn",
+            "ao",
+            "an"
+          ],
+          "gallery_new_to_method": false,
+          "labels_to_method": false,
+          "query_batch_fit": false,
+          "encoder_training": false,
+          "logical_gallery_new_calls": 0,
+          "bridge_new_calls": "m unique images",
+          "query_old_new_calls": "one each; cached execution"
+        },
+        "deviations": [
+          "New semantic retrieval task using previously viewed DTD/EuroSAT image pools, not historical CUB/Oxford replication",
+          "Canonical local MPS feature variant/DINO preprocessing differs from historicalR4; feature hashes locked",
+          "Only CLIP-B16 to DINO available; unavailable B32→B16 historical cells are reference-only",
+          "Development output is not confirmation; no parameter selection for frozen baseline",
+          "Interface isolation is trusted feature-only code, not adversarial process sandbox"
+        ],
+        "limits": {
+          "free_disk_min_gib": 10,
+          "expected_added_gib_max": 1,
+          "threads": 6,
+          "new_encoding_calls": 0,
+          "download_bytes": 0
+        }
+      },
+      "code_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/evaluate.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/audit_results.py"
+      ],
+      "code_hashes": {
+        "evaluate.py": "725d52edbe7b689c772fe028ae616ce9899028cdf386b5177669f9d2e3b646dd",
+        "audit_results.py": "76621d45aecf7564243a28156ec5c56ce11baab04a767c19838bb6c6ca9eaa76"
+      },
+      "historical_parity": false,
+      "accepted_comparator_method": "old_centered"
+    },
+    "comparison_primary_method": "old_centered",
+    "baseline_variants": {
+      "old_old": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 27.0458485540921,
+          "dtd_cross_bridge64_map": 27.0458485540921,
+          "dtd_matched_bridge32_map": 27.0458485540921,
+          "dtd_matched_bridge64_map": 27.0458485540921,
+          "eurosat_cross_bridge32_map": 54.43517341879788,
+          "eurosat_cross_bridge64_map": 54.43517341879788,
+          "eurosat_matched_bridge32_map": 54.43517341879788,
+          "eurosat_matched_bridge64_map": 54.43517341879788,
+          "macro_map": 40.74051098644499
+        },
+        "role": "same_permission_control"
+      },
+      "relative_centered": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 5.062234021914837,
+          "dtd_cross_bridge64_map": 5.26993989348678,
+          "dtd_matched_bridge32_map": 21.66355790091305,
+          "dtd_matched_bridge64_map": 28.30563021802359,
+          "eurosat_cross_bridge32_map": 16.15418668535662,
+          "eurosat_cross_bridge64_map": 17.753282310271178,
+          "eurosat_matched_bridge32_map": 41.69684227218114,
+          "eurosat_matched_bridge64_map": 43.340812900815045,
+          "macro_map": 22.40581077537028
+        },
+        "role": "same_permission_control"
+      },
+      "procrustes": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 3.750793058936815,
+          "dtd_cross_bridge64_map": 3.898075929238577,
+          "dtd_matched_bridge32_map": 21.894182992840314,
+          "dtd_matched_bridge64_map": 30.14038784562065,
+          "eurosat_cross_bridge32_map": 15.746765535162979,
+          "eurosat_cross_bridge64_map": 20.052983736737378,
+          "eurosat_matched_bridge32_map": 49.9807920694499,
+          "eurosat_matched_bridge64_map": 55.09367458898334,
+          "macro_map": 25.069706969621244
+        },
+        "role": "same_permission_control"
+      },
+      "ridge": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 2.951126229211049,
+          "dtd_cross_bridge64_map": 3.002913608302629,
+          "dtd_matched_bridge32_map": 11.267764898670373,
+          "dtd_matched_bridge64_map": 15.156569319399143,
+          "eurosat_cross_bridge32_map": 14.067909888564136,
+          "eurosat_cross_bridge64_map": 14.654754054656022,
+          "eurosat_matched_bridge32_map": 32.63182590459899,
+          "eurosat_matched_bridge64_map": 37.247117223069075,
+          "macro_map": 16.372497640808927
+        },
+        "role": "same_permission_control"
+      },
+      "wip_restricted": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 3.3634517393391037,
+          "dtd_cross_bridge64_map": 3.3904220007917263,
+          "dtd_matched_bridge32_map": 15.233820709808166,
+          "dtd_matched_bridge64_map": 23.691965410042666,
+          "eurosat_cross_bridge32_map": 15.275853817718579,
+          "eurosat_cross_bridge64_map": 16.025137361186705,
+          "eurosat_matched_bridge32_map": 42.18279331923698,
+          "eurosat_matched_bridge64_map": 50.957847122875236,
+          "macro_map": 21.265161435124895
+        },
+        "role": "same_permission_control"
+      },
+      "local_std": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 27.542374012452246,
+          "dtd_cross_bridge64_map": 27.58418216424761,
+          "dtd_matched_bridge32_map": 30.964660717751947,
+          "dtd_matched_bridge64_map": 33.3828382975448,
+          "eurosat_cross_bridge32_map": 54.19169192822565,
+          "eurosat_cross_bridge64_map": 53.83633726665078,
+          "eurosat_matched_bridge32_map": 57.00295426097771,
+          "eurosat_matched_bridge64_map": 56.471867228796015,
+          "macro_map": 42.62211323458085
+        },
+        "role": "same_permission_control"
+      },
+      "linear_std": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 26.412212813726843,
+          "dtd_cross_bridge64_map": 25.622393710481667,
+          "dtd_matched_bridge32_map": 31.628444374317528,
+          "dtd_matched_bridge64_map": 34.58571284622954,
+          "eurosat_cross_bridge32_map": 52.74576017853051,
+          "eurosat_cross_bridge64_map": 50.106364129042156,
+          "eurosat_matched_bridge32_map": 52.63891029660749,
+          "eurosat_matched_bridge64_map": 53.10620873568498,
+          "macro_map": 40.85575088557759
+        },
+        "role": "same_permission_control"
+      },
+      "v0_press": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 27.71466483262442,
+          "dtd_cross_bridge64_map": 28.195037702484683,
+          "dtd_matched_bridge32_map": 31.961253576458308,
+          "dtd_matched_bridge64_map": 34.75445167569063,
+          "eurosat_cross_bridge32_map": 55.02707428431934,
+          "eurosat_cross_bridge64_map": 54.8838847793421,
+          "eurosat_matched_bridge32_map": 57.11628386163272,
+          "eurosat_matched_bridge64_map": 56.80123791857014,
+          "macro_map": 43.306736078890296
+        },
+        "role": "historical_frozen_local_method"
+      },
+      "global_press": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 27.966146287320232,
+          "dtd_cross_bridge64_map": 28.435791455928204,
+          "dtd_matched_bridge32_map": 32.17737620735079,
+          "dtd_matched_bridge64_map": 34.83919346269379,
+          "eurosat_cross_bridge32_map": 55.21238681065862,
+          "eurosat_cross_bridge64_map": 55.16926556281773,
+          "eurosat_matched_bridge32_map": 56.77262627967109,
+          "eurosat_matched_bridge64_map": 56.33439287598478,
+          "macro_map": 43.36339736780316
+        },
+        "role": "same_permission_control"
+      },
+      "old_centered": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 30.67913154861484,
+          "dtd_cross_bridge64_map": 30.67913154861484,
+          "dtd_matched_bridge32_map": 30.67913154861484,
+          "dtd_matched_bridge64_map": 30.67913154861484,
+          "eurosat_cross_bridge32_map": 57.97266511389243,
+          "eurosat_cross_bridge64_map": 57.97266511389243,
+          "eurosat_matched_bridge32_map": 57.97266511389243,
+          "eurosat_matched_bridge64_map": 57.97266511389243,
+          "macro_map": 44.32589833125364
+        },
+        "role": "same_permission_control"
+      },
+      "old_whiten": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 29.58869174409065,
+          "dtd_cross_bridge64_map": 29.58869174409065,
+          "dtd_matched_bridge32_map": 29.58869174409065,
+          "dtd_matched_bridge64_map": 29.58869174409065,
+          "eurosat_cross_bridge32_map": 52.60091377055451,
+          "eurosat_cross_bridge64_map": 52.60091377055451,
+          "eurosat_matched_bridge32_map": 52.60091377055451,
+          "eurosat_matched_bridge64_map": 52.60091377055451,
+          "macro_map": 41.09480275732258
+        },
+        "role": "same_permission_control"
+      },
+      "centered_residual_2": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 30.88983217639603,
+          "dtd_cross_bridge64_map": 30.917894207736186,
+          "dtd_matched_bridge32_map": 33.76598324688723,
+          "dtd_matched_bridge64_map": 35.380756839152916,
+          "eurosat_cross_bridge32_map": 56.62840683912806,
+          "eurosat_cross_bridge64_map": 54.447829976559234,
+          "eurosat_matched_bridge32_map": 51.52973507547705,
+          "eurosat_matched_bridge64_map": 47.56372688934065,
+          "macro_map": 42.64052065633468
+        },
+        "role": "same_permission_control"
+      },
+      "new_new_oracle": {
+        "metrics_summary": {
+          "dtd_cross_bridge32_map": 37.97552320539392,
+          "dtd_cross_bridge64_map": 37.97552320539392,
+          "dtd_matched_bridge32_map": 37.97552320539392,
+          "dtd_matched_bridge64_map": 37.97552320539392,
+          "eurosat_cross_bridge32_map": 52.99807847167982,
+          "eurosat_cross_bridge64_map": 52.99807847167982,
+          "eurosat_matched_bridge32_map": 52.99807847167982,
+          "eurosat_matched_bridge64_map": 52.99807847167982,
+          "macro_map": 45.48680083853687
+        },
+        "role": "evaluator_only_reference"
+      }
+    },
+    "comparison_scope_note": "Frozen measurement primary remains V0 in protocol and original metrics_summary. For future comparisons select strongest uniform measured allowed control old_centered as baseline incumbent; all13 variants retained. This choice is post-measurement comparator ranking, not new-method confirmation or retroactive change of the V0 result.",
+    "contract_id": "r4-canonical-local-semantic-mps32-v1",
+    "primary_metric_id": "macro_map",
+    "metrics": [
+      {
+        "metric_id": "dtd_cross_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_cross_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "dtd_cross_bridge32_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "dtd_cross_bridge32_map",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "dtd_cross_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_cross_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "dtd_cross_bridge64_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "dtd_cross_bridge64_map",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "dtd_matched_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_matched_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "dtd_matched_bridge32_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "dtd_matched_bridge32_map",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "dtd_matched_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_matched_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "dtd_matched_bridge64_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "dtd_matched_bridge64_map",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "eurosat_cross_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_cross_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "eurosat_cross_bridge32_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "eurosat_cross_bridge32_map",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "eurosat_cross_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_cross_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "eurosat_cross_bridge64_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "eurosat_cross_bridge64_map",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "eurosat_matched_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_matched_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "eurosat_matched_bridge32_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "eurosat_matched_bridge32_map",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "eurosat_matched_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_matched_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "eurosat_matched_bridge64_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "eurosat_matched_bridge64_map",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "macro_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for macro_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "macro_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "macro_map",
+        "decimals": null,
+        "chart_group": "default"
+      }
+    ]
+  },
+  "baseline_comparisons": {
+    "primary_metric_id": "macro_map",
+    "items": [
+      {
+        "metric_id": "dtd_cross_bridge32_map",
+        "label": "dtd_cross_bridge32_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 30.79966784468561,
+        "baseline_value": 30.67913154861484,
+        "run_numeric": 30.79966784468561,
+        "baseline_numeric": 30.67913154861484,
+        "delta": 0.12053629607077099,
+        "relative_delta": 0.003928934425010254,
+        "better": true
+      },
+      {
+        "metric_id": "dtd_cross_bridge64_map",
+        "label": "dtd_cross_bridge64_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 30.872138376019876,
+        "baseline_value": 30.67913154861484,
+        "run_numeric": 30.872138376019876,
+        "baseline_numeric": 30.67913154861484,
+        "delta": 0.1930068274050356,
+        "relative_delta": 0.006291143773062567,
+        "better": true
+      },
+      {
+        "metric_id": "dtd_matched_bridge32_map",
+        "label": "dtd_matched_bridge32_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 33.870372279053534,
+        "baseline_value": 30.67913154861484,
+        "run_numeric": 33.870372279053534,
+        "baseline_numeric": 30.67913154861484,
+        "delta": 3.191240730438693,
+        "relative_delta": 0.10401991742764236,
+        "better": true
+      },
+      {
+        "metric_id": "dtd_matched_bridge64_map",
+        "label": "dtd_matched_bridge64_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 35.61275445522558,
+        "baseline_value": 30.67913154861484,
+        "run_numeric": 35.61275445522558,
+        "baseline_numeric": 30.67913154861484,
+        "delta": 4.933622906610736,
+        "relative_delta": 0.1608136429413853,
+        "better": true
+      },
+      {
+        "metric_id": "eurosat_cross_bridge32_map",
+        "label": "eurosat_cross_bridge32_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 58.18865865635002,
+        "baseline_value": 57.97266511389243,
+        "run_numeric": 58.18865865635002,
+        "baseline_numeric": 57.97266511389243,
+        "delta": 0.21599354245758917,
+        "relative_delta": 0.0037257825223879345,
+        "better": true
+      },
+      {
+        "metric_id": "eurosat_cross_bridge64_map",
+        "label": "eurosat_cross_bridge64_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 57.47483804331485,
+        "baseline_value": 57.97266511389243,
+        "run_numeric": 57.47483804331485,
+        "baseline_numeric": 57.97266511389243,
+        "delta": -0.4978270705775856,
+        "relative_delta": -0.008587272460211381,
+        "better": false
+      },
+      {
+        "metric_id": "eurosat_matched_bridge32_map",
+        "label": "eurosat_matched_bridge32_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 50.86714179691578,
+        "baseline_value": 57.97266511389243,
+        "run_numeric": 50.86714179691578,
+        "baseline_numeric": 57.97266511389243,
+        "delta": -7.105523316976651,
+        "relative_delta": -0.12256678734740281,
+        "better": false
+      },
+      {
+        "metric_id": "eurosat_matched_bridge64_map",
+        "label": "eurosat_matched_bridge64_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 46.74916280013905,
+        "baseline_value": 57.97266511389243,
+        "run_numeric": 46.74916280013905,
+        "baseline_numeric": 57.97266511389243,
+        "delta": -11.223502313753386,
+        "relative_delta": -0.19359990250066686,
+        "better": false
+      },
+      {
+        "metric_id": "macro_map",
+        "label": "macro_map",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 43.05434178146304,
+        "baseline_value": 44.32589833125364,
+        "run_numeric": 43.05434178146304,
+        "baseline_numeric": 44.32589833125364,
+        "delta": -1.2715565497906027,
+        "relative_delta": -0.028686537614829206,
+        "better": false
+      }
+    ],
+    "summary": {
+      "comparable_metric_ids": [
+        "dtd_cross_bridge32_map",
+        "dtd_cross_bridge64_map",
+        "dtd_matched_bridge32_map",
+        "dtd_matched_bridge64_map",
+        "eurosat_cross_bridge32_map",
+        "eurosat_cross_bridge64_map",
+        "eurosat_matched_bridge32_map",
+        "eurosat_matched_bridge64_map",
+        "macro_map"
+      ],
+      "improved_metric_ids": [
+        "dtd_cross_bridge32_map",
+        "dtd_cross_bridge64_map",
+        "dtd_matched_bridge32_map",
+        "dtd_matched_bridge64_map",
+        "eurosat_cross_bridge32_map"
+      ],
+      "regressed_metric_ids": [
+        "eurosat_cross_bridge64_map",
+        "eurosat_matched_bridge32_map",
+        "eurosat_matched_bridge64_map",
+        "macro_map"
+      ]
+    }
+  },
+  "progress_eval": {
+    "primary_metric_id": "macro_map",
+    "direction": "maximize",
+    "run_value": 43.05434178146304,
+    "baseline_value": 44.32589833125364,
+    "delta_vs_baseline": -1.2715565497906027,
+    "relative_delta_vs_baseline": -0.028686537614829206,
+    "previous_best_value": null,
+    "delta_vs_previous_best": null,
+    "beats_baseline": false,
+    "improved_over_previous_best": null,
+    "breakthrough": false,
+    "breakthrough_level": "none",
+    "reason": "No verified breakthrough over the active baseline or previous best."
+  },
+  "evaluation_summary": {
+    "claim_update": "{'robust_geometry_upgrade': 'refuted', 'geometry_only_benefit': 'inconclusive', 'independent_generalization': 'unsupported', 'novel_algorithm': 'unsupported'}",
+    "baseline_relation": "{'primary_delta_pp': -1.2715565497906027, 'primary_ci95_pp': [-3.039835210316906, 0.6855698352983759], 'equal_control_delta_pp': 0.413821125128365, 'all9metrics13variants_reconciled': True}",
+    "failure_mode": "DTD-selectedalpha2 transfers poorly toEuroSATmatched; interpolation geometry contrastCIincludes0.",
+    "next_action": "decision -> close local kernel route; reconsider calibration/information boundary"
+  },
+  "delivery_policy": {
+    "need_research_paper": true,
+    "recommended_next_route": "revise_idea",
+    "reason": "Research paper mode is enabled, but the current run does not beat the baseline clearly enough. Revise the direction or strengthen the method before writing.",
+    "startup_contract": {
+      "schema_version": 4,
+      "workspace_mode": "autonomous",
+      "user_language": "zh",
+      "need_research_paper": true,
+      "research_intensity": "balanced",
+      "decision_policy": "autonomous",
+      "launch_mode": "standard",
+      "standard_profile": "canonical_research_graph",
+      "custom_profile": "freeform",
+      "review_followup_policy": "audit_only",
+      "baseline_execution_policy": "auto",
+      "baseline_source_mode": "auto",
+      "execution_start_mode": "execute_immediately",
+      "baseline_acceptance_target": "comparison_ready",
+      "manuscript_edit_mode": "none",
+      "scope": "baseline_plus_direction",
+      "baseline_mode": "auto",
+      "resource_policy": "balanced",
+      "time_budget_hours": 24,
+      "git_strategy": "semantic_head_plus_controlled_integration",
+      "runtime_constraints": "仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。",
+      "objectives": [
+        "1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。",
+        "2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。",
+        "3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。",
+        "4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。"
+      ],
+      "baseline_urls": [
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md",
+        "https://github.com/lucmos/relreps",
+        "https://github.com/tian1327/SWAT"
+      ],
+      "paper_urls": [
+        "https://arxiv.org/abs/2209.15430",
+        "https://arxiv.org/abs/2406.11148"
+      ],
+      "entry_state_summary": "已有两条研究线及历史结果，不能视为空白项目。用户指定实验4本地 baseline 为 R5G2-20260908 冻结 V0，并保留旧图库部分白化对照；实验5为 E12-20260908 R2，并保留候选分布读出的局部正负结果。指定材料路径已核实存在，尚未审计内容、指标及软件环境。",
+      "review_summary": "",
+      "review_materials": [],
+      "custom_brief": "Use Chinese for key judgments. Preserve frozen local baselines and historical positive and negative results. V0 is not a direct reproduction of Relative Representations. R2 freezes CLIP/DINOv2 and is not a reproduction of SWAT, which includes encoder finetuning. R2 uses retrieval followed by ridge regression for 1-shot and support-only ridge regression for 5-shot. Never attribute local gains to the papers. Report results with different datasets, training access, retrieval galleries or query access separately. Audit and reuse existing code, results and assets before implementing new methods. Read the supplied papers and update related work before choosing a defensible research question. Give experiment 5 initial priority for FSL classification, but change priority when evidence warrants it. Continue from trustworthy baselines to iterative improvement against strong comparable baselines, then mechanism studies, ablations, robustness and failure analysis. Assess novelty and contribution from evidence; proceed to figures and writing when supported. Do not promise SoTA performance or a publishable contribution. Use only the local machine and authorized Codex subscription; honor model preferences only where actually available. Do not infer separate API credits or credentials. The user permits full local CPU and integrated GPU use; adapt resource use to stability and verify framework/MPS support after launch. Under the user's permission to extend the first run, SetupAgent selects a 72-hour wall-clock cap from formal launch, with reports approximately every 24 hours. Save results and a continuation entry point and stop at the cap; do not assume unlimited extension or require a complete paper within that window. Added downloads and assets are capped at 40 GB and must preserve at least approximately 10 GiB free disk headroom. Additional spending is zero; additional paid services, external model API calls and cloud compute are not authorized. The user sets no additional research privacy or export restrictions for authorized task services; public release is outside scope. Verify data licenses and access requirements. Decide ordinary scientific directions, baseline choices and experiment packages autonomously and explain consequential choices. Surface genuine budget, access, privacy or irreversible-action blockers. This setup session only prepares the form and launch preview; research starts after the user launches.",
+      "launch_form_source": "setup_agent",
+      "launch_form_recorded_at": "2026-09-12T08:57:09.329Z",
+      "launch_setup_quest_id": "B-011",
+      "launch_form": {
+        "title": "CV/FSL：实验4与实验5的可信复用及自主改进",
+        "quest_id": "011",
+        "goal": "从实验4冻结 V0 桥接核残差实现及实验5冻结编码器 R2 的已有局部正收益出发，先核验并复用结果、代码、数据与特征资产，再结合对应论文、最新相关工作、研究空间和复现成本自主选择研究主线。优先考虑更贴近 FSL 分类的实验5，允许证据改变优先级。可信 baseline 是起点，继续迭代寻求相同评估权限下超越本地及强基线的稳健改进，开展机制归因、消融、鲁棒性和失败分析，依据实际证据与方法新颖性判断论文贡献；有充分支撑时继续文献、图表和论文写作协作，不预设改法成功。",
+        "baseline_id": "",
+        "baseline_variant_id": "",
+        "baseline_source_mode": "auto",
+        "execution_start_mode": "execute_immediately",
+        "baseline_acceptance_target": "comparison_ready",
+        "baseline_urls": "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md\nhttps://github.com/lucmos/relreps\nhttps://github.com/tian1327/SWAT",
+        "paper_urls": "https://arxiv.org/abs/2209.15430\nhttps://arxiv.org/abs/2406.11148",
+        "runtime_constraints": "仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。",
+        "objectives": "1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。\n2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。\n3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。\n4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。",
+        "need_research_paper": true,
+        "research_intensity": "balanced",
+        "decision_policy": "autonomous",
+        "launch_mode": "standard",
+        "standard_profile": "canonical_research_graph",
+        "custom_profile": "freeform",
+        "review_followup_policy": "audit_only",
+        "baseline_execution_policy": "auto",
+        "manuscript_edit_mode": "none",
+        "entry_state_summary": "已有两条研究线及历史结果，不能视为空白项目。用户指定实验4本地 baseline 为 R5G2-20260908 冻结 V0，并保留旧图库部分白化对照；实验5为 E12-20260908 R2，并保留候选分布读出的局部正负结果。指定材料路径已核实存在，尚未审计内容、指标及软件环境。",
+        "review_summary": "",
+        "review_materials": "",
+        "custom_brief": "Use Chinese for key judgments. Preserve frozen local baselines and historical positive and negative results. V0 is not a direct reproduction of Relative Representations. R2 freezes CLIP/DINOv2 and is not a reproduction of SWAT, which includes encoder finetuning. R2 uses retrieval followed by ridge regression for 1-shot and support-only ridge regression for 5-shot. Never attribute local gains to the papers. Report results with different datasets, training access, retrieval galleries or query access separately. Audit and reuse existing code, results and assets before implementing new methods. Read the supplied papers and update related work before choosing a defensible research question. Give experiment 5 initial priority for FSL classification, but change priority when evidence warrants it. Continue from trustworthy baselines to iterative improvement against strong comparable baselines, then mechanism studies, ablations, robustness and failure analysis. Assess novelty and contribution from evidence; proceed to figures and writing when supported. Do not promise SoTA performance or a publishable contribution. Use only the local machine and authorized Codex subscription; honor model preferences only where actually available. Do not infer separate API credits or credentials. The user permits full local CPU and integrated GPU use; adapt resource use to stability and verify framework/MPS support after launch. Under the user's permission to extend the first run, SetupAgent selects a 72-hour wall-clock cap from formal launch, with reports approximately every 24 hours. Save results and a continuation entry point and stop at the cap; do not assume unlimited extension or require a complete paper within that window. Added downloads and assets are capped at 40 GB and must preserve at least approximately 10 GiB free disk headroom. Additional spending is zero; additional paid services, external model API calls and cloud compute are not authorized. The user sets no additional research privacy or export restrictions for authorized task services; public release is outside scope. Verify data licenses and access requirements. Decide ordinary scientific directions, baseline choices and experiment packages autonomously and explain consequential choices. Surface genuine budget, access, privacy or irreversible-action blockers. This setup session only prepares the form and launch preview; research starts after the user launches.",
+        "user_language": "zh",
+        "scope": "baseline_plus_direction",
+        "baseline_mode": "auto",
+        "resource_policy": "balanced",
+        "time_budget_hours": "24",
+        "git_strategy": "semantic_head_plus_controlled_integration"
+      },
+      "launch_markdown": "Project Bootstrap\n- Project title: CV/FSL：实验4与实验5的可信复用及自主改进\n- Project id: 011\n- User language: Chinese\n\nPrimary Research Request\n从实验4冻结 V0 桥接核残差实现及实验5冻结编码器 R2 的已有局部正收益出发，先核验并复用结果、代码、数据与特征资产，再结合对应论文、最新相关工作、研究空间和复现成本自主选择研究主线。优先考虑更贴近 FSL 分类的实验5，允许证据改变优先级。可信 baseline 是起点，继续迭代寻求相同评估权限下超越本地及强基线的稳健改进，开展机制归因、消融、鲁棒性和失败分析，依据实际证据与方法新颖性判断论文贡献；有充分支撑时继续文献、图表和论文写作协作，不预设改法成功。\n\nResearch Goals\n- 1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。\n- 2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。\n- 3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。\n- 4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。\n\nBaseline Context\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md\n- https://github.com/lucmos/relreps\n- https://github.com/tian1327/SWAT\n\nBaseline Source Preference\n- Automatic: choose the lightest trustworthy comparator route from the current baseline sources and local evidence.\n\nExecution Start Mode\n- Execute immediately: if the route is already clear, begin the smallest useful execution step without a separate approval round.\n\nBaseline Acceptance Target\n- Comparison ready: accept the lightest trustworthy comparator that is sufficient for downstream idea selection and experiment comparison.\n\nReference Papers / Repositories / Local Paths\n- https://arxiv.org/abs/2209.15430\n- https://arxiv.org/abs/2406.11148\n\nUser-Provided Materials\n- No extra uploaded material was attached at launch time.\n\nOperational Constraints\n仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。\n\nResearch Delivery Mode\n- A research paper is required for this project.\n- The default paper-facing route is baseline, idea selection, implementation, measured experiments, only the analysis that the evidence actually needs, then drafting and packaging.\n- Do not stop after obtaining only one improved algorithm or one promising run unless the user explicitly narrows scope.\n- After each `artifact.record_main_experiment(...)`, first interpret the measured result, then decide whether to improve further, run necessary follow-up analysis, or move into writing.\n- The idea stage only creates or revises a candidate direction; the round is not complete until a main experiment result is recorded and routed.\n- Treat later analysis, review, and finalize work as follow-on stages to open when the nearer gate is actually ready, not as boxes that must always be pre-completed before progress counts.\n\nDecision Handling Mode\n- Autonomous decision mode is active.\n- Do not hand ordinary route, branch, cost, baseline-reuse, or experiment-selection decisions back to the user by default.\n- If the main fork is a large-cost choice such as verify/reuse versus full reproduction, one short clarification or one bounded plan is acceptable before heavy execution.\n- Report chosen routes through threaded progress or milestone updates, and keep moving unless you are explicitly requesting final completion approval.\n\nLaunch Mode\n- Standard launch mode is active.\n- Standard profile: canonical research workflow.\n- Start from the canonical research graph unless durable state later proves that a non-standard entry path is better.\n\nResearch Contract\n- Launch mode: Standard mode: start from the ordinary canonical research loop and let the default stage graph drive the first round.\n- Standard entry type: Canonical research workflow: follow the ordinary research graph from baseline and idea selection through experiment, analysis, and paper work when justified.\n- Research intensity: Balanced: secure a trustworthy baseline and probe one justified direction without overcommitting.\n- Decision policy: Autonomous: decide ordinary route choices yourself, keep the user informed through threaded updates, and do not hand routine decisions back to the user.\n- Research paper required: Yes\n- Scope: Baseline + direction: secure the baseline, then test one promising improvement direction.\n- Baseline policy: Stop if insufficient: pause the project instead of faking a baseline when evidence is missing.\n- Baseline source preference: Automatic: choose the lightest trustworthy comparator route from the current baseline sources and local evidence.\n- Execution start mode: Execute immediately: if the route is already clear, begin the smallest useful execution step without a separate approval round.\n- Baseline acceptance target: Comparison ready: accept the lightest trustworthy comparator that is sufficient for downstream idea selection and experiment comparison.\n- Review follow-up policy: Not applicable outside the Review custom task type.\n- Baseline execution policy: Standard baseline handling from the ordinary research loop.\n- Manuscript edit mode: No manuscript-facing custom edit contract requested.\n- Resource policy: Balanced: keep progress steady while still controlling cost and risk.\n- Git strategy: Semantic head + controlled integration: keep a cleaner main line and merge only reviewed branches.\n- Time budget per research round: 24 hour(s)\n\nDefault Working Rules\n- Keep all durable files inside the project root.\n- Prefer reusing existing baseline artifacts before rebuilding them from scratch.\n- Baseline source mode is automatic: choose the lightest trustworthy comparator route from the currently provided baseline sources and local evidence.\n- Execution start mode is execute-immediately: if the route is already concrete, begin with the smallest useful validating action rather than pausing for a separate approval round.\n- Baseline acceptance target is comparison-ready: once the comparator is trustworthy enough to unlock the next scientific step, move forward instead of polishing the baseline indefinitely.\n- Standard launch mode is active here: use the canonical research graph unless later durable evidence justifies a different entry path.\n- Emit explicit milestone updates after each meaningful step.\n- Every consequential decision should include reasons, evidence, and the next recommended action.\n- If the startup contract already fixes the delivery mode and baseline policy, follow it without asking the user again unless cost, safety, or scope changes materially.\n- If manuscript edits are required, make the section-level deltas explicit and keep the replacement wording copy-ready.\n- Autonomous mode is the default contract here: decide the route yourself and continue unless you are requesting explicit completion approval or the cost fork genuinely deserves one short clarification.",
+      "project_display": {
+        "template": "experiment",
+        "accent_color": "sage"
+      }
+    }
+  },
+  "startup_contract": {
+    "schema_version": 4,
+    "workspace_mode": "autonomous",
+    "user_language": "zh",
+    "need_research_paper": true,
+    "research_intensity": "balanced",
+    "decision_policy": "autonomous",
+    "launch_mode": "standard",
+    "standard_profile": "canonical_research_graph",
+    "custom_profile": "freeform",
+    "review_followup_policy": "audit_only",
+    "baseline_execution_policy": "auto",
+    "baseline_source_mode": "auto",
+    "execution_start_mode": "execute_immediately",
+    "baseline_acceptance_target": "comparison_ready",
+    "manuscript_edit_mode": "none",
+    "scope": "baseline_plus_direction",
+    "baseline_mode": "auto",
+    "resource_policy": "balanced",
+    "time_budget_hours": 24,
+    "git_strategy": "semantic_head_plus_controlled_integration",
+    "runtime_constraints": "仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。",
+    "objectives": [
+      "1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。",
+      "2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。",
+      "3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。",
+      "4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。"
+    ],
+    "baseline_urls": [
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md",
+      "https://github.com/lucmos/relreps",
+      "https://github.com/tian1327/SWAT"
+    ],
+    "paper_urls": [
+      "https://arxiv.org/abs/2209.15430",
+      "https://arxiv.org/abs/2406.11148"
+    ],
+    "entry_state_summary": "已有两条研究线及历史结果，不能视为空白项目。用户指定实验4本地 baseline 为 R5G2-20260908 冻结 V0，并保留旧图库部分白化对照；实验5为 E12-20260908 R2，并保留候选分布读出的局部正负结果。指定材料路径已核实存在，尚未审计内容、指标及软件环境。",
+    "review_summary": "",
+    "review_materials": [],
+    "custom_brief": "Use Chinese for key judgments. Preserve frozen local baselines and historical positive and negative results. V0 is not a direct reproduction of Relative Representations. R2 freezes CLIP/DINOv2 and is not a reproduction of SWAT, which includes encoder finetuning. R2 uses retrieval followed by ridge regression for 1-shot and support-only ridge regression for 5-shot. Never attribute local gains to the papers. Report results with different datasets, training access, retrieval galleries or query access separately. Audit and reuse existing code, results and assets before implementing new methods. Read the supplied papers and update related work before choosing a defensible research question. Give experiment 5 initial priority for FSL classification, but change priority when evidence warrants it. Continue from trustworthy baselines to iterative improvement against strong comparable baselines, then mechanism studies, ablations, robustness and failure analysis. Assess novelty and contribution from evidence; proceed to figures and writing when supported. Do not promise SoTA performance or a publishable contribution. Use only the local machine and authorized Codex subscription; honor model preferences only where actually available. Do not infer separate API credits or credentials. The user permits full local CPU and integrated GPU use; adapt resource use to stability and verify framework/MPS support after launch. Under the user's permission to extend the first run, SetupAgent selects a 72-hour wall-clock cap from formal launch, with reports approximately every 24 hours. Save results and a continuation entry point and stop at the cap; do not assume unlimited extension or require a complete paper within that window. Added downloads and assets are capped at 40 GB and must preserve at least approximately 10 GiB free disk headroom. Additional spending is zero; additional paid services, external model API calls and cloud compute are not authorized. The user sets no additional research privacy or export restrictions for authorized task services; public release is outside scope. Verify data licenses and access requirements. Decide ordinary scientific directions, baseline choices and experiment packages autonomously and explain consequential choices. Surface genuine budget, access, privacy or irreversible-action blockers. This setup session only prepares the form and launch preview; research starts after the user launches.",
+    "launch_form_source": "setup_agent",
+    "launch_form_recorded_at": "2026-09-12T08:57:09.329Z",
+    "launch_setup_quest_id": "B-011",
+    "launch_form": {
+      "title": "CV/FSL：实验4与实验5的可信复用及自主改进",
+      "quest_id": "011",
+      "goal": "从实验4冻结 V0 桥接核残差实现及实验5冻结编码器 R2 的已有局部正收益出发，先核验并复用结果、代码、数据与特征资产，再结合对应论文、最新相关工作、研究空间和复现成本自主选择研究主线。优先考虑更贴近 FSL 分类的实验5，允许证据改变优先级。可信 baseline 是起点，继续迭代寻求相同评估权限下超越本地及强基线的稳健改进，开展机制归因、消融、鲁棒性和失败分析，依据实际证据与方法新颖性判断论文贡献；有充分支撑时继续文献、图表和论文写作协作，不预设改法成功。",
+      "baseline_id": "",
+      "baseline_variant_id": "",
+      "baseline_source_mode": "auto",
+      "execution_start_mode": "execute_immediately",
+      "baseline_acceptance_target": "comparison_ready",
+      "baseline_urls": "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md\nhttps://github.com/lucmos/relreps\nhttps://github.com/tian1327/SWAT",
+      "paper_urls": "https://arxiv.org/abs/2209.15430\nhttps://arxiv.org/abs/2406.11148",
+      "runtime_constraints": "仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。",
+      "objectives": "1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。\n2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。\n3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。\n4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。",
+      "need_research_paper": true,
+      "research_intensity": "balanced",
+      "decision_policy": "autonomous",
+      "launch_mode": "standard",
+      "standard_profile": "canonical_research_graph",
+      "custom_profile": "freeform",
+      "review_followup_policy": "audit_only",
+      "baseline_execution_policy": "auto",
+      "manuscript_edit_mode": "none",
+      "entry_state_summary": "已有两条研究线及历史结果，不能视为空白项目。用户指定实验4本地 baseline 为 R5G2-20260908 冻结 V0，并保留旧图库部分白化对照；实验5为 E12-20260908 R2，并保留候选分布读出的局部正负结果。指定材料路径已核实存在，尚未审计内容、指标及软件环境。",
+      "review_summary": "",
+      "review_materials": "",
+      "custom_brief": "Use Chinese for key judgments. Preserve frozen local baselines and historical positive and negative results. V0 is not a direct reproduction of Relative Representations. R2 freezes CLIP/DINOv2 and is not a reproduction of SWAT, which includes encoder finetuning. R2 uses retrieval followed by ridge regression for 1-shot and support-only ridge regression for 5-shot. Never attribute local gains to the papers. Report results with different datasets, training access, retrieval galleries or query access separately. Audit and reuse existing code, results and assets before implementing new methods. Read the supplied papers and update related work before choosing a defensible research question. Give experiment 5 initial priority for FSL classification, but change priority when evidence warrants it. Continue from trustworthy baselines to iterative improvement against strong comparable baselines, then mechanism studies, ablations, robustness and failure analysis. Assess novelty and contribution from evidence; proceed to figures and writing when supported. Do not promise SoTA performance or a publishable contribution. Use only the local machine and authorized Codex subscription; honor model preferences only where actually available. Do not infer separate API credits or credentials. The user permits full local CPU and integrated GPU use; adapt resource use to stability and verify framework/MPS support after launch. Under the user's permission to extend the first run, SetupAgent selects a 72-hour wall-clock cap from formal launch, with reports approximately every 24 hours. Save results and a continuation entry point and stop at the cap; do not assume unlimited extension or require a complete paper within that window. Added downloads and assets are capped at 40 GB and must preserve at least approximately 10 GiB free disk headroom. Additional spending is zero; additional paid services, external model API calls and cloud compute are not authorized. The user sets no additional research privacy or export restrictions for authorized task services; public release is outside scope. Verify data licenses and access requirements. Decide ordinary scientific directions, baseline choices and experiment packages autonomously and explain consequential choices. Surface genuine budget, access, privacy or irreversible-action blockers. This setup session only prepares the form and launch preview; research starts after the user launches.",
+      "user_language": "zh",
+      "scope": "baseline_plus_direction",
+      "baseline_mode": "auto",
+      "resource_policy": "balanced",
+      "time_budget_hours": "24",
+      "git_strategy": "semantic_head_plus_controlled_integration"
+    },
+    "launch_markdown": "Project Bootstrap\n- Project title: CV/FSL：实验4与实验5的可信复用及自主改进\n- Project id: 011\n- User language: Chinese\n\nPrimary Research Request\n从实验4冻结 V0 桥接核残差实现及实验5冻结编码器 R2 的已有局部正收益出发，先核验并复用结果、代码、数据与特征资产，再结合对应论文、最新相关工作、研究空间和复现成本自主选择研究主线。优先考虑更贴近 FSL 分类的实验5，允许证据改变优先级。可信 baseline 是起点，继续迭代寻求相同评估权限下超越本地及强基线的稳健改进，开展机制归因、消融、鲁棒性和失败分析，依据实际证据与方法新颖性判断论文贡献；有充分支撑时继续文献、图表和论文写作协作，不预设改法成功。\n\nResearch Goals\n- 1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。\n- 2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。\n- 3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。\n- 4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。\n\nBaseline Context\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md\n- https://github.com/lucmos/relreps\n- https://github.com/tian1327/SWAT\n\nBaseline Source Preference\n- Automatic: choose the lightest trustworthy comparator route from the current baseline sources and local evidence.\n\nExecution Start Mode\n- Execute immediately: if the route is already clear, begin the smallest useful execution step without a separate approval round.\n\nBaseline Acceptance Target\n- Comparison ready: accept the lightest trustworthy comparator that is sufficient for downstream idea selection and experiment comparison.\n\nReference Papers / Repositories / Local Paths\n- https://arxiv.org/abs/2209.15430\n- https://arxiv.org/abs/2406.11148\n\nUser-Provided Materials\n- No extra uploaded material was attached at launch time.\n\nOperational Constraints\n仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。\n\nResearch Delivery Mode\n- A research paper is required for this project.\n- The default paper-facing route is baseline, idea selection, implementation, measured experiments, only the analysis that the evidence actually needs, then drafting and packaging.\n- Do not stop after obtaining only one improved algorithm or one promising run unless the user explicitly narrows scope.\n- After each `artifact.record_main_experiment(...)`, first interpret the measured result, then decide whether to improve further, run necessary follow-up analysis, or move into writing.\n- The idea stage only creates or revises a candidate direction; the round is not complete until a main experiment result is recorded and routed.\n- Treat later analysis, review, and finalize work as follow-on stages to open when the nearer gate is actually ready, not as boxes that must always be pre-completed before progress counts.\n\nDecision Handling Mode\n- Autonomous decision mode is active.\n- Do not hand ordinary route, branch, cost, baseline-reuse, or experiment-selection decisions back to the user by default.\n- If the main fork is a large-cost choice such as verify/reuse versus full reproduction, one short clarification or one bounded plan is acceptable before heavy execution.\n- Report chosen routes through threaded progress or milestone updates, and keep moving unless you are explicitly requesting final completion approval.\n\nLaunch Mode\n- Standard launch mode is active.\n- Standard profile: canonical research workflow.\n- Start from the canonical research graph unless durable state later proves that a non-standard entry path is better.\n\nResearch Contract\n- Launch mode: Standard mode: start from the ordinary canonical research loop and let the default stage graph drive the first round.\n- Standard entry type: Canonical research workflow: follow the ordinary research graph from baseline and idea selection through experiment, analysis, and paper work when justified.\n- Research intensity: Balanced: secure a trustworthy baseline and probe one justified direction without overcommitting.\n- Decision policy: Autonomous: decide ordinary route choices yourself, keep the user informed through threaded updates, and do not hand routine decisions back to the user.\n- Research paper required: Yes\n- Scope: Baseline + direction: secure the baseline, then test one promising improvement direction.\n- Baseline policy: Stop if insufficient: pause the project instead of faking a baseline when evidence is missing.\n- Baseline source preference: Automatic: choose the lightest trustworthy comparator route from the current baseline sources and local evidence.\n- Execution start mode: Execute immediately: if the route is already clear, begin the smallest useful execution step without a separate approval round.\n- Baseline acceptance target: Comparison ready: accept the lightest trustworthy comparator that is sufficient for downstream idea selection and experiment comparison.\n- Review follow-up policy: Not applicable outside the Review custom task type.\n- Baseline execution policy: Standard baseline handling from the ordinary research loop.\n- Manuscript edit mode: No manuscript-facing custom edit contract requested.\n- Resource policy: Balanced: keep progress steady while still controlling cost and risk.\n- Git strategy: Semantic head + controlled integration: keep a cleaner main line and merge only reviewed branches.\n- Time budget per research round: 24 hour(s)\n\nDefault Working Rules\n- Keep all durable files inside the project root.\n- Prefer reusing existing baseline artifacts before rebuilding them from scratch.\n- Baseline source mode is automatic: choose the lightest trustworthy comparator route from the currently provided baseline sources and local evidence.\n- Execution start mode is execute-immediately: if the route is already concrete, begin with the smallest useful validating action rather than pausing for a separate approval round.\n- Baseline acceptance target is comparison-ready: once the comparator is trustworthy enough to unlock the next scientific step, move forward instead of polishing the baseline indefinitely.\n- Standard launch mode is active here: use the canonical research graph unless later durable evidence justifies a different entry path.\n- Emit explicit milestone updates after each meaningful step.\n- Every consequential decision should include reasons, evidence, and the next recommended action.\n- If the startup contract already fixes the delivery mode and baseline policy, follow it without asking the user again unless cost, safety, or scope changes materially.\n- If manuscript edits are required, make the section-level deltas explicit and keep the replacement wording copy-ready.\n- Autonomous mode is the default contract here: decide the route yourself and continue unless you are requesting explicit completion approval or the cost fork genuinely deserves one short clarification.",
+    "project_display": {
+      "template": "experiment",
+      "accent_color": "sage"
+    }
+  },
+  "evidence_paths": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RESULTS.md",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/analysis.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/all_metrics.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/validation_report.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/selection.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/outputs/completion.json"
+  ],
+  "files_changed": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/run.py",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/analyze.py"
+  ],
+  "run_md_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RUN.md",
+  "metric_validation": {
+    "baseline_metric_ids": [
+      "dtd_cross_bridge32_map",
+      "dtd_cross_bridge64_map",
+      "dtd_matched_bridge32_map",
+      "dtd_matched_bridge64_map",
+      "eurosat_cross_bridge32_map",
+      "eurosat_cross_bridge64_map",
+      "eurosat_matched_bridge32_map",
+      "eurosat_matched_bridge64_map",
+      "macro_map"
+    ],
+    "baseline_metric_details": [
+      {
+        "metric_id": "dtd_cross_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_cross_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "dtd_cross_bridge32_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "dtd_cross_bridge32_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 30.67913154861484
+      },
+      {
+        "metric_id": "dtd_cross_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_cross_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "dtd_cross_bridge64_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "dtd_cross_bridge64_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 30.67913154861484
+      },
+      {
+        "metric_id": "dtd_matched_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_matched_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "dtd_matched_bridge32_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "dtd_matched_bridge32_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 30.67913154861484
+      },
+      {
+        "metric_id": "dtd_matched_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for dtd_matched_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "dtd_matched_bridge64_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "dtd_matched_bridge64_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 30.67913154861484
+      },
+      {
+        "metric_id": "eurosat_cross_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_cross_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "eurosat_cross_bridge32_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "eurosat_cross_bridge32_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 57.97266511389243
+      },
+      {
+        "metric_id": "eurosat_cross_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_cross_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "eurosat_cross_bridge64_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "eurosat_cross_bridge64_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 57.97266511389243
+      },
+      {
+        "metric_id": "eurosat_matched_bridge32_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_matched_bridge32_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "eurosat_matched_bridge32_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "eurosat_matched_bridge32_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 57.97266511389243
+      },
+      {
+        "metric_id": "eurosat_matched_bridge64_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for eurosat_matched_bridge64_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "eurosat_matched_bridge64_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "eurosat_matched_bridge64_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 57.97266511389243
+      },
+      {
+        "metric_id": "macro_map",
+        "description": "Mean class-retrieval AP of fixed old-gallery-centering control for macro_map",
+        "derivation": "100 times mean query AP then mean five bridge seeds; macro is equal mean eight evaluation cells. Full rankings retained.",
+        "origin_path": "macro_map",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/baselines/local/r4-canonical/outputs/accepted_baseline_metrics.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "macro_map",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 44.32589833125364
+      }
+    ],
+    "extra_metric_ids": []
+  },
+  "connector_metric_charts": [
+    {
+      "metric_id": "dtd_cross_bridge32_map",
+      "label": "DTD Cross Bridge32 MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/dtd-cross-bridge32-map-timeline.png",
+      "baseline_value": 30.67913154861484,
+      "latest_value": 30.79966784468561,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "dtd_cross_bridge64_map",
+      "label": "DTD Cross Bridge64 MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/dtd-cross-bridge64-map-timeline.png",
+      "baseline_value": 30.67913154861484,
+      "latest_value": 30.872138376019876,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "dtd_matched_bridge32_map",
+      "label": "DTD Matched Bridge32 MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/dtd-matched-bridge32-map-timeline.png",
+      "baseline_value": 30.67913154861484,
+      "latest_value": 33.870372279053534,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "dtd_matched_bridge64_map",
+      "label": "DTD Matched Bridge64 MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/dtd-matched-bridge64-map-timeline.png",
+      "baseline_value": 30.67913154861484,
+      "latest_value": 35.61275445522558,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "eurosat_cross_bridge32_map",
+      "label": "Eurosat Cross Bridge32 MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/eurosat-cross-bridge32-map-timeline.png",
+      "baseline_value": 57.97266511389243,
+      "latest_value": 58.18865865635002,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "eurosat_cross_bridge64_map",
+      "label": "Eurosat Cross Bridge64 MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/eurosat-cross-bridge64-map-timeline.png",
+      "baseline_value": 57.97266511389243,
+      "latest_value": 57.47483804331485,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "eurosat_matched_bridge32_map",
+      "label": "Eurosat Matched Bridge32 MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/eurosat-matched-bridge32-map-timeline.png",
+      "baseline_value": 57.97266511389243,
+      "latest_value": 50.86714179691578,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "eurosat_matched_bridge64_map",
+      "label": "Eurosat Matched Bridge64 MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/eurosat-matched-bridge64-map-timeline.png",
+      "baseline_value": 57.97266511389243,
+      "latest_value": 46.74916280013905,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "macro_map",
+      "label": "Macro MAP",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/connector-charts/macro-map-timeline.png",
+      "baseline_value": 44.32589833125364,
+      "latest_value": 43.05434178146304,
+      "point_count": 2,
+      "direction": "maximize",
+      "style": "branded"
+    }
+  ]
+}

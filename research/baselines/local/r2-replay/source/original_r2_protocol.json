@@ -1,0 +1,38 @@
+{
+  "id": "E12-20260908-R2",
+  "parent": "E12-20260908-R1",
+  "date": "2026-09-09",
+  "status": "frozen_before_r2_results",
+  "purpose": "Improve the useful retrieval baseline while attributing gains to representation, retrieval or readout; do not repeat the failed weak reliability-weight formula.",
+  "permissions": {"encoder_gradients": false, "gallery_labels_to_method": false, "query_batch_statistics": false, "support_shots": [1,5], "n_way": 5, "queries_per_class": 15},
+  "development": {"cells": ["cifar_fs:cifar100", "dtd:dtd", "miniimagenet:miniimagenet", "dtd:miniimagenet"], "class_partition_seed": 120909, "dev_episode_seed": 129190, "episodes_per_cell": 200, "retest_episode_seeds": [129191,129192,129193], "retest_episodes_per_cell": 600, "scope": "All R1 benchmarks are historically viewed; split only separates within-round choice from retest."},
+  "representations": {"clip_weights": [0.0,0.25,0.5,1.0], "construction": "Unit-norm concatenation of sqrt(w)*CLIP and sqrt(1-w)*DINO; single-encoder endpoint models stay single-encoder."},
+  "strong_controls": {
+    "raw_prototype": true,
+    "raw_centered_ridge_lambda": [0.001,0.01,0.1,1.0],
+    "uniform_retrieval_r": [16,64,256],
+    "uniform_mix": [0.0,0.25,0.5,0.75,1.0],
+    "r1_frozen_single_encoder_profiles": true
+  },
+  "candidates": {
+    "anchor_refine": {"retrieval_r":64,"iterations":[2,4],"mix":[0.25,0.5,0.75],"update":"Re-retrieve with the current prototype, blend each new retrieved mean with the original support prototype, not with an unanchored drifting prototype."},
+    "kernel_residual": {"retrieval_r":64,"beta":[5.0,10.0,20.0],"mix":[0.25,0.5,0.75],"score":"Convex blend of support cosine and log-mean-exp query-to-retrieved-image cosine / beta; each query independent."},
+    "retrieval_ridge": {"retrieval_r":[16,64],"mix":[0.25,0.5,0.75],"lambda":[0.01,0.1,1.0],"readout":"Centered closed-form ridge over the five augmented class prototypes; gallery labels unavailable."}
+  },
+  "selection": "For each shot choose the strongest simple control and strongest candidate using equal-cell macro accuracy on development only, including representation choice. Save all candidates, selected configs and code SHA256 before any retest/external scores. No further adaptive method families after freeze.",
+  "new_e12_validation": {
+    "datasets": ["cub200","eurosat"],
+    "query_split": "Official CUB test; existing deterministic EuroSAT test split. No E12 scores previously used; datasets may have been used by other local projects.",
+    "gallery": "CUB official train all; EuroSAT deterministic 500 train images per class, with sampling labels available to dataset construction only.",
+    "external_cells": ["cub200:cub200","eurosat:eurosat","cub200:miniimagenet","eurosat:miniimagenet"],
+    "episodes_per_cell_and_shot": 600,
+    "seeds": [129291,129292,129293],
+    "no_external_tuning": true
+  },
+  "gates": {
+    "practical_upgrade": "Against R1 frozen DINO uniform profile, >=0.5pp macro gain with positive paired CI, shared-class cells lose no more than 0.5pp, stress cells lose no more than 1pp; separately assess E12-new-dataset validation.",
+    "method_increment": "Against strongest newly tuned control, >=1pp macro gain with positive paired CI and consistent direction across both new same-domain datasets.",
+    "fallback": "Keep the strongest verified simple control when added mechanisms fail. Domain-specific positive evidence is recorded without converting it into universal superiority."
+  },
+  "evidence": ["RGB source identity and gallery exclusion", "explicit per-episode indices", "full dev grid", "frozen selection hashes", "per-query predictions", "paired episode CI and class-level sensitivity", "same-budget controls", "time and encoder count", "R1 assets and outputs read-only"]
+}

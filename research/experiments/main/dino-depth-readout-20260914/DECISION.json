@@ -1,0 +1,11 @@
+{
+  "artifact_id": "decision-0f89b8dd",
+  "report_id": "report-66118f68",
+  "action": "continue",
+  "verdict": "reject_fixed_dino_depth_readout_promotion",
+  "next_stage": "idea",
+  "next_direction": "evidence synthesis and remaining-value assessment",
+  "gate_passed": false,
+  "reopen_condition": "Structurally different independently motivated observable, not a layer/weight/strength sweep",
+  "paper_mapping": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/handoffs/dino_depth_readout_paper_mapping.json"
+}

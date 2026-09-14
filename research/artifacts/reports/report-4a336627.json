@@ -1,0 +1,57 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-4a336627",
+  "id": "report-4a336627",
+  "quest_id": "012",
+  "created_at": "2026-09-12T22:50:52+00:00",
+  "updated_at": "2026-09-12T22:50:52+00:00",
+  "source": {
+    "kind": "agent"
+  },
+  "status": "completed",
+  "branch": "paper/oslo-gallery-failure-study",
+  "head_commit": "60bb113849f7f80dd7040db620fa8853f7c11968",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "paper_outline_candidate",
+  "summary": "Paper outline candidate `outline-001` submitted.",
+  "reason": "Early scoped technical-note checkpoint, not a new-method or submission-ready paper. Selected over a diffuse baseline-history narrative by decision-d48fc2a1.",
+  "flow_type": "paper_outline",
+  "protocol_step": "candidate",
+  "paths": {
+    "outline_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outlines/candidates/outline-001.json"
+  },
+  "details": {
+    "outline_id": "outline-001",
+    "title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+    "review_result": "Source-level mapping audit complete; independent skeptical review pending."
+  },
+  "semantic_key": "report:write:paper_outline_candidate:candidate:3e6a77dafbbba032cd791b0ebd3fc85355357e3d49df4fd89de5e50e96f083f9",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-4a336627",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outlines/candidates/outline-001.json"
+    ],
+    "stage_status": "ready"
+  }
+}

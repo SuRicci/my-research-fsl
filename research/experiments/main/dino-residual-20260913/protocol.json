@@ -1,0 +1,62 @@
+{
+  "idea_id": "idea-0430864a",
+  "decision_id": "decision-72b36e25",
+  "tier": "auxiliary/dev",
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "feature_pool_side": "query",
+  "expected_images": 7277,
+  "feature_shape": [
+    16,
+    384
+  ],
+  "feature_dtype": "float16",
+  "backbone": "dinov2_vits14",
+  "pool_grid": 4,
+  "local_k": 1,
+  "fusion_weight": 0.5,
+  "score_standardization": "per-query population std, floor 1e-12",
+  "methods": [
+    "parent",
+    "residual",
+    "residual_fusion",
+    "raw_fusion",
+    "support_center_fusion",
+    "shuffled_fusion",
+    "mean_fusion"
+  ],
+  "min_free_gib": 10,
+  "deadline": "2026-09-15T09:00:00+00:00",
+  "threads": 4,
+  "encoding_batch": 32,
+  "mps_fallback": "1",
+  "parent_bank": "experiments/main/query-consistency-20260913/outputs",
+  "parent_method_index": 1,
+  "baseline_contract": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer/json/metric_contract.json",
+  "metric_deviation": "Source-only follow-up qualification; no canonical Pets values measured or copied as new results.",
+  "audit_indices": [
+    0,
+    249,
+    499
+  ],
+  "bootstrap_seed": 26091399,
+  "bootstrap_replicates": 5000,
+  "min_gain_pp": 0.5,
+  "cell_ci_floor_pp": -0.5,
+  "source_exposure": "Repeatedly exposed development pools; no independent transfer claim.",
+  "source_asset": "experiments/main/dino-local-20260913/assets",
+  "raw_bank": "experiments/main/dino-local-20260913/outputs",
+  "candidate_index": 2,
+  "comparison_indices": [
+    0,
+    3,
+    4,
+    5,
+    6
+  ],
+  "residual_epsilon": 1e-12,
+  "frozen_at": "2026-09-13T13:53:38.817696+00:00",
+  "near_zero_rule": "Norm<=1e-12 maps to zero; no outcome-based threshold. Declared before any classification."
+}

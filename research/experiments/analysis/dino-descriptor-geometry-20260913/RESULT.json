@@ -1,0 +1,86 @@
+{
+  "status": "completed",
+  "labels_used": false,
+  "accuracy_evaluated": false,
+  "domains": {
+    "dtd": {
+      "source_sha256": "ca0fb9d6d5935c21f6116b324931430e21ee2217e77d8377d01e1face9578278",
+      "mean_pairwise_token_cosine": {
+        "n": 1877,
+        "mean": 0.8325446786363864,
+        "q05_median_q95": [
+          0.6906711045985721,
+          0.848119959782749,
+          0.9200463160341741
+        ]
+      },
+      "image_mean_energy": {
+        "n": 1877,
+        "mean": 0.8430106362216122,
+        "q05_median_q95": [
+          0.7100041605611612,
+          0.8576124622963273,
+          0.9250434212820383
+        ]
+      },
+      "centered_residual_energy": {
+        "n": 1877,
+        "mean": 0.1569893637783877,
+        "q05_median_q95": [
+          0.0749565787179617,
+          0.14238753770367277,
+          0.2899958394388386
+        ]
+      },
+      "token_gram_participation_rank": {
+        "n": 1877,
+        "mean": 1.4112374325405523,
+        "q05_median_q95": [
+          1.1669998152410332,
+          1.3484022905059214,
+          1.86031330795698
+        ]
+      }
+    },
+    "eurosat": {
+      "source_sha256": "04df6fb99b673242cba43f0441927313bd64381df73c357234239908190ccc8e",
+      "mean_pairwise_token_cosine": {
+        "n": 5400,
+        "mean": 0.8241337832758678,
+        "q05_median_q95": [
+          0.7220507152546626,
+          0.8336176015612221,
+          0.8933461345739595
+        ]
+      },
+      "image_mean_energy": {
+        "n": 5400,
+        "mean": 0.8351254218211259,
+        "q05_median_q95": [
+          0.7394225455512461,
+          0.8440165014636457,
+          0.9000120011630871
+        ]
+      },
+      "centered_residual_energy": {
+        "n": 5400,
+        "mean": 0.16487457817887402,
+        "q05_median_q95": [
+          0.09998799883691295,
+          0.15598349853635432,
+          0.26057745444875385
+        ]
+      },
+      "token_gram_participation_rank": {
+        "n": 5400,
+        "mean": 1.4264117119795738,
+        "q05_median_q95": [
+          1.230603136348148,
+          1.3884860518927047,
+          1.7538986683558746
+        ]
+      }
+    }
+  },
+  "boundary": "Image-local geometric redundancy is not semantic utility or a performance result. It does not prove residualization or reconstruction will improve classification."
+}

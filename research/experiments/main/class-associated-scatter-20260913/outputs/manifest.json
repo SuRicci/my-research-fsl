@@ -1,0 +1,109 @@
+{
+  "argv": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/class-associated-scatter-20260913/study.py"
+  ],
+  "protocol": {
+    "idea_id": "idea-c62de373",
+    "tier": "auxiliary/dev",
+    "parent_report": "report-64b6342f",
+    "parent_dir": "experiments/main/scatter-score-fusion-20260913",
+    "shrinkage": 0.5,
+    "gamma_by_target": {
+      "eurosat": 10.0,
+      "dtd": 1.0
+    },
+    "domains": [
+      "eurosat",
+      "dtd"
+    ],
+    "shots": [
+      1
+    ],
+    "task_count_per_domain": 500,
+    "galleries": [
+      "matched",
+      "mismatched"
+    ],
+    "methods": [
+      "incumbent",
+      "class_associated",
+      "metric_ensemble",
+      "foreign_metrics",
+      "scatter_cs",
+      "scatter_r2",
+      "mean_cs"
+    ],
+    "primary_metric": "dev_macro_1shot_accuracy",
+    "scope": "repeated exposed-development fixed pools; no new Pets/Caltech or five-shot outcome",
+    "gate": {
+      "gain_vs_incumbent_pp": 0.5,
+      "pooled_ci_lower_pp": 0,
+      "domain_mean_min_pp": 0,
+      "cell_ci_lower_min_pp": -0.5,
+      "class_association_comparators": [
+        "metric_ensemble",
+        "foreign_metrics"
+      ]
+    },
+    "numeric_tolerance": 2e-05,
+    "audit_indices": [
+      0,
+      250
+    ],
+    "bootstrap": {
+      "replicates": 10000,
+      "seed": 26091398,
+      "unit": "paired tasks stratified by seed within domain; average two galleries within task"
+    },
+    "resources": {
+      "local_only": true,
+      "spend": 0,
+      "threads": 6,
+      "free_gib_min": 10,
+      "max_outputs_mib": 150,
+      "deadline": "2026-09-15T09:00:00+00:00"
+    },
+    "no_tuning": true,
+    "query_adaptation": false,
+    "gallery_labels": false
+  },
+  "code_hashes": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/protocol.json": "fed9f03702e230c44cb5d4cbd35bd04d30f090ee29beb9fea2e3c32217e8c654",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/study.py": "d39f553e1bbf594f34eafc2c71128e46155ee180ea76278392324267abaa9814",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-score-fusion-20260913/code_lock.json": "0d2ea5c676f61be7f17ed373b67b8609ecd5df5c3ff2658bf13eb43c9dea191d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/protocol.json": "291977c551ea14bf06df7cd282671aeeaeec7fa82ce9282e3674b0400343ec7f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/model.py": "a8b1bc480cf99ad1df0aca549e7381a3a89989069ca76818f6fe7f9ae757baaf",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/study.py": "8c13e1d949764db8f41e3ee7971aec1298237ee9eed37220133a368686061ba5",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/verify.py": "411a423db84570afb3d4ccf2c604a5ea0bd10439b8aae29a60c83a41ed761e59",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluate.py": "c614d00a1ed0b13fe12b3c4ce48ea298fc2cac6b14d365ef3d471fce89e77b4a",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/metric.py": "4e19d5e659e2fd76cfe57c762c91c39bdfa66a8da9abb74109e2fa6ab86db614",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/utility-composition-qualification-20260913/run.py": "60dc9d132fb4d37ccf1dab7725098b4b202487f60b40759c60bf515921ccd15c",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/r2-geometry-canonical-20260912/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/evaluation_contract.json": "b27bc495917a781274ab9c09997b21cc4c6bd4ae7c9be412c46b244c8e7dd469",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/feature_manifest.json": "d63bdbf077a970c0f8ff47b5bf7638eff2d5a4fca3cc2f70a2ed0284903495a3",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/manifest.json": "3d06ebf47f259fb41db5f5aaa85aab65ded94ff15a036d08e36c0cfcfa6e633b",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r2-pets-transfer/json/metric_contract.json": "575445b7a69d3b0de38a0dc7a8b0bee1b5cd1f938459dc13f80f79508cfa0428",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/dtd_k1_selection.json": "7592c8e2294fcbd27c80e672b8c4d325f6d24527241b5fc3927c02b9961bc724",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/dtd_k5_selection.json": "d1ae8af8654098ff326e2b4aa4230d419edb528214b85f9e190d33226a3b8ace",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/eurosat_k5_selection.json": "daadc2c81b6068834b65f5ceba8b859cb83bd93c3287a5e51852edfa3be1de1d",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/eurosat_k1_selection.json": "4f4881a923483c4f27a77a5f096ce3694620b4a10002aae6cf2a1dc1822bd321",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz": "af86e93c7884028c070c03786d0e3519ea39c5c774489eecea6c787b46595acd",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k1.npz": "3444b1faf3e10bc4db38ebad51126439a7c6c389aa40746d4c1d36071c5fc8d2",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k1.npz": "3cff1d7011365e0d986fe91045a4924290c5e028eb08c870e27c58dd09c8f456",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz": "af86e93c7884028c070c03786d0e3519ea39c5c774489eecea6c787b46595acd",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz": "edc313350b86f7fce448bb0b03200112f8569dcec757351197591e2131d43c41",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz": "68d31492e8e8d1b9f5ab4b58a1c7db0e5fbd5bbe09300293828cad091abf7f4b",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz": "d4c12f280c005fcf6219e5c1cd2bbae1ed55e81a6b79bb10c23152253461516f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz": "edc313350b86f7fce448bb0b03200112f8569dcec757351197591e2131d43c41",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/scatter-centering-stack-20260913/code_lock.json": "249503779eaecc25345649f0ef18074b24074ecc76258a0456dd11ab2f5018f4",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/protocol.json": "13093e7149b9155eb5b3e9be479e6dea272b455380ec0fbab10195e6de4e4350",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/class_metric.py": "d6f3b09a1a52b157bd4e814c09427c82bc83d69abca41778d8b0ebf56f85dac7",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/validate.py": "6f4225f0eadc030c9abe4edfcafa313d493c691cc8954f4f35ae93ec1734bd35",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/class-associated-scatter-20260913/study.py": "f6a14d1478c5264764cb5ae8b1994ead0a318a5901253c341a90c0d066aa6473"
+  },
+  "started_utc": "2026-09-13T09:16:46.565987+00:00",
+  "torch": "2.3.0",
+  "numpy": "1.24.4"
+}

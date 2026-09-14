@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-14T00:42:11.018098+00:00",
+  "failed_launches": [
+    "bash-a1f45be4",
+    "bash-aaea7a83"
+  ],
+  "no_models_fitted": true,
+  "archive": "experiments/main/finite-view-head-objective-20260914/failed_attempts/ram_pack",
+  "new_study_sha256": "1195c78be4639525b581eeab4d31a4f2308a4e507a7b6d05410c39002778413f",
+  "new_audit_sha256": "94c35dd9a708906982ea2b1267b4f2b33b21e330add7d9c384684345dbb81b38",
+  "validation": "syntaxpassed; secondnumericprecheckpendingstoragefloor",
+  "free_gib": 9.143535614013672
+}

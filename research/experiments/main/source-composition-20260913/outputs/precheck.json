@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "task_rows_checked": 1600,
+  "numerical_cases": 12,
+  "maximum_score_error": 5.204386060997379e-07,
+  "query_independence": "passed",
+  "finite_nonzero_gradient": "passed",
+  "source_role_disjointness": "passed",
+  "exposure": {
+    "dtd_k1_original": {
+      "original": {
+        "unique_images": 938,
+        "unique_classes": 47,
+        "support_presentations": 5000,
+        "query_presentations": 75000
+      },
+      "flowers": {
+        "unique_images": 0,
+        "unique_classes": 0,
+        "support_presentations": 0,
+        "query_presentations": 0
+      }
+    },
+    "dtd_k1_flowers": {
+      "original": {
+        "unique_images": 0,
+        "unique_classes": 0,
+        "support_presentations": 0,
+        "query_presentations": 0
+      },
+      "flowers": {
+        "unique_images": 3451,
+        "unique_classes": 82,
+        "support_presentations": 5000,
+        "query_presentations": 75000
+      }
+    },
+    "dtd_k1_mixed": {
+      "original": {
+        "unique_images": 932,
+        "unique_classes": 47,
+        "support_presentations": 2500,
+        "query_presentations": 37500
+      },
+      "flowers": {
+        "unique_images": 2463,
+        "unique_classes": 80,
+        "support_presentations": 2500,
+        "query_presentations": 37500
+      }
+    },
+    "dtd_k5_original": {
+      "original": {
+        "unique_images": 938,
+        "unique_classes": 47,
+        "support_presentations": 25000,
+        "query_presentations": 65000
+      },
+      "flowers": {
+        "unique_images": 0,
+        "unique_classes": 0,
+        "support_presentations": 0,
+        "query_presentations": 0
+      }
+    },
+    "dtd_k5_flowers": {
+      "original": {
+        "unique_images": 0,
+        "unique_classes": 0,
+        "support_presentations": 0,
+        "query_presentations": 0
+      },
+      "flowers": {
+        "unique_images": 3730,
+        "unique_classes": 82,
+        "support_presentations": 25000,
+        "query_presentations": 65000
+      }
+    },
+    "dtd_k5_mixed": {
+      "original": {
+        "unique_images": 937,
+        "unique_classes": 47,
+        "support_presentations": 12500,
+        "query_presentations": 32500
+      },
+      "flowers": {
+        "unique_images": 2684,
+        "unique_classes": 79,
+        "support_presentations": 12500,
+        "query_presentations": 32500
+      }
+    },
+    "eurosat_k1_original": {
+      "original": {
+        "unique_images": 2550,
+        "unique_classes": 10,
+        "support_presentations": 5000,
+        "query_presentations": 75000
+      },
+      "flowers": {
+        "unique_images": 0,
+        "unique_classes": 0,
+        "support_presentations": 0,
+        "query_presentations": 0
+      }
+    },
+    "eurosat_k1_flowers": {
+      "original": {
+        "unique_images": 0,
+        "unique_classes": 0,
+        "support_presentations": 0,
+        "query_presentations": 0
+      },
+      "flowers": {
+        "unique_images": 3451,
+        "unique_classes": 82,
+        "support_presentations": 5000,
+        "query_presentations": 75000
+      }
+    },
+    "eurosat_k1_mixed": {
+      "original": {
+        "unique_images": 2071,
+        "unique_classes": 10,
+        "support_presentations": 2500,
+        "query_presentations": 37500
+      },
+      "flowers": {
+        "unique_images": 2463,
+        "unique_classes": 80,
+        "support_presentations": 2500,
+        "query_presentations": 37500
+      }
+    },
+    "eurosat_k5_original": {
+      "original": {
+        "unique_images": 2590,
+        "unique_classes": 10,
+        "support_presentations": 25000,
+        "query_presentations": 65000
+      },
+      "flowers": {
+        "unique_images": 0,
+        "unique_classes": 0,
+        "support_presentations": 0,
+        "query_presentations": 0
+      }
+    },
+    "eurosat_k5_flowers": {
+      "original": {
+        "unique_images": 0,
+        "unique_classes": 0,
+        "support_presentations": 0,
+        "query_presentations": 0
+      },
+      "flowers": {
+        "unique_images": 3730,
+        "unique_classes": 82,
+        "support_presentations": 25000,
+        "query_presentations": 65000
+      }
+    },
+    "eurosat_k5_mixed": {
+      "original": {
+        "unique_images": 2177,
+        "unique_classes": 10,
+        "support_presentations": 12500,
+        "query_presentations": 32500
+      },
+      "flowers": {
+        "unique_images": 2684,
+        "unique_classes": 79,
+        "support_presentations": 12500,
+        "query_presentations": 32500
+      }
+    }
+  }
+}

@@ -1,0 +1,803 @@
+{
+  "rows": [
+    {
+      "metric_id": "dtd_cross_bridge32_map",
+      "dataset": "dtd",
+      "policy": "cross",
+      "budget": 32,
+      "mean_map": {
+        "raw_a0": 30.67913154861484,
+        "raw_a0.5": 30.767493818993653,
+        "raw_a1": 30.825484375714428,
+        "raw_a2": 30.88983217639603,
+        "center_a0": 30.67913154861484,
+        "center_a0.5": 30.71706795866284,
+        "center_a1": 30.751210585838795,
+        "center_a2": 30.79966784468561,
+        "raw_fixed001_a1": 30.83904269674455,
+        "center_fixed001_a1": 30.757015683754314,
+        "old_old": 27.0458485540921,
+        "relative_centered": 5.062234021914837,
+        "procrustes": 3.750793058936815,
+        "ridge": 2.951126229211049,
+        "wip_restricted": 3.3634517393391037,
+        "local_std": 27.542374012452242,
+        "linear_std": 26.41221281372684,
+        "v0_press": 27.714664832624415,
+        "global_press": 27.966146287320232,
+        "old_centered": 30.67913154861484,
+        "old_whiten": 29.58869174409065,
+        "centered_residual_2": 30.889832176396027,
+        "new_new_oracle": 37.97552320539392
+      },
+      "comparisons": {
+        "old_centered": {
+          "delta_pp": 0.12053629607077099,
+          "ci95_pp": [
+            0.028409789283014318,
+            0.22876236060951413
+          ]
+        },
+        "raw_a2": {
+          "delta_pp": -0.09016433171041882,
+          "ci95_pp": [
+            -0.29047481676821574,
+            0.11675507967326416
+          ]
+        },
+        "centered_residual_2": {
+          "delta_pp": -0.09016433171041527,
+          "ci95_pp": [
+            -0.29047481676821596,
+            0.11675507967326416
+          ]
+        },
+        "v0_press": {
+          "delta_pp": 3.085003012061197,
+          "ci95_pp": [
+            1.2727776658660062,
+            5.114474842291128
+          ]
+        }
+      },
+      "primary_seed_map": [
+        30.80578175357145,
+        30.735567406518673,
+        30.871450676850703,
+        30.73584473494435,
+        30.84969465154292
+      ]
+    },
+    {
+      "metric_id": "dtd_cross_bridge64_map",
+      "dataset": "dtd",
+      "policy": "cross",
+      "budget": 64,
+      "mean_map": {
+        "raw_a0": 30.67913154861484,
+        "raw_a0.5": 30.82172699510798,
+        "raw_a1": 30.900493513412947,
+        "raw_a2": 30.917894207736186,
+        "center_a0": 30.67913154861484,
+        "center_a0.5": 30.73879356685482,
+        "center_a1": 30.7905946774289,
+        "center_a2": 30.872138376019876,
+        "raw_fixed001_a1": 30.91586025366188,
+        "center_fixed001_a1": 30.794348759633095,
+        "old_old": 27.0458485540921,
+        "relative_centered": 5.26993989348678,
+        "procrustes": 3.898075929238577,
+        "ridge": 3.0029136083026295,
+        "wip_restricted": 3.3904220007917263,
+        "local_std": 27.58418216424762,
+        "linear_std": 25.622393710481667,
+        "v0_press": 28.195037702484683,
+        "global_press": 28.43579145592821,
+        "old_centered": 30.67913154861484,
+        "old_whiten": 29.58869174409065,
+        "centered_residual_2": 30.917894207736186,
+        "new_new_oracle": 37.97552320539392
+      },
+      "comparisons": {
+        "old_centered": {
+          "delta_pp": 0.1930068274050356,
+          "ci95_pp": [
+            0.07092596624805196,
+            0.32261228683467136
+          ]
+        },
+        "raw_a2": {
+          "delta_pp": -0.045755831716309814,
+          "ci95_pp": [
+            -0.3689585570668756,
+            0.2706150634744689
+          ]
+        },
+        "centered_residual_2": {
+          "delta_pp": -0.045755831716309814,
+          "ci95_pp": [
+            -0.3689585570668756,
+            0.2706150634744689
+          ]
+        },
+        "v0_press": {
+          "delta_pp": 2.677100673535193,
+          "ci95_pp": [
+            0.9179998190331204,
+            4.654802025015364
+          ]
+        }
+      },
+      "primary_seed_map": [
+        30.8917990286368,
+        30.842468380545245,
+        30.867199854278788,
+        30.85248877658826,
+        30.906735840050274
+      ]
+    },
+    {
+      "metric_id": "dtd_matched_bridge32_map",
+      "dataset": "dtd",
+      "policy": "matched",
+      "budget": 32,
+      "mean_map": {
+        "raw_a0": 30.67913154861484,
+        "raw_a0.5": 32.34459909174188,
+        "raw_a1": 33.49572642589379,
+        "raw_a2": 33.76598324688723,
+        "center_a0": 30.67913154861484,
+        "center_a0.5": 32.288837406962486,
+        "center_a1": 33.49738787755183,
+        "center_a2": 33.870372279053534,
+        "raw_fixed001_a1": 33.558583192739874,
+        "center_fixed001_a1": 33.59886031516712,
+        "old_old": 27.0458485540921,
+        "relative_centered": 21.66355790091305,
+        "procrustes": 21.894182992840314,
+        "ridge": 11.267764898670373,
+        "wip_restricted": 15.233820709808166,
+        "local_std": 30.964660717751947,
+        "linear_std": 31.628444374317528,
+        "v0_press": 31.961253576458308,
+        "global_press": 32.17737620735079,
+        "old_centered": 30.67913154861484,
+        "old_whiten": 29.58869174409065,
+        "centered_residual_2": 33.76598324688724,
+        "new_new_oracle": 37.97552320539392
+      },
+      "comparisons": {
+        "old_centered": {
+          "delta_pp": 3.191240730438693,
+          "ci95_pp": [
+            1.3989256136438082,
+            5.289390240197143
+          ]
+        },
+        "raw_a2": {
+          "delta_pp": 0.1043890321663028,
+          "ci95_pp": [
+            -0.3481661170439779,
+            0.5128902357364372
+          ]
+        },
+        "centered_residual_2": {
+          "delta_pp": 0.10438903216629569,
+          "ci95_pp": [
+            -0.3481661170439779,
+            0.5128902357364372
+          ]
+        },
+        "v0_press": {
+          "delta_pp": 1.9091187025952259,
+          "ci95_pp": [
+            0.13973201644119265,
+            4.004526279910697
+          ]
+        }
+      },
+      "primary_seed_map": [
+        32.891087400236444,
+        34.80590255039865,
+        34.06594537902273,
+        33.64436128411531,
+        33.94456478149456
+      ]
+    },
+    {
+      "metric_id": "dtd_matched_bridge64_map",
+      "dataset": "dtd",
+      "policy": "matched",
+      "budget": 64,
+      "mean_map": {
+        "raw_a0": 30.67913154861484,
+        "raw_a0.5": 33.499788624449636,
+        "raw_a1": 35.25271797068478,
+        "raw_a2": 35.380756839152916,
+        "center_a0": 30.67913154861484,
+        "center_a0.5": 33.504783399667275,
+        "center_a1": 35.436827542898136,
+        "center_a2": 35.61275445522558,
+        "raw_fixed001_a1": 35.253273577322844,
+        "center_fixed001_a1": 35.43899948489469,
+        "old_old": 27.0458485540921,
+        "relative_centered": 28.30563021802359,
+        "procrustes": 30.14038784562065,
+        "ridge": 15.156569319399143,
+        "wip_restricted": 23.691965410042666,
+        "local_std": 33.3828382975448,
+        "linear_std": 34.58571284622955,
+        "v0_press": 34.75445167569063,
+        "global_press": 34.83919346269379,
+        "old_centered": 30.67913154861484,
+        "old_whiten": 29.58869174409065,
+        "centered_residual_2": 35.380756839152916,
+        "new_new_oracle": 37.97552320539392
+      },
+      "comparisons": {
+        "old_centered": {
+          "delta_pp": 4.933622906610736,
+          "ci95_pp": [
+            2.4657288322287623,
+            7.816620890743935
+          ]
+        },
+        "raw_a2": {
+          "delta_pp": 0.23199761607266112,
+          "ci95_pp": [
+            -0.3252800083618666,
+            0.7196505270150425
+          ]
+        },
+        "centered_residual_2": {
+          "delta_pp": 0.23199761607266112,
+          "ci95_pp": [
+            -0.3252800083618666,
+            0.7196505270150425
+          ]
+        },
+        "v0_press": {
+          "delta_pp": 0.8583027795349452,
+          "ci95_pp": [
+            -0.9687912487531913,
+            3.072463085286832
+          ]
+        }
+      },
+      "primary_seed_map": [
+        34.83613960082996,
+        36.25431501029995,
+        35.4167127013014,
+        35.80178140490144,
+        35.754823558795124
+      ]
+    },
+    {
+      "metric_id": "eurosat_cross_bridge32_map",
+      "dataset": "eurosat",
+      "policy": "cross",
+      "budget": 32,
+      "mean_map": {
+        "raw_a0": 57.97266511389243,
+        "raw_a0.5": 58.1502772920925,
+        "raw_a1": 57.978418209569604,
+        "raw_a2": 56.62840683912806,
+        "center_a0": 57.97266511389243,
+        "center_a0.5": 58.19354269445587,
+        "center_a1": 58.302567745103836,
+        "center_a2": 58.18865865635002,
+        "raw_fixed001_a1": 57.98219458138472,
+        "center_fixed001_a1": 58.30378863684685,
+        "old_old": 54.435173418797866,
+        "relative_centered": 16.15418668535662,
+        "procrustes": 15.746765535162979,
+        "ridge": 14.067909888564136,
+        "wip_restricted": 15.275853817718579,
+        "local_std": 54.19169192822566,
+        "linear_std": 52.74576017853051,
+        "v0_press": 55.02707428431934,
+        "global_press": 55.21238681065862,
+        "old_centered": 57.97266511389243,
+        "old_whiten": 52.60091377055453,
+        "centered_residual_2": 56.62840683912806,
+        "new_new_oracle": 52.99807847167982
+      },
+      "comparisons": {
+        "old_centered": {
+          "delta_pp": 0.21599354245758917,
+          "ci95_pp": [
+            -1.41418031841811,
+            1.5869037539796607
+          ]
+        },
+        "raw_a2": {
+          "delta_pp": 1.5602518172219604,
+          "ci95_pp": [
+            0.045385142336483365,
+            3.3767991083047098
+          ]
+        },
+        "centered_residual_2": {
+          "delta_pp": 1.5602518172219604,
+          "ci95_pp": [
+            0.045385142336483365,
+            3.3767991083047098
+          ]
+        },
+        "v0_press": {
+          "delta_pp": 3.1615843720306813,
+          "ci95_pp": [
+            1.4037625915025644,
+            4.7389649922107235
+          ]
+        }
+      },
+      "primary_seed_map": [
+        58.21740949221228,
+        57.74422853529825,
+        58.48878257408573,
+        58.30762851543629,
+        58.185244164717574
+      ]
+    },
+    {
+      "metric_id": "eurosat_cross_bridge64_map",
+      "dataset": "eurosat",
+      "policy": "cross",
+      "budget": 64,
+      "mean_map": {
+        "raw_a0": 57.97266511389243,
+        "raw_a0.5": 58.2369047430798,
+        "raw_a1": 57.68685673692021,
+        "raw_a2": 54.447829976559234,
+        "center_a0": 57.97266511389243,
+        "center_a0.5": 58.29760264005729,
+        "center_a1": 58.295354810669565,
+        "center_a2": 57.47483804331485,
+        "raw_fixed001_a1": 57.66970461603932,
+        "center_fixed001_a1": 58.28741566064642,
+        "old_old": 54.435173418797866,
+        "relative_centered": 17.753282310271178,
+        "procrustes": 20.052983736737378,
+        "ridge": 14.654754054656022,
+        "wip_restricted": 16.0251373611867,
+        "local_std": 53.83633726665078,
+        "linear_std": 50.106364129042156,
+        "v0_press": 54.88388477934208,
+        "global_press": 55.16926556281773,
+        "old_centered": 57.97266511389243,
+        "old_whiten": 52.60091377055453,
+        "centered_residual_2": 54.447829976559234,
+        "new_new_oracle": 52.99807847167982
+      },
+      "comparisons": {
+        "old_centered": {
+          "delta_pp": -0.4978270705775856,
+          "ci95_pp": [
+            -4.610282340908545,
+            1.8734880645047347
+          ]
+        },
+        "raw_a2": {
+          "delta_pp": 3.027008066755613,
+          "ci95_pp": [
+            0.8823108424539419,
+            5.6427141010572885
+          ]
+        },
+        "centered_residual_2": {
+          "delta_pp": 3.027008066755613,
+          "ci95_pp": [
+            0.8823108424539419,
+            5.6427141010572885
+          ]
+        },
+        "v0_press": {
+          "delta_pp": 2.5909532639727644,
+          "ci95_pp": [
+            0.8313498284945433,
+            4.229052156232585
+          ]
+        }
+      },
+      "primary_seed_map": [
+        58.08240277855563,
+        55.205166797129436,
+        58.584625888915966,
+        57.492480111980406,
+        58.00951463999277
+      ]
+    },
+    {
+      "metric_id": "eurosat_matched_bridge32_map",
+      "dataset": "eurosat",
+      "policy": "matched",
+      "budget": 32,
+      "mean_map": {
+        "raw_a0": 57.97266511389243,
+        "raw_a0.5": 60.15968766924051,
+        "raw_a1": 59.7435319765671,
+        "raw_a2": 51.52973507547705,
+        "center_a0": 57.97266511389243,
+        "center_a0.5": 60.17774804026167,
+        "center_a1": 59.74570197675766,
+        "center_a2": 50.86714179691578,
+        "raw_fixed001_a1": 59.686915399766264,
+        "center_fixed001_a1": 59.68431966395913,
+        "old_old": 54.435173418797866,
+        "relative_centered": 41.69684227218114,
+        "procrustes": 49.9807920694499,
+        "ridge": 32.63182590459899,
+        "wip_restricted": 42.18279331923698,
+        "local_std": 57.00295426097771,
+        "linear_std": 52.63891029660749,
+        "v0_press": 57.11628386163272,
+        "global_press": 56.77262627967109,
+        "old_centered": 57.97266511389243,
+        "old_whiten": 52.60091377055453,
+        "centered_residual_2": 51.52973507547705,
+        "new_new_oracle": 52.99807847167982
+      },
+      "comparisons": {
+        "old_centered": {
+          "delta_pp": -7.105523316976651,
+          "ci95_pp": [
+            -13.73496029619275,
+            0.128750483102399
+          ]
+        },
+        "raw_a2": {
+          "delta_pp": -0.6625932785612676,
+          "ci95_pp": [
+            -1.9017927273348525,
+            0.6616767703848694
+          ]
+        },
+        "centered_residual_2": {
+          "delta_pp": -0.6625932785612676,
+          "ci95_pp": [
+            -1.9017927273348456,
+            0.6616767703848696
+          ]
+        },
+        "v0_press": {
+          "delta_pp": -6.249142064716942,
+          "ci95_pp": [
+            -9.506066886056422,
+            -2.284606718797136
+          ]
+        }
+      },
+      "primary_seed_map": [
+        53.31186360360991,
+        50.8642659159885,
+        50.585661276006164,
+        49.03916225088576,
+        50.53475593808861
+      ]
+    },
+    {
+      "metric_id": "eurosat_matched_bridge64_map",
+      "dataset": "eurosat",
+      "policy": "matched",
+      "budget": 64,
+      "mean_map": {
+        "raw_a0": 57.97266511389243,
+        "raw_a0.5": 60.67886274127133,
+        "raw_a1": 59.484538551371294,
+        "raw_a2": 47.56372688934065,
+        "center_a0": 57.97266511389243,
+        "center_a0.5": 60.66327826410086,
+        "center_a1": 59.35097630667001,
+        "center_a2": 46.74916280013905,
+        "raw_fixed001_a1": 59.08402862040365,
+        "center_fixed001_a1": 58.94593253173458,
+        "old_old": 54.435173418797866,
+        "relative_centered": 43.340812900815045,
+        "procrustes": 55.09367458898333,
+        "ridge": 37.247117223069075,
+        "wip_restricted": 50.957847122875236,
+        "local_std": 56.471867228796015,
+        "linear_std": 53.10620873568498,
+        "v0_press": 56.80123791857014,
+        "global_press": 56.33439287598478,
+        "old_centered": 57.97266511389243,
+        "old_whiten": 52.60091377055453,
+        "centered_residual_2": 47.56372688934064,
+        "new_new_oracle": 52.99807847167982
+      },
+      "comparisons": {
+        "old_centered": {
+          "delta_pp": -11.223502313753386,
+          "ci95_pp": [
+            -19.912715291067745,
+            -2.409637996110978
+          ]
+        },
+        "raw_a2": {
+          "delta_pp": -0.8145640892016033,
+          "ci95_pp": [
+            -1.8473332637685653,
+            0.23759564294050176
+          ]
+        },
+        "centered_residual_2": {
+          "delta_pp": -0.8145640892015962,
+          "ci95_pp": [
+            -1.8473332637685653,
+            0.23759564294050176
+          ]
+        },
+        "v0_press": {
+          "delta_pp": -10.052075118431091,
+          "ci95_pp": [
+            -13.922998649352385,
+            -5.392716757250526
+          ]
+        }
+      },
+      "primary_seed_map": [
+        48.32714082777179,
+        46.01495247632726,
+        46.475881539771066,
+        46.4063501688659,
+        46.521488987959216
+      ]
+    }
+  ],
+  "values_by_method": {
+    "raw_a0": {
+      "dtd_cross_bridge32_map": 30.67913154861484,
+      "dtd_cross_bridge64_map": 30.67913154861484,
+      "dtd_matched_bridge32_map": 30.67913154861484,
+      "dtd_matched_bridge64_map": 30.67913154861484,
+      "eurosat_cross_bridge32_map": 57.97266511389243,
+      "eurosat_cross_bridge64_map": 57.97266511389243,
+      "eurosat_matched_bridge32_map": 57.97266511389243,
+      "eurosat_matched_bridge64_map": 57.97266511389243,
+      "macro_map": 44.32589833125364
+    },
+    "raw_a0.5": {
+      "dtd_cross_bridge32_map": 30.767493818993653,
+      "dtd_cross_bridge64_map": 30.82172699510798,
+      "dtd_matched_bridge32_map": 32.34459909174188,
+      "dtd_matched_bridge64_map": 33.499788624449636,
+      "eurosat_cross_bridge32_map": 58.1502772920925,
+      "eurosat_cross_bridge64_map": 58.2369047430798,
+      "eurosat_matched_bridge32_map": 60.15968766924051,
+      "eurosat_matched_bridge64_map": 60.67886274127133,
+      "macro_map": 45.58241762199716
+    },
+    "raw_a1": {
+      "dtd_cross_bridge32_map": 30.825484375714428,
+      "dtd_cross_bridge64_map": 30.900493513412947,
+      "dtd_matched_bridge32_map": 33.49572642589379,
+      "dtd_matched_bridge64_map": 35.25271797068478,
+      "eurosat_cross_bridge32_map": 57.978418209569604,
+      "eurosat_cross_bridge64_map": 57.68685673692021,
+      "eurosat_matched_bridge32_map": 59.7435319765671,
+      "eurosat_matched_bridge64_map": 59.484538551371294,
+      "macro_map": 45.67097097001677
+    },
+    "raw_a2": {
+      "dtd_cross_bridge32_map": 30.88983217639603,
+      "dtd_cross_bridge64_map": 30.917894207736186,
+      "dtd_matched_bridge32_map": 33.76598324688723,
+      "dtd_matched_bridge64_map": 35.380756839152916,
+      "eurosat_cross_bridge32_map": 56.62840683912806,
+      "eurosat_cross_bridge64_map": 54.447829976559234,
+      "eurosat_matched_bridge32_map": 51.52973507547705,
+      "eurosat_matched_bridge64_map": 47.56372688934065,
+      "macro_map": 42.64052065633467
+    },
+    "center_a0": {
+      "dtd_cross_bridge32_map": 30.67913154861484,
+      "dtd_cross_bridge64_map": 30.67913154861484,
+      "dtd_matched_bridge32_map": 30.67913154861484,
+      "dtd_matched_bridge64_map": 30.67913154861484,
+      "eurosat_cross_bridge32_map": 57.97266511389243,
+      "eurosat_cross_bridge64_map": 57.97266511389243,
+      "eurosat_matched_bridge32_map": 57.97266511389243,
+      "eurosat_matched_bridge64_map": 57.97266511389243,
+      "macro_map": 44.32589833125364
+    },
+    "center_a0.5": {
+      "dtd_cross_bridge32_map": 30.71706795866284,
+      "dtd_cross_bridge64_map": 30.73879356685482,
+      "dtd_matched_bridge32_map": 32.288837406962486,
+      "dtd_matched_bridge64_map": 33.504783399667275,
+      "eurosat_cross_bridge32_map": 58.19354269445587,
+      "eurosat_cross_bridge64_map": 58.29760264005729,
+      "eurosat_matched_bridge32_map": 60.17774804026167,
+      "eurosat_matched_bridge64_map": 60.66327826410086,
+      "macro_map": 45.57270674637789
+    },
+    "center_a1": {
+      "dtd_cross_bridge32_map": 30.751210585838795,
+      "dtd_cross_bridge64_map": 30.7905946774289,
+      "dtd_matched_bridge32_map": 33.49738787755183,
+      "dtd_matched_bridge64_map": 35.436827542898136,
+      "eurosat_cross_bridge32_map": 58.302567745103836,
+      "eurosat_cross_bridge64_map": 58.295354810669565,
+      "eurosat_matched_bridge32_map": 59.74570197675766,
+      "eurosat_matched_bridge64_map": 59.35097630667001,
+      "macro_map": 45.77132769036484
+    },
+    "center_a2": {
+      "dtd_cross_bridge32_map": 30.79966784468561,
+      "dtd_cross_bridge64_map": 30.872138376019876,
+      "dtd_matched_bridge32_map": 33.870372279053534,
+      "dtd_matched_bridge64_map": 35.61275445522558,
+      "eurosat_cross_bridge32_map": 58.18865865635002,
+      "eurosat_cross_bridge64_map": 57.47483804331485,
+      "eurosat_matched_bridge32_map": 50.86714179691578,
+      "eurosat_matched_bridge64_map": 46.74916280013905,
+      "macro_map": 43.05434178146304
+    },
+    "raw_fixed001_a1": {
+      "dtd_cross_bridge32_map": 30.83904269674455,
+      "dtd_cross_bridge64_map": 30.91586025366188,
+      "dtd_matched_bridge32_map": 33.558583192739874,
+      "dtd_matched_bridge64_map": 35.253273577322844,
+      "eurosat_cross_bridge32_map": 57.98219458138472,
+      "eurosat_cross_bridge64_map": 57.66970461603932,
+      "eurosat_matched_bridge32_map": 59.686915399766264,
+      "eurosat_matched_bridge64_map": 59.08402862040365,
+      "macro_map": 45.62370036725788
+    },
+    "center_fixed001_a1": {
+      "dtd_cross_bridge32_map": 30.757015683754314,
+      "dtd_cross_bridge64_map": 30.794348759633095,
+      "dtd_matched_bridge32_map": 33.59886031516712,
+      "dtd_matched_bridge64_map": 35.43899948489469,
+      "eurosat_cross_bridge32_map": 58.30378863684685,
+      "eurosat_cross_bridge64_map": 58.28741566064642,
+      "eurosat_matched_bridge32_map": 59.68431966395913,
+      "eurosat_matched_bridge64_map": 58.94593253173458,
+      "macro_map": 45.72633509207952
+    },
+    "old_old": {
+      "dtd_cross_bridge32_map": 27.0458485540921,
+      "dtd_cross_bridge64_map": 27.0458485540921,
+      "dtd_matched_bridge32_map": 27.0458485540921,
+      "dtd_matched_bridge64_map": 27.0458485540921,
+      "eurosat_cross_bridge32_map": 54.435173418797866,
+      "eurosat_cross_bridge64_map": 54.435173418797866,
+      "eurosat_matched_bridge32_map": 54.435173418797866,
+      "eurosat_matched_bridge64_map": 54.435173418797866,
+      "macro_map": 40.74051098644498
+    },
+    "relative_centered": {
+      "dtd_cross_bridge32_map": 5.062234021914837,
+      "dtd_cross_bridge64_map": 5.26993989348678,
+      "dtd_matched_bridge32_map": 21.66355790091305,
+      "dtd_matched_bridge64_map": 28.30563021802359,
+      "eurosat_cross_bridge32_map": 16.15418668535662,
+      "eurosat_cross_bridge64_map": 17.753282310271178,
+      "eurosat_matched_bridge32_map": 41.69684227218114,
+      "eurosat_matched_bridge64_map": 43.340812900815045,
+      "macro_map": 22.40581077537028
+    },
+    "procrustes": {
+      "dtd_cross_bridge32_map": 3.750793058936815,
+      "dtd_cross_bridge64_map": 3.898075929238577,
+      "dtd_matched_bridge32_map": 21.894182992840314,
+      "dtd_matched_bridge64_map": 30.14038784562065,
+      "eurosat_cross_bridge32_map": 15.746765535162979,
+      "eurosat_cross_bridge64_map": 20.052983736737378,
+      "eurosat_matched_bridge32_map": 49.9807920694499,
+      "eurosat_matched_bridge64_map": 55.09367458898333,
+      "macro_map": 25.069706969621244
+    },
+    "ridge": {
+      "dtd_cross_bridge32_map": 2.951126229211049,
+      "dtd_cross_bridge64_map": 3.0029136083026295,
+      "dtd_matched_bridge32_map": 11.267764898670373,
+      "dtd_matched_bridge64_map": 15.156569319399143,
+      "eurosat_cross_bridge32_map": 14.067909888564136,
+      "eurosat_cross_bridge64_map": 14.654754054656022,
+      "eurosat_matched_bridge32_map": 32.63182590459899,
+      "eurosat_matched_bridge64_map": 37.247117223069075,
+      "macro_map": 16.372497640808927
+    },
+    "wip_restricted": {
+      "dtd_cross_bridge32_map": 3.3634517393391037,
+      "dtd_cross_bridge64_map": 3.3904220007917263,
+      "dtd_matched_bridge32_map": 15.233820709808166,
+      "dtd_matched_bridge64_map": 23.691965410042666,
+      "eurosat_cross_bridge32_map": 15.275853817718579,
+      "eurosat_cross_bridge64_map": 16.0251373611867,
+      "eurosat_matched_bridge32_map": 42.18279331923698,
+      "eurosat_matched_bridge64_map": 50.957847122875236,
+      "macro_map": 21.265161435124895
+    },
+    "local_std": {
+      "dtd_cross_bridge32_map": 27.542374012452242,
+      "dtd_cross_bridge64_map": 27.58418216424762,
+      "dtd_matched_bridge32_map": 30.964660717751947,
+      "dtd_matched_bridge64_map": 33.3828382975448,
+      "eurosat_cross_bridge32_map": 54.19169192822566,
+      "eurosat_cross_bridge64_map": 53.83633726665078,
+      "eurosat_matched_bridge32_map": 57.00295426097771,
+      "eurosat_matched_bridge64_map": 56.471867228796015,
+      "macro_map": 42.622113234580844
+    },
+    "linear_std": {
+      "dtd_cross_bridge32_map": 26.41221281372684,
+      "dtd_cross_bridge64_map": 25.622393710481667,
+      "dtd_matched_bridge32_map": 31.628444374317528,
+      "dtd_matched_bridge64_map": 34.58571284622955,
+      "eurosat_cross_bridge32_map": 52.74576017853051,
+      "eurosat_cross_bridge64_map": 50.106364129042156,
+      "eurosat_matched_bridge32_map": 52.63891029660749,
+      "eurosat_matched_bridge64_map": 53.10620873568498,
+      "macro_map": 40.85575088557759
+    },
+    "v0_press": {
+      "dtd_cross_bridge32_map": 27.714664832624415,
+      "dtd_cross_bridge64_map": 28.195037702484683,
+      "dtd_matched_bridge32_map": 31.961253576458308,
+      "dtd_matched_bridge64_map": 34.75445167569063,
+      "eurosat_cross_bridge32_map": 55.02707428431934,
+      "eurosat_cross_bridge64_map": 54.88388477934208,
+      "eurosat_matched_bridge32_map": 57.11628386163272,
+      "eurosat_matched_bridge64_map": 56.80123791857014,
+      "macro_map": 43.30673607889029
+    },
+    "global_press": {
+      "dtd_cross_bridge32_map": 27.966146287320232,
+      "dtd_cross_bridge64_map": 28.43579145592821,
+      "dtd_matched_bridge32_map": 32.17737620735079,
+      "dtd_matched_bridge64_map": 34.83919346269379,
+      "eurosat_cross_bridge32_map": 55.21238681065862,
+      "eurosat_cross_bridge64_map": 55.16926556281773,
+      "eurosat_matched_bridge32_map": 56.77262627967109,
+      "eurosat_matched_bridge64_map": 56.33439287598478,
+      "macro_map": 43.36339736780316
+    },
+    "old_centered": {
+      "dtd_cross_bridge32_map": 30.67913154861484,
+      "dtd_cross_bridge64_map": 30.67913154861484,
+      "dtd_matched_bridge32_map": 30.67913154861484,
+      "dtd_matched_bridge64_map": 30.67913154861484,
+      "eurosat_cross_bridge32_map": 57.97266511389243,
+      "eurosat_cross_bridge64_map": 57.97266511389243,
+      "eurosat_matched_bridge32_map": 57.97266511389243,
+      "eurosat_matched_bridge64_map": 57.97266511389243,
+      "macro_map": 44.32589833125364
+    },
+    "old_whiten": {
+      "dtd_cross_bridge32_map": 29.58869174409065,
+      "dtd_cross_bridge64_map": 29.58869174409065,
+      "dtd_matched_bridge32_map": 29.58869174409065,
+      "dtd_matched_bridge64_map": 29.58869174409065,
+      "eurosat_cross_bridge32_map": 52.60091377055453,
+      "eurosat_cross_bridge64_map": 52.60091377055453,
+      "eurosat_matched_bridge32_map": 52.60091377055453,
+      "eurosat_matched_bridge64_map": 52.60091377055453,
+      "macro_map": 41.09480275732259
+    },
+    "centered_residual_2": {
+      "dtd_cross_bridge32_map": 30.889832176396027,
+      "dtd_cross_bridge64_map": 30.917894207736186,
+      "dtd_matched_bridge32_map": 33.76598324688724,
+      "dtd_matched_bridge64_map": 35.380756839152916,
+      "eurosat_cross_bridge32_map": 56.62840683912806,
+      "eurosat_cross_bridge64_map": 54.447829976559234,
+      "eurosat_matched_bridge32_map": 51.52973507547705,
+      "eurosat_matched_bridge64_map": 47.56372688934064,
+      "macro_map": 42.640520656334665
+    },
+    "new_new_oracle": {
+      "dtd_cross_bridge32_map": 37.97552320539392,
+      "dtd_cross_bridge64_map": 37.97552320539392,
+      "dtd_matched_bridge32_map": 37.97552320539392,
+      "dtd_matched_bridge64_map": 37.97552320539392,
+      "eurosat_cross_bridge32_map": 52.99807847167982,
+      "eurosat_cross_bridge64_map": 52.99807847167982,
+      "eurosat_matched_bridge32_map": 52.99807847167982,
+      "eurosat_matched_bridge64_map": 52.99807847167982,
+      "macro_map": 45.486800838536865
+    }
+  }
+}

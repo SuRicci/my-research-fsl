@@ -1,0 +1,59 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-f8215a06",
+  "id": "report-f8215a06",
+  "quest_id": "012",
+  "created_at": "2026-09-13T09:38:33+00:00",
+  "updated_at": "2026-09-13T09:38:33+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-527f15e2"
+  },
+  "status": "completed",
+  "branch": "paper/continued-fsl-evidence-20260913",
+  "head_commit": "31782f8b78be2f1a423d772145bd9f64a0fdfb8f",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_development_paper_reference_mapping",
+  "title": "Fourteen completed development studies mapped outside OSLO core claims",
+  "summary": "Verified fourteen reference-only additions and78 source-file hashes across outline, selected mirror and ledger. Ledger33 entries but four actual paper-facing groups; current validator19 analysis groups is a legacy/inventory count, not manuscript evidence count. No manuscript prose or core claim assignment changed.",
+  "paths": [
+    "paper/auxiliary_mapping_receipt.json",
+    "paper/new_auxiliary_reference_items.json",
+    "paper/outline/evidence_view.json",
+    "paper/evidence_ledger.json"
+  ],
+  "selected_outline_ref": "outline-001",
+  "actual_workspace_branch": "paper/continued-fsl-evidence-20260913",
+  "next_stage": "review",
+  "evidence_boundary": "Separate exposed-development protocols; none of the fourteen additions supports or refutes C1-C4.",
+  "run_id": "run-527f15e2",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:auxiliary_development_paper_reference_mapping:none:3d17852551fd8ca8bc759c8a59bd19d83b79e3e2dccde4b283fea393354b24ff",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-f8215a06",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

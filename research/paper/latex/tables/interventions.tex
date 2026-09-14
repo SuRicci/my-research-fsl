@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Pool / gallery / shot & Original & Mass & Oracle & Oracle+mass & Zero & R2 \\ \midrule
+Original / Pets / 1 & 94.92 & 95.76 & 97.92 & 96.94 & 94.75 & 96.24 \\
+Original / DTD / 1 & 64.19 & 94.30 & 94.40 & 94.40 & 94.40 & 93.93 \\
+Original / Pets / 5 & 97.19 & 98.59 & 98.79 & 98.83 & 98.44 & 98.44 \\
+Original / DTD / 5 & 93.30 & 98.42 & 98.46 & 98.46 & 98.46 & 98.44 \\
+Confirm. / Pets / 1 & 94.87 & 95.39 & 97.87 & 96.74 & 94.22 & 96.02 \\
+Confirm. / DTD / 1 & 63.99 & 93.61 & 93.74 & 93.74 & 93.74 & 93.39 \\
+Confirm. / Pets / 5 & 97.19 & 98.39 & 98.58 & 98.61 & 98.38 & 98.35 \\
+Confirm. / DTD / 5 & 92.98 & 98.32 & 98.35 & 98.35 & 98.35 & 98.35 \\
+\bottomrule\end{tabular}
+\caption{Retrospective final-step interventions, accuracy in percent. Mass matches gallery weight to support mass per class. Oracle removes examples whose true class is outside the episode; Oracle+mass combines both. Oracle variants require privileged labels. Earlier fitted weights and centering stay fixed.}\label{tab:interventions}
+\end{table}

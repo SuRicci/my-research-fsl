@@ -1,0 +1,71 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-d6568170",
+  "id": "report-d6568170",
+  "quest_id": "012",
+  "created_at": "2026-09-13T06:19:46+00:00",
+  "updated_at": "2026-09-13T06:19:46+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-db4ad2c9"
+  },
+  "status": "completed",
+  "branch": "run/reduced-view-efficiency-20260913",
+  "head_commit": "28c2c5676e6d7264fa0535e457f38c2d5bac4a87",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_source_qualification",
+  "title": "Reduced-view efficiency: fixed source rule not qualified",
+  "verdict": "fixed_policy_not_qualified",
+  "summary": "Both source rules retain6views; nooriginal-anchored<=3subset meetsall-cell0.5ppnoninferiority. Independent3264scores/408evaluationstatisticspass,40historicalcontrolcomparisons0predictionflips. Measured3viewencoding1.9953xfaster onfixed32images, but noqualifiedaccuracy-preservingpolicy.",
+  "actual_branch": "run/reduced-view-efficiency-20260913",
+  "idea_id": "idea-c63025d0",
+  "evidence_paths": [
+    "experiments/main/reduced-view-efficiency-20260913/REPORT.md",
+    "experiments/main/reduced-view-efficiency-20260913/outputs/closure_receipt.json"
+  ],
+  "metrics_summary": {
+    "three_view_encoding_speedup": 1.995275438069888,
+    "qualified_reduced_source_policies": 0,
+    "source_domains": 2
+  },
+  "evaluation_summary": {
+    "claim_update": "Not established: universal<=3viewcost-accuracyqualification; supported:fixedbatchencodinglatency.",
+    "baseline_relation": "Auxiliarysource/development; all5Petsmetrics remainunchanged and unmeasured; no canonicalmain score submission.",
+    "failure_mode": "Noninferioritynotcertified; notfamilyimpossibility. Somepointlosseswithinmarginwithuncertaintyoverlap.",
+    "next_action": "idea:verifybroadersourcelabel/identity/provenance beforediversitycandidate",
+    "evidence_boundary": "Source domains exposed; timings excludeimage decoding/cropping/model loading;CPUfallbackincluded",
+    "outcome": "Source-selectedsixviewfallbackbothdirections"
+  },
+  "next_stage": "idea",
+  "next_direction": "source-diversity feasibility after provenance audit",
+  "run_id": "run-db4ad2c9",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:auxiliary_source_qualification:none:545d754f3f7d6a0e04a81b6b514de849ac4662de81ef8ee477b3387b0fae50a4",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-d6568170",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

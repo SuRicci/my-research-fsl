@@ -1,0 +1,12 @@
+{
+  "r4_whiten": {"title":"旧图库收缩部分白化", "family":"geometry", "ridge_fraction":0.1, "power":0.25, "target":"Oxford/Paris Hard; geometry-only contribution"},
+  "r4_rank": {"title":"高斯秩残差传递", "family":"objective", "alpha":2.0, "target":"CLIP-B16 to DINO; calibration shift"},
+  "r4_diffusion": {"title":"旧图库图扩散残差", "family":"graph", "neighbors":16, "temperature":0.05, "restart":0.5, "steps":10, "alpha":2.0, "target":"Oxford/Paris landmark bridges and Hard queries"},
+  "r4_ensemble": {"title":"桥接子集集成与分歧收缩", "family":"robustness", "members":8, "fraction":0.75, "seed":902109, "alpha":2.0, "target":"CUB bridges and Holidays negative transfer"},
+  "r4_top100": {"title":"固定旧top100内重排", "family":"ranking_scope", "topk":100, "alpha":2.0, "target":"Paris Hard; preserve outside candidate set"},
+  "r5_consensus": {"title":"双编码器一致候选筛选", "family":"candidate_selection", "shot":1, "topk":64, "mix":0.5, "lambda":0.1, "target":"CUB same-domain fine-grained classification"},
+  "r5_median": {"title":"候选几何中位数聚合", "family":"robust_aggregation", "shot":1, "topk":64, "iterations":8, "mix":0.5, "lambda":0.1, "target":"CUB/DTD same-domain contamination"},
+  "r5_variance": {"title":"候选类内方差校正", "family":"local_metric", "shot":1, "topk":64, "shrink":0.5, "power":0.25, "mix":0.5, "lambda":0.1, "target":"EuroSAT/DTD same-domain"},
+  "r5_distribution": {"title":"保留候选分布的加权岭读出", "family":"readout", "shot":1, "topk":64, "kept":16, "pseudo_total_weight_per_class":1.0, "lambda":0.1, "target":"CUB/EuroSAT same-domain multi-mode classes"},
+  "r5_support_cv": {"title":"5shot支持集留一法融合校准", "family":"support_calibration", "shot":5, "weights":[0.0,0.25,0.5,0.75,1.0], "temperature":0.1, "shrink_to_equal":0.5, "lambda":1.0, "target":"EuroSAT 5shot; no gallery access"}
+}

@@ -1,0 +1,19 @@
+{
+  "category_allocated_gib": {
+    "experiments": 10.043006896972656,
+    "baselines": 5.161994934082031,
+    ".ds": 3.6194915771484375,
+    "literature": 1.3199195861816406,
+    "artifacts": 0.19301223754882812,
+    ".codex": 0.08172607421875,
+    ".opencode": 0.076568603515625,
+    ".kimi": 0.076568603515625,
+    "tmp": 0.011211395263671875,
+    ".claude": 0.01021575927734375,
+    "paper": 0.00308990478515625,
+    "memory": 0.002353668212890625,
+    "handoffs": 0.00084686279296875
+  },
+  "workspace_count": 26,
+  "note": "du directory allocation view may count shared APFS extents more than once; during deduplication snapshot"
+}

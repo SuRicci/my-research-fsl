@@ -1,0 +1,177 @@
+{
+  "status": "measured",
+  "backbones": {
+    "clip_vitb16": {
+      "[0]": {
+        "seconds": [
+          0.8343524999999978,
+          0.8580308340000045,
+          0.8794905419999992,
+          0.8790012919999981,
+          0.9402597919999991
+        ],
+        "median_seconds": 0.8790012919999981
+      },
+      "[0, 1]": {
+        "seconds": [
+          1.6199439999999985,
+          1.7230406659999993,
+          1.7321789169999988,
+          1.7828027919999982,
+          1.855977542000005
+        ],
+        "median_seconds": 1.7321789169999988
+      },
+      "[0, 1, 2]": {
+        "seconds": [
+          2.4390795,
+          2.578272417000001,
+          2.615223125,
+          2.6622473749999997,
+          2.9124545409999953
+        ],
+        "median_seconds": 2.615223125
+      },
+      "[0, 1, 2, 3, 4, 5]": {
+        "seconds": [
+          4.9530660829999995,
+          5.061849416000001,
+          5.279239040999997,
+          5.511161625,
+          5.6456062919999965
+        ],
+        "median_seconds": 5.279239040999997
+      }
+    },
+    "dinov2_vits14": {
+      "[0]": {
+        "seconds": [
+          0.34974833299999375,
+          0.3627553750000061,
+          0.3545312919999901,
+          0.35688841600000387,
+          0.3522794999999945
+        ],
+        "median_seconds": 0.3545312919999901
+      },
+      "[0, 1]": {
+        "seconds": [
+          0.7305845829999953,
+          0.7308030829999979,
+          0.7205885839999979,
+          0.7007584159999993,
+          0.8413951250000054
+        ],
+        "median_seconds": 0.7305845829999953
+      },
+      "[0, 1, 2]": {
+        "seconds": [
+          1.0764220409999865,
+          1.0777401670000017,
+          1.0977403750000008,
+          1.0561919169999925,
+          1.1031534579999942
+        ],
+        "median_seconds": 1.0777401670000017
+      },
+      "[0, 1, 2, 3, 4, 5]": {
+        "seconds": [
+          2.1448726249999908,
+          2.1423417919999963,
+          2.1291458330000097,
+          2.107130166999994,
+          2.788482000000002
+        ],
+        "median_seconds": 2.1423417919999963
+      }
+    }
+  },
+  "combined": {
+    "[0]": {
+      "combined_median_seconds": 1.2340218339999893,
+      "median_combined_speedup": 6.003447159428518,
+      "per_repetition_speedup": [
+        5.994370166953544,
+        5.901271782797421,
+        6.003447159428518,
+        6.164216549977113,
+        6.52520843598466
+      ],
+      "encoder_application_ratio": 0.16666666666666666
+    },
+    "[0, 1]": {
+      "combined_median_seconds": 2.453843748999997,
+      "median_combined_speedup": 3.0190939732895012,
+      "per_repetition_speedup": [
+        3.0197202277544095,
+        2.935880172050843,
+        3.0204187192547183,
+        3.0674870292949112,
+        3.1267790302703347
+      ],
+      "encoder_application_ratio": 0.3333333333333333
+    },
+    "[0, 1, 2]": {
+      "combined_median_seconds": 3.7129635000000007,
+      "median_combined_speedup": 1.995275438069888,
+      "per_repetition_speedup": [
+        2.0190401355878733,
+        1.9705050358765375,
+        1.995275438069888,
+        2.048787459940602,
+        2.100326599135261
+      ],
+      "encoder_application_ratio": 0.5
+    },
+    "[0, 1, 2, 3, 4, 5]": {
+      "combined_median_seconds": 7.4083848740000064,
+      "median_combined_speedup": 1.0,
+      "per_repetition_speedup": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "encoder_application_ratio": 1.0
+    }
+  },
+  "images": [
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0002.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0004.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0008.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0034.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0036.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0042.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0044.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0047.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0053.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0058.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0062.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0072.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0077.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0078.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0082.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/dtd/images/banded/banded_0083.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_1118.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_2024.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_1839.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_1834.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_174.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_2377.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_2091.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_1452.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_967.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_454.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_2796.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_2761.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_2244.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_1803.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_1744.jpg",
+    "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/data/EuroSAT_RGB/AnnualCrop/AnnualCrop_927.jpg"
+  ],
+  "batch_size": 32,
+  "warmups": 1,
+  "repetitions": 5,
+  "boundary": "Two encoders run sequentially on MPS, view-batched at32images. Decoding/cropping/model loading excluded; tensor normalization, transfers and forward included. Fixed preloaded source batch, not application end-to-end or universal throughput."
+}

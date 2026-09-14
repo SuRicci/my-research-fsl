@@ -1,0 +1,50 @@
+[
+  {
+    "cell": "dtd_dtd_k1",
+    "metric_id": "dtd_matched_1shot_accuracy",
+    "method": "late_shared",
+    "value": 77.15733333333333,
+    "inherited": false
+  },
+  {
+    "cell": "dtd_dtd_k5",
+    "metric_id": "dtd_5shot_accuracy",
+    "method": "late_shared",
+    "value": 89.98133333333332,
+    "inherited": true
+  },
+  {
+    "cell": "dtd_eurosat_k1",
+    "metric_id": "dtd_mismatched_1shot_accuracy",
+    "method": "late_shared",
+    "value": 74.048,
+    "inherited": false
+  },
+  {
+    "cell": "eurosat_dtd_k1",
+    "metric_id": "eurosat_mismatched_1shot_accuracy",
+    "method": "late_shared",
+    "value": 65.90133333333334,
+    "inherited": false
+  },
+  {
+    "cell": "eurosat_eurosat_k1",
+    "metric_id": "eurosat_matched_1shot_accuracy",
+    "method": "late_shared",
+    "value": 74.81466666666667,
+    "inherited": false
+  },
+  {
+    "cell": "eurosat_eurosat_k5",
+    "metric_id": "eurosat_5shot_accuracy",
+    "method": "late_shared",
+    "value": 86.80799999999999,
+    "inherited": true
+  },
+  {
+    "metric_id": "macro_1shot_accuracy",
+    "value": 72.98033333333333,
+    "method": "late_shared",
+    "inherited": false
+  }
+]

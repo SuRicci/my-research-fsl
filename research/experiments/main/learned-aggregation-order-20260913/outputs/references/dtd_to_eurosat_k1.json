@@ -1,0 +1,42 @@
+{
+  "eurosat": {
+    "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz",
+    "sha256": "dce198742fb0cabf9ac373202518a8e1d2d924c128938ff6ff332e8e1a24c334",
+    "names": [
+      "original_r2",
+      "mean_r2",
+      "medoid_r2",
+      "score_ensemble_r2",
+      "mean_logistic_C1",
+      "mean_logistic_C10",
+      "augmented_support_ridge",
+      "scatter_r2",
+      "original_CS_l2",
+      "mean_CS_l2",
+      "distribution_rbf",
+      "mean_rbf",
+      "original_rbf",
+      "linear_mean"
+    ]
+  },
+  "dtd": {
+    "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/view-distribution-kernel-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz",
+    "sha256": "9cb2fe1074b09b5dd8456bedf3895deb979fbd947c170559d2ef21ef2550f125",
+    "names": [
+      "original_r2",
+      "mean_r2",
+      "medoid_r2",
+      "score_ensemble_r2",
+      "mean_logistic_C1",
+      "mean_logistic_C10",
+      "augmented_support_ridge",
+      "scatter_r2",
+      "original_CS_l2",
+      "mean_CS_l2",
+      "distribution_rbf",
+      "mean_rbf",
+      "original_rbf",
+      "linear_mean"
+    ]
+  }
+}

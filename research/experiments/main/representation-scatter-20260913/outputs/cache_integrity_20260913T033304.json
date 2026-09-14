@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-09-13T03:33:04.912344+00:00",
+  "status": "passed_for_completed_files",
+  "encoding_complete": false,
+  "manifest_sha256": "e44ab2b385604443b7c1f12af42eb7a62db4bd5d28326c29c6f290e18ca80b27",
+  "manifest_snapshot": {
+    "status": "running",
+    "config_sha256": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+    "lock": {
+      "files": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/protocol.json": "cb78418aebe65cb723475a81b3b4d772c3d7954c1f4b20cea3782c7031bb24d5",
+        "experiments/main/representation-scatter-20260913/extract_views.py": "6bae4f70759e9ffb3f86c6e04e1ec55f0ed93dd4cb76c43f950916dcc4e8a697",
+        "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/recover_gallery.py": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+        "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_identities.json": "1e8061597ac9326a15a7031c77a22681d10eda1b9a5c94a1b7f00ce1f21e3635",
+        "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_identities.json": "b0ee6ae3f06753e95cc92a4aab9dcb1b9fabac95e3b9f56f0ece6858feb303e2",
+        "/Users/decoqwq/.cache/clip/ViT-B-16.pt": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+        "/Users/decoqwq/.cache/huggingface/hub/models--timm--vit_small_patch14_dinov2.lvd142m/snapshots/4610ca143709d58a633b6397a74412c2c3842454/model.safetensors": "04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081"
+      }
+    },
+    "files": {
+      "dtd_query_clip_vitb16": {
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/dtd_query_clip_vitb16.pt",
+        "sha256": "2f7913d3ed440c824a9a43086db75a550dd3c933305f6ef38d0552177b4f0aaf",
+        "shape": [
+          1877,
+          5,
+          512
+        ],
+        "unique_pixel_view_histogram": {
+          "4": 5,
+          "6": 1870,
+          "5": 2
+        }
+      },
+      "dtd_gallery_clip_vitb16": {
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/dtd_gallery_clip_vitb16.pt",
+        "sha256": "cdc9115ccfba266b3d8a51805963d19deb77d49308e91bece9f82c2cd8a39ea7",
+        "shape": [
+          1876,
+          5,
+          512
+        ],
+        "unique_pixel_view_histogram": {
+          "6": 1869,
+          "4": 5,
+          "5": 2
+        }
+      },
+      "eurosat_query_clip_vitb16": {
+        "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/assets/eurosat_query_clip_vitb16.pt",
+        "sha256": "cd37a3de8b93b0a7eb18f85afb3d1805e14dae4b1b297c8787187155fbbf40dc",
+        "shape": [
+          5400,
+          5,
+          512
+        ],
+        "unique_pixel_view_histogram": {
+          "6": 5400
+        }
+      }
+    },
+    "total_source_images": 14153,
+    "extra_views": 5,
+    "command": [
+      "/opt/anaconda3/envs/torch/bin/python",
+      "experiments/main/representation-scatter-20260913/extract_views.py",
+      "--phase",
+      "run"
+    ]
+  },
+  "complete_cache_count": 3,
+  "expected_cache_count": 8,
+  "frozen_file_count": 15,
+  "validated_image_encoder_pairs": 9153,
+  "checks": {
+    "dtd_query_clip_vitb16": {
+      "sha256": "2f7913d3ed440c824a9a43086db75a550dd3c933305f6ef38d0552177b4f0aaf",
+      "images": 1877,
+      "shape": [
+        1877,
+        5,
+        512
+      ],
+      "max_norm_error": 0.0002117156982421875,
+      "ids_exact": true,
+      "bytes": 9626796
+    },
+    "dtd_gallery_clip_vitb16": {
+      "sha256": "cdc9115ccfba266b3d8a51805963d19deb77d49308e91bece9f82c2cd8a39ea7",
+      "images": 1876,
+      "shape": [
+        1876,
+        5,
+        512
+      ],
+      "max_norm_error": 0.00022715330123901367,
+      "ids_exact": true,
+      "bytes": 9621752
+    },
+    "eurosat_query_clip_vitb16": {
+      "sha256": "cd37a3de8b93b0a7eb18f85afb3d1805e14dae4b1b297c8787187155fbbf40dc",
+      "images": 5400,
+      "shape": [
+        5400,
+        5,
+        512
+      ],
+      "max_norm_error": 0.00021827220916748047,
+      "ids_exact": true,
+      "bytes": 27692868
+    }
+  },
+  "free_gib": 11.384162902832031,
+  "torch_version": "2.3.0",
+  "scope": "All completed files in the saved manifest snapshot; no classification accuracy claim."
+}

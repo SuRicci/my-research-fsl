@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-09-13T12:11:37.032121+00:00",
+  "bash_id": "bash-c4ad1066",
+  "science_node_id": "science-1704eee7",
+  "process_status_from_managed_read": "running",
+  "progress": {
+    "status": "running",
+    "backbone": "dinov2_vits14",
+    "images_done": 2240,
+    "image_count": 8677,
+    "elapsed_seconds": 3175.6146490573883,
+    "free_gib": 10.923534393310547
+  },
+  "manifest_status": "running",
+  "completed_backbones": [
+    "clip_vitb16"
+  ],
+  "verified_complete_backbone_sha256": {
+    "clip_vitb16": "af03d1f592af95597e4a85caa09df0b70e57c43511d43b88d7577d7ed9a795d4"
+  },
+  "chunk_file_metadata": {
+    "dinov2_vits14_chunks": {
+      "count": 70,
+      "bytes": 10416684
+    }
+  },
+  "free_gib": 10.923614501953125,
+  "disk_floor_gib": 10,
+  "completion_marker_exists": false,
+  "classification_complete_exists": false,
+  "previous_checked_utc": "2026-09-13T12:04:03.452758+00:00",
+  "previous_progress": {
+    "status": "running",
+    "backbone": "clip_vitb16",
+    "images_done": 8000,
+    "image_count": 8677,
+    "elapsed_seconds": 2723.185331106186,
+    "free_gib": 10.945308685302734
+  },
+  "scope": "Operational monitoring. Incremental managed log seq27-43 is a partial window; full progress/manifest JSON and all chunk file metadata were read. CLIP complete-file SHA256 independently verified against manifest; tensor contents are reserved for the frozen evaluator validation.",
+  "next_action": "Continue existing DINO encoder. After both backbones complete, validate feature integrity in frozen evaluator and run the complete comparison followed by independent audit. No new scientific route decision.",
+  "next_inspection_utc": "2026-09-13T12:15:37.032121+00:00"
+}

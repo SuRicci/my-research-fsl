@@ -1,0 +1,17 @@
+{
+  "parent_decision": "decision-f7f139bf",
+  "parent_report": "report-64b6342f",
+  "experts": [
+    "stack",
+    "raw",
+    "blend"
+  ],
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "headroom_gate_pp": 0.5,
+  "scope": "Existing exposed development one-shot predictions only; no new scores, fits, seeds or datasets",
+  "bootstrap": "Inherited5000 replicates, paired tasks within seed; average galleries before domain/pooled resampling",
+  "claim_boundary": "Target labels define unattainable finite-family oracle only; no deployment or continuous-weight bound"
+}

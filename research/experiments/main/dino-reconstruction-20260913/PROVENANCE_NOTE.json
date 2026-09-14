@@ -1,0 +1,4 @@
+{
+  "metadata_only_erratum": "protocol.frozen_at was inherited from the residual protocol; actual new pre-outcome freeze is design_lock.json.frozen_utc. Other inherited encoding/local_k fields document the cached input context and are not reconstruction knobs. No settings changed after outcomes.",
+  "authoritative_freeze": "2026-09-13T14:17:26.555385+00:00"
+}

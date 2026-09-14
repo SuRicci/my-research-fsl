@@ -1,0 +1,13 @@
+{
+  "failed_checks": [
+    "bash-161731a8",
+    "bash-c5cfd09e"
+  ],
+  "final_check": "bash-3be22a56",
+  "fixes": [
+    "unique verifier module and local importpriority",
+    "frozen utility train keys merged with existing evaluationcfg precedence"
+  ],
+  "old_experiment_tracked_diff": "none in bash-80e52092",
+  "free_gib": 10.431594848632812
+}

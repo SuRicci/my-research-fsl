@@ -1,0 +1,109 @@
+{
+  "method": "r4_whiten",
+  "dataset": "roxford",
+  "pair": [
+    "clip_b32",
+    "clip_b16"
+  ],
+  "budget": 64,
+  "seed": 51854,
+  "policy": "cub_random",
+  "bridge_ids": [
+    "bridge:071.Long_tailed_Jaeger/Long_Tailed_Jaeger_0038_797077.jpg",
+    "bridge:094.White_breasted_Nuthatch/White_Breasted_Nuthatch_0101_86708.jpg",
+    "bridge:177.Prothonotary_Warbler/Prothonotary_Warbler_0046_174104.jpg",
+    "bridge:022.Chuck_will_Widow/Chuck_Will_Widow_0003_796977.jpg",
+    "bridge:012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0091_8555.jpg",
+    "bridge:035.Purple_Finch/Purple_Finch_0001_27571.jpg",
+    "bridge:005.Crested_Auklet/Crested_Auklet_0068_785253.jpg",
+    "bridge:014.Indigo_Bunting/Indigo_Bunting_0076_12950.jpg",
+    "bridge:148.Green_tailed_Towhee/Green_Tailed_Towhee_0061_154880.jpg",
+    "bridge:127.Savannah_Sparrow/Savannah_Sparrow_0067_118491.jpg",
+    "bridge:093.Clark_Nutcracker/Clark_Nutcracker_0089_85004.jpg",
+    "bridge:108.White_necked_Raven/White_Necked_Raven_0012_102700.jpg",
+    "bridge:133.White_throated_Sparrow/White_Throated_Sparrow_0135_128819.jpg",
+    "bridge:185.Bohemian_Waxwing/Bohemian_Waxwing_0054_796623.jpg",
+    "bridge:021.Eastern_Towhee/Eastern_Towhee_0035_22223.jpg",
+    "bridge:135.Bank_Swallow/Bank_Swallow_0031_129507.jpg",
+    "bridge:198.Rock_Wren/Rock_Wren_0113_189204.jpg",
+    "bridge:024.Red_faced_Cormorant/Red_Faced_Cormorant_0035_796294.jpg",
+    "bridge:163.Cape_May_Warbler/Cape_May_Warbler_0092_163057.jpg",
+    "bridge:184.Louisiana_Waterthrush/Louisiana_Waterthrush_0080_177379.jpg",
+    "bridge:148.Green_tailed_Towhee/Green_Tailed_Towhee_0024_154855.jpg",
+    "bridge:052.Pied_billed_Grebe/Pied_Billed_Grebe_0071_35386.jpg",
+    "bridge:037.Acadian_Flycatcher/Acadian_Flycatcher_0072_795603.jpg",
+    "bridge:130.Tree_Sparrow/Tree_Sparrow_0072_123991.jpg",
+    "bridge:109.American_Redstart/American_Redstart_0097_103238.jpg",
+    "bridge:172.Nashville_Warbler/Nashville_Warbler_0013_167326.jpg",
+    "bridge:169.Magnolia_Warbler/Magnolia_Warbler_0114_165467.jpg",
+    "bridge:162.Canada_Warbler/Canada_Warbler_0120_162415.jpg",
+    "bridge:141.Artic_Tern/Artic_Tern_0119_142682.jpg",
+    "bridge:056.Pine_Grosbeak/Pine_Grosbeak_0109_38451.jpg",
+    "bridge:067.Anna_Hummingbird/Anna_Hummingbird_0126_55983.jpg",
+    "bridge:170.Mourning_Warbler/Mourning_Warbler_0012_166515.jpg",
+    "bridge:021.Eastern_Towhee/Eastern_Towhee_0099_22566.jpg",
+    "bridge:135.Bank_Swallow/Bank_Swallow_0035_129528.jpg",
+    "bridge:143.Caspian_Tern/Caspian_Tern_0113_146828.jpg",
+    "bridge:068.Ruby_throated_Hummingbird/Ruby_Throated_Hummingbird_0001_58162.jpg",
+    "bridge:003.Sooty_Albatross/Sooty_Albatross_0034_1154.jpg",
+    "bridge:076.Dark_eyed_Junco/Dark_Eyed_Junco_0005_68813.jpg",
+    "bridge:061.Heermann_Gull/Heermann_Gull_0128_45663.jpg",
+    "bridge:072.Pomarine_Jaeger/Pomarine_Jaeger_0006_795775.jpg",
+    "bridge:071.Long_tailed_Jaeger/Long_Tailed_Jaeger_0049_797063.jpg",
+    "bridge:171.Myrtle_Warbler/Myrtle_Warbler_0044_166852.jpg",
+    "bridge:158.Bay_breasted_Warbler/Bay_Breasted_Warbler_0019_159871.jpg",
+    "bridge:180.Wilson_Warbler/Wilson_Warbler_0083_175253.jpg",
+    "bridge:073.Blue_Jay/Blue_Jay_0056_61723.jpg",
+    "bridge:192.Downy_Woodpecker/Downy_Woodpecker_0006_184538.jpg",
+    "bridge:178.Swainson_Warbler/Swainson_Warbler_0052_794875.jpg",
+    "bridge:170.Mourning_Warbler/Mourning_Warbler_0009_166429.jpg",
+    "bridge:129.Song_Sparrow/Song_Sparrow_0102_122090.jpg",
+    "bridge:122.Harris_Sparrow/Harris_Sparrow_0087_116490.jpg",
+    "bridge:122.Harris_Sparrow/Harris_Sparrow_0053_116595.jpg",
+    "bridge:050.Eared_Grebe/Eared_Grebe_0045_34212.jpg",
+    "bridge:051.Horned_Grebe/Horned_Grebe_0053_34512.jpg",
+    "bridge:073.Blue_Jay/Blue_Jay_0054_61656.jpg",
+    "bridge:041.Scissor_tailed_Flycatcher/Scissor_Tailed_Flycatcher_0108_42013.jpg",
+    "bridge:030.Fish_Crow/Fish_Crow_0058_25999.jpg",
+    "bridge:174.Palm_Warbler/Palm_Warbler_0020_168857.jpg",
+    "bridge:126.Nelson_Sharp_tailed_Sparrow/Nelson_Sharp_Tailed_Sparrow_0068_796930.jpg",
+    "bridge:147.Least_Tern/Least_Tern_0095_154680.jpg",
+    "bridge:007.Parakeet_Auklet/Parakeet_Auklet_0017_795924.jpg",
+    "bridge:143.Caspian_Tern/Caspian_Tern_0011_146058.jpg",
+    "bridge:140.Summer_Tanager/Summer_Tanager_0068_139875.jpg",
+    "bridge:063.Ivory_Gull/Ivory_Gull_0014_48983.jpg",
+    "bridge:069.Rufous_Hummingbird/Rufous_Hummingbird_0057_59489.jpg"
+  ],
+  "parent_complete_sha256": "abcda8299fc1035a5a57a55befc2546a7b595590aacec9c2deed46d548eae61e",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/roxford/clip_b32__clip_b16__m64__s51854__cub_random/aps.npz",
+      "sha256": "2ec964179e2456a3891ecd2db0769fb09480cda51f071b151d6c7a65b804e804"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/roxford/clip_b32__clip_b16__m64__s51854__cub_random/aps.npz",
+      "sha256": "b6f1230cf5a87757f6ef30be12cc27aced6c2b90e9b1b280bd76fda2f8cfb888"
+    }
+  ],
+  "sha256": "4de3ae6d0c5f8fd6a616a529e2e99dd0450491ed7629bc910b837d86b140c1ec",
+  "means": [
+    0.2797330775651843,
+    0.08103545583545659
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 64,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "bridge_rows_used": 0
+  },
+  "seconds": 0.5056414604187012
+}

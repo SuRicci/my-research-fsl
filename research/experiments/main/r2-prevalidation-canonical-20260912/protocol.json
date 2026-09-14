@@ -1,0 +1,120 @@
+{
+  "idea_id": "idea-8c090fcf",
+  "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+  "feature_variant": "canonical-openai-quickgelu-native-dinov2",
+  "ways": 5,
+  "queries_per_class": 15,
+  "shots": [
+    1,
+    5
+  ],
+  "fusion_weight": 0.5,
+  "top_k": 64,
+  "candidate_count": 16,
+  "pseudo_mass_per_class": 1,
+  "lambda_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1
+  ],
+  "dev": {
+    "datasets": [
+      "dtd"
+    ],
+    "gallery_datasets": [
+      "dtd",
+      "eurosat"
+    ],
+    "seeds": [
+      26091101,
+      26091102
+    ],
+    "episodes_per_seed": 100,
+    "dtd_class_half": "first",
+    "shots": [
+      1,
+      5
+    ]
+  },
+  "eval": {
+    "datasets": [
+      "dtd",
+      "eurosat"
+    ],
+    "gallery_datasets": [
+      "dtd",
+      "eurosat"
+    ],
+    "seeds": [
+      26091201,
+      26091202,
+      26091203,
+      26091204,
+      26091205
+    ],
+    "episodes_per_seed": 200,
+    "dtd_class_half": "second"
+  },
+  "class_split_seed": 120909,
+  "batch_size": 16,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 26091299,
+  "decision_gate": {
+    "macro_ci_lower_pp": 0,
+    "max_condition_loss_pp": 0.5,
+    "requires_simple_control_advantage": true
+  },
+  "permissions": {
+    "gallery_labels": false,
+    "query_batch_adaptation": false,
+    "encoder_training": false,
+    "query_independent": true
+  },
+  "generalization_scope": "developmental reuse of fixed image pools and locked evaluation tasks; no independent-image claim",
+  "five_shot_behavior": "support-conditioned transform followed by support-only ridge, independently development-tuned",
+  "geometry": {
+    "offset_multiplier": 1,
+    "origin": "support mean",
+    "normalization": "L2",
+    "query_independent": true
+  },
+  "asset_roots": {
+    "original": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+    "new_images": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets"
+  },
+  "pool_seeds": {
+    "original": [
+      26091201,
+      26091202,
+      26091203,
+      26091204,
+      26091205
+    ],
+    "new_images": [
+      26091301,
+      26091302,
+      26091303,
+      26091304,
+      26091305
+    ]
+  },
+  "parent_outputs": {
+    "original": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval",
+    "new_images": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval"
+  },
+  "run_id": "r2-prevalidation-canonical-20260912",
+  "geometry_parent_output": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/outputs/eval",
+  "scale_parent_output": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval",
+  "lambda_candidates": [
+    1.0,
+    0.1,
+    0.01,
+    0.001
+  ],
+  "scale_bounds": [
+    0.0,
+    100.0
+  ],
+  "one_shot_policy": "explicit inheritance of parent centered R2"
+}

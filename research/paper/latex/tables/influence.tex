@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrr}
+\toprule
+Pool / gallery / shot & Gallery coeff. (\%) & External share (\%) & Mean AUROC \\ \midrule
+Original / Pets / 1 & 99.597 & 80.408 & 0.9280 \\
+Original / DTD / 1 & 99.485 & 100.000 & -- \\
+Original / Pets / 5 & 98.053 & 80.731 & 0.9477 \\
+Original / DTD / 5 & 97.424 & 100.000 & -- \\
+Confirm. / Pets / 1 & 99.605 & 80.826 & 0.9263 \\
+Confirm. / DTD / 1 & 99.487 & 100.000 & -- \\
+Confirm. / Pets / 5 & 98.071 & 80.862 & 0.9510 \\
+Confirm. / DTD / 5 & 97.432 & 100.000 & -- \\
+\bottomrule\end{tabular}
+\caption{Final-update weight accounting. Gallery coefficient is the mean class-specific gallery fraction of support-plus-gallery mass. External share is the fraction of gallery weight on classes outside the episode. AUROC is undefined if no in-episode class is present. These descriptive coefficients are not causal directional effects.}\label{tab:influence}
+\end{table}

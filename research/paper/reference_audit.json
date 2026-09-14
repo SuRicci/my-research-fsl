@@ -1,0 +1,75 @@
+{
+  "source": "artifact.arxiv returned BibTeX; Pets author publication page returned BibTeX",
+  "accessed": "2026-09-13",
+  "entries": [
+    {
+      "key": "oslo",
+      "id": "2301.08390",
+      "url": "https://arxiv.org/abs/2301.08390",
+      "raw_bibtex": "@misc{boudiaf2023230108390,\n      title={Open-Set Likelihood Maximization for Few-Shot Learning},\n      author={Malik Boudiaf and Etienne Bennequin and Myriam Tami and Antoine Toubhans and Pablo Piantanida and C\u00e9line Hudelot and Ismail Ben Ayed},\n      year={2023},\n      eprint={2301.08390},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV}\n}"
+    },
+    {
+      "key": "simpleshot",
+      "id": "1911.04623",
+      "url": "https://arxiv.org/abs/1911.04623",
+      "raw_bibtex": "@misc{wang2019191104623,\n      title={SimpleShot: Revisiting Nearest-Neighbor Classification for Few-Shot Learning},\n      author={Yan Wang and Wei-Lun Chao and Kilian Q. Weinberger and Laurens van der Maaten},\n      year={2019},\n      eprint={1911.04623},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV}\n}"
+    },
+    {
+      "key": "clip",
+      "id": "2103.00020",
+      "url": "https://arxiv.org/abs/2103.00020",
+      "raw_bibtex": "@misc{alec2021210300020,\n      title={Learning Transferable Visual Models From Natural Language Supervision},\n      author={Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and Krueger, Gretchen and Sutskever, Ilya},\n      year={2021},\n      eprint={2103.00020},\n      archivePrefix={arXiv},\n      primaryClass={<span class=\"primary-subject\">Computer Vision and Pattern Recognition (cs.CV)</span>}\n}"
+    },
+    {
+      "key": "dinov2",
+      "id": "2304.07193",
+      "url": "https://arxiv.org/abs/2304.07193",
+      "raw_bibtex": "@misc{maxime2023230407193,\n      title={DINOv2: Learning Robust Visual Features without Supervision},\n      author={Oquab, Maxime and Darcet, Timoth\u00e9e and Moutakanni, Th\u00e9o and Vo, Huy and Szafraniec, Marc and Khalidov, Vasil and Fernandez, Pierre and Haziza, Daniel and Massa, Francisco and El-Nouby, Alaaeldin and Assran, Mahmoud and Ballas, Nicolas and Galuba, Wojciech and Howes, Russell and Huang, Po-Yao and Li, Shang-Wen and Misra, Ishan and Rabbat, Michael and Sharma, Vasu and Synnaeve, Gabriel and Xu, Hu and Jegou, Herv\u00e9 and Mairal, Julien and Labatut, Patrick and Joulin, Armand and Bojanowski, Piotr},\n      year={2023},\n      eprint={2304.07193},\n      archivePrefix={arXiv},\n      primaryClass={<span class=\"primary-subject\">Computer Vision and Pattern Recognition (cs.CV)</span>}\n}"
+    },
+    {
+      "key": "ren2018",
+      "id": "1803.00676",
+      "url": "https://arxiv.org/abs/1803.00676",
+      "raw_bibtex": "@misc{ren2018180300676,\n      title={Meta-Learning for Semi-Supervised Few-Shot Classification},\n      author={Mengye Ren and Eleni Triantafillou and Sachin Ravi and Jake Snell and Kevin Swersky and Joshua B. Tenenbaum and Hugo Larochelle and Richard S. Zemel},\n      year={2018},\n      eprint={1803.00676},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG}\n}"
+    },
+    {
+      "key": "dtd",
+      "id": "1311.3618",
+      "url": "https://arxiv.org/abs/1311.3618",
+      "raw_bibtex": "@misc{mircea201313113618,\n      title={Describing Textures in the Wild},\n      author={Cimpoi, Mircea and Maji, Subhransu and Kokkinos, Iasonas and Mohamed, Sammy and Vedaldi, Andrea},\n      year={2013},\n      eprint={1311.3618},\n      archivePrefix={arXiv},\n      primaryClass={<span class=\"primary-subject\">Computer Vision and Pattern Recognition (cs.CV)</span>}\n}"
+    },
+    {
+      "key": "swat",
+      "id": "2406.11148",
+      "url": "https://arxiv.org/abs/2406.11148",
+      "raw_bibtex": "@misc{liu2024240611148,\n      title={Few-Shot Recognition via Stage-Wise Retrieval-Augmented Finetuning},\n      author={Tian Liu and Huixin Zhang and Shubham Parashar and Shu Kong},\n      year={2024},\n      eprint={2406.11148},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV}\n}"
+    },
+    {
+      "key": "pets",
+      "url": "https://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/",
+      "source": "Author-supplied BibTeX on publication page"
+    },
+    {
+      "key": "alexandari2020",
+      "url": "https://proceedings.mlr.press/v119/alexandari20a.html",
+      "verified_current": "2026-09-13",
+      "method": "Primary proceedings metadata matches cited entry"
+    },
+    {
+      "key": "eurosat",
+      "url": "https://arxiv.org/abs/1709.00029",
+      "verified_current": "2026-09-13",
+      "method": "Primary arXiv metadata matches cited entry"
+    },
+    {
+      "key": "ijcai2024p536",
+      "url": "https://www.ijcai.org/proceedings/2024/bibtex/536",
+      "verified_current": "2026-09-13",
+      "raw_bibtex": "@inproceedings{ijcai2024p536,\n  title = {Partial Optimal Transport Based Out-of-Distribution Detection for Open-Set Semi-Supervised Learning},\n  author = {Ren, Yilong and Feng, Chuanwen and Xie, Xike and Zhou, S. Kevin},\n  booktitle = {Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence, {IJCAI-24}},\n  publisher = {International Joint Conferences on Artificial Intelligence Organization},\n  editor = {Kate Larson},\n  pages = {4851--4859},\n  year = {2024},\n  month = {8},\n  note = {Main Track},\n  doi = {10.24963/ijcai.2024/536},\n  url = {https://doi.org/10.24963/ijcai.2024/536}\n}\n",
+      "method": "Publisher BibTeX and paper Sections2-4; only whitespace normalization"
+    }
+  ],
+  "normalization": "Only citation keys renamed and HTML-polluted primaryClass fields normalized to cs.CV. Title/author/year/eprint retained from retrieved records. Displayed arXiv identifier and primary URL added from each verified metadata record.",
+  "scope_waiver": "Eleven references for a focused early technical note; not a comprehensive novelty survey. Eight original metadata records retained, three appendix/positioning records verified this pass.",
+  "count": 11
+}

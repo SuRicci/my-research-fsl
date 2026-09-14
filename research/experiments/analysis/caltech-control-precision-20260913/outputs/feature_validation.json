@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "target_manifest_sha256": "9f898ddc966f7e8694c8892ae9aa7bce9beef6a41e39469d923fb04b8d6340cf",
+  "design_sha256": "81e1b2fd9be6746469a59029442bfea423b3b87d48d94d657fcb19b8e6c6af56",
+  "tasks": 500,
+  "images": 8677,
+  "gallery_sizes": {
+    "caltech101": 1024,
+    "dtd": 1024,
+    "eurosat": 1024
+  },
+  "exact_rgb_overlap": 0,
+  "feature_shape": [
+    8677,
+    6,
+    896
+  ],
+  "labels_excluded_from_inference": true
+}

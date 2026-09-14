@@ -1,0 +1,1262 @@
+{
+  "dtd_k1_original_26091381": {
+    "step": 100,
+    "correct": 6715,
+    "ce": 0.3041750192642212,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_original_26091381.pt",
+    "sha256": "b89c2cb74636f7d6bea35cf337e72e0deb4612d42ad8b488f513d3a3a2d0c57f",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6705,
+        "ce": 0.3119196593761444
+      },
+      {
+        "step": 100,
+        "correct": 6715,
+        "ce": 0.3041750192642212
+      },
+      {
+        "step": 200,
+        "correct": 6691,
+        "ce": 0.32859155535697937
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "original",
+    "seed": 26091381,
+    "seconds": 0.7291216850280762
+  },
+  "dtd_k1_flowers_26091381": {
+    "step": 0,
+    "correct": 6579,
+    "ce": 0.3792368173599243,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_flowers_26091381.pt",
+    "sha256": "8358dba6daf83bceb7c728377284d4ea36ad7f22ad8a999f0899c0b784845b27",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6549,
+        "ce": 0.37492647767066956
+      },
+      {
+        "step": 100,
+        "correct": 6542,
+        "ce": 0.3748807907104492
+      },
+      {
+        "step": 200,
+        "correct": 6535,
+        "ce": 0.38334497809410095
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "flowers",
+    "seed": 26091381,
+    "seconds": 0.7894530296325684
+  },
+  "dtd_k1_mixed_26091381": {
+    "step": 50,
+    "correct": 6710,
+    "ce": 0.321026474237442,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_mixed_26091381.pt",
+    "sha256": "d5992caf5a6a8708281600b1f20bd4922c5eb4097df356d63a16fe8e25c46dbd",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6710,
+        "ce": 0.321026474237442
+      },
+      {
+        "step": 100,
+        "correct": 6696,
+        "ce": 0.31585732102394104
+      },
+      {
+        "step": 200,
+        "correct": 6688,
+        "ce": 0.3293784558773041
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "mixed",
+    "seed": 26091381,
+    "seconds": 0.8731231689453125
+  },
+  "dtd_k1_original_26091382": {
+    "step": 100,
+    "correct": 6750,
+    "ce": 0.2911471128463745,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_original_26091382.pt",
+    "sha256": "e953814a17249d37c23fe9004afd44ffff1da1f769cedcd475a16de8dd479902",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6722,
+        "ce": 0.3097420930862427
+      },
+      {
+        "step": 100,
+        "correct": 6750,
+        "ce": 0.2911471128463745
+      },
+      {
+        "step": 200,
+        "correct": 6725,
+        "ce": 0.3096778988838196
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "original",
+    "seed": 26091382,
+    "seconds": 0.7968461513519287
+  },
+  "dtd_k1_flowers_26091382": {
+    "step": 0,
+    "correct": 6579,
+    "ce": 0.3792368173599243,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_flowers_26091382.pt",
+    "sha256": "c4e356ae21fea207193d11cf2499131a844cc13008759a48f729053ab390a178",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6558,
+        "ce": 0.3745775818824768
+      },
+      {
+        "step": 100,
+        "correct": 6562,
+        "ce": 0.3731481730937958
+      },
+      {
+        "step": 200,
+        "correct": 6515,
+        "ce": 0.3829362094402313
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "flowers",
+    "seed": 26091382,
+    "seconds": 0.7501881122589111
+  },
+  "dtd_k1_mixed_26091382": {
+    "step": 100,
+    "correct": 6731,
+    "ce": 0.29795706272125244,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_mixed_26091382.pt",
+    "sha256": "2ce5ee8773ef7cd00259690aa7f0940a31beed89f01aab7dab06abdc878db45e",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6717,
+        "ce": 0.31984570622444153
+      },
+      {
+        "step": 100,
+        "correct": 6731,
+        "ce": 0.29795706272125244
+      },
+      {
+        "step": 200,
+        "correct": 6703,
+        "ce": 0.30763009190559387
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "mixed",
+    "seed": 26091382,
+    "seconds": 0.708935022354126
+  },
+  "dtd_k1_original_26091383": {
+    "step": 100,
+    "correct": 6718,
+    "ce": 0.3000180423259735,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_original_26091383.pt",
+    "sha256": "7e5d2aaa090a3904a237c5da33c7fc2c0b1bc0c4c150e5cec66d5e6bc3e24e90",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6697,
+        "ce": 0.30791765451431274
+      },
+      {
+        "step": 100,
+        "correct": 6718,
+        "ce": 0.3000180423259735
+      },
+      {
+        "step": 200,
+        "correct": 6705,
+        "ce": 0.32923775911331177
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "original",
+    "seed": 26091383,
+    "seconds": 0.7617599964141846
+  },
+  "dtd_k1_flowers_26091383": {
+    "step": 0,
+    "correct": 6579,
+    "ce": 0.3792368173599243,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_flowers_26091383.pt",
+    "sha256": "2887db9f3a46af94e6381077f6024788ee4b648e07bf1ba066865bdbb914e9bb",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6569,
+        "ce": 0.37396636605262756
+      },
+      {
+        "step": 100,
+        "correct": 6550,
+        "ce": 0.3751828372478485
+      },
+      {
+        "step": 200,
+        "correct": 6519,
+        "ce": 0.38643285632133484
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "flowers",
+    "seed": 26091383,
+    "seconds": 0.6617429256439209
+  },
+  "dtd_k1_mixed_26091383": {
+    "step": 100,
+    "correct": 6694,
+    "ce": 0.3084084689617157,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k1_mixed_26091383.pt",
+    "sha256": "8ecffc2e769cb9a0a2188e52b91673d1bdbcc9ee87677ecf6ce46684bf814f7c",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6579,
+        "ce": 0.3792368173599243
+      },
+      {
+        "step": 50,
+        "correct": 6692,
+        "ce": 0.3212366998195648
+      },
+      {
+        "step": 100,
+        "correct": 6694,
+        "ce": 0.3084084689617157
+      },
+      {
+        "step": 200,
+        "correct": 6671,
+        "ce": 0.3179604411125183
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "dtd",
+    "shot": 1,
+    "arm": "mixed",
+    "seed": 26091383,
+    "seconds": 0.6547479629516602
+  },
+  "dtd_k5_original_26091381": {
+    "step": 200,
+    "correct": 6270,
+    "ce": 0.11182433366775513,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_original_26091381.pt",
+    "sha256": "1cf765ca9367f83200f6b18f1f405fc24672ea3ce42bd368016396800f48c6fc",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6249,
+        "ce": 0.11489730328321457
+      },
+      {
+        "step": 100,
+        "correct": 6262,
+        "ce": 0.1110944151878357
+      },
+      {
+        "step": 200,
+        "correct": 6270,
+        "ce": 0.11182433366775513
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "original",
+    "seed": 26091381,
+    "seconds": 0.8191490173339844
+  },
+  "dtd_k5_flowers_26091381": {
+    "step": 100,
+    "correct": 6212,
+    "ce": 0.13797415792942047,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_flowers_26091381.pt",
+    "sha256": "1a1b626ac60b474d1095541f9096a16e384d776c7dc73dfb5d3fb6336575f269",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6210,
+        "ce": 0.13800819218158722
+      },
+      {
+        "step": 100,
+        "correct": 6212,
+        "ce": 0.13797415792942047
+      },
+      {
+        "step": 200,
+        "correct": 6206,
+        "ce": 0.1387062668800354
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "flowers",
+    "seed": 26091381,
+    "seconds": 0.8141047954559326
+  },
+  "dtd_k5_mixed_26091381": {
+    "step": 200,
+    "correct": 6259,
+    "ce": 0.11552004516124725,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_mixed_26091381.pt",
+    "sha256": "6997dcbfa8b504b0f674b587da382606304f97ad3418ab06eaef042f431c5bbf",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6236,
+        "ce": 0.12113812565803528
+      },
+      {
+        "step": 100,
+        "correct": 6251,
+        "ce": 0.11538320034742355
+      },
+      {
+        "step": 200,
+        "correct": 6259,
+        "ce": 0.11552004516124725
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "mixed",
+    "seed": 26091381,
+    "seconds": 0.8296220302581787
+  },
+  "dtd_k5_original_26091382": {
+    "step": 200,
+    "correct": 6259,
+    "ce": 0.1144489273428917,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_original_26091382.pt",
+    "sha256": "bda654ece6a083d533ce11b6c1e6cd9687d988a1b959240755c8dcd070a77d53",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6257,
+        "ce": 0.11709944158792496
+      },
+      {
+        "step": 100,
+        "correct": 6256,
+        "ce": 0.11321642994880676
+      },
+      {
+        "step": 200,
+        "correct": 6259,
+        "ce": 0.1144489273428917
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "original",
+    "seed": 26091382,
+    "seconds": 0.7960171699523926
+  },
+  "dtd_k5_flowers_26091382": {
+    "step": 100,
+    "correct": 6211,
+    "ce": 0.13781440258026123,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_flowers_26091382.pt",
+    "sha256": "64e443051d3eff3c6ce2f9cff060353b2590cecda8bd7c731fd47e516256d69d",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6207,
+        "ce": 0.13813897967338562
+      },
+      {
+        "step": 100,
+        "correct": 6211,
+        "ce": 0.13781440258026123
+      },
+      {
+        "step": 200,
+        "correct": 6208,
+        "ce": 0.138243168592453
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "flowers",
+    "seed": 26091382,
+    "seconds": 0.7869129180908203
+  },
+  "dtd_k5_mixed_26091382": {
+    "step": 200,
+    "correct": 6264,
+    "ce": 0.11485348641872406,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_mixed_26091382.pt",
+    "sha256": "0f0ad938d748b078919fe5b1e6e04d4507b556905cb2e384d0f1848c31bb95e0",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6234,
+        "ce": 0.12341780960559845
+      },
+      {
+        "step": 100,
+        "correct": 6254,
+        "ce": 0.11510250717401505
+      },
+      {
+        "step": 200,
+        "correct": 6264,
+        "ce": 0.11485348641872406
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "mixed",
+    "seed": 26091382,
+    "seconds": 0.9347290992736816
+  },
+  "dtd_k5_original_26091383": {
+    "step": 200,
+    "correct": 6272,
+    "ce": 0.11219798773527145,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_original_26091383.pt",
+    "sha256": "dc5e3b6ede9cec8efab6e43e482566813860b8a3da36b6e34ffa168e24dc2447",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6260,
+        "ce": 0.11382663249969482
+      },
+      {
+        "step": 100,
+        "correct": 6262,
+        "ce": 0.11098344624042511
+      },
+      {
+        "step": 200,
+        "correct": 6272,
+        "ce": 0.11219798773527145
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "original",
+    "seed": 26091383,
+    "seconds": 0.7452847957611084
+  },
+  "dtd_k5_flowers_26091383": {
+    "step": 50,
+    "correct": 6212,
+    "ce": 0.1379844844341278,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_flowers_26091383.pt",
+    "sha256": "a9193336a1c63c89820cd08c14f242fa33470299a44ae601ec224f5bc306e1bd",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6212,
+        "ce": 0.1379844844341278
+      },
+      {
+        "step": 100,
+        "correct": 6209,
+        "ce": 0.1380595862865448
+      },
+      {
+        "step": 200,
+        "correct": 6207,
+        "ce": 0.1386251300573349
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "flowers",
+    "seed": 26091383,
+    "seconds": 0.7879359722137451
+  },
+  "dtd_k5_mixed_26091383": {
+    "step": 200,
+    "correct": 6254,
+    "ce": 0.11484706401824951,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/dtd_k5_mixed_26091383.pt",
+    "sha256": "d3692de670d98b5abab80624a33ca5d423b5634a4daa4830e96cf53807b0bd14",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6208,
+        "ce": 0.13794982433319092
+      },
+      {
+        "step": 50,
+        "correct": 6245,
+        "ce": 0.12180035561323166
+      },
+      {
+        "step": 100,
+        "correct": 6253,
+        "ce": 0.11595121026039124
+      },
+      {
+        "step": 200,
+        "correct": 6254,
+        "ce": 0.11484706401824951
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "dtd",
+    "shot": 5,
+    "arm": "mixed",
+    "seed": 26091383,
+    "seconds": 0.7843227386474609
+  },
+  "eurosat_k1_original_26091381": {
+    "step": 200,
+    "correct": 7246,
+    "ce": 0.12998899817466736,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_original_26091381.pt",
+    "sha256": "55fe7a4d8ee3ba396026c8bb8b42cdc8d5149f1166067fe40c1b5be000cc4a85",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6975,
+        "ce": 0.22159096598625183
+      },
+      {
+        "step": 100,
+        "correct": 7158,
+        "ce": 0.15803799033164978
+      },
+      {
+        "step": 200,
+        "correct": 7246,
+        "ce": 0.12998899817466736
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "original",
+    "seed": 26091381,
+    "seconds": 0.6579477787017822
+  },
+  "eurosat_k1_flowers_26091381": {
+    "step": 0,
+    "correct": 6307,
+    "ce": 0.45857077836990356,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_flowers_26091381.pt",
+    "sha256": "2737c3163b28a8d06e59e799dd1de279853325c9d353f8e4fbf7ef2d8a6923e1",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6303,
+        "ce": 0.4540184438228607
+      },
+      {
+        "step": 100,
+        "correct": 6297,
+        "ce": 0.45360803604125977
+      },
+      {
+        "step": 200,
+        "correct": 6291,
+        "ce": 0.45513924956321716
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "flowers",
+    "seed": 26091381,
+    "seconds": 0.6483979225158691
+  },
+  "eurosat_k1_mixed_26091381": {
+    "step": 200,
+    "correct": 7150,
+    "ce": 0.1537414938211441,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_mixed_26091381.pt",
+    "sha256": "fca505562ab17dcc8aa581febe23cd09ad9a4bbea282e80c8f9dd887ddfb26b1",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6883,
+        "ce": 0.251087486743927
+      },
+      {
+        "step": 100,
+        "correct": 7072,
+        "ce": 0.18630288541316986
+      },
+      {
+        "step": 200,
+        "correct": 7150,
+        "ce": 0.1537414938211441
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "mixed",
+    "seed": 26091381,
+    "seconds": 0.6792778968811035
+  },
+  "eurosat_k1_original_26091382": {
+    "step": 200,
+    "correct": 7207,
+    "ce": 0.13452281057834625,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_original_26091382.pt",
+    "sha256": "562c7eaf4ac06f233b21b70e80031cffe41875f6a7874d31e2d8269a35e7f7da",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6974,
+        "ce": 0.22058486938476562
+      },
+      {
+        "step": 100,
+        "correct": 7140,
+        "ce": 0.16195933520793915
+      },
+      {
+        "step": 200,
+        "correct": 7207,
+        "ce": 0.13452281057834625
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "original",
+    "seed": 26091382,
+    "seconds": 0.6460132598876953
+  },
+  "eurosat_k1_flowers_26091382": {
+    "step": 0,
+    "correct": 6307,
+    "ce": 0.45857077836990356,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_flowers_26091382.pt",
+    "sha256": "874c57f57655eb75c8607cb807929e4e6f861a9ddea2ed63e67ae6ef45ef266a",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6301,
+        "ce": 0.4534603953361511
+      },
+      {
+        "step": 100,
+        "correct": 6292,
+        "ce": 0.45357459783554077
+      },
+      {
+        "step": 200,
+        "correct": 6279,
+        "ce": 0.45809826254844666
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "flowers",
+    "seed": 26091382,
+    "seconds": 0.5175058841705322
+  },
+  "eurosat_k1_mixed_26091382": {
+    "step": 200,
+    "correct": 7167,
+    "ce": 0.14920008182525635,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_mixed_26091382.pt",
+    "sha256": "778070016f0969236ec209df762c31c6dc82c36ee5b5c8bbd76956e4c3b20f90",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6864,
+        "ce": 0.2567282021045685
+      },
+      {
+        "step": 100,
+        "correct": 7084,
+        "ce": 0.1867377609014511
+      },
+      {
+        "step": 200,
+        "correct": 7167,
+        "ce": 0.14920008182525635
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "mixed",
+    "seed": 26091382,
+    "seconds": 0.5437607765197754
+  },
+  "eurosat_k1_original_26091383": {
+    "step": 200,
+    "correct": 7223,
+    "ce": 0.13980749249458313,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_original_26091383.pt",
+    "sha256": "f02b40b274ceb4828f1504061890aa2d373794ed722c7186b20d5cf88ed17a4c",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6998,
+        "ce": 0.2209482640028
+      },
+      {
+        "step": 100,
+        "correct": 7152,
+        "ce": 0.16059501469135284
+      },
+      {
+        "step": 200,
+        "correct": 7223,
+        "ce": 0.13980749249458313
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "original",
+    "seed": 26091383,
+    "seconds": 0.5213189125061035
+  },
+  "eurosat_k1_flowers_26091383": {
+    "step": 50,
+    "correct": 6317,
+    "ce": 0.4524477422237396,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_flowers_26091383.pt",
+    "sha256": "dade7864ec4f1cf2e8907f474f50131112f8593dcba634e322a9e2f61de6c69e",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6317,
+        "ce": 0.4524477422237396
+      },
+      {
+        "step": 100,
+        "correct": 6307,
+        "ce": 0.4526752829551697
+      },
+      {
+        "step": 200,
+        "correct": 6290,
+        "ce": 0.45704248547554016
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "flowers",
+    "seed": 26091383,
+    "seconds": 0.5380890369415283
+  },
+  "eurosat_k1_mixed_26091383": {
+    "step": 200,
+    "correct": 7160,
+    "ce": 0.15641047060489655,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k1_mixed_26091383.pt",
+    "sha256": "c2792f7086fde5782a22c826d371be02d3ffa5a35ede5820252295dbc4bc288e",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6307,
+        "ce": 0.45857077836990356
+      },
+      {
+        "step": 50,
+        "correct": 6892,
+        "ce": 0.2567777633666992
+      },
+      {
+        "step": 100,
+        "correct": 7065,
+        "ce": 0.19127987325191498
+      },
+      {
+        "step": 200,
+        "correct": 7160,
+        "ce": 0.15641047060489655
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "eurosat",
+    "shot": 1,
+    "arm": "mixed",
+    "seed": 26091383,
+    "seconds": 0.5400781631469727
+  },
+  "eurosat_k5_original_26091381": {
+    "step": 200,
+    "correct": 6387,
+    "ce": 0.05307116359472275,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_original_26091381.pt",
+    "sha256": "8f007b28865725ce504112624151663cec15172e03963a77a4b141aa7a124921",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6345,
+        "ce": 0.07245930284261703
+      },
+      {
+        "step": 100,
+        "correct": 6376,
+        "ce": 0.05838041752576828
+      },
+      {
+        "step": 200,
+        "correct": 6387,
+        "ce": 0.05307116359472275
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "original",
+    "seed": 26091381,
+    "seconds": 0.6556692123413086
+  },
+  "eurosat_k5_flowers_26091381": {
+    "step": 200,
+    "correct": 6155,
+    "ce": 0.15533290803432465,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_flowers_26091381.pt",
+    "sha256": "db5ef4401a5ffc033d212f590cb966bfce903d5bf6bb5a352c09bf941c0f26c1",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6148,
+        "ce": 0.15530042350292206
+      },
+      {
+        "step": 100,
+        "correct": 6151,
+        "ce": 0.1552075445652008
+      },
+      {
+        "step": 200,
+        "correct": 6155,
+        "ce": 0.15533290803432465
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "flowers",
+    "seed": 26091381,
+    "seconds": 0.6540238857269287
+  },
+  "eurosat_k5_mixed_26091381": {
+    "step": 200,
+    "correct": 6378,
+    "ce": 0.0594002790749073,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_mixed_26091381.pt",
+    "sha256": "f61a8c2276e3dbe65925127028d21ec1faae6f982294b49d023cec13f54057fd",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6321,
+        "ce": 0.08423992246389389
+      },
+      {
+        "step": 100,
+        "correct": 6357,
+        "ce": 0.06732087582349777
+      },
+      {
+        "step": 200,
+        "correct": 6378,
+        "ce": 0.0594002790749073
+      }
+    ],
+    "initial_state_sha256": "d71a9ec75e3c93c05ed2f5aabbf6dbe6be8319e7c2ac5c68e09ea75bc9d9f19d",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "mixed",
+    "seed": 26091381,
+    "seconds": 0.7506611347198486
+  },
+  "eurosat_k5_original_26091382": {
+    "step": 200,
+    "correct": 6396,
+    "ce": 0.05116669461131096,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_original_26091382.pt",
+    "sha256": "7a7689c5a0a94d2312c4b90f47a57a243121db5f78311afff2ea2aac5e55ee39",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6350,
+        "ce": 0.06813012808561325
+      },
+      {
+        "step": 100,
+        "correct": 6382,
+        "ce": 0.05726774409413338
+      },
+      {
+        "step": 200,
+        "correct": 6396,
+        "ce": 0.05116669461131096
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "original",
+    "seed": 26091382,
+    "seconds": 0.6545720100402832
+  },
+  "eurosat_k5_flowers_26091382": {
+    "step": 200,
+    "correct": 6157,
+    "ce": 0.15569309890270233,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_flowers_26091382.pt",
+    "sha256": "be682fc6d15e49671933629e3e82656e4b217c6aec5f3464759c560875a46d69",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6149,
+        "ce": 0.15524545311927795
+      },
+      {
+        "step": 100,
+        "correct": 6153,
+        "ce": 0.15537245571613312
+      },
+      {
+        "step": 200,
+        "correct": 6157,
+        "ce": 0.15569309890270233
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "flowers",
+    "seed": 26091382,
+    "seconds": 0.6417820453643799
+  },
+  "eurosat_k5_mixed_26091382": {
+    "step": 200,
+    "correct": 6366,
+    "ce": 0.0611373633146286,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_mixed_26091382.pt",
+    "sha256": "a1a55d78f7b4ad93b6d93799cb2a0209de31e5665af0e6a223570d5ae966d5fd",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6317,
+        "ce": 0.08526398241519928
+      },
+      {
+        "step": 100,
+        "correct": 6346,
+        "ce": 0.06928440928459167
+      },
+      {
+        "step": 200,
+        "correct": 6366,
+        "ce": 0.0611373633146286
+      }
+    ],
+    "initial_state_sha256": "b2d084b1e228fee2debc9f3228ed490b338f78c81835cab78df8797420cf6e40",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "mixed",
+    "seed": 26091382,
+    "seconds": 0.6549949645996094
+  },
+  "eurosat_k5_original_26091383": {
+    "step": 200,
+    "correct": 6397,
+    "ce": 0.05138374865055084,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_original_26091383.pt",
+    "sha256": "8cd4e412b3e2ae11839b145390b2c70495dd45db6562b54064fb9cf701f7edc4",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6348,
+        "ce": 0.06980491429567337
+      },
+      {
+        "step": 100,
+        "correct": 6385,
+        "ce": 0.05602129176259041
+      },
+      {
+        "step": 200,
+        "correct": 6397,
+        "ce": 0.05138374865055084
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "original",
+    "seed": 26091383,
+    "seconds": 0.6434061527252197
+  },
+  "eurosat_k5_flowers_26091383": {
+    "step": 0,
+    "correct": 6152,
+    "ce": 0.15556806325912476,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_flowers_26091383.pt",
+    "sha256": "b77dda41adb76c2ee1f90f36bf789558bfc45845e4894a7f8643558f0f456925",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6147,
+        "ce": 0.1554974764585495
+      },
+      {
+        "step": 100,
+        "correct": 6150,
+        "ce": 0.15567509829998016
+      },
+      {
+        "step": 200,
+        "correct": 6151,
+        "ce": 0.15572336316108704
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "flowers",
+    "seed": 26091383,
+    "seconds": 0.6583318710327148
+  },
+  "eurosat_k5_mixed_26091383": {
+    "step": 200,
+    "correct": 6380,
+    "ce": 0.05974138528108597,
+    "model_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/source-composition-20260913/outputs/models/eurosat_k5_mixed_26091383.pt",
+    "sha256": "75cf68ad3339d4036d0d4cdf20603d62e495b7997afa78f44d6c0fae51dcc58e",
+    "history": [
+      {
+        "step": 0,
+        "correct": 6152,
+        "ce": 0.15556806325912476
+      },
+      {
+        "step": 50,
+        "correct": 6314,
+        "ce": 0.0864851251244545
+      },
+      {
+        "step": 100,
+        "correct": 6364,
+        "ce": 0.06656304746866226
+      },
+      {
+        "step": 200,
+        "correct": 6380,
+        "ce": 0.05974138528108597
+      }
+    ],
+    "initial_state_sha256": "456aae690675cfdab91286dd276640ad39fd25263252ef51734cba2cc847aaaa",
+    "source": "eurosat",
+    "shot": 5,
+    "arm": "mixed",
+    "seed": 26091383,
+    "seconds": 0.6550228595733643
+  }
+}

@@ -1,0 +1,17 @@
+\section{Experiments}
+\subsection{Protocol}
+Oxford-IIIT Pets contains 37 breeds \citep{pets}. We evaluate an original fixed image pool and 1,804 previously unused confirmation images with zero exact decoded-RGB overlap with the original query and gallery pools. Confirmation shares the original classes and domain. Source defaults and inference code were frozen before confirmation feature extraction; original outcomes had already been inspected. Both pools became exposed by subsequent diagnostics.
+
+For each pool and support count, five seeds generate 100 episodes each. Episodes contain five classes and 15 queries per class, with disjoint support and query identities. Each episode is evaluated with a 1,876-image Pets gallery and a 1,876-image DTD gallery \citep{dtd}: 2,000 sampled episodes produce 4,000 task--gallery-condition evaluations. Queries are always Pets images. The independent galleries are disjoint from support/query pools; matched denotes the target domain, not a restriction to the five episode classes.
+
+All seven methods use frozen CLIP ViT-B/16 and DINOv2 ViT-S/14 features. Controls are the local retrieval-weighted classifier R2, its support-centered control CS$_{\ell_2}$, support-only multinomial logistic classifiers at fixed $C=1$ and $C=10$, and the two source ablations. R2 and CS$_{\ell_2}$ denote frozen local comparison implementations, not new methods. Queries cannot update features, relevance weights or prototypes; gallery labels cannot enter inference.
+
+Paired accuracy intervals use 5,000 bootstrap resamples stratified within each pool's five seeds. Gallery conditions share resampling indices. Intervals condition on fixed image pools and quantify task variation, not independent image or domain sampling. Pointwise comparisons are descriptive without a global multiplicity claim.
+
+\subsection{Strong controls change the interpretation}
+\input{tables/performance}
+OSLO$_G$ improves matched one-shot accuracy over closed-set fitting by 4.413 and 3.171 percentage points in the original and confirmation pools. That component effect does not establish system superiority. R2 achieves 96.240\% and 96.016\%, versus 94.917\% and 94.875\% for OSLO$_G$. Paired differences are $-1.323$ pp (95\% interval $[-1.723,-0.933]$) and $-1.141$ pp ($[-1.517,-0.763]$).
+
+With a DTD gallery, one-shot OSLO$_G$ accuracy falls to 64.192\% and 63.992\%, versus R2 at 93.931\% and 93.389\%. All five-shot conditions also degrade. All eight paired intervals against R2 are negative (Appendix~\ref{app:paired}). Every breed has a negative descriptive difference in each mismatched one-shot pool; this is not 37 independent significance tests.
+
+Zero update separates update effects from preprocessing. Its original matched one-shot comparison with OSLO$_G$ has a zero-containing interval, whereas OSLO$_G$ exceeds it on confirmation matched one-shot tasks. Zero update avoids most mismatch harm. Thus the fixed defaults fail strong-control qualification even though latent inlier weighting improves the closed-set update.

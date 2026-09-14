@@ -1,0 +1,79 @@
+{
+  "idea_id": "idea-0557da70",
+  "decision_id": "decision-f42c1aca",
+  "tier": "auxiliary/dev",
+  "domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "backbone": "dinov2_vitb14",
+  "weights_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_pretrain.pth",
+  "weights_bytes": 346378731,
+  "views": 6,
+  "expected_images": 14153,
+  "dimension": 1280,
+  "base_dimension": 896,
+  "source_gamma": {
+    "dtd": 10,
+    "eurosat": 1
+  },
+  "source_eta": {
+    "dtd": 0,
+    "eurosat": 10
+  },
+  "methods": [
+    "base_consistency",
+    "base_scatter",
+    "base_mean_r2",
+    "base_mean_CS",
+    "base_support_ridge",
+    "base_logistic_C1",
+    "base_logistic_C10",
+    "base_augmented_ridge",
+    "small_consistency"
+  ],
+  "gate_controls": [
+    "base_mean_r2",
+    "base_mean_CS",
+    "base_support_ridge",
+    "base_logistic_C1",
+    "base_logistic_C10",
+    "base_augmented_ridge",
+    "small_consistency"
+  ],
+  "eval_tasks": 500,
+  "queries_per_class": 15,
+  "threads": 6,
+  "batch": 32,
+  "encoding_workers": 6,
+  "min_free_gib": 10,
+  "max_new_mib": 1000,
+  "deadline": "2026-09-15T09:00:00+00:00",
+  "max_encoding_hours": 6,
+  "audit_indices": [
+    0,
+    99,
+    199,
+    299,
+    499
+  ],
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 26091481,
+    "unit": "task stratified by originalseed/domain; gallery conditions averaged within task"
+  },
+  "gate": {
+    "pooled_gain_pp": 0.5,
+    "pooled_ci_lower_gt": 0,
+    "each_domain_point_min_pp": 0,
+    "each_gallery_ci_lower_min_pp": -0.5
+  },
+  "encoding_checks": {
+    "cpu_mps_abs": 0.001,
+    "cpu_mps_cosine": 0.99999,
+    "unit_norm_error": 0.002,
+    "numeric_null_abs": 1e-10,
+    "independent_scores_abs": 2e-08
+  },
+  "scope": "SameRGB/sixviews/frozenencoders,not equal encodingFLOPs. Exposed source only. FivePetsmetrics unchanged/unmeasured; noCaltechreevaluation. Fixed checkpoint/parameters; no target tuning."
+}

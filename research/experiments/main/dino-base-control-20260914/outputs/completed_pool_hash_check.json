@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-14T04:35:01.466540+00:00",
+  "completed_pool_file_hashes": {
+    "dtd_query": {
+      "path": "experiments/main/dino-base-control-20260914/assets/dtd_query.npy",
+      "sha256": "72f3b04df0dd015cf88f4cad6f463d3e8f569ff76ca08dac818174dc5ed8beb5",
+      "matches_manifest": true
+    },
+    "dtd_gallery": {
+      "path": "experiments/main/dino-base-control-20260914/assets/dtd_gallery.npy",
+      "sha256": "e7f3d1b919f1cae88c69584619f1fe43a03278b45d638ded75716eba6f61eb90",
+      "matches_manifest": true
+    }
+  },
+  "full_feature_validation": "pending after all encoding completes"
+}

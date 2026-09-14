@@ -1,0 +1,1 @@
+{"failed_session":"bash-ad4e1de1","cause":"Legacy module imports prepend other experiment paths; importing evaluate in verifier resolved an unrelated module.","fix":"Pass already loaded sampler explicitly; no algorithm or task changes.","new_view_outcomes_seen":false}

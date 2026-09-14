@@ -1,0 +1,55 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-2f849543",
+  "id": "report-2f849543",
+  "quest_id": "012",
+  "created_at": "2026-09-12T09:27:46+00:00",
+  "updated_at": "2026-09-12T09:27:46+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-3979d299"
+  },
+  "status": "completed",
+  "branch": "main",
+  "head_commit": "e8d346db8b41b90a9ed9e9dc4eadc495ef6fb1bd",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012",
+  "workspace_rel_path": ".",
+  "report_type": "validation",
+  "title": "EuroSAT archived feature parity failed before gallery encoding",
+  "summary": "Sample n10,CLIP min cosine0.8400136 mean0.9205976 versus current center224 encoding. Threshold0.999 failed; no gallery vectors produced. Root cause unresolved; check preprocessing/cache generation before mixing. DTD5 cached-feature replay remains a numerical scoped comparator, not end-to-end image parity.",
+  "evidence_paths": [
+    "baselines/local/r2-replay/assets/gallery_recovery_manifest.json",
+    ".ds/bash_exec/bash-5be52486/terminal.log"
+  ],
+  "next_anchor": "idea",
+  "recommended_action": "Inspect original preprocessing; repair comparator extension without new candidate implementation.",
+  "run_id": "run-3979d299",
+  "anchor": "baseline",
+  "semantic_key": "report:baseline:validation:none:8f73db3a7a64760b4ff04064d8759bfebae6a2c04fa547f637c76ca6cec6f562",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-2f849543",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

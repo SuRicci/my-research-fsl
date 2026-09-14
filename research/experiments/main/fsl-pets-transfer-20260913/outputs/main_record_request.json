@@ -1,0 +1,359 @@
+{
+  "run_id": "fsl-pets-transfer-20260913",
+  "title": "Frozen iLPC Pets qualification fails strong-control and mismatch gates",
+  "status": "completed",
+  "verdict": "failed_primary_gate",
+  "baseline_id": "r2-pets-transfer",
+  "baseline_variant_id": "frozen-v1",
+  "hypothesis": "Frozen gallery-only iLPC-z improves Pets matched one-shot accuracy by at least0.5pp over R2,CS_l2 and supportC10 with positive paired95% bounds; mismatch and5shot are mandatory stress conditions.",
+  "setup": "Official Pets trainval unlabeled1876image gallery;3669exact-RGB-unique test images supply disjoint supports/queries. Equal1876image DTD mismatch gallery. Frozen canonical CLIP-B16/DINO-S14,MPSfloat32 withfloat16storage,fusion0.5.5way,15queries/class,1/5shot,5seedsx100tasks/cell. No target tuning,query adaptation,gallery labels or encoder training.",
+  "execution": "Acquisition bash-9512022b; assets audit bash-31c1ec3f. Baseline bash-48b70ed6 and audit bash-1af2e4af; confirmed baseline-0503efcd before candidate. Candidate bash-c587b30c,536.36s,4CPUworkers/BLAS1. Full audit bash-5e6a4443; aggregate verification bash-c6f63cc3. First auditor bash-362ca54c failed before outcomes on Path-type mismatch; fixed only analyzer, no experiment rerun.",
+  "dataset_scope": "pets-frozen-gallery-transfer-v1; all37breeds,4cells,500pairedtasks/cell",
+  "metrics_summary": {
+    "pets_matched_1shot_accuracy": 96.05333333333334,
+    "pets_mismatched_1shot_accuracy": 58.55733333333334,
+    "pets_matched_5shot_accuracy": 97.81866666666667,
+    "pets_mismatched_5shot_accuracy": 92.66933333333334,
+    "pets_macro_1shot_accuracy": 77.30533333333334
+  },
+  "metric_contract": {
+    "evaluation_protocol": {
+      "scope_id": "pets-frozen-gallery-transfer-v1",
+      "protocol": {
+        "run_id": "fsl-pets-transfer-20260913",
+        "idea_id": "idea-01adcb83",
+        "scope_id": "pets-frozen-gallery-transfer-v1",
+        "frozen_at": "2026-09-12T20:46:59.082898+00:00",
+        "dataset": "Oxford-IIIT Pets",
+        "query_support_split": "official test; exact RGB unique",
+        "gallery_split": "official trainval; exact RGB unique; exclude every test identity",
+        "gallery_size": 1876,
+        "gallery_selection_seed": 26091310,
+        "gallery_selection_uses_labels": false,
+        "gallery_conditions": [
+          "pets",
+          "dtd"
+        ],
+        "shots": [
+          1,
+          5
+        ],
+        "ways": 5,
+        "queries_per_class": 15,
+        "seeds": [
+          26091311,
+          26091312,
+          26091313,
+          26091314,
+          26091315
+        ],
+        "episodes_per_seed": 100,
+        "methods": [
+          "r2",
+          "CS_l2",
+          "support_logistic_C1",
+          "support_logistic_C10",
+          "ilpcz_local"
+        ],
+        "hyperparameter_selection": "none on Pets; frozen existing source configurations",
+        "ilpcz": {
+          "k": 20,
+          "alpha": 0.5,
+          "C": 10,
+          "selection_per_class": 3
+        },
+        "feature_fusion_weight": 0.5,
+        "primary_metric": "pets_matched_1shot_accuracy",
+        "new_metric_ids": [
+          "pets_matched_1shot_accuracy",
+          "pets_mismatched_1shot_accuracy",
+          "pets_matched_5shot_accuracy",
+          "pets_mismatched_5shot_accuracy",
+          "pets_macro_1shot_accuracy"
+        ],
+        "old_contracts_retained": [
+          "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/json/metric_contract.json",
+          "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/json/metric_contract.json"
+        ],
+        "baseline_transition": "measure and confirm separate Pets R2 comparator before candidate interpretation; no overwrites",
+        "permissions": {
+          "gallery_labels": false,
+          "query_batch_adaptation": false,
+          "encoder_training": false
+        },
+        "sources_sha256": {
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/ilpcz.py": "b4363273c20ec3ca7b69d788aadd285dc8cb55c37b5d160b16d00271bb92b100",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/selection.json": "63bee5e04b251af2a6ed975d95d1d3c1ed265c7691c2bb30ea02328582e741aa",
+          "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/recover_gallery.py": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/artifacts/idea/selected_idea.md": "b21088be91ad22de90f509589d1e5acc1d362430ce86d5a4c9c0d229e0956adb",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c"
+        },
+        "source_ilpc_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control",
+        "asset_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets",
+        "bootstrap": {
+          "replicates": 5000,
+          "seed": 26091399,
+          "unit": "paired tasks stratified by seed; conditional on fixed image pools"
+        },
+        "thresholds": {
+          "matched_gain_pp": 0.5,
+          "paired_ci_lower": 0,
+          "max_mismatch_loss_pp_for_robust_label": 0.5
+        },
+        "resources": {
+          "free_gib_min": 10,
+          "added_gib_max": 2.5,
+          "local_only": true,
+          "spend": 0,
+          "deadline_utc": "2026-09-15T09:00:00+00:00"
+        },
+        "method_settings": {
+          "r2": {
+            "one_shot": "top64 mean, normalize, mix0.5, centered ridge0.1",
+            "five_shot": "support-only centered ridge1"
+          },
+          "CS_l2": {
+            "centering_origin": "support mean",
+            "l2_after_centering": true,
+            "one_shot": "top64 gallery after support centering, mix0.5, ridge0.1",
+            "five_shot": "support-centered-and-renormalized ridge0.1; prespecified fixed extension"
+          },
+          "support_logistic": {
+            "C": [
+              1,
+              10
+            ],
+            "solver": "lbfgs",
+            "multi_class": "multinomial",
+            "max_iter": 2000,
+            "tol": 1e-08,
+            "random_state": 26091275
+          }
+        },
+        "pre_outcome_amendments": [
+          {
+            "reason": "Code-level taxonomy correction: CS_l2 uses the gallery in1shot. No comparator removed. Exact five-shot fixed geometry specification now explicit; old one-shot gain does not imply its five-shot behavior.",
+            "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py",
+            "time": "2026-09-13T04:50:00+08:00",
+            "predictions_observed": false
+          },
+          {
+            "reason": "Refresh selected-idea document hash after already-recorded source taxonomy and 2025 iLPC extension citation clarification; all method parameters, tasks and thresholds unchanged.",
+            "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/artifacts/idea/selected_idea.md",
+            "previous_sha256": "144fe648ead6078270428ad50e445ae8bcaa2b4dede1863fe0ff849f89ede60c",
+            "current_sha256": "b21088be91ad22de90f509589d1e5acc1d362430ce86d5a4c9c0d229e0956adb",
+            "time": "2026-09-12T21:01:28.314287+00:00",
+            "predictions_observed": false
+          }
+        ]
+      },
+      "code_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/evaluate.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/audit_outputs.py"
+      ],
+      "code_hashes": {
+        "evaluate.py": "0a77944483a70b3ab7032ab2517af5a9acfbc42197ef9294906308e03e56678c",
+        "audit_outputs.py": "2a10733d077ad2d0be9dfc4b09522350049bd3b20089ddd9252785fdc9b9b354"
+      },
+      "feature_manifest_sha256": "dc016f8624b7a49679213b8ca495dfbb2f1ebebbb650e3ef57772367372074c8",
+      "task_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/tasks_k1.npz",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/tasks_k5.npz"
+      ],
+      "local_source_transfer": true,
+      "paper_reproduction": false
+    },
+    "baseline_variants": {
+      "r2": {
+        "metrics_summary": {
+          "pets_matched_1shot_accuracy": 96.24,
+          "pets_mismatched_1shot_accuracy": 93.93066666666667,
+          "pets_matched_5shot_accuracy": 98.44266666666668,
+          "pets_mismatched_5shot_accuracy": 98.44266666666668,
+          "pets_macro_1shot_accuracy": 95.08533333333332
+        },
+        "role": "frozen_local_comparator"
+      },
+      "CS_l2": {
+        "metrics_summary": {
+          "pets_matched_1shot_accuracy": 96.264,
+          "pets_mismatched_1shot_accuracy": 93.96266666666666,
+          "pets_matched_5shot_accuracy": 98.55199999999999,
+          "pets_mismatched_5shot_accuracy": 98.55199999999999,
+          "pets_macro_1shot_accuracy": 95.11333333333333
+        },
+        "role": "same_permission_control"
+      },
+      "support_logistic_C1": {
+        "metrics_summary": {
+          "pets_matched_1shot_accuracy": 94.27733333333333,
+          "pets_mismatched_1shot_accuracy": 94.27733333333333,
+          "pets_matched_5shot_accuracy": 98.408,
+          "pets_mismatched_5shot_accuracy": 98.408,
+          "pets_macro_1shot_accuracy": 94.27733333333333
+        },
+        "role": "same_permission_control"
+      },
+      "support_logistic_C10": {
+        "metrics_summary": {
+          "pets_matched_1shot_accuracy": 94.33333333333333,
+          "pets_mismatched_1shot_accuracy": 94.33333333333333,
+          "pets_matched_5shot_accuracy": 98.56266666666667,
+          "pets_mismatched_5shot_accuracy": 98.56266666666667,
+          "pets_macro_1shot_accuracy": 94.33333333333333
+        },
+        "role": "same_permission_control"
+      }
+    },
+    "known_deviations": [
+      "Local frozen R2 transferred to Pets; not a SWAT paper reproduction.",
+      "CS_l2 five-shot is a fixed prespecified extension.",
+      "Repeated tasks quantify conditional fixed-pool variation."
+    ],
+    "contract_id": "r2-pets-transfer-frozen-v1",
+    "primary_metric_id": "pets_matched_1shot_accuracy",
+    "metrics": [
+      {
+        "metric_id": "pets_matched_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_matched_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_matched_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_matched_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_mismatched_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_mismatched_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_mismatched_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_mismatched_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_matched_5shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_matched_5shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_matched_5shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_matched_5shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_mismatched_5shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_mismatched_5shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_mismatched_5shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_mismatched_5shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_macro_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_macro_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_macro_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_macro_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      }
+    ]
+  },
+  "metric_rows": [
+    {
+      "metric_id": "pets_matched_1shot_accuracy",
+      "value": 96.05333333333334,
+      "method": "ilpcz_local",
+      "scope_id": "pets-frozen-gallery-transfer-v1",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json"
+    },
+    {
+      "metric_id": "pets_mismatched_1shot_accuracy",
+      "value": 58.55733333333334,
+      "method": "ilpcz_local",
+      "scope_id": "pets-frozen-gallery-transfer-v1",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json"
+    },
+    {
+      "metric_id": "pets_matched_5shot_accuracy",
+      "value": 97.81866666666667,
+      "method": "ilpcz_local",
+      "scope_id": "pets-frozen-gallery-transfer-v1",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json"
+    },
+    {
+      "metric_id": "pets_mismatched_5shot_accuracy",
+      "value": 92.66933333333334,
+      "method": "ilpcz_local",
+      "scope_id": "pets-frozen-gallery-transfer-v1",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json"
+    },
+    {
+      "metric_id": "pets_macro_1shot_accuracy",
+      "value": 77.30533333333334,
+      "method": "ilpcz_local",
+      "scope_id": "pets-frozen-gallery-transfer-v1",
+      "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json"
+    }
+  ],
+  "results": "Matched1shot96.0533% versusR296.2400%,delta-0.1867pp95%[-0.5920,+0.2000]; versusCS_l2delta-0.2107[-0.6053,+0.1813]. Gain over supportC10+1.7200[1.2799,2.1520] does not beat gallery controls. Mismatch1shot58.5573% vsR293.9307%,delta-35.3733[-36.3573,-34.4160],loss in500/500tasks. Matched5shot97.8187% vsR298.4427%,delta-0.6240[-0.8480,-0.4133]; mismatch5shot92.6693% vsR298.4427%,delta-5.7733[-6.1600,-5.4000]. Newscope macro1shot77.3053% vsR295.0853%,delta-17.78[-18.3254,-17.2560].",
+  "conclusion": "Prespecified independent-domain superiority gate failed. Matched gain exists over support-only logistic but not strong gallery controls; severe mismatch regression rejects robust-replacement claim. Retain historical EuroSAT-local benefit as conditional. No new algorithm or paper-readiness claim.",
+  "evaluation_summary": {
+    "outcome_summary": "Frozen iLPC qualification failed strong matched controls and gallery-mismatch safety.",
+    "evaluation_summary": "All2000tasks audited; five canonical metrics, four controls, paired5000resamples plus seed/breed outcomes.",
+    "claim_update": {
+      "matched_superiority": "not_supported; pairedCIcrosszero vsR2/CS_l2 and upperboundsbelowprecommitted0.5pp",
+      "robust_replacement": "refuted",
+      "benefit_over_support_logistic": "supported_only_for_matched1shot"
+    },
+    "baseline_relation": "R2 comparison anchor and CS_l2/support controls retained; no incumbent promotion. Old7R2/9R4metrics unchanged in their original scopes.",
+    "failure_mode": "direction_underperforming; mismatch pseudolabel propagation harmful, mechanistic causality not established by this comparison alone.",
+    "next_action": "Decision: close this frozen qualification without Pets tuning; choose a structurally distinct route or bounded failure synthesis from retained evidence."
+  },
+  "config_paths": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/protocol.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/run_manifest_ilpc.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/asset_validation.json"
+  ],
+  "changed_files": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/analyze_results.py"
+  ],
+  "evidence_paths": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/REPORT.md",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/analysis.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/validation.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/paired_accuracy.npz",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/ilpc_complete.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/confirmed_comparator.json"
+  ],
+  "notes": [
+    "Confidence intervals condition on fixed image pools and seeds; reused images across tasks are not new independent datasets.",
+    "Exact RGB disjointness only; near duplicates and pretraining independence unproven.",
+    "Local formula-based iLPC-z, not full official-entrypoint reproduction; local frozen R2 is not SWAT.",
+    "No cherry-picked canonical rows:5unique primary metric ids; comparators remain in evidence tables.",
+    "Baseline code and evaluator/protocol unchanged through candidate execution."
+  ]
+}

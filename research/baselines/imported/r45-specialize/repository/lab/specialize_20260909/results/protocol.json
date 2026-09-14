@@ -1,0 +1,160 @@
+{
+  "order": [
+    "r4_whiten",
+    "r4_rank",
+    "r4_diffusion",
+    "r4_ensemble",
+    "r4_top100",
+    "r5_consensus",
+    "r5_median",
+    "r5_variance",
+    "r5_distribution",
+    "r5_support_cv"
+  ],
+  "sources": {
+    "lab/refine_20260909/audit_results.py": "99140e4effed8a06df3ea49294af20382ce3107b16671ac8b7db19aa9cb6ac52",
+    "lab/refine_20260909/r4_geometry.py": "366bd374498a51c495675f475b48ef2a504c093cc2f51ad257731353c9bbd454",
+    "lab/refine_20260909/r4_refine.py": "eceb5bddd5e4b5a13c986827229e5c2f39a4a0288a124a9609c1bfb0a34ac4d8",
+    "lab/refine_20260909/r5_methods.py": "8181708b8b2afa99203050cd62ede703c3792de0529c8dd00468c3a34a694563",
+    "lab/refine_20260909/r5_refine.py": "5636b5ef85971af764fc9cfa578e9a11b471b9890186efd2ea92a1c9656c21ed",
+    "lab/refine_20260909/test_mechanisms.py": "a04879e8f1220ea02b7b74754b61094d32029857f1200d3e19188dccb5e76305",
+    "lab/server_scale_20260909/r5_scale.py": "73789a5ecad3ed665f931ed40aa6b6f7f5a0afae58cff9057865a8039a108c09",
+    "lab/specialize_20260909/PLAN.md": "7c28de10fb8dd58524ccafbf7c5cb5277e76a2612e1e4cfe9d4b6fd27cb67407",
+    "lab/specialize_20260909/audit.py": "da9c906605cf2bca33ef0597b67740a8e566fa16d05b98da84bd9c37c1e716a1",
+    "lab/specialize_20260909/campaign_common.py": "ae9354410540c90ab3eed63eaa4c6cc19c89f25002b4919a2d0496a15976270e",
+    "lab/specialize_20260909/candidates.json": "0366c517e28d5647ef0d39585d274fa04cc050688c3f32805162797602bdf7fe",
+    "lab/specialize_20260909/controller.py": "eff26b6add781e089ef67c4fb98ab768b3954881ac5c28d9f13d6733a31babc7",
+    "lab/specialize_20260909/ideas.md": "116a4657a27761b2a7efbef8ead83cd8dbe210e40b33454f0a0a3c381aff77d6",
+    "lab/specialize_20260909/r4_candidates.py": "01218a6b19f2b5004f7598850d4485f35594f78117b46dbde26901a42be77aac",
+    "lab/specialize_20260909/r5_candidates.py": "4751a1e3e022858505cb39b60608a7ce8f02b82110c01cb053cceff082248e79",
+    "lab/specialize_20260909/run_r4.py": "eed5043cb2bdee2028bc88abfef10dfd05752774f7290ad2008eb833a94f9944",
+    "lab/specialize_20260909/run_r5.py": "4fd55c95fe2c2a1161abafff5108db0c55be5c18be041d065c50a1e21d34c306",
+    "lab/specialize_20260909/test_r4_contracts.py": "c30f7ba1f2f4a4a5da6095b8fa57321188081c1b2c7d71f096a934c4d7fbe3a6",
+    "lab/specialize_20260909/test_r5_contracts.py": "0ca630fa3c1bf317a497692b1998f32cf5077e9e25de6c6c726081e0b344ce56",
+    "研究4——少桥接样本的跨编码器检索/src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "研究4——少桥接样本的跨编码器检索/src/analyze_optimization.py": "6f6885d81ee798e44f9f61eb7eb3ac7c86f98390cd76cfa8d7436ce4b9371c2a",
+    "研究4——少桥接样本的跨编码器检索/src/audit_legacy_controls.py": "3714ecca4711f6fe87668deedc8766c55293801502f11ec9325e594ea90b6a03",
+    "研究4——少桥接样本的跨编码器检索/src/benchmark_optimization.py": "edf5107db15825e149e93e9976d8d898645fa6f9dd06ed3ac43dde15c0fb0ad6",
+    "研究4——少桥接样本的跨编码器检索/src/data.py": "822532c75c2212d8ae81a28f07febf845e1e07f1d8ba62cbf61907e0581ea3e2",
+    "研究4——少桥接样本的跨编码器检索/src/evaluate.py": "87925efadca88e4a9df8fd0d1fbea6dc90b1d3b564a80775273ac63fc0ab9c5e",
+    "研究4——少桥接样本的跨编码器检索/src/holdout.py": "4cd122d42bf9974f9562b8abd01c5b0d10e2edb6046f36abdf5f41b7e7b25283",
+    "研究4——少桥接样本的跨编码器检索/src/improved.py": "d2ee38b5ff3243364137f87bc7fc412850605aace18f0ff3b8ad99170a730f4d",
+    "研究4——少桥接样本的跨编码器检索/src/lab_cli.py": "f61a2fe8b23c29ed505c1a4b1794177adec8cc1424e690b807a149d612ea1213",
+    "研究4——少桥接样本的跨编码器检索/src/lab_data.py": "1c79f01ed03696339375282f79364dc5b00ad1de210d4a9b7958bafba01c863f",
+    "研究4——少桥接样本的跨编码器检索/src/lab_evaluate.py": "e6f16fdefc5fb32eb078770fde0426294759ca01b188dff932c6a48934330c23",
+    "研究4——少桥接样本的跨编码器检索/src/lab_methods.py": "1ff3943740eee0f165f540e7abfc70e0c6d64f2b6370daab089a1c7f52e5d9ad",
+    "研究4——少桥接样本的跨编码器检索/src/lab_metrics.py": "fe9514227590993c9c0c07cf3b8e2215d71ee675948c84e3312f328655bd642d",
+    "研究4——少桥接样本的跨编码器检索/src/methods.py": "3d7044afd1a8dddfb43a5a9c4dda7b91dae6a01e478dc5596beafd94a20b0146",
+    "研究4——少桥接样本的跨编码器检索/src/metrics.py": "391b6776e1fe41716410219a76a2a8f69bf38469722e5f7995f13a67424f43a5",
+    "研究4——少桥接样本的跨编码器检索/src/nextstage.py": "ba6da2bf06a62da24ee53f31ccdfcf1df8b62650eca26e78fd97b54f41c92bb1",
+    "研究4——少桥接样本的跨编码器检索/src/nextstage_worker.py": "9cde90810c728029040c260614c28c90ff4416a126cce532dc63a0f623d2ec7e",
+    "研究4——少桥接样本的跨编码器检索/src/optimize.py": "8e3d0e8efc19b4f0ba6da93bba92dbb4550383d07ebcc25198f8a2fdcb60694e",
+    "研究4——少桥接样本的跨编码器检索/src/repair_holdout.py": "dfdbc6d46d619f8c996fc509b545430119e9c2dedeaececbe214f59593afa299",
+    "研究4——少桥接样本的跨编码器检索/src/small_nextstage.py": "53e246912d486e76d96dad63b41b4b6f1185694dbb82f8faa8db6518617f742b",
+    "研究4——少桥接样本的跨编码器检索/src/worker.py": "ea857a48b1c25d7e5c28a24feb45dc47a7f73c10d13873d27538b3d35b1e114d",
+    "研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/methods.py": "c1e31775e62b7391533f18157eb16a3ec5da019875a6b5c84cd2058f7ed4988b"
+  },
+  "candidates": {
+    "r4_whiten": {
+      "title": "旧图库收缩部分白化",
+      "family": "geometry",
+      "ridge_fraction": 0.1,
+      "power": 0.25,
+      "target": "Oxford/Paris Hard; geometry-only contribution"
+    },
+    "r4_rank": {
+      "title": "高斯秩残差传递",
+      "family": "objective",
+      "alpha": 2.0,
+      "target": "CLIP-B16 to DINO; calibration shift"
+    },
+    "r4_diffusion": {
+      "title": "旧图库图扩散残差",
+      "family": "graph",
+      "neighbors": 16,
+      "temperature": 0.05,
+      "restart": 0.5,
+      "steps": 10,
+      "alpha": 2.0,
+      "target": "Oxford/Paris landmark bridges and Hard queries"
+    },
+    "r4_ensemble": {
+      "title": "桥接子集集成与分歧收缩",
+      "family": "robustness",
+      "members": 8,
+      "fraction": 0.75,
+      "seed": 902109,
+      "alpha": 2.0,
+      "target": "CUB bridges and Holidays negative transfer"
+    },
+    "r4_top100": {
+      "title": "固定旧top100内重排",
+      "family": "ranking_scope",
+      "topk": 100,
+      "alpha": 2.0,
+      "target": "Paris Hard; preserve outside candidate set"
+    },
+    "r5_consensus": {
+      "title": "双编码器一致候选筛选",
+      "family": "candidate_selection",
+      "shot": 1,
+      "topk": 64,
+      "mix": 0.5,
+      "lambda": 0.1,
+      "target": "CUB same-domain fine-grained classification"
+    },
+    "r5_median": {
+      "title": "候选几何中位数聚合",
+      "family": "robust_aggregation",
+      "shot": 1,
+      "topk": 64,
+      "iterations": 8,
+      "mix": 0.5,
+      "lambda": 0.1,
+      "target": "CUB/DTD same-domain contamination"
+    },
+    "r5_variance": {
+      "title": "候选类内方差校正",
+      "family": "local_metric",
+      "shot": 1,
+      "topk": 64,
+      "shrink": 0.5,
+      "power": 0.25,
+      "mix": 0.5,
+      "lambda": 0.1,
+      "target": "EuroSAT/DTD same-domain"
+    },
+    "r5_distribution": {
+      "title": "保留候选分布的加权岭读出",
+      "family": "readout",
+      "shot": 1,
+      "topk": 64,
+      "kept": 16,
+      "pseudo_total_weight_per_class": 1.0,
+      "lambda": 0.1,
+      "target": "CUB/EuroSAT same-domain multi-mode classes"
+    },
+    "r5_support_cv": {
+      "title": "5shot支持集留一法融合校准",
+      "family": "support_calibration",
+      "shot": 5,
+      "weights": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "temperature": 0.1,
+      "shrink_to_equal": 0.5,
+      "lambda": 1.0,
+      "target": "EuroSAT 5shot; no gallery access"
+    }
+  },
+  "physical_gpu": "2",
+  "baseline_commit": "4a54094bf6f95ceff853165767c0b8c5eb7e28a3",
+  "r4_cells_per_candidate": 180,
+  "r5_episodes_per_candidate": 30000,
+  "rule": "User accepts domain-specific improvements; preserve all losses and unadjusted interval caveats",
+  "sequential": true
+}

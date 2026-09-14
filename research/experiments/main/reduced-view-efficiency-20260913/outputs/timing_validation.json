@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "timed_encoder_batches": 40,
+  "repetitions_per_encoder_subset": 5,
+  "positive_timings": true,
+  "median_and_ratio_arithmetic": "independently_recomputed",
+  "benchmark_log": "bash-f5893a8b",
+  "runtime_note": "DINO MPS bicubic interpolation used CPU fallback, same route for all measured view counts."
+}

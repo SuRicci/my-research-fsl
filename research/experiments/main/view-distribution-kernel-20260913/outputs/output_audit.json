@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "independent_score_comparisons": 440,
+  "max_score_error": 2.8199664825478976e-14,
+  "selection_integer_choices_verified": true,
+  "all_output_consistency": true,
+  "historical_scatter_audit_unchanged": "failed1/88",
+  "full_statistics_independent_audit_pending": true
+}

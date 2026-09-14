@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-13T04:24:04.702591+00:00",
+  "active_bash_id": "bash-825ca7da",
+  "science_node": "science-53e01eec",
+  "completed_cell_count": 3,
+  "expected_cell_count": 8,
+  "complete_json_exists": false,
+  "first_actual_validation": "science-c861449b",
+  "first_actual_validation_scope": "Two completed EuroSAT1shot cells:full accuracy aggregates and one independent dense-score task per cell; not full8cell audit.",
+  "first_actual_max_error": 3.832246529000827e-07,
+  "initial_mean_r2_delta_pp": {
+    "dtd_to_eurosat_eurosat_k1": 3.373333333333335,
+    "dtd_to_eurosat_dtd_k1": 3.5360000000000014
+  },
+  "free_gib": 11.072216033935547,
+  "remaining_chunk_file_count": 0,
+  "next_check_seconds": 240,
+  "next_after_completion": "Run frozen output_audit_contract.json command then record auxiliary source report and decision."
+}

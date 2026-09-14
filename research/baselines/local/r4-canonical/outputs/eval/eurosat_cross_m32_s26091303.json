@@ -1,0 +1,11 @@
+{
+  "dataset": "eurosat",
+  "phase": "eval",
+  "policy": "cross",
+  "budget": 32,
+  "seed": 26091303,
+  "npz_sha256": "40b0f8cabeddd5ea35cf74d5e831d8652553e1794ba1b8462e5a9a03d6a1ecdc",
+  "query_count": 100,
+  "gallery_count": 5000,
+  "bridge_count": 32
+}

@@ -1,0 +1,28 @@
+{
+  "updated_at": "2026-09-14T07:22:54.847215+00:00",
+  "idea_id": "idea-0557da70",
+  "decision_id": "decision-f42c1aca",
+  "branch": "run/dino-base-control-20260914",
+  "workspace": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "encoding_session": "bash-8976bba9",
+  "precheck_session": "bash-9ba9c323",
+  "encoding_precheck_session": "bash-72116a7c",
+  "status": "classification_running",
+  "first_progress": {
+    "images_done": 544,
+    "images_total": 14153,
+    "pool": "dtd_query",
+    "pool_done": 544,
+    "seconds": 98.16290211677551,
+    "free_gib": 12.757801055908203
+  },
+  "eta_encoding_hours": 0.6152802314850174,
+  "next": "monitor classification and automatically chained full audit; then auxiliary report/decision",
+  "claim_status": "no measured accuracy yet",
+  "encoding_status": "completed",
+  "encoding_images": 14153,
+  "feature_validation": "passed",
+  "classification_session": "bash-8890632d",
+  "failed_classification_session": "bash-b79cce73",
+  "entrypoint": "common first; exact study.py load via common.module; study.run(); chained full audit"
+}

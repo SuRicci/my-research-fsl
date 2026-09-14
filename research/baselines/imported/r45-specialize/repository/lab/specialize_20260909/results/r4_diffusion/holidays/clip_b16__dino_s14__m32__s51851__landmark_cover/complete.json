@@ -1,0 +1,71 @@
+{
+  "method": "r4_diffusion",
+  "dataset": "holidays",
+  "pair": [
+    "clip_b16",
+    "dino_s14"
+  ],
+  "budget": 32,
+  "seed": 51851,
+  "policy": "landmark_cover",
+  "bridge_ids": [
+    "rparis:gallery:paris_general_000361",
+    "rparis:gallery:paris_sacrecoeur_000224",
+    "rparis:gallery:paris_general_001877",
+    "rparis:gallery:paris_invalides_000700",
+    "roxford:gallery:oxford_002978",
+    "rparis:gallery:paris_pompidou_000374",
+    "roxford:gallery:oxford_000947",
+    "rparis:gallery:paris_general_002241",
+    "rparis:gallery:paris_pantheon_000873",
+    "rparis:gallery:paris_museedorsay_001092",
+    "rparis:gallery:paris_general_001888",
+    "roxford:gallery:oxford_002499",
+    "rparis:gallery:paris_pompidou_000232",
+    "rparis:gallery:paris_pompidou_000262",
+    "rparis:gallery:paris_invalides_000466",
+    "roxford:gallery:new_001062",
+    "roxford:gallery:magdalen_000495",
+    "rparis:gallery:paris_notredame_000386",
+    "rparis:gallery:paris_general_002117",
+    "rparis:gallery:paris_general_001863",
+    "rparis:gallery:paris_museedorsay_000218",
+    "roxford:gallery:christ_church_000141",
+    "rparis:gallery:paris_museedorsay_000230",
+    "rparis:gallery:paris_louvre_000108",
+    "rparis:gallery:paris_general_001871",
+    "roxford:gallery:oxford_002539",
+    "roxford:gallery:magdalen_000279",
+    "roxford:gallery:radcliffe_camera_000268",
+    "roxford:gallery:oxford_001101",
+    "rparis:gallery:paris_invalides_000251",
+    "roxford:gallery:oxford_001239",
+    "rparis:gallery:paris_museedorsay_001017"
+  ],
+  "parent_complete_sha256": "b2afbf42c59d10904f5128e7ba362f18a638c201af738c0ba97b98dfc089ef60",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-followup-20260909/r4_holidays/evaluation/clip_b16__dino_s14__m32__s51851__landmark_cover/predictions.npz",
+      "sha256": "4c9da6f8b9b9fb4ba929e03cbcf91e8d0c019db96b27599506f08769134fc176"
+    }
+  ],
+  "sha256": "5bf97e17384e48f6ae034645a5b5e1e468174b15d0927a5e362bb908d7fd764d",
+  "means": [
+    0.8445989143415862
+  ],
+  "conditions": [
+    "map"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "max_weight_row_sum_error": 4.440892098500626e-16
+  },
+  "seconds": 0.7713198661804199
+}

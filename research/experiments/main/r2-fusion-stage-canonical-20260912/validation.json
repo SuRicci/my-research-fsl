@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "numerical_errors": {
+    "primal_0.1": 9.076073226310655e-15,
+    "fusion_0.0_0.1": 0.0,
+    "fusion_0.5_0.1": 4.440892098500626e-16,
+    "fusion_1.0_0.1": 0.0,
+    "primal_1.0": 7.077671781985373e-16,
+    "fusion_0.0_1.0": 0.0,
+    "fusion_0.5_1.0": 2.7755575615628914e-16,
+    "fusion_1.0_1.0": 0.0,
+    "primal_0.01": 8.681944052568724e-14,
+    "fusion_0.0_0.01": 0.0,
+    "fusion_0.5_0.01": 3.3306690738754696e-16,
+    "fusion_1.0_0.01": 0.0,
+    "primal_0.001": 8.330280909518706e-13,
+    "fusion_0.0_0.001": 0.0,
+    "fusion_0.5_0.001": 2.7755575615628914e-16,
+    "fusion_1.0_0.001": 0.0,
+    "canonical_r2": 0.0,
+    "canonical_early": 1.7881393432617188e-07,
+    "query_independence": 1.7881393432617188e-07,
+    "canonical_endpoint_0.0": 0.0,
+    "canonical_endpoint_1.0": 0.0
+  },
+  "identity_checks": "all eight canonical feature packs sha256 + ids + finiteness; task supports/queries disjoint",
+  "tested_real_tasks": 2,
+  "accuracy_not_used_for_selection": true,
+  "command": "/opt/anaconda3/envs/torch/bin/python validate.py",
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "timestamp": 1789240625.783947
+}

@@ -1,0 +1,47 @@
+{
+  "status": "success",
+  "ok": true,
+  "compile_ok": true,
+  "exit_code": 0,
+  "command": "cd paper/latex && /Library/TeX/texbin/latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build iclr2026_conference.tex",
+  "bash_id": "bash-c660b455",
+  "pdf_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/gallery_transfer_note.pdf",
+  "pdf_sha256": "f4443691720d98d799499d8c9654a524e6527223c13f699afede28dfa22acb6d",
+  "page_count": 9,
+  "log_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/latex/build/iclr2026_conference.log",
+  "warnings": [],
+  "visual_review": {
+    "status": "passed",
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "render_session": "bash-518f6779; updated pages bash-c660b455",
+    "render_glob": "tmp/pdfs/calibration-update/page-*.png",
+    "checks": [
+      "all nine pages inspected",
+      "all seven tables readable",
+      "no clipping, overlaps or missing citations",
+      "appendix-only development boundary"
+    ],
+    "revisions": [
+      "started source-calibration appendix on its own page to avoid an isolated final paragraph"
+    ]
+  },
+  "failed_attempts": [
+    {
+      "bash_id": "bash-096ac671",
+      "reason": "unescaped percentage sign in generated table header",
+      "resolved": true
+    }
+  ],
+  "updated_at": "2026-09-13T00:22:52.403295+00:00",
+  "front_check_note": "The first compile command used the wrong directory for its preceding Python audit; latexmk itself succeeded. The omitted audit was rerun successfully in bash-38fc7087."
+}

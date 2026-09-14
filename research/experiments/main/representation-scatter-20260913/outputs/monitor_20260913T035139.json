@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-13T03:51:39.494224+00:00",
+  "extraction_session": "bash-4927f933",
+  "audit_session": "bash-5e68002d",
+  "audit_snapshot": "experiments/main/representation-scatter-20260913/outputs/cache_integrity_20260913T035033.json",
+  "audit_scope": "four completed CLIP caches in frozen manifest snapshot",
+  "validated_cache_count": 4,
+  "validated_image_encoder_pairs": 14153,
+  "frozen_file_count": 15,
+  "manifest_complete_cache_count": 5,
+  "latest_progress": {
+    "status": "running",
+    "backbone": "dinov2_vits14",
+    "pool": "dtd_gallery",
+    "images_done": 416,
+    "pool_size": 1876,
+    "elapsed_seconds": 3613.978152036667,
+    "free_gib": 11.221332550048828
+  },
+  "free_gib": 11.221309661865234,
+  "completed_audited_pool_chunk_dirs_absent": {
+    "dtd_query_clip_vitb16": true,
+    "dtd_gallery_clip_vitb16": true,
+    "eurosat_query_clip_vitb16": true,
+    "eurosat_gallery_clip_vitb16": true
+  },
+  "manual_cleanup_bytes": 0,
+  "new_accuracy_result": false,
+  "next_check_seconds": 240,
+  "decision": "retain decision-26360c22; evaluation requires all eight caches and encoding_complete=true"
+}

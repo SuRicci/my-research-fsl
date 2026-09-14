@@ -1,0 +1,66 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-b835005e",
+  "id": "report-b835005e",
+  "quest_id": "012",
+  "created_at": "2026-09-12T21:43:47+00:00",
+  "updated_at": "2026-09-12T21:43:47+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-c947222c"
+  },
+  "status": "completed",
+  "branch": "run/fsl-pets-transfer-20260913",
+  "head_commit": "79bd69dfbf5b2ae72dbfd7d7981c135b2ea64462",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913",
+  "workspace_rel_path": ".ds/worktrees/fsl-pets-transfer-20260913",
+  "report_type": "analysis_lite",
+  "title": "Pets failure breadth and selected-label contamination",
+  "parent_run_id": "fsl-pets-transfer-20260913",
+  "parent_run_artifact_id": "run-cb50d2d5",
+  "paper_role": "reference_only",
+  "paper_role_reason": "Pre-outline negative evidence for route selection; no selected paper contract yet.",
+  "research_question": "Are transfer losses isolated to a few breeds or associated with broad pseudo-label contamination?",
+  "intervention": "None; reuse all2000fixed predictions and selected indices. Gallery labels accessed only after evaluation for diagnosis.",
+  "fixed_conditions": "All parent tasks/features/predictions/controls unchanged; exact label namespaces kept distinct.",
+  "findings": "Mismatch losses cover all37breeds in1/5shot. Matched1shot selected labels contain80.0118%outsideepisodeclasses, but96.2236%correct labels among in-episode selections. Mismatch retains1769.42galleryitems/task entirely outsidePets. Numerical residual<=1.2879e-14 and independently replayed heads exact.",
+  "claim_update": "Failure is broad and selected-gallery relevance remains unresolved. This does not prove contamination causally explains query performance or validate any new selector.",
+  "comparability": "Same fixed parent comparison; diagnostics do not replace canonical metrics or constitute new test data.",
+  "evidence_paths": [
+    "experiments/analysis/pets-failure-coverage/analysis.json",
+    "experiments/analysis/pets-failure-coverage/REPORT.md",
+    "experiments/analysis/pets-failure-coverage/analyze.py",
+    "experiments/main/fsl-pets-transfer-20260913/outputs/validation.json"
+  ],
+  "next_stage": "idea",
+  "next_action": "Reframe around strong-gallery-control residual gap; compare at most3structurallydistinct routes with fresh literature and a prospective independent qualification plan.",
+  "run_id": "run-c947222c",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:analysis_lite:none:0d344ca231ad5d22c5bd3f422da2868e686b28dd018a4dc7d7b4b32aa2987753",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-b835005e",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

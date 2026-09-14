@@ -1,0 +1,80 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-aa925b38",
+  "id": "report-aa925b38",
+  "quest_id": "012",
+  "created_at": "2026-09-13T05:42:10+00:00",
+  "updated_at": "2026-09-13T05:42:10+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-ccbd8eaf"
+  },
+  "status": "completed",
+  "branch": "run/learned-aggregation-order-20260913",
+  "head_commit": "b3e81ad162725d74ecd44a1775479490a75ec8ce",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_source_experiment",
+  "title": "Learned aggregation order: audited source qualification failure",
+  "summary": "24matched-source heads and2000unique evaluationepisodes; allnew audits pass, fixed transfer gate fails. No canonical Pets result.",
+  "idea_id": "idea-aea8951a",
+  "actual_research_branch": "run/learned-aggregation-order-20260913",
+  "compute_node_id": "science-1b8c2b4b",
+  "validation_node_id": "science-d78d954d",
+  "metrics_summary": {
+    "eurosat_1shot_before_minus_after_pp": -0.15733333333333271,
+    "dtd_1shot_before_minus_after_pp": 0.17066666666666677,
+    "independent_episodes": 192,
+    "checkpoint_rank_checks": 96,
+    "statistic_checks": 150
+  },
+  "metric_contract": {
+    "scope": "auxiliary_exposed_DTD_EuroSAT_development",
+    "canonical_target_metrics_measured": false,
+    "training_seed_estimand": "mean accuracy not ensemble",
+    "baseline_id_retained": "r2-pets-transfer"
+  },
+  "evaluation_summary": {
+    "outcome": "refuted_fixed_recipe",
+    "claim_update": "No robust aggregation-order benefit; no general impossibility claim",
+    "baseline_relation": "Canonical five Pets metrics unchanged; auxiliary result uses distinct metric ids",
+    "failure_mode": "direction_underperforming",
+    "validation": "passed192scoretask/96checkpoint/150statistics; historicalscatterfailurepreserved",
+    "next_action": "idea: source-selected reduced-view accuracy/encoding-cost frontier"
+  },
+  "evidence_paths": [
+    "experiments/main/learned-aggregation-order-20260913/REPORT.md",
+    "experiments/main/learned-aggregation-order-20260913/outputs/complete.json",
+    "experiments/main/learned-aggregation-order-20260913/outputs/independent_audit.json",
+    "experiments/main/learned-aggregation-order-20260913/outputs/analysis.json"
+  ],
+  "run_id": "run-ccbd8eaf",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:auxiliary_source_experiment:none:5471facc4fdfd85e643c2edbff8c1800ab7033f15cdad278df91729860f359fd",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-aa925b38",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

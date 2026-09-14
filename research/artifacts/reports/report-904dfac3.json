@@ -1,0 +1,57 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-904dfac3",
+  "id": "report-904dfac3",
+  "quest_id": "012",
+  "created_at": "2026-09-14T03:09:39+00:00",
+  "updated_at": "2026-09-14T03:09:39+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-16a2dd4d"
+  },
+  "status": "completed",
+  "branch": "run/dino-depth-readout-20260914",
+  "head_commit": "fdc404edf7ef52ee4539d76a0114cd6ebcf23ddc",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "independent_contribution_review",
+  "title": "Narrow manuscript supported; source selection precision remains a bounded trust gap",
+  "summary": "Current 326 table values pass; four manuscript groups and38reference-only histories. Retained source77.374% is conditional development and Caltech superiority fails. Old source numerical failure is one unselected gamma case with unchanged predictions, but narrow source selection margins justify a full one-shot float64 source-count audit. No manuscript rewrite, target rerun or promotion.",
+  "evidence_paths": [
+    ".ds/worktrees/oslo-gallery-pets-20260913/paper/review/review.md",
+    ".ds/worktrees/oslo-gallery-pets-20260913/paper/review/evidence_inventory.json",
+    ".ds/worktrees/oslo-gallery-pets-20260913/paper/review/contribution_audit_20260914.json"
+  ],
+  "next_stage": "analysis-campaign",
+  "paper_role": "reference_only",
+  "claim_scope": "Current manuscript C1-C4 unchanged; no submission endorsement",
+  "run_id": "run-16a2dd4d",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:independent_contribution_review:none:0c127f93003df896736643a4456fa08ac6631fee851178e5e84d5655defbec1e",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-904dfac3",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

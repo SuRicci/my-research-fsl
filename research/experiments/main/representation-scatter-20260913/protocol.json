@@ -1,0 +1,97 @@
+{
+  "run_id": "representation-scatter-20260913",
+  "idea_id": "idea-503deb34",
+  "decision_id": "decision-26360c22",
+  "tier": "auxiliary/dev",
+  "source_domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "asset_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets",
+  "encoder_root": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay",
+  "views": [
+    "original_resize224_centercrop224",
+    "resize256_top_left224",
+    "resize256_top_right224",
+    "resize256_bottom_left224",
+    "resize256_bottom_right224",
+    "resize256_center224"
+  ],
+  "interpolation": "PIL bicubic; torchvision integer Resize preserves aspect ratio",
+  "feature_fusion_weight": 0.5,
+  "shots": [
+    1,
+    5
+  ],
+  "ways": 5,
+  "queries_per_class": 15,
+  "source_5shot_query_count": 13,
+  "selection_seed": 26091362,
+  "image_split_seed": 26091340,
+  "selection_episodes": 100,
+  "eval_seeds": [
+    26091371,
+    26091372,
+    26091373,
+    26091374,
+    26091375
+  ],
+  "episodes_per_seed": 100,
+  "gallery_conditions": [
+    "matched",
+    "mismatched"
+  ],
+  "gamma_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "gamma_selection": "mean accuracy on fixed opposite-domain selection tasks, matched and mismatched galleries equally weighted; ties smallest gamma; no evaluation-target choices",
+  "methods": [
+    "original_r2",
+    "mean_r2",
+    "medoid_r2",
+    "score_ensemble_r2",
+    "mean_logistic_C1",
+    "mean_logistic_C10",
+    "augmented_support_ridge",
+    "scatter_r2"
+  ],
+  "scatter": "support-only mean-centered six-view residuals; T=(I+gamma*d*C/trace(C))^-1/2; apply to image view means then L2; R2 head unchanged",
+  "augmented_support_ridge": "centered ridge using all6support views with weight1/6 each; lambda0.1for1shot,1for5shot; query mean",
+  "gate": {
+    "both_directions": true,
+    "macro_gain_pp": 0.5,
+    "macro_ci_lower_pp": 0,
+    "all_cell_ci_lower_min_pp": -0.5,
+    "all_equal_budget_controls": true,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26091359
+  },
+  "permissions": {
+    "query_batch_adaptation": false,
+    "encoder_training": false,
+    "class_names": false,
+    "target_gallery_labels": false,
+    "scatter_estimation": "support views only",
+    "same_views_all_roles": true
+  },
+  "resources": {
+    "free_gib_min": 10,
+    "added_gib_max": 0.5,
+    "deadline_utc": "2026-09-15T09:00:00+00:00",
+    "local_only": true,
+    "spend": 0,
+    "cpu_threads": 6,
+    "image_batch": 32,
+    "encoding_workers": 6
+  },
+  "metric_boundary": "Source qualification only; required five Pets metric ids remain unchanged and unmeasured. Promotion requires new explicit six-view comparator variant before full Pets tests; Caltech untouched. No canonical main score from source cells.",
+  "pre_outcome_amendments": [
+    {
+      "reason": "Distinct crop coordinates need not imply different pixels in repetitive textures. First DTD banded images produced4unique pixel views at6distinct transformations; geometric checks pass. Preserve all fixed views and report complete pixel-uniqueness histogram. No model/classifier outcomes observed; no view selected by content.",
+      "failed_check": "bash-70dfad09",
+      "diagnosis": "bash-c5ce73f0"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "reviewed_before_classification",
+  "timestamp": "2026-09-14T01:39:14.616197+00:00",
+  "files": {
+    "experiments/main/dino-depth-readout-20260914/study.py": "89dfa3259e9e92976e7014bcfa7d20fd3f7d2bf755188bb0f02eba0e6a6df362",
+    "experiments/main/dino-depth-readout-20260914/audit.py": "624335b8ef99cd87d799510489251fb6e9b085108aaa2a2f69a613742797012b",
+    "experiments/main/dino-depth-readout-20260914/protocol.json": "ec521d4d8ddf40235033e6039e031ef9e8202a28dd2b6fc9987a77253abd71dd"
+  },
+  "checks": [
+    "Feature energy remains half per encoder with DINO energy divided equally among four normalized CLS blocks.",
+    "Gamma scales by 896/d so repeated-final features remain an exact isometric null.",
+    "All 2000 task-gallery conditions will compare retained final-layer scores to the same stored reference before accepting new scores.",
+    "All controls and layer weights fixed before outcomes; 1000 unique tasks, gallery replicates averaged within task for bootstrap.",
+    "Independent primary formula audit is four prespecified real cases; arithmetic and task-label audit covers all predictions. Logistic solver is not independently reimplemented."
+  ],
+  "open_evidence": [
+    "Encoding still running; full identity and final-layer parity are checked during extraction.",
+    "No new classification measurements yet; no accuracy or novelty conclusion."
+  ],
+  "storage_change": {
+    "ignored_npy_rule": "/experiments/main/dino-depth-readout-20260914/assets/*.npy",
+    "removed_from_index_only": [
+      "experiments/main/dino-depth-readout-20260914/assets/dtd_query.partial.npy"
+    ],
+    "local_files_deleted": false,
+    "history_rewritten": false
+  },
+  "plan_layout": "Canonical quest_root/plan.md is the Research Map; current workspace PLAN.md is active node contract. In this case-insensitive workspace PLAN.md and plan.md alias, so never write a second map there."
+}

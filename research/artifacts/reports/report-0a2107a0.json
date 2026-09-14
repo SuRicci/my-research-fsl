@@ -1,0 +1,76 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-0a2107a0",
+  "id": "report-0a2107a0",
+  "quest_id": "012",
+  "created_at": "2026-09-13T07:24:04+00:00",
+  "updated_at": "2026-09-13T07:24:04+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-60ebd1df"
+  },
+  "status": "completed",
+  "branch": "run/source-composition-20260913",
+  "head_commit": "77bbf01ea358af5bf3ac81e444629d9709525a4e",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "source_composition_qualification",
+  "title": "三组等训练预算的源数据组成实验：局部收益通过复核，强对照门槛失败",
+  "idea_id": "idea-f7d886cd",
+  "summary": "36 fits, 30.03s; mixed-original +0.6329/+0.8889pp, mixed-zero -0.8951/-5.1778pp; 324 independent scores and60paired statistics verified.13 temporary indexes losslessly compressed,saving43,557,790bytes.",
+  "evidence_paths": [
+    "experiments/main/source-composition-20260913/REPORT.md",
+    "experiments/main/source-composition-20260913/outputs/closure_receipt.json",
+    "experiments/main/source-composition-20260913/outputs/independent_audit.json",
+    "experiments/main/source-composition-20260913/outputs/selection_failure_breakdown.json",
+    "artifacts/reports/source-composition-cleanup-20260913.json"
+  ],
+  "metrics_summary": {
+    "dtd_to_eurosat_mixed_minus_original_pp": 0.6328888888888892,
+    "eurosat_to_dtd_mixed_minus_original_pp": 0.8888888888888894,
+    "dtd_to_eurosat_mixed_minus_zero_pp": -0.8951111111111111,
+    "eurosat_to_dtd_mixed_minus_zero_pp": -5.177777777777778
+  },
+  "comparison_boundary": "Auxiliary exposed-development qualification, not a canonical main target result. No measured Pets metrics; no overwriting or relabeling of mandatory baseline metrics.",
+  "evaluation_summary": {
+    "claim_update": "conditional mixed-original benefit supported; superiority to fixed and strong references refuted",
+    "baseline_relation": "same oneview inputs for local references, additional source supervised training explicit; no canonical target result",
+    "failure_mode": "direction_underperforming",
+    "next_action": "Task/domain-conditioned representation headroom audit before new route",
+    "results": "36models;1602000predictions;324scorecases;60statistics;fullaudit passed",
+    "conclusion": "Reject fixed source-mixture promotion"
+  },
+  "science_nodes": [
+    "science-135c0c51",
+    "science-eb2ba2c6"
+  ],
+  "run_id": "run-60ebd1df",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:source_composition_qualification:none:3ba32fbb778abbcd5781d77cc56558e0fd7e0ae93d03799bb28b68878595ad90",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-0a2107a0",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

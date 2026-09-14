@@ -1,0 +1,7 @@
+{
+  "pets_matched_1shot_accuracy": 96.24,
+  "pets_mismatched_1shot_accuracy": 93.93066666666667,
+  "pets_matched_5shot_accuracy": 98.44266666666668,
+  "pets_mismatched_5shot_accuracy": 98.44266666666668,
+  "pets_macro_1shot_accuracy": 95.08533333333332
+}

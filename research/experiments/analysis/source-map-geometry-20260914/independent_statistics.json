@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "correlation_checks": 48,
+  "maximum_abs_error": 1.1213252548714081e-14,
+  "models": 36,
+  "nonzero_models": 30,
+  "input_hashes_unchanged": true,
+  "pair_bound_checks": true,
+  "numeric_cases": 108,
+  "formula": "sample covariance correlations and analytic partial correlation; independent of primary lstsq projection",
+  "boundary": "no inference p-values;6-9selectednonzero models per source/shot, repeated datasets, observational only"
+}

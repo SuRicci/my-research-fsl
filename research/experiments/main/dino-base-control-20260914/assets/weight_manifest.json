@@ -1,0 +1,8 @@
+{
+  "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_pretrain.pth",
+  "bytes": 346378731,
+  "sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "seconds": 336.55987191200256,
+  "license": "Apache-2.0 per archived official modelcard",
+  "status": "downloaded"
+}

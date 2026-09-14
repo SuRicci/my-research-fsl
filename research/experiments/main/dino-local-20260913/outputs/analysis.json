@@ -1,0 +1,247 @@
+{
+  "scope": "Source development qualification only; all five canonical Pets metrics unchanged/unmeasured. No main-test submission.",
+  "cells": {
+    "dtd_dtd": {
+      "accuracy_pct": {
+        "parent": 80.01066666666667,
+        "patch": 74.11999999999999,
+        "fusion": 78.57066666666667,
+        "mean_fusion": 78.46133333333334,
+        "shuffled_fusion": 49.06933333333333
+      },
+      "comparisons": {
+        "parent": {
+          "delta_pp": -1.4399999999999997,
+          "ci95_pp": [
+            -1.752,
+            -1.1386666666666667
+          ]
+        },
+        "mean_fusion": {
+          "delta_pp": 0.10933333333333342,
+          "ci95_pp": [
+            0.0026666666666669016,
+            0.21866666666666684
+          ]
+        },
+        "shuffled_fusion": {
+          "delta_pp": 29.501333333333328,
+          "ci95_pp": [
+            28.506666666666668,
+            30.536066666666667
+          ]
+        }
+      },
+      "repairs": 792,
+      "spoils": 1332
+    },
+    "dtd_eurosat": {
+      "accuracy_pct": {
+        "parent": 76.30399999999999,
+        "patch": 74.11999999999999,
+        "fusion": 76.52533333333334,
+        "mean_fusion": 76.376,
+        "shuffled_fusion": 45.168
+      },
+      "comparisons": {
+        "parent": {
+          "delta_pp": 0.22133333333333305,
+          "ci95_pp": [
+            -0.1013333333333334,
+            0.5466666666666665
+          ]
+        },
+        "mean_fusion": {
+          "delta_pp": 0.14933333333333337,
+          "ci95_pp": [
+            0.03733333333333337,
+            0.25873333333333254
+          ]
+        },
+        "shuffled_fusion": {
+          "delta_pp": 31.357333333333333,
+          "ci95_pp": [
+            30.373333333333335,
+            32.408
+          ]
+        }
+      },
+      "repairs": 1155,
+      "spoils": 1072
+    },
+    "eurosat_dtd": {
+      "accuracy_pct": {
+        "parent": 73.48533333333333,
+        "patch": 64.83733333333333,
+        "fusion": 71.75466666666667,
+        "mean_fusion": 71.85866666666666,
+        "shuffled_fusion": 48.152
+      },
+      "comparisons": {
+        "parent": {
+          "delta_pp": -1.7306666666666668,
+          "ci95_pp": [
+            -2.1094000000000004,
+            -1.354666666666667
+          ]
+        },
+        "mean_fusion": {
+          "delta_pp": -0.10400000000000009,
+          "ci95_pp": [
+            -0.22666666666666677,
+            0.023999999999999928
+          ]
+        },
+        "shuffled_fusion": {
+          "delta_pp": 23.602666666666664,
+          "ci95_pp": [
+            22.602666666666664,
+            24.616
+          ]
+        }
+      },
+      "repairs": 1165,
+      "spoils": 1814
+    },
+    "eurosat_eurosat": {
+      "accuracy_pct": {
+        "parent": 79.696,
+        "patch": 64.83733333333333,
+        "fusion": 76.29333333333334,
+        "mean_fusion": 76.312,
+        "shuffled_fusion": 53.312000000000005
+      },
+      "comparisons": {
+        "parent": {
+          "delta_pp": -3.402666666666667,
+          "ci95_pp": [
+            -3.802733333333334,
+            -3.0160000000000005
+          ]
+        },
+        "mean_fusion": {
+          "delta_pp": -0.01866666666666679,
+          "ci95_pp": [
+            -0.12800000000000003,
+            0.09073333333333247
+          ]
+        },
+        "shuffled_fusion": {
+          "delta_pp": 22.981333333333335,
+          "ci95_pp": [
+            22.03733333333333,
+            23.930666666666664
+          ]
+        }
+      },
+      "repairs": 849,
+      "spoils": 2125
+    }
+  },
+  "domains": {
+    "dtd": {
+      "accuracy_pct": {
+        "parent": 78.15733333333333,
+        "patch": 74.11999999999999,
+        "fusion": 77.548,
+        "mean_fusion": 77.41866666666667,
+        "shuffled_fusion": 47.11866666666666
+      },
+      "comparisons": {
+        "parent": {
+          "delta_pp": -0.6093333333333331,
+          "ci95_pp": [
+            -0.8906666666666662,
+            -0.3386666666666666
+          ]
+        },
+        "mean_fusion": {
+          "delta_pp": 0.12933333333333322,
+          "ci95_pp": [
+            0.04533333333333359,
+            0.21733333333333335
+          ]
+        },
+        "shuffled_fusion": {
+          "delta_pp": 30.429333333333332,
+          "ci95_pp": [
+            29.46666666666667,
+            31.444
+          ]
+        }
+      }
+    },
+    "eurosat": {
+      "accuracy_pct": {
+        "parent": 76.59066666666666,
+        "patch": 64.83733333333333,
+        "fusion": 74.024,
+        "mean_fusion": 74.08533333333332,
+        "shuffled_fusion": 50.73200000000001
+      },
+      "comparisons": {
+        "parent": {
+          "delta_pp": -2.566666666666667,
+          "ci95_pp": [
+            -2.912,
+            -2.234666666666667
+          ]
+        },
+        "mean_fusion": {
+          "delta_pp": -0.06133333333333349,
+          "ci95_pp": [
+            -0.15066666666666667,
+            0.0320000000000001
+          ]
+        },
+        "shuffled_fusion": {
+          "delta_pp": 23.292,
+          "ci95_pp": [
+            22.349333333333337,
+            24.226666666666667
+          ]
+        }
+      }
+    }
+  },
+  "pooled": {
+    "parent": {
+      "delta_pp": -1.5879999999999999,
+      "ci95_pp": [
+        -1.8066833333333334,
+        -1.366
+      ]
+    },
+    "mean_fusion": {
+      "delta_pp": 0.033999999999999864,
+      "ci95_pp": [
+        -0.03000000000000003,
+        0.0973333333333332
+      ]
+    },
+    "shuffled_fusion": {
+      "delta_pp": 26.860666666666667,
+      "ci95_pp": [
+        26.171933333333335,
+        27.548066666666664
+      ]
+    }
+  },
+  "accuracy_pct": {
+    "parent": 77.374,
+    "patch": 69.47866666666667,
+    "fusion": 75.786,
+    "mean_fusion": 75.752,
+    "shuffled_fusion": 48.925333333333334
+  },
+  "gate": {
+    "passed": false,
+    "tests": {
+      "increment": false,
+      "positive_ci": false,
+      "domains": false,
+      "cells": false,
+      "controls": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "primary_source_hashes_unchanged": true,
+  "unique_ledger_items": 19,
+  "primary_groups": 3,
+  "development_groups": 1,
+  "reference_only_groups": 15,
+  "accuracy_values_checked": 152,
+  "all_citation_keys_resolve": true,
+  "reference_count": 10,
+  "table_count": 7,
+  "numeric_boundary": "Paired intervals and gate read from locked analysis/protocol; conditional fixed-pool uncertainty.",
+  "visual_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "compile_warnings": [],
+  "pdf_sha256": "f4443691720d98d799499d8c9654a524e6527223c13f699afede28dfa22acb6d",
+  "updated_at": "2026-09-13T00:22:52.403295+00:00"
+}

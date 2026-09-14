@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "dim": 13,
+      "eta": 0,
+      "family": "consistency",
+      "error": 4.996003610813204e-16
+    },
+    {
+      "dim": 13,
+      "eta": 0,
+      "family": "isotropic",
+      "error": 4.996003610813204e-16
+    },
+    {
+      "dim": 13,
+      "eta": 0.1,
+      "family": "consistency",
+      "error": 6.106226635438361e-16
+    },
+    {
+      "dim": 13,
+      "eta": 0.1,
+      "family": "isotropic",
+      "error": 5.551115123125783e-16
+    },
+    {
+      "dim": 13,
+      "eta": 1,
+      "family": "consistency",
+      "error": 3.885780586188048e-16
+    },
+    {
+      "dim": 13,
+      "eta": 1,
+      "family": "isotropic",
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "dim": 13,
+      "eta": 10,
+      "family": "consistency",
+      "error": 6.661338147750939e-16
+    },
+    {
+      "dim": 13,
+      "eta": 10,
+      "family": "isotropic",
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "dim": 896,
+      "eta": 0,
+      "family": "consistency",
+      "error": 1.942890293094024e-16
+    },
+    {
+      "dim": 896,
+      "eta": 0,
+      "family": "isotropic",
+      "error": 1.942890293094024e-16
+    },
+    {
+      "dim": 896,
+      "eta": 0.1,
+      "family": "consistency",
+      "error": 1.942890293094024e-16
+    },
+    {
+      "dim": 896,
+      "eta": 0.1,
+      "family": "isotropic",
+      "error": 1.6653345369377348e-16
+    },
+    {
+      "dim": 896,
+      "eta": 1,
+      "family": "consistency",
+      "error": 1.3877787807814457e-16
+    },
+    {
+      "dim": 896,
+      "eta": 1,
+      "family": "isotropic",
+      "error": 1.942890293094024e-16
+    },
+    {
+      "dim": 896,
+      "eta": 10,
+      "family": "consistency",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "dim": 896,
+      "eta": 10,
+      "family": "isotropic",
+      "error": 1.6653345369377348e-16
+    }
+  ],
+  "max_dense_error": 6.661338147750939e-16,
+  "invariances": [
+    "eta0",
+    "repeated_views",
+    "class_permutation",
+    "query_partition",
+    "query_order",
+    "view_permutation"
+  ],
+  "distinct_from_parent_and_view_mean": true,
+  "complete_parent_score_parity": true,
+  "seconds": 2.0818769931793213
+}

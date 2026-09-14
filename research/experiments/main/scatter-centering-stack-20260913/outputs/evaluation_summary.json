@@ -1,0 +1,19 @@
+{
+  "result": "supported_increment_vs_meanCS_partial_full_stack",
+  "claim_update": {
+    "supported": "pooledincrement+1.648ppvsmeanCS",
+    "partial": "stackversusscatteralone;domain/cellgatefails",
+    "refuted": "positiveinteractionnotestablished;fullpromotiongatefalse"
+  },
+  "baseline_relation": "canonicalPetsunchanged;commonprecisionpairedmeanCSreference",
+  "failure_mode": "direction_underperforming_in_DTD_mismatch_vs_scatter;five-shotpenaltyconfoundresolved",
+  "next_action": "one-shot neighborselection versusfeaturegeometry attribution",
+  "metrics_summary": {
+    "dev_macro1shot_scatter_cs_accuracy": 77.188,
+    "dev_macro1shot_mean_cs_accuracy": 75.54,
+    "dev_macro1shot_increment_pp": 1.648,
+    "dev_macro5shot_scatter_cs_accuracy": 91.36533333333333,
+    "dev_macro5shot_scatter_raw_lam01_accuracy": 91.59066666666666
+  },
+  "scope": "auxiliary/dev;notcanonicalPetsmainresult"
+}

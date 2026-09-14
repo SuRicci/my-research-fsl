@@ -1,0 +1,18 @@
+\section{Method: a gallery-only transfer}
+An episode contains $C=5$ classes, $k$ labeled examples per class, and a fixed gallery of $N$ unlabeled features. CLIP and DINOv2 embeddings \citep{clip,dinov2} are normalized and fused with equal contribution without updating either encoder. Support and gallery jointly determine a centering vector, followed by feature normalization. Queries do not contribute to these operations. Let $s_{ci}$ and $g_j$ denote transformed support and gallery features.
+
+Initial prototypes are $\mu_c^{(0)}=k^{-1}\sum_i s_{ci}$ and class assignments start uniformly. In each of two source-default updates, cosine logits $\ell_{jc}$ are computed against normalized current prototypes, followed by
+\begin{align}
+ \xi_j &= \sigma\!\left(\lambda_s^{-1}\sum_c z_{jc}\ell_{jc}\right),&
+ z_{jc} &= \operatorname{softmax}_c(\xi_j\ell_{jc}/\lambda_z),\\
+ w_{jc} &= \xi_j z_{jc},&
+ \mu_c &= \frac{k\mu_c^{(0)}+\sum_jw_{jc}g_j}{k+\sum_jw_{jc}},
+\end{align}
+where $\lambda_s=0.05$, $\lambda_z=0.1$, and the inlier update uses the preceding assignments. Each query is centered with the fitted vector, normalized and classified by cosine similarity to final prototypes.
+
+The closed-set ablation replaces $\xi_j$ by one in the assignment and prototype updates. Zero update retains support-and-gallery centering but predicts with initial support prototypes; it is not a wholly gallery-free baseline. Gallery labels are absent from eligible inference interfaces.
+
+\subsection{Weight accounting and interventions}
+Let $M_c=\sum_jw_{jc}$ be final gallery mass and $\rho_c=M_c/(k+M_c)$ its fraction of the unnormalized support-plus-gallery average. We also inspect the fraction of gallery weight on classes outside the episode. True labels enter only this retrospective accounting. Feature directions and final cosine normalization prevent treating these scalar coefficients as causal importance scores.
+
+Mass balancing replaces nonzero weights by $kw_{jc}/M_c$, matching total gallery mass to support mass. Oracle composition removes examples whose true class is outside the episode, retaining the earlier fitted weights for all remaining examples. It does not remove wrong assignments among episode classes. A combined intervention filters then balances; zero remaining mass falls back to the support prototype. Centering and all preceding updates stay fixed. These interventions were defined after the main result and are explanatory diagnostics, not prospectively qualified predictors.

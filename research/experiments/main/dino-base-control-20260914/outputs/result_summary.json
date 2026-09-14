@@ -1,0 +1,494 @@
+{
+  "updated_at": "2026-09-14T08:33:24.324810+00:00",
+  "tier": "auxiliary/dev",
+  "idea_id": "idea-0557da70",
+  "branch": "run/dino-base-control-20260914",
+  "evaluation_summary": {
+    "outcome": "fixed promotion gate failed; valid positive development effects remain",
+    "claim_update": "No robust superiority over retained small-backbone incumbent; no new target or novel-algorithm claim",
+    "baseline_relation": "separate source-only auxiliary control; five accepted Pets metrics unchanged and unmeasured",
+    "failure_mode": "direction_underperforming: +0.224 pp versus retained incumbent, CI crosses zero and below +0.5 pp margin",
+    "next_action": "reject fixed recipe promotion without resweep; evaluate one structurally different mechanism feasibility versus scoped synthesis",
+    "evidence_tier": "auxiliary/dev; fixed exposed source pools, conditional task bootstrap"
+  },
+  "pooled_accuracy_pct": {
+    "base_consistency": 77.59800000000001,
+    "base_scatter": 77.56866666666667,
+    "base_mean_r2": 75.25999999999999,
+    "base_mean_CS": 75.53333333333333,
+    "base_support_ridge": 74.01733333333334,
+    "base_logistic_C1": 73.33866666666665,
+    "base_logistic_C10": 73.73733333333334,
+    "base_augmented_ridge": 74.41333333333333,
+    "small_consistency": 77.374
+  },
+  "analysis": {
+    "status": "computed",
+    "gate_passed": false,
+    "domains": {
+      "dtd": {
+        "accuracy_pct": {
+          "base_consistency": 78.25066666666667,
+          "base_scatter": 78.192,
+          "base_mean_r2": 78.06533333333333,
+          "base_mean_CS": 77.868,
+          "base_support_ridge": 76.85066666666667,
+          "base_logistic_C1": 76.87733333333333,
+          "base_logistic_C10": 76.75999999999999,
+          "base_augmented_ridge": 76.83466666666666,
+          "small_consistency": 78.15733333333333
+        },
+        "comparisons": {
+          "base_mean_r2": {
+            "delta_pp": 0.18533333333333352,
+            "ci95_pp": [
+              0.02400000000000002,
+              0.3426666666666667
+            ]
+          },
+          "base_mean_CS": {
+            "delta_pp": 0.3826666666666669,
+            "ci95_pp": [
+              0.210666666666667,
+              0.5559999999999997
+            ]
+          },
+          "base_support_ridge": {
+            "delta_pp": 1.4000000000000004,
+            "ci95_pp": [
+              1.1013333333333337,
+              1.6999999999999997
+            ]
+          },
+          "base_logistic_C1": {
+            "delta_pp": 1.3733333333333333,
+            "ci95_pp": [
+              1.061333333333334,
+              1.6946999999999997
+            ]
+          },
+          "base_logistic_C10": {
+            "delta_pp": 1.4906666666666668,
+            "ci95_pp": [
+              1.149333333333334,
+              1.8333333333333333
+            ]
+          },
+          "base_augmented_ridge": {
+            "delta_pp": 1.4160000000000001,
+            "ci95_pp": [
+              1.124,
+              1.717333333333333
+            ]
+          },
+          "small_consistency": {
+            "delta_pp": 0.09333333333333393,
+            "ci95_pp": [
+              -0.27999999999999947,
+              0.4520000000000003
+            ]
+          }
+        },
+        "parent_increment": {
+          "delta_pp": 0.058666666666666825,
+          "ci95_pp": [
+            0.006666666666666742,
+            0.11200000000000021
+          ]
+        },
+        "recipe_interaction": {
+          "mean_r2": {
+            "delta_pp": -0.01999999999999964,
+            "ci95_pp": [
+              -0.21733333333333305,
+              0.1760000000000007
+            ]
+          },
+          "mean_CS": {
+            "delta_pp": 0.03866666666666714,
+            "ci95_pp": [
+              -0.18666666666666615,
+              0.26400000000000046
+            ]
+          }
+        }
+      },
+      "eurosat": {
+        "accuracy_pct": {
+          "base_consistency": 76.94533333333334,
+          "base_scatter": 76.94533333333334,
+          "base_mean_r2": 72.45466666666667,
+          "base_mean_CS": 73.19866666666667,
+          "base_support_ridge": 71.184,
+          "base_logistic_C1": 69.8,
+          "base_logistic_C10": 70.71466666666667,
+          "base_augmented_ridge": 71.992,
+          "small_consistency": 76.59066666666666
+        },
+        "comparisons": {
+          "base_mean_r2": {
+            "delta_pp": 4.490666666666667,
+            "ci95_pp": [
+              4.150666666666667,
+              4.839999999999999
+            ]
+          },
+          "base_mean_CS": {
+            "delta_pp": 3.7466666666666657,
+            "ci95_pp": [
+              3.4359999999999995,
+              4.080033333333333
+            ]
+          },
+          "base_support_ridge": {
+            "delta_pp": 5.761333333333333,
+            "ci95_pp": [
+              5.3772666666666655,
+              6.173333333333333
+            ]
+          },
+          "base_logistic_C1": {
+            "delta_pp": 7.1453333333333315,
+            "ci95_pp": [
+              6.738633333333331,
+              7.558699999999999
+            ]
+          },
+          "base_logistic_C10": {
+            "delta_pp": 6.230666666666665,
+            "ci95_pp": [
+              5.810633333333333,
+              6.659999999999999
+            ]
+          },
+          "base_augmented_ridge": {
+            "delta_pp": 4.953333333333333,
+            "ci95_pp": [
+              4.593299999999998,
+              5.330666666666666
+            ]
+          },
+          "small_consistency": {
+            "delta_pp": 0.3546666666666661,
+            "ci95_pp": [
+              -0.11866666666666723,
+              0.8173666666666657
+            ]
+          }
+        },
+        "parent_increment": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "recipe_interaction": {
+          "mean_r2": {
+            "delta_pp": 0.36533333333333307,
+            "ci95_pp": [
+              -0.03200000000000031,
+              0.7720333333333321
+            ]
+          },
+          "mean_CS": {
+            "delta_pp": 0.4226666666666659,
+            "ci95_pp": [
+              0.06663333333333187,
+              0.7986999999999989
+            ]
+          }
+        }
+      }
+    },
+    "cells": {
+      "dtd_dtd": {
+        "accuracy_pct": {
+          "base_consistency": 80.14133333333334,
+          "base_scatter": 80.08,
+          "base_mean_r2": 79.87733333333334,
+          "base_mean_CS": 80.02933333333333,
+          "base_support_ridge": 76.85066666666667,
+          "base_logistic_C1": 76.87733333333333,
+          "base_logistic_C10": 76.75999999999999,
+          "base_augmented_ridge": 76.83466666666666,
+          "small_consistency": 80.01066666666667
+        },
+        "vs_small": {
+          "delta_pp": 0.13066666666666668,
+          "ci95_pp": [
+            -0.27199999999999985,
+            0.5173333333333334
+          ]
+        }
+      },
+      "dtd_eurosat": {
+        "accuracy_pct": {
+          "base_consistency": 76.36000000000001,
+          "base_scatter": 76.30399999999999,
+          "base_mean_r2": 76.25333333333333,
+          "base_mean_CS": 75.70666666666665,
+          "base_support_ridge": 76.85066666666667,
+          "base_logistic_C1": 76.87733333333333,
+          "base_logistic_C10": 76.75999999999999,
+          "base_augmented_ridge": 76.83466666666666,
+          "small_consistency": 76.30399999999999
+        },
+        "vs_small": {
+          "delta_pp": 0.05600000000000013,
+          "ci95_pp": [
+            -0.39466666666666644,
+            0.4827333333333327
+          ]
+        }
+      },
+      "eurosat_dtd": {
+        "accuracy_pct": {
+          "base_consistency": 74.01599999999999,
+          "base_scatter": 74.01599999999999,
+          "base_mean_r2": 68.37866666666666,
+          "base_mean_CS": 70.33066666666666,
+          "base_support_ridge": 71.184,
+          "base_logistic_C1": 69.8,
+          "base_logistic_C10": 70.71466666666667,
+          "base_augmented_ridge": 71.992,
+          "small_consistency": 73.48533333333333
+        },
+        "vs_small": {
+          "delta_pp": 0.5306666666666664,
+          "ci95_pp": [
+            -0.026666666666666883,
+            1.1013333333333333
+          ]
+        }
+      },
+      "eurosat_eurosat": {
+        "accuracy_pct": {
+          "base_consistency": 79.87466666666667,
+          "base_scatter": 79.87466666666667,
+          "base_mean_r2": 76.53066666666668,
+          "base_mean_CS": 76.06666666666668,
+          "base_support_ridge": 71.184,
+          "base_logistic_C1": 69.8,
+          "base_logistic_C10": 70.71466666666667,
+          "base_augmented_ridge": 71.992,
+          "small_consistency": 79.696
+        },
+        "vs_small": {
+          "delta_pp": 0.1786666666666665,
+          "ci95_pp": [
+            -0.31733333333333325,
+            0.6613333333333329
+          ]
+        }
+      }
+    },
+    "pooled": {
+      "base_mean_r2": {
+        "delta_pp": 2.3379999999999996,
+        "ci95_pp": [
+          2.1493333333333333,
+          2.51935
+        ]
+      },
+      "base_mean_CS": {
+        "delta_pp": 2.064666666666666,
+        "ci95_pp": [
+          1.8839833333333333,
+          2.2493499999999997
+        ]
+      },
+      "base_support_ridge": {
+        "delta_pp": 3.5806666666666676,
+        "ci95_pp": [
+          3.337333333333333,
+          3.8286666666666664
+        ]
+      },
+      "base_logistic_C1": {
+        "delta_pp": 4.259333333333333,
+        "ci95_pp": [
+          4.009316666666666,
+          4.5206833333333325
+        ]
+      },
+      "base_logistic_C10": {
+        "delta_pp": 3.860666666666667,
+        "ci95_pp": [
+          3.596,
+          4.134016666666667
+        ]
+      },
+      "base_augmented_ridge": {
+        "delta_pp": 3.1846666666666668,
+        "ci95_pp": [
+          2.954666666666667,
+          3.4247
+        ]
+      },
+      "small_consistency": {
+        "delta_pp": 0.22400000000000003,
+        "ci95_pp": [
+          -0.0700333333333336,
+          0.5240499999999992
+        ]
+      }
+    },
+    "parent_increment": {
+      "delta_pp": 0.029333333333333413,
+      "ci95_pp": [
+        0.003333333333333371,
+        0.056000000000000105
+      ]
+    },
+    "recipe_interaction": {
+      "mean_r2": {
+        "delta_pp": 0.1726666666666667,
+        "ci95_pp": [
+          -0.04933333333333341,
+          0.3940166666666666
+        ]
+      },
+      "mean_CS": {
+        "delta_pp": 0.23066666666666646,
+        "ci95_pp": [
+          0.008666666666666543,
+          0.45001666666666645
+        ]
+      }
+    },
+    "unique_tasks": 1000,
+    "task_gallery_conditions": 2000,
+    "methods": [
+      "base_consistency",
+      "base_scatter",
+      "base_mean_r2",
+      "base_mean_CS",
+      "base_support_ridge",
+      "base_logistic_C1",
+      "base_logistic_C10",
+      "base_augmented_ridge",
+      "small_consistency"
+    ],
+    "scope": "SameRGB/sixviews/frozenencoders,not equal encodingFLOPs. Exposed source only. FivePetsmetrics unchanged/unmeasured; noCaltechreevaluation. Fixed checkpoint/parameters; no target tuning.",
+    "audit_pending": true
+  },
+  "validation": {
+    "original_audit": {
+      "status": "passed",
+      "prediction_arithmetic_checks": 1350000,
+      "independent_intervals": 34,
+      "independent_primary_cases": [
+        {
+          "domain": "dtd",
+          "gallery": "dtd",
+          "task": 99,
+          "method": "base_consistency",
+          "max_abs": 6.661338147750939e-16
+        },
+        {
+          "domain": "dtd",
+          "gallery": "dtd",
+          "task": 99,
+          "method": "base_scatter",
+          "max_abs": 7.771561172376096e-16
+        },
+        {
+          "domain": "dtd",
+          "gallery": "eurosat",
+          "task": 99,
+          "method": "base_consistency",
+          "max_abs": 8.881784197001252e-16
+        },
+        {
+          "domain": "dtd",
+          "gallery": "eurosat",
+          "task": 99,
+          "method": "base_scatter",
+          "max_abs": 8.881784197001252e-16
+        },
+        {
+          "domain": "eurosat",
+          "gallery": "dtd",
+          "task": 99,
+          "method": "base_consistency",
+          "max_abs": 6.661338147750939e-16
+        },
+        {
+          "domain": "eurosat",
+          "gallery": "dtd",
+          "task": 99,
+          "method": "base_scatter",
+          "max_abs": 6.661338147750939e-16
+        },
+        {
+          "domain": "eurosat",
+          "gallery": "eurosat",
+          "task": 99,
+          "method": "base_consistency",
+          "max_abs": 6.661338147750939e-16
+        },
+        {
+          "domain": "eurosat",
+          "gallery": "eurosat",
+          "task": 99,
+          "method": "base_scatter",
+          "max_abs": 6.661338147750939e-16
+        }
+      ],
+      "gate_passed": false,
+      "bank_hashes": {
+        "dtd_dtd": "ceb2226d17a347c3da29502e8affdda0ac44f1d4b606c3003f8c62e3c9d25315",
+        "dtd_eurosat": "6b3227edc8a840cde041a3ea0e8ef9084077ed00bd708fc25eb7ea6cb0124c73",
+        "eurosat_dtd": "160c75418894ff40421106954490c90ce7fdcdf43f4d22daad39b865b6941856",
+        "eurosat_eurosat": "88cdcb7bcac135ac73b9e74023512cd51d1407fe20681122ef1934b4898c283b"
+      },
+      "scope": "Complete saved arithmetic/task integrity; independent NumPy primary and parent on four fixed tasks; logistic optimizer not independently implemented."
+    },
+    "declared_indices": {
+      "status": "passed",
+      "purpose": "complete all declared audit_indices without changing locked run sources",
+      "indices": [
+        0,
+        99,
+        199,
+        299,
+        499
+      ],
+      "numerical_cases": 40,
+      "max_abs": 1.4432899320127035e-15,
+      "unique_tasks": 1000,
+      "pairing": [
+        {
+          "domain": "dtd",
+          "unique_tasks": 500,
+          "same_tasks_across_gallery_conditions": true
+        },
+        {
+          "domain": "eurosat",
+          "unique_tasks": 500,
+          "same_tasks_across_gallery_conditions": true
+        }
+      ],
+      "locked_input_hashes_passed": true,
+      "original_audit_scope": "original audit.json used only task99, retained unchanged",
+      "logistic_optimizer": "not independently implemented"
+    }
+  },
+  "completion": {
+    "status": "computed",
+    "seconds": 747.676527261734,
+    "gate_passed": false,
+    "audit_pending": true
+  },
+  "classification_session": "bash-8890632d",
+  "supplemental_audit_session": "bash-0bfb6cd3",
+  "free_gib": 11.919441223144531,
+  "scope_limitations": [
+    "1000 unique tasks, reused over two galleries; not 2000 independent tasks",
+    "Conditional intervals do not account for repeated development-set exploration",
+    "Same images and views but unequal encoder compute and different pretrained checkpoint; not a pure model-size intervention",
+    "Original complete.json audit_pending describes compute-time status; audit.json and declared_indices_audit.json now establish validation completion",
+    "Logistic optimizer not independently reimplemented; NumPy independent algebra covers primary and scatter at all 5 declared indices in each of 4 cells"
+  ]
+}

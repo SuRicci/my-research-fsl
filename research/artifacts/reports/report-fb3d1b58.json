@@ -1,0 +1,54 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-fb3d1b58",
+  "id": "report-fb3d1b58",
+  "quest_id": "012",
+  "created_at": "2026-09-13T07:28:12+00:00",
+  "updated_at": "2026-09-13T07:28:12+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-60ebd1df"
+  },
+  "status": "completed",
+  "branch": "run/source-composition-20260913",
+  "head_commit": "aa2924b5b7b4ee82d9e3b8eaa6ada2927c8fde39",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "source_composition_scope_clarification",
+  "summary": "Post-audit metadata clarification: inherited cost_boundary prose refers to old sixview study; actual source-composition run is oneview. Historical linear comparator penalty came from sixview source selection. No executable/prediction/selection/gate changed; direct zero-head losses remain decisive.",
+  "parent_report_id": "report-0a2107a0",
+  "evidence_paths": [
+    "experiments/main/source-composition-20260913/REPORT.md",
+    "experiments/main/source-composition-20260913/outputs/closure_receipt.json"
+  ],
+  "next_stage": "idea",
+  "run_id": "run-60ebd1df",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:source_composition_scope_clarification:none:3ba32fbb778abbcd5781d77cc56558e0fd7e0ae93d03799bb28b68878595ad90",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-fb3d1b58",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "per_metric": {
+    "dtd_matched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 76.86266666666667,
+        "support_proto": 73.20533333333334,
+        "centered_proto": 74.028,
+        "r2_tuned": 77.00133333333333,
+        "centered_r2": 76.87333333333335,
+        "centered_support": 73.744,
+        "support_ridge": 74.032,
+        "gallery_r2": 76.30266666666665
+      },
+      "delta_vs_r2_pp": 0.01066666666666682,
+      "paired_ci95_pp": [
+        -0.13333333333333272,
+        0.15733333333333335
+      ]
+    },
+    "dtd_5shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 89.98133333333332,
+        "support_proto": 89.37066666666666,
+        "centered_proto": 89.50133333333335,
+        "r2_tuned": 89.98133333333332,
+        "centered_r2": 89.952,
+        "centered_support": 89.952,
+        "support_ridge": 89.98133333333332
+      },
+      "delta_vs_r2_pp": -0.029333333333333357,
+      "paired_ci95_pp": [
+        -0.09333333333333337,
+        0.03200000000000014
+      ]
+    },
+    "dtd_mismatched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 74.07866666666668,
+        "support_proto": 73.20533333333334,
+        "centered_proto": 74.028,
+        "r2_tuned": 74.072,
+        "centered_r2": 73.87066666666665,
+        "centered_support": 73.744,
+        "support_ridge": 74.032,
+        "gallery_r2": 72.85333333333332
+      },
+      "delta_vs_r2_pp": -0.20799999999999955,
+      "paired_ci95_pp": [
+        -0.38666666666666594,
+        -0.03599999999999948
+      ]
+    },
+    "eurosat_mismatched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 66.11733333333333,
+        "support_proto": 67.61866666666666,
+        "centered_proto": 68.116,
+        "r2_tuned": 65.67466666666665,
+        "centered_r2": 68.124,
+        "centered_support": 67.98,
+        "support_ridge": 68.71066666666665,
+        "gallery_r2": 64.656
+      },
+      "delta_vs_r2_pp": 2.0066666666666664,
+      "paired_ci95_pp": [
+        1.7426666666666664,
+        2.270666666666666
+      ]
+    },
+    "eurosat_matched_1shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 74.03466666666665,
+        "support_proto": 67.61866666666666,
+        "centered_proto": 68.116,
+        "r2_tuned": 74.47733333333333,
+        "centered_r2": 73.66533333333334,
+        "centered_support": 67.98,
+        "support_ridge": 68.71066666666665,
+        "gallery_r2": 74.288
+      },
+      "delta_vs_r2_pp": -0.36933333333333357,
+      "paired_ci95_pp": [
+        -0.5413666666666672,
+        -0.19599999999999992
+      ]
+    },
+    "eurosat_5shot_accuracy": {
+      "accuracy_percent": {
+        "r2": 86.808,
+        "support_proto": 85.06266666666667,
+        "centered_proto": 84.55466666666668,
+        "r2_tuned": 86.808,
+        "centered_r2": 88.21066666666665,
+        "centered_support": 88.21066666666665,
+        "support_ridge": 86.808
+      },
+      "delta_vs_r2_pp": 1.402666666666666,
+      "paired_ci95_pp": [
+        1.281333333333333,
+        1.521366666666666
+      ]
+    }
+  },
+  "macro_vs_controls": {
+    "r2": {
+      "delta_pp": 0.3600000000000001,
+      "paired_ci95_pp": [
+        0.2603250000000003,
+        0.46133333333333304
+      ]
+    },
+    "support_proto": {
+      "delta_pp": 2.721333333333333,
+      "paired_ci95_pp": [
+        2.5176583333333338,
+        2.9230166666666664
+      ]
+    },
+    "centered_proto": {
+      "delta_pp": 2.0613333333333337,
+      "paired_ci95_pp": [
+        1.9193333333333333,
+        2.2050083333333332
+      ]
+    },
+    "r2_tuned": {
+      "delta_pp": 0.3270000000000001,
+      "paired_ci95_pp": [
+        0.21833333333333332,
+        0.43666666666666676
+      ]
+    },
+    "centered_r2": {
+      "delta_pp": 0.0,
+      "paired_ci95_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    "centered_support": {
+      "delta_pp": 2.2713333333333328,
+      "paired_ci95_pp": [
+        2.1303249999999996,
+        2.415333333333333
+      ]
+    },
+    "support_ridge": {
+      "delta_pp": 1.762,
+      "paired_ci95_pp": [
+        1.617325,
+        1.9083333333333332
+      ]
+    },
+    "gallery_r2": {
+      "delta_pp": 1.108333333333333,
+      "paired_ci95_pp": [
+        0.9913166666666663,
+        1.228333333333333
+      ]
+    }
+  },
+  "gate": {
+    "positive_r2_macro_ci": true,
+    "no_cell_loss_above_0_5pp": true,
+    "beats_simple_controls": true,
+    "simple_controls": {
+      "r2_tuned": true,
+      "centered_support": true,
+      "centered_proto": true,
+      "support_ridge": true,
+      "support_proto": true,
+      "gallery_r2": true
+    },
+    "passed": true
+  },
+  "metrics_summary": {
+    "dtd_matched_1shot_accuracy": 76.87333333333335,
+    "dtd_5shot_accuracy": 89.952,
+    "dtd_mismatched_1shot_accuracy": 73.87066666666665,
+    "eurosat_mismatched_1shot_accuracy": 68.124,
+    "eurosat_matched_1shot_accuracy": 73.66533333333334,
+    "eurosat_5shot_accuracy": 88.21066666666665,
+    "macro_1shot_accuracy": 73.13333333333333
+  },
+  "scope": "Paired locked task draws within historically viewed image pools; seed-stratified bootstrap preserves shared-gallery pairing. No independent-image or SOTA claim."
+}

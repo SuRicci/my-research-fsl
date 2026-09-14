@@ -1,0 +1,99 @@
+{
+  "primary_method": "center_a2",
+  "selected_raw_control": "raw_a2",
+  "same_alpha_control": "raw_a2",
+  "selection": {
+    "alphas": {
+      "raw": 2,
+      "center": 2
+    },
+    "development_map": {
+      "raw_a0": 36.59390013221845,
+      "raw_a0.5": 37.93749776177143,
+      "raw_a1": 38.78963411249559,
+      "raw_a2": 38.864214978970715,
+      "center_a0": 36.59390013221845,
+      "center_a0.5": 37.95898838605494,
+      "center_a1": 38.88058353357149,
+      "center_a2": 39.03536751328723,
+      "raw_fixed001_a1": 38.80723346178458,
+      "center_fixed001_a1": 38.91912743089351
+    },
+    "selection": "one global alpha per geometry; DTD four cells/five seeds; smaller-alpha exact tie break",
+    "frozen_before_evaluation": true,
+    "written_at": 1789244276.255009
+  },
+  "metrics_summary": {
+    "dtd_cross_bridge32_map": 30.79966784468561,
+    "dtd_cross_bridge64_map": 30.872138376019876,
+    "dtd_matched_bridge32_map": 33.870372279053534,
+    "dtd_matched_bridge64_map": 35.61275445522558,
+    "eurosat_cross_bridge32_map": 58.18865865635002,
+    "eurosat_cross_bridge64_map": 57.47483804331485,
+    "eurosat_matched_bridge32_map": 50.86714179691578,
+    "eurosat_matched_bridge64_map": 46.74916280013905,
+    "macro_map": 43.05434178146304
+  },
+  "all_method_macro_map": {
+    "raw_a0": 44.32589833125364,
+    "raw_a0.5": 45.58241762199716,
+    "raw_a1": 45.67097097001677,
+    "raw_a2": 42.64052065633467,
+    "center_a0": 44.32589833125364,
+    "center_a0.5": 45.57270674637789,
+    "center_a1": 45.77132769036484,
+    "center_a2": 43.05434178146304,
+    "raw_fixed001_a1": 45.62370036725788,
+    "center_fixed001_a1": 45.72633509207952,
+    "old_old": 40.74051098644498,
+    "relative_centered": 22.40581077537028,
+    "procrustes": 25.069706969621244,
+    "ridge": 16.372497640808927,
+    "wip_restricted": 21.265161435124895,
+    "local_std": 42.622113234580844,
+    "linear_std": 40.85575088557759,
+    "v0_press": 43.30673607889029,
+    "global_press": 43.36339736780316,
+    "old_centered": 44.32589833125364,
+    "old_whiten": 41.09480275732259,
+    "centered_residual_2": 42.640520656334665,
+    "new_new_oracle": 45.486800838536865
+  },
+  "macro_comparisons": {
+    "old_centered": {
+      "delta_pp": -1.2715565497906027,
+      "ci95_pp": [
+        -3.039835210316906,
+        0.6855698352983759
+      ]
+    },
+    "raw_a2": {
+      "delta_pp": 0.413821125128365,
+      "ci95_pp": [
+        -0.23042506881340774,
+        1.1488658346812792
+      ]
+    },
+    "centered_residual_2": {
+      "delta_pp": 0.4138211251283721,
+      "ci95_pp": [
+        -0.23042506881340755,
+        1.1488658346812861
+      ]
+    },
+    "v0_press": {
+      "delta_pp": -0.2523942974272515,
+      "ci95_pp": [
+        -1.6619072561727712,
+        1.2116552171703507
+      ]
+    }
+  },
+  "domain_delta_vs_old_centered_pp": {
+    "dtd": 2.109601690131309,
+    "eurosat": -4.652714789712508
+  },
+  "strong_gate_passed": false,
+  "interval_scope": "5000 paired bridge-seed and class-cluster resamples, shared query clusters across budget/policy, fixed galleries; exploratory seen pools",
+  "conclusion": "Strong gate failed; retain attribution evidence and close this local kernel route without further exposed-grid tuning."
+}

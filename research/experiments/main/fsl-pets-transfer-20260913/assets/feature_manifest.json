@@ -1,0 +1,42 @@
+{
+  "variant": "canonical-openai-quickgelu-native-dinov2",
+  "precision": "float32 MPS, normalized float16 storage",
+  "encoder_source_sha256": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+  "protocol_sha256": "589b1981a5813b8d0b08d1eba7c2dbe6df5f98f543d1fd4e043cd9e11dbe5bd3",
+  "identity_sha256": "819fb0797c5abe6617d1f7e24d66157e94ca18fa7f6be8a088a40b4ba826816d",
+  "torch_version": "2.3.0",
+  "files": {
+    "clip_vitb16_query": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/features/clip_vitb16_query.pt",
+      "sha256": "edc3ed00c1081374d18b117cdc1da7b47a61861afdda3f203f64d1e79fb06ba3",
+      "shape": [
+        3669,
+        512
+      ]
+    },
+    "clip_vitb16_gallery": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/features/clip_vitb16_gallery.pt",
+      "sha256": "082b26b00a6d7cf0c952c58b7634812858fbcc5705d4c4d1001ebd0d2fa8fd71",
+      "shape": [
+        1876,
+        512
+      ]
+    },
+    "dinov2_vits14_query": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/features/dinov2_vits14_query.pt",
+      "sha256": "a9f0ebbde2b4831210459edf897bbcc0fa0dd7a3b6879a51fb3a8cc789813f54",
+      "shape": [
+        3669,
+        384
+      ]
+    },
+    "dinov2_vits14_gallery": {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets/features/dinov2_vits14_gallery.pt",
+      "sha256": "1aaaeda7d1d6d934367df35fb7e0ac27db0498b128c292045d291286730d50c5",
+      "shape": [
+        1876,
+        384
+      ]
+    }
+  }
+}

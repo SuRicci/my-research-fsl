@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "delta_id": "delta-4ddeedf2",
+  "delta_kind": "paper_outline_selected",
+  "tool_name": "submit_paper_outline",
+  "created_at": "2026-09-12T22:51:14+00:00",
+  "quest_root": "/Users/decoqwq/DeepScientist/quests/012",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "paths": [
+    {
+      "label": "selected_outline_json",
+      "path": "paper/selected_outline.json",
+      "absolute_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/selected_outline.json",
+      "exists": true,
+      "size_bytes": 132801,
+      "mtime_ns": 1789253466188456642
+    },
+    {
+      "label": "outline_manifest_json",
+      "path": "paper/outline/manifest.json",
+      "absolute_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline/manifest.json",
+      "exists": true,
+      "size_bytes": 65979,
+      "mtime_ns": 1789253466167895507
+    },
+    {
+      "label": "outline_selection_md",
+      "path": "paper/outline_selection.md",
+      "absolute_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline_selection.md",
+      "exists": true,
+      "size_bytes": 577,
+      "mtime_ns": 1789253466194278323
+    },
+    {
+      "label": "paper_line_state_json",
+      "path": "paper/paper_line_state.json",
+      "absolute_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/paper_line_state.json",
+      "exists": true,
+      "size_bytes": 2776,
+      "mtime_ns": 1789253466222990603
+    },
+    {
+      "label": "source_outline_json",
+      "path": "paper/outlines/candidates/outline-001.json",
+      "absolute_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outlines/candidates/outline-001.json",
+      "exists": true,
+      "size_bytes": 58211,
+      "mtime_ns": 1789253466194109906
+    },
+    {
+      "label": "artifact_json",
+      "path": "artifacts/reports/report-1dd19807.json",
+      "absolute_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/reports/report-1dd19807.json",
+      "exists": true,
+      "size_bytes": 3634,
+      "mtime_ns": 1789253467114510673
+    }
+  ],
+  "metadata": {
+    "mode": "select",
+    "outline_id": "outline-001",
+    "title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+    "paper_line_id": "paper-oslo-gallery-failure-study-outline-001-oslo-gallery-pets-20260913"
+  }
+}

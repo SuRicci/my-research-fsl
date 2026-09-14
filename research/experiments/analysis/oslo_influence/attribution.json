@@ -1,0 +1,347 @@
+{
+  "status": "passed",
+  "parent_run_id": "oslo-gallery-pets-20260913",
+  "task_count": 4000,
+  "cells": {
+    "canonical_pets_k1": {
+      "tasks": 500,
+      "final_step_mass": {
+        "mean": 256.51416015625,
+        "p10_median_p90": [
+          193.25579681396485,
+          254.84558868408203,
+          323.53294067382814
+        ],
+        "min": 122.21541595458984,
+        "max": 418.5426940917969
+      },
+      "gallery_averaging_coefficient": {
+        "mean": 0.9959679841995239,
+        "p10_median_p90": [
+          0.9948521673679351,
+          0.9960913956165314,
+          0.996918648481369
+        ],
+        "min": 0.9918841123580933,
+        "max": 0.9976164698600769
+      },
+      "out_of_episode_averaging_coefficient": {
+        "mean": 0.7931135892868042,
+        "p10_median_p90": [
+          0.7215761601924896,
+          0.8010242879390717,
+          0.8512167513370513
+        ],
+        "min": 0.5115587711334229,
+        "max": 0.9760248064994812
+      },
+      "retained_gallery_weight_partition": {
+        "correct_class_mass": 0.1770414412021637,
+        "other_in_episode_mass": 0.01887959986925125,
+        "out_of_episode_mass": 0.8040789365768433
+      },
+      "xi_in_mean": 0.992049515247345,
+      "xi_out_mean": 0.6355376839637756,
+      "episode_mean_inlier_auc": 0.928026879253825,
+      "maximum_score_replay_error": 0.0
+    },
+    "canonical_dtd_k1": {
+      "tasks": 500,
+      "final_step_mass": {
+        "mean": 193.5868682861328,
+        "p10_median_p90": [
+          183.89440155029297,
+          192.11006927490234,
+          205.20897674560547
+        ],
+        "min": 168.5367889404297,
+        "max": 238.53515625
+      },
+      "gallery_averaging_coefficient": {
+        "mean": 0.994850754737854,
+        "p10_median_p90": [
+          0.9945915341377258,
+          0.9948216080665588,
+          0.9951505661010742
+        ],
+        "min": 0.9941015839576721,
+        "max": 0.9958252310752869
+      },
+      "out_of_episode_averaging_coefficient": {
+        "mean": 0.994850754737854,
+        "p10_median_p90": [
+          0.9945915341377258,
+          0.9948216080665588,
+          0.9951505661010742
+        ],
+        "min": 0.9941015839576721,
+        "max": 0.9958252310752869
+      },
+      "retained_gallery_weight_partition": {
+        "correct_class_mass": 0.0,
+        "other_in_episode_mass": 0.0,
+        "out_of_episode_mass": 1.0
+      },
+      "xi_in_mean": null,
+      "xi_out_mean": 0.5159564018249512,
+      "episode_mean_inlier_auc": null,
+      "maximum_score_replay_error": 0.0
+    },
+    "canonical_pets_k5": {
+      "tasks": 500,
+      "final_step_mass": {
+        "mean": 262.0387268066406,
+        "p10_median_p90": [
+          195.84878387451172,
+          259.8970489501953,
+          333.7212280273437
+        ],
+        "min": 131.28439331054688,
+        "max": 425.73687744140625
+      },
+      "gallery_averaging_coefficient": {
+        "mean": 0.9805320501327515,
+        "p10_median_p90": [
+          0.9751056432723999,
+          0.9811247289180756,
+          0.9852385759353638
+        ],
+        "min": 0.963312029838562,
+        "max": 0.9883919954299927
+      },
+      "out_of_episode_averaging_coefficient": {
+        "mean": 0.7839071154594421,
+        "p10_median_p90": [
+          0.7192547082901001,
+          0.7924878001213074,
+          0.8386957883834839
+        ],
+        "min": 0.5553979873657227,
+        "max": 0.9088926911354065
+      },
+      "retained_gallery_weight_partition": {
+        "correct_class_mass": 0.17993271350860596,
+        "other_in_episode_mass": 0.01275588572025299,
+        "out_of_episode_mass": 0.8073114156723022
+      },
+      "xi_in_mean": 0.9980373382568359,
+      "xi_out_mean": 0.6517109274864197,
+      "episode_mean_inlier_auc": 0.9476538166578657,
+      "maximum_score_replay_error": 0.0
+    },
+    "canonical_dtd_k5": {
+      "tasks": 500,
+      "final_step_mass": {
+        "mean": 189.3886260986328,
+        "p10_median_p90": [
+          179.98102416992188,
+          188.63558197021484,
+          199.66146392822264
+        ],
+        "min": 172.61668395996094,
+        "max": 214.53836059570312
+      },
+      "gallery_averaging_coefficient": {
+        "mean": 0.9742396473884583,
+        "p10_median_p90": [
+          0.9729702115058899,
+          0.9741783142089844,
+          0.9755693972110748
+        ],
+        "min": 0.9718495011329651,
+        "max": 0.9772249460220337
+      },
+      "out_of_episode_averaging_coefficient": {
+        "mean": 0.9742396473884583,
+        "p10_median_p90": [
+          0.9729702115058899,
+          0.9741783142089844,
+          0.9755693972110748
+        ],
+        "min": 0.9718495011329651,
+        "max": 0.9772249460220337
+      },
+      "retained_gallery_weight_partition": {
+        "correct_class_mass": 0.0,
+        "other_in_episode_mass": 0.0,
+        "out_of_episode_mass": 1.0
+      },
+      "xi_in_mean": null,
+      "xi_out_mean": 0.504767119884491,
+      "episode_mean_inlier_auc": null,
+      "maximum_score_replay_error": 0.0
+    },
+    "fresh_pets_k1": {
+      "tasks": 500,
+      "final_step_mass": {
+        "mean": 262.0142517089844,
+        "p10_median_p90": [
+          199.62584075927734,
+          260.9719543457031,
+          327.71644287109376
+        ],
+        "min": 122.99797821044922,
+        "max": 483.786376953125
+      },
+      "gallery_averaging_coefficient": {
+        "mean": 0.9960525631904602,
+        "p10_median_p90": [
+          0.9950156033039093,
+          0.9961827993392944,
+          0.9969578444957733
+        ],
+        "min": 0.9919353723526001,
+        "max": 0.9979372620582581
+      },
+      "out_of_episode_averaging_coefficient": {
+        "mean": 0.797597348690033,
+        "p10_median_p90": [
+          0.7264886796474457,
+          0.8056342303752899,
+          0.8555594623088837
+        ],
+        "min": 0.4726995527744293,
+        "max": 0.9728294610977173
+      },
+      "retained_gallery_weight_partition": {
+        "correct_class_mass": 0.1744592785835266,
+        "other_in_episode_mass": 0.01728508062660694,
+        "out_of_episode_mass": 0.808255672454834
+      },
+      "xi_in_mean": 0.9924843907356262,
+      "xi_out_mean": 0.652431309223175,
+      "episode_mean_inlier_auc": 0.9263267041004709,
+      "maximum_score_replay_error": 0.0
+    },
+    "fresh_dtd_k1": {
+      "tasks": 500,
+      "final_step_mass": {
+        "mean": 194.1712188720703,
+        "p10_median_p90": [
+          184.14725036621093,
+          192.89202880859375,
+          206.3181900024414
+        ],
+        "min": 172.61361694335938,
+        "max": 234.3968963623047
+      },
+      "gallery_averaging_coefficient": {
+        "mean": 0.9948664307594299,
+        "p10_median_p90": [
+          0.9945988953113556,
+          0.9948424696922302,
+          0.995176512002945
+        ],
+        "min": 0.9942401051521301,
+        "max": 0.9957518577575684
+      },
+      "out_of_episode_averaging_coefficient": {
+        "mean": 0.9948664307594299,
+        "p10_median_p90": [
+          0.9945988953113556,
+          0.9948424696922302,
+          0.995176512002945
+        ],
+        "min": 0.9942401051521301,
+        "max": 0.9957518577575684
+      },
+      "retained_gallery_weight_partition": {
+        "correct_class_mass": 0.0,
+        "other_in_episode_mass": 0.0,
+        "out_of_episode_mass": 1.0
+      },
+      "xi_in_mean": null,
+      "xi_out_mean": 0.5175139307975769,
+      "episode_mean_inlier_auc": null,
+      "maximum_score_replay_error": 0.0
+    },
+    "fresh_pets_k5": {
+      "tasks": 500,
+      "final_step_mass": {
+        "mean": 264.3422546386719,
+        "p10_median_p90": [
+          199.0002700805664,
+          263.2143096923828,
+          333.20335693359374
+        ],
+        "min": 117.25057983398438,
+        "max": 435.5026550292969
+      },
+      "gallery_averaging_coefficient": {
+        "mean": 0.9807142615318298,
+        "p10_median_p90": [
+          0.9754902124404907,
+          0.9813582003116608,
+          0.9852160155773163
+        ],
+        "min": 0.9591004252433777,
+        "max": 0.988649308681488
+      },
+      "out_of_episode_averaging_coefficient": {
+        "mean": 0.7852952480316162,
+        "p10_median_p90": [
+          0.7188855230808258,
+          0.7936945855617523,
+          0.839734947681427
+        ],
+        "min": 0.4954172670841217,
+        "max": 0.9100515246391296
+      },
+      "retained_gallery_weight_partition": {
+        "correct_class_mass": 0.1797386258840561,
+        "other_in_episode_mass": 0.011645488440990448,
+        "out_of_episode_mass": 0.8086158037185669
+      },
+      "xi_in_mean": 0.9983994960784912,
+      "xi_out_mean": 0.6586326956748962,
+      "episode_mean_inlier_auc": 0.9510145933705416,
+      "maximum_score_replay_error": 0.0
+    },
+    "fresh_dtd_k5": {
+      "tasks": 500,
+      "final_step_mass": {
+        "mean": 189.982421875,
+        "p10_median_p90": [
+          180.53265075683595,
+          189.45350646972656,
+          200.10379943847656
+        ],
+        "min": 171.00526428222656,
+        "max": 219.87887573242188
+      },
+      "gallery_averaging_coefficient": {
+        "mean": 0.9743183851242065,
+        "p10_median_p90": [
+          0.973050570487976,
+          0.9742869138717651,
+          0.9756220936775207
+        ],
+        "min": 0.9715917706489563,
+        "max": 0.9777657985687256
+      },
+      "out_of_episode_averaging_coefficient": {
+        "mean": 0.9743183851242065,
+        "p10_median_p90": [
+          0.973050570487976,
+          0.9742869138717651,
+          0.9756220936775207
+        ],
+        "min": 0.9715917706489563,
+        "max": 0.9777657985687256
+      },
+      "retained_gallery_weight_partition": {
+        "correct_class_mass": 0.0,
+        "other_in_episode_mass": 0.0,
+        "out_of_episode_mass": 1.0
+      },
+      "xi_in_mean": null,
+      "xi_out_mean": 0.5063497424125671,
+      "episode_mean_inlier_auc": null,
+      "maximum_score_replay_error": 0.0
+    }
+  },
+  "frozen_signature": "4ff9c676e57fd0f56d47186aaeb44e745f6c62da8404f01616649efa4f71c18d",
+  "source_sha256": "a8c28e24d27844397221d0b32a8c2e757ee4a052cdee1d8a1a02e58f0804936a",
+  "array_sha256": "f8a09b95693b9de446ee31cc84ef922807a3d8c811c0b8742289e008bd14f92e",
+  "boundary": "Final-step averaging coefficients are algebraic contributions, not counterfactual performance. Latent xi is a source score, not a calibrated membership probability. Labels are used only for post-fit diagnostics. All predictions agree with frozen outputs."
+}

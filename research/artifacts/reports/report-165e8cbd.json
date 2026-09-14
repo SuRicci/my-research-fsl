@@ -1,0 +1,76 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-165e8cbd",
+  "id": "report-165e8cbd",
+  "quest_id": "012",
+  "created_at": "2026-09-13T00:07:04+00:00",
+  "updated_at": "2026-09-13T00:07:04+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-42f8bf3b"
+  },
+  "status": "rejected_for_promotion",
+  "branch": "run/prior-calibration-qualification-20260913",
+  "head_commit": "3b895b88644ba7016d38bd5c72a628e2e41ce649",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "source_transfer_qualification",
+  "title": "Prior-calibrated gallery relevance fails source-transfer qualification",
+  "idea_id": "idea-452b63b3",
+  "run_name": "prior-calibration-qualification-20260913",
+  "science_node_id": "science-54e4b418",
+  "validation_node_id": "science-6c13eeff",
+  "tier": "auxiliary/dev",
+  "summary": "Prespecified source gate failed before canonical Pets or reserved Caltech evaluation. Directional gain equals same-mass control; reverse transfer loses and prior correction collapses to domain-dependent extremes.",
+  "metrics_summary": {
+    "dtd_to_eurosat_delta_source_control_pp": 0.4786666666667,
+    "dtd_to_eurosat_delta_ci95_low": 0.3026666666667,
+    "dtd_to_eurosat_delta_ci95_high": 0.6693333333333,
+    "eurosat_to_dtd_delta_source_control_pp": -1.4493333333333,
+    "eurosat_to_dtd_delta_ci95_low": -1.716,
+    "eurosat_to_dtd_delta_ci95_high": -1.1679333333333,
+    "same_mass_prediction_disagreements": 0,
+    "cell_count": 8,
+    "task_condition_evaluations": 4000,
+    "unique_sampled_tasks": 2000
+  },
+  "evidence_paths": [
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/REPORT.md",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/RESULT.json",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/analysis.json",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/validation.json",
+    ".ds/worktrees/oslo-gallery-pets-20260913/experiments/main/prior-calibration-qualification-20260913/outputs/run_manifest.json"
+  ],
+  "comparison_boundary": "Common labeled-source development budget; frozen inductive inference; historically exposed pools. Auxiliary development result; no required canonical Pets metrics imputed.",
+  "next_stage": "decision",
+  "next_action": "Reject candidate; apply deferred-frontier reopen conditions before any further method.",
+  "run_id": "run-42f8bf3b",
+  "anchor": "write",
+  "semantic_key": "report:write:source_transfer_qualification:none:f5dc3b3bddc3f063394788c1251c5a7dc73e1112fbd04c68f653c4090781255a",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-165e8cbd",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

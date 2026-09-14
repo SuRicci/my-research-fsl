@@ -1,0 +1,76 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-54e9c664",
+  "id": "report-54e9c664",
+  "quest_id": "012",
+  "created_at": "2026-09-14T00:04:35+00:00",
+  "updated_at": "2026-09-14T00:04:35+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-6c0fa9aa"
+  },
+  "status": "completed",
+  "branch": "run/source-group-objective-20260914",
+  "head_commit": "abc3179ae89473dd79a8e23781414a9c7db16cbb",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "auxiliary_development_experiment",
+  "title": "Source-group objective qualification: fixed protocol rejected",
+  "summary": "18fits/1000tasks/3objectives x2selectors independently validated. Primary candidate minusidentity +0.082667pp CI[-0.069333,0.238244] and -1.021333pp CI[-1.295111,-0.755511]; bothgatefail. Same-selector gains vsmean +0.744889/+0.311111pp are insufficient. Strongstack gaps -7.545333/-3.760000pp.",
+  "idea_id": "idea-3a020710",
+  "science_node_id": "science-8481f899",
+  "validation_node_id": "science-2978ee2a",
+  "metrics_summary": {
+    "dtd_to_eurosat_accuracy": 69.04533333333333,
+    "eurosat_to_dtd_accuracy": 74.39733333333334
+  },
+  "evaluation_summary": {
+    "claim_update": "refuted fixed improvement hypothesis",
+    "baseline_relation": "auxiliary/dev, canonical fivePets metrics unchanged/unmeasured",
+    "failure_mode": "direction_underperforming",
+    "next_action": "idea: remaining real-view objective challenge; no failed-grid tuning",
+    "qualification_gate_passed": false,
+    "scope": "one-shot exposed-development; fixed pools and seeds"
+  },
+  "evidence_paths": [
+    "experiments/main/source-group-objective-20260914/REPORT.md",
+    "experiments/main/source-group-objective-20260914/RESULT.json",
+    "experiments/main/source-group-objective-20260914/outputs/analysis.json",
+    "experiments/main/source-group-objective-20260914/outputs/independent_audit.json",
+    "experiments/main/source-group-objective-20260914/summary_repair.json",
+    "experiments/main/source-group-objective-20260914/legacy_import_audit.json"
+  ],
+  "log_paths": [
+    ".ds/bash_exec/bash-1da1787d/terminal.log",
+    ".ds/bash_exec/bash-43548293/terminal.log"
+  ],
+  "run_id": "run-6c0fa9aa",
+  "anchor": "idea",
+  "semantic_key": "report:idea:auxiliary_development_experiment:none:a8f1dd379758a255eef19d86980b1a5a91d120d883f99204dabb03480553be77",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-54e9c664",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

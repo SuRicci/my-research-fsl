@@ -1,0 +1,13 @@
+{
+  "reason": {
+    "reason": "DTD minimum37 images yields half18;5support+15queries infeasible. Source5shot train/selection only uses13queries/class for both domains and all controls. Target evaluation remains15.",
+    "based_on": "complete source class counts, not target outcomes",
+    "completed_one_shot_models_and_cells": "retained unchanged",
+    "first_attempt": "bash-3afbad8f"
+  },
+  "retained_sha256": {
+    "experiments/main/utility-composition-qualification-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz": "bbd0576d8dd150fe5e86a8abc8a6330ae64538c30b16a40f04c6bed6add44c12",
+    "experiments/main/utility-composition-qualification-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz": "95b6653a03215e5a8f4198cb8362ceb1deeba94f64fa71202d3b18eca77d139d",
+    "experiments/main/utility-composition-qualification-20260913/outputs/models_dtd_k1.json": "83654952eadb4f34f2e5148f6419cded111ba40b70edab6ce483d49501830ebc"
+  }
+}

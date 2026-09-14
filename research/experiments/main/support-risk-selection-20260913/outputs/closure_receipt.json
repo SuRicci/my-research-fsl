@@ -1,0 +1,15 @@
+{
+  "status": "verified",
+  "checks": {
+    "completion.json": "completed",
+    "precheck.json": "passed",
+    "audit.json": "passed",
+    "statistics_audit.json": "passed",
+    "analysis.json": "refuted_fixed_protocol"
+  },
+  "report": "report-77f9a6fd",
+  "decision": "decision-cced7bfa",
+  "free_gib": 10.729148864746094,
+  "cleanup_deleted_bytes_this_pass": 0,
+  "prior_closure_check_issue": "case-sensitive checklist text assertion failed after evidence checks passed; shell final git command masked that failure. Corrected explicit set-e closure uses artifact statuses, no experiments rerun."
+}

@@ -1,0 +1,106 @@
+{
+  "checked_at": "2026-09-14T02:29:00.201683+00:00",
+  "bash_id": "bash-5721cf20",
+  "science_node_id": "science-620dec73",
+  "progress": {
+    "pool": "eurosat_gallery",
+    "pool_done": 5000,
+    "pool_total": 5000,
+    "images_done": 14153,
+    "images_total": 14153,
+    "elapsed_seconds": 2132.6871581077576,
+    "free_gib": 11.888618469238281
+  },
+  "complete_pool_count": 4,
+  "classification_started": true,
+  "free_gib": 11.816905975341797,
+  "code_review": "CODE_REVIEW.json",
+  "max_completed_pool_cache_abs_error": 0.00010731816291809082,
+  "min_completed_pool_cache_cosine": 0.9999997615814209,
+  "advance_since_previous_images": 3104,
+  "recent_images_per_second": 4.385925216849264,
+  "estimated_encoding_remaining_minutes": 0,
+  "actual_git_branch": "run/dino-depth-readout-20260914",
+  "runtime_projection_branch": "run/dino-depth-readout-20260914",
+  "runtime_projection_drift": "Resolved by artifact.activate_branch decision-db75dfa2; resolve_runtime_refs now agrees.",
+  "next_check_seconds": 240,
+  "reviewed_code_hashes_still_match": true,
+  "verification_log": "bash-dbbcf914",
+  "phase": "verified_gate_failed",
+  "encoding_completed": true,
+  "classification_observation": {
+    "observed_at": "2026-09-14T02:29:00.201683+00:00",
+    "log_read_bash": "bash-5721cf20",
+    "log_line_count": 35,
+    "log_is_partial": false,
+    "completed_cells": [
+      "dtd_dtd",
+      "dtd_eurosat",
+      "eurosat_dtd"
+    ],
+    "total_cells": 4,
+    "tasks_per_cell": 500,
+    "completed_condition_lower_bound": 1500,
+    "total_conditions": 2000,
+    "last_observed_eval": {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task_index": 0,
+      "seconds": 1252.5
+    },
+    "input_hashes_match": true,
+    "saved_arrays_finite": true,
+    "saved_prediction_shape": [
+      8,
+      500,
+      75
+    ],
+    "independent_full_audit_pending": true,
+    "audit_code_review": "All predictions and task labels,22pairedintervals,4prespecified independent NumPy primary cases; logistic not independently reimplemented."
+  },
+  "rough_remaining_minutes": [
+    8,
+    15
+  ],
+  "updated_at": "2026-09-14T02:41:58.788027+00:00",
+  "last_observed_eval": {
+    "observed_at": "2026-09-14T02:29:00.201683+00:00",
+    "log_read_bash": "bash-5721cf20",
+    "log_line_count": 35,
+    "log_is_partial": false,
+    "completed_cells": [
+      "dtd_dtd",
+      "dtd_eurosat",
+      "eurosat_dtd"
+    ],
+    "total_cells": 4,
+    "tasks_per_cell": 500,
+    "completed_condition_lower_bound": 1500,
+    "total_conditions": 2000,
+    "last_observed_eval": {
+      "target": "eurosat",
+      "gallery": "eurosat",
+      "task_index": 0,
+      "seconds": 1252.5
+    },
+    "input_hashes_match": true,
+    "saved_arrays_finite": true,
+    "saved_prediction_shape": [
+      8,
+      500,
+      75
+    ],
+    "independent_full_audit_pending": true,
+    "audit_code_review": "All predictions and task labels,22pairedintervals,4prespecified independent NumPy primary cases; logistic not independently reimplemented."
+  },
+  "output_mib": 188.54686832427979,
+  "eta_basis": "Three cells saved; finalcell begun. Estimate from recent EuroSAT throughput; full audit duration additional.",
+  "audit_bash": "bash-5c66513c",
+  "audit_science": "science-01c5426c",
+  "audit_exit_code": 0,
+  "classification_exit_code": 0,
+  "classification_complete": true,
+  "independent_full_audit_pending": false,
+  "gate_passed": false,
+  "next": "Record auxiliary result and failure decision; map reference history then evidence synthesis."
+}

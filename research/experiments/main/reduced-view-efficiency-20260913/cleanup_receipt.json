@@ -1,0 +1,166 @@
+{
+  "kind": "regenerable_python_bytecode_only",
+  "files": [
+    {
+      "path": "experiments/main/view-distribution-kernel-20260913/__pycache__/view_kernel.cpython-38.pyc",
+      "size": 2840,
+      "sha256": "8be1482f1b5ac5c4ecfc79491b103851a55e079baa1271e668dc304dec439c90",
+      "source": "experiments/main/view-distribution-kernel-20260913/view_kernel.py"
+    },
+    {
+      "path": "experiments/main/view-distribution-kernel-20260913/__pycache__/run_kernel.cpython-38.pyc",
+      "size": 8535,
+      "sha256": "e2afcde413f10af2e275a58826c44129b494d122aeb05d1d90da42d4b019daa3",
+      "source": "experiments/main/view-distribution-kernel-20260913/run_kernel.py"
+    },
+    {
+      "path": "experiments/main/view-distribution-kernel-20260913/__pycache__/verify_kernel.cpython-38.pyc",
+      "size": 6630,
+      "sha256": "4f0a7b791182efe8f9962fcc6e53e4035a6c8ba2dd61babb61e60fd0038bc68c",
+      "source": "experiments/main/view-distribution-kernel-20260913/verify_kernel.py"
+    },
+    {
+      "path": "experiments/main/prior-calibration-qualification-20260913/__pycache__/qualify.cpython-38.pyc",
+      "size": 13856,
+      "sha256": "5b8fc9a116fdce3b737eb3e4907c3640457cbf515f6d8c3a53fa5ee737a3de5c",
+      "source": "experiments/main/prior-calibration-qualification-20260913/qualify.py"
+    },
+    {
+      "path": "experiments/main/prior-calibration-qualification-20260913/__pycache__/calibrate.cpython-38.pyc",
+      "size": 5244,
+      "sha256": "af707be18f550cb1489d56073631dc02839ac64e184c9cc3fd052b59c9bbaa7f",
+      "source": "experiments/main/prior-calibration-qualification-20260913/calibrate.py"
+    },
+    {
+      "path": "experiments/main/r2-fusion-stage-canonical-20260912/__pycache__/evaluate.cpython-38.pyc",
+      "size": 8156,
+      "sha256": "89598def6f4ad1f42b227b8290bf59bb3587473cadf0303694a43ab4fe25a107",
+      "source": "experiments/main/r2-fusion-stage-canonical-20260912/evaluate.py"
+    },
+    {
+      "path": "experiments/main/r2-fusion-stage-canonical-20260912/__pycache__/fusion.cpython-38.pyc",
+      "size": 3078,
+      "sha256": "fea4153a32e3e5d74b5c65a0bc2f78411e7f56665c2e3d1e7fc6d0cfbb382a57",
+      "source": "experiments/main/r2-fusion-stage-canonical-20260912/fusion.py"
+    },
+    {
+      "path": "experiments/main/r2-fusion-stage-canonical-20260912/__pycache__/geometry_reference.cpython-38.pyc",
+      "size": 7144,
+      "sha256": "f5c55460a2f5d7cb1a7426564cd3f10db21ef522cb31dbaf0db2c6ffa2432fac",
+      "source": "experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py"
+    },
+    {
+      "path": "experiments/main/learned-aggregation-order-20260913/__pycache__/verify_order.cpython-38.pyc",
+      "size": 11001,
+      "sha256": "20fb37a816e8a8270453eddb15142e3248c68bc15de27bcb88ad0b4f08096877",
+      "source": "experiments/main/learned-aggregation-order-20260913/verify_order.py"
+    },
+    {
+      "path": "experiments/main/learned-aggregation-order-20260913/__pycache__/train_eval.cpython-38.pyc",
+      "size": 11404,
+      "sha256": "c4006f4a291f8f9bad03185f73b522771878d634181e6948fa4aa355df8d944f",
+      "source": "experiments/main/learned-aggregation-order-20260913/train_eval.py"
+    },
+    {
+      "path": "experiments/main/learned-aggregation-order-20260913/__pycache__/model.cpython-38.pyc",
+      "size": 1900,
+      "sha256": "e2dbd3087a8b30e8bd7aa8ae2a58b86809cdc51d8e6391408d3bbd5765dbbbf1",
+      "source": "experiments/main/learned-aggregation-order-20260913/model.py"
+    },
+    {
+      "path": "experiments/main/r2-geometry-canonical-20260912/__pycache__/baseline_methods.cpython-38.pyc",
+      "size": 6238,
+      "sha256": "ea77215f3ee5f4836bad9270f89189e756223117365926012f3ef83853d0fd3e",
+      "source": "experiments/main/r2-geometry-canonical-20260912/baseline_methods.py"
+    },
+    {
+      "path": "experiments/main/r2-geometry-canonical-20260912/__pycache__/reference_eval.cpython-38.pyc",
+      "size": 10810,
+      "sha256": "9866d664202a0f8c48adfbbfc4d29b45e940751d71959d228c4d80da5b3c43eb",
+      "source": "experiments/main/r2-geometry-canonical-20260912/reference_eval.py"
+    },
+    {
+      "path": "experiments/main/oslo-gallery-pets-20260913/__pycache__/analyze_results.cpython-38.pyc",
+      "size": 12950,
+      "sha256": "3673f49f8add931bc6822710a82d89672d90df917c7b1d9a13e742146284df49",
+      "source": "experiments/main/oslo-gallery-pets-20260913/analyze_results.py"
+    },
+    {
+      "path": "experiments/main/oslo-gallery-pets-20260913/__pycache__/oslo.cpython-38.pyc",
+      "size": 1661,
+      "sha256": "543bf9a2a85d27e06f5e98bc7c4f78807743dec17824869855b323cf60d5b895",
+      "source": "experiments/main/oslo-gallery-pets-20260913/oslo.py"
+    },
+    {
+      "path": "experiments/main/oslo-gallery-pets-20260913/__pycache__/run_eval.cpython-38.pyc",
+      "size": 11244,
+      "sha256": "914d3b412351eb110c9c0924ec23fe412414c4ef610acb1fdb4aefb68bc75bf0",
+      "source": "experiments/main/oslo-gallery-pets-20260913/run_eval.py"
+    },
+    {
+      "path": "experiments/main/source-coverage-factorial-20260913/__pycache__/run.cpython-38.pyc",
+      "size": 14895,
+      "sha256": "f2e70b6a385c3940ef94b211d0750e538cf0cd93897d625f1490a35d9675f604",
+      "source": "experiments/main/source-coverage-factorial-20260913/run.py"
+    },
+    {
+      "path": "experiments/main/source-coverage-factorial-20260913/__pycache__/verify.cpython-38.pyc",
+      "size": 3478,
+      "sha256": "79dceb249b858fda5fcd806fcbe8d61b9b607f70bc07a9b3c4b320630f3a23f5",
+      "source": "experiments/main/source-coverage-factorial-20260913/verify.py"
+    },
+    {
+      "path": "experiments/main/utility-composition-qualification-20260913/__pycache__/run.cpython-38.pyc",
+      "size": 11054,
+      "sha256": "9ea71bf30b4818797173c35bfbadd23fbe95dcfe3f72eeed561f9f2b867b791e",
+      "source": "experiments/main/utility-composition-qualification-20260913/run.py"
+    },
+    {
+      "path": "experiments/main/utility-composition-qualification-20260913/__pycache__/audit.cpython-38.pyc",
+      "size": 5536,
+      "sha256": "db409334df00f52e902de193155a98e5841e31267697a4f0252ae4fbc5572464",
+      "source": "experiments/main/utility-composition-qualification-20260913/audit.py"
+    },
+    {
+      "path": "experiments/main/utility-composition-qualification-20260913/__pycache__/utility.cpython-38.pyc",
+      "size": 3932,
+      "sha256": "1ecd1f9ca8ff4a9b3a01db6c478fdd715d4a3901f1ba05f2c525f3da7ba55510",
+      "source": "experiments/main/utility-composition-qualification-20260913/utility.py"
+    },
+    {
+      "path": "experiments/main/representation-scatter-20260913/__pycache__/metric.cpython-38.pyc",
+      "size": 3550,
+      "sha256": "405a89dfe42538ccb6ff7544ae7972609d0462eda92778d561936d444b951674",
+      "source": "experiments/main/representation-scatter-20260913/metric.py"
+    },
+    {
+      "path": "experiments/main/representation-scatter-20260913/__pycache__/evaluate.cpython-38.pyc",
+      "size": 8826,
+      "sha256": "eb1838883a83e85a1a29b046982d7428813316a09342e205e85566428374ab33",
+      "source": "experiments/main/representation-scatter-20260913/evaluate.py"
+    },
+    {
+      "path": "experiments/main/representation-scatter-20260913/__pycache__/audit_outputs.cpython-38.pyc",
+      "size": 7088,
+      "sha256": "4786ceb88d98b2215f1c7f9b116c3fb13b01a80a03c24ca726b30ae85134fee1",
+      "source": "experiments/main/representation-scatter-20260913/audit_outputs.py"
+    },
+    {
+      "path": "experiments/main/representation-scatter-20260913/__pycache__/verify.cpython-38.pyc",
+      "size": 5550,
+      "sha256": "31e858a82c06c6ebda61268795aa822d628f04652c126ae79ae4a47390e825fa",
+      "source": "experiments/main/representation-scatter-20260913/verify.py"
+    },
+    {
+      "path": "experiments/main/representation-scatter-20260913/__pycache__/extract_views.cpython-38.pyc",
+      "size": 8906,
+      "sha256": "e20c8597e172bc3c327bca471aa44fa3f7dddf5d38936596930e1c97dccf08fa",
+      "source": "experiments/main/representation-scatter-20260913/extract_views.py"
+    }
+  ],
+  "count": 26,
+  "logical_bytes_removed": 195506,
+  "free_bytes_before": 11020500992,
+  "free_bytes_after": 11020632064,
+  "preserved": "sourcecode,featureassets,checkpoints,predictions,logs,alltrackedfiles"
+}

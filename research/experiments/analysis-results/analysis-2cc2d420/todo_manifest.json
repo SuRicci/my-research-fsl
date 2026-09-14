@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "campaign_id": "analysis-2cc2d420",
+  "campaign_origin": {
+    "kind": "analysis",
+    "reason": null,
+    "source_artifact_id": null,
+    "source_outline_ref": null,
+    "source_review_round": null,
+    "reviewer_item_ids": []
+  },
+  "selected_outline_ref": null,
+  "research_questions": [],
+  "experimental_designs": [],
+  "todo_items": [
+    {
+      "exp_id": null,
+      "todo_id": "ridge-scale-robustness",
+      "slice_id": "ridge-scale-robustness",
+      "title": "Ridge scale controls across encoders and pools",
+      "status": "pending",
+      "research_question": "",
+      "experimental_design": "",
+      "tier": null,
+      "paper_placement": null,
+      "paper_role": null,
+      "analysis_role": null,
+      "reviewer_question": null,
+      "target_display": null,
+      "main_or_appendix": null,
+      "failure_interpretation": null,
+      "section_id": null,
+      "item_id": "ridge-scale-robustness",
+      "claim_links": [],
+      "completion_condition": "",
+      "why_now": "",
+      "success_criteria": "Complete all12cells, paired scores, equal tuning grid, exact old/new pool identity and scalar scaling validation; interpret negative results honestly.",
+      "abandonment_criteria": "Stop on feature identity, label, or query leakage mismatch; no tuning from evaluation labels.",
+      "required_baselines": [],
+      "reviewer_item_ids": [],
+      "manuscript_targets": []
+    }
+  ],
+  "created_at": "2026-09-12T11:10:35+00:00",
+  "updated_at": "2026-09-12T11:10:35+00:00"
+}

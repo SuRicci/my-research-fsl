@@ -1,0 +1,9 @@
+{
+  "failed_session": "bash-bf6b3ae9",
+  "failure": "ImportError before any evaluation: parent module path shadowed current analyze_results",
+  "before_sha256": "2699dce73c4b836f2843ad3660038118332aa0e82192b1c6f4530811ebd6d247",
+  "after_sha256": "beb04ad2b1a94eeab05dfb31576f82d95bf9564c463bd1efe93979e2016a8ea3",
+  "change": "Prioritize explicit current MAIN module path before importing paired-bootstrap helper",
+  "scientific_change": false,
+  "outputs_before_failure": []
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-2ad7b7e1",
+  "id": "report-2ad7b7e1",
+  "quest_id": "012",
+  "created_at": "2026-09-13T05:47:37+00:00",
+  "updated_at": "2026-09-13T05:47:37+00:00",
+  "source": {
+    "kind": "agent",
+    "role": "pi",
+    "run_id": "run-ccbd8eaf"
+  },
+  "status": "ready",
+  "branch": "run/learned-aggregation-order-20260913",
+  "head_commit": "bad032b048dd3b2e6e47f2106b6d127187cba3a1",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "idea_eligibility",
+  "summary": "Reduced-view efficiency eligibility advanced after audited learned-order failure: primary GPS/learned-TTA overlap checked, all six views and fixed source-gallery sampling recovered,17original-anchored candidate sets feasible.",
+  "next_stage": "idea",
+  "next_action": "Freeze classifier/tie policy and source-only subset selection before formal promotion.",
+  "evidence_paths": [
+    "artifacts/idea/reduced_view_feasibility.md",
+    "handoffs/learned-aggregation-order-20260913.md",
+    "PLAN.md",
+    "CHECKLIST.md"
+  ],
+  "no_new_measurement": true,
+  "run_id": "run-ccbd8eaf",
+  "anchor": "experiment",
+  "semantic_key": "report:experiment:idea_eligibility:none:5471facc4fdfd85e643c2edbff8c1800ab7033f15cdad278df91729860f359fd",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-2ad7b7e1",
+    "related_paths": [],
+    "stage_status": "ready"
+  }
+}

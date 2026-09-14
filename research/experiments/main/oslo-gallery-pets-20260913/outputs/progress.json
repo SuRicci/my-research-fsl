@@ -1,0 +1,42 @@
+{
+  "canonical_pets_k1": {
+    "seconds": 4.227880001068115,
+    "tasks": 500,
+    "sha256": "9e85b188159ee65b66f4fa833b273d59d97eaceb6627869ef65a9fe956326f31"
+  },
+  "canonical_dtd_k1": {
+    "seconds": 3.678316831588745,
+    "tasks": 500,
+    "sha256": "d586173a0a0ccb4757a4636bb21d682f893482307f5f4d35a082ae3585b84542"
+  },
+  "canonical_pets_k5": {
+    "seconds": 3.703054666519165,
+    "tasks": 500,
+    "sha256": "dcc020db8ed0e3862121d62abb4e12cfa52db5ad09826dc093e34c5734231ddc"
+  },
+  "canonical_dtd_k5": {
+    "seconds": 3.600770950317383,
+    "tasks": 500,
+    "sha256": "1412a8250a079c66591499c75f44f2b8de4095e691f0085450ec04c9f5f44c7c"
+  },
+  "fresh_pets_k1": {
+    "seconds": 4.390438079833984,
+    "tasks": 500,
+    "sha256": "56f5c7b9d2e90b8e3504eb36110959c98e0f7144ea0715697c251eb42163ae4f"
+  },
+  "fresh_dtd_k1": {
+    "seconds": 4.470266819000244,
+    "tasks": 500,
+    "sha256": "c4960a9955e9b0d60ac2a2e732b41696a768ff298117a7a4ee457d316bc878fd"
+  },
+  "fresh_pets_k5": {
+    "seconds": 3.246048927307129,
+    "tasks": 500,
+    "sha256": "8923a4a66a2d15f59700cc85dffe1dfa2ba7cbea11b0d067b77718d58c7c2a01"
+  },
+  "fresh_dtd_k5": {
+    "seconds": 3.4627840518951416,
+    "tasks": 500,
+    "sha256": "304b651962c62df3fed9b6db564f9e7d154991bcdcb3dc90e0e3505894625e52"
+  }
+}

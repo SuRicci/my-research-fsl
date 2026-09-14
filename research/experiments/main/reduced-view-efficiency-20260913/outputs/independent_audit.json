@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "independent_classifier_task_scores": 3264,
+  "max_score_error": 4.468647674116255e-15,
+  "independent_frontier_statistics": 408,
+  "max_stat_error_pp": 8.881784197001252e-16,
+  "source_choices_independently_recovered": true
+}

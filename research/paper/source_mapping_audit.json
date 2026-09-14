@@ -1,0 +1,445 @@
+{
+  "status": "source_review_complete",
+  "item_count": 18,
+  "reference_only_count": 15,
+  "main_text_count": 3,
+  "items": [
+    {
+      "item_id": "canonical-additional-domains",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "reason": "Different candidate and evaluation contract; retained for transparent scope and local positive/negative history, not current OSLO claims.",
+      "status": "completed",
+      "result_summary": "No supported PRESS advantage over development-tuned fixed ridge in any of nine cells; three CLIP losses and CIFAR-FS DINO loss have negative pointwise95% task intervals. Fused PRESS-minus-fixed.001 is +.0013pp Flowers,0 CIFARFS,+.0013pp CUB. High Flowers/CUB accuracy ceilings and domain-dependent geometry effects limit generalization. This update repairs initially nested metric rows into81 explicit numeric entries; measured data are unchanged.",
+      "claim_impact": "Broad PRESS superiority and adaptive-benefit claims downgraded. Known geometric/penalty effects remain conditional. No new-method or SOTA claim.",
+      "metric_row_count": 81,
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/canonical-additional-domains.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/SOURCE_AUDIT.md"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.md": "a77ac0ddde6b0172390bb1d2ce132f7ab8b2d5baeb8b3363c69bd2b5c3eab319",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/RESULT.json": "ff2edd33f09a15c975f4a28a3d538ff5c294b09f6a582d9113f7bacea150959d",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-1b946833/canonical-additional-domains.md": "faba23e4616dcc24b8473e2520d13c14f755d426e617835268c2c4aa51010c49",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/comparison.json": "55eb0877d1ce14e8d6c11e5160f9285aaa2cecb91bee0713b3015ec0143d01aa",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/validation.json": "e20c4e28c583016a3536bddeeadb750839f6a5445094bf120d6cdb3accc4f517",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/run_manifest.json": "a6aece7a67d3239976db46aa6838fd71d1ee3e32dc853c84d5a44562afde2e05",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/SOURCE_AUDIT.md": "50d0b44790ba82f9a0868cf318f00435921b1a877265f651671763adf98fb81d"
+      },
+      "validation_records": [
+        {
+          "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1b946833-canonical-additional-domains/experiments/analysis/analysis-1b946833/canonical-additional-domains/outputs/validation.json",
+          "status": "passed",
+          "keys": [
+            "expected_cells",
+            "actual_cells",
+            "max_summary_error",
+            "tasks_per_cell",
+            "class_label_match",
+            "support_query_disjoint",
+            "status"
+          ]
+        }
+      ],
+      "audit_boundary": "Source report and structured record reviewed; no new replay of legacy task arrays."
+    },
+    {
+      "item_id": "ilpcz-gallery-control",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "reason": "Different candidate and evaluation contract; retained for transparent scope and local positive/negative history, not current OSLO claims.",
+      "status": "completed",
+      "result_summary": "Macro one-shot 60.3897% vs R2 72.7733%, delta -12.3837pp [95% paired CI -12.7637,-12.0023]. Matched EuroSAT +13.648pp one-shot and +4.968pp five-shot; DTD matched -7.6573pp one-shot/-11.4013pp five-shot; mismatched galleries -31.3133pp DTD and -24.212pp EuroSAT.",
+      "claim_impact": "Reject universal replacement/robust advantage. Retain large conditional EuroSAT matched-gallery benefit as known-comparator evidence, motivating an enablement/reliability question rather than a novelty or original-table reproduction claim.",
+      "metric_row_count": 7,
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/analysis-results/analysis-1985c6ec/ilpcz-gallery-control.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/DETAILED_RESULTS.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/metrics_summary.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/metric_rows.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/acceptance.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/SOURCE_AUDIT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/protocol.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.md": "6657fc29ea96ba94f39a244472184f33f77b880b1311921db686f777494f0d17",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/RESULT.json": "6c8d1a602c0aa4380857a8655429c9d596a5c01775cbda4c02546855ce40d463",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/analysis-results/analysis-1985c6ec/ilpcz-gallery-control.md": "5e49cf9352896f38810a2b6428b73f0194ded3f85820a0db52a7bee1ac3aee62",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/DETAILED_RESULTS.md": "56480c559ac5419bda573396d3e985ab1cd63f9e2c85bb9926efc522443b5b6f",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/comparison.json": "537de74728832e1c59e01233ba51268254643093fcda0d74cd54b7f1e3f83175",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/metrics_summary.json": "e938691fac2a287bc9f6e344ca41dc6528578235a76056c20746ac154f3174fb",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/metric_rows.json": "b467adc87ba20e5733f633a7c80230ac14cd57ed8f0ab912fc6073002290fa72",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/validation.json": "1ca38cf2b6ac66d1f8b8d2cce0e3ec5c705bb071a3c2deea696a3a9ff3f2ef42",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/run_manifest.json": "38d6578dd91796f9d114ff0160d3c88465689ac5ee724cb2da031f09c19efa3c",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/acceptance.json": "c2777d4a4b036b515d9a5790ac557c06f60f59a0feff39994e419c7b8daaa7a0",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/SOURCE_AUDIT.md": "f42e47efb5b49a4cad2d19c3960444ce169fa0cccbb3f975bcc2aa830d62517a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/protocol.json": "901d04a36f7ca5b52ba15f5e330b0a48bd58fc894daf5e232c80e0953441daa8"
+      },
+      "validation_records": [
+        {
+          "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/outputs/validation.json",
+          "status": "passed",
+          "keys": [
+            "status",
+            "development_fits",
+            "evaluation_tasks",
+            "unique_task_checkpoints",
+            "control_cells",
+            "control_sources",
+            "canonical_metrics",
+            "unique_metric_rows",
+            "baseline_contract_path",
+            "baseline_contract_sha256",
+            "baseline_metric_deltas_pp",
+            "tasks_identity_and_labels",
+            "predictions_recomputed",
+            "source_sha256",
+            "control_manifest",
+            "code_sha256",
+            "all_task_cost",
+            "packaging_seconds"
+          ]
+        }
+      ],
+      "audit_boundary": "Source report and structured record reviewed; no new replay of legacy task arrays."
+    },
+    {
+      "item_id": "multinomial-logistic-control",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "reason": "Different candidate and evaluation contract; retained for transparent scope and local positive/negative history, not current OSLO claims.",
+      "status": "completed",
+      "result_summary": "No broad logistic superiority: versus development-tuned ridge,5positive,8negative,8zero-containing pointwise95% task intervals. Original/newEuroSATfusionlogistic88.073/87.751%, belowfixedridge.1 by1.313/1.299pp. FixedC1isfrequentlyunder-calibrated; gainsagainstoriginalridge1canreflectregularizationchoice. Countsdescriptive,notaglobalmultiplicity-correctedtest.",
+      "claim_impact": "Strong-classifier comparison gap closed. Retain conditional known-method effects; no evidence that logistic or PRESS creates a generally improved method. New-method and SOTAclaimsremainunsupported.",
+      "metric_row_count": 231,
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-8a348b17/multinomial-logistic-control.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/DETAILED_RESULTS.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/validation.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/accuracy_table.csv",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/selection.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.md": "92c4d88739f1d2eeb72163e50a18bfb09f89626ebb8840b9b576e8a9694f4f15",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/RESULT.json": "a0569fbe5e202b73ca9cedaed8554224bb0e4f6887dc6e9a50fd6b3b98dbe891",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-8a348b17/multinomial-logistic-control.md": "96734f939660661c6a3a86481754effc752d53621f96cf544c2f9809c0181932",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/DETAILED_RESULTS.md": "d53e506d90516fb12c2093a39b9d5b86eb1bab8053e7b6a7171aca4e02a070ff",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/comparison.json": "82715e3e2931288a7cc93e9c59e657b8509cad683fd6b61994ec95e782907b0d",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/validation.json": "82a24654bc0ae8b0939f6f35e64b48104176b4a22eeeb7724ca9b16c4fca59d5",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/run_manifest.json": "938000a42bea6d374028490d10031c2d1c32982a50b27af3a3b8365704260111",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/selection.json": "a3ecd85bd9ac85850e0eff420beec46490fbe7e387f07318d9b9b26b3934de00"
+      },
+      "validation_records": [
+        {
+          "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-8a348b17-multinomial-logistic-control/experiments/analysis/analysis-8a348b17/multinomial-logistic-control/outputs/validation.json",
+          "status": "passed",
+          "keys": [
+            "status",
+            "cells",
+            "tasks_per_cell",
+            "development_tasks_per_representation",
+            "convergence_warnings",
+            "max_query_subset_error",
+            "class_alignment",
+            "support_query_disjoint",
+            "coefficients_frozen_before_eval",
+            "total_fits",
+            "max_summary_error",
+            "stored_score_prediction_agreement"
+          ]
+        }
+      ],
+      "audit_boundary": "Source report and structured record reviewed; no new replay of legacy task arrays."
+    },
+    {
+      "item_id": "new-image-confirmation",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "reason": "Different candidate and evaluation contract; retained for transparent scope and local positive/negative history, not current OSLO claims.",
+      "status": "completed",
+      "result_summary": "Macro candidate 72.590% vs same-pool R2 72.265%, delta +0.325 pp, paired 95% CI [0.228,0.423675]; vs frozen dev-tuned R2 +0.261333 pp [0.153317,0.372667]. Per-cell deltas: DTD matched -0.125333, DTD mismatch -0.277333, DTD 5-shot +0.020; EuroSAT mismatch +1.962667, matched -0.260, 5-shot +1.309333 pp. All preset point-estimate guardrails pass; gains heterogeneous.",
+      "claim_impact": "Supports reproducible practical improvement within two existing datasets; no new-domain, independent image-sampling confidence, or novel-algorithm claim. Support centering is prior art.",
+      "metric_row_count": 1,
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/new-image-confirmation.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets/image_identity_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets/manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/protocol.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/selection.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.md": "3bc4ecccaadda5a71aaa6a1d8f8daab9dd91837525958cfcdc76a2399ae6ddf8",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/RESULT.json": "6842a3347894c7b6dc9dd134cc780500554258f02114f06a09d76265713cf430",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/new-image-confirmation.md": "9df56953591c147a94e151947269adbabeaa217663621c2a0003b328688ec6cc",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/comparison.json": "c031684ce358e9c70a14bd2b135bb4ce2ce971a7039630b35c740208205be2e3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/RESULT.md": "c0824defcdac83a427ac89c8b60822ce1b0e6eb2d3a545ff8ffc8e0c5be36753",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/outputs/eval/run_manifest.json": "1396b42fd1a94175515304850b8747db5b24f495b17dedd814f6bfad6de6b2bd",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets/image_identity_manifest.json": "7f971ffe776c2cd0d5df30d36fab02c83edaca50d5774d9f1c0b6b4b36594dbf",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/assets/manifest.json": "42cbb04cfc6181b9a5f58a0a21d766c1a506bb11da2099c75981003480068536",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/protocol.json": "50dd79ce7554e761de90f575c1b09b789c3f715848cd2cfa5104575746ee91d3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-new-image-confirmation/experiments/analysis/analysis-bb5b0939/new-image-confirmation/selection.json": "2d000acab8cf8d662220bf9153244ada8f965db1edc7012feada2c33d36245c9"
+      },
+      "validation_records": [],
+      "audit_boundary": "Source report and structured record reviewed; no new replay of legacy task arrays."
+    },
+    {
+      "item_id": "press-fixed-penalty-challenge",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "reason": "Different candidate and evaluation contract; retained for transparent scope and local positive/negative history, not current OSLO claims.",
+      "status": "completed",
+      "result_summary": "Allfourfusioncells PRESS vsfixedlambda.001 CIincludeszero, with deltas+.018667,+.026667,+.022667,+.029333pp. PRESS vsdev-tunedCLIP isnegativeall4cells (3CIs below0); DTD-DINO-.577333pp old/-.349333new. EuroSAT fusion gains vsdev-tunedbaseline remain+2.673333/+2.474667pp but fixedlambda.01/.001 largelymatches. Fixedlambda.1 iscompetitiveacrosscells asretrospectivediagnostic.",
+      "claim_impact": "Downgrade adaptive-selection explanation for fused-feature gains; small fixedpenalties account for most benefit. No universal PRESS superiority; no newalgorithmnovelty. Do notpromote retrospectivelybestfixedvalue asprospectivelyvalidated.",
+      "metric_row_count": 0,
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-5cd86318/press-fixed-penalty-challenge.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/protocol.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.md": "1390b0fb436a53dc19e1bf0c791ee7b2aafdebb11a37aae0f45a3665605b2fea",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/RESULT.json": "a0414809590f604fdcd11782b87c066e1d5bfe25f14890bb38eb84d560b09ea3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/analysis-results/analysis-5cd86318/press-fixed-penalty-challenge.md": "58c97a20e265bb87efd5cb19eb072b7ea13db414b3892a3843b4dc197362fbd9",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/comparison.json": "b7820d6585ce6ccd0b07a40aedbed647f2e52cc755ff8f5139418a90ca424a9a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/RESULT.md": "4c3f434583f6388e240b343266c5310de1a6134931f5772011faf1f384d6060d",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/outputs/run_manifest.json": "c7f4a42b27e9885c99a2de556516dd640e3e8b9e72326114271d51fc0e3694ad",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-5cd86318-press-fixed-penalty-challenge/experiments/analysis/analysis-5cd86318/press-fixed-penalty-challenge/protocol.json": "4793972363e555c852a108ebb6d44b5c494287a06e552eaa08e9f97cb4f30816"
+      },
+      "validation_records": [],
+      "audit_boundary": "Source report and structured record reviewed; no new replay of legacy task arrays."
+    },
+    {
+      "item_id": "retrieval-head-attribution",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "reason": "Different candidate and evaluation contract; retained for transparent scope and local positive/negative history, not current OSLO claims.",
+      "status": "completed",
+      "result_summary": "1-shot macro effects: combined+.360pp CI[.260325,.461333], retrieval alone+.133[.039,.229342], head alone+.317667[.223,.407342], interaction-.090667[-.177008,-.001]. EuroSAT mismatch is largest benefit; matched cells and DTD mismatch degrade. Five-shot radius control gains+.060pp DTD and+1.552pp EuroSAT over raw, exceeding full CS_l2 by+.089333pp and+.149333pp respectively (paired CIs exclude0). Neighbor overlap 40.2%-80.5%; overlap/delta correlations small and descriptive.",
+      "claim_impact": "Downgrade any special five-shot per-sample geometry explanation: a simpler scalar regularization control explains and exceeds its gain. Retain practical, heterogeneous 1-shot improvement and known-method attribution; no novelty claim.",
+      "metric_row_count": 0,
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/retrieval-head-attribution.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/evaluate_attribution.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/protocol.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.md": "4982aff8eb58fef4186530f645642759335b9efe0ddac27881db208cb9588546",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/RESULT.json": "1ed83afe4ed03f363880fd1ae9fc8ed5c7df6cff6869417187168358ab7b1f86",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-bb5b0939/retrieval-head-attribution.md": "9956ec8c80a03f65eda2e8509ff47a4b96bafe2bb0bed7d416849f09139d3eca",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/comparison.json": "b77f3cc53eac17593ad0626382c79d6b172817096adf7e37db86f054f272cedd",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/RESULT.md": "5dc12a396c352f207eed88180baf0ca0f7b19ce7e25191b765c237bd7f004211",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/outputs/run_manifest.json": "a498520d8f47bad7defd042cda83a2618bd5a4278078af8b2b9fe58042ce4825",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/evaluate_attribution.py": "6e7b9ae1211dd22215ff29be2586a743b28b92cbd49e3a0beb765a4ff7771838",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-bb5b0939-retrieval-head-attribution/experiments/analysis/analysis-bb5b0939/retrieval-head-attribution/protocol.json": "1d29955e081b4021aef425f1e4dd21426fb680c9916037539461a82c771c4bdb"
+      },
+      "validation_records": [],
+      "audit_boundary": "Source report and structured record reviewed; no new replay of legacy task arrays."
+    },
+    {
+      "item_id": "ridge-scale-robustness",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "reason": "Different candidate and evaluation contract; retained for transparent scope and local positive/negative history, not current OSLO claims.",
+      "status": "completed",
+      "result_summary": "Radius scaling loses to equally tuned global ridge in every CLIP cell: originalDTD-.290667pp, originalEuroSAT-.494667, newDTD-.400,newEuroSAT-.521333, all pairedCIs below0. DINO DTD approximatelyneutral (-.004/+.005333) but EuroSAT positive (+1.001333/+.937333). Fusion positive on DTD (+.060/+.105333) and EuroSAT (+1.552/+1.512), and exceeds CS_l2 in all four fusedcells. Detailed twelve-cell outcomes retained without selecting only positive encoders.",
+      "claim_impact": "Reject universal support-radius superiority. Retain encoder/domain-dependent practical benefit for frozen fused features, especially EuroSAT, and known regularization-scale explanation. Equal global tuning absorbs CLIP improvements. No novel method or broad-domain claim.",
+      "metric_row_count": 0,
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-2cc2d420/ridge-scale-robustness.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/comparison.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/RESULT.md",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/run_manifest.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/selection.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/protocol.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.md": "5d168c878882b72555e571ab3579183136e9cf37b36dea735044f5f716610015",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/RESULT.json": "11883bd2698dc71b89b11f2d953c291d23a40e06699e44141333bc56eb3ed0bc",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/analysis-results/analysis-2cc2d420/ridge-scale-robustness.md": "70a9491dcebd58808750fa538c1a9d3a6bbbb00863202545d2baade2ebf2a8c2",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/comparison.json": "b5e1a7ae5471dc5408e67af70b5f4459898697130a78b201369f61eece53afc3",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/RESULT.md": "18cdb6cd31ad38bd8fdc4a5d31d03ffd5e8917eea985b60558a1c6359c47112a",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/outputs/eval/run_manifest.json": "d91736187c8ec1c0934234127a597cc549254cce272a161346d49e1887b2f758",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/selection.json": "d69147d841c58b74dc8055fab9eb928f0e5594fb3a16ca7e1e534f4ab8751a70",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-2cc2d420-ridge-scale-robustness/experiments/analysis/analysis-2cc2d420/ridge-scale-robustness/protocol.json": "5932e33895a4e5abbfd93a50a22939b677ddc53d7b53c57cff1380e4fda8e384"
+      },
+      "validation_records": [],
+      "audit_boundary": "Source report and structured record reviewed; no new replay of legacy task arrays."
+    },
+    {
+      "item_id": "oslo-gallery-pets-20260913",
+      "placement": "main_text",
+      "section_id": "results",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RESULT.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/validation.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RESULT.json": "02314575606742113aea78efa67c6f037ca9805ed1119fa659426a6f37043590"
+      },
+      "audit_boundary": "Read result/report and original completed audit; no experiment rerun.",
+      "former_alias": "oslo-pets-source-default"
+    },
+    {
+      "item_id": "oslo-retained-influence",
+      "placement": "main_text",
+      "section_id": "influence",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/attribution.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/REPORT.md"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_influence/attribution.json": "916f44d2cbb394497f5f3709f2f86556048e9aa3068e92dabfc97d6c0e3bda31"
+      },
+      "audit_boundary": "Read result/report and original completed audit; no experiment rerun."
+    },
+    {
+      "item_id": "oslo-final-step-counterfactual",
+      "placement": "main_text",
+      "section_id": "interventions",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/REPORT.md"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/analysis/oslo_final_step_intervention/analysis.json": "9eb94b0b793480b3f18be84b6d481f88f13b59f83272cdaf15331f8e83e0d9d9"
+      },
+      "audit_boundary": "Read result/report and original completed audit; no experiment rerun."
+    },
+    {
+      "item_id": "fsl-pets-transfer-20260913",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/RESULT.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/RESULT.json": "e62cb207b9d42da4179469f3282aaf5d3dedcf93845da1521eb4a36fe1a53bc2"
+      },
+      "result_summary": "Matched1shot96.0533% versusR296.2400%,delta-0.1867pp95%[-0.5920,+0.2000]; versusCS_l2delta-0.2107[-0.6053,+0.1813]. Gain over supportC10+1.7200[1.2799,2.1520] does not beat gallery controls. Mismatch1shot58.5573% vsR293.9307%,delta-35.3733[-36.3573,-34.4160],loss in500/500tasks. Matched5shot97.8187% vsR298.4427%,delta-0.6240[-0.8480,-0.4133]; mismatch5shot92.6693% vsR298.4427%,delta-5.7733[-6.1600,-5.4000]. Newscope macro1shot77.3053% vsR295.0853%,delta-17.78[-18.3254,-17.2560].",
+      "audit_boundary": "Original main RESULT.json read and hashed; historical classification only, no new scientific claims or array replay."
+    },
+    {
+      "item_id": "r2-fusion-stage-canonical-20260912",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/experiments/main/r2-fusion-stage-canonical-20260912/RESULT.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-fusion-stage-canonical-20260912/experiments/main/r2-fusion-stage-canonical-20260912/RESULT.json": "45f1103fa76e845713e72fa1a510070697a41b2a15a3e1fde83b75800c57c1fc"
+      },
+      "result_summary": "Macro72.9803 versusR2 72.7733: +0.2070pp CI[0.1257,0.2893]. Versusdev-selected early_shared+0.1740pp CI[0.1107,0.2397]. VersusCS_l2 -0.1530pp CI[-0.2703,-0.0330]. Seven baseline rows exactly reconciled.",
+      "audit_boundary": "Original main RESULT.json read and hashed; historical classification only, no new scientific claims or array replay."
+    },
+    {
+      "item_id": "r2-geometry-canonical-20260912",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/RESULT.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-geometry-canonical-20260912/experiments/main/r2-geometry-canonical-20260912/RESULT.json": "ca47378392894587bbc39bde9852538d8408b851f917ab154cf763800bed6f9d"
+      },
+      "result_summary": "CenteredR2 macro73.1333% vsR272.7733%, +0.3600pp CI[0.2603,0.4613]; versus tunedR2+0.3270pp CI[0.2183,0.4367]. All predeclared promotion gates pass. EuroSATmismatched1shot+2.0067pp; matched1shot-0.3693pp; DTDmismatched-0.208pp and matched+0.0107pp. EuroSAT5shot+1.4027pp; DTD5shot-0.0293pp.",
+      "audit_boundary": "Original main RESULT.json read and hashed; historical classification only, no new scientific claims or array replay."
+    },
+    {
+      "item_id": "r2-logloss-canonical-20260912",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/RESULT.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-logloss-canonical-20260912/experiments/main/r2-logloss-canonical-20260912/RESULT.json": "6d067c2b2c8dccfd43f81b86acc6ed2b66ccc86456a60abd16e12b506c24910e"
+      },
+      "result_summary": "Neighborhood logistic macro72.376% vsR272.7733%; delta-0.3973pp CI[-0.4877,-0.3083]. Versus tunedR2 -0.4303pp. Versus mean logistic +0.0167pp, versus distributionridge -0.365pp. Operational loss-by-neighborhood contrast -0.039pp CI[-0.0677,-0.0097]. All promotion gates fail.",
+      "audit_boundary": "Original main RESULT.json read and hashed; historical classification only, no new scientific claims or array replay."
+    },
+    {
+      "item_id": "r2-ownership-canonical-20260912",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/RESULT.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-ownership-canonical-20260912/experiments/main/r2-ownership-canonical-20260912/RESULT.json": "55d08ed247c12adecf00e5c0a5e31c25a5498099821a5e368773aaeb7240fbec"
+      },
+      "result_summary": "Macro72.785%;vsR2+0.011667pp CI[-0.115333,0.138342],vsCS_l2-0.348333pp CI[-0.477667,-0.221992]. Positive comparisons to count/mass controls do not rescue the failed system gate.",
+      "audit_boundary": "Original main RESULT.json read and hashed; historical classification only, no new scientific claims or array replay."
+    },
+    {
+      "item_id": "r2-prevalidation-canonical-20260912",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/RESULT.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-prevalidation-canonical-20260912/experiments/main/r2-prevalidation-canonical-20260912/RESULT.json": "a395aea1e2c647ba9cda34446853c7e515ac910d52ba2fe45ca84841d24af749"
+      },
+      "result_summary": "Five-shot candidate DTD89.852% (-.129333pp vsR2), EuroSAT89.505333%(+2.697333pp). Two-cell mean gain+1.284pp CI[1.160667,1.405333] vsdev-tunedraw;+.478pp[.384,.573333] vsradius. VsPRESS-MSE only+.021333pp[-.012667,.054667], not established. Scaleupperbound chosen94/1000DTD and58/1000Euroepisodes; nozero-scalechoices. Inheritedone-shotmacro73.133333% (+.360pp vsR2) unchanged fromparent.",
+      "audit_boundary": "Original main RESULT.json read and hashed; historical classification only, no new scientific claims or array replay."
+    },
+    {
+      "item_id": "r2-residual-canonical-20260912",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/RESULT.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r2-residual-canonical-20260912/experiments/main/r2-residual-canonical-20260912/RESULT.json": "f7c65ef7a32425b50edfd29f20c1b4583075b15c3ec269c33559e4454d821cb9"
+      },
+      "result_summary": "Residual macro 1-shot accuracy 71.133% versus R2 72.7733%; delta -1.6403 pp, paired 95% CI [-1.793,-1.491]. EuroSAT mismatched +2.1307 pp, matched -5.6267 pp; DTD matched -2.9973 pp, mismatched -0.068 pp. Residual also trails support ridge by 0.2383 pp and mass-matched/isotropic controls by about 0.05 pp. All three promotion gates fail. Five-shot behavior intentionally unchanged.",
+      "audit_boundary": "Original main RESULT.json read and hashed; historical classification only, no new scientific claims or array replay."
+    },
+    {
+      "item_id": "r4-transport-geometry-20260913",
+      "placement": "reference_only",
+      "section_id": "historical_context",
+      "source_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RESULT.json"
+      ],
+      "source_checksums": {
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/r4-transport-geometry-20260913/experiments/main/r4-transport-geometry-20260913/RESULT.json": "16a8187c37f406a60de45c2233b2358ed8c452ddca3e1ade967a49b085e28d2f"
+      },
+      "result_summary": "Primary center_a2 macro43.054342 vsoldcentered44.325898: -1.271557pp,95%[-3.039835,+0.685570]. Equalraw/centered_residual_2 contrast+0.413821pp,95%[-0.230425,+1.148866]. DTD+2.109602pp;EuroSAT-4.652715pp. Posthoc smaller-alpha rows remain diagnostics.",
+      "audit_boundary": "Original main RESULT.json read and hashed; historical classification only, no new scientific claims or array replay."
+    }
+  ],
+  "note": "Legacy metric rows of length zero do not imply missing measurements; raw comparison files remain linked. All source paths read as files; entire-file SHA256 recorded.",
+  "scope_expansion": "8 historical main results discovered by global-ledger sync; reviewed and retained reference-only. Current main alias canonicalized, not counted twice."
+}

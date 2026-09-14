@@ -1,0 +1,75 @@
+{
+  "source_domains": [
+    "dtd",
+    "eurosat"
+  ],
+  "shots": [
+    1,
+    5
+  ],
+  "ways": 5,
+  "queries_per_class": 15,
+  "source_5shot_query_count": 13,
+  "selection_seed": 26091362,
+  "image_split_seed": 26091340,
+  "selection_episodes": 100,
+  "eval_seeds": [
+    26091371,
+    26091372,
+    26091373,
+    26091374,
+    26091375
+  ],
+  "episodes_per_seed": 100,
+  "gate": {
+    "both_directions": true,
+    "macro_gain_pp": 0.5,
+    "macro_ci_lower_pp": 0,
+    "all_cell_ci_lower_min_pp": -0.5,
+    "all_equal_budget_controls": true,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26091359
+  },
+  "permissions": {
+    "query_batch_adaptation": false,
+    "encoder_training": false,
+    "class_names": false,
+    "target_gallery_labels": false,
+    "same_views_all_roles": true,
+    "candidate_gallery_use": false
+  },
+  "resources": {
+    "free_gib_min": 10,
+    "added_gib_max": 0.2,
+    "deadline_utc": "2026-09-15T09:00:00+00:00",
+    "local_only": true,
+    "spend": 0,
+    "cpu_threads": 6,
+    "image_batch": 32,
+    "encoding_workers": 6
+  },
+  "idea_id": "idea-900e7c72",
+  "decision_id": "decision-0c5b874b",
+  "run_id": "view-distribution-kernel-20260913",
+  "tier": "auxiliary/dev",
+  "new_methods": [
+    "distribution_rbf",
+    "mean_rbf",
+    "original_rbf",
+    "linear_mean"
+  ],
+  "betas": [
+    1,
+    4,
+    16
+  ],
+  "penalties": [
+    1.0,
+    0.1,
+    0.01
+  ],
+  "selection_rule": "integer correct; smaller beta then larger penalty on exact ties; all source choices frozen before evaluation",
+  "canonical_metric_deviation": "Source qualification only; five canonical Pets metrics remain unmeasured and cannot be replaced by source metrics",
+  "prior_controls": "Ten frozen score banks; hashes and exact task identities required; original scatter audit remains failed1/88",
+  "audit_tolerance": 1e-08
+}

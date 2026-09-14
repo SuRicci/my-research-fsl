@@ -1,0 +1,40 @@
+{
+  "dtd": {
+    "correct_counts": {
+      "consistency_0.0": 11822,
+      "consistency_0.1": 11819,
+      "consistency_1.0": 11816,
+      "consistency_10.0": 11822,
+      "isotropic_0.0": 11822,
+      "isotropic_0.1": 11822,
+      "isotropic_1.0": 11822,
+      "isotropic_10.0": 11822,
+      "incumbent": 11822,
+      "query_view_mean": 11814
+    },
+    "query_count_per_method": 15000,
+    "choice": {
+      "consistency_eta": 0.0,
+      "isotropic_eta": 0.0
+    }
+  },
+  "eurosat": {
+    "correct_counts": {
+      "consistency_0.0": 11284,
+      "consistency_0.1": 11286,
+      "consistency_1.0": 11312,
+      "consistency_10.0": 11355,
+      "isotropic_0.0": 11284,
+      "isotropic_0.1": 11284,
+      "isotropic_1.0": 11284,
+      "isotropic_10.0": 11284,
+      "incumbent": 11284,
+      "query_view_mean": 11249
+    },
+    "query_count_per_method": 15000,
+    "choice": {
+      "consistency_eta": 10.0,
+      "isotropic_eta": 0.0
+    }
+  }
+}

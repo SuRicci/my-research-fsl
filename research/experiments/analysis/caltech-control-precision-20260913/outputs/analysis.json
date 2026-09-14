@@ -1,0 +1,113 @@
+{
+  "cells": {
+    "caltech101": {
+      "accuracy_pct": 98.39466666666667,
+      "old_accuracy_pct": 98.39466666666667,
+      "prediction_changes": 0,
+      "comparisons": {
+        "repair_minus_old": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "dtd_primary_minus_repair": {
+          "delta_pp": -0.034666666666666755,
+          "ci95_pp": [
+            -0.11466666666666686,
+            0.0453333333333332
+          ]
+        },
+        "eurosat_primary_minus_repair": {
+          "delta_pp": -0.04266666666666678,
+          "ci95_pp": [
+            -0.12000000000000023,
+            0.03733333333333309
+          ]
+        }
+      }
+    },
+    "dtd": {
+      "accuracy_pct": 97.78399999999999,
+      "old_accuracy_pct": 97.78399999999999,
+      "prediction_changes": 0,
+      "comparisons": {
+        "repair_minus_old": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "dtd_primary_minus_repair": {
+          "delta_pp": -0.0746666666666666,
+          "ci95_pp": [
+            -0.17873333333333336,
+            0.029333333333333437
+          ]
+        },
+        "eurosat_primary_minus_repair": {
+          "delta_pp": -0.12800000000000009,
+          "ci95_pp": [
+            -0.22666666666666677,
+            -0.02666666666666682
+          ]
+        }
+      }
+    },
+    "eurosat": {
+      "accuracy_pct": 98.05866666666667,
+      "old_accuracy_pct": 98.05866666666667,
+      "prediction_changes": 0,
+      "comparisons": {
+        "repair_minus_old": {
+          "delta_pp": 0.0,
+          "ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "dtd_primary_minus_repair": {
+          "delta_pp": -0.03200000000000007,
+          "ci95_pp": [
+            -0.14666666666666675,
+            0.07999999999999986
+          ]
+        },
+        "eurosat_primary_minus_repair": {
+          "delta_pp": -0.13066666666666674,
+          "ci95_pp": [
+            -0.25333333333333335,
+            -0.013333333333333355
+          ]
+        }
+      }
+    }
+  },
+  "sources": {
+    "dtd": {
+      "delta_pp": -0.04711111111111115,
+      "ci95_pp": [
+        -0.1208888888888889,
+        0.026666666666666623
+      ]
+    },
+    "eurosat": {
+      "delta_pp": -0.10044444444444452,
+      "ci95_pp": [
+        -0.1733555555555557,
+        -0.026666666666666745
+      ]
+    }
+  },
+  "repair_vs_old": {
+    "delta_pp": 0.0,
+    "ci95_pp": [
+      0.0,
+      0.0
+    ]
+  },
+  "scope": "numerical variant on existing exposedCaltech,not fresh independent evaluation;Petsunmeasured",
+  "prediction_changes": 0
+}

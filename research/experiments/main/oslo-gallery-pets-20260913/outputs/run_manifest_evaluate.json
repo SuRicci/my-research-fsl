@@ -1,0 +1,87 @@
+{
+  "command": [
+    "/opt/anaconda3/envs/torch/bin/python",
+    "experiments/main/oslo-gallery-pets-20260913/run_eval.py",
+    "--phase",
+    "evaluate"
+  ],
+  "config": {
+    "shots": [
+      1,
+      5
+    ],
+    "ways": 5,
+    "queries_per_class": 15,
+    "seeds": [
+      26091311,
+      26091312,
+      26091313,
+      26091314,
+      26091315
+    ],
+    "episodes_per_seed": 100,
+    "gallery_size": 1876,
+    "gallery_conditions": [
+      "pets",
+      "dtd"
+    ],
+    "feature_fusion_weight": 0.5,
+    "bootstrap": {
+      "replicates": 5000,
+      "seed": 26091399,
+      "unit": "paired tasks stratified by seed; conditional on fixed image pools"
+    },
+    "resources": {
+      "free_gib_min": 10,
+      "added_gib_max": 0.15,
+      "local_only": true,
+      "spend": 0,
+      "deadline_utc": "2026-09-15T09:00:00+00:00"
+    },
+    "run_id": "oslo-gallery-pets-20260913",
+    "idea_id": "idea-aca445b7",
+    "baseline_id": "r2-pets-transfer",
+    "baseline_variant": "frozen-v1",
+    "parent_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913",
+    "canonical_contract": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-pets-transfer/json/metric_contract.json",
+    "fresh_identity_manifest": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/artifacts/idea/independent_assets/pets_unused_confirmation.json",
+    "fresh_seeds": [
+      26091331,
+      26091332,
+      26091333,
+      26091334,
+      26091335
+    ],
+    "oslo": {
+      "steps": 2,
+      "lambda_s": 0.05,
+      "lambda_z": 0.1,
+      "ema_weight": 1.0
+    },
+    "methods": [
+      "OSLO_G",
+      "closed_set",
+      "zero_update",
+      "r2",
+      "CS_l2",
+      "support_logistic_C1",
+      "support_logistic_C10"
+    ],
+    "batch_size": 16,
+    "cpu_threads": 4,
+    "scope_boundary": "canonical exposed pool; fresh prospective same-domain image-disjoint, not independent domain",
+    "gates": {
+      "matched_gain_pp": 0.5,
+      "matched_ci_lower": 0.0,
+      "other_cells_ci_lower": -0.5,
+      "require_both_scopes": true
+    },
+    "frozen_at": "2026-09-12T22:06:16.468636+00:00"
+  },
+  "signature": "4ff9c676e57fd0f56d47186aaeb44e745f6c62da8404f01616649efa4f71c18d",
+  "started_at": "2026-09-12T22:11:32.668636+00:00",
+  "python": "3.8.18 | packaged by conda-forge | (default, Oct 10 2023, 15:46:56) \n[Clang 16.0.6 ]",
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "platform": "macOS-26.5.2-arm64-arm-64bit"
+}

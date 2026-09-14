@@ -1,0 +1,65 @@
+{
+  "kind": "report",
+  "schema_version": 1,
+  "artifact_id": "report-1dd19807",
+  "id": "report-1dd19807",
+  "quest_id": "012",
+  "created_at": "2026-09-12T22:51:07+00:00",
+  "updated_at": "2026-09-12T22:51:07+00:00",
+  "source": {
+    "kind": "agent"
+  },
+  "status": "completed",
+  "branch": "paper/oslo-gallery-failure-study",
+  "head_commit": "60bb113849f7f80dd7040db620fa8853f7c11968",
+  "workspace_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "workspace_rel_path": ".ds/worktrees/oslo-gallery-pets-20260913",
+  "report_type": "paper_outline_selected",
+  "summary": "Paper outline `outline-001` selected.",
+  "reason": "Three source-reviewed current evidence groups support one scoped failure-analysis story. Seven historical groups remain reference-only. No independent evidence count inflation, new method, broad OSLO failure or submission-readiness claim.",
+  "flow_type": "paper_outline",
+  "protocol_step": "select",
+  "paths": {
+    "selected_outline_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/selected_outline.json",
+    "outline_manifest_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline/manifest.json",
+    "outline_selection_md": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline_selection.md",
+    "paper_line_state_json": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/paper_line_state.json"
+  },
+  "details": {
+    "outline_id": "outline-001",
+    "title": "When Inlier Ranking Fails to Control Gallery Influence in Frozen Few-Shot Classification",
+    "selected_reason": "Three source-reviewed current evidence groups support one scoped failure-analysis story. Seven historical groups remain reference-only. No independent evidence count inflation, new method, broad OSLO failure or submission-readiness claim.",
+    "paper_line_id": "paper-oslo-gallery-failure-study-outline-001-oslo-gallery-pets-20260913",
+    "paper_branch": "paper/oslo-gallery-failure-study"
+  },
+  "semantic_key": "report:write:paper_outline_selected:select:21692222ffd0f3f4a02290e423bb5383c35e577da532fd5b4d4aa678bbb2d179",
+  "guidance_vm": {
+    "current_anchor": "baseline",
+    "recommended_skill": "decision",
+    "recommended_action": "continue",
+    "summary": "Report saved. Turn it into the next explicit route instead of leaving it as passive context.",
+    "why_now": "A report is most useful when it directly drives the next durable decision.",
+    "complete_when": [
+      "The report informs a route choice or stage transition.",
+      "The next active anchor is clear and durable."
+    ],
+    "alternative_routes": [],
+    "suggested_artifact_calls": [
+      {
+        "name": "artifact.record(kind='decision', ...)",
+        "purpose": "Convert the report into a route decision."
+      }
+    ],
+    "requires_user_decision": false,
+    "pending_interaction_id": null,
+    "source_artifact_kind": "report",
+    "source_artifact_id": "report-1dd19807",
+    "related_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/selected_outline.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline/manifest.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/outline_selection.md",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/paper/paper_line_state.json"
+    ],
+    "stage_status": "ready"
+  }
+}

@@ -1,0 +1,30 @@
+\begin{table}[ht]
+\centering
+\caption{Complete development-transfer accuracy (\%). Each target uses the calibrator learned on the other domain. M and X denote matched and fully mismatched galleries. Each column contains 500 paired tasks. Five-shot fallback is specified in the text; duplicate rows reflect identical predictions rather than independent evidence.}\label{tab:calibration-accuracy}
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrrr}\toprule
+& \multicolumn{4}{c}{DTD} & \multicolumn{4}{c}{EuroSAT} \\
+& \multicolumn{2}{c}{1-shot} & \multicolumn{2}{c}{5-shot}
+& \multicolumn{2}{c}{1-shot} & \multicolumn{2}{c}{5-shot} \\
+Method & M & X & M & X & M & X & M & X \\\midrule
+R2 & 78.81 & 75.12 & 90.57 & 90.57 & 73.67 & 65.87 & 86.82 & 86.82 \\
+CS$_{\ell_2}$, $\lambda=0.01$ & 78.90 & 74.86 & 90.27 & 90.27 & 73.35 & 67.93 & 89.37 & 89.37 \\
+CS$_{\ell_2}$, $\lambda=0.1$ & 78.89 & 74.86 & 90.36 & 90.36 & 73.26 & 67.92 & 89.39 & 89.39 \\
+CS$_{\ell_2}$, $\lambda=1$ & 78.87 & 74.73 & 90.56 & 90.56 & 72.57 & 67.66 & 88.24 & 88.24 \\
+Mix $0$, $\lambda=0.01$ & 75.49 & 75.49 & 90.57 & 90.57 & 68.56 & 68.56 & 86.82 & 86.82 \\
+Mix $0$, $\lambda=0.1$ & 75.55 & 75.55 & 90.57 & 90.57 & 68.46 & 68.46 & 86.82 & 86.82 \\
+Mix $0$, $\lambda=1$ & 75.61 & 75.61 & 90.57 & 90.57 & 67.65 & 67.65 & 86.82 & 86.82 \\
+Mix $0.25$, $\lambda=0.01$ & 77.70 & 75.81 & 90.57 & 90.57 & 71.67 & 67.79 & 86.82 & 86.82 \\
+Mix $0.25$, $\lambda=0.1$ & 77.66 & 75.79 & 90.57 & 90.57 & 71.49 & 67.86 & 86.82 & 86.82 \\
+Mix $0.25$, $\lambda=1$ & 77.46 & 75.74 & 90.57 & 90.57 & 69.99 & 67.38 & 86.82 & 86.82 \\
+Mix $0.5$, $\lambda=0.01$ & 78.88 & 75.13 & 90.57 & 90.57 & 74.14 & 65.47 & 86.82 & 86.82 \\
+Mix $0.5$, $\lambda=0.1$ & 78.81 & 75.12 & 90.57 & 90.57 & 73.67 & 65.87 & 86.82 & 86.82 \\
+Mix $0.5$, $\lambda=1$ & 78.28 & 74.91 & 90.57 & 90.57 & 71.77 & 65.54 & 86.82 & 86.82 \\
+LR1 & 75.58 & 75.58 & 90.47 & 90.47 & 67.62 & 67.62 & 85.12 & 85.12 \\
+LR10 & 75.41 & 75.41 & 90.68 & 90.68 & 68.24 & 68.24 & 88.17 & 88.17 \\
+Calibrated & 75.55 & 75.55 & 90.57 & 90.57 & 73.67 & 68.46 & 86.82 & 86.82 \\
+Same mass & 75.55 & 75.55 & 90.57 & 90.57 & 73.67 & 68.46 & 86.82 & 86.82 \\
+Composition only & 78.32 & 74.99 & 90.57 & 90.57 & 73.67 & 65.39 & 86.82 & 86.82 \\
+Fixed prior & 75.76 & 75.57 & 90.57 & 90.57 & 73.37 & 67.65 & 86.82 & 86.82 \\
+\bottomrule\end{tabular}
+\end{table}

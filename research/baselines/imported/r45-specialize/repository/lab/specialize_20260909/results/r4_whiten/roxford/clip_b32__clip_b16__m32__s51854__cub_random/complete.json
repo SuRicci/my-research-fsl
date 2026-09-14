@@ -1,0 +1,77 @@
+{
+  "method": "r4_whiten",
+  "dataset": "roxford",
+  "pair": [
+    "clip_b32",
+    "clip_b16"
+  ],
+  "budget": 32,
+  "seed": 51854,
+  "policy": "cub_random",
+  "bridge_ids": [
+    "bridge:071.Long_tailed_Jaeger/Long_Tailed_Jaeger_0038_797077.jpg",
+    "bridge:094.White_breasted_Nuthatch/White_Breasted_Nuthatch_0101_86708.jpg",
+    "bridge:177.Prothonotary_Warbler/Prothonotary_Warbler_0046_174104.jpg",
+    "bridge:022.Chuck_will_Widow/Chuck_Will_Widow_0003_796977.jpg",
+    "bridge:012.Yellow_headed_Blackbird/Yellow_Headed_Blackbird_0091_8555.jpg",
+    "bridge:035.Purple_Finch/Purple_Finch_0001_27571.jpg",
+    "bridge:005.Crested_Auklet/Crested_Auklet_0068_785253.jpg",
+    "bridge:014.Indigo_Bunting/Indigo_Bunting_0076_12950.jpg",
+    "bridge:148.Green_tailed_Towhee/Green_Tailed_Towhee_0061_154880.jpg",
+    "bridge:127.Savannah_Sparrow/Savannah_Sparrow_0067_118491.jpg",
+    "bridge:093.Clark_Nutcracker/Clark_Nutcracker_0089_85004.jpg",
+    "bridge:108.White_necked_Raven/White_Necked_Raven_0012_102700.jpg",
+    "bridge:133.White_throated_Sparrow/White_Throated_Sparrow_0135_128819.jpg",
+    "bridge:185.Bohemian_Waxwing/Bohemian_Waxwing_0054_796623.jpg",
+    "bridge:021.Eastern_Towhee/Eastern_Towhee_0035_22223.jpg",
+    "bridge:135.Bank_Swallow/Bank_Swallow_0031_129507.jpg",
+    "bridge:198.Rock_Wren/Rock_Wren_0113_189204.jpg",
+    "bridge:024.Red_faced_Cormorant/Red_Faced_Cormorant_0035_796294.jpg",
+    "bridge:163.Cape_May_Warbler/Cape_May_Warbler_0092_163057.jpg",
+    "bridge:184.Louisiana_Waterthrush/Louisiana_Waterthrush_0080_177379.jpg",
+    "bridge:148.Green_tailed_Towhee/Green_Tailed_Towhee_0024_154855.jpg",
+    "bridge:052.Pied_billed_Grebe/Pied_Billed_Grebe_0071_35386.jpg",
+    "bridge:037.Acadian_Flycatcher/Acadian_Flycatcher_0072_795603.jpg",
+    "bridge:130.Tree_Sparrow/Tree_Sparrow_0072_123991.jpg",
+    "bridge:109.American_Redstart/American_Redstart_0097_103238.jpg",
+    "bridge:172.Nashville_Warbler/Nashville_Warbler_0013_167326.jpg",
+    "bridge:169.Magnolia_Warbler/Magnolia_Warbler_0114_165467.jpg",
+    "bridge:162.Canada_Warbler/Canada_Warbler_0120_162415.jpg",
+    "bridge:141.Artic_Tern/Artic_Tern_0119_142682.jpg",
+    "bridge:056.Pine_Grosbeak/Pine_Grosbeak_0109_38451.jpg",
+    "bridge:067.Anna_Hummingbird/Anna_Hummingbird_0126_55983.jpg",
+    "bridge:170.Mourning_Warbler/Mourning_Warbler_0012_166515.jpg"
+  ],
+  "parent_complete_sha256": "cc22e4840836c8b3c11407ba56041a9c23e383b62ee486a3f93200d12646a102",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4/roxford/clip_b32__clip_b16__m32__s51854__cub_random/aps.npz",
+      "sha256": "45cdea6ddc67428ef41f0c148947dbd5e6270f35ac19be3437439754351a5379"
+    },
+    {
+      "path": "/data/liuhaoyu/r45-refine-20260909/r4_geometry/roxford/clip_b32__clip_b16__m32__s51854__cub_random/aps.npz",
+      "sha256": "d0a561bc3a6c3e64b630b7d460345f0ecd8dd0d4baec0cfb95c5a92f5a636e08"
+    }
+  ],
+  "sha256": "fd90346453653974085b5054624c437cdc9dc78c10d23576fefdc0a7c9d90f3e",
+  "means": [
+    0.2797330775651843,
+    0.08103545583545659
+  ],
+  "conditions": [
+    "medium",
+    "hard"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "bridge_rows_used": 0
+  },
+  "seconds": 0.5199196338653564
+}

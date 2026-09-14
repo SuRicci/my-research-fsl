@@ -1,0 +1,26 @@
+{
+  "pets_pets_k1": {
+    "r2": 96.24,
+    "CS_l2": 96.264,
+    "support_logistic_C1": 94.27733333333333,
+    "support_logistic_C10": 94.33333333333333
+  },
+  "pets_dtd_k1": {
+    "r2": 93.93066666666667,
+    "CS_l2": 93.96266666666666,
+    "support_logistic_C1": 94.27733333333333,
+    "support_logistic_C10": 94.33333333333333
+  },
+  "pets_pets_k5": {
+    "r2": 98.44266666666668,
+    "CS_l2": 98.55199999999999,
+    "support_logistic_C1": 98.408,
+    "support_logistic_C10": 98.56266666666667
+  },
+  "pets_dtd_k5": {
+    "r2": 98.44266666666668,
+    "CS_l2": 98.55199999999999,
+    "support_logistic_C1": 98.408,
+    "support_logistic_C10": 98.56266666666667
+  }
+}

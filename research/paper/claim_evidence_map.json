@@ -1,0 +1,120 @@
+{
+  "outline_id": "outline-001",
+  "claims": [
+    {
+      "claim_id": "C1",
+      "claim": "With fixed source defaults, gallery-only open-set fitting does not improve over R2 in the evaluated Pets conditions.",
+      "scope": "Eight cells across two fixed, image-disjoint same-domain pools, matched or DTD galleries and one or five support examples per class.",
+      "evidence_needed": [
+        "oslo-gallery-pets-20260913"
+      ],
+      "what_would_falsify_it": "A reproducible positive paired effect over R2 in an asserted cell, or a source/identity/permission mismatch invalidating the comparison.",
+      "status": "supported_within_stated_scope",
+      "tables": [
+        "performance",
+        "paired_primary"
+      ],
+      "manuscript_sections": [
+        "paper/latex/sections/experiments.tex",
+        "paper/latex/sections/appendix.tex"
+      ],
+      "source_files": [
+        {
+          "path": "experiments/main/oslo-gallery-pets-20260913/outputs/analysis.json",
+          "sha256": "bcd1ac0786698e264b834435b265474447d9c521a7ec8f5e936991f527025496"
+        },
+        {
+          "path": "experiments/main/oslo-gallery-pets-20260913/outputs/validation.json",
+          "sha256": "020365b08aa1c6610fa8414ca3e05b0837a7b4992dec4d1737964a46bb75cc0b"
+        }
+      ]
+    },
+    {
+      "claim_id": "C2",
+      "claim": "Strong inlier ranking coexists with substantial total task-external gallery weight in the evaluated matched-gallery transfer.",
+      "scope": "Final fitted weights under the source-default gallery transfer; conditional descriptive statistics.",
+      "evidence_needed": [
+        "oslo-retained-influence"
+      ],
+      "what_would_falsify_it": "Incorrect class membership or weight accounting, failed prediction replay, or negligible retained external mass in these conditions.",
+      "status": "supported_within_stated_scope",
+      "tables": [
+        "influence"
+      ],
+      "manuscript_sections": [
+        "paper/latex/sections/analysis.tex"
+      ],
+      "source_files": [
+        {
+          "path": "experiments/analysis/oslo_influence/attribution.json",
+          "sha256": "916f44d2cbb394497f5f3709f2f86556048e9aa3068e92dabfc97d6c0e3bda31"
+        }
+      ]
+    },
+    {
+      "claim_id": "C3",
+      "claim": "Final-step mass balancing alleviates mismatch degradation but does not close the matched one-shot gap; privileged composition removal gives a separate diagnostic gain.",
+      "scope": "Retrospective interventions with earlier fitted weights and feature geometry held fixed.",
+      "evidence_needed": [
+        "oslo-final-step-counterfactual"
+      ],
+      "what_would_falsify_it": "Mass balancing closes the matched one-shot strong-control gap, oracle filtering gives no diagnostic gain, or original predictions fail exact replay.",
+      "status": "supported_within_stated_scope",
+      "tables": [
+        "interventions",
+        "paired_interventions"
+      ],
+      "manuscript_sections": [
+        "paper/latex/sections/analysis.tex",
+        "paper/latex/sections/appendix.tex"
+      ],
+      "source_files": [
+        {
+          "path": "experiments/analysis/oslo_final_step_intervention/analysis.json",
+          "sha256": "9eb94b0b793480b3f18be84b6d481f88f13b59f83272cdaf15331f8e83e0d9d9"
+        }
+      ]
+    },
+    {
+      "claim_id": "C4",
+      "claim": "A fixed source-trained membership calibrator with prior correction fails the two-direction development-transfer gate and yields no prediction benefit over a same-mass control.",
+      "scope": "Frozen features; historically exposed DTD and EuroSAT pools; paired one- and five-shot conditions. Separate from the OSLO experiment.",
+      "evidence_needed": [
+        "prior-calibration-source-transfer"
+      ],
+      "what_would_falsify_it": "Different same-mass predictions or a reproducible paired gate pass under the locked protocol, or an invalid source/task comparison.",
+      "status": "supported_within_stated_scope",
+      "tables": [
+        "calibration_deltas",
+        "calibration_accuracy"
+      ],
+      "manuscript_sections": [
+        "paper/latex/sections/calibration_appendix.tex",
+        "paper/latex/sections/limitations.tex"
+      ],
+      "source_files": [
+        {
+          "path": "experiments/main/prior-calibration-qualification-20260913/outputs/analysis.json",
+          "sha256": "267beeccb283a6935f5c64aeb451e23f4da4498c66f21914c19c684165cd35d5"
+        },
+        {
+          "path": "experiments/main/prior-calibration-qualification-20260913/outputs/validation.json",
+          "sha256": "6b515e6fc9484490c734df8601fbce25a6c04597750554acd563bcdbc14d719a"
+        },
+        {
+          "path": "experiments/main/prior-calibration-qualification-20260913/protocol.json",
+          "sha256": "051cab1891cdedcab5cc44abb33d125a717fb47d07cbec50e9797791719b9ac5"
+        }
+      ]
+    }
+  ],
+  "unique_current_evidence_groups": 4,
+  "limitations_path": "paper/latex/sections/limitations.tex",
+  "historical_groups_reference_only": 35,
+  "submission_readiness": "not_established",
+  "primary_sampled_episodes": 2000,
+  "primary_task_condition_evaluations": 4000,
+  "development_sampled_episodes": 2000,
+  "development_task_condition_evaluations": 4000,
+  "count_boundary": "Four manuscript evidence groups;35reference-only histories do not add independent support to C1-C4."
+}

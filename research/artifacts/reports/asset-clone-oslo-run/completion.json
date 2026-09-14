@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "file_count": 1902,
+  "logical_bytes": 2313244218,
+  "free_before_bytes": 10313175040,
+  "free_after_bytes": 12629741568,
+  "observed_free_change_bytes": 2316566528,
+  "elapsed_seconds": 6.385348796844482,
+  "mechanism": "macOS clonefile, independent inodes and copy-on-write; SHA256 identity checked before replacement",
+  "scope": "Only current-workspace exact duplicate inherited baseline/experiment files; source files untouched. Available-space delta also reflects concurrent OS activity."
+}

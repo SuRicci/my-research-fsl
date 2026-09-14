@@ -1,0 +1,87 @@
+{
+  "phase": "complete",
+  "scope": "Only canonical feature extraction chunks byte/tensor-equivalent to retained complete features; no raw images/models/results",
+  "entries": [
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_clip_vitb16_gallery_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_clip_vitb16_gallery.pt",
+      "status": "removed_verified_redundant",
+      "file_count": 59,
+      "bytes": 1986573,
+      "final_sha256": "bb7414dfe51173a4c36e425ff89feb39be33dcd2289eb07e68658605205283fc",
+      "tensor_equal": true
+    },
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_clip_vitb16_query_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_clip_vitb16_query.pt",
+      "status": "removed_verified_redundant",
+      "file_count": 59,
+      "bytes": 1987597,
+      "final_sha256": "a4600793a76023bfd3afab4f9418f6572e14c21d832c875ed20faadbc02fa46e",
+      "tensor_equal": true
+    },
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_dinov2_vits14_gallery_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_dinov2_vits14_gallery.pt",
+      "status": "removed_verified_redundant",
+      "file_count": 59,
+      "bytes": 1506317,
+      "final_sha256": "e9ecb63f4d04f36e30c4e79b159a077d4224eba13d0b2555ed8812355b0a924b",
+      "tensor_equal": true
+    },
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_dinov2_vits14_query_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/dtd_dinov2_vits14_query.pt",
+      "status": "removed_verified_redundant",
+      "file_count": 59,
+      "bytes": 1507085,
+      "final_sha256": "e41439a1488a518776677006e69c12ac66fd20d50310eca8c454fbe89be40432",
+      "tensor_equal": true
+    },
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_clip_vitb16_gallery_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_clip_vitb16_gallery.pt",
+      "status": "removed_verified_redundant",
+      "file_count": 157,
+      "bytes": 5294427,
+      "final_sha256": "f2c83984b3bea53e3c697d6b91ade5cd8a8956427bbaa258240130e346c57fa0",
+      "tensor_equal": true
+    },
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_clip_vitb16_query_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_clip_vitb16_query.pt",
+      "status": "removed_verified_redundant",
+      "file_count": 169,
+      "bytes": 5717359,
+      "final_sha256": "132ca149faa9d6832554fc11e1b10897b23567732c652bbc9cc30ab8d72cc986",
+      "tensor_equal": true
+    },
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_dinov2_vits14_gallery_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_dinov2_vits14_gallery.pt",
+      "status": "removed_verified_redundant",
+      "file_count": 157,
+      "bytes": 4014427,
+      "final_sha256": "f9e69410a919ef3ee42c315a2adf95611c1539d8fa6f8b5d3a95824bb875ae7d",
+      "tensor_equal": true
+    },
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_dinov2_vits14_query_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/assets/eurosat_dinov2_vits14_query.pt",
+      "status": "removed_verified_redundant",
+      "file_count": 169,
+      "bytes": 4334959,
+      "final_sha256": "002f96454d2c2e109a7851bd567efdbdc95290c138834f4e187d4293ce92a13c",
+      "tensor_equal": true
+    },
+    {
+      "chunks": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r2-canonical/assets/eurosat_clip_vitb16_query_chunks",
+      "final": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/baselines/local/r2-canonical/assets/eurosat_clip_vitb16_query.pt",
+      "status": "retained",
+      "reason": "missing completed final"
+    }
+  ],
+  "free_before_gib": 11.758380889892578,
+  "free_after_gib": 11.785198211669922,
+  "removed_logical_bytes": 26348744
+}

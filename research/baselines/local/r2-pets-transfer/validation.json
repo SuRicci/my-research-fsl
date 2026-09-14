@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "cells": 4,
+  "tasks_per_cell": 500,
+  "variants": {
+    "r2": {
+      "metrics_summary": {
+        "pets_matched_1shot_accuracy": 96.24,
+        "pets_mismatched_1shot_accuracy": 93.93066666666667,
+        "pets_matched_5shot_accuracy": 98.44266666666668,
+        "pets_mismatched_5shot_accuracy": 98.44266666666668,
+        "pets_macro_1shot_accuracy": 95.08533333333332
+      },
+      "role": "frozen_local_comparator"
+    },
+    "CS_l2": {
+      "metrics_summary": {
+        "pets_matched_1shot_accuracy": 96.264,
+        "pets_mismatched_1shot_accuracy": 93.96266666666666,
+        "pets_matched_5shot_accuracy": 98.55199999999999,
+        "pets_mismatched_5shot_accuracy": 98.55199999999999,
+        "pets_macro_1shot_accuracy": 95.11333333333333
+      },
+      "role": "same_permission_control"
+    },
+    "support_logistic_C1": {
+      "metrics_summary": {
+        "pets_matched_1shot_accuracy": 94.27733333333333,
+        "pets_mismatched_1shot_accuracy": 94.27733333333333,
+        "pets_matched_5shot_accuracy": 98.408,
+        "pets_mismatched_5shot_accuracy": 98.408,
+        "pets_macro_1shot_accuracy": 94.27733333333333
+      },
+      "role": "same_permission_control"
+    },
+    "support_logistic_C10": {
+      "metrics_summary": {
+        "pets_matched_1shot_accuracy": 94.33333333333333,
+        "pets_mismatched_1shot_accuracy": 94.33333333333333,
+        "pets_matched_5shot_accuracy": 98.56266666666667,
+        "pets_mismatched_5shot_accuracy": 98.56266666666667,
+        "pets_macro_1shot_accuracy": 94.33333333333333
+      },
+      "role": "same_permission_control"
+    }
+  },
+  "output_sha256": {
+    "pets_pets_k1": "eb233ba16c3fc0825dde3c50f4a074c3e596a45c0288cfd84f39277659d9752c",
+    "pets_dtd_k1": "6931fa944cc4e328eb4a096b7eba820150a653643fd2cde0d14d4b9da5ca7207",
+    "pets_pets_k5": "e3ea079327111b59251749f95ba7cdb4c77440986de630ef69ec716665660ac8",
+    "pets_dtd_k5": "e3ea079327111b59251749f95ba7cdb4c77440986de630ef69ec716665660ac8"
+  },
+  "protocol_sha256": "589b1981a5813b8d0b08d1eba7c2dbe6df5f98f543d1fd4e043cd9e11dbe5bd3",
+  "run_manifest_sha256": "9094a674e9fffff2d5cbe9c0eb1c9877468cd80de7865ad81ab8c7b6ab8f9b4b",
+  "audit_sha256": "2a10733d077ad2d0be9dfc4b09522350049bd3b20089ddd9252785fdc9b9b354",
+  "r2_spot_replay_max_abs_error": {
+    "pets_pets_k1": 0.0,
+    "pets_dtd_k1": 0.0,
+    "pets_pets_k5": 0.0,
+    "pets_dtd_k5": 0.0
+  },
+  "full_task_and_prediction_check": true,
+  "known_deviations": [
+    "Local frozen R2 transferred to Pets; not a SWAT paper reproduction.",
+    "CS_l2 five-shot is a fixed prespecified extension.",
+    "Repeated tasks quantify conditional fixed-pool variation."
+  ]
+}

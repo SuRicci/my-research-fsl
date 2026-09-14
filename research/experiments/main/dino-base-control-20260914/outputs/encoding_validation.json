@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "images": 14153,
+  "all_pool_hashes_identities_shapes_and_values_checked": true,
+  "unit_norm_max_errors": {
+    "dtd_query": 4.982948303222656e-05,
+    "dtd_gallery": 5.060434341430664e-05,
+    "eurosat_query": 7.385015487670898e-05,
+    "eurosat_gallery": 7.43865966796875e-05
+  },
+  "manifest_sha256": "7b49157c92e0594cdc3f109367128970c00abea7bbd95a90b24c489d0ac5febd"
+}

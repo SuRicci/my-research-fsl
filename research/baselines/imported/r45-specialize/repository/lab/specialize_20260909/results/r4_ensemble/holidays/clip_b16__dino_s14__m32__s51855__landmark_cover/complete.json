@@ -1,0 +1,73 @@
+{
+  "method": "r4_ensemble",
+  "dataset": "holidays",
+  "pair": [
+    "clip_b16",
+    "dino_s14"
+  ],
+  "budget": 32,
+  "seed": 51855,
+  "policy": "landmark_cover",
+  "bridge_ids": [
+    "rparis:gallery:paris_general_002351",
+    "roxford:gallery:jesus_000394",
+    "roxford:gallery:magdalen_000994",
+    "rparis:gallery:paris_pompidou_000577",
+    "rparis:gallery:paris_notredame_000727",
+    "rparis:gallery:paris_general_001877",
+    "roxford:gallery:oriel_000030",
+    "rparis:gallery:paris_general_001501",
+    "roxford:gallery:new_000963",
+    "roxford:gallery:magdalen_000865",
+    "rparis:gallery:paris_pantheon_000615",
+    "roxford:gallery:new_001019",
+    "rparis:gallery:paris_general_001463",
+    "rparis:gallery:paris_defense_000595",
+    "rparis:gallery:paris_general_002217",
+    "rparis:gallery:paris_sacrecoeur_000122",
+    "roxford:gallery:christ_church_001007",
+    "rparis:gallery:paris_louvre_000386",
+    "rparis:gallery:paris_general_003101",
+    "roxford:gallery:new_000053",
+    "roxford:gallery:ashmolean_000107",
+    "rparis:gallery:paris_notredame_000206",
+    "roxford:gallery:oxford_002539",
+    "roxford:gallery:oxford_000560",
+    "roxford:gallery:oxford_000014",
+    "rparis:gallery:paris_general_000811",
+    "rparis:gallery:paris_sacrecoeur_000064",
+    "roxford:gallery:magdalen_000495",
+    "rparis:gallery:paris_general_003129",
+    "rparis:gallery:paris_museedorsay_000454",
+    "roxford:gallery:all_souls_000060",
+    "rparis:gallery:paris_museedorsay_000576"
+  ],
+  "parent_complete_sha256": "a4bcf9e6a32cdc33f6084e3b9d7ab6cdedfa0f7ecd08246d94651993e010a4a0",
+  "inputs": [
+    {
+      "path": "/data/liuhaoyu/r45-followup-20260909/r4_holidays/evaluation/clip_b16__dino_s14__m32__s51855__landmark_cover/predictions.npz",
+      "sha256": "4350c6c8dbe7fd92547ccc55c046415e6ae3248eb59f6764c298a90b7963026c"
+    }
+  ],
+  "sha256": "c60f1c84dbb988c75e2b240886a031b26a7d0d23e68df071c545f68eaac661f3",
+  "means": [
+    0.8810787593059206
+  ],
+  "conditions": [
+    "map"
+  ],
+  "baseline_replay_max_map_error": {
+    "old_centered": 0.0,
+    "v0_press": 0.0,
+    "centered_residual_2.0": 0.0
+  },
+  "diagnostics": {
+    "bridge_rows": 32,
+    "new_gallery_rows": 0,
+    "query_batch_fitting": false,
+    "mean_shrink": 0.6527513595996192,
+    "members": 8,
+    "distinct_bridge_budget": 32
+  },
+  "seconds": 1.0667181015014648
+}

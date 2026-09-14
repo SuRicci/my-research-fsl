@@ -1,0 +1,677 @@
+{
+  "metrics_summary": {
+    "dtd_matched_1shot_accuracy": 76.98533333333333,
+    "dtd_5shot_accuracy": 89.98133333333332,
+    "dtd_mismatched_1shot_accuracy": 73.92,
+    "eurosat_mismatched_1shot_accuracy": 65.76933333333335,
+    "eurosat_matched_1shot_accuracy": 74.46533333333333,
+    "eurosat_5shot_accuracy": 86.808,
+    "macro_1shot_accuracy": 72.785
+  },
+  "per_metric": {
+    "dtd_matched_1shot_accuracy": {
+      "methods": {
+        "r2": {
+          "accuracy_percent": 76.86266666666667,
+          "ownership_minus_control_pp": 0.12266666666666694,
+          "paired_ci95_pp": [
+            -0.014666666666666434,
+            0.26000000000000034
+          ]
+        },
+        "support_proto": {
+          "accuracy_percent": 73.20533333333334,
+          "ownership_minus_control_pp": 3.78,
+          "paired_ci95_pp": [
+            3.4826333333333337,
+            4.08
+          ]
+        },
+        "ownership": {
+          "accuracy_percent": 76.98533333333333,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "count_nearest": {
+          "accuracy_percent": 76.832,
+          "ownership_minus_control_pp": 0.15333333333333343,
+          "paired_ci95_pp": [
+            0.018633333333333262,
+            0.29200000000000015
+          ]
+        },
+        "count_random": {
+          "accuracy_percent": 76.93466666666666,
+          "ownership_minus_control_pp": 0.050666666666666825,
+          "paired_ci95_pp": [
+            -0.08933333333333311,
+            0.1893333333333331
+          ]
+        },
+        "mass_only": {
+          "accuracy_percent": 75.84666666666668,
+          "ownership_minus_control_pp": 1.138666666666667,
+          "paired_ci95_pp": [
+            0.976,
+            1.3039999999999996
+          ]
+        },
+        "exclusive_mass": {
+          "accuracy_percent": 75.98533333333333,
+          "ownership_minus_control_pp": 1.0000000000000002,
+          "paired_ci95_pp": [
+            0.8413333333333335,
+            1.1520000000000001
+          ]
+        },
+        "centered_ownership": {
+          "accuracy_percent": 76.87733333333334,
+          "ownership_minus_control_pp": 0.1080000000000001,
+          "paired_ci95_pp": [
+            -0.03466666666666652,
+            0.24666666666666667
+          ]
+        },
+        "r2_tuned": {
+          "accuracy_percent": 77.00133333333333,
+          "ownership_minus_control_pp": -0.015999999999999695,
+          "paired_ci95_pp": [
+            -0.1306666666666666,
+            0.0986666666666669
+          ]
+        },
+        "centered_r2": {
+          "accuracy_percent": 76.87333333333335,
+          "ownership_minus_control_pp": 0.11200000000000011,
+          "paired_ci95_pp": [
+            -0.051999999999999824,
+            0.27333333333333343
+          ]
+        },
+        "support_tuned": {
+          "accuracy_percent": 74.032,
+          "ownership_minus_control_pp": 2.9533333333333336,
+          "paired_ci95_pp": [
+            2.706666666666667,
+            3.1973333333333334
+          ]
+        }
+      },
+      "retained_count_mean": 55.167,
+      "empty_pool_fraction": 0.0
+    },
+    "dtd_5shot_accuracy": {
+      "methods": {
+        "ownership": {
+          "accuracy_percent": 89.98133333333332,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "count_nearest": {
+          "accuracy_percent": 89.98133333333332,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "count_random": {
+          "accuracy_percent": 89.98133333333332,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "mass_only": {
+          "accuracy_percent": 89.98133333333332,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "exclusive_mass": {
+          "accuracy_percent": 89.98133333333332,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "centered_ownership": {
+          "accuracy_percent": 89.952,
+          "ownership_minus_control_pp": 0.029333333333333357,
+          "paired_ci95_pp": [
+            -0.03200000000000014,
+            0.09333333333333337
+          ]
+        },
+        "r2_tuned": {
+          "accuracy_percent": 89.98133333333332,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "centered_r2": {
+          "accuracy_percent": 89.952,
+          "ownership_minus_control_pp": 0.029333333333333357,
+          "paired_ci95_pp": [
+            -0.03200000000000014,
+            0.09333333333333337
+          ]
+        },
+        "support_tuned": {
+          "accuracy_percent": 89.98133333333332,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "r2": {
+          "accuracy_percent": 89.98133333333332,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "support_proto": {
+          "accuracy_percent": 89.37066666666666,
+          "ownership_minus_control_pp": 0.6106666666666665,
+          "paired_ci95_pp": [
+            0.47333333333333344,
+            0.7493333333333333
+          ]
+        }
+      }
+    },
+    "dtd_mismatched_1shot_accuracy": {
+      "methods": {
+        "r2": {
+          "accuracy_percent": 74.07866666666668,
+          "ownership_minus_control_pp": -0.15866666666666654,
+          "paired_ci95_pp": [
+            -0.3560000000000001,
+            0.0399999999999999
+          ]
+        },
+        "support_proto": {
+          "accuracy_percent": 73.20533333333334,
+          "ownership_minus_control_pp": 0.7146666666666666,
+          "paired_ci95_pp": [
+            0.45466666666666666,
+            0.9826666666666665
+          ]
+        },
+        "ownership": {
+          "accuracy_percent": 73.92,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "count_nearest": {
+          "accuracy_percent": 73.988,
+          "ownership_minus_control_pp": -0.06799999999999977,
+          "paired_ci95_pp": [
+            -0.23866666666666617,
+            0.10003333333333339
+          ]
+        },
+        "count_random": {
+          "accuracy_percent": 73.91066666666666,
+          "ownership_minus_control_pp": 0.009333333333333364,
+          "paired_ci95_pp": [
+            -0.16536666666666677,
+            0.18669999999999976
+          ]
+        },
+        "mass_only": {
+          "accuracy_percent": 73.88,
+          "ownership_minus_control_pp": 0.03999999999999962,
+          "paired_ci95_pp": [
+            -0.16670000000000057,
+            0.24533333333333307
+          ]
+        },
+        "exclusive_mass": {
+          "accuracy_percent": 73.88933333333334,
+          "ownership_minus_control_pp": 0.030666666666666245,
+          "paired_ci95_pp": [
+            -0.17470000000000058,
+            0.237333333333333
+          ]
+        },
+        "centered_ownership": {
+          "accuracy_percent": 73.956,
+          "ownership_minus_control_pp": -0.0360000000000001,
+          "paired_ci95_pp": [
+            -0.22400000000000025,
+            0.15866666666666654
+          ]
+        },
+        "r2_tuned": {
+          "accuracy_percent": 74.072,
+          "ownership_minus_control_pp": -0.15199999999999994,
+          "paired_ci95_pp": [
+            -0.3506666666666664,
+            0.04400000000000016
+          ]
+        },
+        "centered_r2": {
+          "accuracy_percent": 73.87066666666665,
+          "ownership_minus_control_pp": 0.04933333333333297,
+          "paired_ci95_pp": [
+            -0.16266666666666693,
+            0.2639999999999993
+          ]
+        },
+        "support_tuned": {
+          "accuracy_percent": 74.032,
+          "ownership_minus_control_pp": -0.11200000000000017,
+          "paired_ci95_pp": [
+            -0.3466666666666665,
+            0.12799999999999973
+          ]
+        }
+      },
+      "retained_count_mean": 35.4796,
+      "empty_pool_fraction": 0.0646
+    },
+    "eurosat_mismatched_1shot_accuracy": {
+      "methods": {
+        "r2": {
+          "accuracy_percent": 66.11733333333333,
+          "ownership_minus_control_pp": -0.348,
+          "paired_ci95_pp": [
+            -0.7560000000000002,
+            0.06266666666666668
+          ]
+        },
+        "support_proto": {
+          "accuracy_percent": 67.61866666666666,
+          "ownership_minus_control_pp": -1.8493333333333333,
+          "paired_ci95_pp": [
+            -2.2293666666666665,
+            -1.4719666666666669
+          ]
+        },
+        "ownership": {
+          "accuracy_percent": 65.76933333333335,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "count_nearest": {
+          "accuracy_percent": 64.85066666666667,
+          "ownership_minus_control_pp": 0.9186666666666665,
+          "paired_ci95_pp": [
+            0.581333333333333,
+            1.26
+          ]
+        },
+        "count_random": {
+          "accuracy_percent": 65.18133333333334,
+          "ownership_minus_control_pp": 0.5879999999999999,
+          "paired_ci95_pp": [
+            0.2613333333333334,
+            0.8986666666666665
+          ]
+        },
+        "mass_only": {
+          "accuracy_percent": 67.732,
+          "ownership_minus_control_pp": -1.9626666666666666,
+          "paired_ci95_pp": [
+            -2.337333333333333,
+            -1.5946666666666667
+          ]
+        },
+        "exclusive_mass": {
+          "accuracy_percent": 67.58933333333333,
+          "ownership_minus_control_pp": -1.82,
+          "paired_ci95_pp": [
+            -2.1826666666666665,
+            -1.4653000000000005
+          ]
+        },
+        "centered_ownership": {
+          "accuracy_percent": 66.86666666666666,
+          "ownership_minus_control_pp": -1.097333333333333,
+          "paired_ci95_pp": [
+            -1.4773999999999996,
+            -0.7386333333333337
+          ]
+        },
+        "r2_tuned": {
+          "accuracy_percent": 65.67466666666665,
+          "ownership_minus_control_pp": 0.0946666666666665,
+          "paired_ci95_pp": [
+            -0.31333333333333296,
+            0.4959999999999996
+          ]
+        },
+        "centered_r2": {
+          "accuracy_percent": 68.124,
+          "ownership_minus_control_pp": -2.354666666666667,
+          "paired_ci95_pp": [
+            -2.7187,
+            -2.0013333333333336
+          ]
+        },
+        "support_tuned": {
+          "accuracy_percent": 68.71066666666665,
+          "ownership_minus_control_pp": -2.941333333333333,
+          "paired_ci95_pp": [
+            -3.3,
+            -2.582666666666667
+          ]
+        }
+      },
+      "retained_count_mean": 27.5016,
+      "empty_pool_fraction": 0.0282
+    },
+    "eurosat_matched_1shot_accuracy": {
+      "methods": {
+        "r2": {
+          "accuracy_percent": 74.03466666666665,
+          "ownership_minus_control_pp": 0.43066666666666664,
+          "paired_ci95_pp": [
+            0.26800000000000007,
+            0.5840333333333333
+          ]
+        },
+        "support_proto": {
+          "accuracy_percent": 67.61866666666666,
+          "ownership_minus_control_pp": 6.846666666666666,
+          "paired_ci95_pp": [
+            6.509299999999999,
+            7.181333333333334
+          ]
+        },
+        "ownership": {
+          "accuracy_percent": 74.46533333333333,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "count_nearest": {
+          "accuracy_percent": 73.892,
+          "ownership_minus_control_pp": 0.5733333333333334,
+          "paired_ci95_pp": [
+            0.4239999999999998,
+            0.7200333333333333
+          ]
+        },
+        "count_random": {
+          "accuracy_percent": 74.02533333333332,
+          "ownership_minus_control_pp": 0.44000000000000017,
+          "paired_ci95_pp": [
+            0.28266666666666707,
+            0.5960000000000002
+          ]
+        },
+        "mass_only": {
+          "accuracy_percent": 72.78533333333333,
+          "ownership_minus_control_pp": 1.68,
+          "paired_ci95_pp": [
+            1.4813333333333332,
+            1.8706666666666663
+          ]
+        },
+        "exclusive_mass": {
+          "accuracy_percent": 72.832,
+          "ownership_minus_control_pp": 1.6333333333333335,
+          "paired_ci95_pp": [
+            1.4373333333333331,
+            1.8200333333333332
+          ]
+        },
+        "centered_ownership": {
+          "accuracy_percent": 73.65333333333332,
+          "ownership_minus_control_pp": 0.8120000000000003,
+          "paired_ci95_pp": [
+            0.6212999999999999,
+            0.9973333333333334
+          ]
+        },
+        "r2_tuned": {
+          "accuracy_percent": 74.47733333333333,
+          "ownership_minus_control_pp": -0.011999999999999901,
+          "paired_ci95_pp": [
+            -0.11333333333333298,
+            0.0853333333333336
+          ]
+        },
+        "centered_r2": {
+          "accuracy_percent": 73.66533333333334,
+          "ownership_minus_control_pp": 0.8000000000000003,
+          "paired_ci95_pp": [
+            0.5906666666666672,
+            1.0040333333333331
+          ]
+        },
+        "support_tuned": {
+          "accuracy_percent": 68.71066666666665,
+          "ownership_minus_control_pp": 5.754666666666667,
+          "paired_ci95_pp": [
+            5.4759666666666655,
+            6.021333333333334
+          ]
+        }
+      },
+      "retained_count_mean": 59.4044,
+      "empty_pool_fraction": 0.0
+    },
+    "eurosat_5shot_accuracy": {
+      "methods": {
+        "ownership": {
+          "accuracy_percent": 86.808,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "count_nearest": {
+          "accuracy_percent": 86.808,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "count_random": {
+          "accuracy_percent": 86.808,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "mass_only": {
+          "accuracy_percent": 86.808,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "exclusive_mass": {
+          "accuracy_percent": 86.808,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "centered_ownership": {
+          "accuracy_percent": 88.21066666666665,
+          "ownership_minus_control_pp": -1.402666666666666,
+          "paired_ci95_pp": [
+            -1.5213666666666665,
+            -1.281333333333333
+          ]
+        },
+        "r2_tuned": {
+          "accuracy_percent": 86.808,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "centered_r2": {
+          "accuracy_percent": 88.21066666666665,
+          "ownership_minus_control_pp": -1.402666666666666,
+          "paired_ci95_pp": [
+            -1.5213666666666665,
+            -1.281333333333333
+          ]
+        },
+        "support_tuned": {
+          "accuracy_percent": 86.808,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "r2": {
+          "accuracy_percent": 86.808,
+          "ownership_minus_control_pp": 0.0,
+          "paired_ci95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "support_proto": {
+          "accuracy_percent": 85.06266666666667,
+          "ownership_minus_control_pp": 1.7453333333333334,
+          "paired_ci95_pp": [
+            1.5613333333333335,
+            1.9359999999999995
+          ]
+        }
+      }
+    }
+  },
+  "macro_vs_controls": {
+    "r2": {
+      "delta_pp": 0.011666666666666763,
+      "paired_ci95_pp": [
+        -0.11533333333333316,
+        0.13834166666666678
+      ]
+    },
+    "support_proto": {
+      "delta_pp": 2.373,
+      "paired_ci95_pp": [
+        2.1826583333333334,
+        2.560683333333333
+      ]
+    },
+    "ownership": {
+      "delta_pp": 0.0,
+      "paired_ci95_pp": [
+        0.0,
+        0.0
+      ]
+    },
+    "count_nearest": {
+      "delta_pp": 0.39433333333333326,
+      "paired_ci95_pp": [
+        0.28500000000000003,
+        0.5036749999999999
+      ]
+    },
+    "count_random": {
+      "delta_pp": 0.27200000000000013,
+      "paired_ci95_pp": [
+        0.1629916666666667,
+        0.38001666666666667
+      ]
+    },
+    "mass_only": {
+      "delta_pp": 0.22399999999999998,
+      "paired_ci95_pp": [
+        0.09765833333333337,
+        0.3499999999999999
+      ]
+    },
+    "exclusive_mass": {
+      "delta_pp": 0.21100000000000016,
+      "paired_ci95_pp": [
+        0.08733333333333373,
+        0.33233333333333326
+      ]
+    },
+    "centered_ownership": {
+      "delta_pp": -0.053333333333333136,
+      "paired_ci95_pp": [
+        -0.1820083333333334,
+        0.07167500000000003
+      ]
+    },
+    "r2_tuned": {
+      "delta_pp": -0.021333333333333194,
+      "paired_ci95_pp": [
+        -0.14268333333333327,
+        0.09967500000000011
+      ]
+    },
+    "centered_r2": {
+      "delta_pp": -0.34833333333333333,
+      "paired_ci95_pp": [
+        -0.4776666666666667,
+        -0.2219916666666672
+      ]
+    },
+    "support_tuned": {
+      "delta_pp": 1.4136666666666668,
+      "paired_ci95_pp": [
+        1.259658333333333,
+        1.5643416666666665
+      ]
+    }
+  },
+  "gate": {
+    "strong_macro": {
+      "r2": false,
+      "centered_r2": false
+    },
+    "cell_loss": {
+      "r2": true,
+      "centered_r2": false
+    },
+    "ownership_attribution": {
+      "count_nearest": true,
+      "count_random": true,
+      "mass_only": true
+    },
+    "passed": false
+  },
+  "scope": "Exploratory paired task inference on viewed fixed image pools; shared-gallery pairing preserved. Five-shot primary is inherited R2; no new-method or SOTA inference.",
+  "validation": {
+    "reference_endpoint_max_error": 0.0,
+    "reference_predictions_equal": true,
+    "task_identity_equal": true,
+    "ownership_recomputed": true,
+    "five_shot_inherited_exact": true,
+    "required_metrics": 7
+  }
+}

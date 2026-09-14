@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-09-12T21:45:56.982904+00:00",
+  "status": "completed",
+  "active_bash_id": null,
+  "completed_bash_id": "bash-c587b30c",
+  "tasks": 2000,
+  "main_artifact_id": "run-cb50d2d5",
+  "validation": "passed",
+  "failure_report": "report-b835005e",
+  "decision_id": "decision-7abc1872",
+  "next_anchor": "idea",
+  "next_read": "artifacts/idea/PLAN.md and CHECKLIST.md",
+  "free_gib": 13.056636810302734
+}

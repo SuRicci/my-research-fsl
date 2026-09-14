@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "loss_decomposition_max_error": 2.86102294921875e-06,
+  "uniform_weight_reference_ridge_error": 0.0,
+  "single_query_error": 1.6093254089355469e-06,
+  "single_episode_error": 0.0,
+  "finite": true
+}

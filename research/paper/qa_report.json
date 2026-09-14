@@ -1,0 +1,42 @@
+{
+  "status": "passed_for_draft_checkpoint",
+  "source_hashes_verified": {
+    "experiments/main/oslo-gallery-pets-20260913/outputs/analysis.json": "bcd1ac0786698e264b834435b265474447d9c521a7ec8f5e936991f527025496",
+    "experiments/analysis/oslo_influence/attribution.json": "916f44d2cbb394497f5f3709f2f86556048e9aa3068e92dabfc97d6c0e3bda31",
+    "experiments/analysis/oslo_final_step_intervention/analysis.json": "9eb94b0b793480b3f18be84b6d481f88f13b59f83272cdaf15331f8e83e0d9d9"
+  },
+  "table_row_counts": {
+    "paired_primary": 8,
+    "performance": 8,
+    "paired_interventions": 6,
+    "interventions": 8,
+    "influence": 8
+  },
+  "unique_display_tables": 5,
+  "citation_keys": [
+    "clip",
+    "dinov2",
+    "dtd",
+    "oslo",
+    "pets",
+    "ren2018",
+    "simpleshot",
+    "swat"
+  ],
+  "verified_reference_count": 8,
+  "pdf_pages": 7,
+  "numeric_checks": [
+    "all eight primary paired upper bounds below zero",
+    "4000 condition evaluations from 2000 shared episodes",
+    "generated tables from three recorded source JSONs"
+  ],
+  "manual_evidence_counts": {
+    "current_groups": 3,
+    "reference_only_groups": 15,
+    "all_unique_groups": 18
+  },
+  "runtime_counter_warning": "Before bundling structural coverage reported 36 groups by aggregating ledger and result tables; after bundling it reports18 including history. It counts10 tables fromCSV andTeX. These are not scientific counts; actual current evidence is 3 groups and 5 displayed tables.",
+  "scientific_review_path": "paper/review/review.md",
+  "publication_status": "early technical-note draft; not submission-ready",
+  "free_gib": 11.417072296142578
+}

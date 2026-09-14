@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "archive_path": "/Users/decoqwq/DeepScientist/quests/012/tmp/caltech101-qualification/caltech-101.zip",
+  "bytes": 137414764,
+  "md5": "3138e1922a9193bfa496528edbbc45d0",
+  "sha256": "331234750fc7f77520e50d9565e8b6907b03565e30320da1401130db08c61f91",
+  "archive_crc_passed": true,
+  "members": [
+    {
+      "name": "caltech-101/",
+      "bytes": 0,
+      "compressed_bytes": 0
+    },
+    {
+      "name": "__MACOSX/._caltech-101",
+      "bytes": 312,
+      "compressed_bytes": 178
+    },
+    {
+      "name": "caltech-101/101_ObjectCategories.tar.gz",
+      "bytes": 131740031,
+      "compressed_bytes": 131780211
+    },
+    {
+      "name": "__MACOSX/caltech-101/._101_ObjectCategories.tar.gz",
+      "bytes": 212,
+      "compressed_bytes": 135
+    },
+    {
+      "name": "caltech-101/show_annotation.m",
+      "bytes": 1291,
+      "compressed_bytes": 602
+    },
+    {
+      "name": "__MACOSX/caltech-101/._show_annotation.m",
+      "bytes": 212,
+      "compressed_bytes": 135
+    },
+    {
+      "name": "caltech-101/Annotations.tar",
+      "bytes": 14028800,
+      "compressed_bytes": 5631600
+    },
+    {
+      "name": "__MACOSX/caltech-101/._Annotations.tar",
+      "bytes": 212,
+      "compressed_bytes": 135
+    }
+  ],
+  "member_count": 8,
+  "uncompressed_member_bytes": 145771070,
+  "downloaded_bytes": 137414764,
+  "elapsed_seconds": 112.09279489517212,
+  "free_gib": 11.123184204101562,
+  "no_target_accuracy_computed": true
+}

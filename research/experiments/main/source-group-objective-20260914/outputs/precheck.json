@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "numpy_ridge_max_error": 8.881784197001252e-16,
+  "gradient_errors": {
+    "mean": 8.212454154221671e-13,
+    "raw_max": 2.7769895757923102e-12,
+    "reference_max": 8.661507925819545e-13
+  },
+  "identity_reference_max_zero": true,
+  "constant_mean_gradient_equal": true,
+  "source_banks_exact_and_disjoint": true,
+  "tasks_per_group": 50,
+  "device": "cpu",
+  "torch": "2.3.0",
+  "numpy": "1.24.4"
+}

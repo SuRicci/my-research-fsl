@@ -1,0 +1,627 @@
+{
+  "status": "diagnostic_only_original_frozen_audit_failed",
+  "task_conditions": 4000,
+  "methods_per_cell": 10,
+  "source_gamma_selections": {
+    "dtd_k1": {
+      "gamma": 10.0,
+      "correct_counts": [
+        11809,
+        11817,
+        11819
+      ]
+    },
+    "dtd_k5": {
+      "gamma": 0.1,
+      "correct_counts": [
+        11908,
+        11892,
+        11880
+      ]
+    },
+    "eurosat_k1": {
+      "gamma": 1.0,
+      "correct_counts": [
+        11257,
+        11282,
+        11282
+      ]
+    },
+    "eurosat_k5": {
+      "gamma": 1.0,
+      "correct_counts": [
+        11882,
+        11908,
+        11884
+      ]
+    }
+  },
+  "source_and_eval_numpy_score_checks": 88,
+  "frozen_score_failures": [
+    {
+      "label": "dtd/k1/selection/99/1/0.1",
+      "max_score_error": 0.0030342261087177302,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": false,
+      "transform_max_error": 1.2387831160864948e-07,
+      "neighbor_changes": [
+        {
+          "class": 4,
+          "symmetric_difference": [
+            353,
+            471
+          ],
+          "dense_similarity_range": 4.320318309769533e-07
+        }
+      ],
+      "fixed_neighbor_numpy_score_error": 3.385856450766056e-07,
+      "fixed_neighbor_argmax_differences": 0
+    }
+  ],
+  "frozen_audit_passed": false,
+  "candidate_sampled_eval_tasks": 40,
+  "max_numpy_score_error": 0.0030342261087177302,
+  "historical_original_score_max_error": 0.0,
+  "all_source_predictions_equal_pre_repair": true,
+  "score_tolerance": 2e-05,
+  "frozen_gate_result": "refuted_fixed_source_gate",
+  "elapsed_seconds": 19.755244970321655,
+  "input_sha256": {
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/dtd_k1_selection.npz": "fad109cbeb737c0e97a2ccc0c11f2f159b6882f16d2fde13c9e2c4e58195c5f4",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/dtd_k5_selection.npz": "611f5ed0bdd8a74ed09b6fed5e1e1db0e879f1c411c12163b91877570ddc6c26",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/eurosat_k1_selection.npz": "ee302f817d0b365213f9eabdbfe46a53a42c939880826db65746e9c8a00b4072",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/eurosat_k5_selection.npz": "7e606205108dc60af97e0e39a5a2d255503d36137a7210ff7e9cb9a87f2352c5",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k1.npz": "d4c12f280c005fcf6219e5c1cd2bbae1ed55e81a6b79bb10c23152253461516f",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k1.npz": "68d31492e8e8d1b9f5ab4b58a1c7db0e5fbd5bbe09300293828cad091abf7f4b",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_eurosat_k5.npz": "edc313350b86f7fce448bb0b03200112f8569dcec757351197591e2131d43c41",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/dtd_to_eurosat_dtd_k5.npz": "edc313350b86f7fce448bb0b03200112f8569dcec757351197591e2131d43c41",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k1.npz": "3cff1d7011365e0d986fe91045a4924290c5e028eb08c870e27c58dd09c8f456",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k1.npz": "3444b1faf3e10bc4db38ebad51126439a7c6c389aa40746d4c1d36071c5fc8d2",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_dtd_k5.npz": "af86e93c7884028c070c03786d0e3519ea39c5c774489eecea6c787b46595acd",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/representation-scatter-20260913/outputs/cells/eurosat_to_dtd_eurosat_k5.npz": "af86e93c7884028c070c03786d0e3519ea39c5c774489eecea6c787b46595acd"
+  },
+  "score_checks": [
+    {
+      "label": "dtd/k1/selection/0/0/0.1",
+      "max_score_error": 3.219502274776076e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/0/0/1.0",
+      "max_score_error": 4.6027615652199927e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/0/0/10.0",
+      "max_score_error": 3.855047385759036e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/0/1/0.1",
+      "max_score_error": 3.633288978566185e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/0/1/1.0",
+      "max_score_error": 5.897749963956755e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/0/1/10.0",
+      "max_score_error": 6.757241104438094e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/99/0/0.1",
+      "max_score_error": 3.0373509130043885e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/99/0/1.0",
+      "max_score_error": 4.2656972931709447e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/99/0/10.0",
+      "max_score_error": 3.4889457944942137e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/99/1/0.1",
+      "max_score_error": 0.0030342261087177302,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": false,
+      "transform_max_error": 1.2387831160864948e-07,
+      "neighbor_changes": [
+        {
+          "class": 4,
+          "symmetric_difference": [
+            353,
+            471
+          ],
+          "dense_similarity_range": 4.320318309769533e-07
+        }
+      ],
+      "fixed_neighbor_numpy_score_error": 3.385856450766056e-07,
+      "fixed_neighbor_argmax_differences": 0
+    },
+    {
+      "label": "dtd/k1/selection/99/1/1.0",
+      "max_score_error": 3.259061802651786e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k1/selection/99/1/10.0",
+      "max_score_error": 2.908172107574103e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/0/0/0.1",
+      "max_score_error": 2.636235199027226e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/0/0/1.0",
+      "max_score_error": 1.5937104702601346e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/0/0/10.0",
+      "max_score_error": 1.1534906230181718e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/0/1/0.1",
+      "max_score_error": 2.636235199027226e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/0/1/1.0",
+      "max_score_error": 1.5937104702601346e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/0/1/10.0",
+      "max_score_error": 1.1534906230181718e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/99/0/0.1",
+      "max_score_error": 2.022414989921728e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/99/0/1.0",
+      "max_score_error": 1.818670536390954e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/99/0/10.0",
+      "max_score_error": 1.4889210153690158e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/99/1/0.1",
+      "max_score_error": 2.022414989921728e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/99/1/1.0",
+      "max_score_error": 1.818670536390954e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd/k5/selection/99/1/10.0",
+      "max_score_error": 1.4889210153690158e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/0/0/0.1",
+      "max_score_error": 3.2286533796499484e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/0/0/1.0",
+      "max_score_error": 5.779970936314882e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/0/0/10.0",
+      "max_score_error": 6.407959158849508e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/0/1/0.1",
+      "max_score_error": 4.2676712611045e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/0/1/1.0",
+      "max_score_error": 5.252044162629144e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/0/1/10.0",
+      "max_score_error": 4.279955916897116e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/99/0/0.1",
+      "max_score_error": 3.277591109629441e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/99/0/1.0",
+      "max_score_error": 3.802851633594173e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/99/0/10.0",
+      "max_score_error": 3.365662994692098e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/99/1/0.1",
+      "max_score_error": 3.4933797168901215e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/99/1/1.0",
+      "max_score_error": 3.8613995467784434e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k1/selection/99/1/10.0",
+      "max_score_error": 3.478591604766379e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/0/0/0.1",
+      "max_score_error": 1.8339792440258407e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/0/0/1.0",
+      "max_score_error": 1.4139760295961423e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/0/0/10.0",
+      "max_score_error": 1.4682375670815873e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/0/1/0.1",
+      "max_score_error": 1.8339792440258407e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/0/1/1.0",
+      "max_score_error": 1.4139760295961423e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/0/1/10.0",
+      "max_score_error": 1.4682375670815873e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/99/0/0.1",
+      "max_score_error": 1.2221812346890903e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/99/0/1.0",
+      "max_score_error": 1.1367214476643017e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/99/0/10.0",
+      "max_score_error": 9.213388399431643e-08,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/99/1/0.1",
+      "max_score_error": 1.2221812346890903e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/99/1/1.0",
+      "max_score_error": 1.1367214476643017e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat/k5/selection/99/1/10.0",
+      "max_score_error": 9.213388399431643e-08,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k1/scatter/0",
+      "max_score_error": 3.400997447833287e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k1/scatter/100",
+      "max_score_error": 2.712226104817361e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k1/scatter/200",
+      "max_score_error": 2.8513991878753586e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k1/scatter/300",
+      "max_score_error": 3.565396251570263e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k1/scatter/400",
+      "max_score_error": 4.0950851509791164e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k1/scatter/0",
+      "max_score_error": 3.832246529000827e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k1/scatter/100",
+      "max_score_error": 2.520504278069602e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k1/scatter/200",
+      "max_score_error": 2.32649626008552e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k1/scatter/300",
+      "max_score_error": 4.1764530456234183e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k1/scatter/400",
+      "max_score_error": 3.4303856177864134e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k5/scatter/0",
+      "max_score_error": 1.6656618101462684e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k5/scatter/100",
+      "max_score_error": 1.4296324185592013e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k5/scatter/200",
+      "max_score_error": 1.0389330173943279e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k5/scatter/300",
+      "max_score_error": 2.0011597129387937e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_eurosat_k5/scatter/400",
+      "max_score_error": 1.6184327789048325e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k5/scatter/0",
+      "max_score_error": 1.6656618101462684e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k5/scatter/100",
+      "max_score_error": 1.4296324185592013e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k5/scatter/200",
+      "max_score_error": 1.0389330173943279e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k5/scatter/300",
+      "max_score_error": 2.0011597129387937e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "dtd_to_eurosat_dtd_k5/scatter/400",
+      "max_score_error": 1.6184327789048325e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k1/scatter/0",
+      "max_score_error": 5.73417263449727e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k1/scatter/100",
+      "max_score_error": 2.614157976754683e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k1/scatter/200",
+      "max_score_error": 3.529149918968244e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k1/scatter/300",
+      "max_score_error": 2.4119629982166657e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k1/scatter/400",
+      "max_score_error": 3.834212298770012e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k1/scatter/0",
+      "max_score_error": 4.1168094577770376e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k1/scatter/100",
+      "max_score_error": 5.430672254114199e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k1/scatter/200",
+      "max_score_error": 4.453841206952802e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k1/scatter/300",
+      "max_score_error": 3.530284479191792e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k1/scatter/400",
+      "max_score_error": 3.877514591632547e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k5/scatter/0",
+      "max_score_error": 1.63084364013244e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k5/scatter/100",
+      "max_score_error": 1.5857546342701312e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k5/scatter/200",
+      "max_score_error": 1.5385634577480545e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k5/scatter/300",
+      "max_score_error": 2.2122306608807207e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_dtd_k5/scatter/400",
+      "max_score_error": 1.5713687862017878e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k5/scatter/0",
+      "max_score_error": 1.63084364013244e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k5/scatter/100",
+      "max_score_error": 1.5857546342701312e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k5/scatter/200",
+      "max_score_error": 1.5385634577480545e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k5/scatter/300",
+      "max_score_error": 2.2122306608807207e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    },
+    {
+      "label": "eurosat_to_dtd_eurosat_k5/scatter/400",
+      "max_score_error": 1.5713687862017878e-07,
+      "argmax_differences": 0,
+      "frozen_comparison_passed": true
+    }
+  ],
+  "scope": "Diagnostic derivative, NOT a passing frozen audit. No tolerance, method, selection, input or acceptance change. Fixed-neighbor algebra checks explicitly condition on float32 neighbor choices; end-to-end cross-precision failures remain failures. All aggregate values, source choices, tasks, original control scores verified; dense independent candidate scores on48source cases and40evaluation tasks. Reuses verified cache loader. Bootstrap interval algorithm not independently reimplemented. Fixed-pool development evidence only."
+}

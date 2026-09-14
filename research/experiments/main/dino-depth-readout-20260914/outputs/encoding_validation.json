@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-14T02:05:17.838191+00:00",
+  "images": 14153,
+  "pools": [
+    {
+      "pool": "dtd_query",
+      "images": 1877,
+      "max_norm_error": 0.00014603137969970703,
+      "max_final_cache_abs_error": 0.00010353326797485352,
+      "min_final_cache_cosine": 0.9999997615814209,
+      "sha256": "83fd4b342e290d151adee85a8758988ca8e833b360bbe31a316a45af2a02adc8"
+    },
+    {
+      "pool": "dtd_gallery",
+      "images": 1876,
+      "max_norm_error": 0.00012803077697753906,
+      "max_final_cache_abs_error": 0.00010731816291809082,
+      "min_final_cache_cosine": 0.9999997615814209,
+      "sha256": "1be0eb1ce324877ece3174c46f65887a74963e8b74cacdbebc394e6371437670"
+    },
+    {
+      "pool": "eurosat_query",
+      "images": 5400,
+      "max_norm_error": 0.0001513957977294922,
+      "max_final_cache_abs_error": 0.0001188814640045166,
+      "min_final_cache_cosine": 0.9999997615814209,
+      "sha256": "9d6f0b14ceaa2873358598a22bb74a3fd68c0b1cbc4a63128a06eaa958ae75ed"
+    },
+    {
+      "pool": "eurosat_gallery",
+      "images": 5000,
+      "max_norm_error": 0.00014710426330566406,
+      "max_final_cache_abs_error": 0.0001226663589477539,
+      "min_final_cache_cosine": 0.9999997615814209,
+      "sha256": "2bc5b1e769ab4656b392d550b3ea6ad0cb8a1290230eb5ed10a80513cd0ea95a"
+    }
+  ],
+  "encoding_bash": "bash-662b1a95",
+  "managed_exit_code": 0,
+  "encoding_seconds": 2133.406090259552,
+  "free_gib": 11.8883056640625,
+  "file_payload_mib": 186.587890625,
+  "classification_started": false,
+  "reviewed_code_unchanged": true
+}

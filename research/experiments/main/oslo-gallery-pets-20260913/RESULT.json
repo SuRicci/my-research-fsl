@@ -1,0 +1,1337 @@
+{
+  "schema_version": 1,
+  "result_kind": "main_experiment",
+  "quest_id": "012",
+  "run_id": "oslo-gallery-pets-20260913",
+  "title": "Gallery-only OSLO fails strong-baseline qualification on canonical and fresh Pets images",
+  "status": "completed",
+  "verdict": "rejected_strong_baseline_gate",
+  "idea_id": "idea-aca445b7",
+  "branch": "run/oslo-gallery-pets-20260913",
+  "parent_branch": "idea/012-idea-aca445b7",
+  "worktree_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+  "head_commit": "5ead3f75f16065a48dae14548ab16b53a9537166",
+  "baseline_ref": {
+    "baseline_id": "r2-pets-transfer",
+    "variant_id": "frozen-v1",
+    "metric_contract_json_rel_path": "baselines/local/r2-pets-transfer/json/metric_contract.json",
+    "metric_contract": {
+      "evaluation_protocol": {
+        "scope_id": "pets-frozen-gallery-transfer-v1",
+        "protocol": {
+          "run_id": "fsl-pets-transfer-20260913",
+          "idea_id": "idea-01adcb83",
+          "scope_id": "pets-frozen-gallery-transfer-v1",
+          "frozen_at": "2026-09-12T20:46:59.082898+00:00",
+          "dataset": "Oxford-IIIT Pets",
+          "query_support_split": "official test; exact RGB unique",
+          "gallery_split": "official trainval; exact RGB unique; exclude every test identity",
+          "gallery_size": 1876,
+          "gallery_selection_seed": 26091310,
+          "gallery_selection_uses_labels": false,
+          "gallery_conditions": [
+            "pets",
+            "dtd"
+          ],
+          "shots": [
+            1,
+            5
+          ],
+          "ways": 5,
+          "queries_per_class": 15,
+          "seeds": [
+            26091311,
+            26091312,
+            26091313,
+            26091314,
+            26091315
+          ],
+          "episodes_per_seed": 100,
+          "methods": [
+            "r2",
+            "CS_l2",
+            "support_logistic_C1",
+            "support_logistic_C10",
+            "ilpcz_local"
+          ],
+          "hyperparameter_selection": "none on Pets; frozen existing source configurations",
+          "ilpcz": {
+            "k": 20,
+            "alpha": 0.5,
+            "C": 10,
+            "selection_per_class": 3
+          },
+          "feature_fusion_weight": 0.5,
+          "primary_metric": "pets_matched_1shot_accuracy",
+          "new_metric_ids": [
+            "pets_matched_1shot_accuracy",
+            "pets_mismatched_1shot_accuracy",
+            "pets_matched_5shot_accuracy",
+            "pets_mismatched_5shot_accuracy",
+            "pets_macro_1shot_accuracy"
+          ],
+          "old_contracts_retained": [
+            "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/json/metric_contract.json",
+            "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/json/metric_contract.json"
+          ],
+          "baseline_transition": "measure and confirm separate Pets R2 comparator before candidate interpretation; no overwrites",
+          "permissions": {
+            "gallery_labels": false,
+            "query_batch_adaptation": false,
+            "encoder_training": false
+          },
+          "sources_sha256": {
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/ilpcz.py": "b4363273c20ec3ca7b69d788aadd285dc8cb55c37b5d160b16d00271bb92b100",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/selection.json": "63bee5e04b251af2a6ed975d95d1d3c1ed265c7691c2bb30ea02328582e741aa",
+            "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/recover_gallery.py": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/artifacts/idea/selected_idea.md": "b21088be91ad22de90f509589d1e5acc1d362430ce86d5a4c9c0d229e0956adb",
+            "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c"
+          },
+          "source_ilpc_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control",
+          "asset_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets",
+          "bootstrap": {
+            "replicates": 5000,
+            "seed": 26091399,
+            "unit": "paired tasks stratified by seed; conditional on fixed image pools"
+          },
+          "thresholds": {
+            "matched_gain_pp": 0.5,
+            "paired_ci_lower": 0,
+            "max_mismatch_loss_pp_for_robust_label": 0.5
+          },
+          "resources": {
+            "free_gib_min": 10,
+            "added_gib_max": 2.5,
+            "local_only": true,
+            "spend": 0,
+            "deadline_utc": "2026-09-15T09:00:00+00:00"
+          },
+          "method_settings": {
+            "r2": {
+              "one_shot": "top64 mean, normalize, mix0.5, centered ridge0.1",
+              "five_shot": "support-only centered ridge1"
+            },
+            "CS_l2": {
+              "centering_origin": "support mean",
+              "l2_after_centering": true,
+              "one_shot": "top64 gallery after support centering, mix0.5, ridge0.1",
+              "five_shot": "support-centered-and-renormalized ridge0.1; prespecified fixed extension"
+            },
+            "support_logistic": {
+              "C": [
+                1,
+                10
+              ],
+              "solver": "lbfgs",
+              "multi_class": "multinomial",
+              "max_iter": 2000,
+              "tol": 1e-08,
+              "random_state": 26091275
+            }
+          },
+          "pre_outcome_amendments": [
+            {
+              "reason": "Code-level taxonomy correction: CS_l2 uses the gallery in1shot. No comparator removed. Exact five-shot fixed geometry specification now explicit; old one-shot gain does not imply its five-shot behavior.",
+              "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py",
+              "time": "2026-09-13T04:50:00+08:00",
+              "predictions_observed": false
+            },
+            {
+              "reason": "Refresh selected-idea document hash after already-recorded source taxonomy and 2025 iLPC extension citation clarification; all method parameters, tasks and thresholds unchanged.",
+              "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/artifacts/idea/selected_idea.md",
+              "previous_sha256": "144fe648ead6078270428ad50e445ae8bcaa2b4dede1863fe0ff849f89ede60c",
+              "current_sha256": "b21088be91ad22de90f509589d1e5acc1d362430ce86d5a4c9c0d229e0956adb",
+              "time": "2026-09-12T21:01:28.314287+00:00",
+              "predictions_observed": false
+            }
+          ]
+        },
+        "code_paths": [
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/evaluate.py",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/audit_outputs.py"
+        ],
+        "code_hashes": {
+          "evaluate.py": "0a77944483a70b3ab7032ab2517af5a9acfbc42197ef9294906308e03e56678c",
+          "audit_outputs.py": "2a10733d077ad2d0be9dfc4b09522350049bd3b20089ddd9252785fdc9b9b354"
+        },
+        "feature_manifest_sha256": "dc016f8624b7a49679213b8ca495dfbb2f1ebebbb650e3ef57772367372074c8",
+        "task_paths": [
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/tasks_k1.npz",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/tasks_k5.npz"
+        ],
+        "local_source_transfer": true,
+        "paper_reproduction": false
+      },
+      "baseline_variants": {
+        "r2": {
+          "metrics_summary": {
+            "pets_matched_1shot_accuracy": 96.24,
+            "pets_mismatched_1shot_accuracy": 93.93066666666667,
+            "pets_matched_5shot_accuracy": 98.44266666666668,
+            "pets_mismatched_5shot_accuracy": 98.44266666666668,
+            "pets_macro_1shot_accuracy": 95.08533333333332
+          },
+          "role": "frozen_local_comparator"
+        },
+        "CS_l2": {
+          "metrics_summary": {
+            "pets_matched_1shot_accuracy": 96.264,
+            "pets_mismatched_1shot_accuracy": 93.96266666666666,
+            "pets_matched_5shot_accuracy": 98.55199999999999,
+            "pets_mismatched_5shot_accuracy": 98.55199999999999,
+            "pets_macro_1shot_accuracy": 95.11333333333333
+          },
+          "role": "same_permission_control"
+        },
+        "support_logistic_C1": {
+          "metrics_summary": {
+            "pets_matched_1shot_accuracy": 94.27733333333333,
+            "pets_mismatched_1shot_accuracy": 94.27733333333333,
+            "pets_matched_5shot_accuracy": 98.408,
+            "pets_mismatched_5shot_accuracy": 98.408,
+            "pets_macro_1shot_accuracy": 94.27733333333333
+          },
+          "role": "same_permission_control"
+        },
+        "support_logistic_C10": {
+          "metrics_summary": {
+            "pets_matched_1shot_accuracy": 94.33333333333333,
+            "pets_mismatched_1shot_accuracy": 94.33333333333333,
+            "pets_matched_5shot_accuracy": 98.56266666666667,
+            "pets_mismatched_5shot_accuracy": 98.56266666666667,
+            "pets_macro_1shot_accuracy": 94.33333333333333
+          },
+          "role": "same_permission_control"
+        }
+      },
+      "known_deviations": [
+        "Local frozen R2 transferred to Pets; not a SWAT paper reproduction.",
+        "CS_l2 five-shot is a fixed prespecified extension.",
+        "Repeated tasks quantify conditional fixed-pool variation."
+      ],
+      "contract_id": "r2-pets-transfer-frozen-v1",
+      "primary_metric_id": "pets_matched_1shot_accuracy",
+      "metrics": [
+        {
+          "metric_id": "pets_matched_1shot_accuracy",
+          "description": "Frozen local R2 Pets episodic accuracy: pets_matched_1shot_accuracy",
+          "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+          "origin_path": "pets_matched_1shot_accuracy",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "pets_matched_1shot_accuracy",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_mismatched_1shot_accuracy",
+          "description": "Frozen local R2 Pets episodic accuracy: pets_mismatched_1shot_accuracy",
+          "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+          "origin_path": "pets_mismatched_1shot_accuracy",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "pets_mismatched_1shot_accuracy",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_matched_5shot_accuracy",
+          "description": "Frozen local R2 Pets episodic accuracy: pets_matched_5shot_accuracy",
+          "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+          "origin_path": "pets_matched_5shot_accuracy",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "pets_matched_5shot_accuracy",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_mismatched_5shot_accuracy",
+          "description": "Frozen local R2 Pets episodic accuracy: pets_mismatched_5shot_accuracy",
+          "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+          "origin_path": "pets_mismatched_5shot_accuracy",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "pets_mismatched_5shot_accuracy",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_macro_1shot_accuracy",
+          "description": "Frozen local R2 Pets episodic accuracy: pets_macro_1shot_accuracy",
+          "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+          "origin_path": "pets_macro_1shot_accuracy",
+          "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+          "direction": "maximize",
+          "unit": "%",
+          "required": true,
+          "label": "pets_macro_1shot_accuracy",
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_fresh_matched_1shot_accuracy",
+          "label": "pets_fresh_matched_1shot_accuracy",
+          "direction": "maximize",
+          "unit": null,
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_fresh_mismatched_1shot_accuracy",
+          "label": "pets_fresh_mismatched_1shot_accuracy",
+          "direction": "maximize",
+          "unit": null,
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_fresh_matched_5shot_accuracy",
+          "label": "pets_fresh_matched_5shot_accuracy",
+          "direction": "maximize",
+          "unit": null,
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_fresh_mismatched_5shot_accuracy",
+          "label": "pets_fresh_mismatched_5shot_accuracy",
+          "direction": "maximize",
+          "unit": null,
+          "decimals": null,
+          "chart_group": "default"
+        },
+        {
+          "metric_id": "pets_fresh_macro_1shot_accuracy",
+          "label": "pets_fresh_macro_1shot_accuracy",
+          "direction": "maximize",
+          "unit": null,
+          "decimals": null,
+          "chart_group": "default"
+        }
+      ]
+    },
+    "metric_lines": [
+      {
+        "metric_id": "pets_matched_1shot_accuracy",
+        "label": "r2-pets-transfer:frozen-v1",
+        "baseline_id": "r2-pets-transfer",
+        "variant_id": "frozen-v1",
+        "selected": true,
+        "value": 96.24,
+        "raw_value": 96.24
+      },
+      {
+        "metric_id": "pets_mismatched_1shot_accuracy",
+        "label": "r2-pets-transfer:frozen-v1",
+        "baseline_id": "r2-pets-transfer",
+        "variant_id": "frozen-v1",
+        "selected": true,
+        "value": 93.93066666666667,
+        "raw_value": 93.93066666666667
+      },
+      {
+        "metric_id": "pets_matched_5shot_accuracy",
+        "label": "r2-pets-transfer:frozen-v1",
+        "baseline_id": "r2-pets-transfer",
+        "variant_id": "frozen-v1",
+        "selected": true,
+        "value": 98.44266666666668,
+        "raw_value": 98.44266666666668
+      },
+      {
+        "metric_id": "pets_mismatched_5shot_accuracy",
+        "label": "r2-pets-transfer:frozen-v1",
+        "baseline_id": "r2-pets-transfer",
+        "variant_id": "frozen-v1",
+        "selected": true,
+        "value": 98.44266666666668,
+        "raw_value": 98.44266666666668
+      },
+      {
+        "metric_id": "pets_macro_1shot_accuracy",
+        "label": "r2-pets-transfer:frozen-v1",
+        "baseline_id": "r2-pets-transfer",
+        "variant_id": "frozen-v1",
+        "selected": true,
+        "value": 95.08533333333332,
+        "raw_value": 95.08533333333332
+      }
+    ]
+  },
+  "run_context": {
+    "dataset_scope": "pets-frozen-gallery-transfer-v1",
+    "config_paths": [
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/protocol.json",
+      "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/locked_sources.json"
+    ],
+    "notes": [
+      "All five canonical required metric ids retained; additional fresh-pool metrics do not replace baseline metrics.",
+      "No independent-domain, pretraining-overlap or near-duplicate audit claim.",
+      "record_main_experiment uses active workspace; evidence belongs to run/oslo-gallery-pets-20260913.",
+      "First submission rejected only because dataset_scope='full' mismatched canonical scope id; corrected to exact accepted id without changing data, code, metrics or comparison protocol."
+    ]
+  },
+  "hypothesis": "Source-default latent inlier weighting, transferred to gallery-only fitting, improves matched-gallery one-shot performance over R2/CS_l2 without material degradation elsewhere.",
+  "setup": "Frozen CLIP/DINO fusion.5-way1/5-shot,15queries/class,500tasks/cell; canonical test pool and prospective1804 image-disjoint same-domain trainval images;1876-image Pets or DTD galleries. Seven methods,eight cells,4000tasks. No query adaptation or gallery-label access.",
+  "execution": "Source parity12cases and query invariants passed. Frozen protocol and source hashes preceded fresh feature extraction. Local managed bash-4896958c completed encode+evaluate, exit0. bash-db3c14ef passed complete task/prediction/frozen-baseline audit and representative score replays.",
+  "results_summary": "Matched1shot canonical94.9173 vs R2 96.2400 (-1.3227pp,95%[-1.7227,-0.9333]); fresh94.8747 vs96.0160 (-1.1413pp,[-1.5173,-0.7627]). Mismatch1shot64.1920/63.9920 vs93.9307/93.3893; all37breeds lose in both pools. Both5shot conditions also degrade. All measurements and paired intervals retained.",
+  "conclusion": "Reject source-default OSLO_G as an improvement: both pools fail frozen strong-control superiority and non-degradation gates. Inlier weighting improves on the closed-set update but remains below strong controls. Retain R2/CS_l2; close this default family without a Pets tuning grid. Prospective same-domain confirmation supports this bounded failure, not independent-domain robustness, novelty or SOTA.",
+  "metrics_summary": {
+    "pets_matched_1shot_accuracy": 94.91733333333335,
+    "pets_mismatched_1shot_accuracy": 64.192,
+    "pets_matched_5shot_accuracy": 97.19466666666666,
+    "pets_mismatched_5shot_accuracy": 93.304,
+    "pets_macro_1shot_accuracy": 79.55466666666666,
+    "pets_fresh_matched_1shot_accuracy": 94.87466666666666,
+    "pets_fresh_mismatched_1shot_accuracy": 63.992000000000004,
+    "pets_fresh_matched_5shot_accuracy": 97.18933333333332,
+    "pets_fresh_mismatched_5shot_accuracy": 92.97866666666667,
+    "pets_fresh_macro_1shot_accuracy": 79.43333333333334
+  },
+  "metric_rows": [
+    {
+      "metric_id": "pets_matched_1shot_accuracy",
+      "value": 94.91733333333335,
+      "numeric_value": 94.91733333333335
+    },
+    {
+      "metric_id": "pets_mismatched_1shot_accuracy",
+      "value": 64.192,
+      "numeric_value": 64.192
+    },
+    {
+      "metric_id": "pets_matched_5shot_accuracy",
+      "value": 97.19466666666666,
+      "numeric_value": 97.19466666666666
+    },
+    {
+      "metric_id": "pets_mismatched_5shot_accuracy",
+      "value": 93.304,
+      "numeric_value": 93.304
+    },
+    {
+      "metric_id": "pets_macro_1shot_accuracy",
+      "value": 79.55466666666666,
+      "numeric_value": 79.55466666666666
+    },
+    {
+      "metric_id": "pets_fresh_matched_1shot_accuracy",
+      "value": 94.87466666666666,
+      "numeric_value": 94.87466666666666
+    },
+    {
+      "metric_id": "pets_fresh_mismatched_1shot_accuracy",
+      "value": 63.992000000000004,
+      "numeric_value": 63.992000000000004
+    },
+    {
+      "metric_id": "pets_fresh_matched_5shot_accuracy",
+      "value": 97.18933333333332,
+      "numeric_value": 97.18933333333332
+    },
+    {
+      "metric_id": "pets_fresh_mismatched_5shot_accuracy",
+      "value": 92.97866666666667,
+      "numeric_value": 92.97866666666667
+    },
+    {
+      "metric_id": "pets_fresh_macro_1shot_accuracy",
+      "value": 79.43333333333334,
+      "numeric_value": 79.43333333333334
+    }
+  ],
+  "metric_contract": {
+    "evaluation_protocol": {
+      "scope_id": "pets-frozen-gallery-transfer-v1",
+      "protocol": {
+        "run_id": "fsl-pets-transfer-20260913",
+        "idea_id": "idea-01adcb83",
+        "scope_id": "pets-frozen-gallery-transfer-v1",
+        "frozen_at": "2026-09-12T20:46:59.082898+00:00",
+        "dataset": "Oxford-IIIT Pets",
+        "query_support_split": "official test; exact RGB unique",
+        "gallery_split": "official trainval; exact RGB unique; exclude every test identity",
+        "gallery_size": 1876,
+        "gallery_selection_seed": 26091310,
+        "gallery_selection_uses_labels": false,
+        "gallery_conditions": [
+          "pets",
+          "dtd"
+        ],
+        "shots": [
+          1,
+          5
+        ],
+        "ways": 5,
+        "queries_per_class": 15,
+        "seeds": [
+          26091311,
+          26091312,
+          26091313,
+          26091314,
+          26091315
+        ],
+        "episodes_per_seed": 100,
+        "methods": [
+          "r2",
+          "CS_l2",
+          "support_logistic_C1",
+          "support_logistic_C10",
+          "ilpcz_local"
+        ],
+        "hyperparameter_selection": "none on Pets; frozen existing source configurations",
+        "ilpcz": {
+          "k": 20,
+          "alpha": 0.5,
+          "C": 10,
+          "selection_per_class": 3
+        },
+        "feature_fusion_weight": 0.5,
+        "primary_metric": "pets_matched_1shot_accuracy",
+        "new_metric_ids": [
+          "pets_matched_1shot_accuracy",
+          "pets_mismatched_1shot_accuracy",
+          "pets_matched_5shot_accuracy",
+          "pets_mismatched_5shot_accuracy",
+          "pets_macro_1shot_accuracy"
+        ],
+        "old_contracts_retained": [
+          "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-canonical/json/metric_contract.json",
+          "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r4-canonical-local/json/metric_contract.json"
+        ],
+        "baseline_transition": "measure and confirm separate Pets R2 comparator before candidate interpretation; no overwrites",
+        "permissions": {
+          "gallery_labels": false,
+          "query_batch_adaptation": false,
+          "encoder_training": false
+        },
+        "sources_sha256": {
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/ilpcz.py": "b4363273c20ec3ca7b69d788aadd285dc8cb55c37b5d160b16d00271bb92b100",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/reference_eval.py": "1de34515402bcaeaf73d4bd21dc3277e6d521cb7eeeb3b813c6a79d539d96661",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control/selection.json": "63bee5e04b251af2a6ed975d95d1d3c1ed265c7691c2bb30ea02328582e741aa",
+          "/Users/decoqwq/DeepScientist/quests/012/baselines/local/r2-replay/recover_gallery.py": "3c5054b16268bb367c64d9675366e41ba631def297bd262a9f281b650bbfc63f",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/artifacts/idea/selected_idea.md": "b21088be91ad22de90f509589d1e5acc1d362430ce86d5a4c9c0d229e0956adb",
+          "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py": "d238cb55682d84cb950297278680d8ecf86cef0aec16dbea7fa35c8d7496727c"
+        },
+        "source_ilpc_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/analysis-analysis-1985c6ec-ilpcz-gallery-control/experiments/analysis/analysis-1985c6ec/ilpcz-gallery-control",
+        "asset_root": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/assets",
+        "bootstrap": {
+          "replicates": 5000,
+          "seed": 26091399,
+          "unit": "paired tasks stratified by seed; conditional on fixed image pools"
+        },
+        "thresholds": {
+          "matched_gain_pp": 0.5,
+          "paired_ci_lower": 0,
+          "max_mismatch_loss_pp_for_robust_label": 0.5
+        },
+        "resources": {
+          "free_gib_min": 10,
+          "added_gib_max": 2.5,
+          "local_only": true,
+          "spend": 0,
+          "deadline_utc": "2026-09-15T09:00:00+00:00"
+        },
+        "method_settings": {
+          "r2": {
+            "one_shot": "top64 mean, normalize, mix0.5, centered ridge0.1",
+            "five_shot": "support-only centered ridge1"
+          },
+          "CS_l2": {
+            "centering_origin": "support mean",
+            "l2_after_centering": true,
+            "one_shot": "top64 gallery after support centering, mix0.5, ridge0.1",
+            "five_shot": "support-centered-and-renormalized ridge0.1; prespecified fixed extension"
+          },
+          "support_logistic": {
+            "C": [
+              1,
+              10
+            ],
+            "solver": "lbfgs",
+            "multi_class": "multinomial",
+            "max_iter": 2000,
+            "tol": 1e-08,
+            "random_state": 26091275
+          }
+        },
+        "pre_outcome_amendments": [
+          {
+            "reason": "Code-level taxonomy correction: CS_l2 uses the gallery in1shot. No comparator removed. Exact five-shot fixed geometry specification now explicit; old one-shot gain does not imply its five-shot behavior.",
+            "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/r2-fusion-stage-canonical-20260912/geometry_reference.py",
+            "time": "2026-09-13T04:50:00+08:00",
+            "predictions_observed": false
+          },
+          {
+            "reason": "Refresh selected-idea document hash after already-recorded source taxonomy and 2025 iLPC extension citation clarification; all method parameters, tasks and thresholds unchanged.",
+            "source": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/artifacts/idea/selected_idea.md",
+            "previous_sha256": "144fe648ead6078270428ad50e445ae8bcaa2b4dede1863fe0ff849f89ede60c",
+            "current_sha256": "b21088be91ad22de90f509589d1e5acc1d362430ce86d5a4c9c0d229e0956adb",
+            "time": "2026-09-12T21:01:28.314287+00:00",
+            "predictions_observed": false
+          }
+        ]
+      },
+      "code_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/evaluate.py",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/audit_outputs.py"
+      ],
+      "code_hashes": {
+        "evaluate.py": "0a77944483a70b3ab7032ab2517af5a9acfbc42197ef9294906308e03e56678c",
+        "audit_outputs.py": "2a10733d077ad2d0be9dfc4b09522350049bd3b20089ddd9252785fdc9b9b354"
+      },
+      "feature_manifest_sha256": "dc016f8624b7a49679213b8ca495dfbb2f1ebebbb650e3ef57772367372074c8",
+      "task_paths": [
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/tasks_k1.npz",
+        "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/tasks_k5.npz"
+      ],
+      "local_source_transfer": true,
+      "paper_reproduction": false
+    },
+    "baseline_variants": {
+      "r2": {
+        "metrics_summary": {
+          "pets_matched_1shot_accuracy": 96.24,
+          "pets_mismatched_1shot_accuracy": 93.93066666666667,
+          "pets_matched_5shot_accuracy": 98.44266666666668,
+          "pets_mismatched_5shot_accuracy": 98.44266666666668,
+          "pets_macro_1shot_accuracy": 95.08533333333332
+        },
+        "role": "frozen_local_comparator"
+      },
+      "CS_l2": {
+        "metrics_summary": {
+          "pets_matched_1shot_accuracy": 96.264,
+          "pets_mismatched_1shot_accuracy": 93.96266666666666,
+          "pets_matched_5shot_accuracy": 98.55199999999999,
+          "pets_mismatched_5shot_accuracy": 98.55199999999999,
+          "pets_macro_1shot_accuracy": 95.11333333333333
+        },
+        "role": "same_permission_control"
+      },
+      "support_logistic_C1": {
+        "metrics_summary": {
+          "pets_matched_1shot_accuracy": 94.27733333333333,
+          "pets_mismatched_1shot_accuracy": 94.27733333333333,
+          "pets_matched_5shot_accuracy": 98.408,
+          "pets_mismatched_5shot_accuracy": 98.408,
+          "pets_macro_1shot_accuracy": 94.27733333333333
+        },
+        "role": "same_permission_control"
+      },
+      "support_logistic_C10": {
+        "metrics_summary": {
+          "pets_matched_1shot_accuracy": 94.33333333333333,
+          "pets_mismatched_1shot_accuracy": 94.33333333333333,
+          "pets_matched_5shot_accuracy": 98.56266666666667,
+          "pets_mismatched_5shot_accuracy": 98.56266666666667,
+          "pets_macro_1shot_accuracy": 94.33333333333333
+        },
+        "role": "same_permission_control"
+      }
+    },
+    "known_deviations": [
+      "Local frozen R2 transferred to Pets; not a SWAT paper reproduction.",
+      "CS_l2 five-shot is a fixed prespecified extension.",
+      "Repeated tasks quantify conditional fixed-pool variation."
+    ],
+    "contract_id": "r2-pets-transfer-frozen-v1",
+    "primary_metric_id": "pets_matched_1shot_accuracy",
+    "metrics": [
+      {
+        "metric_id": "pets_matched_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_matched_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_matched_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_matched_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_mismatched_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_mismatched_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_mismatched_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_mismatched_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_matched_5shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_matched_5shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_matched_5shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_matched_5shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_mismatched_5shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_mismatched_5shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_mismatched_5shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_mismatched_5shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_macro_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_macro_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_macro_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_macro_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_fresh_matched_1shot_accuracy",
+        "label": "pets_fresh_matched_1shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_fresh_mismatched_1shot_accuracy",
+        "label": "pets_fresh_mismatched_1shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_fresh_matched_5shot_accuracy",
+        "label": "pets_fresh_matched_5shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_fresh_mismatched_5shot_accuracy",
+        "label": "pets_fresh_mismatched_5shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default"
+      },
+      {
+        "metric_id": "pets_fresh_macro_1shot_accuracy",
+        "label": "pets_fresh_macro_1shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default"
+      }
+    ]
+  },
+  "baseline_comparisons": {
+    "primary_metric_id": "pets_matched_1shot_accuracy",
+    "items": [
+      {
+        "metric_id": "pets_matched_1shot_accuracy",
+        "label": "pets_matched_1shot_accuracy",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 94.91733333333335,
+        "baseline_value": 96.24,
+        "run_numeric": 94.91733333333335,
+        "baseline_numeric": 96.24,
+        "delta": -1.322666666666649,
+        "relative_delta": -0.013743419229703334,
+        "better": false
+      },
+      {
+        "metric_id": "pets_mismatched_1shot_accuracy",
+        "label": "pets_mismatched_1shot_accuracy",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 64.192,
+        "baseline_value": 93.93066666666667,
+        "run_numeric": 64.192,
+        "baseline_numeric": 93.93066666666667,
+        "delta": -29.738666666666674,
+        "relative_delta": -0.3166023166023167,
+        "better": false
+      },
+      {
+        "metric_id": "pets_matched_5shot_accuracy",
+        "label": "pets_matched_5shot_accuracy",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 97.19466666666666,
+        "baseline_value": 98.44266666666668,
+        "run_numeric": 97.19466666666666,
+        "baseline_numeric": 98.44266666666668,
+        "delta": -1.2480000000000189,
+        "relative_delta": -0.012677429840719661,
+        "better": false
+      },
+      {
+        "metric_id": "pets_mismatched_5shot_accuracy",
+        "label": "pets_mismatched_5shot_accuracy",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 93.304,
+        "baseline_value": 98.44266666666668,
+        "run_numeric": 93.304,
+        "baseline_numeric": 98.44266666666668,
+        "delta": -5.13866666666668,
+        "relative_delta": -0.052199588254415556,
+        "better": false
+      },
+      {
+        "metric_id": "pets_macro_1shot_accuracy",
+        "label": "pets_macro_1shot_accuracy",
+        "direction": "maximize",
+        "unit": "%",
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 79.55466666666666,
+        "baseline_value": 95.08533333333332,
+        "run_numeric": 79.55466666666666,
+        "baseline_numeric": 95.08533333333332,
+        "delta": -15.530666666666662,
+        "relative_delta": -0.1633339877162969,
+        "better": false
+      },
+      {
+        "metric_id": "pets_fresh_matched_1shot_accuracy",
+        "label": "pets_fresh_matched_1shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 94.87466666666666,
+        "baseline_value": null,
+        "run_numeric": 94.87466666666666,
+        "baseline_numeric": null,
+        "delta": null,
+        "relative_delta": null,
+        "better": null
+      },
+      {
+        "metric_id": "pets_fresh_mismatched_1shot_accuracy",
+        "label": "pets_fresh_mismatched_1shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 63.992000000000004,
+        "baseline_value": null,
+        "run_numeric": 63.992000000000004,
+        "baseline_numeric": null,
+        "delta": null,
+        "relative_delta": null,
+        "better": null
+      },
+      {
+        "metric_id": "pets_fresh_matched_5shot_accuracy",
+        "label": "pets_fresh_matched_5shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 97.18933333333332,
+        "baseline_value": null,
+        "run_numeric": 97.18933333333332,
+        "baseline_numeric": null,
+        "delta": null,
+        "relative_delta": null,
+        "better": null
+      },
+      {
+        "metric_id": "pets_fresh_mismatched_5shot_accuracy",
+        "label": "pets_fresh_mismatched_5shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 92.97866666666667,
+        "baseline_value": null,
+        "run_numeric": 92.97866666666667,
+        "baseline_numeric": null,
+        "delta": null,
+        "relative_delta": null,
+        "better": null
+      },
+      {
+        "metric_id": "pets_fresh_macro_1shot_accuracy",
+        "label": "pets_fresh_macro_1shot_accuracy",
+        "direction": "maximize",
+        "unit": null,
+        "decimals": null,
+        "chart_group": "default",
+        "run_value": 79.43333333333334,
+        "baseline_value": null,
+        "run_numeric": 79.43333333333334,
+        "baseline_numeric": null,
+        "delta": null,
+        "relative_delta": null,
+        "better": null
+      }
+    ],
+    "summary": {
+      "comparable_metric_ids": [
+        "pets_matched_1shot_accuracy",
+        "pets_mismatched_1shot_accuracy",
+        "pets_matched_5shot_accuracy",
+        "pets_mismatched_5shot_accuracy",
+        "pets_macro_1shot_accuracy"
+      ],
+      "improved_metric_ids": [],
+      "regressed_metric_ids": [
+        "pets_matched_1shot_accuracy",
+        "pets_mismatched_1shot_accuracy",
+        "pets_matched_5shot_accuracy",
+        "pets_mismatched_5shot_accuracy",
+        "pets_macro_1shot_accuracy"
+      ]
+    }
+  },
+  "progress_eval": {
+    "primary_metric_id": "pets_matched_1shot_accuracy",
+    "direction": "maximize",
+    "run_value": 94.91733333333335,
+    "baseline_value": 96.24,
+    "delta_vs_baseline": -1.322666666666649,
+    "relative_delta_vs_baseline": -0.013743419229703334,
+    "previous_best_value": 96.05333333333334,
+    "delta_vs_previous_best": -1.1359999999999957,
+    "beats_baseline": false,
+    "improved_over_previous_best": false,
+    "breakthrough": false,
+    "breakthrough_level": "none",
+    "reason": "No verified breakthrough over the active baseline or previous best."
+  },
+  "evaluation_summary": null,
+  "delivery_policy": {
+    "need_research_paper": true,
+    "recommended_next_route": "revise_idea",
+    "reason": "Research paper mode is enabled, but the current run does not beat the baseline clearly enough. Revise the direction or strengthen the method before writing.",
+    "startup_contract": {
+      "schema_version": 4,
+      "workspace_mode": "autonomous",
+      "user_language": "zh",
+      "need_research_paper": true,
+      "research_intensity": "balanced",
+      "decision_policy": "autonomous",
+      "launch_mode": "standard",
+      "standard_profile": "canonical_research_graph",
+      "custom_profile": "freeform",
+      "review_followup_policy": "audit_only",
+      "baseline_execution_policy": "auto",
+      "baseline_source_mode": "auto",
+      "execution_start_mode": "execute_immediately",
+      "baseline_acceptance_target": "comparison_ready",
+      "manuscript_edit_mode": "none",
+      "scope": "baseline_plus_direction",
+      "baseline_mode": "auto",
+      "resource_policy": "balanced",
+      "time_budget_hours": 24,
+      "git_strategy": "semantic_head_plus_controlled_integration",
+      "runtime_constraints": "仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。",
+      "objectives": [
+        "1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。",
+        "2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。",
+        "3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。",
+        "4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。"
+      ],
+      "baseline_urls": [
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md",
+        "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md",
+        "https://github.com/lucmos/relreps",
+        "https://github.com/tian1327/SWAT"
+      ],
+      "paper_urls": [
+        "https://arxiv.org/abs/2209.15430",
+        "https://arxiv.org/abs/2406.11148"
+      ],
+      "entry_state_summary": "已有两条研究线及历史结果，不能视为空白项目。用户指定实验4本地 baseline 为 R5G2-20260908 冻结 V0，并保留旧图库部分白化对照；实验5为 E12-20260908 R2，并保留候选分布读出的局部正负结果。指定材料路径已核实存在，尚未审计内容、指标及软件环境。",
+      "review_summary": "",
+      "review_materials": [],
+      "custom_brief": "Use Chinese for key judgments. Preserve frozen local baselines and historical positive and negative results. V0 is not a direct reproduction of Relative Representations. R2 freezes CLIP/DINOv2 and is not a reproduction of SWAT, which includes encoder finetuning. R2 uses retrieval followed by ridge regression for 1-shot and support-only ridge regression for 5-shot. Never attribute local gains to the papers. Report results with different datasets, training access, retrieval galleries or query access separately. Audit and reuse existing code, results and assets before implementing new methods. Read the supplied papers and update related work before choosing a defensible research question. Give experiment 5 initial priority for FSL classification, but change priority when evidence warrants it. Continue from trustworthy baselines to iterative improvement against strong comparable baselines, then mechanism studies, ablations, robustness and failure analysis. Assess novelty and contribution from evidence; proceed to figures and writing when supported. Do not promise SoTA performance or a publishable contribution. Use only the local machine and authorized Codex subscription; honor model preferences only where actually available. Do not infer separate API credits or credentials. The user permits full local CPU and integrated GPU use; adapt resource use to stability and verify framework/MPS support after launch. Under the user's permission to extend the first run, SetupAgent selects a 72-hour wall-clock cap from formal launch, with reports approximately every 24 hours. Save results and a continuation entry point and stop at the cap; do not assume unlimited extension or require a complete paper within that window. Added downloads and assets are capped at 40 GB and must preserve at least approximately 10 GiB free disk headroom. Additional spending is zero; additional paid services, external model API calls and cloud compute are not authorized. The user sets no additional research privacy or export restrictions for authorized task services; public release is outside scope. Verify data licenses and access requirements. Decide ordinary scientific directions, baseline choices and experiment packages autonomously and explain consequential choices. Surface genuine budget, access, privacy or irreversible-action blockers. This setup session only prepares the form and launch preview; research starts after the user launches.",
+      "launch_form_source": "setup_agent",
+      "launch_form_recorded_at": "2026-09-12T08:57:09.329Z",
+      "launch_setup_quest_id": "B-011",
+      "launch_form": {
+        "title": "CV/FSL：实验4与实验5的可信复用及自主改进",
+        "quest_id": "011",
+        "goal": "从实验4冻结 V0 桥接核残差实现及实验5冻结编码器 R2 的已有局部正收益出发，先核验并复用结果、代码、数据与特征资产，再结合对应论文、最新相关工作、研究空间和复现成本自主选择研究主线。优先考虑更贴近 FSL 分类的实验5，允许证据改变优先级。可信 baseline 是起点，继续迭代寻求相同评估权限下超越本地及强基线的稳健改进，开展机制归因、消融、鲁棒性和失败分析，依据实际证据与方法新颖性判断论文贡献；有充分支撑时继续文献、图表和论文写作协作，不预设改法成功。",
+        "baseline_id": "",
+        "baseline_variant_id": "",
+        "baseline_source_mode": "auto",
+        "execution_start_mode": "execute_immediately",
+        "baseline_acceptance_target": "comparison_ready",
+        "baseline_urls": "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md\nhttps://github.com/lucmos/relreps\nhttps://github.com/tian1327/SWAT",
+        "paper_urls": "https://arxiv.org/abs/2209.15430\nhttps://arxiv.org/abs/2406.11148",
+        "runtime_constraints": "仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。",
+        "objectives": "1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。\n2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。\n3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。\n4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。",
+        "need_research_paper": true,
+        "research_intensity": "balanced",
+        "decision_policy": "autonomous",
+        "launch_mode": "standard",
+        "standard_profile": "canonical_research_graph",
+        "custom_profile": "freeform",
+        "review_followup_policy": "audit_only",
+        "baseline_execution_policy": "auto",
+        "manuscript_edit_mode": "none",
+        "entry_state_summary": "已有两条研究线及历史结果，不能视为空白项目。用户指定实验4本地 baseline 为 R5G2-20260908 冻结 V0，并保留旧图库部分白化对照；实验5为 E12-20260908 R2，并保留候选分布读出的局部正负结果。指定材料路径已核实存在，尚未审计内容、指标及软件环境。",
+        "review_summary": "",
+        "review_materials": "",
+        "custom_brief": "Use Chinese for key judgments. Preserve frozen local baselines and historical positive and negative results. V0 is not a direct reproduction of Relative Representations. R2 freezes CLIP/DINOv2 and is not a reproduction of SWAT, which includes encoder finetuning. R2 uses retrieval followed by ridge regression for 1-shot and support-only ridge regression for 5-shot. Never attribute local gains to the papers. Report results with different datasets, training access, retrieval galleries or query access separately. Audit and reuse existing code, results and assets before implementing new methods. Read the supplied papers and update related work before choosing a defensible research question. Give experiment 5 initial priority for FSL classification, but change priority when evidence warrants it. Continue from trustworthy baselines to iterative improvement against strong comparable baselines, then mechanism studies, ablations, robustness and failure analysis. Assess novelty and contribution from evidence; proceed to figures and writing when supported. Do not promise SoTA performance or a publishable contribution. Use only the local machine and authorized Codex subscription; honor model preferences only where actually available. Do not infer separate API credits or credentials. The user permits full local CPU and integrated GPU use; adapt resource use to stability and verify framework/MPS support after launch. Under the user's permission to extend the first run, SetupAgent selects a 72-hour wall-clock cap from formal launch, with reports approximately every 24 hours. Save results and a continuation entry point and stop at the cap; do not assume unlimited extension or require a complete paper within that window. Added downloads and assets are capped at 40 GB and must preserve at least approximately 10 GiB free disk headroom. Additional spending is zero; additional paid services, external model API calls and cloud compute are not authorized. The user sets no additional research privacy or export restrictions for authorized task services; public release is outside scope. Verify data licenses and access requirements. Decide ordinary scientific directions, baseline choices and experiment packages autonomously and explain consequential choices. Surface genuine budget, access, privacy or irreversible-action blockers. This setup session only prepares the form and launch preview; research starts after the user launches.",
+        "user_language": "zh",
+        "scope": "baseline_plus_direction",
+        "baseline_mode": "auto",
+        "resource_policy": "balanced",
+        "time_budget_hours": "24",
+        "git_strategy": "semantic_head_plus_controlled_integration"
+      },
+      "launch_markdown": "Project Bootstrap\n- Project title: CV/FSL：实验4与实验5的可信复用及自主改进\n- Project id: 011\n- User language: Chinese\n\nPrimary Research Request\n从实验4冻结 V0 桥接核残差实现及实验5冻结编码器 R2 的已有局部正收益出发，先核验并复用结果、代码、数据与特征资产，再结合对应论文、最新相关工作、研究空间和复现成本自主选择研究主线。优先考虑更贴近 FSL 分类的实验5，允许证据改变优先级。可信 baseline 是起点，继续迭代寻求相同评估权限下超越本地及强基线的稳健改进，开展机制归因、消融、鲁棒性和失败分析，依据实际证据与方法新颖性判断论文贡献；有充分支撑时继续文献、图表和论文写作协作，不预设改法成功。\n\nResearch Goals\n- 1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。\n- 2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。\n- 3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。\n- 4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。\n\nBaseline Context\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md\n- https://github.com/lucmos/relreps\n- https://github.com/tian1327/SWAT\n\nBaseline Source Preference\n- Automatic: choose the lightest trustworthy comparator route from the current baseline sources and local evidence.\n\nExecution Start Mode\n- Execute immediately: if the route is already clear, begin the smallest useful execution step without a separate approval round.\n\nBaseline Acceptance Target\n- Comparison ready: accept the lightest trustworthy comparator that is sufficient for downstream idea selection and experiment comparison.\n\nReference Papers / Repositories / Local Paths\n- https://arxiv.org/abs/2209.15430\n- https://arxiv.org/abs/2406.11148\n\nUser-Provided Materials\n- No extra uploaded material was attached at launch time.\n\nOperational Constraints\n仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。\n\nResearch Delivery Mode\n- A research paper is required for this project.\n- The default paper-facing route is baseline, idea selection, implementation, measured experiments, only the analysis that the evidence actually needs, then drafting and packaging.\n- Do not stop after obtaining only one improved algorithm or one promising run unless the user explicitly narrows scope.\n- After each `artifact.record_main_experiment(...)`, first interpret the measured result, then decide whether to improve further, run necessary follow-up analysis, or move into writing.\n- The idea stage only creates or revises a candidate direction; the round is not complete until a main experiment result is recorded and routed.\n- Treat later analysis, review, and finalize work as follow-on stages to open when the nearer gate is actually ready, not as boxes that must always be pre-completed before progress counts.\n\nDecision Handling Mode\n- Autonomous decision mode is active.\n- Do not hand ordinary route, branch, cost, baseline-reuse, or experiment-selection decisions back to the user by default.\n- If the main fork is a large-cost choice such as verify/reuse versus full reproduction, one short clarification or one bounded plan is acceptable before heavy execution.\n- Report chosen routes through threaded progress or milestone updates, and keep moving unless you are explicitly requesting final completion approval.\n\nLaunch Mode\n- Standard launch mode is active.\n- Standard profile: canonical research workflow.\n- Start from the canonical research graph unless durable state later proves that a non-standard entry path is better.\n\nResearch Contract\n- Launch mode: Standard mode: start from the ordinary canonical research loop and let the default stage graph drive the first round.\n- Standard entry type: Canonical research workflow: follow the ordinary research graph from baseline and idea selection through experiment, analysis, and paper work when justified.\n- Research intensity: Balanced: secure a trustworthy baseline and probe one justified direction without overcommitting.\n- Decision policy: Autonomous: decide ordinary route choices yourself, keep the user informed through threaded updates, and do not hand routine decisions back to the user.\n- Research paper required: Yes\n- Scope: Baseline + direction: secure the baseline, then test one promising improvement direction.\n- Baseline policy: Stop if insufficient: pause the project instead of faking a baseline when evidence is missing.\n- Baseline source preference: Automatic: choose the lightest trustworthy comparator route from the current baseline sources and local evidence.\n- Execution start mode: Execute immediately: if the route is already clear, begin the smallest useful execution step without a separate approval round.\n- Baseline acceptance target: Comparison ready: accept the lightest trustworthy comparator that is sufficient for downstream idea selection and experiment comparison.\n- Review follow-up policy: Not applicable outside the Review custom task type.\n- Baseline execution policy: Standard baseline handling from the ordinary research loop.\n- Manuscript edit mode: No manuscript-facing custom edit contract requested.\n- Resource policy: Balanced: keep progress steady while still controlling cost and risk.\n- Git strategy: Semantic head + controlled integration: keep a cleaner main line and merge only reviewed branches.\n- Time budget per research round: 24 hour(s)\n\nDefault Working Rules\n- Keep all durable files inside the project root.\n- Prefer reusing existing baseline artifacts before rebuilding them from scratch.\n- Baseline source mode is automatic: choose the lightest trustworthy comparator route from the currently provided baseline sources and local evidence.\n- Execution start mode is execute-immediately: if the route is already concrete, begin with the smallest useful validating action rather than pausing for a separate approval round.\n- Baseline acceptance target is comparison-ready: once the comparator is trustworthy enough to unlock the next scientific step, move forward instead of polishing the baseline indefinitely.\n- Standard launch mode is active here: use the canonical research graph unless later durable evidence justifies a different entry path.\n- Emit explicit milestone updates after each meaningful step.\n- Every consequential decision should include reasons, evidence, and the next recommended action.\n- If the startup contract already fixes the delivery mode and baseline policy, follow it without asking the user again unless cost, safety, or scope changes materially.\n- If manuscript edits are required, make the section-level deltas explicit and keep the replacement wording copy-ready.\n- Autonomous mode is the default contract here: decide the route yourself and continue unless you are requesting explicit completion approval or the cost fork genuinely deserves one short clarification.",
+      "project_display": {
+        "template": "experiment",
+        "accent_color": "sage"
+      }
+    }
+  },
+  "startup_contract": {
+    "schema_version": 4,
+    "workspace_mode": "autonomous",
+    "user_language": "zh",
+    "need_research_paper": true,
+    "research_intensity": "balanced",
+    "decision_policy": "autonomous",
+    "launch_mode": "standard",
+    "standard_profile": "canonical_research_graph",
+    "custom_profile": "freeform",
+    "review_followup_policy": "audit_only",
+    "baseline_execution_policy": "auto",
+    "baseline_source_mode": "auto",
+    "execution_start_mode": "execute_immediately",
+    "baseline_acceptance_target": "comparison_ready",
+    "manuscript_edit_mode": "none",
+    "scope": "baseline_plus_direction",
+    "baseline_mode": "auto",
+    "resource_policy": "balanced",
+    "time_budget_hours": 24,
+    "git_strategy": "semantic_head_plus_controlled_integration",
+    "runtime_constraints": "仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。",
+    "objectives": [
+      "1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。",
+      "2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。",
+      "3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。",
+      "4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。"
+    ],
+    "baseline_urls": [
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md",
+      "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md",
+      "https://github.com/lucmos/relreps",
+      "https://github.com/tian1327/SWAT"
+    ],
+    "paper_urls": [
+      "https://arxiv.org/abs/2209.15430",
+      "https://arxiv.org/abs/2406.11148"
+    ],
+    "entry_state_summary": "已有两条研究线及历史结果，不能视为空白项目。用户指定实验4本地 baseline 为 R5G2-20260908 冻结 V0，并保留旧图库部分白化对照；实验5为 E12-20260908 R2，并保留候选分布读出的局部正负结果。指定材料路径已核实存在，尚未审计内容、指标及软件环境。",
+    "review_summary": "",
+    "review_materials": [],
+    "custom_brief": "Use Chinese for key judgments. Preserve frozen local baselines and historical positive and negative results. V0 is not a direct reproduction of Relative Representations. R2 freezes CLIP/DINOv2 and is not a reproduction of SWAT, which includes encoder finetuning. R2 uses retrieval followed by ridge regression for 1-shot and support-only ridge regression for 5-shot. Never attribute local gains to the papers. Report results with different datasets, training access, retrieval galleries or query access separately. Audit and reuse existing code, results and assets before implementing new methods. Read the supplied papers and update related work before choosing a defensible research question. Give experiment 5 initial priority for FSL classification, but change priority when evidence warrants it. Continue from trustworthy baselines to iterative improvement against strong comparable baselines, then mechanism studies, ablations, robustness and failure analysis. Assess novelty and contribution from evidence; proceed to figures and writing when supported. Do not promise SoTA performance or a publishable contribution. Use only the local machine and authorized Codex subscription; honor model preferences only where actually available. Do not infer separate API credits or credentials. The user permits full local CPU and integrated GPU use; adapt resource use to stability and verify framework/MPS support after launch. Under the user's permission to extend the first run, SetupAgent selects a 72-hour wall-clock cap from formal launch, with reports approximately every 24 hours. Save results and a continuation entry point and stop at the cap; do not assume unlimited extension or require a complete paper within that window. Added downloads and assets are capped at 40 GB and must preserve at least approximately 10 GiB free disk headroom. Additional spending is zero; additional paid services, external model API calls and cloud compute are not authorized. The user sets no additional research privacy or export restrictions for authorized task services; public release is outside scope. Verify data licenses and access requirements. Decide ordinary scientific directions, baseline choices and experiment packages autonomously and explain consequential choices. Surface genuine budget, access, privacy or irreversible-action blockers. This setup session only prepares the form and launch preview; research starts after the user launches.",
+    "launch_form_source": "setup_agent",
+    "launch_form_recorded_at": "2026-09-12T08:57:09.329Z",
+    "launch_setup_quest_id": "B-011",
+    "launch_form": {
+      "title": "CV/FSL：实验4与实验5的可信复用及自主改进",
+      "quest_id": "011",
+      "goal": "从实验4冻结 V0 桥接核残差实现及实验5冻结编码器 R2 的已有局部正收益出发，先核验并复用结果、代码、数据与特征资产，再结合对应论文、最新相关工作、研究空间和复现成本自主选择研究主线。优先考虑更贴近 FSL 分类的实验5，允许证据改变优先级。可信 baseline 是起点，继续迭代寻求相同评估权限下超越本地及强基线的稳健改进，开展机制归因、消融、鲁棒性和失败分析，依据实际证据与方法新颖性判断论文贡献；有充分支撑时继续文献、图表和论文写作协作，不预设改法成功。",
+      "baseline_id": "",
+      "baseline_variant_id": "",
+      "baseline_source_mode": "auto",
+      "execution_start_mode": "execute_immediately",
+      "baseline_acceptance_target": "comparison_ready",
+      "baseline_urls": "/Users/decoqwq/Desktop/learning/科研/individual research/individual-research\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md\n/Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md\nhttps://github.com/lucmos/relreps\nhttps://github.com/tian1327/SWAT",
+      "paper_urls": "https://arxiv.org/abs/2209.15430\nhttps://arxiv.org/abs/2406.11148",
+      "runtime_constraints": "仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。",
+      "objectives": "1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。\n2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。\n3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。\n4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。",
+      "need_research_paper": true,
+      "research_intensity": "balanced",
+      "decision_policy": "autonomous",
+      "launch_mode": "standard",
+      "standard_profile": "canonical_research_graph",
+      "custom_profile": "freeform",
+      "review_followup_policy": "audit_only",
+      "baseline_execution_policy": "auto",
+      "manuscript_edit_mode": "none",
+      "entry_state_summary": "已有两条研究线及历史结果，不能视为空白项目。用户指定实验4本地 baseline 为 R5G2-20260908 冻结 V0，并保留旧图库部分白化对照；实验5为 E12-20260908 R2，并保留候选分布读出的局部正负结果。指定材料路径已核实存在，尚未审计内容、指标及软件环境。",
+      "review_summary": "",
+      "review_materials": "",
+      "custom_brief": "Use Chinese for key judgments. Preserve frozen local baselines and historical positive and negative results. V0 is not a direct reproduction of Relative Representations. R2 freezes CLIP/DINOv2 and is not a reproduction of SWAT, which includes encoder finetuning. R2 uses retrieval followed by ridge regression for 1-shot and support-only ridge regression for 5-shot. Never attribute local gains to the papers. Report results with different datasets, training access, retrieval galleries or query access separately. Audit and reuse existing code, results and assets before implementing new methods. Read the supplied papers and update related work before choosing a defensible research question. Give experiment 5 initial priority for FSL classification, but change priority when evidence warrants it. Continue from trustworthy baselines to iterative improvement against strong comparable baselines, then mechanism studies, ablations, robustness and failure analysis. Assess novelty and contribution from evidence; proceed to figures and writing when supported. Do not promise SoTA performance or a publishable contribution. Use only the local machine and authorized Codex subscription; honor model preferences only where actually available. Do not infer separate API credits or credentials. The user permits full local CPU and integrated GPU use; adapt resource use to stability and verify framework/MPS support after launch. Under the user's permission to extend the first run, SetupAgent selects a 72-hour wall-clock cap from formal launch, with reports approximately every 24 hours. Save results and a continuation entry point and stop at the cap; do not assume unlimited extension or require a complete paper within that window. Added downloads and assets are capped at 40 GB and must preserve at least approximately 10 GiB free disk headroom. Additional spending is zero; additional paid services, external model API calls and cloud compute are not authorized. The user sets no additional research privacy or export restrictions for authorized task services; public release is outside scope. Verify data licenses and access requirements. Decide ordinary scientific directions, baseline choices and experiment packages autonomously and explain consequential choices. Surface genuine budget, access, privacy or irreversible-action blockers. This setup session only prepares the form and launch preview; research starts after the user launches.",
+      "user_language": "zh",
+      "scope": "baseline_plus_direction",
+      "baseline_mode": "auto",
+      "resource_policy": "balanced",
+      "time_budget_hours": "24",
+      "git_strategy": "semantic_head_plus_controlled_integration"
+    },
+    "launch_markdown": "Project Bootstrap\n- Project title: CV/FSL：实验4与实验5的可信复用及自主改进\n- Project id: 011\n- User language: Chinese\n\nPrimary Research Request\n从实验4冻结 V0 桥接核残差实现及实验5冻结编码器 R2 的已有局部正收益出发，先核验并复用结果、代码、数据与特征资产，再结合对应论文、最新相关工作、研究空间和复现成本自主选择研究主线。优先考虑更贴近 FSL 分类的实验5，允许证据改变优先级。可信 baseline 是起点，继续迭代寻求相同评估权限下超越本地及强基线的稳健改进，开展机制归因、消融、鲁棒性和失败分析，依据实际证据与方法新颖性判断论文贡献；有充分支撑时继续文献、图表和论文写作协作，不预设改法成功。\n\nResearch Goals\n- 1. 核对两条线的代码版本、既有正负结果、数据/权重/特征资产、随机种子与运行命令；形成可复核的 baseline 清单和失败记录，避免重复试错。\n- 2. 在一致数据、训练和查询权限下复核本地 V0/R2 的既有指标与不确定性，分别记录论文方法和本地方法；结合相关工作与实际成本给出主线选择依据。\n- 3. 在授权预算内自主迭代候选方法，用固定评估协议、多种子或配对任务验证收益与成本；尝试取得稳健改进，未成功也完整记录边界。\n- 4. 对有支撑的候选开展消融、鲁棒性与失败分析，形成可复现改进包和贡献判断；证据充分时推进图表及论文写作，否则交付可信结论与限制。\n\nBaseline Context\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/README.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/reports/optimization_20260908.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究4——少桥接样本的跨编码器检索/src/improved.py\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/studies/r2_20260909/优化报告.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/研究5——少样本支持集的检索增强与可靠性加权/e12/optimized.py\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/specialize_20260909/results/十项改进实验报告.md\n- /Users/decoqwq/Desktop/learning/科研/individual research/individual-research/lab/validate_20260909/analysis/归因解释.md\n- https://github.com/lucmos/relreps\n- https://github.com/tian1327/SWAT\n\nBaseline Source Preference\n- Automatic: choose the lightest trustworthy comparator route from the current baseline sources and local evidence.\n\nExecution Start Mode\n- Execute immediately: if the route is already clear, begin the smallest useful execution step without a separate approval round.\n\nBaseline Acceptance Target\n- Comparison ready: accept the lightest trustworthy comparator that is sufficient for downstream idea selection and experiment comparison.\n\nReference Papers / Repositories / Local Paths\n- https://arxiv.org/abs/2209.15430\n- https://arxiv.org/abs/2406.11148\n\nUser-Provided Materials\n- No extra uploaded material was attached at launch time.\n\nOperational Constraints\n仅使用本机，不使用远程服务器或云 GPU。2026-09-12 只读核验确认 Apple M3、8个逻辑CPU、1个内置10核GPU、16 GiB统一内存。用户表示本机占用无所谓，允许充分使用本机CPU和集成GPU；不再采用先前待确认的6线程/10 GB限制，仍按内存压力、系统稳定性及吞吐调整并发和批量。MPS/框架支持在正式启动后实测，不从硬件Metal支持推断软件可用。用户允许延长首轮时间，SetupAgent据此选择正式启动起72小时作为首轮规划上限（代理选择，并非用户指定数字），约每24小时汇报，到期保存结果及续跑入口并停止，不自动无限延长；首轮不要求完成完整论文。允许公开资料检索、下载数据和模型，新增下载及相关资产占用不超过40 GB；当前卷可用约44.0 GB（40.9 GiB），优先复用资产，为系统、临时解压、环境与结果保留至少约10 GiB余量，按额度和磁盘余量中更严格者控制。允许使用现有Codex套餐，gpt-6/gpt5.6-sol仅按账户和运行器实际可用范围选择，不假定独立API余额或无限额度。不依赖额外外部模型/API、独立计费服务或云算力，额外支出上限为0；若不可替代地需要额外服务或凭据，先报告并等待用户。用户暂不设研究代码、数据和未发表结果的额外隐私/外传限制，限本任务已授权服务，公开发布不在本次范围。数据许可、受限数据凭据、数据/权重/特征及环境启动后先核对；遇真实访问或隐私阻碍保存工作并等待。设置会话仅准备启动。\n\nResearch Delivery Mode\n- A research paper is required for this project.\n- The default paper-facing route is baseline, idea selection, implementation, measured experiments, only the analysis that the evidence actually needs, then drafting and packaging.\n- Do not stop after obtaining only one improved algorithm or one promising run unless the user explicitly narrows scope.\n- After each `artifact.record_main_experiment(...)`, first interpret the measured result, then decide whether to improve further, run necessary follow-up analysis, or move into writing.\n- The idea stage only creates or revises a candidate direction; the round is not complete until a main experiment result is recorded and routed.\n- Treat later analysis, review, and finalize work as follow-on stages to open when the nearer gate is actually ready, not as boxes that must always be pre-completed before progress counts.\n\nDecision Handling Mode\n- Autonomous decision mode is active.\n- Do not hand ordinary route, branch, cost, baseline-reuse, or experiment-selection decisions back to the user by default.\n- If the main fork is a large-cost choice such as verify/reuse versus full reproduction, one short clarification or one bounded plan is acceptable before heavy execution.\n- Report chosen routes through threaded progress or milestone updates, and keep moving unless you are explicitly requesting final completion approval.\n\nLaunch Mode\n- Standard launch mode is active.\n- Standard profile: canonical research workflow.\n- Start from the canonical research graph unless durable state later proves that a non-standard entry path is better.\n\nResearch Contract\n- Launch mode: Standard mode: start from the ordinary canonical research loop and let the default stage graph drive the first round.\n- Standard entry type: Canonical research workflow: follow the ordinary research graph from baseline and idea selection through experiment, analysis, and paper work when justified.\n- Research intensity: Balanced: secure a trustworthy baseline and probe one justified direction without overcommitting.\n- Decision policy: Autonomous: decide ordinary route choices yourself, keep the user informed through threaded updates, and do not hand routine decisions back to the user.\n- Research paper required: Yes\n- Scope: Baseline + direction: secure the baseline, then test one promising improvement direction.\n- Baseline policy: Stop if insufficient: pause the project instead of faking a baseline when evidence is missing.\n- Baseline source preference: Automatic: choose the lightest trustworthy comparator route from the current baseline sources and local evidence.\n- Execution start mode: Execute immediately: if the route is already clear, begin the smallest useful execution step without a separate approval round.\n- Baseline acceptance target: Comparison ready: accept the lightest trustworthy comparator that is sufficient for downstream idea selection and experiment comparison.\n- Review follow-up policy: Not applicable outside the Review custom task type.\n- Baseline execution policy: Standard baseline handling from the ordinary research loop.\n- Manuscript edit mode: No manuscript-facing custom edit contract requested.\n- Resource policy: Balanced: keep progress steady while still controlling cost and risk.\n- Git strategy: Semantic head + controlled integration: keep a cleaner main line and merge only reviewed branches.\n- Time budget per research round: 24 hour(s)\n\nDefault Working Rules\n- Keep all durable files inside the project root.\n- Prefer reusing existing baseline artifacts before rebuilding them from scratch.\n- Baseline source mode is automatic: choose the lightest trustworthy comparator route from the currently provided baseline sources and local evidence.\n- Execution start mode is execute-immediately: if the route is already concrete, begin with the smallest useful validating action rather than pausing for a separate approval round.\n- Baseline acceptance target is comparison-ready: once the comparator is trustworthy enough to unlock the next scientific step, move forward instead of polishing the baseline indefinitely.\n- Standard launch mode is active here: use the canonical research graph unless later durable evidence justifies a different entry path.\n- Emit explicit milestone updates after each meaningful step.\n- Every consequential decision should include reasons, evidence, and the next recommended action.\n- If the startup contract already fixes the delivery mode and baseline policy, follow it without asking the user again unless cost, safety, or scope changes materially.\n- If manuscript edits are required, make the section-level deltas explicit and keep the replacement wording copy-ready.\n- Autonomous mode is the default contract here: decide the route yourself and continue unless you are requesting explicit completion approval or the cost fork genuinely deserves one short clarification.",
+    "project_display": {
+      "template": "experiment",
+      "accent_color": "sage"
+    }
+  },
+  "evidence_paths": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/REPORT.md",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/analysis.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/validation.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/outputs/source_validation.json",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/assets/feature_manifest.json"
+  ],
+  "files_changed": [
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/oslo.py",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/run_eval.py",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/validate_source.py",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/analyze_results.py",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/PLAN.md",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/CHECKLIST.md"
+  ],
+  "run_md_path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/RUN.md",
+  "metric_validation": {
+    "baseline_metric_ids": [
+      "pets_matched_1shot_accuracy",
+      "pets_mismatched_1shot_accuracy",
+      "pets_matched_5shot_accuracy",
+      "pets_mismatched_5shot_accuracy",
+      "pets_macro_1shot_accuracy"
+    ],
+    "baseline_metric_details": [
+      {
+        "metric_id": "pets_matched_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_matched_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_matched_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_matched_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 96.24
+      },
+      {
+        "metric_id": "pets_mismatched_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_mismatched_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_mismatched_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_mismatched_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 93.93066666666667
+      },
+      {
+        "metric_id": "pets_matched_5shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_matched_5shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_matched_5shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_matched_5shot_accuracy",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 98.44266666666668
+      },
+      {
+        "metric_id": "pets_mismatched_5shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_mismatched_5shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_mismatched_5shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_mismatched_5shot_accuracy",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 98.44266666666668
+      },
+      {
+        "metric_id": "pets_macro_1shot_accuracy",
+        "description": "Frozen local R2 Pets episodic accuracy: pets_macro_1shot_accuracy",
+        "derivation": "100 times mean correct fraction over 75 queries per task and 500 equally weighted paired tasks; macro1shot is equal mean of matched and mismatched one-shot cells.",
+        "origin_path": "pets_macro_1shot_accuracy",
+        "source_ref": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/fsl-pets-transfer-20260913/experiments/main/fsl-pets-transfer-20260913/outputs/baseline/validation.json",
+        "direction": "maximize",
+        "unit": "%",
+        "required": true,
+        "label": "pets_macro_1shot_accuracy",
+        "decimals": null,
+        "chart_group": "default",
+        "baseline_value": 95.08533333333332
+      }
+    ],
+    "extra_metric_ids": [
+      "pets_fresh_matched_1shot_accuracy",
+      "pets_fresh_mismatched_1shot_accuracy",
+      "pets_fresh_matched_5shot_accuracy",
+      "pets_fresh_mismatched_5shot_accuracy",
+      "pets_fresh_macro_1shot_accuracy"
+    ]
+  },
+  "connector_metric_charts": [
+    {
+      "metric_id": "pets_matched_1shot_accuracy",
+      "label": "Pets Matched 1shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-matched-1shot-accuracy-timeline.png",
+      "baseline_value": 96.24,
+      "latest_value": 94.91733333333335,
+      "point_count": 3,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_mismatched_1shot_accuracy",
+      "label": "Pets Mismatched 1shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-mismatched-1shot-accuracy-timeline.png",
+      "baseline_value": 93.93066666666667,
+      "latest_value": 64.192,
+      "point_count": 3,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_matched_5shot_accuracy",
+      "label": "Pets Matched 5shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-matched-5shot-accuracy-timeline.png",
+      "baseline_value": 98.44266666666668,
+      "latest_value": 97.19466666666666,
+      "point_count": 3,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_mismatched_5shot_accuracy",
+      "label": "Pets Mismatched 5shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-mismatched-5shot-accuracy-timeline.png",
+      "baseline_value": 98.44266666666668,
+      "latest_value": 93.304,
+      "point_count": 3,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_macro_1shot_accuracy",
+      "label": "Pets Macro 1shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-macro-1shot-accuracy-timeline.png",
+      "baseline_value": 95.08533333333332,
+      "latest_value": 79.55466666666666,
+      "point_count": 3,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_fresh_matched_1shot_accuracy",
+      "label": "Pets Fresh Matched 1shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-fresh-matched-1shot-accuracy-timeline.png",
+      "baseline_value": null,
+      "latest_value": 94.87466666666666,
+      "point_count": 1,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_fresh_mismatched_1shot_accuracy",
+      "label": "Pets Fresh Mismatched 1shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-fresh-mismatched-1shot-accuracy-timeline.png",
+      "baseline_value": null,
+      "latest_value": 63.992000000000004,
+      "point_count": 1,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_fresh_matched_5shot_accuracy",
+      "label": "Pets Fresh Matched 5shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-fresh-matched-5shot-accuracy-timeline.png",
+      "baseline_value": null,
+      "latest_value": 97.18933333333332,
+      "point_count": 1,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_fresh_mismatched_5shot_accuracy",
+      "label": "Pets Fresh Mismatched 5shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-fresh-mismatched-5shot-accuracy-timeline.png",
+      "baseline_value": null,
+      "latest_value": 92.97866666666667,
+      "point_count": 1,
+      "direction": "maximize",
+      "style": "branded"
+    },
+    {
+      "metric_id": "pets_fresh_macro_1shot_accuracy",
+      "label": "Pets Fresh Macro 1shot Accuracy",
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913/experiments/main/oslo-gallery-pets-20260913/connector-charts/pets-fresh-macro-1shot-accuracy-timeline.png",
+      "baseline_value": null,
+      "latest_value": 79.43333333333334,
+      "point_count": 1,
+      "direction": "maximize",
+      "style": "branded"
+    }
+  ]
+}

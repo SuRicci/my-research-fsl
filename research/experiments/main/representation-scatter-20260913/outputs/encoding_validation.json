@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "checks": {
+    "dtd_query_clip_vitb16": {
+      "distinct_views": [
+        4,
+        4,
+        6,
+        6
+      ],
+      "original_max_abs": 0.00011813640594482422,
+      "original_min_cosine": 0.9999998211860657,
+      "feature_shape": [
+        4,
+        6,
+        512
+      ]
+    },
+    "dtd_gallery_clip_vitb16": {
+      "distinct_views": [
+        6,
+        6,
+        4,
+        6
+      ],
+      "original_max_abs": 9.992718696594238e-05,
+      "original_min_cosine": 0.9999999403953552,
+      "feature_shape": [
+        4,
+        6,
+        512
+      ]
+    },
+    "eurosat_query_clip_vitb16": {
+      "distinct_views": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "original_max_abs": 7.849931716918945e-05,
+      "original_min_cosine": 0.9999999403953552,
+      "feature_shape": [
+        4,
+        6,
+        512
+      ]
+    },
+    "eurosat_gallery_clip_vitb16": {
+      "distinct_views": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "original_max_abs": 8.910894393920898e-05,
+      "original_min_cosine": 1.0,
+      "feature_shape": [
+        4,
+        6,
+        512
+      ]
+    },
+    "dtd_query_dinov2_vits14": {
+      "distinct_views": [
+        4,
+        4,
+        6,
+        6
+      ],
+      "original_max_abs": 5.857646465301514e-05,
+      "original_min_cosine": 0.9999999403953552,
+      "feature_shape": [
+        4,
+        6,
+        384
+      ]
+    },
+    "dtd_gallery_dinov2_vits14": {
+      "distinct_views": [
+        6,
+        6,
+        4,
+        6
+      ],
+      "original_max_abs": 5.6371092796325684e-05,
+      "original_min_cosine": 1.0,
+      "feature_shape": [
+        4,
+        6,
+        384
+      ]
+    },
+    "eurosat_query_dinov2_vits14": {
+      "distinct_views": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "original_max_abs": 4.997849464416504e-05,
+      "original_min_cosine": 1.0,
+      "feature_shape": [
+        4,
+        6,
+        384
+      ]
+    },
+    "eurosat_gallery_dinov2_vits14": {
+      "distinct_views": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "original_max_abs": 5.467236042022705e-05,
+      "original_min_cosine": 1.0,
+      "feature_shape": [
+        4,
+        6,
+        384
+      ]
+    }
+  },
+  "torch": "2.3.0",
+  "numpy": "1.24.4",
+  "python": "3.8.18 | packaged by conda-forge | (default, Oct 10 2023, 15:46:56) \n[Clang 16.0.6 ]",
+  "mps": true
+}

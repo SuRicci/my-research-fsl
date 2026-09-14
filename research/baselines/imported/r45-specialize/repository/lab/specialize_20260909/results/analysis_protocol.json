@@ -1,0 +1,34 @@
+{
+  "frozen_at": 1788959929.5248792,
+  "state_when_frozen": {
+    "method": "r4_ensemble",
+    "status": "running",
+    "completed": [
+      {
+        "method": "r4_whiten",
+        "exit_code": 0,
+        "seconds": 138.153461933136,
+        "status": "complete"
+      },
+      {
+        "method": "r4_rank",
+        "exit_code": 0,
+        "seconds": 142.23371291160583,
+        "status": "complete"
+      },
+      {
+        "method": "r4_diffusion",
+        "exit_code": 0,
+        "seconds": 145.9042432308197,
+        "status": "complete"
+      }
+    ],
+    "started": 1788959743.4256513
+  },
+  "sources": {
+    "/data/liuhaoyu/individual-research/lab/specialize_20260909/analysis/compare_whitening.py": "a7daaf23f7b2f4a7652479241fb4ea33a83fbf5742d0b2a29336e8291b941c5a",
+    "/data/liuhaoyu/individual-research/lab/specialize_20260909/analysis/cv_control.py": "384270336db295e79c4c3cb77354f0886027ca4b0d0c6c0d2bcc4d3467cda854",
+    "/data/liuhaoyu/individual-research/lab/specialize_20260909/analysis/controls.md": "05f31855c84ee928a00e588d7eb680377c09423ec28ad8ff292fd65fee2c160e"
+  },
+  "conditional_cv_control": true
+}
