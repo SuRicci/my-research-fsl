@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "asset_count": 10,
+  "snapshot_members": 134772,
+  "snapshot_files": 134694,
+  "snapshot_symlinks": 78,
+  "all_asset_sha256_passed": true,
+  "all_embedded_file_hashes_passed": true
+}

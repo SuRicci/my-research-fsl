@@ -1,0 +1,53 @@
+{
+  "status": "ready",
+  "parts": [
+    {
+      "file": "quest-012-snapshot.tar.gz.part001",
+      "bytes": 1073741824,
+      "sha256": "c0d73642fc2cc5471c56777d6fc9818713c24eef577657eef2d167cce0828cd9"
+    },
+    {
+      "file": "quest-012-snapshot.tar.gz.part002",
+      "bytes": 1073741824,
+      "sha256": "82e1d420bc0e1e16d1332ca273c8154eb0292304647d5d3c9e843d7550fddcfb"
+    },
+    {
+      "file": "quest-012-snapshot.tar.gz.part003",
+      "bytes": 1073741824,
+      "sha256": "12b84bae23fe825ba45b1a6310a638349ff2a7f35b7ddcc1b8815ad516051964"
+    },
+    {
+      "file": "quest-012-snapshot.tar.gz.part004",
+      "bytes": 1073741824,
+      "sha256": "525b9ffa0891fc62f7f58e0e750991767400b2c3c4f2174651b5c1fdfb23cc38"
+    },
+    {
+      "file": "quest-012-snapshot.tar.gz.part005",
+      "bytes": 215111542,
+      "sha256": "32006b42ac4189419b9bb2eddf7f091d756374468796c467b58e356d96aaf2db"
+    }
+  ],
+  "counts": {
+    "files": 134694,
+    "symlinks": 78,
+    "unique_content_bytes": 6177785728,
+    "original_bytes": 23774190397,
+    "hardlinks": 101660
+  },
+  "coverage": [
+    {
+      "manifest": "protected_results_before.json",
+      "expected": 20716,
+      "verified": 20716
+    },
+    {
+      "manifest": "baseline_result_hashes.json",
+      "expected": 327,
+      "verified": 327
+    }
+  ],
+  "failures": [],
+  "redacted_file_count": 0,
+  "exclusion_count": 275,
+  "free_gib": 18.627723693847656
+}

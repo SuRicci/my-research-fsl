@@ -1,5 +1,11 @@
 {
-  "state": "preparing_full_archive",
+  "state": "uploading_full_archive",
   "local_deletion_allowed": false,
-  "note": "Browsable files are available; complete result/history assets are not yet verified."
+  "local_archive_verification": "passed",
+  "protected_files": 21043,
+  "snapshot_members": 134772,
+  "history_refs": 70,
+  "history_commits": 685,
+  "asset_count": 10,
+  "total_bytes": 9316706614
 }

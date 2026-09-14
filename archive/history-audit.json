@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "refs": 70,
+  "commits": 685,
+  "objects": 60551,
+  "blobs_scanned": 54163,
+  "logical_blob_bytes": 5474579894,
+  "credential_path_count": 0,
+  "credential_pattern_hit_oids": [],
+  "history_export": "same 70 refs and 685 commits; credential/runtime trees and previously deleted r2-domains raw data/downloads excluded; content redactions mapped by git-filter-repo",
+  "bundle_independent_restore": "passed",
+  "bundle_fsck": "passed",
+  "all_restored_refs_identical": true
+}
