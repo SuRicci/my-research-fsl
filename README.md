@@ -18,3 +18,10 @@
 此归档是暂停交付包；已有论文仍为草稿，不声称达到投稿标准。恢复研究时先读报告中的限制和恢复说明，按需要重新获取此前已清理的输入。
 
 上传期间新增的 5 条归档管理提交另见 [历史增量](archive/post-snapshot-history/README.md)，已独立验证恢复；原 10 个分卷保持原样。
+
+## September 16 research pause and results
+
+[中文结果增补报告](archive/pause-20260916/RESULTS_REPORT.md) · [Recovery instructions](archive/pause-20260916/RESTORE.md) · [Full incremental archive](https://github.com/SuRicci/my-research-fsl/releases/tag/quest-012-pause-20260916)
+
+Experiments are paused at the owner’s request. The previous September14 archive remains intact.
+

@@ -1,0 +1,17 @@
+{
+  "refs/heads/analysis/augmentation-geometry-20260915": "a6ca0cdcb9acae431a328404d3aa057af40fdb41",
+  "refs/heads/idea/012-idea-2018223d": "007055e1b812a752aa4d9dfa6418f9930d6d4412",
+  "refs/heads/idea/012-idea-7ab5d3e2": "3cc5018904c1437aec8ee4aee8105e184fe4cc81",
+  "refs/heads/idea/012-idea-81540b7c": "781a81081e69d9e5ac4fbefdd93e6d0bfccafb66",
+  "refs/heads/idea/012-idea-a7bb8bb0": "502609b4ad5d05ee07296708fc18d8dd71a4cfcd",
+  "refs/heads/idea/012-idea-ac9900a0": "f5fc81568eb045f9f9b0fe0a46695a82cf9d614c",
+  "refs/heads/idea/012-idea-b1fe1ac1": "478453adebc8c87574af313d1e2e58ef181e449f",
+  "refs/heads/idea/012-idea-d039a9cd": "ee189a6d6ffdf1215f3e9fe7c5845b2cc4761967",
+  "refs/heads/main": "08af9f95a63e67d3286c19af543e41e69bbb9207",
+  "refs/heads/run/class-covariance-control-20260916": "ecf668bbd981ee0c48f9a085717d86be1f9f2615",
+  "refs/heads/run/conditional-laplace-20260916": "a06e7b240f7a5a0dec72f37beaa0dbe0d72d6c8c",
+  "refs/heads/run/dino-base-control-20260914": "08af9f95a63e67d3286c19af543e41e69bbb9207",
+  "refs/heads/run/orbit-signal-20260916": "b6158578afc240a62b956e5831aec4a389e3b40d",
+  "refs/heads/run/ordered-crop-correspondence-20260916": "8c950d2f5f22dfee17ba065bba293d799d5b611b",
+  "refs/heads/run/support-view-ce-20260916": "26e2f7bede653e3d06d67bf521757138d8aaa96c"
+}

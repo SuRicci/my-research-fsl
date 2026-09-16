@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "files": 14819,
+  "supplement_files": 870,
+  "refs": 15,
+  "assets": [
+    {
+      "name": "research-history.bundle",
+      "bytes": 825487173,
+      "sha256": "1410b629b4eb4a00488fd76287f61be9c75ab3ea52af9dd3a911cc16b38cd17c"
+    },
+    {
+      "name": "research-supplement.tar.gz",
+      "bytes": 691127455,
+      "sha256": "255562fcdfdd3e7c00c3cef8d54e0ba1806eb4a091951efda6967ff1013e8833"
+    }
+  ],
+  "credential_hits": 0
+}
