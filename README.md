@@ -24,4 +24,3 @@
 [中文结果增补报告](archive/pause-20260916/RESULTS_REPORT.md) · [Recovery instructions](archive/pause-20260916/RESTORE.md) · [Full incremental archive](https://github.com/SuRicci/my-research-fsl/releases/tag/quest-012-pause-20260916)
 
 Experiments are paused at the owner’s request. The previous September14 archive remains intact.
-

@@ -1,0 +1,19 @@
+{
+  "status": "upload_and_verification_active",
+  "research_status": "paused_by_user",
+  "session": "bash-757484c8",
+  "repository": "SuRicci/my-research-fsl",
+  "release_tag": "quest-012-pause-20260916",
+  "package_file_count": 14819,
+  "supplement_files": 870,
+  "ref_count": 15,
+  "asset_bytes": 1516614628,
+  "next": "Monitor publish.py. Only after remote-verification.json passes, execute cleanup.py, publish final receipt, remove upload/download staging archives, update memory and leave one blocking standby. Do not restart research.",
+  "workspace": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916",
+  "scripts": [
+    "package.py",
+    "publish.py",
+    "cleanup.py"
+  ],
+  "source_deletion_permitted": false
+}
