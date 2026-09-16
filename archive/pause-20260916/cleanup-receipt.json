@@ -181,5 +181,8 @@
     }
   ],
   "removed_logical_bytes_including_staging": 18747843654,
-  "free_after_staging_bytes": 51083501568
+  "free_after_staging_bytes": 51083501568,
+  "publication_staging_removed_bytes": 27914318,
+  "final_free_bytes": 51110084608,
+  "final_remote_main": "4ea98de4eb3019fa82832ba8b551232c8b423a7f"
 }

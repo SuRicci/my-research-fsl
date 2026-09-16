@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "remote_main": "4ea98de4eb3019fa82832ba8b551232c8b423a7f",
+  "browseable_reports": 25,
+  "release_verified": true,
+  "local_cleanup_completed": true,
+  "final_free_bytes": 51110084608,
+  "final_free_gib": 47.5999755859375,
+  "remaining_worktrees": [
+    "/Users/decoqwq/DeepScientist/quests/012                                                     08af9f9 [main]",
+    "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916  00e73d0 [run/ordered-crop-correspondence-20260916]"
+  ],
+  "research": "paused awaiting explicit user instruction"
+}

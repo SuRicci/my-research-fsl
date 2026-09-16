@@ -1,14 +1,14 @@
 {
-  "status": "archive_verified_cleanup_completed",
+  "status": "completed",
   "research_status": "paused_by_user",
-  "session": "bash-9745e362",
+  "session": null,
   "repository": "SuRicci/my-research-fsl",
   "release_tag": "quest-012-pause-20260916",
   "package_file_count": 14819,
   "supplement_files": 870,
   "ref_count": 15,
   "asset_bytes": 1516614628,
-  "next": "Publish final metadata receipt, remove small publication clone, leave one blocking standby. Scientific work remains paused.",
+  "next": "Await explicit user resume. Read pause report and recovery receipt; do not launch any research automatically.",
   "workspace": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916",
   "scripts": [
     "package.py",
@@ -16,5 +16,6 @@
     "cleanup.py"
   ],
   "source_deletion_permitted": true,
-  "recovery": "First push failed HTTP400 on chunked request; local clone now uses http.postBuffer512MiB and HTTP/1.1. Existing report commit retained; retry creates fast-forward child. No source deletion."
+  "recovery": "First push failed HTTP400 on chunked request; local clone now uses http.postBuffer512MiB and HTTP/1.1. Existing report commit retained; retry creates fast-forward child. No source deletion.",
+  "final_remote_main": "4ea98de4eb3019fa82832ba8b551232c8b423a7f"
 }
