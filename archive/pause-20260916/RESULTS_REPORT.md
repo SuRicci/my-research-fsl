@@ -33,31 +33,31 @@
 
 下列每项报告连同代码、原始数组、协议和审计收进归档。之前的归档位置：https://github.com/SuRicci/my-research-fsl/releases/tag/quest-012-archive-20260914 。
 
-- experiments/analysis/augmentation-geometry-20260915/REPORT.md
-- experiments/analysis/calibration-class-partition-20260916/REPORT.md
-- experiments/analysis/certified-cap-screen-20260916/REPORT.md
-- experiments/analysis/class-disjoint-natural-20260916/REPORT.md
-- experiments/analysis/class-group-spectrum-control-20260916/REPORT.md
-- experiments/analysis/conditional-laplace-qualification-20260916/REPORT.md
-- experiments/analysis/covariance-coefficient-factorial-20260916/REPORT.md
-- experiments/analysis/cross-encoder-coupling-20260916/REPORT.md
-- experiments/analysis/directional-stopping-20260916/REPORT.md
-- experiments/analysis/five-shot-deletion-stability-20260916/REPORT.md
-- experiments/analysis/fixed-covariance-composition-20260916/REPORT.md
-- experiments/analysis/gallery-factorial-20260916/REPORT.md
-- experiments/analysis/gallery-source-scalar-20260916/REPORT.md
-- experiments/analysis/label-allocation-20260916/REPORT.md
-- experiments/analysis/paired-support-instability-20260916/REPORT.md
-- experiments/analysis/prospective-class-group-confirmation-20260916/REPORT.md
-- experiments/analysis/repeated-image-errors-20260916/REPORT.md
-- experiments/analysis/source-original-risk-20260916/REPORT.md
-- experiments/analysis/source-response-repeatability-20260916/REPORT.md
-- experiments/analysis/support-origin-pairing-20260916/REPORT.md
-- experiments/main/class-covariance-control-20260916/REPORT.md
-- experiments/main/conditional-laplace-20260916/REPORT.md
-- experiments/main/orbit-signal-20260916/REPORT.md
-- experiments/main/ordered-crop-correspondence-20260916/REPORT.md
-- experiments/main/support-view-ce-20260916/REPORT.md
+- [experiments/analysis/augmentation-geometry-20260915/REPORT.md](reports/analysis/augmentation-geometry-20260915/REPORT.md)
+- [experiments/analysis/calibration-class-partition-20260916/REPORT.md](reports/analysis/calibration-class-partition-20260916/REPORT.md)
+- [experiments/analysis/certified-cap-screen-20260916/REPORT.md](reports/analysis/certified-cap-screen-20260916/REPORT.md)
+- [experiments/analysis/class-disjoint-natural-20260916/REPORT.md](reports/analysis/class-disjoint-natural-20260916/REPORT.md)
+- [experiments/analysis/class-group-spectrum-control-20260916/REPORT.md](reports/analysis/class-group-spectrum-control-20260916/REPORT.md)
+- [experiments/analysis/conditional-laplace-qualification-20260916/REPORT.md](reports/analysis/conditional-laplace-qualification-20260916/REPORT.md)
+- [experiments/analysis/covariance-coefficient-factorial-20260916/REPORT.md](reports/analysis/covariance-coefficient-factorial-20260916/REPORT.md)
+- [experiments/analysis/cross-encoder-coupling-20260916/REPORT.md](reports/analysis/cross-encoder-coupling-20260916/REPORT.md)
+- [experiments/analysis/directional-stopping-20260916/REPORT.md](reports/analysis/directional-stopping-20260916/REPORT.md)
+- [experiments/analysis/five-shot-deletion-stability-20260916/REPORT.md](reports/analysis/five-shot-deletion-stability-20260916/REPORT.md)
+- [experiments/analysis/fixed-covariance-composition-20260916/REPORT.md](reports/analysis/fixed-covariance-composition-20260916/REPORT.md)
+- [experiments/analysis/gallery-factorial-20260916/REPORT.md](reports/analysis/gallery-factorial-20260916/REPORT.md)
+- [experiments/analysis/gallery-source-scalar-20260916/REPORT.md](reports/analysis/gallery-source-scalar-20260916/REPORT.md)
+- [experiments/analysis/label-allocation-20260916/REPORT.md](reports/analysis/label-allocation-20260916/REPORT.md)
+- [experiments/analysis/paired-support-instability-20260916/REPORT.md](reports/analysis/paired-support-instability-20260916/REPORT.md)
+- [experiments/analysis/prospective-class-group-confirmation-20260916/REPORT.md](reports/analysis/prospective-class-group-confirmation-20260916/REPORT.md)
+- [experiments/analysis/repeated-image-errors-20260916/REPORT.md](reports/analysis/repeated-image-errors-20260916/REPORT.md)
+- [experiments/analysis/source-original-risk-20260916/REPORT.md](reports/analysis/source-original-risk-20260916/REPORT.md)
+- [experiments/analysis/source-response-repeatability-20260916/REPORT.md](reports/analysis/source-response-repeatability-20260916/REPORT.md)
+- [experiments/analysis/support-origin-pairing-20260916/REPORT.md](reports/analysis/support-origin-pairing-20260916/REPORT.md)
+- [experiments/main/class-covariance-control-20260916/REPORT.md](reports/main/class-covariance-control-20260916/REPORT.md)
+- [experiments/main/conditional-laplace-20260916/REPORT.md](reports/main/conditional-laplace-20260916/REPORT.md)
+- [experiments/main/orbit-signal-20260916/REPORT.md](reports/main/orbit-signal-20260916/REPORT.md)
+- [experiments/main/ordered-crop-correspondence-20260916/REPORT.md](reports/main/ordered-crop-correspondence-20260916/REPORT.md)
+- [experiments/main/support-view-ce-20260916/REPORT.md](reports/main/support-view-ce-20260916/REPORT.md)
 
 ## 暂停与恢复
 

@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "all_asset_download_hashes_match": true,
+  "independently_restored_refs": 15,
+  "git_fsck": "passed",
+  "git_commit": "6f6192419674b9606b9af767da9602faad298552",
+  "release": {
+    "assets": [
+      {
+        "apiUrl": "https://api.github.com/repos/SuRicci/my-research-fsl/releases/assets/567407765",
+        "contentType": "application/octet-stream",
+        "createdAt": "2026-09-16T07:10:32Z",
+        "digest": "sha256:1410b629b4eb4a00488fd76287f61be9c75ab3ea52af9dd3a911cc16b38cd17c",
+        "downloadCount": 0,
+        "id": "RA_kwDOUaNhac4h0fSV",
+        "label": "",
+        "name": "research-history.bundle",
+        "size": 825487173,
+        "state": "uploaded",
+        "updatedAt": "2026-09-16T07:21:03Z",
+        "url": "https://github.com/SuRicci/my-research-fsl/releases/download/quest-012-pause-20260916/research-history.bundle"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/SuRicci/my-research-fsl/releases/assets/567407764",
+        "contentType": "application/x-gtar",
+        "createdAt": "2026-09-16T07:10:32Z",
+        "digest": "sha256:255562fcdfdd3e7c00c3cef8d54e0ba1806eb4a091951efda6967ff1013e8833",
+        "downloadCount": 0,
+        "id": "RA_kwDOUaNhac4h0fSU",
+        "label": "",
+        "name": "research-supplement.tar.gz",
+        "size": 691127455,
+        "state": "uploaded",
+        "updatedAt": "2026-09-16T07:19:43Z",
+        "url": "https://github.com/SuRicci/my-research-fsl/releases/download/quest-012-pause-20260916/research-supplement.tar.gz"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/SuRicci/my-research-fsl/releases/assets/567407766",
+        "contentType": "application/octet-stream",
+        "createdAt": "2026-09-16T07:10:32Z",
+        "digest": "sha256:b1308acea8a5bdc6575d9fb61db518593510ddb258ab51d988887a0229231e75",
+        "downloadCount": 0,
+        "id": "RA_kwDOUaNhac4h0fSW",
+        "label": "",
+        "name": "RESTORE.md",
+        "size": 1413,
+        "state": "uploaded",
+        "updatedAt": "2026-09-16T07:10:32Z",
+        "url": "https://github.com/SuRicci/my-research-fsl/releases/download/quest-012-pause-20260916/RESTORE.md"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/SuRicci/my-research-fsl/releases/assets/567407767",
+        "contentType": "application/octet-stream",
+        "createdAt": "2026-09-16T07:10:32Z",
+        "digest": "sha256:7cac995ffe9a937e6ed0750054a22d524fcbc8a9e00404da96f8169f0525fdef",
+        "downloadCount": 0,
+        "id": "RA_kwDOUaNhac4h0fSX",
+        "label": "",
+        "name": "SHA256SUMS",
+        "size": 183,
+        "state": "uploaded",
+        "updatedAt": "2026-09-16T07:10:32Z",
+        "url": "https://github.com/SuRicci/my-research-fsl/releases/download/quest-012-pause-20260916/SHA256SUMS"
+      }
+    ],
+    "isDraft": false,
+    "url": "https://github.com/SuRicci/my-research-fsl/releases/tag/quest-012-pause-20260916"
+  },
+  "assets": [
+    {
+      "name": "research-history.bundle",
+      "bytes": 825487173,
+      "sha256": "1410b629b4eb4a00488fd76287f61be9c75ab3ea52af9dd3a911cc16b38cd17c"
+    },
+    {
+      "name": "research-supplement.tar.gz",
+      "bytes": 691127455,
+      "sha256": "255562fcdfdd3e7c00c3cef8d54e0ba1806eb4a091951efda6967ff1013e8833"
+    }
+  ]
+}

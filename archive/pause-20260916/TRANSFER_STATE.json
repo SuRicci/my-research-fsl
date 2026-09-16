@@ -1,7 +1,7 @@
 {
   "status": "upload_and_verification_active",
   "research_status": "paused_by_user",
-  "session": "bash-757484c8",
+  "session": "bash-9745e362",
   "repository": "SuRicci/my-research-fsl",
   "release_tag": "quest-012-pause-20260916",
   "package_file_count": 14819,
@@ -15,5 +15,6 @@
     "publish.py",
     "cleanup.py"
   ],
-  "source_deletion_permitted": false
+  "source_deletion_permitted": false,
+  "recovery": "First push failed HTTP400 on chunked request; local clone now uses http.postBuffer512MiB and HTTP/1.1. Existing report commit retained; retry creates fast-forward child. No source deletion."
 }

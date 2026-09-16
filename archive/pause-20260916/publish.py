@@ -6,9 +6,9 @@ def save(name,v):(h/name).write_text(json.dumps(v,indent=2)+'\n')
 def git(*args):return run(['git',*args],cloud)
 def publish(extra=False):
  parent=git('rev-parse','refs/heads/main');git('read-tree',parent)
- files=[p for p in h.iterdir() if p.is_file() and p.name not in ['inventory-before.json']]
+ files=[p for p in h.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name not in ['inventory-before.json']]
  for p in files:
-  dest='archive/pause-20260916/'+p.name;oid=git('hash-object','-w',str(p));git('update-index','--add','--cacheinfo','100644,'+oid+','+dest)
+  dest='archive/pause-20260916/'+p.relative_to(h).as_posix();oid=git('hash-object','-w',str(p));git('update-index','--add','--cacheinfo','100644,'+oid+','+dest)
  # Give the owner a report link on the repository landing page without replacing old content.
  try:readme=git('show',parent+':README.md')
  except subprocess.CalledProcessError:readme='# Research archive\n'
