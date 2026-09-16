@@ -1,0 +1,185 @@
+{
+  "status": "completed",
+  "completed_at": "2026-09-16T07:25:21.556587+00:00",
+  "research_state": "paused_by_user",
+  "verified_source_files_rechecked": 13221,
+  "inactive_workspaces_removed": 12,
+  "removed": [
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/branch-run-conditional-laplace-20260916",
+      "bytes": 749363739,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/branch-run-orbit-signal-20260916",
+      "bytes": 579680395,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/branch-run-support-view-ce-20260916",
+      "bytes": 640451448,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/class-covariance-control-20260916",
+      "bytes": 953369865,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-2018223d",
+      "bytes": 546334960,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-7ab5d3e2",
+      "bytes": 517793529,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-81540b7c",
+      "bytes": 505761806,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-a7bb8bb0",
+      "bytes": 446500453,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-ac9900a0",
+      "bytes": 819920690,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-b1fe1ac1",
+      "bytes": 922143426,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/idea-idea-d039a9cd",
+      "bytes": 872008410,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/oslo-gallery-pets-20260913",
+      "bytes": 2220728097,
+      "reason": "Inactive workspace; complete Git history and supplementary research bytes verified in cloud"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/tmp/mechanism-history-20260915",
+      "bytes": 4808519016,
+      "reason": "Disposable recovered historical Git/download index or superseded partial clone"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/tmp/cache-index",
+      "bytes": 3687568,
+      "reason": "Disposable recovered historical Git/download index or superseded partial clone"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/tmp/pause-archive-20260916/cloud",
+      "bytes": 263746940,
+      "reason": "Disposable recovered historical Git/download index or superseded partial clone"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/baselines/imported/gallery-source-query-20260916/dtd_test_clip_vitb16_query.pt",
+      "bytes": 1941834,
+      "sha256": "9e990d26f86209ab09ec9f6a572f067a979c75d2b07d8b8c78fe787075fa304b",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/baselines/imported/gallery-source-query-20260916/dtd_test_dinov2_vits14_query.pt",
+      "bytes": 1460566,
+      "sha256": "6b5cca9570910f3ce1390e86f902e567c5ad202c25f150268aa313a76f778f63",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/baselines/imported/gallery-source-query-20260916/dtd_test_label_map.npz",
+      "bytes": 3436,
+      "sha256": "699a7c7d1a9bc95b01d34eb0413c2ad13f97ca401969dd28ac4cd3a19985dfe0",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/baselines/imported/gallery-source-query-20260916/eurosat_clip_vitb16_query.pt",
+      "bytes": 5574468,
+      "sha256": "a6187890cdb8cf66f37baafba5e5f1966495176123c66f0a00399e139122fd5c",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/baselines/imported/gallery-source-query-20260916/eurosat_dinov2_vits14_query.pt",
+      "bytes": 4192080,
+      "sha256": "27aa76b394f32b96656c0d71fe4f52658d7e5837b14ab282ec599791463051b1",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/baselines/imported/gallery-source-query-20260916/eurosat_label_map.npz",
+      "bytes": 8730,
+      "sha256": "cf1ac2a0d248bbbab95782096e722cf10d54704defad649bd4e63ed923a76ff1",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/experiments/main/class-covariance-control-20260916/dtd_qda_prior.pt",
+      "bytes": 6439170,
+      "sha256": "2debd82fc70a2622cfee0b6fb01066d798b8199d13f9b207bdb41bbdcb679730",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/experiments/main/class-covariance-control-20260916/dtd_tied_prior.pt",
+      "bytes": 6439179,
+      "sha256": "eb118c2d2e9022c438a47b32d78433d10355ee7d162a0e40886b154733e3ff8d",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/experiments/main/class-covariance-control-20260916/eurosat_qda_prior.pt",
+      "bytes": 6439206,
+      "sha256": "fb0a59b17ba8117ee887723fa45d1b6ae446adcc9f919252347bebfa24bad20b",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/experiments/main/class-covariance-control-20260916/eurosat_tied_prior.pt",
+      "bytes": 6439215,
+      "sha256": "5e7798a4072c8e9f274f8b20a3e4cbd1a953fe5c88cb5541779afcd81f081800",
+      "reason": "Cloud-verified archived weight or imported feature cache; local measured results retained"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/experiments/main/support-view-ce-20260916/__pycache__",
+      "bytes": 23079,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/.ds/worktrees/ordered-crop-correspondence-20260916/handoffs/pause-archive-20260916/__pycache__",
+      "bytes": 32913,
+      "reason": "Regenerable Python bytecode"
+    }
+  ],
+  "removed_logical_bytes": 14889004218,
+  "free_before_bytes": 32106340352,
+  "free_after_bytes": 47154712576,
+  "remote_main_observed": "4e02ebdf7588f14bff1e9f8f8c1d34977747f912",
+  "release_url": "https://github.com/SuRicci/my-research-fsl/releases/tag/quest-012-pause-20260916",
+  "preserved": "Active workspace measured results, source code, reports, local Git history, root/current runtime and login state; external original sources untouched",
+  "limitations": "Absolute input paths into retired workspaces require cloud restoration before rerunning; no new experiment authorized. Free-space delta may differ from logical bytes due APFS/system activity.",
+  "staging_removed": [
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/tmp/pause-archive-20260916/research-history.bundle",
+      "bytes": 825487173,
+      "reason": "Generated upload/download/restore-verification copy; remote hashes and restored refs passed"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/tmp/pause-archive-20260916/research-supplement.tar.gz",
+      "bytes": 691127455,
+      "reason": "Generated upload/download/restore-verification copy; remote hashes and restored refs passed"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/tmp/pause-archive-20260916/remote-downloads",
+      "bytes": 1516614628,
+      "reason": "Generated upload/download/restore-verification copy; remote hashes and restored refs passed"
+    },
+    {
+      "path": "/Users/decoqwq/DeepScientist/quests/012/tmp/pause-archive-20260916/restored-history.git",
+      "bytes": 825610180,
+      "reason": "Generated upload/download/restore-verification copy; remote hashes and restored refs passed"
+    }
+  ],
+  "removed_logical_bytes_including_staging": 18747843654,
+  "free_after_staging_bytes": 51083501568
+}

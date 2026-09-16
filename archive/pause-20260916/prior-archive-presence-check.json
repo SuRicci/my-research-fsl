@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "expected_assets_present": 14,
+  "prior_download_hash_receipt": "handoffs/cloud-archive-20260914/remote-verification.json",
+  "release": "https://github.com/SuRicci/my-research-fsl/releases/tag/quest-012-archive-20260914",
+  "boundary": "Current remote sizes/presence rechecked; original full hash verification retained, not repeated."
+}
